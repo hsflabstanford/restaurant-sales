@@ -161,7 +161,7 @@ class DataFixer:
         self.df = self.df[~(self.df[col] == 'nan')]
 
         # Filter out rows where col is nan
-        self.df.dropna(inplace=True)
+        self.df.dropna(subset=[col], inplace=True)
 
 
     def remove_exact_duplicates(self):
