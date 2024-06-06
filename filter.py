@@ -235,7 +235,7 @@ class FilterDF:
         """
         # Copy df to prevent unintended modifications
         df = self.df.copy()
-        return df[df[column].str.contains(sub, na=False)]
+        return df[df[column].str.lower().str.contains(sub.lower(), na=False)]
 
     def remove_na(self, column):
         """
