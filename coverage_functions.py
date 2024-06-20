@@ -12,7 +12,7 @@ from IPython.display import display, Markdown
 
 
 
-def coverage_calculator(loc_id, df, promos, freqs=['W-MON','D','12H','6H'], periods=['all','4mo','bef','b2m','aft','a2m']):
+def coverage_calculator(loc_id, df, promos, timezones, freqs=['W-MON','D','12H','6H'], periods=['all','4mo','bef','b2m','aft','a2m']):
 
     # Remove duplicates orders to count distinct number of orders
     df = df.drop_duplicates('order_id')
@@ -20,7 +20,7 @@ def coverage_calculator(loc_id, df, promos, freqs=['W-MON','D','12H','6H'], peri
     # Identify necessary dates
     first_date = df.index[0]
     last_date = df.index[-1]
-    promo_datetime = promos.loc[loc_id, 'cross_over_date'] # Identify introduction date
+    promo_datetime = promos.loc[loc_id, 'cross_over_date'].tz_convert(timezones[loc_id]) # Identify introduction date
     two_months_before = promo_datetime - pd.DateOffset(days=60) # Two months before the promotional introduction date
     two_months_after = promo_datetime + pd.DateOffset(days=60) # Two months after the promotional introduction date
 
@@ -88,7 +88,7 @@ def plot_time_series(loc_id, df, promos, max_ylim=0, freq='D', subset=True):
 
     # Filter to plant-based items and resample
     plant_based = df.query('is_plant_based == "Yes"')
-    promo_datetime = pd.to_datetime(promos.loc[loc_id, 'cross_over_date']).tz_localize('UTC')
+    promo_datetime = pd.to_datetime(promos.loc[loc_id, 'cross_over_date']).tz_convert('UTC')
     two_months_before = promo_datetime - pd.DateOffset(months=2)
     two_months_after = promo_datetime + pd.DateOffset(months=2)
 
