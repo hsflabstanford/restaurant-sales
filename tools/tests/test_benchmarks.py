@@ -3,7 +3,7 @@ import unittest
 import pandas as pd
 
 # Custom packages
-import benchmarks
+import tools.benchmarks as benchmarks
 
 class TestBenchmarks(unittest.TestCase):
 
