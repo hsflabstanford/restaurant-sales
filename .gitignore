@@ -1,1 +1,20 @@
+# Large data
 data/3_palate_data_parquet_modeling/all_locations.parquet
+
+# R session history (not needed for reproducibility)
+.Rhistory
+.Rapp.history
+
+# RData files (can be large and not needed)
+.RData
+.Ruserdata
+
+# renv library (locally installed packages)
+renv/library/
+renv/staging/
+renv/activate.R
+renv/settings.json
+renv/.gitignore
+
+# RStudio project settings (optional, but keeps repo clean)
+.Rproj.user/
