@@ -41,6 +41,11 @@ standardize_data <- function(df) {
     meat_window_avg       = as.numeric(scale(meat_window_avg)[,1]),
     vegetarian_window_avg = as.numeric(scale(vegetarian_window_avg)[,1]),
     vegan_window_avg      = as.numeric(scale(vegan_window_avg)[,1]),
+    day_of_week_cat       = as.factor(day_of_week_cat),
+    day_of_month_cat      = as.factor(day_of_month_cat),
+    month_cat             = as.factor(month_cat),
+    season                = as.factor(season),
+    year_cat              = as.factor(year_cat)
   )
 }
 
@@ -51,18 +56,15 @@ fit_nb_model <- function(df, outcome, predictors) {
 }
 
 # Fit NB model with AR terms
-fit_nbar_model <- function(df, outcome, predictors) {
-  # Create time series object (weekly frequency assumed)
-  outcome_ts <- ts(df[[outcome]]) # , frequency = 7
-  # Convert predictors to a numeric matrix using model.matrix
+fit_nbar_model <- function(df, outcome, predictors, ar_lags) {
+  outcome_ts <- ts(df[[outcome]])
   xreg <- if (!is.null(predictors)) {
     model.matrix(~ . - 1, data = df[, predictors])
   } else {
     NULL
   }
-  # Fit tsglm with AR lags 1 to 6 (past_obs=6), no past_mean term
   tsglm(outcome_ts, 
-        model = list(past_obs = c(), past_mean = c()), 
+        model = list(past_obs = ar_lags, past_mean = c()), 
         xreg = xreg, 
         link = "log", 
         distr = "nbinom")
@@ -96,7 +98,7 @@ agg_weekly <- function(df, outcome, model = NULL) {
 }
 
 # diagnostic plots: ACF of train residuals, PACF of train residuals, weekly train and test obs vs pred
-diag_plots <- function(model, train_weekly, test_weekly, loc) {
+diag_plots <- function(model, train_weekly, test_weekly, loc, ar_label) {
   
   # residuals from train NB model
   train_resid <- residuals(model, type = "pearson")
@@ -122,7 +124,8 @@ diag_plots <- function(model, train_weekly, test_weekly, loc) {
     ggtitle("Train weekly: obs vs pred") +
     labs(x = "Week", y = "Count") +
     scale_color_manual(values = c("obs" = "blue", "pred" = "red")) +
-    theme_minimal()
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
   
   # Test weekly obs vs pred plot
   p_test <- ggplot(test_weekly, aes(x = week)) +
@@ -131,16 +134,30 @@ diag_plots <- function(model, train_weekly, test_weekly, loc) {
     ggtitle("Test weekly: obs vs pred") +
     labs(x = "Week", y = "Count") +
     scale_color_manual(values = c("obs" = "blue", "pred" = "red")) +
-    theme_minimal()
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
   
-  # Arrange plots in a grid
+  # Arrange the plots together with a header that shows location and AR lags.
   gridExtra::grid.arrange(
     gridExtra::arrangeGrob(p_acf, p_pacf, p_res, p_train, p_test, ncol = 3),
-    top = grid::textGrob(paste("Diagnostic Plots:", loc), gp = grid::gpar(fontsize = 16, fontface = "bold"))
+    top = grid::textGrob(paste("Diagnostic Plots: Restaurant", loc, "- AR lags:", ar_label), 
+                         gp = grid::gpar(fontsize = 16, fontface = "bold"))
   )
 }
 
-process_models <- function(df, loc, model_type="nb", sample=FALSE, standardize=TRUE, train_frac=0.5) {
+process_models <- function(df, loc, ar_lags, model_type="nb", sample=FALSE, standardize=TRUE, train_frac=0.5) {
+  
+  # model_dir <- file.path("modeling_results")
+  # model_file <- file.path(model_dir, paste0(loc, "_model.rds"))
+  # 
+  # message(model_file)
+  # 
+  # # Check if the model file exists
+  # if (file.exists(model_file)) {
+  #   message("Loading existing model from: ", model_file)
+  #   model <- readRDS(model_file)
+  # } else {
+  #   message("No existing model found. Training a new model...")
   
   # Filter to restaurant
   df <- df %>% filter(location_id == loc)
@@ -162,14 +179,15 @@ process_models <- function(df, loc, model_type="nb", sample=FALSE, standardize=T
   # Fit models
   model <- NULL
   if (model_type == "nb") {model <- fit_nb_model(train_df, outcome, predictors)}
-  if (model_type == "nbar") {model <- fit_nbar_model(train_df, outcome, predictors)}
+  if (model_type == "nbar") {model <- fit_nbar_model(train_df, outcome, predictors, ar_lags)}
+  # }
   
   # Aggregate to weekly sums for train and test (use dates from original df)
   train_weekly <- agg_weekly(train_df, outcome, model = model)
   test_weekly  <- agg_weekly(test_df, outcome, model = model)
   
   # Show diagnostic plots: ACF, train weekly obs vs pred, test weekly obs vs pred
-  diag_grob <- diag_plots(model, train_weekly, test_weekly, loc)
+  diag_grob <- diag_plots(model, train_weekly, test_weekly, loc, paste(ar_lags, collapse = ","))
   
   return(list(model = model, diag_plot = diag_grob))
 }
@@ -181,7 +199,7 @@ setwd("C:/Users/Jared/Desktop/HSFL/restaurant-sales")
 
 df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily.parquet")
 
-df_all_daily
+glimpse(df_all_daily)
 
 # df_all_daily <- df_all_daily %>%
 #   slice(round(nrow(df_all_daily)/2)-10000:round(nrow(df_all_daily)/2)+10000)
@@ -189,14 +207,30 @@ df_all_daily
 predictors <- c("vegan_window_avg",
                 "vegetarian_window_avg",
                 "meat_window_avg",
-                "day_of_week",
+                "day_of_week_cat",
                 #"weekend",
-                "day_of_month",
-                "month",
+                #"day_of_month",
+                "month_cat",
                 "season",
-                "date")
+                "year",
+                "date"
+                )
 
 outcome <- "vegan_outcome"
+
+
+## ===== Define AR Lag Options =====
+
+ar_lags_options <- list(
+  "0"           = c(),
+  "1"           = c(1),
+  "1,2"         = c(1,2),
+  "1,2,3"       = c(1,2,3),
+  "1,7"         = c(1,7),
+  "1,7,14"      = c(1,7,14),
+  "1,2,7"       = c(1,2,7),
+  "1,2,3,7,14"  = c(1,2,3,7,14)
+)
 
 
 ## ===== Loop Over All Locations and Store Visuals =====
@@ -204,23 +238,23 @@ outcome <- "vegan_outcome"
 # 19 location IDs
 location_ids <- c(
   'SRQS8F7JWA9MZ',
-  #'2HRX9P6HKXA8V',
-  #'JHDN7CF1C03X5',
-  # 'L69HYJ4Y3TR91',
-  # 'ED5J990H5VAZT',
-  # 'W8T41JZK0ZMEP',
-  # 'EMBVNVD207CC6',
-  # 'C0BE4NDSW26QN',
-  # '75WYSXR9QBK5M',
-  # 'V3Q26BHF3SE2H',
-  # 'LBZEEFSBJNB3Z',
-  # 'SAFK7ND1HR6XS',
-  # 'CB2KHY1C2G9PT',
-  # 'S8MT0YGD2KTN9',
-  # 'LFZFT3VASXPED',
-  # '1SQPTEGYPH0GA',
-  # '9XKJD8DQTH559',
-  # 'LQ5EH4BKGV61T',
+  '2HRX9P6HKXA8V',
+  'JHDN7CF1C03X5',
+  'L69HYJ4Y3TR91',
+  'ED5J990H5VAZT',
+  'W8T41JZK0ZMEP',
+  'EMBVNVD207CC6',
+  'C0BE4NDSW26QN',
+  '75WYSXR9QBK5M',
+  'V3Q26BHF3SE2H',
+  'LBZEEFSBJNB3Z',
+  'SAFK7ND1HR6XS',
+  'CB2KHY1C2G9PT',
+  'S8MT0YGD2KTN9',
+  'LFZFT3VASXPED',
+  '1SQPTEGYPH0GA',
+  '9XKJD8DQTH559',
+  'LQ5EH4BKGV61T',
   '78AY09MVJVTYE'
 )
 
@@ -228,23 +262,34 @@ results_list <- list()
 plot_list <- list()
 
 for(loc in location_ids) {
-  cat("Processing location:", loc, "\n")
+  results_list[[loc]] <- list()
+  plot_list[[loc]] <- list()
   
-  res <- process_models(df_all_daily, loc = loc, model_type = "nbar", 
-                        sample = FALSE, standardize = TRUE, train_frac = 0.5)
-  
-  results_list[[loc]] <- res$model
-  plot_list[[loc]] <- res$diag_plot
-  
-  # Save the diagnostic plot as a PNG file
-  png_filename <- file.path("modeling_results", paste0(loc, "_diagnostics.png"))
-  png(png_filename, width = 1200, height = 800)
-  grid.draw(res$diag_plot)
-  dev.off()
-  
-  # Save the model object as an RDS file
-  rds_filename <- file.path("modeling_results", paste0(loc, "_model.rds"))
-  saveRDS(res$model, file = rds_filename)
+  for(ar_label in names(ar_lags_options)) {
+    cat("Processing location:", loc, "with AR lags:", ar_label, "\n")
+    
+    res <- process_models(df_all_daily, 
+                          loc = loc, 
+                          ar_lags = ar_lags_options[[ar_label]], 
+                          model_type = "nbar", 
+                          sample = FALSE, 
+                          standardize = TRUE, 
+                          train_frac = 0.5)
+    
+    # Store results in the nested lists
+    results_list[[loc]][[ar_label]] <- res$model
+    plot_list[[loc]][[ar_label]] <- res$diag_plot
+    
+    # Save the diagnostic plot as a PNG file (with loc and AR label in the name)
+    png_filename <- file.path("modeling_results", paste0(loc, "_diagnostics_", ar_label, ".png"))
+    png(png_filename, width = 1200, height = 800)
+    grid.draw(res$diag_plot)
+    dev.off()
+    
+    # Save the model object as an RDS file
+    rds_filename <- file.path("modeling_results", paste0(loc, "_model_", ar_label, ".rds"))
+    saveRDS(res$model, file = rds_filename)
+  }
 }
 
 
@@ -255,8 +300,10 @@ ui <- fluidPage(
   titlePanel("Dashboard: Select a Restaurant Location"),
   sidebarLayout(
     sidebarPanel(
-      selectInput("plot_key", "Choose a restaurant ID:", 
-                  choices = names(plot_list), selected = names(plot_list)[1])
+      selectInput("restaurant_id", "Choose a restaurant ID:", 
+                  choices = names(plot_list), selected = names(plot_list)[1]),
+      selectInput("ar_lags", "Choose AR lag set:", 
+                  choices = names(ar_lags_options), selected = names(ar_lags_options)[1])
     ),
     mainPanel(
       h3(textOutput("restaurant_id")),
@@ -268,18 +315,21 @@ ui <- fluidPage(
 # In the server we now call grid.draw() on the stored grob
 server <- function(input, output, session) {
   
-  output$restaurant_id <- renderText({
-    paste("Restaurant Location ID:", input$plot_key)
+  output$display_info <- renderText({
+    paste("Restaurant Location ID:", input$restaurant_id,
+          "| AR lag set:", input$ar_lags)
   })
   
+  # output$restaurant_id <- renderText({
+  #   paste("Restaurant Location ID:", input$restaurant_id)
+  # })
+  
   output$selected_plot <- renderPlot({
-    # Create a header grob with the location ID.
-    header_grob <- grid::textGrob("",
-                                  gp = grid::gpar(fontsize = 16, fontface = "bold"))
-    # Arrange the header above the diagnostic plot.
-    combined_grob <- gridExtra::arrangeGrob(header_grob, plot_list[[input$plot_key]],
-                                            ncol = 1, heights = c(0.1, 0.9))
-    grid::grid.draw(combined_grob)
+    # Retrieve the appropriate plot based on user selection.
+    selected_plot <- plot_list[[ input$restaurant_id ]][[ input$ar_lags ]]
+    
+    # Optionally add a header or other annotations here.
+    grid::grid.draw(selected_plot)
   })
 }
 
