@@ -10,3 +10,4 @@ statsmodels
 openpyxl
 pyarrow
 ipywidgets
+tabulate
