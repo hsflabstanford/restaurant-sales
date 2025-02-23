@@ -15,12 +15,11 @@ library(MASS)
 library(bayesforecast)
 
 df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
+  process_predictors() %>%
   mutate(
     month = month(created_at),
     year  = year(created_at)
   )
-
-glimpse(df_all_daily)
 
 cpi_food_away <- read.csv("data/inflation.csv") %>%
   filter(Period != "S01" & Period != "S02") %>%

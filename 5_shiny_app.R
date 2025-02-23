@@ -13,15 +13,13 @@ library(lmtest)
 library(MASS)
 library(bayesforecast)
 
-source("modeling_functions.R")
+source("tools/modeling_functions.R")
 
 
 ## ===== Data, Predictors, Outcome =====
 
 df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
-  standardize_data()
-
-glimpse(df_all_daily)
+  process_predictors()
 
 predictors <- c(#"vegan_window_avg",
                 #"vegetarian_window_avg",
