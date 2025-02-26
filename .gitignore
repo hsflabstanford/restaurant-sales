@@ -19,3 +19,5 @@ renv/.gitignore
 
 # RStudio project settings (optional, but keeps repo clean)
 .Rproj.user/
+
+renv.zip
