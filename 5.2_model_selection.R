@@ -47,52 +47,61 @@ df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_
 before_after_details_true <- read.csv("data/before_after_details_true.csv")
 before_after_details_true
 
-restaurants_by_coverage <- read.csv('data/2_palate_data_parquet_cleaned/restaurants_by_4m_coverage.csv')
-restaurants_by_coverage
+bad_restaurants <- c('AQD04SM0J92WA',
+                     'LBMCPAYT7W36V',
+                     'L3XS7WSJ4AJA3',
+                     '1G5AJ17XCH2A8',
+                     '3AXDVZJYN9DRS',
+                     'MS8R16DY0JQAM',
+                     'N0PC58FB2XAZ3',
+                     'ADPFRN3QZRCXK',
+                     'WJA3YCD4QBWRX',
+                     '0RJH3FFPYBPEY',
+                     'LZ5MR1TS37E7W')
+
+restaurants_by_coverage <- read.csv('data/2_palate_data_parquet_cleaned/restaurants_by_4m_coverage.csv') %>%
+  filter(!(location_id %in% bad_restaurants)) %>%
+  pull(location_id)
 
 df_all_daily %>%
   group_by(location_id) %>%
   summarize(count = n()) %>%
-  arrange(match(location_id, restaurants_by_coverage$location_id)) %>%
+  arrange(match(location_id, restaurants_by_coverage)) %>%
   identity()
 
 outcome <- "vegan_outcome"
 
-
-
-
-
 ar_lag_sets_1 <- list(
-  #c(),    
-  #c(1),
-  #c(7),
+  #c(),
+  c(1),
+  c(7),
   #c(14),
   #c(1,7),
-  #c(7,14,21),
-  # c(1,2,3),
-  # c(1,2,3,4,5,6,7),
-  # c(7,14,28),
-  # c(1,2,3,4,5,6,7,14,21),
+  c(7,14,21),
+  #c(1,2,3),
+  c(1,2,3,4,5,6,7),
+  #c(7,14,28),
+  #c(1,2,3,4,5,6,7,14,21),
   c(1,2,3,4,5,6,7,14,21,28,42)
 )
 
 mean_lag_sets_1 <- list(
-  #c(),    
+  c(),
   #c(1),
-  #c(7),
+  c(7),
   #c(14),
-  #c(1,7), <-
-  #c(7,14,21), 
-  # c(1,2,3),
-  # c(1,2,3,4,5,6,7),
-  # c(7,14,28),
-  # c(1,2,3,4,5,6,7,14,21),
+  #c(1,7),
+  #c(7,14,21),
+  #c(1,2,3),
+  #c(1,2,3,4,5,6,7),
+  #c(7,14,28),
+  #c(1,2,3,4,5,6,7,14,21),
   c(1,2,3,4,5,6,7,14,21,28,42)
 )
 
 predictors_short_term <- c(
-  "vegan_window_avg",
-  "meat_window_avg",
+  #"vegan_window_avg",
+  #"meat_window_avg",
   "vegan_price_real",
   "meat_price_real",
   "day_of_week_cat",
@@ -117,67 +126,6 @@ predictors <- c(
   "date"
 )
 
-
-
-# predictor_sets <- list(
-#   c(),
-#   c("day_of_week_cat"),
-#   c("day_of_week")
-#   c("day_of_week_cat", "season"),
-#   # 
-#   #c("day_of_week_cat", "season", "year"),
-#   #c("day_of_week_cat", "season", "year", "meat_window_avg"),
-#   #c("day_of_week_cat", "season", "year", "vegan_price_real"),
-#   #c("day_of_week_cat", "season", "year")
-# )
-
-
-
-# fit_and_cv <- function(ar_lags, mean_lags, predictors) {
-#   cv_result <- walk_forward_cv_nbar(
-#     df_all_daily,
-#     loc = "2HRX9P6HKXA8V",
-#     outcome = "vegan_outcome",
-#     predictors = predictors,
-#     initial_train_days = ????,
-#     test_days = ????,
-#     ar_lags = ar_lags,
-#     mean_lags = mean_lags,
-#     sample = FALSE
-#   )
-#   
-#   # Aggregate the CV results to produce an error metric
-#   cv_err <- aggregate_cv_results(cv_result)
-#   return(cv_err)
-# }
-# 
-# param_grid <- expand.grid(ar_lag_sets_1, 
-#                           mean_lag_sets_1, 
-#                           predictor_sets, stringsAsFactors = FALSE)
-# 
-# names(param_grid) <- c("ar_lags", "mean_lags", "predictors")
-# 
-# # Start multisession
-# num_cores <- detectCores() - 1
-# plan(multisession, workers = num_cores)
-# 
-# # Run model training over grid in parallel
-# start_time <- Sys.time()
-# cv_errors <- future_pmap(param_grid, function(ar_lags, mean_lags, predictors) {
-#   fit_and_cv(ar_lags, mean_lags, predictors)})
-# end_time <- Sys.time()
-# 
-# # Reset to sequential
-# plan(sequential)
-# 
-# # Print time
-# elapsed_time <- difftime(end_time, start_time, units = "secs")
-# print(elapsed_time)
-# 
-# # Store
-# param_grid$cv_err <- unlist(cv_errors)
-
-
 # Count observations before and after intervention
 df_all_daily %>%
   left_join(before_after_details_true %>% 
@@ -187,7 +135,7 @@ df_all_daily %>%
   filter(created_at >= (cross_over_date %m-% weeks(25)) & # 8
            created_at <= (cross_over_date %m+% weeks(17))) %>% # 2
   summarize(count = n(), na_count = sum(is.na(vegan_outcome))) %>%
-  arrange(match(location_id, restaurants_by_coverage$location_id)) %>%
+  arrange(match(location_id, restaurants_by_coverage)) %>%
   identity()
 
 # Filter each restaurants to k months before to k months after the promo date in before_after_details_true
@@ -200,18 +148,19 @@ df_all_intervention_period <- df_all_daily %>%
            created_at <= (cross_over_date %m+% weeks(17))) %>% # 2
   ungroup()
 
-
+all_param_grids <- list()
+for (loc_id in restaurants_by_coverage[2:2]) {
 
 # 4. Cross-validation wrapper function
 fit_and_cv <- function(ar_lags, mean_lags, predictors) {
   cv_result <- tryCatch({
     walk_forward_cv_nbar(
       df_all_intervention_period,
-      loc = "2HRX9P6HKXA8V",
+      loc = loc_id,
       outcome = "vegan_outcome",
       predictors = predictors,
       initial_train_days = 63,
-      test_days = 21,
+      test_days = 42,
       ar_lags = ar_lags,
       mean_lags = mean_lags,
       sample = FALSE
@@ -294,46 +243,51 @@ fit_and_cv_with_backward <- function(ar_lags, mean_lags, full_predictors) {
   return(list(cv_error = best_error, predictors = best_predictors))
 }
 
-# param_grid_lags <- expand.grid(ar_lags = ar_lag_sets_1, 
-#                                mean_lags = mean_lag_sets_1, stringsAsFactors = FALSE)
-# 
-# names(param_grid_lags) <- c("ar_lags", "mean_lags")
-# 
-# 
-# # Start multisession
-# num_cores <- detectCores() - 1
-# plan(multisession, workers = num_cores)
-# 
-# # Run model training over grid in parallel
-# start_time <- Sys.time()
-# param_grid_lags$cv_results <- future_pmap(param_grid_lags, function(ar_lags, mean_lags) {
-#   result <- tryCatch({
-#     withTimeout({
-#       fit_and _cv_with_backward(ar_lags, mean_lags, predictors_short_term)
-#     }, timeout = 4 * 3600, onTimeout = "error")  # 4 hours timeout
-#   }, error = function(e) {
-#     message("Grid search error for ar_lags = ", paste(ar_lags, collapse = ","),
-#             " and mean_lags = ", paste(mean_lags, collapse = ","), ": ", e$message)
-#     return(list(cv_error = Inf, predictors = NULL))
-#   })
-#   
-#   # In case the result is NULL, fill it in with a safe fallback
-#   if (is.null(result)) {
-#     result <- list(cv_error = Inf, predictors = NULL)
-#   }
-#   return(result)
-# })
-# end_time <- Sys.time()
-# 
-# # Reset to sequential
-# plan(sequential)
-# 
-# # Print time
-# elapsed_time <- difftime(end_time, start_time, units = "secs")
-# print(elapsed_time)
-# 
-# param_grid_lags
 
+
+param_grid_lags <- expand.grid(ar_lags = ar_lag_sets_1,
+                               mean_lags = mean_lag_sets_1, stringsAsFactors = FALSE)
+
+names(param_grid_lags) <- c("ar_lags", "mean_lags")
+
+# Start multisession
+num_cores <- detectCores() - 1
+print(num_cores)
+plan(multisession, workers = num_cores)
+
+# Run model training over grid in parallel
+start_time <- Sys.time()
+param_grid_lags$cv_results <- future_pmap(param_grid_lags, function(ar_lags, mean_lags) {
+  result <- tryCatch({
+    withTimeout({
+      fit_and_cv_with_backward(ar_lags, mean_lags, predictors_short_term)
+    }, timeout = 3 * 3600, onTimeout = "error")  # 4 hours timeout
+  }, error = function(e) {
+    message("Grid search error for ar_lags = ", paste(ar_lags, collapse = ","),
+            " and mean_lags = ", paste(mean_lags, collapse = ","), ": ", e$message)
+    return(list(cv_error = Inf, predictors = NULL))
+  })
+
+  # In case the result is NULL, fill it in with a safe fallback
+  if (is.null(result)) {
+    result <- list(cv_error = Inf, predictors = NULL)
+  }
+  return(result)
+})
+end_time <- Sys.time()
+
+# Reset to sequential
+plan(sequential)
+
+# Print time
+elapsed_time <- difftime(end_time, start_time, units = "secs")
+print(elapsed_time)
+
+# all_param_grids[[loc_id]] <- param_grid_lags
+param_grid_lags
+saveRDS(param_grid_lags, file = paste0("param_grid_lags_",loc_id,".rds"))
+
+}
 
 mem_used <- mem_used()  # Check before
 start_time <- Sys.time()
@@ -343,10 +297,6 @@ mem_used_after <- mem_used()  # Check after
 print(mem_used_after - mem_used)  # Memory used by one process
 elapsed_time <- difftime(end_time, start_time, units = "secs")
 print(elapsed_time)
-
-
-
-
 
 # (Intercept) vegan_window_avg  meat_window_avg vegan_price_real  meat_price_real 
 # -530.42654864      -4.47011150       0.89423051       4.59590570      -0.92689336 

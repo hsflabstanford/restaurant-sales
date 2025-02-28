@@ -90,6 +90,10 @@ rolling_forecast_nbar <- function(test_df, model, outcome, predictors) {
 # 3. Performs walk-forward (expanding) K-fold cross-validation using rolling forecasts in each fold
 walk_forward_cv_nbar <- function(df, loc, outcome, predictors, initial_train_days, test_days = 30, ar_lags=c(), mean_lags=c(), sample=FALSE) {
   
+  message("Starting walk_forward_cv_nbar with ", paste(predictors, collapse = ", "))
+  
+  fold_counter <- 1
+  
   # Filter to restaurant
   df <- df %>% filter(location_id == loc)
   
@@ -103,44 +107,45 @@ walk_forward_cv_nbar <- function(df, loc, outcome, predictors, initial_train_day
   last_possible_train_end <- max(all_dates) - days(test_days)
   fold_end_dates <- all_dates[all_dates >= first_train_end & all_dates <= last_possible_train_end]
   
+  print(first_train_end)
+  print(last_possible_train_end)
+  
   # Move forward by test_days number each time, i.e., move forward one fold
   current_train_end <- first_train_end
-  fold_counter <- 1
+  
   
   cv_results <- list()
   while (current_train_end <= last_possible_train_end) {
-    message("walk_forward_cv_nbar: Processing fold ", fold_counter)
-    
     fold_result <- tryCatch({
-    
-    # Define the training set as all data up to and including current_train_end
-    train_fold <- df %>% 
-      filter(date <= current_train_end)
-    test_fold <- df %>% 
-      filter(date > current_train_end & date <= current_train_end + days(test_days))
-    
-    # Only include folds where there are at least test_days available after
-    if (nrow(test_fold) < test_days) stop("Not enough test days in the fold") 
-    
-    # Fit and predict
-    model <- fit_nbar_model(train_fold, outcome, predictors, ar_lags, mean_lags)
-    if (is.null(model)) {
-      message("Model fitting failed for fold ", fold_counter, "; skipping fold.")
-      return(NULL)}
-    pred <- rolling_forecast_nbar(test_fold, model, outcome, predictors)
-    
-    # Store
-    tibble(
-      fold = fold_counter,
-      train_end = current_train_end,
-      date = test_fold$date,
-      horizon = 1:nrow(test_fold),
-      actual = test_fold[[outcome]],
-      forecast = pred
-    )}, error = function(e) {
-      message("Error in fold ", fold_counter, ": ", e$message)
-      return(NULL)
-    })
+      
+      # Define the training set as all data up to and including current_train_end
+      train_fold <- df %>%
+        filter(date <= current_train_end)
+      test_fold <- df %>%
+        filter(date > current_train_end & date <= current_train_end + days(test_days))
+      
+      # Only include folds where there are at least test_days available after
+      if (nrow(test_fold) < test_days) stop("Not enough test days in the fold")
+      
+      # Fit and predict
+      model <- fit_nbar_model(train_fold, outcome, predictors, ar_lags, mean_lags)
+      if (is.null(model)) {
+        message("Model fitting failed for fold ", fold_counter, "; skipping fold.")
+        return(NULL)}
+      pred <- rolling_forecast_nbar(test_fold, model, outcome, predictors)
+      
+      # Store
+      tibble(
+        fold = fold_counter,
+        train_end = current_train_end,
+        date = test_fold$date,
+        horizon = 1:nrow(test_fold),
+        actual = test_fold[[outcome]],
+        forecast = pred
+      )}, error = function(e) {
+        message("Error in fold ", fold_counter, ": ", e$message)
+        return(NULL)
+      })
     
     if (!is.null(fold_result)) {
       cv_results[[fold_counter]] <- fold_result
@@ -149,6 +154,7 @@ walk_forward_cv_nbar <- function(df, loc, outcome, predictors, initial_train_day
     # Update
     current_train_end <- current_train_end + days(test_days) # max(test_fold$date)
     fold_counter <- fold_counter + 1
+    message("walk_forward_cv_nbar: Finished processing fold ", fold_counter - 1)
   }
   
   if (length(cv_results) > 0) {
