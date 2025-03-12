@@ -22,7 +22,7 @@ def find_project_root(start: Path = Path().absolute()) -> Path:
     return start 
 os.chdir(find_project_root())
 
-before_after_details_true = pd.read_csv('data/before_after_details_true.csv')
+#before_after_details_true = pd.read_csv('data/before_after_details_true.csv').set_index('location_id')
 
 def clean_and_relabel_restaurant(df, 
                                  modification_name_changes,
@@ -68,7 +68,8 @@ def clean_and_relabel_restaurant(df,
                   vegan = lambda df: (df['is_plant_based']
                                       .eq('Yes')
                                       .mask(df['item_name'].isin(vegan_list + non_alcoholic_drinks), True)
-                                      .mask(df['item_name'].isin(vegetarian_list ) and ~df['item_name'].isin(vegan_list), False) 
+                                      .mask(df['item_name'].isin(vegetarian_list) & ~df['item_name'].isin(vegan_list), False)
+                                      .mask(df['item_name'].isin(meat_list), False)
                                       .mask(df['item_name'].isin(half_vegan_list), np.random.rand(len(df)) < 0.5)))
           .query('~item_name.isin(@remove_list)') # Important: do we actually want to remove unknowns
                 #.drop('unique_id', axis=1)
@@ -78,7 +79,7 @@ def clean_and_relabel_restaurant(df,
     
     return df
 
-def plot_dish_time_series(food_df, loc_id):
+def plot_dish_time_series(food_df, loc_id, before_after_details_true):
 
     # Visualizing with gaps for inactive weeks
     introduction_fig, ax = plt.subplots(figsize=(14, 8))
@@ -86,7 +87,7 @@ def plot_dish_time_series(food_df, loc_id):
     # Index into the promotional items for this restaurant
     promo_datetime = before_after_details_true.loc[loc_id,'cross_over_date'].tz_convert('UTC')
 
-    top_n = 30
+    top_n = 60
 
     unique_dishes = (food_df
                     ['item_name']
