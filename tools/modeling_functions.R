@@ -88,14 +88,22 @@ rolling_forecast_nbar <- function(test_df, model, outcome, predictors) {
 }
 
 # 3. Performs walk-forward (expanding) K-fold cross-validation using rolling forecasts in each fold
-walk_forward_cv_nbar <- function(df, loc, outcome, predictors, initial_train_days, test_days = 30, ar_lags=c(), mean_lags=c(), sample=FALSE) {
+walk_forward_cv_nbar <- function(df, 
+                                 loc, 
+                                 outcome, 
+                                 predictors, 
+                                 initial_train_days, 
+                                 test_days = 30, 
+                                 ar_lags=c(), 
+                                 mean_lags=c(), 
+                                 sample=FALSE) {
   
   message("Starting walk_forward_cv_nbar with ", paste(predictors, collapse = ", "))
   
   fold_counter <- 1
   
   # Filter to restaurant
-  df <- df %>% filter(location_id == loc)
+  df <- df %>% dplyr::filter(location_id == loc)
   
   # Set default sample size to the entire dataset
   if (sample) {df <- df %>% slice(1:sample)}
@@ -120,9 +128,9 @@ walk_forward_cv_nbar <- function(df, loc, outcome, predictors, initial_train_day
       
       # Define the training set as all data up to and including current_train_end
       train_fold <- df %>%
-        filter(date <= current_train_end)
+        dplyr::filter(date <= current_train_end)
       test_fold <- df %>%
-        filter(date > current_train_end & date <= current_train_end + days(test_days))
+        dplyr::filter(date > current_train_end & date <= current_train_end + days(test_days))
       
       # Only include folds where there are at least test_days available after
       if (nrow(test_fold) < test_days) stop("Not enough test days in the fold")
@@ -182,8 +190,8 @@ split_data <- function(df, train_frac) {
   # Sort by date and split by time
   unique_dates <- sort(unique(df$date))
   cut_date <- unique_dates[floor(length(unique_dates) * train_frac)]
-  train <- df %>% filter(date <= cut_date)
-  test  <- df %>% filter(date > cut_date)
+  train <- df %>% dplyr::filter(date <= cut_date)
+  test  <- df %>% dplyr::filter(date > cut_date)
   list(train = train, test = test)
 }
 
@@ -326,7 +334,7 @@ process_models <- function(df, loc, outcome, predictors, model_type="nb", ar_lag
   #   message("No existing model found. Training a new model...")
   
   # Filter to restaurant
-  df <- df %>% filter(location_id == loc)
+  df <- df %>% dplyr::filter(location_id == loc)
   
   # Fill gaps
   df <- fill_gaps(df)
