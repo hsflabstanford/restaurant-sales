@@ -3,7 +3,7 @@ library(fpp3) # tibble, dplyr, tidyr, lubridate, ggplot2, tsibble, tsibbledata, 
 library(arrow)
 library(skimr)
 library(shiny)
-library(grid)hs
+library(grid)
 library(gridExtra)
 
 # Modeling
@@ -77,7 +77,8 @@ ar_lags_options <- list(
 )
 
 mean_lags_options <- list(
-  "0"           = c()
+  "0"           = c(),
+  "1"           = c(1)
 )
 
 
@@ -109,43 +110,50 @@ location_ids <- c(
 results_list <- list()
 plot_list <- list()
 
-for(loc in location_ids) {
+for(loc in location_ids[1:2]) {
   results_list[[loc]] <- list()
   plot_list[[loc]] <- list()
   
   for(ar_label in names(ar_lags_options)) {
-    cat("Processing location:", loc, "with AR lags:", ar_label, "\n")
-    
-    res <- process_models(df_all_daily, 
-                          loc = loc, 
-                          outcome = outcome,
-                          predictors = predictors,
-                          ar_lags = ar_lags_options[[ar_label]], 
-                          model_type = "nbar", 
-                          sample = FALSE, 
-                          standardize = TRUE, 
-                          train_frac = 0.5)
-    
-    # Store results in the nested lists
-    results_list[[loc]][[ar_label]] <- res$model
-    plot_list[[loc]][[ar_label]] <- res$diag_plot
-    
-    # Save the diagnostic plot as a PNG file (with loc and AR label in the name)
-    png_filename <- file.path("modeling_results", paste0(loc, "_diagnostics_", ar_label, ".png"))
-    png(png_filename, width = 1200, height = 800)
-    grid.draw(res$diag_plot)
-    dev.off()
-    
-    # Save the model object as an RDS file
-    rds_filename <- file.path("modeling_results", paste0(loc, "_model_", ar_label, ".rds"))
-    saveRDS(res$model, file = rds_filename)
+    for(mean_label in names(mean_lags_options)) {
+      cat("Processing location:", loc, 
+          "with AR lags:", ar_label, 
+          "and Mean lags:", mean_label, "\n")
+      
+      res <- process_models(df_all_daily, 
+                            loc = loc, 
+                            outcome = outcome,
+                            predictors = predictors,
+                            ar_lags = ar_lags_options[[ar_label]], 
+                            mean_lags = mean_lags_options[[mean_label]],
+                            model_type = "nbar", 
+                            sample = FALSE, 
+                            standardize = TRUE, 
+                            train_frac = 0.5)
+      
+      # Create a combined label for both AR and mean lags
+      combined_label <- paste0("AR: ", ar_label, " | Mean: ", mean_label)
+      
+      # Store results in the nested lists
+      results_list[[loc]][[combined_label]] <- res$model
+      plot_list[[loc]][[combined_label]] <- res$diag_plot
+      
+      # Save the diagnostic plot as a PNG file (with loc, AR, and mean lag labels in the name)
+      png_filename <- file.path("modeling_results", paste0(loc, "_diagnostics_", ar_label, "_", mean_label, ".png"))
+      # png(png_filename, width = 1200, height = 800)
+      grid.draw(res$diag_plot)
+      dev.off()
+      
+      # Save the model object as an RDS file
+      rds_filename <- file.path("modeling_results", paste0(loc, "_model_", ar_label, "_", mean_label, ".rds"))
+      # saveRDS(res$model, file = rds_filename)
+    }
   }
 }
 
 
 ## ===== Shiny App UI and Server =====
 
-# (The UI remains unchanged.)
 ui <- fluidPage(
   titlePanel("Dashboard: Select a Restaurant Location"),
   sidebarLayout(
@@ -153,37 +161,32 @@ ui <- fluidPage(
       selectInput("restaurant_id", "Choose a restaurant ID:", 
                   choices = names(plot_list), selected = names(plot_list)[1]),
       selectInput("ar_lags", "Choose AR lag set:", 
-                  choices = names(ar_lags_options), selected = names(ar_lags_options)[1])
+                  choices = names(ar_lags_options), selected = names(ar_lags_options)[1]),
+      selectInput("mean_lags", "Choose Mean lag set:", 
+                  choices = names(mean_lags_options), selected = names(mean_lags_options)[1])
     ),
     mainPanel(
-      h3(textOutput("restaurant_id")),
+      h3(textOutput("restaurant_info")),
       plotOutput("selected_plot")
     )
   )
 )
 
-# In the server we now call grid.draw() on the stored grob
 server <- function(input, output, session) {
   
-  output$display_info <- renderText({
+  output$restaurant_info <- renderText({
     paste("Restaurant Location ID:", input$restaurant_id,
-          "| AR lag set:", input$ar_lags)
+          "| AR lag set:", input$ar_lags,
+          "| Mean lag set:", input$mean_lags)
   })
   
-  # output$restaurant_id <- renderText({
-  #   paste("Restaurant Location ID:", input$restaurant_id)
-  # })
-  
   output$selected_plot <- renderPlot({
-    # Retrieve the appropriate plot based on user selection.
-    selected_plot <- plot_list[[ input$restaurant_id ]][[ input$ar_lags ]]
+    # Construct the combined label to access the correct plot
+    combined_label <- paste0("AR: ", input$ar_lags, " | Mean: ", input$mean_lags)
+    selected_plot <- plot_list[[ input$restaurant_id ]][[ combined_label ]]
     
-    # Optionally add a header or other annotations here.
     grid::grid.draw(selected_plot)
   })
 }
-
-
-## ===== Launch the Shiny App =====
 
 shinyApp(ui = ui, server = server)
