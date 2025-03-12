@@ -12,7 +12,7 @@ from IPython.display import display, Markdown
 
 
 
-def coverage_calculator(loc_id, df, promos, timezones, freqs=['W-MON','D','12H','6H'], periods=['all','4mo','bef','b2m','aft','a2m']):
+def coverage_calculator(loc_id, df, promos, timezones, freqs=['W-MON','D','12H','6H'], periods=['all','4mo','bef','b2m','aft','a2m'], include_weekends=True):
 
     # Remove duplicates orders to count distinct number of orders
     df = df.drop_duplicates('order_id')
@@ -52,6 +52,9 @@ def coverage_calculator(loc_id, df, promos, timezones, freqs=['W-MON','D','12H',
 
             # Number of active weeks within the bounds, and then before and after
             resampled_data = period.resample(freq).size()
+            # If we're not including weekends and frequency is daily or sub-daily, remove weekend bins
+            if freq in ['D','12H','6H'] and not include_weekends:
+                resampled_data = resampled_data[(resampled_data.index.weekday != 5) & (resampled_data.index.weekday != 6)]
             active_total_at_freq = (0 < resampled_data).sum()
 
             if 'W' in freq:
@@ -59,6 +62,9 @@ def coverage_calculator(loc_id, df, promos, timezones, freqs=['W-MON','D','12H',
 
             # Possible periods
             possible = pd.date_range(beginning, end, freq=freq, ambiguous=True, inclusive='left')
+            # Remove weekend bins from the possible range if applicable
+            if freq in ['D','12H','6H'] and not include_weekends:
+                possible = possible[(possible.weekday != 5) & (possible.weekday != 6)]
             possible_total = possible.shape[0]
             if 'H' in freq and beginning.utcoffset() > end.utcoffset():
                 possible_total -= 1
@@ -68,8 +74,8 @@ def coverage_calculator(loc_id, df, promos, timezones, freqs=['W-MON','D','12H',
             rounded_coverage_ratio = float(int(round(100*coverage_ratio)))/100
 
             # Other simple stats
-            rounded_mean = round(np.mean(resampled_data))
-            rounded_sd = round(np.std(resampled_data))
+            #rounded_mean = round(np.mean(resampled_data))
+            #rounded_sd = round(np.std(resampled_data))
 
             # Store
             # row[f'{qualifier}_{freq}'] = active_total_at_freq
