@@ -3,7 +3,7 @@ library(fpp3) # tibble, dplyr, tidyr, lubridate, ggplot2, tsibble, tsibbledata, 
 library(arrow)
 library(skimr)
 library(shiny)
-library(grid)
+library(grid)hs
 library(gridExtra)
 
 # Modeling
@@ -18,23 +18,49 @@ source("tools/modeling_functions.R")
 
 ## ===== Data, Predictors, Outcome =====
 
+before_after_details_true <- read.csv("data/before_after_details_true.csv")
+
+bad_restaurants <- c('AQD04SM0J92WA','LBMCPAYT7W36V','L3XS7WSJ4AJA3','1G5AJ17XCH2A8','3AXDVZJYN9DRS','MS8R16DY0JQAM','N0PC58FB2XAZ3','ADPFRN3QZRCXK','WJA3YCD4QBWRX','0RJH3FFPYBPEY','LZ5MR1TS37E7W')
+
+restaurants_by_coverage <- read.csv('data/2_palate_data_parquet_cleaned/restaurants_by_4m_coverage.csv') %>%
+  filter(!(location_id %in% bad_restaurants)) %>%
+  pull(location_id)
+
+cpi_food_away <- read.csv("data/inflation.csv") %>%
+  filter(Period != "S01" & Period != "S02") %>%
+  mutate(
+    month = as.numeric(sub("M", "", Period)),  
+    date = as.Date(paste(Year, month, "01", sep = "-")),
+    year = year(date),
+    month = month(date)
+  ) %>% dplyr::select(year, month, Value)
+
+base_year <- 2018
+base_month <- 1
+cpi_base <- cpi_food_away %>% filter(year == base_year & month == base_month) %>% pull(Value)
+
 df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
-  process_predictors()
+  process_predictors() %>%
+  left_join(cpi_food_away, by = c("year", "month")) %>%
+  mutate(
+    vegan_price_real = vegan_window_avg / (Value / cpi_base),
+    meat_price_real = meat_window_avg / (Value / cpi_base),
+    inflation = Value
+  ) %>%
+  identity()
 
-predictors <- c(#"vegan_window_avg",
-                #"vegetarian_window_avg",
-                "meat_window_avg",
-                "day_of_week_cat",
-                #"weekend",
-                #"day_of_month",
-                "month_cat",
-                "season",
-                "year"#,
-                #"date"
-                )
+outcome <- "nonvegan_outcome"
 
-outcome <- "vegan_outcome"
-
+predictors <- c(
+  "vegan_price_real",
+  "meat_price_real",
+  "day_of_week_cat",
+  "weekend",
+  "month_cat",
+  "season",
+  "year",
+  "inflation"
+)
 
 ## ===== Define AR Lag Options =====
 
@@ -42,11 +68,11 @@ ar_lags_options <- list(
   "0"           = c(),
   #"1"           = c(1),
   #"1,2"         = c(1,2),
-  "1,2,3"       = c(1,2,3),
+  #"1,2,3"       = c(1,2,3),
   #"1,7"         = c(1,7),
   #"1,7,14"      = c(1,7,14),
   #"1,2,7"       = c(1,2,7),
-  "1,2,3,7,14"  = c(1,2,3,7,14),
+  #"1,2,3,7,14"  = c(1,2,3,7,14),
   "1,2,3,7,14,21"  = c(1,2,3,7,14,21)
 )
 
