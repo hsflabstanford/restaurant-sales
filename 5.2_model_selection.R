@@ -28,6 +28,7 @@ bad_restaurants <- c('AQD04SM0J92WA','LBMCPAYT7W36V','L3XS7WSJ4AJA3','1G5AJ17XCH
 
 restaurants_by_coverage <- read.csv('data/2_palate_data_parquet_cleaned/restaurants_by_4m_coverage.csv') %>%
   filter(!(location_id %in% bad_restaurants)) %>%
+  filter(!(location_id %in% c('75WYSXR9QBK5M','CB2KHY1C2G9PT'))) %>%
   pull(location_id)
 
 cpi_food_away <- read.csv("data/inflation.csv") %>%
@@ -67,16 +68,16 @@ df_all_intervention_period <- df_all_daily %>%
   ungroup()
 
 ar_lag_sets_1 <- list(
-  c(),
+  #c(),
   c(1),
   c(1,2),
-  c(1,2,3),
-  c(1,2,3,4,5,6,7),
-  c(1,2,3,4,5,6,7,14,21),
+  #c(1,2,3),
+  #c(1,2,3,4,5,6,7),
+  c(1,2,3,4,5,6,7,14,28),
   c(1,2,3,4,5,6,7,14,21,28,42),
   c(1,2,3,4,5,6,7,14,21,28,42,56),
   c(1,3,5,7),
-  c(1,7),
+  #c(1,7),
   c(1,7,14,28),
   c(1,7,28,56),
   c(1,7,14,21,28,42,56),
@@ -90,21 +91,21 @@ ar_lag_sets_1 <- list(
 )
 
 mean_lag_sets_1 <- list(
-  c(),
+  #c(),
   c(1),
-  c(1,2),
-  c(1,2,3),
-  c(1,2,3,4,5,6,7),
-  c(1,2,3,4,5,6,7,14,21),
-  c(1,2,3,4,5,6,7,14,21,28,42),
+  #c(1,2),
+  #c(1,2,3),
+  #c(1,2,3,4,5,6,7),
+  #c(1,2,3,4,5,6,7,14,28),
+  #c(1,2,3,4,5,6,7,14,21,28,42),
   c(1,2,3,4,5,6,7,14,21,28,42,56),
-  c(1,3,5,7),
-  c(1,7),
+  #c(1,3,5,7),
+  #c(1,7),
   c(1,7,14,28),
   c(1,7,28,56),
-  c(1,7,14,21,28,42,56),
+  #c(1,7,14,21,28,42,56),
   c(7),
-  c(7,28),
+  #c(7,28),
   c(7,14,21),
   c(7,28,56),
   c(7,14,21,28),
@@ -294,10 +295,7 @@ parallelize_garch_models <- function(fit_func,
   names(param_grid_lags) <- c("ar_lags", 
                               "mean_lags")
   
-  # Start multisession
-  num_cores <- detectCores() - 1
-  print(num_cores)
-  plan(multisession, workers = num_cores)
+  
   
   # Start memory and time tracking
   mem_used <- mem_used()
@@ -313,30 +311,205 @@ parallelize_garch_models <- function(fit_func,
   print(difftime(end_time, start_time, units = "secs"))
   
   # Return to single core
-  plan(sequential)
   
-  # Save
-  saveRDS(param_grid_lags, file = paste0("param_grid_lags_",loc_id,".rds"))
+  
+  # # Save
+  # saveRDS(param_grid_lags, file = paste0("param_grid_lags_",loc_id,".rds"))
   
   # Return
   param_grid_lags
 }
 
-# for (loc_id in restaurants_by_coverage) {
+# # Start multisession
+# num_cores <- detectCores() - 1
+# print(num_cores)
+# plan(multisession, workers = num_cores)
+# for (loc_id in restaurants_by_coverage[1:6]) {
 # 
+#   # Rprof("profile_output.out")
 #   param_grid_lags <- parallelize_garch_models(fit_func = fit_and_cv,
-#                                               df = df_all_intervention_period,
+#                                               df = df_all_daily, # df_all_intervention_period
 #                                               loc_id = loc_id,
 #                                               outcome = outcome,
 #                                               predictors = predictors,
 #                                               ar_lag_sets = ar_lag_sets_1,
 #                                               mean_lag_sets = mean_lag_sets_1)
+#   # Rprof(NULL)
 # 
-#   saveRDS(param_grid_lags, file = paste0("param_grid_lags_",loc_id,".rds"))
-#   
+#   saveRDS(param_grid_lags, file = paste0("param_grid_lags_entire_data_",loc_id,".rds"))
+# 
 # }
+# 
+# plan(sequential)
+
+fit_and_select_forward <- function(df, loc_id, outcome, predictors, 
+                                   # initial candidate pools for each class:
+                                   initial_AR   = c(1, 2, 7, 28),
+                                   initial_Mean = c(1, 7, 14, 28),
+                                   # predetermined (full) sequences for updates:
+                                   full_AR   = c(1, 2, 3, 4, 5, 6, 7, 14, 21, 28, 35, 42, 49, 56),
+                                   full_Mean = c(1, 2, 3, 4, 5, 6, 7, 14, 21, 28, 35, 42, 49, 56)) {
+  
+  # Initialize the selected lags (empty at start)
+  selected_AR   <- c()
+  selected_Mean <- c()
+  
+  # Build the unified candidate pool as a list of candidates (each with type and lag)
+  candidates <- list()
+  for(lag in initial_AR) {
+    candidates[[length(candidates) + 1]] <- list(type = "AR", lag = lag)
+  }
+  for(lag in initial_Mean) {
+    candidates[[length(candidates) + 1]] <- list(type = "Mean", lag = lag)
+  }
+  
+  best_error <- Inf
+  improvement <- TRUE
+  
+  while(0 < length(candidates) && (length(selected_AR) + length(selected_Mean)) < 10 && improvement) {
+    improvement <- FALSE
+    # Evaluate each candidate by adding it to the current model and computing CV error.
+    candidate_errors <- sapply(candidates, function(candidate) {
+      if(candidate$type == "AR") {
+        new_AR   <- sort(unique(c(selected_AR, candidate$lag)))
+        new_Mean <- selected_Mean
+      } else {
+        new_AR   <- selected_AR
+        new_Mean <- sort(unique(c(selected_Mean, candidate$lag)))
+      }
+      # fit_and_cv_INGARCH is assumed to return the CV error for a given INGARCH model
+      error_val <- fit_and_cv(df, loc_id, outcome, predictors, new_AR, new_Mean)
+      # model <- fit_nbar_model(df, outcome, predictors, new_AR, new_Mean)
+      # res <- residuals(model)
+      # error_val <- sum(res^2) / length(res)
+      
+      return(error_val)
+    })
+    
+    # Find the candidate (AR or Mean) with the minimum error
+    best_candidate_idx   <- which.min(candidate_errors)
+    best_candidate_error <- candidate_errors[best_candidate_idx]
+    
+    if(best_candidate_error < best_error) {
+      improvement <- TRUE
+      best_error <- best_candidate_error
+      chosen_candidate <- candidates[[best_candidate_idx]]
+      
+      # Update the selected set based on the candidate type.
+      if(chosen_candidate$type == "AR") {
+        selected_AR <- sort(unique(c(selected_AR, chosen_candidate$lag)))
+      } else {
+        selected_Mean <- sort(unique(c(selected_Mean, chosen_candidate$lag)))
+      }
+      
+      # Remove the chosen candidate from the unified candidate pool.
+      candidates <- candidates[-best_candidate_idx]
+      
+      # Now update the candidate pool on the chosen side by adding the next available lag.
+      if(chosen_candidate$type == "AR") {
+        next_candidate <- NA
+        # Look in full_AR for the smallest lag greater than the chosen one that isn’t already selected or in the pool.
+        for(lag in full_AR[full_AR > chosen_candidate$lag]) {
+          ar_candidates <- sapply(candidates, function(cand) {
+            if(cand$type == "AR") cand$lag else NA
+          })
+          ar_candidates <- ar_candidates[!is.na(ar_candidates)]
+          if(!(lag %in% selected_AR) && !(lag %in% ar_candidates)) {
+            next_candidate <- lag
+            break
+          }
+        }
+        if(!is.na(next_candidate)) {
+          candidates[[length(candidates) + 1]] <- list(type = "AR", lag = next_candidate)
+        }
+      } else if(chosen_candidate$type == "Mean") {
+        next_candidate <- NA
+        for(lag in full_Mean[full_Mean > chosen_candidate$lag]) {
+          mean_candidates <- sapply(candidates, function(cand) {
+            if(cand$type == "Mean") cand$lag else NA
+          })
+          mean_candidates <- mean_candidates[!is.na(mean_candidates)]
+          if(!(lag %in% selected_Mean) && !(lag %in% mean_candidates)) {
+            next_candidate <- lag
+            break
+          }
+        }
+        if(!is.na(next_candidate)) {
+          candidates[[length(candidates) + 1]] <- list(type = "Mean", lag = next_candidate)
+        }
+      }
+      
+      message("Added ", chosen_candidate$type, " lag: ", chosen_candidate$lag,
+              ". Selected AR: ", paste(selected_AR, collapse = ", "),
+              " | Selected Mean: ", paste(selected_Mean, collapse = ", "))
+      message("Current candidate pool:")
+      for (cand in candidates) {
+        message(cand$type, ": ", cand$lag)
+      }
+    } else {
+      message("No candidate improved the CV error. Stopping selection.")
+      improvement <- FALSE
+    }
+  }
+  
+  message("Final selected lags: AR: ", paste(selected_AR, collapse = ", "),
+          "; Mean: ", paste(selected_Mean, collapse = ", "))
+  return(list(cv_error = best_error, AR = selected_AR, Mean = selected_Mean))
+}
+
+# fit_and_select_forward(df_all_intervention_period %>% 
+#                          filter(location_id == "SRQS8F7JWA9MZ"), 
+#                        "SRQS8F7JWA9MZ", 
+#                        outcome, 
+#                        predictors)
 
 
+
+safe_forward_selection <- function(df, 
+                                   loc_id, 
+                                   outcome, 
+                                   predictors) {
+  tryCatch(
+    {param_grid_lags_fs <- fit_and_select_forward(df %>% filter(location_id == loc_id), 
+                                                 loc_id, 
+                                                 outcome, 
+                                                 predictors)
+    saveRDS(param_grid_lags_fs, file = paste0("param_grid_lags_forward_selection_",loc_id,".rds"))
+    list(success = TRUE, result = param_grid_lags_fs)}, 
+    error = function(e) {
+      message("Forward selection failed or timed out for location ", loc_id, ": ", e$message)
+      list(success = FALSE, error_message = e$message)
+      })
+}
+
+
+parallelize_forward_selection <- function(df,
+                                          location_ids,
+                                          outcome,
+                                          predictors,
+                                          plan_cores = 12) {
+  
+  # Set up the parallel plan with the desired number of cores
+  plan(multisession, workers = plan_cores)
+  
+  # Use future_map to run safe_forward_selection for each location in parallel
+  future_map(
+    location_ids,
+    ~ safe_forward_selection(df, .x, outcome, predictors),
+    .options = furrr_options(seed = TRUE)  # for reproducibility
+  )
+  
+  # Optionally return to sequential processing
+  plan(sequential)
+}
+
+parallelize_forward_selection(df_all_daily, 
+                              restaurants_by_coverage[1:10],
+                              outcome,
+                              predictors)
+
+# summaryRprof("profile_output.out")
+# param_grid_lags
 # param_grid_lags[which.min(unlist(param_grid_lags$cv_results)),]
 # 
 # param_grid_lags
@@ -346,14 +519,14 @@ parallelize_garch_models <- function(fit_func,
 # cv_results
 # 31   5281.302
 
-list_of_param_grids <- list()
-list_of_best_params <- list()
-for (loc_id in restaurants_by_coverage[1:6]) {
-  param_grid_lags <- readRDS(paste0("param_grid_lags_",loc_id,".rds"))
-  list_of_param_grids[[loc_id]] <- param_grid_lags
-  best_params <- param_grid_lags[which.min(unlist(param_grid_lags$cv_results)),]
-  list_of_best_params[[loc_id]] <- best_params
-}
-
-list_of_param_grids
-list_of_best_params
+# list_of_param_grids <- list()
+# list_of_best_params <- list()
+# for (loc_id in restaurants_by_coverage[1:6]) {
+#   param_grid_lags <- readRDS(paste0("param_grid_lags_",loc_id,".rds"))
+#   list_of_param_grids[[loc_id]] <- param_grid_lags
+#   best_params <- param_grid_lags[which.min(unlist(param_grid_lags$cv_results)),]
+#   list_of_best_params[[loc_id]] <- best_params
+# }
+# 
+# list_of_param_grids
+# list_of_best_params
