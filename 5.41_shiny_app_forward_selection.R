@@ -7,10 +7,8 @@ library(shiny)
 library(grid)
 library(gridExtra)
 library(conflicted)
-c("select","filter") %>% 
-  walk(~ conflict_prefer(.x, "dplyr"))
-c("year","month") %>% 
-  walk(~ conflict_prefer(.x, "lubridate"))
+c("select","filter") %>% walk(~ conflict_prefer(.x, "dplyr"))
+c("year","month") %>% walk(~ conflict_prefer(.x, "lubridate"))
 
 # Modeling
 library(tscount)
@@ -19,10 +17,15 @@ library(lmtest)
 library(MASS)
 library(bayesforecast)
 
+# Custom
 source("tools/modeling_functions.R")
 
 
-## ===== Data, Predictors, Outcome =====
+# ===============================
+#             Set Up
+# ===============================
+
+# ===== Data =====
 
 before_after_details_true <- read.csv("data/before_after_details_true.csv")
 
@@ -30,59 +33,13 @@ bad_restaurants <- c('AQD04SM0J92WA','LBMCPAYT7W36V','L3XS7WSJ4AJA3','1G5AJ17XCH
 
 restaurants_by_coverage <- read.csv('data/2_palate_data_parquet_cleaned/restaurants_by_4m_coverage.csv') %>%
   filter(!(location_id %in% bad_restaurants)) %>%
-  filter(!(location_id %in% c("75WYSXR9QBK5M", 
-                              "V3Q26BHF3SE2H", 
-                              "CB2KHY1C2G9PT", 
-                              "LFZFT3VASXPED"))) %>%
+  filter(!(location_id %in% c("75WYSXR9QBK5M", "V3Q26BHF3SE2H", "CB2KHY1C2G9PT", "LFZFT3VASXPED"))) %>%
   pull(location_id)
 
-restaurants_by_coverage
+df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily_weather_inflation.parquet")
 
-cpi_food_away <- read.csv("data/inflation.csv") %>%
-  filter(Period != "S01" & Period != "S02") %>%
-  mutate(
-    month = as.numeric(sub("M", "", Period)),  
-    date = as.Date(paste(Year, month, "01", sep = "-")),
-    year = year(date),
-    month = month(date)
-  ) %>% 
-  select(year, month, Value)
 
-base_year <- 2018
-base_month <- 1
-cpi_base <- cpi_food_away %>% filter(year == base_year & month == base_month) %>% pull(Value)
-
-df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
-  process_predictors() %>%
-  left_join(cpi_food_away, by = c("year", "month")) %>%
-  mutate(
-    vegan_price_real = vegan_window_avg / (Value / cpi_base),
-    meat_price_real = meat_window_avg / (Value / cpi_base),
-    inflation = Value
-  ) %>% 
-  { print(dim(.)); . } %>%
-  left_join(all_weather_data, by = c("location_id", "created_at")) %>%
-  { print(dim(.)); . } %>%
-  group_by(location_id) %>%
-  fill(temp, precip, .direction = "downup") %>%  # Forward fill
-  ungroup() %>%
-  # group_by(location_id) %>%
-  # filter(created_at <= as.Date("2023-03-01")) %>%
-  # ungroup() %>%
-  identity()
-
-num_weeks_before <- 25 # 8
-num_weeks_after <- 17 # 2
-
-# Filter each restaurants to k months before to k months after the promo date in before_after_details_true
-df_all_intervention_period <- df_all_daily %>%
-  left_join(before_after_details_true %>% 
-              mutate(cross_over_date = as.Date(cross_over_date)), 
-            by = "location_id") %>%
-  group_by(location_id) %>%
-  filter(created_at >= (cross_over_date %m-% weeks(num_weeks_before)) &
-           created_at <= (cross_over_date %m+% weeks(num_weeks_after))) %>%
-  ungroup()
+# ===== Predictors & Outcome =====
 
 outcome <- "nonvegan_outcome"
 
@@ -99,99 +56,69 @@ predictors <- c(
   #"precip"
 )
 
-## ===== Define AR Lag Options =====
-df_all_daily %>% filter(location_id == "ED5J990H5VAZT" & is.na(temp)) %>% select(created_at, temp, precip)
 
-#list_of_best_params_intervention <- list()
-list_of_best_params_entire <- list()
+# ===============================
+#       Comparing CV Results
+# ===============================
 
-# # Loop over restaurant IDs (here using the first 6 in restaurants_by_coverage)
-# for (loc_id in restaurants_by_coverage) {
-#   # Read intervention-specific parameter grid
-#   file_intervention <- paste0("param_grid_lags_", loc_id, ".rds")
-#   param_grid_intervention <- readRDS(file_intervention)
-#   best_params_intervention <- param_grid_intervention[which.min(unlist(param_grid_intervention$cv_results)), ]
-#   list_of_best_params_intervention[[loc_id]] <- best_params_intervention
-# }
+readRDS("param_grid_lags_ED5J990H5VAZT.rds")[which.min(unlist(readRDS("param_grid_lags_ED5J990H5VAZT.rds")$cv_results)), ]
+readRDS("param_grid_lags_ED5J990H5VAZT.rds")
+readRDS("param_grid_lags_forward_selection_ED5J990H5VAZT.rds")
 
-# Loop over restaurant IDs (here using the first 6 in restaurants_by_coverage)
-for (loc_id in restaurants_by_coverage) {
-  # Read entire-data parameter grid
-  file_entire <- paste0("param_grid_lags_forward_selection_", loc_id, ".rds")
-  param_grid_entire <- readRDS(file_entire)
-  #print(param_grid_entire)
-  #best_params_entire <- param_grid_entire[which.min(unlist(param_grid_entire$cv_results)), ]
-  best_params_entire <- param_grid_entire
-  list_of_best_params_entire[[loc_id]] <- best_params_entire
-}
-list_of_best_params_entire
-# Initialize the restaurant lag options list
-restaurant_lag_options <- list()
+mylist <- readRDS("param_grid_lags_JHDN7CF1C03X5.rds")
+
+mylist %>%
+  mutate(ar_lags = paste("ar:", map_chr(mylist$ar_lags, ~ paste(.x, collapse = ","))),
+         mean_lags = paste("mean:", map_chr(mylist$mean_lags, ~ paste(.x, collapse = ","))),
+         lags = paste(ar_lags, mean_lags),
+         cv_results = unlist(cv_results)) %>%
+  select(lags, cv_results) %>%
+  as.data.frame() %>%
+  arrange(cv_results)
+
+
+# ===============================
+#       AR/Mean Lag options
+# ===============================
 
 # Populate restaurant lag options based on best params
+restaurant_lag_options <- list()
 for (loc_id in restaurants_by_coverage) {
-  best_params_intervention <- list_of_best_params_intervention[[loc_id]]
-  best_params_entire <- list_of_best_params_entire[[loc_id]]
+  
+  file_entire <- paste0("param_grid_lags_forward_selection_", loc_id, ".rds")
+  best_params <- readRDS(file_entire)
   
   # Create AR lag options for both sources
   ar_lag_options <- list()
-  # if (!is.null(best_params_intervention$ar_lags[[1]]) && length(best_params_intervention$ar_lags[[1]]) > 0) {
-  #   ar_lag_options[["intervention_data"]] <- best_params_intervention$ar_lags[[1]]
-  # }
-  if (!is.null(best_params_entire$AR) && length(best_params_entire$AR) > 0) {
-    ar_lag_options[["entire_data"]] <- best_params_entire$AR
-  } else {
-    ar_lag_options[["entire_data"]] <- numeric(0)
-  }
+  if (!is.null(best_params$AR) && length(best_params$AR) > 0) {
+    ar_lag_options[["entire_data"]] <- best_params$AR} 
+  else {
+    ar_lag_options[["entire_data"]] <- numeric(0)}
   
   # Create Mean lag options for both sources
   mean_lag_options <- list()
-  # if (!is.null(best_params_intervention$mean_lags[[1]]) && length(best_params_intervention$mean_lags[[1]]) > 0) {
-  #   mean_lag_options[["intervention_data"]] <- best_params_intervention$mean_lags[[1]]
-  # }
-  if (!is.null(best_params_entire$Mean) && length(best_params_entire$Mean) > 0) {
-    mean_lag_options[["entire_data"]] <- best_params_entire$Mean
-  } else {
-    mean_lag_options[["entire_data"]] <- numeric(0)
-  }
+  if (!is.null(best_params$Mean) && length(best_params$Mean) > 0) {
+    mean_lag_options[["entire_data"]] <- best_params$Mean} 
+  else {
+    mean_lag_options[["entire_data"]] <- numeric(0)}
   
   # Store the options in the main list for this restaurant location
-  restaurant_lag_options[[loc_id]] <- list(
-    ar = ar_lag_options,
-    mean = mean_lag_options
-  )
+  restaurant_lag_options[[loc_id]] <- list(ar = ar_lag_options, mean = mean_lag_options)
+  
 }
-restaurant_lag_options
+
 # For any restaurant not defined in restaurant_lag_options, use a default set.
 default_lag_options <- list(
   ar   = list("1" = c(1)),
   mean = list("1" = c(1))
 )
 
-## ===== Loop Over All Locations and Store Visuals =====
 
-# # 19 location IDs
-# location_ids <- c(
-#   'SRQS8F7JWA9MZ',
-#   '2HRX9P6HKXA8V',
-#   'JHDN7CF1C03X5',
-#   'L69HYJ4Y3TR91',
-#   'ED5J990H5VAZT',
-#   'W8T41JZK0ZMEP',
-#   'EMBVNVD207CC6',
-#   'C0BE4NDSW26QN',
-#   '75WYSXR9QBK5M',
-#   'V3Q26BHF3SE2H',
-#   'LBZEEFSBJNB3Z',
-#   'SAFK7ND1HR6XS',
-#   'CB2KHY1C2G9PT',
-#   'S8MT0YGD2KTN9',
-#   'LFZFT3VASXPED',
-#   '1SQPTEGYPH0GA',
-#   '9XKJD8DQTH559',
-#   'LQ5EH4BKGV61T',
-#   '78AY09MVJVTYE'
-# )
+# ===============================
+#       Run and Store Models
+# ===============================
+
+# ===== Loop Over All Locations and Store Visuals =====
 
 results_list <- list()
 plot_list <- list()
@@ -201,14 +128,12 @@ for(loc in restaurants_by_coverage) {
   
   # If the location doesn't have specific options, use defaults
   lag_options <- if (!is.null(restaurant_lag_options[[loc]])) {
-    restaurant_lag_options[[loc]]
-  } else {
-    default_lag_options
-  }
+    restaurant_lag_options[[loc]]} 
+  else {
+    default_lag_options}
   
   results_list[[loc]] <- list()
   plot_list[[loc]] <- list()
-  
   for(ar_label in names(lag_options$ar)) {
     for(mean_label in names(lag_options$mean)) {
       
@@ -237,7 +162,6 @@ for(loc in restaurants_by_coverage) {
       plot_list[[loc]][[combined_label]] <- res$diag_plot
       pred_plot_list[[loc]] <- res$pred_plot
       
-      
       # Save the diagnostic plot as a PNG file (with loc, AR, and mean lag labels in the name)
       png_filename <- file.path("modeling_results", paste0("optimal_",loc, "_pred_plot.png"))
       png(png_filename, width = 1200, height = 800)
@@ -248,23 +172,16 @@ for(loc in restaurants_by_coverage) {
       rds_filename <- file.path("modeling_results", paste0("optimal_",loc, "_model.rds"))
       saveRDS(res$model, file = rds_filename)
       
-      # # Save the diagnostic plot as a PNG file (with loc, AR, and mean lag labels in the name)
-      # png_filename <- file.path("modeling_results", paste0(loc, "_diagnostics_", ar_label, "_", mean_label, ".png"))
-      # # png(png_filename, width = 1200, height = 800)
-      # grid.draw(res$diag_plot)
-      # dev.off()
-      # 
-      # # Save the model object as an RDS file
-      # rds_filename <- file.path("modeling_results", paste0(loc, "_model_", ar_label, "_", mean_label, ".rds"))
-      # # saveRDS(res$model, file = rds_filename)
-      
-      
     }
   }
 }
 
 
-# ## ===== Shiny App UI and Server =====
+# ===============================
+#           Run Server
+# ===============================
+
+## ===== Shiny App UI and Server =====
 # 
 # ui <- fluidPage(
 #   titlePanel("Dashboard: Select a Restaurant Location"),
@@ -324,17 +241,5 @@ for(loc in restaurants_by_coverage) {
 # 
 # shinyApp(ui = ui, server = server)
 
-readRDS("param_grid_lags_ED5J990H5VAZT.rds")[which.min(unlist(readRDS("param_grid_lags_ED5J990H5VAZT.rds")$cv_results)), ]
-readRDS("param_grid_lags_ED5J990H5VAZT.rds")
-readRDS("param_grid_lags_forward_selection_ED5J990H5VAZT.rds")
 
-mylist <- readRDS("param_grid_lags_JHDN7CF1C03X5.rds")
 
-mylist %>%
-  mutate(ar_lags = paste("ar:", map_chr(mylist$ar_lags, ~ paste(.x, collapse = ","))),
-         mean_lags = paste("mean:", map_chr(mylist$mean_lags, ~ paste(.x, collapse = ","))),
-         lags = paste(ar_lags, mean_lags),
-         cv_results = unlist(cv_results)) %>%
-  select(lags, cv_results) %>%
-  as.data.frame() %>%
-  arrange(cv_results)

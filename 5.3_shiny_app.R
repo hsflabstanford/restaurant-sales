@@ -5,6 +5,9 @@ library(skimr)
 library(shiny)
 library(grid)
 library(gridExtra)
+library(conflicted)
+c("select","filter") %>% walk(~ conflict_prefer(.x, "dplyr"))
+c("year","month") %>% walk(~ conflict_prefer(.x, "lubridate"))
 
 # Modeling
 library(tscount)
@@ -13,10 +16,15 @@ library(lmtest)
 library(MASS)
 library(bayesforecast)
 
+# Custom
 source("tools/modeling_functions.R")
 
 
-## ===== Data, Predictors, Outcome =====
+# ===============================
+#             Set Up
+# ===============================
+
+# ===== Data, Predictors, Outcome =====
 
 before_after_details_true <- read.csv("data/before_after_details_true.csv")
 
@@ -25,29 +33,6 @@ bad_restaurants <- c('AQD04SM0J92WA','LBMCPAYT7W36V','L3XS7WSJ4AJA3','1G5AJ17XCH
 restaurants_by_coverage <- read.csv('data/2_palate_data_parquet_cleaned/restaurants_by_4m_coverage.csv') %>%
   filter(!(location_id %in% bad_restaurants)) %>%
   pull(location_id)
-
-cpi_food_away <- read.csv("data/inflation.csv") %>%
-  filter(Period != "S01" & Period != "S02") %>%
-  mutate(
-    month = as.numeric(sub("M", "", Period)),  
-    date = as.Date(paste(Year, month, "01", sep = "-")),
-    year = year(date),
-    month = month(date)
-  ) %>% dplyr::select(year, month, Value)
-
-base_year <- 2018
-base_month <- 1
-cpi_base <- cpi_food_away %>% filter(year == base_year & month == base_month) %>% pull(Value)
-
-df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
-  process_predictors() %>%
-  left_join(cpi_food_away, by = c("year", "month")) %>%
-  mutate(
-    vegan_price_real = vegan_window_avg / (Value / cpi_base),
-    meat_price_real = meat_window_avg / (Value / cpi_base),
-    inflation = Value
-  ) %>%
-  identity()
 
 outcome <- "nonvegan_outcome"
 
@@ -59,10 +44,12 @@ predictors <- c(
   "month_cat",
   "season",
   "year",
-  "inflation"
+  "inflation",
+  "temp",
+  "precip"
 )
 
-## ===== Define AR Lag Options =====
+# ===== Define AR Lag Options =====
 
 ar_lags_options <- list(
   "0"           = c(),
@@ -82,30 +69,11 @@ mean_lags_options <- list(
 )
 
 
-## ===== Loop Over All Locations and Store Visuals =====
+# ===============================
+#       Run and Store Models
+# ===============================
 
-# 19 location IDs
-location_ids <- c(
-  'SRQS8F7JWA9MZ',
-  '2HRX9P6HKXA8V',
-  'JHDN7CF1C03X5',
-  'L69HYJ4Y3TR91',
-  'ED5J990H5VAZT',
-  'W8T41JZK0ZMEP',
-  'EMBVNVD207CC6',
-  'C0BE4NDSW26QN',
-  '75WYSXR9QBK5M',
-  'V3Q26BHF3SE2H',
-  'LBZEEFSBJNB3Z',
-  'SAFK7ND1HR6XS',
-  'CB2KHY1C2G9PT',
-  'S8MT0YGD2KTN9',
-  'LFZFT3VASXPED',
-  '1SQPTEGYPH0GA',
-  '9XKJD8DQTH559',
-  'LQ5EH4BKGV61T',
-  '78AY09MVJVTYE'
-)
+# ===== Loop Over All Locations and Store Visuals =====
 
 results_list <- list()
 plot_list <- list()
@@ -141,8 +109,8 @@ for(loc in location_ids[1:2]) {
       # Save the diagnostic plot as a PNG file (with loc, AR, and mean lag labels in the name)
       png_filename <- file.path("modeling_results", paste0(loc, "_diagnostics_", ar_label, "_", mean_label, ".png"))
       # png(png_filename, width = 1200, height = 800)
-      grid.draw(res$diag_plot)
-      dev.off()
+      # grid.draw(res$diag_plot)
+      # dev.off()
       
       # Save the model object as an RDS file
       rds_filename <- file.path("modeling_results", paste0(loc, "_model_", ar_label, "_", mean_label, ".rds"))
@@ -152,7 +120,11 @@ for(loc in location_ids[1:2]) {
 }
 
 
-## ===== Shiny App UI and Server =====
+# ===============================
+#           Run Server
+# ===============================
+
+# ===== Shiny App UI =====
 
 ui <- fluidPage(
   titlePanel("Dashboard: Select a Restaurant Location"),
@@ -171,6 +143,9 @@ ui <- fluidPage(
     )
   )
 )
+
+
+# ===== Shiny App Server =====
 
 server <- function(input, output, session) {
   
