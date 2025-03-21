@@ -1,0 +1,10 @@
+name: appp
+title: appp
+username: jaredwinslow
+account: jaredwinslow
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14285158
+bundleId:
+url: https://jaredwinslow.shinyapps.io/appp/
+version: 1
