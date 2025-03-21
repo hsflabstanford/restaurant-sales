@@ -2,59 +2,22 @@
 library(fpp3) # tibble, dplyr, tidyr, lubridate, ggplot2, tsibble, tsibbledata, feasts, fable
 library(arrow)
 library(skimr)
-library(shiny)
 library(grid)
 library(gridExtra)
-library(lubridate)
 
 # Modeling
 library(tscount)
-# library(sandwich)
-# library(lmtest)
+library(sandwich)
+library(lmtest)
 library(MASS)
 library(bayesforecast)
 
-df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
-  process_predictors() %>%
-  mutate(
-    month = month(created_at),
-    year  = year(created_at)
-  )
-
-cpi_food_away <- read.csv("data/inflation.csv") %>%
-  filter(Period != "S01" & Period != "S02") %>%
-  mutate(
-    month = as.numeric(sub("M", "", Period)),  
-    date = as.Date(paste(Year, month, "01", sep = "-")),
-    year = year(date),
-    month = month(date)
-  ) %>% dplyr::select(year, month, Value)
+df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily_weather_inflation.parquet")
  
 df_ts <- df_all_daily %>%
   mutate(date_interval = date(created_at)) %>%
   as_tsibble(key = location_id, index = date_interval) %>%
   dplyr::select(date_interval, vegan_outcome)
-
-# Define your base period
-base_cpi_year <- 2018
-base_cpi_month <- 1
-
-# Extract the base CPI value from your inflation data
-base_cpi <- cpi_food_away %>%
-  filter(year == base_cpi_year, month == base_cpi_month) %>%
-  pull(Value) %>%
-  first()
-
-# Adjust prices for inflation: convert nominal prices to real (base-period) dollars
-df_all_daily <- df_all_daily %>%
-  left_join(cpi_food_away, by = c("year", "month")) %>%
-  mutate(
-    # Use the ratio: (base CPI / current CPI)
-    cpi_factor = base_cpi / Value,
-    vegan_price_real = vegan_window_avg * cpi_factor,
-    meat_price_real = meat_window_avg * cpi_factor
-  )
-
 
 ## ===== Moving Average Analysis =====
 
