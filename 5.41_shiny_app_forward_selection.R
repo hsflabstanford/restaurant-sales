@@ -85,7 +85,7 @@ mylist %>%
 restaurant_lag_options <- list()
 for (loc_id in restaurants_by_coverage) {
   
-  file_entire <- paste0("param_grid_lags_forward_selection_", loc_id, ".rds")
+  file_entire <- paste0("validation_results/forward_selection/","param_grid_lags_forward_selection_", loc_id, ".rds")
   best_params <- readRDS(file_entire)
   
   # Create AR lag options for both sources
@@ -163,13 +163,13 @@ for(loc in restaurants_by_coverage) {
       pred_plot_list[[loc]] <- res$pred_plot
       
       # Save the diagnostic plot as a PNG file (with loc, AR, and mean lag labels in the name)
-      png_filename <- file.path("modeling_results", paste0("optimal_",loc, "_pred_plot.png"))
+      png_filename <- file.path("modeling_results/forward_selection", paste0("optimal_",loc, "_pred_plot.png"))
       png(png_filename, width = 1200, height = 800)
       grid.draw(res$pred_plot)
       dev.off()
       
       # Save the model object as an RDS file
-      rds_filename <- file.path("modeling_results", paste0("optimal_",loc, "_model.rds"))
+      rds_filename <- file.path("modeling_results/forward_selection", paste0("optimal_",loc, "_model.rds"))
       saveRDS(res$model, file = rds_filename)
       
     }
