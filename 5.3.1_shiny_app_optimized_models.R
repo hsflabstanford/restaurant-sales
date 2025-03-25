@@ -6,6 +6,7 @@ library(skimr)
 library(shiny)
 library(grid)
 library(gridExtra)
+library(png)
 library(conflicted)
 c("select","filter") %>% walk(~ conflict_prefer(.x, "dplyr"))
 c("year","month") %>% walk(~ conflict_prefer(.x, "lubridate"))
@@ -148,7 +149,7 @@ default_lag_options <- list(
 # ===== Loop Over All Locations and Store Visuals =====
 
 results_list <- list()
-plot_list <- list()
+diag_plot_list <- list()
 pred_plot_list <- list()
 
 for(loc in restaurants_by_coverage[1:6]) {
@@ -160,7 +161,8 @@ for(loc in restaurants_by_coverage[1:6]) {
     default_lag_options}
   
   results_list[[loc]] <- list()
-  plot_list[[loc]] <- list()
+  diag_plot_list[[loc]] <- list()
+  pred_plot_list[[loc]] <- list()
   for(ar_label in names(lag_options$ar)) {
     for(mean_label in names(lag_options$mean)) {
       
@@ -168,37 +170,58 @@ for(loc in restaurants_by_coverage[1:6]) {
           "with AR lags:", ar_label, 
           "and Mean lags:", mean_label, "\n")
       
-      res <- process_models(
-        df_all_daily, 
-        loc         = loc, 
-        outcome     = outcome,
-        predictors  = predictors,
-        ar_lags     = lag_options$ar[[ar_label]], 
-        mean_lags   = lag_options$mean[[mean_label]],
-        model_type  = "nbar", 
-        sample      = FALSE, 
-        standardize = TRUE, 
-        train_frac  = 0.7
-      )
+      model_path <- file.path("modeling_results/grid_search", paste0("gs_optimal_",loc, "_model.rds"))
+      diag_path <- file.path("modeling_results/grid_search", paste0("gs_optimal_",loc, "_diag_plot.png"))
+      pred_path <- file.path("modeling_results/grid_search", paste0("gs_optimal_",loc, "_pred_plot.png"))
+      
+      if (file.exists(model_path) & file.exists(pred_path)) {
+        res <- list(model=readRDS(model_path),
+                    #diag_plot=grid::rasterGrob(readPNG(diag_path), interpolate = TRUE)),
+                    pred_plot=grid::rasterGrob(readPNG(pred_path), interpolate = TRUE))}
+      
+      else {
+        res <- process_models(
+          df_all_daily, 
+          loc         = loc, 
+          outcome     = outcome,
+          predictors  = predictors,
+          ar_lags     = lag_options$ar[[ar_label]], 
+          mean_lags   = lag_options$mean[[mean_label]],
+          model_type  = "nbar", 
+          sample      = FALSE, 
+          standardize = TRUE, 
+          train_frac  = 0.7)}
+      
       
       # Create a combined label for both AR and mean lags
       combined_label <- paste0("AR: ", ar_label, " | Mean: ", mean_label)
       
       # Store results in the nested lists
       results_list[[loc]][[combined_label]] <- res$model
-      plot_list[[loc]][[combined_label]] <- res$diag_plot
-      pred_plot_list[[loc]] <- res$pred_plot
+      diag_plot_list[[loc]][[combined_label]] <- res$diag_plot
+      pred_plot_list[[loc]][[combined_label]] <- res$pred_plot
       
+      # Saving models and plots
+      save <- FALSE
+      if (save) {
       
-      # Save the diagnostic plot as a PNG file (with loc, AR, and mean lag labels in the name)
-      png_filename <- file.path("modeling_results/grid_search", paste0("gs_optimal_",loc, "_pred_plot.png"))
-      png(png_filename, width = 1200, height = 800)
-      grid.draw(res$pred_plot)
-      dev.off()
-
-      # Save the model object as an RDS file
-      rds_filename <- file.path("modeling_results/grid_search", paste0("gs_optimal_",loc, "_model.rds"))
-      saveRDS(res$model, file = rds_filename)
+        # Save the model object as an RDS file
+        rds_filename <- file.path("modeling_results/grid_search", paste0("gs_optimal_",loc, "_model.rds"))
+        saveRDS(res$model, file = rds_filename)
+        
+        # Save the diagnostic plot as a PNG file (with loc, AR, and mean lag labels in the name)
+        png_filename_diag <- file.path("modeling_results/grid_search", paste0("gs_optimal_",loc, "_diag_plot.png"))
+        png(png_filename_diag, width = 1200, height = 800)
+        grid.draw(res$diag_plot)
+        dev.off()
+        
+        # Save the pred plot as a PNG file (with loc, AR, and mean lag labels in the name)
+        png_filename_pred <- file.path("modeling_results/grid_search", paste0("gs_optimal_",loc, "_pred_plot.png"))
+        png(png_filename_pred, width = 1200, height = 800)
+        grid.draw(res$pred_plot)
+        dev.off()
+        
+      }
       
     }
   }
@@ -209,62 +232,62 @@ for(loc in restaurants_by_coverage[1:6]) {
 #           Run Server
 # ===============================
 
-## ===== Shiny App UI and Server =====
+# ===== Shiny App UI and Server =====
 
-# ui <- fluidPage(
-#   titlePanel("Dashboard: Select a Restaurant Location"),
-#   sidebarLayout(
-#     sidebarPanel(
-#       selectInput("restaurant_id", "Choose a restaurant ID:",
-#                   choices = restaurants_by_coverage, selected = restaurants_by_coverage[1]),
-#       # Use UI outputs for lag options so they update based on the selected restaurant
-#       uiOutput("ar_lags_ui"),
-#       uiOutput("mean_lags_ui")
-#     ),
-#     mainPanel(
-#       h3(textOutput("restaurant_info")),
-#       plotOutput("selected_plot")
-#     )
-#   )
-# )
-# 
-# server <- function(input, output, session) {
-# 
-#   # A reactive expression to retrieve the lag options for the selected restaurant
-#   restaurant_options <- reactive({
-#     if (!is.null(restaurant_lag_options[[input$restaurant_id]])) {
-#       restaurant_lag_options[[input$restaurant_id]]
-#     } else {
-#       default_lag_options
-#     }
-#   })
-# 
-#   # Render UI for AR lag selection based on the selected restaurant
-#   output$ar_lags_ui <- renderUI({
-#     selectInput("ar_lags", "Choose AR lag set:",
-#                 choices = names(restaurant_options()$ar),
-#                 selected = names(restaurant_options()$ar)[1])
-#   })
-# 
-#   # Render UI for Mean lag selection based on the selected restaurant
-#   output$mean_lags_ui <- renderUI({
-#     selectInput("mean_lags", "Choose Mean lag set:",
-#                 choices = names(restaurant_options()$mean),
-#                 selected = names(restaurant_options()$mean)[1])
-#   })
-# 
-#   output$restaurant_info <- renderText({
-#     paste("Restaurant Location ID:", input$restaurant_id,
-#           "| AR lag set:", input$ar_lags,
-#           "| Mean lag set:", input$mean_lags)
-#   })
-# 
-#   output$selected_plot <- renderPlot({
-#     # Construct the combined label to access the correct plot
-#     combined_label <- paste0("AR: ", input$ar_lags, " | Mean: ", input$mean_lags)
-#     selected_plot <- plot_list[[ input$restaurant_id ]][[ combined_label ]]
-#     grid::grid.draw(selected_plot)
-#   })
-# }
-# 
-# shinyApp(ui = ui, server = server)
+ui <- fluidPage(
+  titlePanel("Dashboard: Select a Restaurant Location"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput("restaurant_id", "Choose a restaurant ID:",
+                  choices = restaurants_by_coverage, selected = restaurants_by_coverage[1]),
+      # Use UI outputs for lag options so they update based on the selected restaurant
+      uiOutput("ar_lags_ui"),
+      uiOutput("mean_lags_ui")
+    ),
+    mainPanel(
+      h3(textOutput("restaurant_info")),
+      plotOutput("selected_plot")
+    )
+  )
+)
+
+server <- function(input, output, session) {
+
+  # A reactive expression to retrieve the lag options for the selected restaurant
+  restaurant_options <- reactive({
+    if (!is.null(restaurant_lag_options[[input$restaurant_id]])) {
+      restaurant_lag_options[[input$restaurant_id]]
+    } else {
+      default_lag_options
+    }
+  })
+
+  # Render UI for AR lag selection based on the selected restaurant
+  output$ar_lags_ui <- renderUI({
+    selectInput("ar_lags", "Choose AR lag set:",
+                choices = names(restaurant_options()$ar),
+                selected = names(restaurant_options()$ar)[1])
+  })
+
+  # Render UI for Mean lag selection based on the selected restaurant
+  output$mean_lags_ui <- renderUI({
+    selectInput("mean_lags", "Choose Mean lag set:",
+                choices = names(restaurant_options()$mean),
+                selected = names(restaurant_options()$mean)[1])
+  })
+
+  output$restaurant_info <- renderText({
+    paste("Restaurant Location ID:", input$restaurant_id,
+          "| AR lag set:", input$ar_lags,
+          "| Mean lag set:", input$mean_lags)
+  })
+
+  output$selected_plot <- renderPlot({
+    # Construct the combined label to access the correct plot
+    combined_label <- paste0("AR: ", input$ar_lags, " | Mean: ", input$mean_lags)
+    selected_plot <- pred_plot_list[[ input$restaurant_id ]][[ combined_label ]]
+    grid::grid.draw(selected_plot)
+  })
+}
+
+shinyApp(ui = ui, server = server)
