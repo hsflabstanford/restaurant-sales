@@ -21,37 +21,11 @@ library(bayesforecast)
 # Custom
 source("tools/modeling_functions.R")
 
-# # Set the folder path
-# folder <- "D:/My Stuff/HSFL/restaurant-sales-testing/modeling_results/grid_search"
 
-# # First part: Insert nonvegan_outcome before last underscore
-# insert_str <- "nonvegan_outcome"
-# all_entries <- list.files(folder, full.names = TRUE)
-# files <- all_entries[file.info(all_entries)$isdir == FALSE]
-# base_names <- basename(files)
 
-# new_base_names <- sub(
-#   "^(.+)_([^_]+)$",
-#   paste0("\\1_", insert_str, "_\\2"),
-#   base_names)
-# new_files <- file.path(folder, new_base_names)
-# file.rename(files, new_files)
-
-# # Second part: Remove nonvegan_outcome that was just inserted
-# all_entries <- list.files(folder, full.names = TRUE)
-# files <- all_entries[file.info(all_entries)$isdir == FALSE]
-# base_names <- basename(files)
-
-# original_base_names <- sub(
-#   paste0("_", insert_str, "_([^_]+)$"),  # Match the pattern we added
-#   "_\\1",  # Replace with just the last segment
-#   base_names)
-# original_files <- file.path(folder, original_base_names)
-# file.rename(files, original_files)
-
-# ===============================
-#             Set Up
-# ===============================
+# ─────────────────────────────────────────────────────────────
+# Step 1: Set-up
+# ─────────────────────────────────────────────────────────────
 
 # ===== Data =====
 
@@ -76,8 +50,8 @@ df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_
 
 # ===== Subset Data =====
 
-num_weeks_before <- 25 # 8
-num_weeks_after <- 17 # 2
+num_weeks_before <- 25
+num_weeks_after <- 17
 
 # Filter each restaurants to k months before to k months after the promo date in before_after_details_true
 df_all_intervention_period <- df_all_daily %>%
@@ -90,7 +64,7 @@ df_all_intervention_period <- df_all_daily %>%
   ungroup()
 
 
-# ===== Predictors =====
+# ===== Predictors & Outcomes =====
 
 predictors <- c(
   "vegan_price_real",
@@ -105,66 +79,43 @@ predictors <- c(
   "precip"
 )
 
-
-# ===============================
-#       AR/Mean Lag options
-# ===============================
-
-#list_of_best_params_intervention <- list()
-list_of_best_params_entire <- list()
-
-# # Loop over restaurant IDs (here using the first 6 in restaurants_by_coverage)
-# for (loc_id in restaurants_by_coverage) {
-#   # Read intervention-specific parameter grid
-#   file_intervention <- paste0("param_grid_lags_", loc_id, ".rds")
-#   param_grid_intervention <- readRDS(file_intervention)
-#   best_params_intervention <- param_grid_intervention[which.min(unlist(param_grid_intervention$cv_results)), ]
-#   list_of_best_params_intervention[[loc_id]] <- best_params_intervention
-# }
-
-# Define outcomes and data types
 outcomes <- c("nonvegan_outcome", "vegan_outcome")
+
 data_types <- c("entire", "intervention")
+
+
+# ─────────────────────────────────────────────────────────────
+# Step 2: Retrieve AR/mean lag options
+# ─────────────────────────────────────────────────────────────
+
 
 # Loop through restaurants to populate lag options
 restaurant_lag_options <- list()
 for (loc_id in restaurants_by_coverage[1:6]) {
+  
   # Read parameters
-  file_entire <- paste0("validation_results/", "param_grid_lags_", loc_id, ".rds")
-  param_grid_entire <- readRDS(file_entire)
+  param_grid_entire <- readRDS(paste0("validation_results/", "param_grid_lags_", loc_id, ".rds"))
+  param_grid_intervention <- readRDS(paste0("param_grid_lags_", loc_id, ".rds"))
   best_params_entire <- param_grid_entire[which.min(unlist(param_grid_entire$cv_results)), ]
+  best_params_intervention <- param_grid_intervention[which.min(unlist(param_grid_intervention$cv_results)), ]
   
   # Get AR and Mean lags
-  ar_lags <- if (!is.null(best_params_entire$ar_lags[[1]]) && length(best_params_entire$ar_lags[[1]]) > 0) {
-    best_params_entire$ar_lags[[1]]}
-  else {
-    numeric(0)}
-  
-  mean_lags <- if (!is.null(best_params_entire$mean_lags[[1]]) && length(best_params_entire$mean_lags[[1]]) > 0) {
-    best_params_entire$mean_lags[[1]]}
-  else {
-    numeric(0)}
-  
-  # Create lag combination string
-  ar_str <- if (length(ar_lags) > 0) {
-    paste("AR:", paste(ar_lags, collapse = ","))}
-  else {
-    "AR: none"}
-  
-  mean_str <- if (length(mean_lags) > 0) {
-    paste("Mean:", paste(mean_lags, collapse = ","))}
-  else {
-    "Mean: none"}
-  
-  lag_combo <- paste(ar_str, mean_str)
+  ar_lags <- best_params_entire$ar_lags[[1]]
+  mean_lags <- best_params_entire$mean_lags[[1]]
   
   # Create the lag combination list
   lag_combo_list <- list(
     ar = ar_lags,
-    mean = mean_lags
+    mean = mean_lags,
+    cv = best_params_entire$cv_results[[1]]
   )
   
-  # Build nested structure for this restaurant
+  # Create lag combination string
+  ar_str <- if (!is.null(ar_lags)) {paste("AR:", paste(ar_lags, collapse = ","))} else {"AR: none"}
+  mean_str <- if (!is.null(mean_lags)) {paste("Mean:", paste(mean_lags, collapse = ","))} else {"Mean: none"}
+  lag_combo <- paste(ar_str, mean_str)
+  
+  # Build nested list for each restaurant
   restaurant_lag_options[[loc_id]] <- list()
   for (outcome in outcomes) {
     restaurant_lag_options[[loc_id]][[outcome]] <- list()
@@ -198,7 +149,7 @@ for (outcome in outcomes) {
 
 # ===== Loop Over All Locations and Store Visuals =====
 
-results_list <- list()
+model_list <- list()
 diag_plot_list <- list()
 pred_plot_list <- list()
 
@@ -210,19 +161,19 @@ for (loc in restaurants_by_coverage) {
   else {
     default_lag_options}
   
-  results_list[[loc]] <- list()
+  model_list[[loc]] <- list()
   diag_plot_list[[loc]] <- list()
   pred_plot_list[[loc]] <- list()
   
   # Process each outcome
   for (outcome in outcomes) {
-    results_list[[loc]][[outcome]] <- list()
+    model_list[[loc]][[outcome]] <- list()
     diag_plot_list[[loc]][[outcome]] <- list()
     pred_plot_list[[loc]][[outcome]] <- list()
     
     # Process each data type
     for (data_type in data_types) {
-      results_list[[loc]][[outcome]][[data_type]] <- list()
+      model_list[[loc]][[outcome]][[data_type]] <- list()
       diag_plot_list[[loc]][[outcome]][[data_type]] <- list()
       pred_plot_list[[loc]][[outcome]][[data_type]] <- list()
       
@@ -284,7 +235,7 @@ for (loc in restaurants_by_coverage) {
             train_frac = 0.7)}
         
         # Store results
-        results_list[[loc]][[outcome]][[data_type]][[lag_combo]] <- res$model
+        model_list[[loc]][[outcome]][[data_type]][[lag_combo]] <- res$model
         diag_plot_list[[loc]][[outcome]][[data_type]][[lag_combo]] <- res$diag_plot
         pred_plot_list[[loc]][[outcome]][[data_type]][[lag_combo]] <- res$pred_plot
         
