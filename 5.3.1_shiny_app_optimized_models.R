@@ -88,22 +88,18 @@ data_types <- c("entire", "intervention")
 # Step 2: Retrieve AR/mean lag options
 # ─────────────────────────────────────────────────────────────
 
-
-# Loop through restaurants to populate lag options
 restaurant_lag_options <- list()
 for (loc_id in restaurants_by_coverage[1:6]) {
   
   # Read parameters
   param_grid_entire <- readRDS(paste0("validation_results/", "param_grid_lags_", loc_id, ".rds"))
-  param_grid_intervention <- readRDS(paste0("param_grid_lags_", loc_id, ".rds"))
+  param_grid_intervention <- readRDS(paste0("validation_results/param_grid_lags_", loc_id, ".rds"))
   best_params_entire <- param_grid_entire[which.min(unlist(param_grid_entire$cv_results)), ]
   best_params_intervention <- param_grid_intervention[which.min(unlist(param_grid_intervention$cv_results)), ]
   
-  # Get AR and Mean lags
   ar_lags <- best_params_entire$ar_lags[[1]]
   mean_lags <- best_params_entire$mean_lags[[1]]
   
-  # Create the lag combination list
   lag_combo_list <- list(
     ar = ar_lags,
     mean = mean_lags,
@@ -149,84 +145,58 @@ for (outcome in outcomes) {
 
 # ===== Loop Over All Locations and Store Visuals =====
 
-model_list <- list()
-diag_plot_list <- list()
-pred_plot_list <- list()
+results_list <- list()
+
 
 for (loc in restaurants_by_coverage) {
+  results_list[[loc]] <- list()
+  options <- restaurant_lag_options[[loc]]
+  lag_options <- if (!is.null(options)) {options} else {default_lag_options}
+  intervention_date <- before_after_details_true %>% 
+    filter(location_id == loc) %>%
+    pull(cross_over_date)
   
-  # Get the lag options for this location
-  lag_options <- if (!is.null(restaurant_lag_options[[loc]])) {
-    restaurant_lag_options[[loc]]}
-  else {
-    default_lag_options}
-  
-  model_list[[loc]] <- list()
-  diag_plot_list[[loc]] <- list()
-  pred_plot_list[[loc]] <- list()
-  
-  # Process each outcome
   for (outcome in outcomes) {
-    model_list[[loc]][[outcome]] <- list()
-    diag_plot_list[[loc]][[outcome]] <- list()
-    pred_plot_list[[loc]][[outcome]] <- list()
+    results_list[[loc]][[outcome]] <- list()
     
-    # Process each data type
     for (data_type in data_types) {
-      model_list[[loc]][[outcome]][[data_type]] <- list()
-      diag_plot_list[[loc]][[outcome]][[data_type]] <- list()
-      pred_plot_list[[loc]][[outcome]][[data_type]] <- list()
-      
-      # Process each lag combination
+      results_list[[loc]][[outcome]][[data_type]] <- list()
+
       for (lag_combo in names(lag_options[[outcome]][[data_type]])) {
-        # Get the AR and Mean lags for this combination
-        current_lags <- lag_options[[outcome]][[data_type]][[lag_combo]]
-        ar_lags <- current_lags$ar
-        mean_lags <- current_lags$mean
         
-        # Construct file paths
         model_path <- file.path(
           "modeling_results/grid_search",
-          paste0(loc, "_", data_type, "_", outcome, "_model.rds")
-        )
+          paste0(loc, "_", data_type, "_", outcome, "_model.rds"))
         diag_path <- file.path(
           "modeling_results/grid_search",
-          paste0(loc, "_", data_type, "_", outcome, "_diagplot.png")
-        )
+          paste0(loc, "_", data_type, "_", outcome, "_diagplot.png"))
         pred_path <- file.path(
           "modeling_results/grid_search",
-          paste0(loc, "_", data_type, "_", outcome, "_predplot.png")
-        )
+          paste0(loc, "_", data_type, "_", outcome, "_predplot.png"))
         
-        # If files exist, retrieve them; otherwise process new model
         if (file.exists(model_path) && file.exists(diag_path) && file.exists(pred_path)) {
-          # Load existing model and plots
           res <- list(
             model = readRDS(model_path),
             diag_plot = grid::rasterGrob(readPNG(diag_path), interpolate = TRUE),
-            pred_plot = grid::rasterGrob(readPNG(pred_path), interpolate = TRUE)
-          )
-          cat(
-            "Retrieved | Restaurant:", loc, "Outcome:", outcome,
-            "| Data:", data_type, "| Lags:", lag_combo, "\n"
-          )
-        }
+            pred_plot = grid::rasterGrob(readPNG(pred_path), interpolate = TRUE))
+          
+          cat("Retrieved | Restaurant:", loc, "Outcome:", outcome,
+              "| Data:", data_type, "| Lags:", lag_combo, "\n")}
+        
         else {
-          # Process new model
           cat("Processing | Restaurant:", loc, "Outcome:", outcome,
               "| Data:", data_type, "| Lags:", lag_combo, "\n")
           
-          # Select appropriate data based on data_type
-          data_to_use <- if (data_type == "entire") {
-            df_all_daily}
-          else {
-            df_all_intervention_period}
+          data_to_use <- if (data_type == "entire") {df_all_daily} else {df_all_intervention_period}
+          ar_lags <- lag_options[[outcome]][[data_type]][[lag_combo]][['ar']]
+          mean_lags <- lag_options[[outcome]][[data_type]][[lag_combo]][['mean']]
           
           res <- process_models(
             data_to_use,
             loc = loc,
             outcome = outcome,
             predictors = predictors,
+            date = intervention_date,
             ar_lags = ar_lags,
             mean_lags = mean_lags,
             model_type = "nbar",
@@ -234,14 +204,12 @@ for (loc in restaurants_by_coverage) {
             standardize = TRUE,
             train_frac = 0.7)}
         
-        # Store results
-        model_list[[loc]][[outcome]][[data_type]][[lag_combo]] <- res$model
-        diag_plot_list[[loc]][[outcome]][[data_type]][[lag_combo]] <- res$diag_plot
-        pred_plot_list[[loc]][[outcome]][[data_type]][[lag_combo]] <- res$pred_plot
+        results_list[[loc]][[outcome]][[data_type]][[lag_combo]] <- res
         
         # Save results if needed
-        save <- TRUE
+        save <- FALSE
         if (save) {
+          
           saveRDS(res$model, file = model_path)
           
           png(diag_path, width = 2400, height = 1600, res = 300)
@@ -251,6 +219,7 @@ for (loc in restaurants_by_coverage) {
           png(pred_path, width = 2400, height = 1600, res = 300)
           grid.draw(res$pred_plot)
           dev.off()}
+        
       }
     }
   }
@@ -268,6 +237,7 @@ ui <- fluidPage(
   titlePanel("Restaurant Sales Model Dashboard"),
   sidebarLayout(
     sidebarPanel(
+      
       # Restaurant selection
       selectInput("restaurant_id", "Choose a restaurant:",
                   choices = restaurants_by_coverage,
@@ -294,13 +264,18 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
+  
   # Get available lag combinations based on selected outcome and data type
   available_lag_combos <- reactive({
     if (!is.null(restaurant_lag_options[[input$restaurant_id]])) {
-      names(restaurant_lag_options[[input$restaurant_id]][[input$outcome]][[input$data_type]])}
+      names(restaurant_lag_options
+            [[input$restaurant_id]]
+            [[input$outcome]]
+            [[input$data_type]])}
     else {
-      names(default_lag_options[[input$outcome]][[input$data_type]])}})
-  
+      names(default_lag_options
+            [[input$outcome]]
+            [[input$data_type]])}})
   
   # Render UI for lag combination selection
   output$lag_combo_ui <- renderUI({
@@ -311,17 +286,32 @@ server <- function(input, output, session) {
   
   # Display restaurant information
   output$restaurant_info <- renderText({
+    
+    if (!is.null(restaurant_lag_options[[input$restaurant_id]])) {
+      lag_options <- restaurant_lag_options[[input$restaurant_id]][[input$outcome]][[input$data_type]]
+    } else {
+      lag_options <- default_lag_options[[input$outcome]][[input$data_type]]
+    }
+    
+    cv_value <- lag_options[[input$lag_combo]][["cv"]]
+    
     paste("Restaurant:", input$restaurant_id,
-          "| Outcome:", input$outcome,
-          "| Data:", input$data_type,
-          "| Lags:", input$lag_combo)
+          "\n| Outcome:", input$outcome,
+          "\n| Data:", input$data_type,
+          "\n| Lags:", input$lag_combo,
+          "\n| CV:", cv_value)
   })
   
   # Display the selected plot
   output$selected_plot <- renderPlot({
-    selected_plot <- pred_plot_list[[input$restaurant_id]][[input$outcome]][[input$data_type]][[input$lag_combo]]
+    selected_plot <- (results_list
+                      [[input$restaurant_id]]
+                      [[input$outcome]]
+                      [[input$data_type]]
+                      [[input$lag_combo]]
+                      [['pred_plot']])
     grid::grid.draw(selected_plot)
-  }, height = 800)
+  }, height = 600)
 }
 
 shinyApp(ui = ui, server = server)
