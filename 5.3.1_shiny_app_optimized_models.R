@@ -68,11 +68,11 @@ restaurants_by_coverage <- read.csv("data/2_palate_data_parquet_cleaned/restaura
   filter(!(location_id %in% c("75WYSXR9QBK5M",
                               "V3Q26BHF3SE2H",
                               "CB2KHY1C2G9PT",
-                              "LFZFT3VASXPED"))) %>%
+                              "LFZFT3VASXPED",
+                              "LQ5EH4BKGV61T"))) %>%
   pull(location_id)
 
 df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily_weather_inflation.parquet")
-
 
 # ===== Subset Data =====
 
@@ -127,6 +127,7 @@ outcomes <- c("nonvegan_outcome", "vegan_outcome")
 data_types <- c("entire", "intervention")
 
 # Loop through restaurants to populate lag options
+restaurant_lag_options <- list()
 for (loc_id in restaurants_by_coverage[1:6]) {
   # Read parameters
   file_entire <- paste0("validation_results/", "param_grid_lags_", loc_id, ".rds")
@@ -202,6 +203,7 @@ diag_plot_list <- list()
 pred_plot_list <- list()
 
 for (loc in restaurants_by_coverage) {
+  
   # Get the lag options for this location
   lag_options <- if (!is.null(restaurant_lag_options[[loc]])) {
     restaurant_lag_options[[loc]]}
@@ -317,7 +319,7 @@ ui <- fluidPage(
     sidebarPanel(
       # Restaurant selection
       selectInput("restaurant_id", "Choose a restaurant:",
-                  choices = restaurants_by_coverage[1:6],
+                  choices = restaurants_by_coverage,
                   selected = restaurants_by_coverage[1]),
       
       # Outcome selection
@@ -341,17 +343,13 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
-  # Get lag options for the selected restaurant
-  restaurant_options <- reactive({
-    if (!is.null(restaurant_lag_options[[input$restaurant_id]])) {
-      restaurant_lag_options[[input$restaurant_id]]}
-    else {
-      default_lag_options}})
-  
   # Get available lag combinations based on selected outcome and data type
   available_lag_combos <- reactive({
-    names(restaurant_options()[[input$outcome]][[input$data_type]])
-  })
+    if (!is.null(restaurant_lag_options[[input$restaurant_id]])) {
+      names(restaurant_lag_options[[input$restaurant_id]][[input$outcome]][[input$data_type]])}
+    else {
+      names(default_lag_options[[input$outcome]][[input$data_type]])}})
+  
   
   # Render UI for lag combination selection
   output$lag_combo_ui <- renderUI({
@@ -376,3 +374,4 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui = ui, server = server)
+
