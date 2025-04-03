@@ -23,3 +23,6 @@ renv/.gitignore
 renv.zip
 
 weather_token.txt
+
+.RDataTmp
+.RDataTmp1
