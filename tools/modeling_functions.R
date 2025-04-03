@@ -321,26 +321,34 @@ diag_plots <- function(loc, train_weekly, test_weekly, ar_label, mean_label) {
   )
 }
 
-plot_train_test_side_by_side <- function(loc, train_weekly, test_weekly, ar_label, mean_label) {
+plot_train_test_side_by_side <- function(loc, train_weekly, test_weekly, date, ar_label, mean_label) {
   
   # Create the plot
-  p <- ggplot() +
+  ggplot() +
+    
     # Plot observations from both training and testing (same color)
     geom_line(data = train_weekly, aes(x = week, y = obs), color = "blue", size = 1) +
     geom_line(data = test_weekly, aes(x = week, y = obs), color = "blue", size = 1) +
+    
     # Plot training predictions (red) and testing predictions (green)
     geom_line(data = train_weekly, aes(x = week, y = pred, color = "Train Prediction"), size = 1) +
     geom_line(data = test_weekly, aes(x = week, y = pred, color = "Test Prediction"), size = 1) +
-    labs(title = paste("Training and Testing Predictions: Restaurant", loc, "- AR lags:", ar_label, "- Mean lags:", mean_label),
+  
+    # Plot vertical line at intervention date
+    geom_vline(xintercept = with_tz(ymd_hms(date), "UTC"), linetype = "dashed", color = "darkgreen") +
+    
+    # Labels
+    labs(title = paste0("Train Test Pred | Restaurant:", loc, "| AR lags:", ar_label, "| Mean lags:", mean_label),
          x = "Day", y = "Count", color = "Legend") +
     theme_minimal() +
     scale_color_manual(values = c("Train Prediction" = "red", "Test Prediction" = "orange"))
-  
-  p
+
 }
 
+
+
 # Primary function for putting together all visualizations to later be used in a Shiny app
-process_models <- function(df, loc, outcome, predictors, model_type="nb", ar_lags=c(), mean_lags=c(), sample=FALSE, standardize=TRUE, train_frac=0.5) {
+process_models <- function(df, loc, outcome, predictors, date, model_type="nb", ar_lags=c(), mean_lags=c(), sample=FALSE, standardize=TRUE, train_frac=0.5) {
   
   # model_dir <- file.path("modeling_results")
   # model_file <- file.path(model_dir, paste0(loc, "_model.rds"))
@@ -391,7 +399,7 @@ process_models <- function(df, loc, outcome, predictors, model_type="nb", ar_lag
   diag_grob <- diag_plots(loc, train_weekly, test_weekly, paste(ar_lags, collapse = ","), paste(mean_lags, collapse = ","))
   
   # Show prediction plot, train and test combined
-  pred_plot <- plot_train_test_side_by_side(loc, train_weekly, test_weekly, paste(ar_lags, collapse = ","), paste(mean_lags, collapse = ","))
+  pred_plot <- plot_train_test_side_by_side(loc, train_weekly, test_weekly, date, paste(ar_lags, collapse = ","), paste(mean_lags, collapse = ","))
   
   return(list(model = model, diag_plot = diag_grob, pred_plot = pred_plot))
 }
