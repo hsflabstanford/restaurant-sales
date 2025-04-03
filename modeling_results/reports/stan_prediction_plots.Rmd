@@ -1,0 +1,51 @@
+---
+title: "stan_prediction_plots"
+output: html_document
+date: "2025-04-02"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(kableExtra)
+```
+
+```{r, echo=FALSE}
+location_ids <- c("SRQS8F7JWA9MZ",
+                  "2HRX9P6HKXA8V",
+                  "JHDN7CF1C03X5",
+                  "L69HYJ4Y3TR91",
+                  "ED5J990H5VAZT",
+                  "W8T41JZK0ZMEP",
+                  "EMBVNVD207CC6",
+                  "C0BE4NDSW26QN",
+                  #"LBZEEFSBJNB3Z",
+                  "SAFK7ND1HR6XS",
+                  "S8MT0YGD2KTN9",
+                  "1SQPTEGYPH0GA",
+                  "9XKJD8DQTH559",
+                  #"LQ5EH4BKGV61T",
+                  "78AY09MVJVTYE")
+
+stan <- c(
+  paste0("![](../stan/", 
+         location_ids, 
+         "_entire_nonvegan_outcome_predplot.png)"))
+
+grid_search <- c(
+ paste0("![](../grid_search/",
+        location_ids,
+        "_entire_nonvegan_outcome_predplot.png)"))
+
+df <- data.frame("GridSearch" = grid_search,
+                 "Stan" = stan,
+                 stringsAsFactors = FALSE)
+
+kable(df, format = "markdown", align = c("c", "c"))
+```
+
+```{r, echo=FALSE, fig.show='hold', out.width="45%"}
+# for (id in location_ids) {
+#   knitr::include_graphics(paste0("../stan/", id, ".png"))
+#   knitr::include_graphics(paste0("../grid_search/", id, "_entire_nonvegan_outcome_predplot.png"))
+# }
+```
