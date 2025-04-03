@@ -1,6 +1,8 @@
 ---
 title: "optimized_prediction_plots"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 date: "2025-03-19"
 ---
 
@@ -34,65 +36,114 @@ library(bayesforecast)
 source("tools/modeling_functions.R")
 ```
 
+```{r}
+img_list <- list.files(path = 'modeling_results/grid_search', pattern = '*predplot.png$')[1]
+```
+
+```{r, results='asis'}
+files <- list.files(path = "Desktop", pattern = "png", full.names = TRUE)
+for (f in img_list) {
+  cat(paste0("![image_label](", f, ")\n"))
+  }
+```
+
+
+
+
 
 ```{r, echo=FALSE}
-# Your vector of location IDs
-location_ids <- c("SRQS8F7JWA9MZ",
-                  "2HRX9P6HKXA8V",
-                  "JHDN7CF1C03X5",
-                  "L69HYJ4Y3TR91",
-                  "ED5J990H5VAZT",
-                  "W8T41JZK0ZMEP"
-                  #"EMBVNVD207CC6",
-                  #"C0BE4NDSW26QN",
-                  #"LBZEEFSBJNB3Z",
-                  #"SAFK7ND1HR6XS",
-                  #"S8MT0YGD2KTN9",
-                  #"1SQPTEGYPH0GA",
-                  #"9XKJD8DQTH559",
-                  #"LQ5EH4BKGV61T",
-                  #"78AY09MVJVTYE"
-                  )
-
-# Create markdown strings for the non-weather and weather images
-non_weather <- paste0("![](", "modeling_results/gs_optimal_", location_ids, "_pred_plot.png)")
-weather <- paste0("![](", "modeling_results/gs_optimal_weather_", location_ids, "_pred_plot.png)")
-
-
-# non_weather <- paste0("![](modeling_results/optimal_SRQS8F7JWA9MZ_pred_plot.png)",
-# "![](modeling_results/optimal_2HRX9P6HKXA8V_pred_plot.png)",
-# "![](modeling_results/optimal_L69HYJ4Y3TR91_pred_plot.png)",
-# "![](modeling_results/optimal_ED5J990H5VAZT_pred_plot.png)",
-# "![](modeling_results/optimal_EMBVNVD207CC6_pred_plot.png)",
-# "![](modeling_results/optimal_C0BE4NDSW26QN_pred_plot.png)",
-# "![](modeling_results/optimal_LBZEEFSBJNB3Z_pred_plot.png)",
-# "![](modeling_results/optimal_SAFK7ND1HR6XS_pred_plot.png)",
-# "![](modeling_results/optimal_S8MT0YGD2KTN9_pred_plot.png)",
-# "![](modeling_results/optimal_1SQPTEGYPH0GA_pred_plot.png)",
-# "![](modeling_results/optimal_9XKJD8DQTH559_pred_plot.png)",
-# "![](modeling_results/optimal_LQ5EH4BKGV61T_pred_plot.png)",
-# "![](modeling_results/optimal_78AY09MVJVTYE_pred_plot.png)")
+# # Your vector of location IDs
+# location_ids <- c("SRQS8F7JWA9MZ",
+#                   "2HRX9P6HKXA8V",
+#                   "JHDN7CF1C03X5",
+#                   "L69HYJ4Y3TR91",
+#                   "ED5J990H5VAZT",
+#                   "W8T41JZK0ZMEP",
+#                   "EMBVNVD207CC6",
+#                   "C0BE4NDSW26QN",
+#                   #"LBZEEFSBJNB3Z",
+#                   "SAFK7ND1HR6XS",
+#                   "S8MT0YGD2KTN9",
+#                   "1SQPTEGYPH0GA",
+#                   "9XKJD8DQTH559",
+#                   #"LQ5EH4BKGV61T",
+#                   "78AY09MVJVTYE")
 # 
-# weather <- paste0("![](modeling_results/optimal_weather_SRQS8F7JWA9MZ_pred_plot.png)",
-# "![](modeling_results/optimal_weather_2HRX9P6HKXA8V_pred_plot.png)",
-# "![](modeling_results/optimal_weather_L69HYJ4Y3TR91_pred_plot.png)",
-# "![](modeling_results/optimal_weather_ED5J990H5VAZT_pred_plot.png)",
-# "![](modeling_results/optimal_weather_EMBVNVD207CC6_pred_plot.png)",
-# "![](modeling_results/optimal_weather_C0BE4NDSW26QN_pred_plot.png)",
-# "![](modeling_results/optimal_weather_LBZEEFSBJNB3Z_pred_plot.png)",
-# "![](modeling_results/optimal_weather_SAFK7ND1HR6XS_pred_plot.png)",
-# "![](modeling_results/optimal_weather_S8MT0YGD2KTN9_pred_plot.png)",
-# "![](modeling_results/optimal_weather_1SQPTEGYPH0GA_pred_plot.png)",
-# "![](modeling_results/optimal_weather_9XKJD8DQTH559_pred_plot.png)",
-# "![](modeling_results/optimal_weather_LQ5EH4BKGV61T_pred_plot.png)",
-# "![](modeling_results/optimal_weather_78AY09MVJVTYE_pred_plot.png)")
-
-# Combine them into a data frame
-df <- data.frame("Non-weather Image" = non_weather,
-                 "Weather Image" = weather,
-                 stringsAsFactors = FALSE)
-
-# Render the table with centered columns
-kable(df, format = "markdown", align = c("c", "c"))
+# img_list <- list.files( path = '/path/to/imgfolder/',  pattern = '*pred_plot.png$'")
+# 
+# knitr::include_graphics(paste0("modeling_results/grid_search/", 
+#                            location_ids[1:1],
+#                            "_entire_nonvegan_outcome_predplot.png"))
+# 
+# # for (file in paste0("modeling_results/grid_search/", 
+# #                            location_ids[1:1], 
+# #                            "_entire_nonvegan_outcome_predplot.png")) {
+# #   print(knitr::include_graphics(file))
+# #   cat("\n\n")
+# # }
+# 
+# for (file in paste0("modeling_results/grid_search/", 
+#                            location_ids[1:1], 
+#                            "_entire_nonvegan_outcome_predplot.png")) {
+#   knitr::include_graphics(file)
+#   cat("\n\n")
+# }
+# 
+# 
+# # Create markdown strings for the non-weather and weather images
+# # non_weather <- c(
+# #   paste0("![](", "modeling_results/grid_search/", 
+# #          location_ids, 
+# #          "_entire_nonvegan_outcome_predplot.png)")
+# # )
+# # weather <- c(
+# #   paste0("![](", "modeling_results/grid_search/gs_optimal_weather_", location_ids[1:6], "_pred_plot.png)"),
+# #   paste0("![](", "modeling_results/grid_search/optimal_weather_", location_ids[7:length(location_ids)],
+# #          "_pred_plot.png)")
+# # )
+# # stan <- c(
+# #   paste0("![](", "modeling_results/stan/", location_ids[1:6], ".png)"),
+# #   paste0("![](", "modeling_results/stan/", location_ids[7:length(location_ids)],
+# #          ".png)")
+# # 
+# # )
+# 
+# 
+# # non_weather <- paste0("![](modeling_results/optimal_SRQS8F7JWA9MZ_pred_plot.png)",
+# # "![](modeling_results/optimal_2HRX9P6HKXA8V_pred_plot.png)",
+# # "![](modeling_results/optimal_L69HYJ4Y3TR91_pred_plot.png)",
+# # "![](modeling_results/optimal_ED5J990H5VAZT_pred_plot.png)",
+# # "![](modeling_results/optimal_EMBVNVD207CC6_pred_plot.png)",
+# # "![](modeling_results/optimal_C0BE4NDSW26QN_pred_plot.png)",
+# # "![](modeling_results/optimal_LBZEEFSBJNB3Z_pred_plot.png)",
+# # "![](modeling_results/optimal_SAFK7ND1HR6XS_pred_plot.png)",
+# # "![](modeling_results/optimal_S8MT0YGD2KTN9_pred_plot.png)",
+# # "![](modeling_results/optimal_1SQPTEGYPH0GA_pred_plot.png)",
+# # "![](modeling_results/optimal_9XKJD8DQTH559_pred_plot.png)",
+# # "![](modeling_results/optimal_LQ5EH4BKGV61T_pred_plot.png)",
+# # "![](modeling_results/optimal_78AY09MVJVTYE_pred_plot.png)")
+# # 
+# # weather <- paste0("![](modeling_results/optimal_weather_SRQS8F7JWA9MZ_pred_plot.png)",
+# # "![](modeling_results/optimal_weather_2HRX9P6HKXA8V_pred_plot.png)",
+# # "![](modeling_results/optimal_weather_L69HYJ4Y3TR91_pred_plot.png)",
+# # "![](modeling_results/optimal_weather_ED5J990H5VAZT_pred_plot.png)",
+# # "![](modeling_results/optimal_weather_EMBVNVD207CC6_pred_plot.png)",
+# # "![](modeling_results/optimal_weather_C0BE4NDSW26QN_pred_plot.png)",
+# # "![](modeling_results/optimal_weather_LBZEEFSBJNB3Z_pred_plot.png)",
+# # "![](modeling_results/optimal_weather_SAFK7ND1HR6XS_pred_plot.png)",
+# # "![](modeling_results/optimal_weather_S8MT0YGD2KTN9_pred_plot.png)",
+# # "![](modeling_results/optimal_weather_1SQPTEGYPH0GA_pred_plot.png)",
+# # "![](modeling_results/optimal_weather_9XKJD8DQTH559_pred_plot.png)",
+# # "![](modeling_results/optimal_weather_LQ5EH4BKGV61T_pred_plot.png)",
+# # "![](modeling_results/optimal_weather_78AY09MVJVTYE_pred_plot.png)")
+# 
+# # Combine them into a data frame
+# # df <- data.frame("Predictions" = non_weather,
+# #                  #"Weather Image" = weather,,
+# #                  # "Stan" = stan,
+# #                  stringsAsFactors = FALSE)
+# # 
+# # # Render the table with centered columns
+# # walk(non_weather, ~ cat(sprintf('<img src="%s" width="800px">\n\n', .x)))
 ```
 
