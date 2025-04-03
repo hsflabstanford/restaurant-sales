@@ -21,3 +21,5 @@ renv/.gitignore
 .Rproj.user/
 
 renv.zip
+
+weather_token.txt
