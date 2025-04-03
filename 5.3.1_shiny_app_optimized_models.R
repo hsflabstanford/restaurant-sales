@@ -132,7 +132,8 @@ for (outcome in outcomes) {
     default_lag_options[[outcome]][[data_type]] <- list(
       "AR: 1 Mean: 1" = list(
         ar = c(1),
-        mean = c(1)
+        mean = c(1),
+        cv = NA
       )
     )
   }
@@ -207,7 +208,7 @@ for (loc in restaurants_by_coverage) {
         results_list[[loc]][[outcome]][[data_type]][[lag_combo]] <- res
         
         # Save results if needed
-        save <- FALSE
+        save <- TRUE
         if (save) {
           
           saveRDS(res$model, file = model_path)
