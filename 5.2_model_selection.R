@@ -20,12 +20,13 @@ library(pryr)
 
 source("tools/modeling_functions.R")
 
+
+
 ## ===== Data, Predictors, Outcome =====
 
 before_after_details_true <- read.csv("data/before_after_details_true.csv")
 
 bad_restaurants <- c('AQD04SM0J92WA','LBMCPAYT7W36V','L3XS7WSJ4AJA3','1G5AJ17XCH2A8','3AXDVZJYN9DRS','MS8R16DY0JQAM','N0PC58FB2XAZ3','ADPFRN3QZRCXK','WJA3YCD4QBWRX','0RJH3FFPYBPEY','LZ5MR1TS37E7W')
-
 restaurants_by_coverage <- read.csv('data/2_palate_data_parquet_cleaned/restaurants_by_4m_coverage.csv') %>%
   filter(!(location_id %in% bad_restaurants)) %>%
   filter(!(location_id %in% c('75WYSXR9QBK5M','CB2KHY1C2G9PT'))) %>%
@@ -74,7 +75,7 @@ ar_lag_sets_1 <- list(
   #c(1,2,3),
   #c(1,2,3,4,5,6,7),
   c(1,2,3,4,5,6,7,14,28),
-  c(1,2,3,4,5,6,7,14,21,28,42),
+  #c(1,2,3,4,5,6,7,14,21,28,42),
   c(1,2,3,4,5,6,7,14,21,28,42,56),
   c(1,3,5,7),
   #c(1,7),
@@ -112,6 +113,144 @@ mean_lag_sets_1 <- list(
   c(14,28),
   c(28,56)
 )
+
+# ar_lag_sets_1 <- list(
+#   c(),
+#   c(1),
+#   c(1,2),
+#   c(1,2,3),
+#   c(1,2,3,4,5,6,7),
+#   c(1,2,3,4,5,6,7,14,28),
+#   c(1,2,3,4,5,6,7,14,21,28,42),
+#   c(1,2,3,4,5,6,7,14,21,28,42,56),
+#   c(1,3,5,7),
+#   c(1,7),
+#   c(1,7,14,28),
+#   c(1,7,28,56),
+#   c(1,7,14,21,28,42,56),
+#   c(7),
+#   c(7,28),
+#   c(7,14,21),
+#   c(7,28,56),
+#   c(7,14,21,28),
+#   c(14,28),
+#   c(28,56)
+# )
+# 
+# mean_lag_sets_1 <- list(
+#   c(),
+#   c(1),
+#   c(1,2),
+#   c(1,2,3),
+#   c(1,2,3,4,5,6,7),
+#   c(1,2,3,4,5,6,7,14,28),
+#   c(1,2,3,4,5,6,7,14,21,28,42),
+#   c(1,2,3,4,5,6,7,14,21,28,42,56),
+#   c(1,3,5,7),
+#   c(1,7),
+#   c(1,7,14,28),
+#   c(1,7,28,56),
+#   c(1,7,14,21,28,42,56),
+#   c(7),
+#   c(7,28),
+#   c(7,14,21),
+#   c(7,28,56),
+#   c(7,14,21,28),
+#   c(14,28),
+#   c(28,56)
+# )
+
+ar_lag_sets_1 <- list(
+  c(1)
+
+)
+
+mean_lag_sets_1 <- list(
+  c(1)
+)
+
+# Create the grid of hand-picked configurations.
+# Using I() will preserve the list elements in each cell.
+param_grid_lags <- expand.grid(
+  ar_lags = I(ar_lag_sets_1),
+  mean_lags = I(mean_lag_sets_1),
+  stringsAsFactors = FALSE
+)
+
+# Define candidate lag values for AR and Mean
+lag_values <- c(1, 2, 3, 4, 5, 5, 6, 7, 14, 21, 28, 35, 42, 49, 56)
+# Concatenate for AR and Mean so that we have a total of 30 positions
+# The first 15 positions correspond to AR and the next 15 to Mean.
+candidate_lags <- c(lag_values, lag_values)
+n <- length(candidate_lags)  # n = 30
+
+# Parameters for our design
+n_pool <- 1000   # Size of the random pool (increase for better coverage)
+n_design <- 80   # Number of configurations you want to keep
+
+set.seed(123)  # For reproducibility
+
+# Generate a pool of random binary configurations (each row is one configuration)
+candidate_configs <- matrix(rbinom(n_pool * n, 1, 0.5), nrow = n_pool, ncol = n)
+
+# Function to compute the Hamming distance between two binary vectors
+hamming_distance <- function(x, y) {
+  sum(x != y)
+}
+
+# Greedy selection:
+# Start with a randomly chosen configuration,
+# then iteratively add the candidate that maximizes the minimum Hamming distance
+selected_indices <- integer(n_design)
+selected_indices[1] <- sample(1:n_pool, 1)
+remaining_indices <- setdiff(1:n_pool, selected_indices[1])
+
+for (i in 2:n_design) {
+  # For each remaining candidate, compute its minimum Hamming distance to the already selected ones.
+  min_dists <- sapply(remaining_indices, function(j) {
+    candidate <- candidate_configs[j, ]
+    min(sapply(selected_indices[1:(i - 1)], function(idx) {
+      hamming_distance(candidate_configs[idx, ], candidate)
+    }))
+  })
+  
+  # Choose the candidate that maximizes this minimum distance
+  best_idx <- remaining_indices[which.max(min_dists)]
+  selected_indices[i] <- best_idx
+  remaining_indices <- setdiff(remaining_indices, best_idx)
+}
+
+# The final design is the set of selected configurations.
+final_design <- candidate_configs[selected_indices, ]
+
+# Function to convert a binary row (length = 30) into a list with AR and Mean lags.
+# The first 15 elements are for AR; the next 15 are for Mean.
+convert_config <- function(binary_row, lag_values) {
+  # For AR: select lags where binary indicator is 1
+  ar_selected <- lag_values[as.logical(binary_row[1:15])]
+  # For Mean: select lags where binary indicator is 1
+  mean_selected <- lag_values[as.logical(binary_row[16:30])]
+  return(list(ar_lags = ar_selected, mean_lags = mean_selected))
+}
+
+# Apply the function to each row of your final_design matrix
+# (Assume final_design has been created as in your code)
+design_list <- apply(final_design, 1, convert_config, lag_values = lag_values)
+
+# Convert the list into a data frame with list columns
+df_design <- data.frame(
+  ar_lags = I(lapply(design_list, function(x) x$ar_lags)),
+  mean_lags = I(lapply(design_list, function(x) x$mean_lags))
+)
+
+# Combine the two designs (rows will be stacked)
+combined_design <- rbind(param_grid_lags, df_design)
+
+# View the combined parameter grid
+print(combined_design)
+
+
+
 
 outcome <- "nonvegan_outcome"
 
