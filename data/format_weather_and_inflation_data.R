@@ -13,10 +13,10 @@ source("tools/modeling_functions.R")
 # -------------------------------
 # --- Section 1: Toronto Data ---
 # -------------------------------
-cat("Processing Toronto (Location 1) data...\n")
-# Assuming you have location ID SRQS8F7JWA9MZ and potentially CB2KHY1C2G9PT for Toronto.
+cat("Processing Toronto (Location 1 and 13) data...\n")
+# Assuming you have location ID SRQS8F7JWA9MZ and CB2KHY1C2G9PT for Toronto (added as a copy when binding rows).
 # This block processes SRQS8F7JWA9MZ based on the old structure.
-# If CB2KHY1C2G9PT needs different processing, it needs its own block.
+# If  needs different processing, it needs its own block.
 loc1_weather_data <- 2019:2023 %>% # Example years, adjust if needed
   map_dfr(~ {
     # Construct file path based on the old pattern for this specific ID
@@ -60,7 +60,7 @@ cat("Processing NOAA Station data...\n")
 
 # --- Mapping: New NOAA Filenames to Original Location IDs ---
 # Excludes Toronto IDs (SRQS8F7JWA9MZ, CB2KHY1C2G9PT) and Newcomb (LFZFT3VASXPED)
-# as they are handled separately. Includes Honolulu (75WYSXR9QBK5M).
+# as they are handled separately.
 noaa_files_to_ids <- list(
   "data/weather_data/leavenworth_wa.csv" = "2HRX9P6HKXA8V",
   "data/weather_data/cape_girardeau_mo.csv" = "JHDN7CF1C03X5",
@@ -78,8 +78,6 @@ noaa_files_to_ids <- list(
   "data/weather_data/atlanta_ga.csv" = "9XKJD8DQTH559",
   "data/weather_data/greensboro_nc.csv" = "LQ5EH4BKGV61T",
   "data/weather_data/washington_dc.csv" = "78AY09MVJVTYE"
-  # Add CB2KHY1C2G9PT here if it uses the new NOAA data format, e.g.:
-  # "data/weather_data/toronto_on_new.csv" = "CB2KHY1C2G9PT"
 )
 
 # --- Processing Function for NOAA Data ---
@@ -175,7 +173,8 @@ print("Combining all processed weather datasets...")
 all_weather_data <- bind_rows(
   loc1_weather_data,      # Toronto (Old Format)
   noaa_weather_data,      # Locations processed from new NOAA files
-  newcomb_weather_data    # Newcomb (Open-Meteo Format)
+  newcomb_weather_data,    # Newcomb (Open-Meteo Format)
+  loc1_weather_data %>% mutate(location_id = "CB2KHY1C2G9PT")
 )
 
 # ===============================
@@ -282,7 +281,7 @@ all_weather_data %>%
   identity()
 
 all_weather_data %>%
-  filter(location_id == noaa_files_to_ids[[2]]) %>%
+  filter(location_id == noaa_files_to_ids[[17]]) %>%
   ggplot(aes(x = created_at, y = temp, color = location_id)) +
   geom_line() +
   labs(title = "Temperature Over Time by Location",
