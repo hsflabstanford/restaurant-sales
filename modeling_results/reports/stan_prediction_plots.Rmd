@@ -27,9 +27,14 @@ location_ids <- c("SRQS8F7JWA9MZ",
                   "78AY09MVJVTYE")
 
 stan <- c(
-  paste0("![](../stan/", 
+  paste0("![](../stan/nonvegan/", 
          location_ids, 
          "_entire_nonvegan_outcome_predplot.png)"))
+
+stan_vegan <- c(
+  paste0("![](../stan/vegan/", 
+         location_ids, 
+         "_entire_vegan_outcome_predplot.png)"))
 
 grid_search <- c(
  paste0("![](../grid_search/",
@@ -37,7 +42,8 @@ grid_search <- c(
         "_entire_nonvegan_outcome_predplot.png)"))
 
 df <- data.frame("GridSearch" = grid_search,
-                 "Stan" = stan,
+                 "Stan Nonvegan" = stan,
+                 "Stan Vegan" = stan_vegan,
                  stringsAsFactors = FALSE)
 
 kable(df, format = "markdown", align = c("c", "c"))
