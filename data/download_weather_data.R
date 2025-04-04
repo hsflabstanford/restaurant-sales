@@ -186,22 +186,22 @@ req_headers <- add_headers(token = api_token)
 # --- New Station Mapping ---
 # Maps the desired output filename to the NOAA GHCND Station ID
 stations_map <- list(
-  "leavenworth_wa.csv" = "GHCND:USC00454659",
-  "cape_girardeau_mo.csv" = "GHCND:USW00003935",
-  "ashburn_va.csv" = "GHCND:USW00093738",
-  "beaverton_or.csv" = "GHCND:USW00024229",
-  "erie_pa.csv" = "GHCND:USW00014860",
-  "pittsburgh_pa.csv" = "GHCND:USW00094823",
-  "cleveland_oh.csv" = "GHCND:USW00014820",
-  "honolulu_hi.csv" = "GHCND:USW00022521",
-  "arbutus_md.csv" = "GHCND:USW00093721",
-  "brentwood_ca.csv" = "GHCND:USW00023174",
-  "los_angeles_ca.csv" = "GHCND:USW00023174",
-  "miami_fl.csv" = "GHCND:USW00012839",
-  "denver_co.csv" = "GHCND:USW00003017",
-  "atlanta_ga.csv" = "GHCND:USW00013874",
-  "greensboro_nc.csv" = "GHCND:USW00013722",
-  "washington_dc.csv" = "GHCND:USW00013743"
+  "leavenworth_wa.csv" = "GHCND:USW00094239"
+  # "cape_girardeau_mo.csv" = "GHCND:USW00003935",
+  # "ashburn_va.csv" = "GHCND:USW00093738",
+  # "beaverton_or.csv" = "GHCND:USW00024229",
+  # "erie_pa.csv" = "GHCND:USW00014860",
+  # "pittsburgh_pa.csv" = "GHCND:USW00094823",
+  # "cleveland_oh.csv" = "GHCND:USW00014820",
+  # "honolulu_hi.csv" = "GHCND:USW00022521",
+  # "arbutus_md.csv" = "GHCND:USW00093721",
+  #"brentwood_ca.csv" = "GHCND:USW00023254",
+  # "los_angeles_ca.csv" = "GHCND:USW00023174",
+  # "miami_fl.csv" = "GHCND:USW00012839",
+  # "denver_co.csv" = "GHCND:USW00003017",
+  # "atlanta_ga.csv" = "GHCND:USW00013874",
+  #"greensboro_nc.csv" = "GHCND:USW00013723",
+  # "washington_dc.csv" = "GHCND:USW00013743"
 )
 
 # --- Date Sequence ---
