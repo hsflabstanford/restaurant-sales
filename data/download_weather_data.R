@@ -166,6 +166,7 @@ tryCatch({
 
 
 
+
 # ======  All Other Locations ========= 
 
 api_token <- readLines("weather_token.txt", n = 1)
@@ -366,3 +367,33 @@ for (target_filename in names(stations_map)) {
 cat("===================================================\n")
 cat("          Data retrieval script complete.\n")
 cat("===================================================\n")
+
+
+
+# ======= Double Checking Stations ========
+
+txt <- readLines("data/weather_data/ghcnd-stations.txt")
+field_widths <- c(12, 9, 10, 7, 2, 31, 4, 4, 6)
+
+# Define column names
+col_names <- c("ID", "Latitude", "Longitude", "Elevation", "StateProv", 
+               "StationName", "Code1", "Code2", "WMO_ID")
+
+# Read the data using read.fwf
+# Use textConnection for the string variable, or file_path for a file
+con <- textConnection(txt) # Or use file_path directly: stations_df <- read.fwf(file_path, ...)
+stations_df <- read.fwf(con, # or file_path
+                        widths = field_widths, 
+                        col.names = col_names,
+                        header = FALSE,          
+                        #strip.white = TRUE,      # Remove leading/trailing whitespace
+                        stringsAsFactors = FALSE,
+                        fill = TRUE              # IMPORTANT: Handle shorter lines
+) 
+close(con) # Not needed if reading directly from file_path
+
+# Inspect the resulting data frame
+print(head(stations_df))
+print(str(stations_df))
+
+stations_df %>% filter(ID %>% startsWith("USW")) %>% select(ID, StateProv, StationName) %>% write.csv("data/weather_data/station_list.csv")
