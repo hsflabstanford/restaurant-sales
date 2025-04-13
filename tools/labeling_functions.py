@@ -72,6 +72,7 @@ def clean_and_relabel_restaurant(df,
                                       .mask(df['item_name'].isin(meat_list), False)
                                       .mask(df['item_name'].isin(half_vegan_list), np.random.rand(len(df)) < 0.5)))
           .query('~item_name.isin(@remove_list)') # Important: do we actually want to remove unknowns
+          #.query('~dish_category.isin(["Merch"])')
                 #.drop('unique_id', axis=1)
                 )
     
