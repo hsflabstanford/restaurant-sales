@@ -48,6 +48,13 @@ restaurants_by_coverage <- read.csv("data/2_palate_data_parquet_cleaned/restaura
 
 df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily_weather_inflation.parquet")
 
+df_all_daily %>% 
+  filter(location_id == "L69HYJ4Y3TR91") %>% 
+  dplyr::select(created_at, inflation) %>% 
+  ggplot(aes(x = created_at, y = inflation)) + 
+  geom_line()
+
+
 # ===== Subset Data =====
 
 num_weeks_before <- 25
