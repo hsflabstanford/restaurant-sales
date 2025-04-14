@@ -135,8 +135,8 @@ def plot_dish_time_series(food_df, loc_id, before_after_details_true):
         #color_patch_max = mpatches.Patch(color=cmap.to_rgba(vmax), label=f'{dish} Max: ${vmax/100:.2f}')
         #legend_handles.extend([color_patch_min, color_patch_max])
 
-    # Place a red circle for the promotional item
-    ax.plot(promo_datetime, loc_id, 'ro', alpha=0.5)
+    # Place a red vertical line for the promotional item
+    ax.axvline(promo_datetime, color='red', linestyle='--', alpha=0.5)
 
     # Plot
     ax.set_title(f'Weekly Sales of Top {top_n} Dishes for {loc_id}')
