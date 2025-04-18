@@ -48,7 +48,7 @@ def clean_and_relabel_restaurant(df,
 
     df = (df
           .assign(item_name = lambda df: df['item_name']
-                  .str.strip('123456789./\\ ')  # Clean up item names
+                  #.str.strip('123456789./\\ ')  # Clean up item names
                   .replace(name_changes_dict)
                   )
           .assign(item_name = lambda df: np.select(condlist = [df['item_name'].eq(name) &  
