@@ -47,6 +47,7 @@ def clean_and_relabel_restaurant(df,
                                                 columns = ['name', 'modification', 'new_name'])
 
     df = (df
+          .query('~item_name.isin(@remove_list)') # Important: do we actually want to remove unknowns
           .assign(item_name = lambda df: df['item_name']
                   #.str.strip('123456789./\\ ')  # Clean up item names
                   .replace(name_changes_dict)
@@ -71,7 +72,6 @@ def clean_and_relabel_restaurant(df,
                                       .mask(df['item_name'].isin(vegetarian_list) & ~df['item_name'].isin(vegan_list), False)
                                       .mask(df['item_name'].isin(meat_list), False)
                                       .mask(df['item_name'].isin(half_vegan_list), np.random.rand(len(df)) < 0.5)))
-          .query('~item_name.isin(@remove_list)') # Important: do we actually want to remove unknowns
           #.query('~dish_category.isin(["Merch"])')
                 #.drop('unique_id', axis=1)
                 )
@@ -80,7 +80,7 @@ def clean_and_relabel_restaurant(df,
     
     return df
 
-def plot_dish_time_series(food_df, loc_id, before_after_details_true):
+def plot_dish_time_series(food_df, loc_id, before_after_details_true, scale=50):
 
     # Visualizing with gaps for inactive weeks
     introduction_fig, ax = plt.subplots(figsize=(14, 8))
@@ -121,7 +121,7 @@ def plot_dish_time_series(food_df, loc_id, before_after_details_true):
         for week, row  in weekly_quantities.iterrows():
             
             weekly_quantity = row['item_quantity']
-            dot_size = weekly_quantity/50 + 2.5
+            dot_size = weekly_quantity/scale + 2.5
             weekly_price = row['unit_price']
             color = cmap.to_rgba(weekly_price)
 
