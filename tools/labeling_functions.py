@@ -6,6 +6,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 import matplotlib.cm as cm
+from matplotlib.ticker import FuncFormatter
 
 
 def find_project_root(start: Path = Path().absolute()) -> Path:
@@ -112,25 +113,25 @@ def fully_relabel_and_consolidate(df,
                                   half_vegan_list=None,
                                   merch=None,
                                   rare=None,
-                                  unknown=None):
+                                  unknown=None,
+                                  remove_categories=None):
 
-    df = (df
-          .pipe(lambda df: df.loc[~df['item_name'].isin(remove)] if remove is not None else df) 
-          .pipe(lambda df: rename_items(df, name_changes) if name_changes is not None else df)
-          .pipe(lambda df: rename_items_by_modifications(df, modification_name_changes) if modification_name_changes is not None else df)
-          .pipe(lambda df: relabel_items(df, vegan_list, vegetarian_list, meat_list, drinks_list, alcohol_list, half_vegan_list) if any(l is None for l in [vegan_list, vegetarian_list, meat_list, drinks_list, alcohol_list, half_vegan_list]) else df)
-          .pipe(lambda df: recategorize_items(df, drinks_list, alcohol_list, unknown, merch, rare) if any(l is None for l in [drinks_list, alcohol_list, unknown, merch, rare]) else df)
+    res = (df
+          .pipe(lambda df_: df_.query('~item_name.isin(@remove)') if remove is not None else df_) 
+          .pipe(lambda df_: rename_items(df_, name_changes) if name_changes is not None else df_)
+          .pipe(lambda df_: rename_items_by_modifications(df_, modification_name_changes) if modification_name_changes is not None else df_)
+          .pipe(lambda df_: relabel_items(df_, vegan_list, vegetarian_list, meat_list, drinks_list, alcohol_list, half_vegan_list) if not all(l is None for l in [vegan_list, vegetarian_list, meat_list, drinks_list, alcohol_list, half_vegan_list]) else df_)
+          .pipe(lambda df_: recategorize_items(df_, drinks_list, alcohol_list, unknown, merch, rare) if not all(l is None for l in [drinks_list, alcohol_list, unknown, merch, rare]) else df_)
+          .pipe(lambda df_: df_.query('~dish_category.isin(@remove_categories)') if remove_categories is not None else df_)
          )
-    return df
+    return res
 
 
-def plot_dish_time_series(df, loc_id, before_after_details_true, scale=50):
+def plot_dish_time_series(df, loc_id, before_after_details_true, top_n=60, scale=50, legend=False, legend_label="", legend_min=0, legend_max=10, shift_adjustment=0):
 
     introduction_fig, ax = plt.subplots(figsize=(14, 8))
 
     promo_datetime = before_after_details_true.loc[loc_id,'cross_over_date'].tz_convert('UTC')
-
-    top_n = 60
 
     unique_dishes = (df
                     ['item_name']
@@ -144,7 +145,7 @@ def plot_dish_time_series(df, loc_id, before_after_details_true, scale=50):
 
     for dish in unique_dishes:
         
-        dish_df = df.loc[df['item_name'] == dish]
+        dish_df = df.query('item_name == @dish')
         
         vmin = dish_df['unit_price'].min()
         vmax = dish_df['unit_price'].max()
@@ -170,14 +171,39 @@ def plot_dish_time_series(df, loc_id, before_after_details_true, scale=50):
             ax.hlines(y=dish, xmin=week.start_time, xmax=week.end_time, colors=color, lw=dot_size, label=loc_id)
             
         ax.text(x=df.index[-1] + pd.DateOffset(100), y=dish, s=f'${vmin/100:.2f}-${vmax/100:.2f}', verticalalignment='center', horizontalalignment='left', fontsize='x-small', color='gray')
-        
-        # Create a custom legend entry for this dish
-        #color_patch_min = mpatches.Patch(color=cmap.to_rgba(vmin), label=f'{dish} Min: ${vmin/100:.2f}')
-        #color_patch_max = mpatches.Patch(color=cmap.to_rgba(vmax), label=f'{dish} Max: ${vmax/100:.2f}')
-        #legend_handles.extend([color_patch_min, color_patch_max])
 
     # Place a red vertical line for the promotional item
     ax.axvline(promo_datetime, color='red', linestyle='--', alpha=0.5)
+
+    if legend:
+        # Legend colorbar
+
+        norm_global = mcolors.Normalize(vmin=legend_min, vmax=legend_max)
+        sm = cm.ScalarMappable(norm=norm_global, cmap='magma')
+        sm.set_array([])
+
+        base_pos = [0.88, 0.1, 0.02, 0.3]
+
+        # Calculate the normalized shift for a desired shift in inches.
+        # Figure width in inches:
+        fig_width = introduction_fig.get_size_inches()[0]
+        shift_inches = 2.5  # change this value for a different shift
+        normalized_shift = shift_inches / fig_width
+
+        # Shift the colorbar to the left by subtracting the normalized shift from the x coordinate.
+        adjusted_pos = [base_pos[0] - normalized_shift, base_pos[1] + normalized_shift*shift_adjustment, base_pos[2], base_pos[3]]
+
+        # Create the colorbar axis at the adjusted position.
+        cbar_ax = introduction_fig.add_axes(adjusted_pos)
+        cbar = plt.colorbar(sm, cax=cbar_ax, orientation='vertical')
+
+        # Set a custom tick formatter to show ticks divided by 100 (as dollars)
+        def dollar_formatter(x, pos):
+            return f'${x:.2f}'
+
+        cbar.ax.yaxis.set_major_formatter(FuncFormatter(dollar_formatter))
+        # Set the colorbar "title"
+        cbar.set_label(legend_label)
 
     # Plot
     ax.set_title(f'Weekly Sales of Top {top_n} Dishes for {loc_id}')
@@ -189,3 +215,30 @@ def plot_dish_time_series(df, loc_id, before_after_details_true, scale=50):
     introduction_fig.tight_layout(rect=[0, 0, 0.85, 1])
 
     plt.show()
+    
+
+def dish_time_series(df, top_n=60):
+
+    # Ensure necessary columns exist
+    required_cols = ['item_name', 'item_quantity']
+    if not all(col in df.columns for col in required_cols):
+        raise ValueError(f"Input DataFrame must contain columns: {required_cols}")
+
+    # Ensure we have a DatetimeIndex
+    if not isinstance(df.index, pd.DatetimeIndex):
+        raise TypeError("Input DataFrame must have a DatetimeIndex or a recognizable date column.")
+
+    # Identify and filter for Top N Dishes, then Group, Aggregate, and Reshape
+    top_dishes = df['item_name'].value_counts().head(top_n).index.tolist()
+    weekly_sales = (df
+                   .query('item_name.isin(@top_dishes)')
+                   .groupby([pd.Grouper(freq='W'), 'item_name'])
+                   ['item_quantity']
+                   .sum() 
+                   .unstack(level='item_name')
+                   .rename_axis('Week', axis='index')
+                   .reindex(columns=top_dishes)
+                   #.fillna(0)
+                   )
+
+    return weekly_sales
