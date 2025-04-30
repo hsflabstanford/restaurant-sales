@@ -190,7 +190,8 @@ req_headers <- add_headers(token = api_token)
 # --- New Station Mapping ---
 # Maps the desired output filename to the NOAA GHCND Station ID
 stations_map <- list(
-  "leavenworth_wa.csv" = "GHCND:USW00094239"
+  "san_francisco_ca.csv" = "GHCND:USW00023272"#,
+  #"leavenworth_wa.csv" = "GHCND:USW00094239"
   # "cape_girardeau_mo.csv" = "GHCND:USW00003935",
   # "ashburn_va.csv" = "GHCND:USW00093738",
   # "beaverton_or.csv" = "GHCND:USW00024229",
