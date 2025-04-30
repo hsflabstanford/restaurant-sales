@@ -62,6 +62,7 @@ cat("Processing NOAA Station data...\n")
 # Excludes Toronto IDs (SRQS8F7JWA9MZ, CB2KHY1C2G9PT) and Newcomb (LFZFT3VASXPED)
 # as they are handled separately.
 noaa_files_to_ids <- list(
+  "data/weather_data/san_francisco_ca.csv" = "VLZX7K2M9QD4T",
   "data/weather_data/leavenworth_wa.csv" = "2HRX9P6HKXA8V",
   "data/weather_data/cape_girardeau_mo.csv" = "JHDN7CF1C03X5",
   "data/weather_data/ashburn_va.csv" = "L69HYJ4Y3TR91",
@@ -281,7 +282,7 @@ all_weather_data %>%
   identity()
 
 all_weather_data %>%
-  filter(location_id == noaa_files_to_ids[[17]]) %>%
+  filter(location_id == noaa_files_to_ids[[16]]) %>%
   ggplot(aes(x = created_at, y = temp, color = location_id)) +
   geom_line() +
   labs(title = "Temperature Over Time by Location",
@@ -290,6 +291,8 @@ all_weather_data %>%
   theme_minimal() +
   theme(legend.position = "bottom") +
   scale_x_date(date_labels = "%Y-%m", date_breaks = "1 month")
+
+noaa_files_to_ids
 
 # ===============================
 #          Inflation Data
@@ -322,7 +325,7 @@ cpi_base <- cpi_food_away %>%
 df_all_daily %>% glimpse()
 
 # Join inflation and weather data with main data
-df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
+df_all_daily <- read_parquet("data/5_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
   process_predictors() %>% # apply custom processing function
   left_join(cpi_food_away, by = c("year", "month")) %>%
   mutate(
@@ -338,5 +341,10 @@ df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_
   ungroup() %>%
   identity()
 
-write_parquet(df_all_daily, "data/3_palate_data_parquet_modeling/all_locations_daily_weather_inflation.parquet")
+write_parquet(df_all_daily, "data/5_palate_data_parquet_modeling/all_locations_daily_weather_inflation.parquet")
 
+## Check columns with NAs
+# df_all_daily %>% summarise(across(everything(), ~ sum(is.na(.)))) %>% select(where(~ . > 0)) %>% t()
+
+## Check size of data
+# df_all_daily %>% group_by(location_id) %>% summarize(count(.)) %>% print(n=31)
