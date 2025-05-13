@@ -26,6 +26,7 @@ except Exception as e:
 def remove_numbers(df, col_name):
     
     df[col_name] = df[col_name].str.strip('123456789./\\ ')
+    return df
 
 
 def rename_items(df, name_changes):
