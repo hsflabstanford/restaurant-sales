@@ -348,3 +348,64 @@ write_parquet(df_all_daily, "data/5_palate_data_parquet_modeling/all_locations_d
 
 ## Check size of data
 # df_all_daily %>% group_by(location_id) %>% summarize(count(.)) %>% print(n=31)
+
+plot_vegan <- function(loc_id, d1, d2){
+  
+  promo_datetime <- read.csv('data/4_palate_data_parquet_relabeled/before_after_details_true.csv') %>% 
+    filter(location_id == loc_id) %>% 
+    pull(cross_over_date) %>%
+    as.Date(format = "%Y-%m-%d") %>%
+    floor_date(unit="week")
+  df_all_daily %>% 
+    filter(location_id != loc_id | d1 < date & date < d2) %>%
+    filter(location_id == loc_id) %>% 
+    group_by(week = date %>% floor_date(unit = "week")) %>%
+    summarize(vegan_outcome = vegan_outcome %>% sum()) %>%
+    ggplot(aes(x = week, y = vegan_outcome)) +
+    geom_line() +
+    geom_vline(xintercept = promo_datetime, linetype = "dashed", color = "red") +
+    theme_minimal() +
+    theme(legend.position = "bottom") +
+    scale_x_date(date_labels = "%Y-%m", date_breaks = "6 month") %>%
+    identity()
+}
+
+plot_nonvegan <- function(loc_id, d1, d2){
+  
+  promo_datetime <- read.csv('data/4_palate_data_parquet_relabeled/before_after_details_true.csv') %>% 
+    filter(location_id == loc_id) %>% 
+    pull(cross_over_date) %>%
+    as.Date(format = "%Y-%m-%d") %>%
+    floor_date(unit="week")
+  df_all_daily %>% 
+    filter(location_id != loc_id | d1 < date & date < d2) %>%
+    filter(location_id == loc_id) %>% 
+    group_by(week = date %>% floor_date(unit = "week")) %>%
+    summarize(nonvegan_outcome = nonvegan_outcome %>% sum()) %>%
+    ggplot(aes(x = week, y = nonvegan_outcome)) +
+    geom_line() +
+    geom_vline(xintercept = promo_datetime, linetype = "dashed", color = "red") +
+    theme_minimal() +
+    theme(legend.position = "bottom") +
+    scale_x_date(date_labels = "%Y-%m", date_breaks = "6 month") %>%
+    identity()
+}
+
+loc_id <- "2HRX9P6HKXA8V"
+plot_vegan(loc_id, '2019-01-01', '2021-05-01')
+loc_id <- "JHDN7CF1C03X5"
+# plot_vegan(loc_id, '2019-04-01', '2023-06-01')
+plot_nonvegan(loc_id, '2019-04-01', '2023-06-01')
+loc_id <- "EMBVNVD207CC6"
+plot_vegan(loc_id, '2016-06-01', '2022-09-01')
+loc_id <- "LBZEEFSBJNB3Z"
+plot_nonvegan(loc_id, '2021-09-01', '2023-07-01')
+loc_id <- "CB2KHY1C2G9PT"
+plot_vegan(loc_id, '2020-06-01', '2023-04-01')
+plot_nonvegan(loc_id, '2020-06-01', '2023-04-01')
+loc_id <- "LFZFT3VASXPED"
+plot_vegan(loc_id, '2021-10-01', '2022-11-01')
+plot_nonvegan(loc_id, '2021-10-01', '2022-11-01')
+loc_id <- "75WYSXR9QBK5M"
+# plot_vegan(loc_id, '2019-01-01', '2023-06-01')
+plot_nonvegan(loc_id, '2022-05-01', '2023-07-01')
