@@ -1,0 +1,81 @@
+---
+title: "stan_prediction_plots_2"
+output:
+  html_document: default
+  pdf_document: default
+date: "2025-04-02"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(kableExtra)
+```
+
+```{r, echo=FALSE}
+location_ids <- c(
+  "VLZX7K2M9QD4T",
+  "SRQS8F7JWA9MZ",
+                  "2HRX9P6HKXA8V",
+                  "JHDN7CF1C03X5",
+                  "L69HYJ4Y3TR91",
+                  "ED5J990H5VAZT",
+                  "W8T41JZK0ZMEP",
+                  "EMBVNVD207CC6",
+                  "C0BE4NDSW26QN",
+                "75WYSXR9QBK5M",
+  "V3Q26BHF3SE2H",
+                  "LBZEEFSBJNB3Z",
+                  "SAFK7ND1HR6XS",
+              "CB2KHY1C2G9PT",
+                  "S8MT0YGD2KTN9",
+  "LFZFT3VASXPED",
+                  "1SQPTEGYPH0GA",
+                  "9XKJD8DQTH559",
+                  "LQ5EH4BKGV61T",
+                  "78AY09MVJVTYE")
+
+
+
+
+stan_fixed_vegan <- c(
+  paste0("![](../stan/simple/vegan/plots/", 
+         location_ids, 
+         ".png)"))
+
+stan_fixed_nonvegan <- c(
+  paste0("![](../stan/simple/nonvegan/plots/", 
+         location_ids, 
+         ".png)"))
+
+stan_adaptive_vegan <- c(
+  paste0("![](../stan/adaptive/vegan/plots/", 
+         location_ids, 
+         ".png)"))
+
+stan_adaptive_nonvegan <- c(
+  paste0("![](../stan/adaptive/nonvegan/plots/", 
+         location_ids, 
+         ".png)"))
+
+stan_multilevel_nonvegan <- c(
+  paste0("![](../stan/multilevel_selective/nonvegan/plots/", 
+         location_ids, 
+         "_multi.png)"))
+
+
+df <- data.frame("Fixed Vegan" = stan_fixed_vegan,
+                 "Fixed Nonvegan" = stan_fixed_nonvegan,
+  "Adaptive Vegan" = stan_adaptive_vegan,
+                 "Adaptive Nonvegan" = stan_adaptive_nonvegan,
+                 "Multilevel Nonvegan" = stan_multilevel_nonvegan,
+                 stringsAsFactors = FALSE)
+
+kable(df, format = "markdown", align = c("c", "c"))
+```
+
+```{r, echo=FALSE, fig.show='hold', out.width="45%"}
+# for (id in location_ids) {
+#   knitr::include_graphics(paste0("../stan/", id, ".png"))
+#   knitr::include_graphics(paste0("../grid_search/", id, "_entire_nonvegan_outcome_predplot.png"))
+# }
+```

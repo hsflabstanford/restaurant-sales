@@ -1,0 +1,162 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={stan\_prediction\_plots\_2},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{stan\_prediction\_plots\_2}
+\author{}
+\date{\vspace{-2.5em}2025-04-02}
+
+\begin{document}
+\maketitle
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2989}}
+  >{\centering\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3161}}
+  >{\centering\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3851}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+Adaptive.Vegan
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Adaptive.Nonvegan
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Multilevel.Nonvegan
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\includegraphics{../stan/adaptive/vegan/plotsSRQS8F7JWA9MZ.png} &
+\includegraphics{../stan/adaptive/nonvegan/plotsSRQS8F7JWA9MZ.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plotsSRQS8F7JWA9MZ.png} \\
+\includegraphics{../stan/adaptive/vegan/plots2HRX9P6HKXA8V.png} &
+\includegraphics{../stan/adaptive/nonvegan/plots2HRX9P6HKXA8V.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plots2HRX9P6HKXA8V.png} \\
+\includegraphics{../stan/adaptive/vegan/plotsJHDN7CF1C03X5.png} &
+\includegraphics{../stan/adaptive/nonvegan/plotsJHDN7CF1C03X5.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plotsJHDN7CF1C03X5.png} \\
+\includegraphics{../stan/adaptive/vegan/plotsL69HYJ4Y3TR91.png} &
+\includegraphics{../stan/adaptive/nonvegan/plotsL69HYJ4Y3TR91.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plotsL69HYJ4Y3TR91.png} \\
+\includegraphics{../stan/adaptive/vegan/plotsED5J990H5VAZT.png} &
+\includegraphics{../stan/adaptive/nonvegan/plotsED5J990H5VAZT.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plotsED5J990H5VAZT.png} \\
+\includegraphics{../stan/adaptive/vegan/plotsW8T41JZK0ZMEP.png} &
+\includegraphics{../stan/adaptive/nonvegan/plotsW8T41JZK0ZMEP.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plotsW8T41JZK0ZMEP.png} \\
+\includegraphics{../stan/adaptive/vegan/plotsEMBVNVD207CC6.png} &
+\includegraphics{../stan/adaptive/nonvegan/plotsEMBVNVD207CC6.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plotsEMBVNVD207CC6.png} \\
+\includegraphics{../stan/adaptive/vegan/plotsC0BE4NDSW26QN.png} &
+\includegraphics{../stan/adaptive/nonvegan/plotsC0BE4NDSW26QN.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plotsC0BE4NDSW26QN.png} \\
+\includegraphics{../stan/adaptive/vegan/plotsLBZEEFSBJNB3Z.png} &
+\includegraphics{../stan/adaptive/nonvegan/plotsLBZEEFSBJNB3Z.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plotsLBZEEFSBJNB3Z.png} \\
+\includegraphics{../stan/adaptive/vegan/plotsSAFK7ND1HR6XS.png} &
+\includegraphics{../stan/adaptive/nonvegan/plotsSAFK7ND1HR6XS.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plotsSAFK7ND1HR6XS.png} \\
+\includegraphics{../stan/adaptive/vegan/plotsS8MT0YGD2KTN9.png} &
+\includegraphics{../stan/adaptive/nonvegan/plotsS8MT0YGD2KTN9.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plotsS8MT0YGD2KTN9.png} \\
+\includegraphics{../stan/adaptive/vegan/plots1SQPTEGYPH0GA.png} &
+\includegraphics{../stan/adaptive/nonvegan/plots1SQPTEGYPH0GA.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plots1SQPTEGYPH0GA.png} \\
+\includegraphics{../stan/adaptive/vegan/plots9XKJD8DQTH559.png} &
+\includegraphics{../stan/adaptive/nonvegan/plots9XKJD8DQTH559.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plots9XKJD8DQTH559.png} \\
+\includegraphics{../stan/adaptive/vegan/plotsLQ5EH4BKGV61T.png} &
+\includegraphics{../stan/adaptive/nonvegan/plotsLQ5EH4BKGV61T.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plotsLQ5EH4BKGV61T.png} \\
+\includegraphics{../stan/adaptive/vegan/plots78AY09MVJVTYE.png} &
+\includegraphics{../stan/adaptive/nonvegan/plots78AY09MVJVTYE.png} &
+\includegraphics{../stan/multilevel_selective/nonvegan/plots78AY09MVJVTYE.png} \\
+\end{longtable}
+
+\end{document}
