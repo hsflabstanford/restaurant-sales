@@ -318,6 +318,41 @@ cpi_base <- cpi_food_away %>%
 df_all_daily <- read_parquet("data/5_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
   process_predictors() %>% # apply custom processing function
   mutate(
+    new_years = as.integer(month == 1 & day_of_month == 1),
+    valentines = as.integer(month == 2 & day_of_month == 14),
+    easter = as.integer(date == as.Date(Easter(year))),
+    cinco = as.integer(month == 5 & day_of_month == 5),
+    july_fourth = as.integer(month == 7 & day_of_month == 4),
+    thanksgiving = as.integer(date == as.Date(USThanksgivingDay(year))),
+    christmas = as.integer(month == 12 & day_of_month == 25),
+    mlk = as.integer(date == as.Date(USMLKingsBirthday(year))),
+    pres = as.integer(date == as.Date(USPresidentsDay(year))),
+    mem = as.integer(date == as.Date(USMemorialDay(year))),
+    labor = as.integer(date == as.Date(USLaborDay(year))),
+    columbus = as.integer(date == as.Date(USColumbusDay(year))),
+    vet = as.integer(date == as.Date(USVeteransDay(year)))
+  ) %>%
+  group_by(location_id) %>%
+  mutate(is_any_holiday = (christmas + 
+                             thanksgiving +
+                             cinco +
+                             july_fourth + 
+                             new_years + 
+                             easter + 
+                             valentines +
+                             mlk +
+                             pres +
+                             mem +
+                             labor +
+                             columbus +
+                             vet
+  ),
+  holiday_window = slide_index_dbl(.x = is_any_holiday,
+                                   .i = date,
+                                   .f = ~ as.numeric(any(.x == 1)),
+                                   .before = 3,
+                                   .after = 3)) %>%
+  ungroup() %>%
   left_join(cpi_food_away, by = c("year", "month")) %>%
   mutate(
     vegan_price_real = vegan_window_avg / (Value / cpi_base), # inflation-adjusted
