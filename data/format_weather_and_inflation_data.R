@@ -5,62 +5,64 @@ library(conflicted)
 conflict_prefer("select", "dplyr")
 conflict_prefer("filter", "dplyr")
 source("tools/modeling_functions.R")
+library(timeDate)
+library(slider)
 
-# ===============================
+# ─────────────────────────────────────────────────────────────
 #          Weather Data Processing
-# ===============================
+# ─────────────────────────────────────────────────────────────
 
-# -------------------------------
 # --- Section 1: Toronto Data ---
-# -------------------------------
+
 cat("Processing Toronto (Location 1 and 13) data...\n")
-# Assuming you have location ID SRQS8F7JWA9MZ and CB2KHY1C2G9PT for Toronto (added as a copy when binding rows).
-# This block processes SRQS8F7JWA9MZ based on the old structure.
-# If  needs different processing, it needs its own block.
-loc1_weather_data <- 2019:2023 %>% # Example years, adjust if needed
-  map_dfr(~ {
-    # Construct file path based on the old pattern for this specific ID
-    file_path <- file.path("data", "weather_data", paste0("weather_data_31688_", .x, ".csv"))
-    # Check if file exists before attempting to read
-    if (file.exists(file_path)) {
-      read.csv(file_path, fileEncoding = "UTF-8", stringsAsFactors = FALSE) %>%
-        # Ensure dplyr::select is used if other packages might mask 'select'
-        dplyr::select(Year, Month, Day, Mean.Temp...C., Total.Precip..mm.) %>%
-        transmute(
-          temp = Mean.Temp...C.,
-          precip = Total.Precip..mm.,
-          created_at = as.Date(paste(Year, Month, Day, sep = "-"), format = "%Y-%m-%d"),
-          location_id = "SRQS8F7JWA9MZ" # Hardcoded ID for this specific source
-        ) %>%
-        # Handle potential NAs before filling if needed
-        # group_by(location_id) %>%
-        # fill(temp, precip, .direction = "down") %>% # Forward fill
-        # ungroup() %>%
-        identity() # Keep the data frame structure
-    } else {
-      # Return an empty tibble/df with the correct structure if file is missing
-      cat("Warning: File not found -", file_path, "\n")
-      tibble(temp = numeric(), precip = numeric(), created_at = as.Date(character()), location_id = character())
+
+# Location ID is subbed in later script for location 13
+process_toronto_file <- function(loc_id, year) {
+    file_path <- file.path("data", "weather_data", paste0("weather_data_31688_", year, ".csv"))
+    if (!file.exists(file_path)) {
+      cat("  Warning: File not found -", file_path, "\n")
+      return(tibble(temp = numeric(), 
+                    precip = numeric(), 
+                    created_at = as.Date(character()), 
+                    location_id = character()))
     }
-  }) %>%
+    read.csv(file_path, fileEncoding = "UTF-8", stringsAsFactors = FALSE) %>%
+      dplyr::select(Year, Month, Day, Mean.Temp...C., Total.Precip..mm.) %>%
+      transmute(
+        temp = Mean.Temp...C.,
+        precip = Total.Precip..mm.,
+        created_at = as.Date(paste(Year, Month, Day, sep = "-"), format = "%Y-%m-%d"),
+        location_id = loc_id
+      ) %>%
+      # # Handle potential NAs before filling if needed
+      # group_by(location_id) %>%
+      # fill(temp, precip, .direction = "down") %>% # Forward fill
+      # ungroup() %>%
+      identity()
+}
+
+params <- crossing(
+  loc_id = c("SRQS8F7JWA9MZ", "CB2KHY1C2G9PT"), # Location IDs for Toronto
+  year = 2019:2023
+)
+
+toronto_weather_data <- pmap_dfr(
+    params, 
+    process_toronto_file
+  ) %>% 
   # Apply fill after combining all years for this location if needed
   group_by(location_id) %>%
-  fill(temp, precip, .direction = "down") %>% # Forward fill NAs
-  ungroup()
+  fill(temp, precip, .direction = "down") %>% # Forward fill
+  ungroup() %>%
+  identity()
 
-# Add processing for the *other* Toronto ID (CB2KHY1C2G9PT) if it exists
-# and has a different source/format. If it uses the *new* NOAA format,
-# it should be included in the `noaa_files_to_ids` map below instead.
 
-# ---------------------------------
-# --- Section 2: New NOAA Data ----
-# (Replaces old Locations 2-19 processing)
-# ---------------------------------
+# --- Section 2: New National Oceanic and Atmospheric Administration (NOAA) Data ----
+
 cat("Processing NOAA Station data...\n")
 
-# --- Mapping: New NOAA Filenames to Original Location IDs ---
-# Excludes Toronto IDs (SRQS8F7JWA9MZ, CB2KHY1C2G9PT) and Newcomb (LFZFT3VASXPED)
-# as they are handled separately.
+# Excludes Toronto IDs and Newcomb ID: loc1, loc13, loc 20 
+# (SRQS8F7JWA9MZ, CB2KHY1C2G9PT, LFZFT3VASXPED)
 noaa_files_to_ids <- list(
   "data/weather_data/san_francisco_ca.csv" = "VLZX7K2M9QD4T",
   "data/weather_data/leavenworth_wa.csv" = "2HRX9P6HKXA8V",
@@ -81,85 +83,68 @@ noaa_files_to_ids <- list(
   "data/weather_data/washington_dc.csv" = "78AY09MVJVTYE"
 )
 
-# --- Processing Function for NOAA Data ---
 process_noaa_file <- function(file_path, loc_id) {
   cat(" Reading:", file_path, "for ID:", loc_id, "\n")
   if (!file.exists(file_path)) {
     cat("  Warning: File not found -", file_path, "\n")
-    # Return empty tibble with correct structure
-    return(tibble(temp = numeric(), precip = numeric(), created_at = as.Date(character()), location_id = character()))
+    return(tibble(temp = numeric(), 
+                  precip = numeric(), 
+                  created_at = as.Date(character()), 
+                  location_id = character()))
   }
-  tryCatch({
-    read.csv(file_path, stringsAsFactors = FALSE) %>%
-      # Ensure essential columns exist from the API download
-      # The API script should have downloaded 'date', 'datatype', 'value'
-      dplyr::select(date, datatype, value) %>%
-      # Pivot to wide format: one row per date, columns for TMAX, TMIN, PRCP
-      pivot_wider(names_from = datatype, values_from = value) %>%
-      # Ensure required columns exist after pivoting (handle cases where a datatype might be missing for a day)
-      # Add missing columns with NA if they don't exist after pivot
-      { if (!"TMAX" %in% names(.)) .$TMAX <- NA_real_ else . } %>%
-      { if (!"TMIN" %in% names(.)) .$TMIN <- NA_real_ else . } %>%
-      { if (!"PRCP" %in% names(.)) .$PRCP <- NA_real_ else . } %>%
-      # Select the pivoted columns needed for calculation/output
-      dplyr::select(date, TMAX, TMIN, PRCP) %>%
-      # Remove rows where essential TMAX/TMIN/PRCP are NA *before* calculating temp
-      # Keep rows if only PRCP is NA, but remove if TMAX or TMIN is NA for temp calculation
-      drop_na(TMAX, TMIN) %>% # Keep rows even if PRCP is NA at this stage
-      # Calculate avg temp, rename cols, convert date, add ID
-      transmute(
-        # Temp calculation requires TMAX and TMIN (units should be metric from API call)
-        temp = (TMAX + TMIN) / 2,
-        # Precipitation (units should be metric from API call - mm)
-        precip = PRCP,
-        created_at = as.Date(date), # Assumes 'date' column is 'YYYY-MM-DD'
-        location_id = loc_id      # Assign the ID from the map
-      ) %>%
-      # Final check: remove rows where final temp or precip is NA
-      # This handles NAs in PRCP or if temp calculation resulted in NA
-      drop_na(temp, precip) %>%
-      identity()
-  }, error = function(e) {
-    cat("  Error processing file:", file_path, "-", e$message, "\n")
-    # Return empty tibble on error
-    return(tibble(temp = numeric(), precip = numeric(), created_at = as.Date(character()), location_id = character()))
-  })
+  read.csv(file_path, stringsAsFactors = FALSE) %>%
+    dplyr::select(date, datatype, value) %>%
+    # Pivot to wide format: one row per date, columns for TMAX, TMIN, PRCP
+    pivot_wider(names_from = datatype, values_from = value) %>%
+    # Add missing columns with NA if they don't exist after pivot
+    { if (!"TMAX" %in% names(.)) .$TMAX <- NA_real_ else . } %>%
+    { if (!"TMIN" %in% names(.)) .$TMIN <- NA_real_ else . } %>%
+    { if (!"PRCP" %in% names(.)) .$PRCP <- NA_real_ else . } %>%
+    dplyr::select(date, TMAX, TMIN, PRCP) %>%
+    drop_na(TMAX, TMIN) %>%
+    # Calculate avg temp and rename cols
+    transmute(
+      temp = (TMAX + TMIN) / 2,
+      precip = PRCP,
+      created_at = as.Date(date), # Assumes 'date' column is 'YYYY-MM-DD'
+      location_id = loc_id
+    ) %>%
+    drop_na(temp, precip) %>%
+    identity()
 }
 
-# --- Apply processing to all NOAA files ---
 noaa_weather_data <- map2_dfr(
   names(noaa_files_to_ids),  # Pass file paths
   noaa_files_to_ids,         # Pass corresponding IDs
   process_noaa_file          # Apply the function
 )
 
-# --------------------------------
+
 # --- Section 3: Newcomb Data ----
-# --------------------------------
+
 cat("Processing Newcomb (Location 20) data...\n")
 
 # Define file path and location ID for Newcomb
-newcomb_file <- file.path("data", "weather_data", "newcomb.csv") # Use file.path for robustness
+newcomb_file <- file.path("data", "weather_data", "newcomb.csv")
 newcomb_id <- "LFZFT3VASXPED"
-
-# Process Newcomb weather data (assuming Open-Meteo format)
-if (file.exists(newcomb_file)) {
-  newcomb_weather_data <- read.csv(newcomb_file, stringsAsFactors = FALSE) %>%
-    # Select the columns we need to avoid issues if extra columns exist
-    dplyr::select(Date, Temp_Max_C, Temp_Min_C, Precipitation_mm) %>%
-    # Calculate average temp, rename precip, convert date, add ID
-    transmute(
-      temp = (Temp_Max_C + Temp_Min_C) / 2,
-      precip = Precipitation_mm,
-      created_at = as.Date(Date), # Assumes 'Date' column is 'YYYY-MM-DD'
-      location_id = newcomb_id
-    ) %>%
-    # Remove rows where final temp or precip is NA
-    drop_na(temp, precip) %>%
-    identity() # Consistent style
-} else {
+process_toronto_file
+if (!file.exists(newcomb_file)) {
   cat("Warning: Newcomb file not found -", newcomb_file, "\n")
-  newcomb_weather_data <- tibble(temp = numeric(), precip = numeric(), created_at = as.Date(character()), location_id = character())
+  newcomb_weather_data <- tibble(temp = numeric(), 
+                                 precip = numeric(), 
+                                 created_at = as.Date(character()), 
+                                 location_id = character())
+} else {
+  newcomb_weather_data <- read.csv(newcomb_file, stringsAsFactors = FALSE) %>%
+  dplyr::select(Date, Temp_Max_C, Temp_Min_C, Precipitation_mm) %>%
+  transmute(
+    temp = (Temp_Max_C + Temp_Min_C) / 2,
+    precip = Precipitation_mm,
+    created_at = as.Date(Date), # Assumes 'Date' column is 'YYYY-MM-DD'
+    location_id = newcomb_id
+  ) %>%
+  drop_na(temp, precip) %>%
+  identity()
 }
 
 
@@ -169,35 +154,33 @@ if (file.exists(newcomb_file)) {
 
 print("Combining all processed weather datasets...")
 
-# Combine the three datasets
-# Ensure all contributing data frames exist, even if empty with the right structure
 all_weather_data <- bind_rows(
-  loc1_weather_data,      # Toronto (Old Format)
-  noaa_weather_data,      # Locations processed from new NOAA files
-  newcomb_weather_data,    # Newcomb (Open-Meteo Format)
-  loc1_weather_data %>% mutate(location_id = "CB2KHY1C2G9PT")
+  toronto_weather_data,  
+  noaa_weather_data,      
+  newcomb_weather_data,
 )
+
 
 # ===============================
 #          Verification
 # ===============================
+
 print("Combined data summary:")
 print(summary(all_weather_data))
 print("Dimensions of combined data:")
 print(dim(all_weather_data))
 print("Unique location IDs in final combined data:")
-# Use `pull` to get the vector of IDs for unique()
-print(unique(pull(all_weather_data, location_id)))
+print(all_weather_data %>% pull(location_id) %>% unique())
 print("Tail of combined data:")
 print(tail(all_weather_data))
 
 cat("Weather data processing complete.\n")
 
+
 # ===============================
 #          Fixing Large Gaps
 # ===============================
 
-# --- Define Parameters ---
 target_id <- "1SQPTEGYPH0GA"
 target_start_date <- as.Date("2013-04-02") # Inclusive start date based on > 2013-04-01
 target_end_date <- as.Date("2014-01-30")   # Inclusive end date based on < 2014-01-31
@@ -245,14 +228,12 @@ if(rows_removed != nrow(replacement_data)) {
   cat("Warning: Number of rows removed doesn't match number of replacement rows. Check date ranges.\n")
 }
 
-
 # --- 4. Combine the datasets ---
 # Bind the data excluding the target range with the new replacement data
 all_weather_data_new <- bind_rows(
   all_weather_data_before_replacement,
   replacement_data
 ) %>%
-  # Arrange for consistency
   arrange(location_id, created_at)
 
 cat("Total rows after combining:", nrow(all_weather_data_new), "\n")
@@ -261,7 +242,7 @@ if(nrow(all_weather_data_new) != original_rows) {
   cat("Warning: Final row count differs from original. Review logic if difference is large.\n")
 }
 
-# --- 5. Verification (Optional but recommended) ---
+# --- 5. Verification ---
 # Check a few dates within the replaced range for the target ID
 verification_data <- all_weather_data_new %>%
   filter(location_id == target_id,
@@ -270,9 +251,7 @@ verification_data <- all_weather_data_new %>%
 
 cat("\nVerification: First few rows of replaced data for", target_id, ":\n")
 print(verification_data)
-
 all_weather_data <- all_weather_data_new # Update the main weather data to the new version
-
 
 all_weather_data %>% 
   group_by(location_id) %>%
@@ -282,7 +261,7 @@ all_weather_data %>%
   identity()
 
 all_weather_data %>%
-  filter(location_id == noaa_files_to_ids[[16]]) %>%
+  filter(location_id == noaa_files_to_ids[[16]]) %>% # Replace number with different IDs
   ggplot(aes(x = created_at, y = temp, color = location_id)) +
   geom_line() +
   labs(title = "Temperature Over Time by Location",
@@ -292,13 +271,12 @@ all_weather_data %>%
   theme(legend.position = "bottom") +
   scale_x_date(date_labels = "%Y-%m", date_breaks = "1 month")
 
-noaa_files_to_ids
 
-# ===============================
+# ─────────────────────────────────────────────────────────────
 #          Inflation Data
-# ===============================
+# ─────────────────────────────────────────────────────────────
 
-# ====== Read and Format =========
+# --- Read and Format ---
 
 # Process inflation data
 cpi_food_away <- read.csv("data/inflation.csv") %>%
@@ -312,6 +290,8 @@ cpi_food_away <- read.csv("data/inflation.csv") %>%
   dplyr::select(year, month, Value) %>%
   identity()
 
+# --- Calculate ---
+
 # Set up a reference year
 base_year <- 2018
 base_month <- 1
@@ -320,9 +300,19 @@ cpi_base <- cpi_food_away %>%
   pull(Value) %>%
   identity()
 
-# ====== Join and Write =========
 
-df_all_daily %>% glimpse()
+# ─────────────────────────────────────────────────────────────
+#          Holidays
+# ─────────────────────────────────────────────────────────────
+
+
+
+# ─────────────────────────────────────────────────────────────
+#          Join and Export
+# ─────────────────────────────────────────────────────────────
+
+
+
 
 # Join inflation and weather data with main data
 df_all_daily <- read_parquet("data/5_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
@@ -341,6 +331,7 @@ df_all_daily <- read_parquet("data/5_palate_data_parquet_modeling/all_locations_
   ungroup() %>%
   identity()
 
+# Export
 write_parquet(df_all_daily, "data/5_palate_data_parquet_modeling/all_locations_daily_weather_inflation.parquet")
 
 ## Check columns with NAs
