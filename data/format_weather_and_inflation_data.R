@@ -376,6 +376,45 @@ write_parquet(df_all_daily, "data/5_palate_data_parquet_modeling/all_locations_d
 ## Check size of data
 # df_all_daily %>% group_by(location_id) %>% summarize(count(.)) %>% print(n=31)
 
+
+# ─────────────────────────────────────────────────────────────
+#          Visualize
+# ─────────────────────────────────────────────────────────────
+
+df_all_daily %>%
+  group_by(
+    #year,
+    month,
+    day_of_month) %>%
+  summarize(nonvegan_outcome=mean(nonvegan_outcome),holiday_window=mean(holiday_window)) %>%
+  ggplot(aes(x=as.Date(ISOdate(2020,month,day_of_month)), 
+             y=nonvegan_outcome,
+             color=factor(holiday_window)
+             )) + 
+  geom_line() +
+  theme_minimal() +
+  #facet_wrap( ~ year, scales = "free_y") +
+  aes(color = holiday_window) +
+  scale_color_gradient(low = "gray", high = "red")
+
+df_all_daily %>%
+  tsibble(index = date, 
+          key = location_id
+          ) %>%
+  gg_season(nonvegan_outcome, period = "year") +
+  aes(color = factor(holiday_window)) +
+  labs(title = "Non-Vegan Outcomes Over Time",
+       x = "Date",
+       y = "Non-Vegan Outcomes") +
+  theme_minimal() +
+  scale_color_manual(values = c("0"="gray","1"="red")) +
+  theme(legend.position = "bottom")
+
+
+# ─────────────────────────────────────────────────────────────
+#          Visualize Cropped Data
+# ─────────────────────────────────────────────────────────────
+
 plot_vegan <- function(loc_id, d1, d2){
   
   promo_datetime <- read.csv('data/4_palate_data_parquet_relabeled/before_after_details_true.csv') %>% 
