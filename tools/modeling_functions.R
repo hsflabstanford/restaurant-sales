@@ -207,9 +207,12 @@ standardize_data <- function(df) {
 process_predictors <- function(df) {
   df %>% mutate(
     date = as.Date(created_at),
+    date_num = as.numeric(date),
+    day_of_week = day_of_week + 1,
     day_of_week_cat = as.factor(day_of_week_cat#, 
                              #levels = c("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
                              ),
+    day_of_month = day_of_month + 1,
     season = as.factor(season#, 
                     #levels = c("Spring", "Summer", "Autumn", "Winter")
                     ),
