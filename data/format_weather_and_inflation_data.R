@@ -317,6 +317,7 @@ cpi_base <- cpi_food_away %>%
 # Join inflation and weather data with main data
 df_all_daily <- read_parquet("data/5_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
   process_predictors() %>% # apply custom processing function
+  mutate(
   left_join(cpi_food_away, by = c("year", "month")) %>%
   mutate(
     vegan_price_real = vegan_window_avg / (Value / cpi_base), # inflation-adjusted
