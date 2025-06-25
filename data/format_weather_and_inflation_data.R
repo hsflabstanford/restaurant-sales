@@ -302,17 +302,8 @@ cpi_base <- cpi_food_away %>%
 
 
 # ─────────────────────────────────────────────────────────────
-#          Holidays
+#          Holidays, Join, and Export
 # ─────────────────────────────────────────────────────────────
-
-
-
-# ─────────────────────────────────────────────────────────────
-#          Join and Export
-# ─────────────────────────────────────────────────────────────
-
-
-
 
 # Join inflation and weather data with main data
 df_all_daily <- read_parquet("data/5_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
