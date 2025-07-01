@@ -1,5 +1,5 @@
 data {
-  // Lengths, and fixed and random effect choices
+  // Size of design matrix, and indices for fixed and random effect
   int<lower=1> R;                                    // # of restaurants
   int<lower=1> J;                                    // # of covariates
   int<lower=1> idx_intercept;                        // # index for intercept
@@ -7,18 +7,24 @@ data {
   array[K_beta_random] int idx_beta_random;          // the indices in X for those coef
   int<lower=1> K_beta_fixed;                         // # of coef to NOT have random effects
   array[K_beta_fixed] int idx_beta_fixed;            // the indices in X for those coef
+  
+  // Indices for outcome lags
   int<lower=1> p_effective;
   array[p_effective] int effective_lags_alpha;
   int<lower=1> K_alpha_random;
   array[K_alpha_random] int idx_alpha_random;
   int<lower=1> K_alpha_fixed;
   array[K_alpha_fixed] int idx_alpha_fixed;
+  
+  // Indices for latent intensities
   int<lower=1> q_effective;
   array[q_effective] int effective_lags_delta;
   int<lower=1> K_delta_random;
   array[K_delta_random] int idx_delta_random;
   int<lower=1> K_delta_fixed;
   array[K_delta_fixed] int idx_delta_fixed;
+  int<lower=1> K_exposure;
+  array[K_exposure] int idx_exposure;
   
   // Data
   int<lower=1> N_train;
