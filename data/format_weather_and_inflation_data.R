@@ -309,7 +309,7 @@ cpi_base <- cpi_food_away %>%
 df_all_daily <- read_parquet("data/5_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
   process_predictors() %>% # apply custom processing function
   mutate(
-    new_years = as.integer(month == 1 & day_of_month == 1),
+    new_years = as.integer(month == 12 & day_of_month == 31),
     valentines = as.integer(month == 2 & day_of_month == 14),
     easter = as.integer(date == as.Date(Easter(year))),
     cinco = as.integer(month == 5 & day_of_month == 5),
