@@ -11,7 +11,11 @@ import tabulate
 from IPython.display import display, Markdown
 
 
-def calculate_coverage(df, promos, transaction_id='order_id', freqs=['W-MON','D','12H','6H'], periods=['all','4mo','bef','b2m','aft','a2m']):
+def calculate_coverage(df, 
+                       promos, 
+                       transaction_id='order_id', 
+                       freqs=['W-MON','D','12H','6H'], 
+                       periods=['all','4mo','bef','b2m','aft','a2m']):
 
     # Remove duplicates orders to count distinct number of orders
     df = df.drop_duplicates(transaction_id)
@@ -25,11 +29,11 @@ def calculate_coverage(df, promos, transaction_id='order_id', freqs=['W-MON','D'
 
     # All time period options
     all_periods = {'all':(first_date, last_date),
-                '4mo':(two_months_before, two_months_after),
-                'bef':(first_date, promo_datetime),
-                'b2m':(two_months_before, promo_datetime),
-                'aft':(promo_datetime, last_date),
-                'a2m':(promo_datetime, two_months_after)}
+                   '4mo':(two_months_before, two_months_after),
+                   'bef':(first_date, promo_datetime),
+                   'b2m':(two_months_before, promo_datetime),
+                   'aft':(promo_datetime, last_date),
+                   'a2m':(promo_datetime, two_months_after)}
 
     # Filter to chosen time periods for iterating
     periods_to_use = {}
@@ -75,7 +79,9 @@ def calculate_coverage(df, promos, transaction_id='order_id', freqs=['W-MON','D'
     return row
 
 
-def identify_time_gaps(df, quantity_col='item_quantity', index_name='created_at'):
+def identify_time_gaps(df, 
+                       quantity_col='item_quantity', 
+                       index_name='created_at'):
 
     time_differences_details = {}
     time_differences = {}
@@ -167,46 +173,54 @@ def plot_time_gaps(time_differences, colorbar_max):
 
     plt.show()
 
-def plot_time_series(df, promo_datetime, max_ylim=0, freq='D', subset=True):
+def plot_time_series(df, 
+                     column='item_quantity',
+                     freq='D',
+                     exposure=None, 
+                     subset=False,
+                     offset=60,
+                     max_ylim=0):
 
     # Filter to plant-based items and resample
-    two_months_before = promo_datetime - pd.DateOffset(months=2)
-    two_months_after = promo_datetime + pd.DateOffset(months=2)
+    two_months_before = exposure - pd.DateOffset(days=offset)
+    two_months_after = exposure + pd.DateOffset(days=offset)
 
     # Resample to specified frequency and handle missing data
-    all_items = df.resample(freq)[['item_quantity']].sum().replace(0, np.nan)
-
-    # Subset for the specified time range
-    if subset:
-        all_items = all_items[two_months_before:two_months_after]
+    resampled_data = (df
+                      .resample(freq)
+                      [[column]]
+                      .sum()
+                      .replace(0, np.nan)
+                      .pipe(lambda df: df.loc[two_months_before:two_months_after] if subset else df)
+                      )
 
     # Identify ends of contiguous data chunks
-    is_contiguous = all_items.notna()
-    shift_plus = is_contiguous.shift(1, fill_value=False)
-    shift_minus = is_contiguous.shift(-1, fill_value=False)
-    start_points = is_contiguous & ~shift_plus
-    end_points = is_contiguous & ~shift_minus
+    is_present = resampled_data.notna()
+    is_present_backward = is_present.shift(1, fill_value=False) # pulls past values forward
+    is_present_forward = is_present.shift(-1, fill_value=False) # pulls future values backward
+    start_indicators = is_present & ~is_present_backward # start if present and not present before
+    end_indicators = is_present & ~is_present_forward # end if present and not present after
+    start_points = resampled_data[start_indicators]
+    end_points = resampled_data[end_indicators]
 
     # Plotting
-    fig, ax = plt.subplots(1, 1, figsize=(16, 4))  # Creates a single subplot
-
-    # Main plot
-    ax.plot(all_items.index, all_items, linewidth=2, color='orange', marker='o', markersize=1, label='Total Item Quantity')
-
-    # Extra details, adding dots to the edge of non-missing data
-    ax.axvline(x=promo_datetime, color='red', linestyle='--', label='Promo Date')
+    fig, ax = plt.subplots(1, 1, figsize=(16, 4)) 
+    ax.plot(resampled_data.index, 
+            resampled_data.values, 
+            linewidth=2, color='orange', marker='o', markersize=1, label='Total Item Quantity')
+    ax.axvline(x=exposure, color='red', linestyle='--', label='Promo Date')
 
     # Adding dots for the start and end of each contiguous chunk
-    ax.plot(all_items[start_points].index, all_items[start_points], linewidth=0, color='#ff8500', markersize=5, marker='o', label='Start Extant Data')
-    ax.plot(all_items[end_points].index, all_items[end_points], linewidth=0, color='#ffa500', markersize=5, marker='o', label='End Extant Data')
+    ax.plot(start_points.index, 
+            start_points.values, 
+            linewidth=0, color='#ff8500', markersize=5, marker='o', label='Start Extant Data')
+    ax.plot(end_points.index, 
+            end_points.values, 
+            linewidth=0, color='#ffb500', markersize=5, marker='o', label='End Extant Data')
 
     # Ticks and limits
-    xticks = pd.date_range(promo_datetime - pd.DateOffset(days=60), periods=10, freq="15D")
-    if subset:
-        ax.set_xticks(ticks=xticks)
-        ax.set_xticklabels(labels=xticks.date, rotation=70)
-        ax.set_xlim(promo_datetime - pd.DateOffset(days=60), promo_datetime + pd.DateOffset(days=60))
-    ax.set_ylim(0, max(max_ylim, all_items['item_quantity'].max()))
+    ax.set_xlim(resampled_data.index.min(), resampled_data.index.max()) if subset else None
+    ax.set_ylim(0, max(max_ylim, resampled_data['item_quantity'].max()))
 
     # Axis and title
     ax.set_title(f'Total Item Quantity Sold')
