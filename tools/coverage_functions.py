@@ -126,7 +126,7 @@ def plot_time_series_subset(
     color_end2='#2fb7bf'):
 
     # Identify starts and ends of contiguous chunks
-    resampled_data = resample_time_series(
+    resampled_data_full = resample_time_series(
         df, 
         column=column1,
         freq=freq,
@@ -134,7 +134,7 @@ def plot_time_series_subset(
         truncate=truncate,
         offset=offset)
     
-    start_points, end_points = identify_time_series_contiguous(resampled_data)
+    start_points, end_points = identify_time_series_contiguous(resampled_data_full)
 
     # Identify starts and ends of contiguous chunks
     resampled_data_part = resample_time_series(
@@ -149,7 +149,7 @@ def plot_time_series_subset(
     normalize_str1 = ''
     normalize_str2 = ''
     if normalize:
-        resampled_data_part = resampled_data_part / resampled_data
+        resampled_data_part = resampled_data_part / resampled_data_full
         normalize_str2 = ' Fraction'
         max_ylim2 = 1
 
@@ -158,7 +158,7 @@ def plot_time_series_subset(
     
     # Plotting
     fig, ax_list = plt.subplots(1, 2, figsize=(16, 4))  # Creates a single subplot
-    data1, data2 = (resampled_data, start_points, end_points), (resampled_data_part, start_points_part, end_points_part)
+    data1, data2 = (resampled_data_full, start_points, end_points), (resampled_data_part, start_points_part, end_points_part)
     colors1, colors2 = (color1, color_start1, color_end1), (color2, color_start2, color_end2)
     plot_list = zip(ax_list, 
                     [data1, data2], 
@@ -166,6 +166,7 @@ def plot_time_series_subset(
                     [colors1, colors2],
                     [max_ylim1, max_ylim2],
                     [normalize_str1, normalize_str2])
+    
     for ax, data, title, colors, max_ylim, normalize_str in plot_list:
         resampled_data, start_points, end_points = data
         color, color_start, color_end = colors
@@ -293,7 +294,8 @@ def identify_time_gaps(df, column='item_quantity'):
 
     return time_diff_summary, time_diff_details
 
-def plot_gaps_heatmap(time_diff_summary, colorbar_max):
+def plot_gaps_heatmap(time_diff_summary, 
+                      colorbar_max_adj=1e3):
 
     HOURS_IN_DAY = 24
 
@@ -302,13 +304,14 @@ def plot_gaps_heatmap(time_diff_summary, colorbar_max):
         .T
         .drop(columns=[0]) # exclude gaps of less than an hour
         .reindex(columns=range(HOURS_IN_DAY)))
-
+    
     fig, ax = plt.subplots(figsize=(10, 5))
+    colorbar_max = time_diff_summary.sum().sum() / colorbar_max_adj
     norm = plt.Normalize(vmin=0, vmax=colorbar_max)
-    cax = ax.imshow(data, cmap='viridis', norm=norm)  # Display the data as an image
+    cax = ax.imshow(data, cmap='viridis', norm=norm)  # display the data as an image
     fig.colorbar(cax, ax=ax)
 
-    # Loop over data dimensions and create text annotations for each cell
+    # Add text to each cell
     num_rows, num_cols = data.shape
     for i in range(num_rows):
         for j in range(num_cols):
@@ -317,7 +320,7 @@ def plot_gaps_heatmap(time_diff_summary, colorbar_max):
 
     # Ticks and limits
     ax.set_yticks(np.arange(num_rows))
-    ax.set_yticklabels(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
+    ax.set_yticklabels(time_diff_summary.columns)
     ax.set_xticks(np.arange(1, HOURS_IN_DAY))
     ax.set_xticklabels(np.arange(1, HOURS_IN_DAY))
     ax.set_xlim(.5, HOURS_IN_DAY-0.5) # center the squares, to make it like a heatmap
