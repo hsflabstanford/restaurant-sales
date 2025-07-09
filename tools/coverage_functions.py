@@ -40,6 +40,8 @@ def identify_time_series_contiguous(resampled_data):
     is_present = resampled_data.notna()
     is_present_backward = is_present.shift(1, fill_value=False) # pulls past values forward
     is_present_forward = is_present.shift(-1, fill_value=False) # pulls future values backward
+    
+    # Start and end points
     start_indicators = is_present & ~is_present_backward # start if present and not present before
     end_indicators = is_present & ~is_present_forward # end if present and not present after
     start_points = resampled_data[start_indicators]
@@ -55,7 +57,10 @@ def plot_time_series(df,
                      exposure=None, 
                      truncate=False,
                      offset=60,
-                     max_ylim=0):
+                     max_ylim=0,
+                     color='orange',
+                     color_start='#ff8500',
+                     color_end='#ffb500'):
 
     # Identify starts and ends of contiguous chunks
     resampled_data = resample_time_series(
@@ -72,16 +77,16 @@ def plot_time_series(df,
     fig, ax = plt.subplots(1, 1, figsize=(16, 4)) 
     ax.plot(resampled_data.index, 
             resampled_data.values, 
-            linewidth=2, color='orange', marker='o', markersize=1, label=column.replace('_', ' ').title())
+            linewidth=2, color=color, marker='o', markersize=1, label=column.replace('_', ' ').title())
     ax.axvline(x=exposure, color='red', linestyle='--', label='Promo Date') if exposure else None # conditional
 
     # Adding dots for the start and end of each contiguous chunk
     ax.plot(start_points.index, 
             start_points.values, 
-            linewidth=0, color='#ff8500', markersize=5, marker='o', label='Start Extant Data')
+            linewidth=0, color=color_start, markersize=5, marker='o', label='Start Extant Data')
     ax.plot(end_points.index, 
             end_points.values, 
-            linewidth=0, color='#ffb500', markersize=5, marker='o', label='End Extant Data')
+            linewidth=0, color=color_end, markersize=5, marker='o', label='End Extant Data')
 
     # Ticks and limits
     ax.set_xlim(resampled_data.index.min(), resampled_data.index.max()) if truncate else None # conditional
@@ -102,13 +107,20 @@ def plot_time_series_subset(df,
                             title1='Total Item Quantity Sold',
                             column2='is_plant_based',
                             column2_value='Yes',
-                            title2='Plant-Based Items Fraction',
-                            normalized=True,
+                            title2='Plant-Based Item Quantity',
+                            normalize=True,
                             freq='D',
                             exposure=None, 
                             truncate=False,
                             offset=60,
-                            max_ylim=0):
+                            max_ylim1=0,
+                            max_ylim2=0,
+                            color1='orange',
+                            color_start1='#ff8500',
+                            color_end1='#ffb500',
+                            color2='#1f77b4',
+                            color_start2='#1f77c4',
+                            color_end2='#2fb7bf'):
 
     # Identify starts and ends of contiguous chunks
     resampled_data = resample_time_series(
@@ -131,83 +143,68 @@ def plot_time_series_subset(df,
         offset=offset)
 
     # Turn into a ratio if toggled
-    normalized_str = ' '
-    if normalized:
+    normalize_str1 = ''
+    normalize_str2 = ''
+    if normalize:
         resampled_data_part = resampled_data_part / resampled_data
-        normalized_str = ' Ratio'
+        normalize_str2 = ' Fraction'
+        max_ylim2 = 1
 
     # Filtered part of the data
     start_points_part, end_points_part = identify_time_series_contiguous(resampled_data_part)
     
     # Plotting
-    fig, ax = plt.subplots(1, 2, figsize=(16, 4))  # Creates a single subplot
-    ax1, ax2 = ax
+    fig, ax_list = plt.subplots(1, 2, figsize=(16, 4))  # Creates a single subplot
+    data1, data2 = (resampled_data, start_points, end_points), (resampled_data_part, start_points_part, end_points_part)
+    colors1, colors2 = (color1, color_start1, color_end1), (color2, color_start2, color_end2)
+    plot_list = zip(ax_list, 
+                    [data1, data2], 
+                    [title1, title2], 
+                    [colors1, colors2],
+                    [max_ylim1, max_ylim2],
+                    [normalize_str1, normalize_str2])
+    for ax, data, title, colors, max_ylim, normalize_str in plot_list:
+        resampled_data, start_points, end_points = data
+        color, color_start, color_end = colors
 
-    # Plot 1
-    ax1.plot(resampled_data.index, 
-             resampled_data.values, 
-             linewidth=2, color='orange', marker='o', markersize=1, label=column1.replace('_', ' ').title())
-    ax1.axvline(x=exposure, color='red', linestyle='--', label='Promo Date') if exposure else None # conditional
+        # Main plot
+        y_label = column1.replace('_', ' ').title() + normalize_str
+        ax.plot(resampled_data.index, 
+                resampled_data.values, 
+                linewidth=2, color=color, marker='o', markersize=1, label=y_label)
+        ax.axvline(x=exposure, color='red', linestyle='--', label='Promo Date') if exposure else None # conditional
 
-    # Adding dots for the start and end of each contiguous chunk
-    ax1.plot(start_points.index, 
-             start_points.values, 
-             linewidth=0, color='#ff8500', markersize=5, marker='o', label='Start Extant Data')
-    ax1.plot(end_points.index, 
-             end_points.values, 
-             linewidth=0, color='#ffb500', markersize=5, marker='o', label='End Extant Data')
+        # Adding dots for the start and end of each contiguous chunk
+        ax.plot(start_points.index, 
+                start_points.values, 
+                linewidth=0, color=color_start, markersize=5, marker='o', label='Start Extant Data')
+        ax.plot(end_points.index, 
+                end_points.values, 
+                linewidth=0, color=color_end, markersize=5, marker='o', label='End Extant Data')
 
-    # Ticks and limits
-    ax1.set_xlim(resampled_data.index.min(), resampled_data.index.max()) if truncate else None # conditional
-    ax1.set_ylim(0, max(max_ylim, resampled_data[column1].max()))
+        # Ticks and limits
+        ax.set_xlim(resampled_data.index.min(), resampled_data.index.max()) if truncate else None # conditional
+        ax.set_ylim(0, max(max_ylim, resampled_data[column1].max()))
 
-    # Axis and title
-    loc_id = df['location_id'].iloc[0] if 'location_id' in df.columns else ''
-    ax1.set_title(title1 + f' for {loc_id}')
-    ax1.set_ylabel(column1.replace('_', ' ').title())
-    ax1.set_xlabel('Date')
-    ax1.legend()
-
-    # Plot 2
-    ax2.plot(resampled_data_part.index, 
-             resampled_data_part.values, 
-             linewidth=2, marker='o', markersize=1, label=column2.replace('_', ' ').title() + normalized_str)
-    ax2.axvline(x=exposure, color='red', linestyle='--', label='Promo Date') if exposure else None # conditional
-
-    # Adding dots for the start and end of each contiguous chunk
-    ax2.plot(start_points_part.index, 
-             start_points_part.values, 
-             linewidth=0, color='#1f77c4', markersize=5, marker='o', label='Start Extant Data')
-    ax2.plot(end_points_part.index, 
-             end_points_part.values, 
-             linewidth=0, color='#2fb7bf', markersize=5, marker='o', label='End Extant Data')
-
-    # Ticks and limits
-    ax2.set_xlim(resampled_data_part.index.min(), resampled_data_part.index.max()) if truncate else None # conditional
-    if normalized:
-        ax2.set_ylim(0,1)
-    else:
-        ax2.set_ylim(0, max(max_ylim, resampled_data_part[column2].max()))
-   
-    # Axis and title
-    loc_id = df['location_id'].iloc[0] if 'location_id' in df.columns else ''
-    ax2.set_title(title2 + normalized_str + f' for {loc_id}')
-    ax2.set_ylabel(column2.replace('_', ' ').title())
-    ax2.set_xlabel('Date')
-    ax2.legend()
+        # Axis and title
+        loc_id = df['location_id'].iloc[0] if 'location_id' in df.columns else ''
+        ax.set_title(title + normalize_str + f' for {loc_id}')
+        ax.set_ylabel(y_label)
+        ax.set_xlabel('Date')
+        ax.legend()
 
     return fig
 
 
 def identify_time_gaps(df, 
-                       quantity_col='item_quantity', 
+                       column='item_quantity', 
                        index_name='created_at'):
 
     time_differences_details = {}
     time_differences = {}
 
     # Group by transactions (at the same time)
-    transactions = df.groupby(index_name).agg({quantity_col : 'sum'})
+    transactions = df.groupby(index_name)[column].sum()
 
     # Group by individuals days and days of the week
     transaction_by_dayofweek = transactions.groupby([transactions.index.dayofweek, transactions.index.date])
