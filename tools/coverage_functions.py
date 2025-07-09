@@ -265,90 +265,80 @@ def identify_time_gaps(df, column='item_quantity'):
     time_diffs = (
         df
         .groupby(df.index)
-        [column]
+        [[column]]
         .sum()
-        .assign(time_diff = lambda df: df.index.to_series().diff(),
-                is_same_day = lambda df: df.index.to_series().dt.date == df.index.to_series().shift(1).dt.date)
+        .assign(
+            time_diff = lambda df: df.index.to_series().diff(),
+            is_same_day = lambda df: df.index.to_series().dt.date == df.index.to_series().shift(1).dt.date)
         .query('is_same_day')
-        .assign(diff_hours=lambda d: d.time_diff.dt.total_seconds() // 3600,
-                dayofweek=lambda d: d.index.dayofweek)
-        )
+        .assign(
+            diff_hours = lambda d: d.time_diff.dt.total_seconds() // 3600,
+            dayofweek = lambda d: d.index.dayofweek))
     
     time_diff_summary = (
         time_diffs
-        .pivot_table(index='diff_hours',
-                     columns='dayofweek',
-                     aggfunc='size',
-                     fill_value=0)
-        .reindex(columns=range(7), fill_value=0)
-        .rename(columns=day_mapping)
-    )
+        .pivot_table(
+            index='diff_hours',
+            columns='dayofweek',
+            aggfunc='size')
+        .reindex(columns=range(7))
+        .rename(columns=day_mapping))
     
-    time_diff_details = time_diffs['diff_hours'].copy() # make sure its not a view
+    loc_id = df['location_id'].iloc[0]
+    time_diff_summary.columns.name = loc_id
+    time_diff_details = time_diffs['diff_hours'].copy().rename(loc_id) # make sure its not a view
     time_diff_details.index = pd.MultiIndex.from_arrays(
         [time_diffs['dayofweek'], time_diffs.index.date, time_diffs.index],
-        names=['dayofweek', 'date', 'datetime']
-    )
+        names=['dayofweek', 'date', 'datetime'])
 
     return time_diff_summary, time_diff_details
 
-def plot_time_spacing(loc_id, time_differences, colorbar_max):
+def plot_gaps_heatmap(time_diff_summary, colorbar_max):
+
+    HOURS_IN_DAY = 24
+
+    data = (
+        time_diff_summary
+        .T
+        .drop(columns=[0]) # exclude gaps of less than an hour
+        .reindex(columns=range(HOURS_IN_DAY)))
 
     fig, ax = plt.subplots(figsize=(10, 5))
-
-    # Assuming time_differences[loc_id] is a valid 2D array and using pandas DataFrame
-    dat = time_differences[loc_id].T.iloc[:,1:]  # Converting to DataFrame if not already one
-
-    full_columns = np.arange(24)
-
-    dat = dat.reindex(columns=full_columns)
-
     norm = plt.Normalize(vmin=0, vmax=colorbar_max)
-
-    cax = ax.imshow(dat, cmap='viridis', norm=norm)  # Display the data as an image
-
-    # Adding a color bar
+    cax = ax.imshow(data, cmap='viridis', norm=norm)  # Display the data as an image
     fig.colorbar(cax, ax=ax)
 
     # Loop over data dimensions and create text annotations for each cell
-    num_rows, num_cols = dat.shape
+    num_rows, num_cols = data.shape
     for i in range(num_rows):
         for j in range(num_cols):
-            # Only annotate if the value is not NaN
-            if dat.iloc[i, j] == dat.iloc[i, j]:
-                # Rounded value if not NaN
-                rounded_value = round(100 * dat.iloc[i, j]) // 100
-                ax.text(j, i, str(rounded_value), ha='center', va='center', color='w', fontsize=8)
+            if not np.isnan(data.iloc[i, j]):
+                ax.text(j, i, str(int(data.iloc[i, j])), ha='center', va='center', color='w', fontsize=8)
 
-    # Assigning labels for each column with the days of the week
-    days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-
-    # Setting x-axis ticks to be centered on each column
+    # Ticks and limits
     ax.set_yticks(np.arange(num_rows))
+    ax.set_yticklabels(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
+    ax.set_xticks(np.arange(1, HOURS_IN_DAY))
+    ax.set_xticklabels(np.arange(1, HOURS_IN_DAY))
+    ax.set_xlim(.5, HOURS_IN_DAY-0.5) # center the squares, to make it like a heatmap
 
-    ax.set_yticklabels(days_of_week)
-
-    # # Ensuring the labels are displayed at the top
-    # ax.xaxis.set_ticks_position('top')
-
-    ax.set_xticks(np.arange(1, 24))
-    ax.set_xticklabels(np.arange(1, 24))
-    ax.set_xlim(.5,23.5)
-
-    ax.set_title('Number of Gaps in the Data of a Given Duration')
+    # Labels
+    loc_id = time_diff_summary.columns.name
+    ax.set_title(f'Number of Gaps in the Data of a Given Duration for {loc_id}')
     ax.set_xlabel('Gap Duration in Hours')
     ax.set_ylabel('Day of the Week')
 
     plt.show()
 
 
-def coverage_calculator(loc_id, 
-                        df, 
-                        promos,
-                        timezones, 
-                        freqs=['W-MON','D','12H','6H'], 
-                        periods=['all','4mo','bef','b2m','aft','a2m'], 
-                        include_weekends=True):
+def coverage_calculator(
+    loc_id, 
+    df, 
+    promos,
+    timezones, 
+    freqs=['W-MON','D','12H','6H'], 
+    periods=['all','4mo','bef','b2m','aft','a2m'], 
+    include_weekends=True):
 
     # Remove duplicates orders to count distinct number of orders
     df = df.drop_duplicates('order_id')
@@ -362,11 +352,11 @@ def coverage_calculator(loc_id,
 
     # All time period options
     all_periods = {'all':(first_date, last_date),
-                '4mo':(two_months_before, two_months_after),
-                'bef':(first_date, promo_datetime),
-                'b2m':(two_months_before, promo_datetime),
-                'aft':(promo_datetime, last_date),
-                'a2m':(promo_datetime, two_months_after)}
+                   '4mo':(two_months_before, two_months_after),
+                   'bef':(first_date, promo_datetime),
+                   'b2m':(two_months_before, promo_datetime),
+                   'aft':(promo_datetime, last_date),
+                   'a2m':(promo_datetime, two_months_after)}
 
     # Filter to chosen time periods for iterating
     periods_to_use = {}
