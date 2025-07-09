@@ -199,49 +199,91 @@ def plot_time_series_subset(
     return fig
 
 
-def identify_time_gaps(df, 
-                       column='item_quantity', 
-                       index_name='created_at'):
+# def identify_time_gaps(df, 
+#                        column='item_quantity'):
 
-    time_differences_details = {}
-    time_differences = {}
+#     # Group by transactions (at the same time)
+#     time_diffs = (df
+#                   .groupby(df.index) # make it unique by the time index
+#                     [column]
+#                     .sum()
+#                     .assign(dayofweek=lambda x: x.index.dayofweek, date=lambda x: x.index.date)
+#                     .groupby(['dayofweek', 'date'])
+#                     # Take the index at every group and find the difference between time points (dropping the NaT edges) and convert to hours
+#                     .apply(lambda s: (s
+#                                       .index
+#                                       .to_series()
+#                                       .diff()
+#                                       .dropna()
+#                                       .dt.seconds
+#                                       //3600)))
 
-    # Group by transactions (at the same time)
-    transactions = df.groupby(index_name)[column].sum()
+#     existing_combinations = time_diffs_on_dayofweek.index.drop_duplicates()
 
-    # Group by individuals days and days of the week
-    transaction_by_dayofweek = transactions.groupby([transactions.index.dayofweek, transactions.index.date])
+#     # Create a new MultiIndex from all days and existing (date, datetime) combinations
+#     all_days = range(7)
+#     new_indices = [(day, date, datetime) for day in all_days for _, date, datetime in existing_combinations]
+#     time_diffs_on_dayofweek = time_diffs_on_dayofweek.reindex(new_indices)
 
-    # Take the index at every group and find the difference between time points (dropping the NaT edges) and convert to hours
-    time_diffs_on_dayofweek = transaction_by_dayofweek.apply(lambda s: s.index.to_series().diff().dropna().dt.seconds//3600)
+#     time_diff_frequencies_list = []
+#     for dayofweek in all_days:
 
-    existing_combinations = time_diffs_on_dayofweek.index.drop_duplicates()
+#         present_days_of_week = time_diffs_on_dayofweek.index.get_level_values(0)
+#         if dayofweek in present_days_of_week:
+#             time_diff_frequencies_list.append(time_diffs_on_dayofweek
+#                                               [dayofweek] # subset to given day of the week and calculate the frequencies
+#                                               .value_counts()
+#                                               .to_frame(dayofweek)
+#                                               .rename_axis('time_diffs'))
+            
 
-    # Create a new MultiIndex from all days and existing (date, datetime) combinations
-    all_days = np.arange(7) 
-    new_indices = [(day, date, datetime) for day in all_days for _, date, datetime in existing_combinations]
-    time_diffs_on_dayofweek = time_diffs_on_dayofweek.reindex(new_indices)
+#     time_differences = (time_diff_frequencies_list[0]
+#                        .join(time_diff_frequencies_list[1:], how='outer')
+#                        .sort_index()
+#                        .rename(columns={0:'Monday', 
+#                                         1:'Tuesday', 
+#                                         2:'Wednesday', 
+#                                         3:'Thursday', 
+#                                         4:'Friday', 
+#                                         5:'Saturday', 
+#                                         6:'Sunday'}))
 
-    # Rename
-    time_differences_details = time_diffs_on_dayofweek
+#     return time_differences, time_diffs_on_dayofweek
 
-    time_diff_frequencies_list = []
-    for dayofweek in range(7):
 
-        # Subset to given day of the week and calculate the frequencies
-        if dayofweek in time_diffs_on_dayofweek.index.get_level_values(0):
-            time_diff_frequencies_specific_day = time_diffs_on_dayofweek[dayofweek].value_counts()
-            time_diff_frequencies_specific_day.index.name = "time_diffs"
-            time_diff_frequencies_specific_day.name = dayofweek
-            time_diff_frequencies_list.append(pd.DataFrame(time_diff_frequencies_specific_day))
+def identify_time_gaps(df, column='item_quantity'):
 
-    time_diff_frequencies = time_diff_frequencies_list[0].join(time_diff_frequencies_list[1:], how='outer').sort_index()
-    time_diff_frequencies = time_diff_frequencies.rename(columns={0:'Monday', 1:'Tuesday', 2:'Wednesday', 3:'Thursday', 4:'Friday', 5:'Saturday', 6:'Sunday'})
+    day_mapping = {
+        0: 'Monday',
+        1: 'Tuesday',  
+        2: 'Wednesday',
+        3: 'Thursday',
+        4: 'Friday',
+        5: 'Saturday',
+        6: 'Sunday'}
 
-    # Rename
-    time_differences = time_diff_frequencies
+    time_diffs = (
+        df
+        .groupby(df.index)
+        [column]
+        .sum()
+        .assign(time_diff = lambda df: df.index.to_series().diff(),
+                is_same_day = lambda df: df.index.to_series().dt.date == df.index.to_series().shift(1).dt.date)
+        .query('is_same_day')
+        .assign(diff_hours=lambda d: d.time_diff.dt.total_seconds() // 3600,
+                dayofweek=lambda d: d.index.dayofweek)
+        )
     
-    return time_differences, time_differences_details
+    time_diff_summary = (
+        time_diffs
+        .pivot_table(index='diff_hours',
+                     columns='dayofweek',
+                     aggfunc='size',
+                     fill_value=0)
+        .reindex(columns=range(7), fill_value=0)
+        .rename(columns=day_mapping)
+    )
+    
 
     return time_diff_summary, time_diff_details
 
