@@ -11,12 +11,13 @@ import tabulate
 from IPython.display import display, Markdown
 
 
-def resample_time_series(df, 
-                         column='item_quantity',
-                         freq='D',
-                         exposure=None, 
-                         truncate=False,
-                         offset=60):
+def resample_time_series(
+    df, 
+    column='item_quantity',
+    freq='D',
+    exposure=None, 
+    truncate=False,
+    offset=60):
     
     # Time window
     if exposure:
@@ -50,17 +51,18 @@ def identify_time_series_contiguous(resampled_data):
     return start_points, end_points
 
 
-def plot_time_series(df, 
-                     column='item_quantity',
-                     title='Total Item Quantity Sold',
-                     freq='D',
-                     exposure=None, 
-                     truncate=False,
-                     offset=60,
-                     max_ylim=0,
-                     color='orange',
-                     color_start='#ff8500',
-                     color_end='#ffb500'):
+def plot_time_series(
+    df, 
+    column='item_quantity',
+    title='Total Item Quantity Sold',
+    freq='D',
+    exposure=None, 
+    truncate=False,
+    offset=60,
+    max_ylim=0,
+    color='orange',
+    color_start='#ff8500',
+    color_end='#ffb500'):
 
     # Identify starts and ends of contiguous chunks
     resampled_data = resample_time_series(
@@ -102,25 +104,26 @@ def plot_time_series(df,
     return fig
 
 
-def plot_time_series_subset(df, 
-                            column1='item_quantity',
-                            title1='Total Item Quantity Sold',
-                            column2='is_plant_based',
-                            column2_value='Yes',
-                            title2='Plant-Based Item Quantity',
-                            normalize=True,
-                            freq='D',
-                            exposure=None, 
-                            truncate=False,
-                            offset=60,
-                            max_ylim1=0,
-                            max_ylim2=0,
-                            color1='orange',
-                            color_start1='#ff8500',
-                            color_end1='#ffb500',
-                            color2='#1f77b4',
-                            color_start2='#1f77c4',
-                            color_end2='#2fb7bf'):
+def plot_time_series_subset(
+    df, 
+    column1='item_quantity',
+    title1='Total Item Quantity Sold',
+    column2='is_plant_based',
+    column2_value='Yes',
+    title2='Plant-Based Item Quantity',
+    normalize=True,
+    freq='D',
+    exposure=None, 
+    truncate=False,
+    offset=60,
+    max_ylim1=0,
+    max_ylim2=0,
+    color1='orange',
+    color_start1='#ff8500',
+    color_end1='#ffb500',
+    color2='#1f77b4',
+    color_start2='#1f77c4',
+    color_end2='#2fb7bf'):
 
     # Identify starts and ends of contiguous chunks
     resampled_data = resample_time_series(
@@ -240,6 +243,7 @@ def identify_time_gaps(df,
     
     return time_differences, time_differences_details
 
+    return time_diff_summary, time_diff_details
 
 def plot_time_spacing(loc_id, time_differences, colorbar_max):
 
