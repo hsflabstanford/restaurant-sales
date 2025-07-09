@@ -284,6 +284,11 @@ def identify_time_gaps(df, column='item_quantity'):
         .rename(columns=day_mapping)
     )
     
+    time_diff_details = time_diffs['diff_hours'].copy() # make sure its not a view
+    time_diff_details.index = pd.MultiIndex.from_arrays(
+        [time_diffs['dayofweek'], time_diffs.index.date, time_diffs.index],
+        names=['dayofweek', 'date', 'datetime']
+    )
 
     return time_diff_summary, time_diff_details
 
