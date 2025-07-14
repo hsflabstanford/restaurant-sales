@@ -2,6 +2,12 @@
 data/2_palate_data_parquet_cleaned/time_differences_details.pkl
 data/3_palate_data_parquet_modeling/all_locations.parquet
 
+# Jupyter
+.ipynb_checkpoints/
+
+# Python bytecode
+__pycache__/
+
 # R session history (not needed for reproducibility)
 .Rhistory
 .Rapp.history
@@ -9,6 +15,10 @@ data/3_palate_data_parquet_modeling/all_locations.parquet
 # RData files (can be large and not needed)
 .RData
 .Ruserdata
+.RDataTmp*
+
+# RStudio project settings (optional, but keeps repo clean)
+.Rproj.user/
 
 # renv library (locally installed packages)
 renv/library/
@@ -16,21 +26,8 @@ renv/staging/
 renv/activate.R
 renv/settings.json
 renv/.gitignore
-
-# RStudio project settings (optional, but keeps repo clean)
-.Rproj.user/
-
 renv.zip
 
+# API Tokens
 weather_token.txt
 
-.RDataTmp
-.RDataTmp1
-.RDataTmp2
-.RDataTmp3
-.RDataTmp4
-.RDataTmp5
-.RDataTmp6
-.RDataTmp7
-.RDataTmp8
-.RDataTmp9
