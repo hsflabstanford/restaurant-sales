@@ -7,6 +7,7 @@ data/3_palate_data_parquet_modeling/all_locations.parquet
 
 # Python bytecode
 __pycache__/
+tools/__pycache__/
 
 # R session history (not needed for reproducibility)
 .Rhistory
