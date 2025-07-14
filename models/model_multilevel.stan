@@ -1,46 +1,35 @@
 data {
-  // Size of design matrix, and indices for fixed and random effect
-  int<lower=1> R;                                    // # of restaurants
-  int<lower=1> J;                                    // # of covariates
-  int<lower=1> idx_intercept;                        // # index for intercept
-  int<lower=1> K_beta_random;                        // # of coef to have random effects
-  array[K_beta_random] int idx_beta_random;          // the indices in X for those coef
-  int<lower=1> K_beta_fixed;                         // # of coef to NOT have random effects
-  array[K_beta_fixed] int idx_beta_fixed;            // the indices in X for those coef
-  
-  // Indices for outcome lags
+  int<lower=1> R;
+  int<lower=1> J;
+  int<lower=1> idx_intercept;
+  int<lower=1> K_beta_random;
+  array[K_beta_random] int idx_beta_random;
+  int<lower=1> K_beta_fixed;
+  array[K_beta_fixed] int idx_beta_fixed;
   int<lower=1> p_effective;
   array[p_effective] int effective_lags_alpha;
   int<lower=1> K_alpha_random;
   array[K_alpha_random] int idx_alpha_random;
   int<lower=1> K_alpha_fixed;
   array[K_alpha_fixed] int idx_alpha_fixed;
-  
-  // Indices for latent intensities
   int<lower=1> q_effective;
   array[q_effective] int effective_lags_delta;
   int<lower=1> K_delta_random;
   array[K_delta_random] int idx_delta_random;
   int<lower=1> K_delta_fixed;
   array[K_delta_fixed] int idx_delta_fixed;
-  int<lower=1> K_exposure;
-  array[K_exposure] int idx_exposure;
-  
-  // Data
   int<lower=1> N_train;
-  matrix[N_train, J] X_train;                               // Design matrix (train)
+  matrix[N_train, J] X_train;
   array[N_train] int y_train;
-  array[N_train] int<lower=1, upper=R> restaurant_id_train; // Mapping from the concatenated index to the restaurants
+  array[N_train] int<lower=1, upper=R> restaurant_id_train;
   array[R] int train_start_idx;
   array[R] int train_end_idx;
   int<lower=1> N_test;
-  matrix[N_test, J] X_test;                                 // Design matrix (test)
+  matrix[N_test, J] X_test;
   array[N_test] int y_test;
   array[N_test] int<lower=1, upper=R> restaurant_id_test;
   array[R] int test_start_idx;
   array[R] int test_end_idx;
-  
-  // Hyperprior scales
   real<lower=0> mu_beta_scale;
   real<lower=0> sigma_beta_scale;
   real<lower=0> mu_alpha_scale;
@@ -51,53 +40,40 @@ data {
   real<lower=0> sigma_phi_log_scale;
 }
 parameters {
-  // Fixed effects
   real mu_beta_intercept;
   vector[K_beta_random] mu_beta_random;
   vector[K_beta_fixed] mu_beta_fixed;
-  vector[K_alpha_random] mu_alpha_random_raw;           // Raw will be used for noncentering params (helps with convergence)
-  vector[K_alpha_fixed] mu_alpha_fixed_raw;             
+  vector[K_alpha_random] mu_alpha_random_raw;
+  vector[K_alpha_fixed] mu_alpha_fixed_raw;
   vector[K_delta_random] mu_delta_random_raw;
   vector[K_delta_fixed] mu_delta_fixed_raw;
   real mu_phi_log;
-  
-  // Between restaurant variability
   real<lower=0> sigma_beta_intercept;
   vector<lower=0>[K_beta_random] sigma_beta_random;
   vector<lower=0>[K_alpha_random] sigma_alpha_random;
   vector<lower=0>[K_delta_random] sigma_delta_random;
   real<lower=0> sigma_phi_log;
-  
-  // Random effects (raw, again used for convergence)
   vector[R] z_beta_intercept;
   matrix[K_beta_random, R] z_beta_random;
   matrix[K_alpha_random, R] z_alpha_random;
   matrix[K_delta_random, R] z_delta_random;
   vector[R] z_phi_log;
 }
-
 transformed parameters {
   vector[N_train] nu;
   vector[N_train] lambda;
-  // Noncentered parametrization: instead of sampling a normal, we sample a standard normal and multiply it by sd
   vector<lower=0>[R] phi = exp(mu_phi_log + sigma_phi_log * z_phi_log);
-  // Covariates
   matrix[J, R] beta;
   {
-    // Again, noncentered parametrization
     vector[R] beta_intercept_r = mu_beta_intercept + sigma_beta_intercept * z_beta_intercept;
-    // Diag pre multiply is more efficient, and we want to do it parallelly (same idea as for intercept)
     matrix[K_beta_random, R] beta_random_r = diag_pre_multiply(sigma_beta_random, z_beta_random)
                                              + rep_matrix(mu_beta_random, R);
     for (r in 1:R) {
-      // Insert them into the respective indices of beta for matching later
       beta[idx_intercept, r] = beta_intercept_r[r];
       beta[idx_beta_random, r] = beta_random_r[, r];
-      // For coef that have no random effects, just choose mean for fixed effect
       beta[idx_beta_fixed, r] = mu_beta_fixed;
     }
   }
-  // Outcome lags
   matrix<lower=-1, upper=1>[p_effective, R] alpha;
   {
     matrix[p_effective, R] alpha_raw;
@@ -107,12 +83,8 @@ transformed parameters {
       alpha_raw[idx_alpha_random, r] = alpha_random_raw_r[, r];
       alpha_raw[idx_alpha_fixed, r] = mu_alpha_fixed_raw;
     }
-    // We parametrize alpha_raw over the real line 
-    // But alpha itself needs to be constrained to (-1,1)
-    // Divide by 2 to spread it out further (for better convergence)
     alpha = tanh(alpha_raw / 2.0);
   }
-  // Latent intensity lags
   matrix<lower=-1, upper=1>[q_effective, R] delta;
   {
     matrix[q_effective, R] delta_raw;
@@ -124,26 +96,20 @@ transformed parameters {
     }
     delta = tanh(delta_raw / 2.0);
   }
-  // For each restaurant
   for (r in 1:R) {
-    // Identiy which indices in the concatenated (long-style) data are which restaurant
     int r_start = train_start_idx[r];
     int r_end = train_end_idx[r];
     vector[J] beta_r = beta[, r];
     vector[p_effective] alpha_r = alpha[, r];
     vector[q_effective] delta_r = delta[, r];
-    // For every time point within restaurant r
     for (t in r_start:r_end) {
-      // Covariates
       nu[t] = dot_product(X_train[t], beta_r);
-      // Outcome lags
       for (i in 1:p_effective) {
         int lag = effective_lags_alpha[i];
         if (t - lag >= r_start) {
           nu[t] += alpha_r[i] * log(y_train[t - lag] + 1);
         }
       }
-      // Latent intensity lags
       for (j in 1:q_effective) {
         int lag = effective_lags_delta[j];
         if (t - lag >= r_start) {
@@ -154,9 +120,7 @@ transformed parameters {
   }
   lambda = exp(nu);
 }
-
 model {
-  // Restaurant centers (aka fixed effect)
   mu_beta_intercept ~ normal(0, mu_beta_scale);
   mu_beta_random ~ normal(0, mu_beta_scale);
   mu_beta_fixed ~ normal(0, mu_beta_scale);
@@ -165,38 +129,30 @@ model {
   mu_delta_random_raw ~ normal(0, mu_delta_scale);
   mu_delta_fixed_raw ~ normal(0, mu_delta_scale);
   mu_phi_log ~ normal(0, mu_phi_log_scale);
-  
-  // Between restaurant variability
   sigma_beta_intercept ~ exponential(sigma_beta_scale);
   sigma_beta_random ~ exponential(sigma_beta_scale);
   sigma_alpha_random ~ exponential(sigma_alpha_scale);
   sigma_delta_random ~ exponential(sigma_delta_scale);
   sigma_phi_log ~ exponential(sigma_phi_log_scale);
-  
-  // Random effects, standard normal described earlier
   z_beta_intercept ~ std_normal();
   to_vector(z_beta_random) ~ std_normal();
   to_vector(z_alpha_random) ~ std_normal();
   to_vector(z_delta_random) ~ std_normal();
   z_phi_log ~ std_normal();
-  
-  // Back to the overall index, so we need the index to restaurant mapping
   for (t in 1:N_train) {
-    // Identiy which restaurant using the mapping
     int r = restaurant_id_train[t];
     y_train[t] ~ neg_binomial_2(lambda[t], phi[r]);
   }
 }
-
 generated quantities {
-  array[N_train] int y_rep;          // Outcome predictions (train)
-  vector[N_train] log_lik;           // Pointwise log-likelihood
+  array[N_train] int y_rep;
+  vector[N_train] log_lik;
   for (t in 1:N_train) {
     int r = restaurant_id_train[t];
     y_rep[t] = neg_binomial_2_rng(lambda[t], phi[r]);
     log_lik[t] = neg_binomial_2_lpmf(y_train[t] | lambda[t], phi[r]);
   }
-  array[N_test] int y_test_rep;     // Outcome predictions (test)
+  array[N_test] int y_test_rep;
   vector[N_test] lambda_test;
   vector[N_test] nu_test;
   for (t_test_idx in 1:N_test) {
@@ -207,20 +163,14 @@ generated quantities {
     vector[p_effective] alpha_r = alpha[, r];
     vector[q_effective] delta_r = delta[, r];
     real phi_r = phi[r];
-    // Covariates
     nu_test[t_test_idx] = dot_product(X_test[t_test_idx], beta_r);
-    // Outcome lags
     for (i in 1:p_effective) {
       int lag = effective_lags_alpha[i];
-      // Again, index to restaurant mapping
       int current_pos_in_test = t_test_idx - r_test_start_idx + 1;
       int lag_source_idx_test = t_test_idx - lag;
       if (lag < current_pos_in_test) {
-        // Important: we use y_test not y_test_rep for single-step rolling forecasting
         nu_test[t_test_idx] += alpha_r[i] * log(y_test[lag_source_idx_test] + 1);
-      } 
-      // Use training data if we aren't far enough into the test data
-      else {
+      } else {
         int train_lag_offset = lag - current_pos_in_test;
         int lag_source_idx_train = r_train_end_idx - train_lag_offset;
         if (lag_source_idx_train >= train_start_idx[r] && lag_source_idx_train <= r_train_end_idx) {
@@ -228,7 +178,6 @@ generated quantities {
         }
       }
     }
-    // Latent intensity lags
     for (j in 1:q_effective) {
       int lag = effective_lags_delta[j];
       int current_pos_in_test = t_test_idx - r_test_start_idx + 1;
