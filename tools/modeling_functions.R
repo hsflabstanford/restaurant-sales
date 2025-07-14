@@ -10,7 +10,7 @@ library(shiny) # dashboards
 library(R.utils) # safe executions if errors
 
 # Modeling
-library(tscount) # tsglm
+#library(tscount) # tsglm
 library(MASS) # glm.nb
 library(bayesforecast) # ACF, PACF
 
@@ -67,7 +67,7 @@ rolling_forecast_nbar <- function(test_df, model, outcome, predictors) {
                            n.ahead = i,
                            newobs = newobs,
                            newxreg = newxreg),
-                   timeout = 60,
+                   timeout = 3,
                    onTimeout = "silent")},
       error = function(e)
         {message("Predict error at iteration ", i, ": ", e$message)
@@ -163,6 +163,7 @@ walk_forward_cv_nbar <- function(df,
     current_train_end <- current_train_end + days(test_days) # max(test_fold$date)
     fold_counter <- fold_counter + 1
     message("walk_forward_cv_nbar: Finished processing fold ", fold_counter - 1)
+    break
   }
 
   if (length(cv_results) > 0) {
@@ -171,8 +172,8 @@ walk_forward_cv_nbar <- function(df,
     message("walk_forward_cv_nbar: All folds failed.")
     return(NULL)
   }
-}
 
+}
 
 ## ===== Auxiliary Functions =====
 
@@ -207,12 +208,9 @@ standardize_data <- function(df) {
 process_predictors <- function(df) {
   df %>% mutate(
     date = as.Date(created_at),
-    date_num = as.numeric(date),
-    day_of_week = day_of_week + 1,
     day_of_week_cat = as.factor(day_of_week_cat#, 
                              #levels = c("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
                              ),
-    day_of_month = day_of_month + 1,
     season = as.factor(season#, 
                     #levels = c("Spring", "Summer", "Autumn", "Winter")
                     ),
@@ -324,34 +322,26 @@ diag_plots <- function(loc, train_weekly, test_weekly, ar_label, mean_label) {
   )
 }
 
-plot_train_test_side_by_side <- function(loc, train_weekly, test_weekly, date, ar_label, mean_label) {
+plot_train_test_side_by_side <- function(loc, train_weekly, test_weekly, ar_label, mean_label) {
   
   # Create the plot
-  ggplot() +
-    
+  p <- ggplot() +
     # Plot observations from both training and testing (same color)
-    geom_line(data = train_weekly, aes(x = week, y = obs), color = "blue", size = 1) +
-    geom_line(data = test_weekly, aes(x = week, y = obs), color = "blue", size = 1) +
-    
+    geom_line(data = train_weekly, aes(x = week, y = obs), color = "blue", linewidth = 1) +
+    geom_line(data = test_weekly, aes(x = week, y = obs), color = "blue", linewidth = 1) +
     # Plot training predictions (red) and testing predictions (green)
-    geom_line(data = train_weekly, aes(x = week, y = pred, color = "Train Prediction"), size = 1) +
-    geom_line(data = test_weekly, aes(x = week, y = pred, color = "Test Prediction"), size = 1) +
-  
-    # Plot vertical line at intervention date
-    geom_vline(xintercept = with_tz(ymd_hms(date), "UTC"), linetype = "dashed", color = "darkgreen") +
-    
-    # Labels
-    labs(title = paste0("Train Test Pred | Restaurant:", loc, "| AR lags:", ar_label, "| Mean lags:", mean_label),
+    geom_line(data = train_weekly, aes(x = week, y = pred, color = "Train Prediction"), linewidth = 1) +
+    geom_line(data = test_weekly, aes(x = week, y = pred, color = "Test Prediction"), linewidth = 1) +
+    labs(title = paste("Training and Testing Predictions: Restaurant", loc, "- AR lags:", ar_label, "- Mean lags:", mean_label),
          x = "Day", y = "Count", color = "Legend") +
     theme_minimal() +
     scale_color_manual(values = c("Train Prediction" = "red", "Test Prediction" = "orange"))
-
+  
+  p
 }
 
-
-
 # Primary function for putting together all visualizations to later be used in a Shiny app
-process_models <- function(df, loc, outcome, predictors, date, model_type="nb", ar_lags=c(), mean_lags=c(), sample=FALSE, standardize=TRUE, train_frac=0.5) {
+process_models <- function(df, loc, outcome, predictors, model_type="nb", ar_lags=c(), mean_lags=c(), sample=FALSE, standardize=TRUE, train_frac=0.5) {
   
   # model_dir <- file.path("modeling_results")
   # model_file <- file.path(model_dir, paste0(loc, "_model.rds"))
@@ -402,7 +392,7 @@ process_models <- function(df, loc, outcome, predictors, date, model_type="nb", 
   diag_grob <- diag_plots(loc, train_weekly, test_weekly, paste(ar_lags, collapse = ","), paste(mean_lags, collapse = ","))
   
   # Show prediction plot, train and test combined
-  pred_plot <- plot_train_test_side_by_side(loc, train_weekly, test_weekly, date, paste(ar_lags, collapse = ","), paste(mean_lags, collapse = ","))
+  pred_plot <- plot_train_test_side_by_side(loc, train_weekly, test_weekly, paste(ar_lags, collapse = ","), paste(mean_lags, collapse = ","))
   
   return(list(model = model, diag_plot = diag_grob, pred_plot = pred_plot))
 }
@@ -417,3 +407,4 @@ aggregate_cv_results <- function(cv) {
     pull('mse') %>%
     identity()
 }
+
