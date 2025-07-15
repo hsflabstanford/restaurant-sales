@@ -40,7 +40,7 @@ def rename_items_by_modifications(df, modification_name_changes):
 
     modification_name_changes_df = pd.DataFrame(data = modification_name_changes, columns = ['name', 'modification', 'new_name'])  
     df = df.assign(item_name = lambda df: 
-        np.select(condlist = [df['item_name'].eq(name) & df['item_modifications'].str.contains(modification) for name, modification, _ in modification_name_changes],
+        np.select(condlist = [df['item_name'].eq(name) & df['item_modifications'].str.contains(modification, case=False, regex=True, na=False) for name, modification, _ in modification_name_changes],
                   choicelist = modification_name_changes_df['new_name'].tolist(),
                   default = df['item_name']))
     return df
