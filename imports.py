@@ -49,6 +49,11 @@ BASE_DIR = Path('data')
 DATA_DIR_1 = BASE_DIR / '1_data_parquet'
 DATA_DIR_2 = BASE_DIR / '2_data_parquet_cleaned'
 DATA_DIR_3 = BASE_DIR / '3_data_parquet_relabeled'
+DATA_DIR_3_1 = DATA_DIR_3 / '1_relabeled'
+DATA_DIR_3_2 = DATA_DIR_3 / '2_consolidated'
+
+def return_dir():
+    return BASE_DIR, DATA_DIR_1, DATA_DIR_2, DATA_DIR_3
 
 def notebook_settings():
     """
@@ -111,7 +116,7 @@ def load_sales():
     for loc_id in tqdm(location_ids_by_coverage):
         if loc_id == 'VLZX7K2M9QD4T':
             filename = 'VLZX7K2M9QD4T.parquet'
-            df = pd.read_parquet(DATA_DIR_3 / 'consolidated' / filename)
+            df = pd.read_parquet(DATA_DIR_3_2 / filename)
             sales_and_menu_data[loc_id] = df
         else:
             filename = f'{loc_id}_sales_and_menu.parquet'
@@ -123,12 +128,28 @@ def load_single_restaurant(loc_id):
     timezones = load_timezones()
     if loc_id == 'VLZX7K2M9QD4T':
         filename = 'VLZX7K2M9QD4T.parquet'
-        df = pd.read_parquet(DATA_DIR_3 / 'consolidated' / filename)
+        df = pd.read_parquet(DATA_DIR_3_2 / filename)
         
     else:
         filename = f'{loc_id}_sales_and_menu.parquet'
         df = pd.read_parquet(DATA_DIR_2 / 'orders_item_level' / filename).tz_convert(timezones[loc_id])
     return df    
+
+def load_consolidated_sales():
+    location_ids_by_coverage = load_loc_ids()
+    sales_and_menu_data = {}
+    for loc_id in tqdm(location_ids_by_coverage):
+        if loc_id == 'VLZX7K2M9QD4T':
+            filename = 'VLZX7K2M9QD4T.parquet'
+            df = pd.read_parquet(DATA_DIR_3_2 / filename)
+        elif f'{loc_id}_sales_and_menu.parquet' in os.listdir(DATA_DIR_3_2):
+            filename = f'{loc_id}_sales_and_menu.parquet'
+            df = pd.read_parquet(DATA_DIR_3_2 / filename)
+        else:
+            filename = f'{loc_id}_sales_and_menu.parquet'
+            df = pd.read_parquet(DATA_DIR_2 / 'orders_item_level' / filename)
+        sales_and_menu_data[loc_id] = df
+    return sales_and_menu_data
 
 def load_gaps():
     # Import from pickle
@@ -141,6 +162,6 @@ __all__ = ['np', 'pd', 'DateOffset', 'pyarrow',
            'tqdm', 'itertools', 'math', 'os', 're', 'Path', 'tabulate', 'display', 'Markdown', 'unicodedata',
            'sp', 'sm', 'smf', 'ARIMA', 'StandardScaler', 
            'plot_time_series', 'plot_time_series_subset', 'fully_relabel_and_consolidate', 'plot_dish_time_series', 'rename_items',
-           'find_project_root', 'notebook_settings',
-           'load_loc_ids', 'load_static', 'load_timezones', 'load_sales', 'load_single_restaurant', 'load_gaps', 
+           'find_project_root', 'return_dir', 'notebook_settings',
+           'load_loc_ids', 'load_static', 'load_timezones', 'load_sales', 'load_single_restaurant', 'load_consolidated_sales', 'load_gaps', 
            'BASE_DIR', 'DATA_DIR_2', 'DATA_DIR_3']
