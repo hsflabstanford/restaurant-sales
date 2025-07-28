@@ -1,0 +1,196 @@
+name_changes:
+  Impossible Patty Melt:
+  - Impossible Melt
+  Gold Standard - Impossible:
+  - Gold Standard Impossible
+  - Imp Breakfast
+  Gold Standard - Bacon:
+  - Gold Standard - Bacon!
+  - Gold Standard - Bacon Ü•Ì
+  Gold Standard Sandwich:
+  - Gold Standard Breakfast Sandwich
+  Gold Standard - Bacon & Kale:
+  - Gold Standard - Bacon/Kale
+  - Gold Standard - Bacon + Kale
+  - Both - Gold Standard
+  - Gold Standard - Bacon Ü•Ì
+  Telway Burger:
+  - Telway
+  The Alternative:
+  - Alternative
+  Beyond Burger:
+  - Beyond Burg
+  Bulldog Butty:
+  - Butty
+  Four Guys Burger:
+  - Four Guys
+  - 4 Guys
+  - Guys
+  Iced Coffee:
+  - Cold Brew Coffee
+  - Cold Brew Coffee ‚Òïô∏È
+  Tea:
+  - Ice T
+  - Laura Palmer
+  Hot Dog:
+  - Coney Island Dog
+  Mexican Coca-Cola:
+  - Mexi-Coke
+  Miss Vickie:
+  - Miss Vickie‚Äôs
+  Og Favorite Ice Cream Sandwich:
+  - Og FaveÜç¶
+  Moms Jeans Desserts:
+  - Mom Jeans
+modification_name_changes:
+- !!python/tuple
+  - Gold Standard - Impossible
+  - Add Bacon|Extra Bacon|Regular Bacon|Beef
+  - Meat Gold Standard - Impossible
+- !!python/tuple
+  - Gold Standard - Impossible
+  - No Cheese|No Chz|No C|No Cuz|Vegan
+  - Vegan Gold Standard - Impossible
+- !!python/tuple
+  - Beyond Burger
+  - Add Bacon|Beef
+  - Meat Beyond Burger
+- !!python/tuple
+  - Beyond Burger
+  - No Cheese|No Chz|No C|No Cuz|Vegan
+  - Vegan Beyond Burger
+- !!python/tuple
+  - Impossible Patty Melt
+  - Add Bacon|Beef|Meat
+  - Meat Impossible Patty Melt
+- !!python/tuple
+  - Impossible Patty Melt
+  - No Cheese|No Chz|No C|No Cuz|Vegan
+  - Vegan Impossible Patty Melt
+- !!python/tuple
+  - Gold Standard - Bacon|Gold Standard - Bacon & Kale
+  - Add Impossible
+  - Meat Gold Standard - Impossible
+- !!python/tuple
+  - Gold Standard - Bacon|Gold Standard - Bacon & Kale
+  - Sub Impossible
+  - Gold Standard - Impossible
+- !!python/tuple
+  - Gold Standard - Bacon|Gold Standard - Bacon & Kale
+  - No Bacon
+  - Gold Standard - Kale
+- !!python/tuple
+  - Gold Standard - Kale
+  - Bacon
+  - Gold Standard - Bacon & Kale
+- !!python/tuple
+  - Gold Standard - Kale
+  - Impossible
+  - Gold Standard - Impossible
+- !!python/tuple
+  - Gold Standard - Kale
+  - No Cheese|No Chz|No C|No Cuz|Vegan
+  - Vegan Gold Standard - Kale
+- !!python/tuple
+  - Gold Standard Sandwich
+  - Bacon & Kale
+  - Gold Standard - Bacon & Kale
+- !!python/tuple
+  - Gold Standard Sandwich
+  - Bacon|Beef
+  - Gold Standard - Bacon
+- !!python/tuple
+  - Gold Standard Sandwich
+  - Impossible
+  - Vegan Gold Standard - Impossible
+- !!python/tuple
+  - Gold Standard Sandwich
+  - ''
+  - Gold Standard - Kale
+- !!python/tuple
+  - The Alternative
+  - Bacon|Beef
+  - Meat The Alternative
+- !!python/tuple
+  - The Alternative
+  - Egg|Cheese
+  - Vegetarian The Alternative
+- !!python/tuple
+  - The Alternative
+  - Impossible
+  - Impossible The Alternative
+animal_product_conditions:
+- item_modifications.str.contains("Bacon")
+- item_modifications.str.contains("Cheese")
+- item_modifications.str.contains("Impossible")
+- item_modifications.str.contains("Aioli")
+- item_modifications.str.contains("Egg")
+- item_modifications.str.contains("Cheddar")
+- item_modifications.str.contains("Sub")
+alcoholic_drinks: []
+non_alcoholic_drinks:
+- Juice
+- Coca-Cola
+- Coconut Water
+- Mexican Coca-Cola
+- La Croix
+- Water
+- Ginger Beer
+- Cheerwine
+- Mata Mate
+- Mate Libre
+- Zamalek
+- Crodino
+- Lemonade
+- Club Mate
+- Tea
+- Cream Soda
+- Mate
+- Coffee
+- Iced Coffee
+merch_list: &id001
+- Egift Card
+- Ketchup Pack
+- Marie Sharp'S
+- 1$
+uncommon_list:
+- Egg Nog
+- Hot Dog
+- Pork Sam
+rare_list:
+- Donut
+- Cool Ranch
+- Blah
+- Kids Thing $5
+unknown_list:
+- Cool
+- Hi
+remove_list: *id001
+half_vegan_list:
+- Coffee
+- Iced Coffee
+vegan_list:
+- The Alternative
+- Impossible The Alternative
+- Vegan Gold Standard - Impossible
+- Vegan Impossible Patty Melt
+- Vegan Beyond Burger
+- Ketchup Pack
+- Marie Sharp'S
+vegetarian_list:
+- Vegetarian The Alternative
+- Gold Standard - Impossible
+- Impossible Patty Melt
+- Gold Standard - Kale
+- Beyond Burger
+- Cole Slaw
+- Miss Vickie
+- Ice Cream Sandwich
+- Eggnog
+- Donut
+meat_list:
+- Meat The Alternative
+- Meat Gold Standard - Impossible
+- Meat Impossible Patty Melt
+- Meat Beyond Burger
+- Gold Standard - Bacon & Kale
