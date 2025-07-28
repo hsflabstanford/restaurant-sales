@@ -12,6 +12,7 @@ from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 from matplotlib.ticker import FuncFormatter
 import seaborn as sns
 
+import unicodedata
 from tqdm import tqdm
 import time
 import itertools
@@ -45,8 +46,9 @@ def find_project_root(start: Path = Path().absolute()) -> Path:
     return start 
 
 BASE_DIR = Path('data')
-DATA_DIR_1 = BASE_DIR / '2_palate_data_parquet_cleaned'
-DATA_DIR_2 = BASE_DIR / '4_palate_data_parquet_relabeled'
+DATA_DIR_1 = BASE_DIR / '1_data_parquet'
+DATA_DIR_2 = BASE_DIR / '2_data_parquet_cleaned'
+DATA_DIR_3 = BASE_DIR / '3_data_parquet_relabeled'
 
 def notebook_settings():
     """
@@ -85,20 +87,20 @@ def notebook_settings():
 
 def load_loc_ids():
     # List of restaurants by 4 month coverage
-    location_ids_by_coverage = pd.read_csv(DATA_DIR_2 / 'restaurants_by_4m_coverage.csv')['location_id'].tolist()
+    location_ids_by_coverage = pd.read_csv(DATA_DIR_3 / 'restaurants_by_4m_coverage.csv')['location_id'].tolist()
     return location_ids_by_coverage
 
 def load_static():
     # Static data about the restaurants
     location_ids_by_coverage = load_loc_ids()
-    locations = pd.read_csv(DATA_DIR_2 / 'locations.csv', index_col='location_id').loc[location_ids_by_coverage] # Restaurant details
-    before_after_details_true = pd.read_csv(DATA_DIR_2 / 'before_after_details_true.csv', index_col='location_id', parse_dates=['cross_over_date']).loc[location_ids_by_coverage] # True Promotional items (30 rows)
-    items_tagged = pd.read_parquet(DATA_DIR_1 / 'items_tagged.parquet') # Menu items for all restaurants: for matching plant-based labels with orders
-    customers = pd.read_parquet(DATA_DIR_1 / 'customers.parquet') # Specific customer information: for matching customers with orders
+    locations = pd.read_csv(DATA_DIR_3 / 'locations.csv', index_col='location_id').loc[location_ids_by_coverage] # Restaurant details
+    before_after_details_true = pd.read_csv(DATA_DIR_3 / 'before_after_details_true.csv', index_col='location_id', parse_dates=['cross_over_date']).loc[location_ids_by_coverage] # True Promotional items (30 rows)
+    items_tagged = pd.read_parquet(DATA_DIR_2 / 'items_tagged.parquet') # Menu items for all restaurants: for matching plant-based labels with orders
+    customers = pd.read_parquet(DATA_DIR_2 / 'customers.parquet') # Specific customer information: for matching customers with orders
     return locations, before_after_details_true, items_tagged, customers
 
 def load_timezones():
-    timezones = pd.read_csv(BASE_DIR / 'timezones.csv', index_col='location_id')['timezone'].to_dict()
+    timezones = pd.read_csv(DATA_DIR_3 / 'timezones.csv', index_col='location_id')['timezone'].to_dict()
     return timezones
 
 def load_sales():
@@ -109,11 +111,11 @@ def load_sales():
     for loc_id in tqdm(location_ids_by_coverage):
         if loc_id == 'VLZX7K2M9QD4T':
             filename = 'VLZX7K2M9QD4T.parquet'
-            df = pd.read_parquet(DATA_DIR_2 / 'consolidated' / filename)
+            df = pd.read_parquet(DATA_DIR_3 / 'consolidated' / filename)
             sales_and_menu_data[loc_id] = df
         else:
             filename = f'{loc_id}_sales_and_menu.parquet'
-            df = pd.read_parquet(DATA_DIR_1 / 'orders_item_level' / filename)
+            df = pd.read_parquet(DATA_DIR_2 / 'orders_item_level' / filename)
             sales_and_menu_data[loc_id] = df.tz_convert(timezones[loc_id])
     return sales_and_menu_data
 
@@ -121,24 +123,24 @@ def load_single_restaurant(loc_id):
     timezones = load_timezones()
     if loc_id == 'VLZX7K2M9QD4T':
         filename = 'VLZX7K2M9QD4T.parquet'
-        df = pd.read_parquet(DATA_DIR_2 / 'consolidated' / filename)
+        df = pd.read_parquet(DATA_DIR_3 / 'consolidated' / filename)
         
     else:
         filename = f'{loc_id}_sales_and_menu.parquet'
-        df = pd.read_parquet(DATA_DIR_1 / 'orders_item_level' / filename).tz_convert(timezones[loc_id])
+        df = pd.read_parquet(DATA_DIR_2 / 'orders_item_level' / filename).tz_convert(timezones[loc_id])
     return df    
 
 def load_gaps():
     # Import from pickle
-    time_differences = pd.read_pickle(DATA_DIR_1 / 'time_differences.pkl')
-    time_differences_details = pd.read_pickle(DATA_DIR_1 / 'time_differences_details.pkl')
+    time_differences = pd.read_pickle(DATA_DIR_3 / 'time_differences.pkl')
+    time_differences_details = pd.read_pickle(DATA_DIR_3 / 'time_differences_details.pkl')
     return time_differences, time_differences_details
 
 __all__ = ['np', 'pd', 'DateOffset', 'pyarrow', 
            'plt', 'mcolors', 'cm', 'mpatches', 'inset_axes', 'FuncFormatter', 'sns', 
-           'tqdm', 
-           'itertools', 'math', 'os', 're', 'Path', 'tabulate', 'display', 'Markdown', 
-           'sm', 'smf', 'ARIMA', 'StandardScaler', 
+           'tqdm', 'itertools', 'math', 'os', 're', 'Path', 'tabulate', 'display', 'Markdown', 'unicodedata',
+           'sp', 'sm', 'smf', 'ARIMA', 'StandardScaler', 
            'plot_time_series', 'plot_time_series_subset', 'fully_relabel_and_consolidate', 'plot_dish_time_series', 'rename_items',
            'find_project_root', 'notebook_settings',
-           'load_loc_ids', 'load_static', 'load_timezones', 'load_sales', 'load_single_restaurant', 'load_gaps', 'BASE_DIR', 'DATA_DIR_1', 'DATA_DIR_2']
+           'load_loc_ids', 'load_static', 'load_timezones', 'load_sales', 'load_single_restaurant', 'load_gaps', 
+           'BASE_DIR', 'DATA_DIR_2', 'DATA_DIR_3']
