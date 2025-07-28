@@ -2,12 +2,14 @@
 import numpy as np
 import pandas as pd
 from pandas import DateOffset
-import pyarrow as pa
+import pyarrow
 
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 import matplotlib.cm as cm
 import matplotlib.patches as mpatches
+from mpl_toolkits.axes_grid1.inset_locator import inset_axes
+from matplotlib.ticker import FuncFormatter
 import seaborn as sns
 
 from tqdm import tqdm
@@ -17,6 +19,7 @@ import math
 import os
 from pathlib import Path
 import re
+import gc
 import tabulate
 from IPython import get_ipython
 from IPython.display import display, Markdown
@@ -30,6 +33,10 @@ from sklearn.preprocessing import StandardScaler
 
 # Custom packages
 from tools.coverage_functions import plot_time_series, plot_time_series_subset
+from tools.labeling_functions import fully_relabel_and_consolidate, plot_dish_time_series, rename_items
+# from tools.benchmarks import ParetoAnalysis as pa
+# from tools.benchmarks import AccuracyCalculation as ac
+# from tools.integrity_fixes import DataFixer as fix, DataExporter as exporter
 
 # Set directory to project root
 def find_project_root(start: Path = Path().absolute()) -> Path:
@@ -110,14 +117,28 @@ def load_sales():
             sales_and_menu_data[loc_id] = df.tz_convert(timezones[loc_id])
     return sales_and_menu_data
 
+def load_single_restaurant(loc_id):
+    timezones = load_timezones()
+    if loc_id == 'VLZX7K2M9QD4T':
+        filename = 'VLZX7K2M9QD4T.parquet'
+        df = pd.read_parquet(DATA_DIR_2 / 'consolidated' / filename)
+        
+    else:
+        filename = f'{loc_id}_sales_and_menu.parquet'
+        df = pd.read_parquet(DATA_DIR_1 / 'orders_item_level' / filename).tz_convert(timezones[loc_id])
+    return df    
+
 def load_gaps():
     # Import from pickle
     time_differences = pd.read_pickle(DATA_DIR_1 / 'time_differences.pkl')
     time_differences_details = pd.read_pickle(DATA_DIR_1 / 'time_differences_details.pkl')
     return time_differences, time_differences_details
 
-__all__ = ['np', 'pd', 'DateOffset', 'plt', 'mcolors', 'cm', 'mpatches', 'sns', 'tqdm', 
+__all__ = ['np', 'pd', 'DateOffset', 'pyarrow', 
+           'plt', 'mcolors', 'cm', 'mpatches', 'inset_axes', 'FuncFormatter', 'sns', 
+           'tqdm', 
            'itertools', 'math', 'os', 're', 'Path', 'tabulate', 'display', 'Markdown', 
-           'sm', 'smf', 'ARIMA', 'StandardScaler', 'plot_time_series', 'plot_time_series_subset',
+           'sm', 'smf', 'ARIMA', 'StandardScaler', 
+           'plot_time_series', 'plot_time_series_subset', 'fully_relabel_and_consolidate', 'plot_dish_time_series', 'rename_items',
            'find_project_root', 'notebook_settings',
-           'load_loc_ids', 'load_static', 'load_timezones', 'load_sales', 'load_gaps', 'BASE_DIR', 'DATA_DIR_1', 'DATA_DIR_2']
+           'load_loc_ids', 'load_static', 'load_timezones', 'load_sales', 'load_single_restaurant', 'load_gaps', 'BASE_DIR', 'DATA_DIR_1', 'DATA_DIR_2']
