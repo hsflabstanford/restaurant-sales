@@ -1,6 +1,6 @@
 # Large data
-data/2_palate_data_parquet_cleaned/time_differences_details.pkl
-data/3_palate_data_parquet_modeling/all_locations.parquet
+data/2_data_parquet_cleaned/time_differences_details.pkl
+data/4_data_parquet_modeling/all_locations.parquet
 
 # Jupyter
 .ipynb_checkpoints/
