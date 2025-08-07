@@ -279,7 +279,7 @@ all_weather_data %>%
 # --- Read and Format ---
 
 # Process inflation data
-cpi_food_away <- read.csv("data/inflation.csv") %>%
+cpi_food_away <- read.csv("data/inflation_data/inflation.csv") %>%
   filter(Period != "S01" & Period != "S02") %>% # remove half year stats
   mutate(
     month = as.numeric(sub("M", "", Period)),  
@@ -306,7 +306,7 @@ cpi_base <- cpi_food_away %>%
 # ─────────────────────────────────────────────────────────────
 
 # Join inflation and weather data with main data
-df_all_daily <- read_parquet("data/5_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
+df_all_daily <- read_parquet("data/4_data_parquet_modeling/all_locations_daily.parquet") %>%
   process_predictors() %>% # apply custom processing function
   mutate(
     new_years = as.integer(month == 12 & day_of_month == 31),
@@ -359,7 +359,7 @@ df_all_daily <- read_parquet("data/5_palate_data_parquet_modeling/all_locations_
   identity()
 
 # Export
-write_parquet(df_all_daily, "data/5_palate_data_parquet_modeling/all_locations_daily_weather_inflation.parquet")
+write_parquet(df_all_daily, "data/4_data_parquet_modeling/all_locations_daily_weather_inflation.parquet")
 
 ## Check columns with NAs
 # df_all_daily %>% summarise(across(everything(), ~ sum(is.na(.)))) %>% select(where(~ . > 0)) %>% t()
@@ -408,7 +408,7 @@ df_all_daily %>%
 
 plot_vegan <- function(loc_id, d1, d2){
   
-  promo_datetime <- read.csv('data/4_palate_data_parquet_relabeled/before_after_details_true.csv') %>% 
+  promo_datetime <- read.csv('data/3_data_parquet_relabeled/before_after_details_true.csv') %>% 
     filter(location_id == loc_id) %>% 
     pull(cross_over_date) %>%
     as.Date(format = "%Y-%m-%d") %>%
@@ -429,7 +429,7 @@ plot_vegan <- function(loc_id, d1, d2){
 
 plot_nonvegan <- function(loc_id, d1, d2){
   
-  promo_datetime <- read.csv('data/4_palate_data_parquet_relabeled/before_after_details_true.csv') %>% 
+  promo_datetime <- read.csv('data/3_data_parquet_relabeled/before_after_details_true.csv') %>% 
     filter(location_id == loc_id) %>% 
     pull(cross_over_date) %>%
     as.Date(format = "%Y-%m-%d") %>%
