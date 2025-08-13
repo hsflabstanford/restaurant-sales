@@ -174,6 +174,30 @@ def load_ai_labeled_sales():
         data[loc_id] = df
     return data
 
+def load_ai_labeled_sales_with_targeted():
+    location_ids_by_coverage = load_loc_ids()
+    data = {}
+    for loc_id in tqdm(location_ids_by_coverage):
+        df = pd.read_parquet(DATA_DIR_3_4 / 'with_targeted' / f'{loc_id}.parquet')
+        data[loc_id] = df
+    return data
+
+def load_dinein_sales():
+    location_ids_by_coverage = load_loc_ids()
+    data = {}
+    for loc_id in tqdm(location_ids_by_coverage):
+        df = pd.read_parquet(DATA_DIR_3_6 / f'{loc_id}.parquet')
+        data[loc_id] = df
+    return data
+
+def load_dinein_sales_with_targeted():
+    location_ids_by_coverage = load_loc_ids()
+    data = {}
+    for loc_id in tqdm(location_ids_by_coverage):
+        df = pd.read_parquet(DATA_DIR_3_6 / 'with_targeted' / f'{loc_id}.parquet')
+        data[loc_id] = df
+    return data
+
 def load_gaps():
     # Import from pickle
     time_differences = pd.read_pickle(DATA_DIR_3 / 'time_differences.pkl')
@@ -182,9 +206,11 @@ def load_gaps():
 
 __all__ = ['np', 'pd', 'DateOffset', 'pyarrow', 
            'plt', 'mcolors', 'cm', 'mpatches', 'inset_axes', 'FuncFormatter', 'sns', 
-           'tqdm', 'itertools', 'math', 'os', 're', 'Path', 'tabulate', 'display', 'Markdown', 'unicodedata',
+           'tqdm', 'itertools', 'math', 'os', 're', 'gc', 'Path', 'tabulate', 'display', 'Markdown', 'unicodedata',
            'sp', 'sm', 'smf', 'ARIMA', 'StandardScaler', 
            'plot_time_series', 'plot_time_series_subset', 'fully_relabel_and_consolidate', 'plot_dish_time_series', 'rename_items',
            'find_project_root', 'return_dir', 'notebook_settings',
-           'load_loc_ids', 'load_static', 'load_timezones', 'load_sales', 'load_single_restaurant', 'load_consolidated_sales', 'load_ai_labeled_sales', 'load_gaps', 
+           'load_loc_ids', 'load_static', 'load_timezones', 
+           'load_sales', 'load_single_restaurant', 'load_consolidated_sales', 'load_ai_labeled_sales', 'load_dinein_sales', 'load_gaps',
+           'load_ai_labeled_sales_with_targeted', 'load_dinein_sales_with_targeted',
            'BASE_DIR', 'DATA_DIR_2', 'DATA_DIR_3']
