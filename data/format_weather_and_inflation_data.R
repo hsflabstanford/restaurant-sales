@@ -305,8 +305,16 @@ cpi_base <- cpi_food_away %>%
 #          Holidays, Join, and Export
 # ─────────────────────────────────────────────────────────────
 
+direc1 <- "data/4_data_parquet_modeling/"
+#direc2 <- "targeted/all_locations_daily_breakfast"
+#direc2 <- "targeted/all_locations_daily_burger"
+#direc2 <- "targeted/all_locations_daily_lamb"
+#direc2 <- "customer/all_locations_daily_customers"
+direc2 <- "all_locations_daily"
+directory <- paste0(direc1, direc2, ".parquet")
+
 # Join inflation and weather data with main data
-df_all_daily <- read_parquet("data/4_data_parquet_modeling/all_locations_daily.parquet") %>%
+df_all_daily <- read_parquet(directory) %>%
   process_predictors() %>% # apply custom processing function
   mutate(
     new_years = as.integer(month == 12 & day_of_month == 31),
@@ -359,7 +367,7 @@ df_all_daily <- read_parquet("data/4_data_parquet_modeling/all_locations_daily.p
   identity()
 
 # Export
-write_parquet(df_all_daily, "data/4_data_parquet_modeling/all_locations_daily_weather_inflation.parquet")
+write_parquet(df_all_daily, paste0(direc1, direc2, "_weather_inflation.parquet"))
 
 ## Check columns with NAs
 # df_all_daily %>% summarise(across(everything(), ~ sum(is.na(.)))) %>% select(where(~ . > 0)) %>% t()
