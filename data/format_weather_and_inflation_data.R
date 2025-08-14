@@ -310,7 +310,8 @@ direc1 <- "data/4_data_parquet_modeling/"
 #direc2 <- "targeted/all_locations_daily_burger"
 #direc2 <- "targeted/all_locations_daily_lamb"
 #direc2 <- "customer/all_locations_daily_customers"
-direc2 <- "all_locations_daily"
+#direc2 <- "all_locations_daily"
+direc2 <- "targeted/all_locations_daily_targeted"
 directory <- paste0(direc1, direc2, ".parquet")
 
 # Join inflation and weather data with main data
