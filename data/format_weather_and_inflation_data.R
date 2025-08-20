@@ -310,8 +310,8 @@ direc1 <- "data/4_data_parquet_modeling/"
 #direc2 <- "targeted/all_locations_daily_burger"
 #direc2 <- "targeted/all_locations_daily_lamb"
 #direc2 <- "customer/all_locations_daily_customers"
-#direc2 <- "all_locations_daily"
-direc2 <- "targeted/all_locations_daily_targeted"
+direc2 <- "all_locations_daily"
+#direc2 <- "targeted/all_locations_daily_targeted"
 directory <- paste0(direc1, direc2, ".parquet")
 
 # Join inflation and weather data with main data
@@ -334,18 +334,18 @@ df_all_daily <- read_parquet(directory) %>%
   ) %>%
   group_by(location_id) %>%
   mutate(is_any_holiday = (christmas + 
-                             thanksgiving +
-                             cinco +
-                             july_fourth + 
-                             new_years + 
-                             easter + 
-                             valentines +
-                             mlk +
-                             pres +
-                             mem +
-                             labor +
-                             columbus +
-                             vet
+                           thanksgiving +
+                           #cinco +
+                           july_fourth #+ 
+                           #new_years + 
+                           #easter + 
+                             #valentines +
+                             #mlk +
+                             #pres +
+                             #mem +
+                             #labor +
+                             #columbus +
+                             #vet
   ),
   holiday_window = slide_index_dbl(.x = is_any_holiday,
                                    .i = date,
@@ -356,6 +356,7 @@ df_all_daily <- read_parquet(directory) %>%
   left_join(cpi_food_away, by = c("year", "month")) %>%
   mutate(
     vegan_price_real = vegan_window_avg / (Value / cpi_base), # inflation-adjusted
+    vegetarian_price_real = vegetarian_window_avg / (Value / cpi_base),
     meat_price_real = meat_window_avg / (Value / cpi_base),
     inflation = Value
   ) %>% 
