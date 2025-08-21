@@ -306,12 +306,10 @@ cpi_base <- cpi_food_away %>%
 # ─────────────────────────────────────────────────────────────
 
 direc1 <- "data/4_data_parquet_modeling/"
-#direc2 <- "targeted/all_locations_daily_breakfast"
-#direc2 <- "targeted/all_locations_daily_burger"
-#direc2 <- "targeted/all_locations_daily_lamb"
 #direc2 <- "customer/all_locations_daily_customers"
-direc2 <- "all_locations_daily"
+#direc2 <- "all_locations_daily"
 #direc2 <- "targeted/all_locations_daily_targeted"
+direc2 <- "targeted/all_locations_daily_targeted_customers"
 directory <- paste0(direc1, direc2, ".parquet")
 
 # Join inflation and weather data with main data
