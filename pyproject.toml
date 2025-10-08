@@ -3,9 +3,9 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "restaurant-sales"
+name = "foodcast"
 version = "0.1.0"
-description = "A Python project for analyzing and managing restaurant sales."
+description = "Forecasting and visualization tools for restaurant food sales."
 readme = "README.md"
 authors = [
     { name = "Jared Winslow"},

@@ -31,13 +31,13 @@ import statsmodels.formula.api as smf
 from statsmodels.tsa.arima.model import ARIMA
 import sklearn as sk
 from sklearn.preprocessing import StandardScaler
-
+    
 # Custom packages
-from tools.coverage_functions import plot_time_series, plot_time_series_subset
-from tools.labeling_functions import fully_relabel_and_consolidate, plot_dish_time_series, rename_items
-# from tools.benchmarks import ParetoAnalysis as pa
-# from tools.benchmarks import AccuracyCalculation as ac
-# from tools.integrity_fixes import DataFixer as fix, DataExporter as exporter
+from foodcast.tools.coverage_functions import plot_time_series, plot_time_series_subset
+from foodcast.tools.labeling_functions import fully_relabel_and_consolidate, plot_dish_time_series, rename_items
+# from foodcast.tools.benchmarks import ParetoAnalysis as pa
+# from foodcast.tools.benchmarks import AccuracyCalculation as ac
+# from foodcast.tools.integrity_fixes import DataFixer as fix, DataExporter as exporter
 
 # Set directory to project root
 def find_project_root(start: Path = Path().absolute()) -> Path:
@@ -45,7 +45,10 @@ def find_project_root(start: Path = Path().absolute()) -> Path:
         if (parent / "requirements.txt").exists(): return parent
     return start 
 
-BASE_DIR = Path('data')
+#PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = find_project_root()
+
+BASE_DIR = PROJECT_ROOT / "data"
 DATA_DIR_1 = BASE_DIR / '1_data_parquet'
 DATA_DIR_2 = BASE_DIR / '2_data_parquet_cleaned'
 DATA_DIR_3 = BASE_DIR / '3_data_parquet_relabeled'
@@ -209,7 +212,8 @@ __all__ = ['np', 'pd', 'DateOffset', 'pyarrow',
            'tqdm', 'itertools', 'math', 'os', 're', 'gc', 'Path', 'tabulate', 'display', 'Markdown', 'unicodedata',
            'sp', 'sm', 'smf', 'ARIMA', 'StandardScaler', 
            'plot_time_series', 'plot_time_series_subset', 'fully_relabel_and_consolidate', 'plot_dish_time_series', 'rename_items',
-           'find_project_root', 'return_dir', 'notebook_settings',
+           #'find_project_root', 
+           'return_dir', 'notebook_settings',
            'load_loc_ids', 'load_static', 'load_timezones', 
            'load_sales', 'load_single_restaurant', 'load_consolidated_sales', 'load_ai_labeled_sales', 'load_dinein_sales', 'load_gaps',
            'load_ai_labeled_sales_with_targeted', 'load_dinein_sales_with_targeted',
