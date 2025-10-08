@@ -22,6 +22,7 @@ from pathlib import Path
 import re
 import gc
 import tabulate
+import yaml
 from IPython import get_ipython
 from IPython.display import display, Markdown
 
@@ -34,7 +35,7 @@ from sklearn.preprocessing import StandardScaler
     
 # Custom packages
 from foodcast.tools.coverage_functions import plot_time_series, plot_time_series_subset
-from foodcast.tools.labeling_functions import fully_relabel_and_consolidate, plot_dish_time_series, rename_items
+from foodcast.tools.labeling_functions import fully_relabel_and_consolidate, rename_items, remove_numbers, plot_dish_time_series, to_dish_time_series
 # from foodcast.tools.benchmarks import ParetoAnalysis as pa
 # from foodcast.tools.benchmarks import AccuracyCalculation as ac
 # from foodcast.tools.integrity_fixes import DataFixer as fix, DataExporter as exporter
@@ -42,7 +43,7 @@ from foodcast.tools.labeling_functions import fully_relabel_and_consolidate, plo
 # Set directory to project root
 def find_project_root(start: Path = Path().absolute()) -> Path:
     for parent in start.parents:
-        if (parent / "requirements.txt").exists(): return parent
+        if (parent / "README.md").exists(): return parent
     return start 
 
 #PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -207,12 +208,13 @@ def load_gaps():
     time_differences_details = pd.read_pickle(DATA_DIR_3 / 'time_differences_details.pkl')
     return time_differences, time_differences_details
 
-__all__ = ['np', 'pd', 'DateOffset', 'pyarrow', 
+__all__ = ['np', 'pd', 'DateOffset', 'pyarrow',  'yaml',
            'plt', 'mcolors', 'cm', 'mpatches', 'inset_axes', 'FuncFormatter', 'sns', 
            'tqdm', 'itertools', 'math', 'os', 're', 'gc', 'Path', 'tabulate', 'display', 'Markdown', 'unicodedata',
            'sp', 'sm', 'smf', 'ARIMA', 'StandardScaler', 
-           'plot_time_series', 'plot_time_series_subset', 'fully_relabel_and_consolidate', 'plot_dish_time_series', 'rename_items',
-           #'find_project_root', 
+           'plot_time_series', 'plot_time_series_subset', 'fully_relabel_and_consolidate', 'rename_items', 'remove_numbers', 
+           'plot_dish_time_series', 'to_dish_time_series',
+           'find_project_root', 
            'return_dir', 'notebook_settings',
            'load_loc_ids', 'load_static', 'load_timezones', 
            'load_sales', 'load_single_restaurant', 'load_consolidated_sales', 'load_ai_labeled_sales', 'load_dinein_sales', 'load_gaps',

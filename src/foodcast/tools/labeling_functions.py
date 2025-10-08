@@ -218,7 +218,7 @@ def plot_dish_time_series(df, loc_id, before_after_details_true, top_n=60, scale
     plt.show()
     
 
-def dish_time_series(df, top_n=60):
+def to_dish_time_series(df, top_n=60):
 
     # Ensure necessary columns exist
     required_cols = ['item_name', 'item_quantity']
