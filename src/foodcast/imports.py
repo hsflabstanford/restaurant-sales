@@ -59,6 +59,7 @@ DATA_DIR_3_3 = DATA_DIR_3 / '3_combined_no_prelabeled_drinks'
 DATA_DIR_3_4 = DATA_DIR_3 / '4_ai_labeled'
 DATA_DIR_3_5 = DATA_DIR_3 / '5_only_food'
 DATA_DIR_3_6 = DATA_DIR_3 / '6_only_dinein'
+DATA_DIR_3_7 = DATA_DIR_3 / '7_with_targeted'
 
 
 def return_dir():
@@ -71,7 +72,8 @@ def return_dir():
            DATA_DIR_3_3, 
            DATA_DIR_3_4, 
            DATA_DIR_3_5, 
-           DATA_DIR_3_6))
+           DATA_DIR_3_6,
+           DATA_DIR_3_7))
     return dir
 
 def notebook_settings():
