@@ -32,3 +32,4 @@ renv.zip
 # API Tokens
 weather_token.txt
 
+src/foodcast.egg-info/
