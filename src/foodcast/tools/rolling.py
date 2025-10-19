@@ -151,4 +151,4 @@ def add_interday_variables(df):
 
 if __name__ == "__main__":
     ipytest.clean()
-    ipytest.run('-q', '--tb=short', 'tools/tests/test_rolling.py')
+    ipytest.run('-q', '--tb=short', 'src/foodcast/tools/tests/test_rolling.py')

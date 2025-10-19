@@ -3,7 +3,7 @@ import numpy as np
 import pytest
 from pandas.testing import assert_series_equal
 
-from tools.rolling import rolling_window_sum
+from foodcast.tools.rolling import rolling_window_sum
 
 NAME = "sum_1d"
 
@@ -177,7 +177,7 @@ def test_rolling_sum_fixed(case_key):
     got = rolling_window_sum(
         df.copy(),
         label_col="label",
-        count_col="qty",
+        qty_col="qty",
         name=NAME,
         lookback_period=1,
         lookback_unit="D",

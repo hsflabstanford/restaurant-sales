@@ -53,6 +53,7 @@ BASE_DIR = PROJECT_ROOT / "data"
 DATA_DIR_1 = BASE_DIR / '1_data_parquet'
 DATA_DIR_2 = BASE_DIR / '2_data_parquet_cleaned'
 DATA_DIR_3 = BASE_DIR / '3_data_parquet_relabeled'
+DATA_DIR_4 = BASE_DIR / '4_data_parquet_modeling'
 DATA_DIR_3_1 = DATA_DIR_3 / '1_rule_relabeled'
 DATA_DIR_3_2 = DATA_DIR_3 / '2_consolidated'
 DATA_DIR_3_3 = DATA_DIR_3 / '3_combined_no_prelabeled_drinks'
@@ -67,6 +68,7 @@ def return_dir():
            DATA_DIR_1, 
            DATA_DIR_2, 
            DATA_DIR_3, 
+           DATA_DIR_4,
            (DATA_DIR_3_1, 
            DATA_DIR_3_2, 
            DATA_DIR_3_3, 
@@ -216,7 +218,7 @@ __all__ = ['np', 'pd', 'DateOffset', 'pyarrow',  'yaml',
            'sp', 'sm', 'smf', 'ARIMA', 'StandardScaler', 
            'plot_time_series', 'plot_time_series_subset', 'fully_relabel_and_consolidate', 'rename_items', 'remove_numbers', 
            'plot_dish_time_series', 'to_dish_time_series',
-           'find_project_root', 
+           'find_project_root', 'PROJECT_ROOT',
            'return_dir', 'notebook_settings',
            'load_loc_ids', 'load_static', 'load_timezones', 
            'load_sales', 'load_single_restaurant', 'load_consolidated_sales', 'load_ai_labeled_sales', 'load_dinein_sales', 'load_gaps',
