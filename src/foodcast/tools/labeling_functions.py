@@ -243,3 +243,117 @@ def to_dish_time_series(df, top_n=60):
                    )
 
     return weekly_sales
+
+import matplotlib.dates as mdates
+
+def infer_active_days(dates, max_gap_days=45, mult=8):
+    """Infer continuous 'on menu' intervals for a single item based on gaps."""
+    dates = pd.to_datetime(sorted(dates.unique()))
+    if len(dates) == 0:
+        return pd.Series(dtype=bool)
+    
+    # Compute gaps between sales
+    gaps = dates.to_series().diff().dt.days.fillna(0)
+    
+    # Heuristic: if max gap > threshold or median gap * mult, split there
+    median_gap = gaps[gaps > 0].median() or 1
+    big_gap = max(max_gap_days, mult * median_gap)
+    segment_id = (gaps > big_gap).cumsum()
+    
+    # Each segment = [start, end]
+    segments = (
+        pd.DataFrame({"segment": segment_id, "date": dates})
+        .groupby("segment")
+        .agg(start=("date", "min"), end=("date", "max"))
+    )
+    
+    # Expand to daily presence
+    all_days = []
+    for _, row in segments.iterrows():
+        days = pd.date_range(row.start, row.end, freq="D")
+        all_days.append(pd.Series(True, index=days))
+    
+    if not all_days:
+        return pd.Series(dtype=bool)
+    
+    return pd.concat(all_days).groupby(level=0).any()
+
+def strict_bridge_fill(df, limit=3):
+    """Fill NaN runs only if they are bounded on both sides and run length ≤ limit."""
+    def fill_series(s):
+        mask = s.isna().to_numpy()
+        if not mask.any():
+            return s
+
+        filled = s.copy()
+        n = len(s)
+        i = 0
+        while i < n:
+            if mask[i]:
+                start = i
+                while i < n and mask[i]:
+                    i += 1
+                end = i
+                gap_len = end - start
+                left_bounded = start > 0
+                right_bounded = end < n
+                if left_bounded and right_bounded and gap_len <= limit:
+                    filled.iloc[start:end] = 1
+            else:
+                i += 1
+        return filled
+
+    return df.apply(fill_series, axis=0)
+
+def plot_boolean_time_series(df, loc_id, before_after_details_true, dish_order, unmatched_items):
+    fig, ax = plt.subplots(figsize=(14, 8))
+    promo_dt = before_after_details_true.loc[loc_id,'cross_over_date'].tz_convert('UTC')
+
+    cols_to_use = [col for col in dish_order if col in df.columns]
+    reordered_df = df[cols_to_use]
+
+    stacked = reordered_df.stack()
+    df_true = stacked[stacked]
+
+    dish_to_y = {dish: i for i, dish in enumerate(cols_to_use)}
+    y_labels = df_true.index.get_level_values(1)
+    y_coords = y_labels.map(dish_to_y).astype(float)
+
+    x_min_times = df_true.index.get_level_values(0).start_time
+    x_max_times = df_true.index.get_level_values(0).end_time
+
+    # Create mask for unmatched items
+    is_unmatched = y_labels.isin(unmatched_items)
+
+    # Plot matched items
+    ax.hlines(y=y_coords[~is_unmatched],
+              xmin=x_min_times[~is_unmatched],
+              xmax=x_max_times[~is_unmatched],
+              lw=4,
+              color='tab:blue')
+
+    # Plot unmatched items
+    ax.hlines(y=y_coords[is_unmatched],
+              xmin=x_min_times[is_unmatched],
+              xmax=x_max_times[is_unmatched],
+              lw=4,
+              color='grey') 
+
+    ax.axvline(promo_dt, color='red', linestyle='--', alpha=0.5)
+
+    ax.set_yticks(range(len(cols_to_use)))
+    ax.set_yticklabels(cols_to_use, fontdict={'fontsize': 7})
+    ax.invert_yaxis()
+
+    for label in ax.get_yticklabels():
+        if label.get_text() in unmatched_items:
+            label.set_color('grey')
+
+    ax.xaxis.set_major_locator(mdates.MonthLocator(interval=12))
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m'))
+    fig.autofmt_xdate()
+
+    ax.set_title(f'Weekly Existence of Dishes for {loc_id}')
+    ax.set_xlabel('Date'); ax.set_ylabel('Dish')
+    fig.tight_layout(rect=[0, 0.03, 0.85, 0.97])
+    plt.show()

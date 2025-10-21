@@ -34,8 +34,12 @@ import sklearn as sk
 from sklearn.preprocessing import StandardScaler
     
 # Custom packages
-from foodcast.tools.coverage_functions import plot_time_series, plot_time_series_subset
-from foodcast.tools.labeling_functions import fully_relabel_and_consolidate, rename_items, rename_items_by_modifications, remove_numbers, plot_dish_time_series, to_dish_time_series
+from foodcast.tools.coverage_functions import (
+    plot_time_series, plot_time_series_subset)
+from foodcast.tools.labeling_functions import (
+    fully_relabel_and_consolidate, rename_items, rename_items_by_modifications, remove_numbers,
+    to_dish_time_series, infer_active_days, strict_bridge_fill, 
+    plot_dish_time_series, plot_boolean_time_series)
 # from foodcast.tools.benchmarks import ParetoAnalysis as pa
 # from foodcast.tools.benchmarks import AccuracyCalculation as ac
 # from foodcast.tools.integrity_fixes import DataFixer as fix, DataExporter as exporter
@@ -216,8 +220,10 @@ __all__ = ['np', 'pd', 'DateOffset', 'pyarrow',  'yaml',
            'plt', 'mcolors', 'cm', 'mpatches', 'inset_axes', 'FuncFormatter', 'sns', 
            'tqdm', 'itertools', 'math', 'os', 're', 'gc', 'Path', 'tabulate', 'display', 'Markdown', 'unicodedata',
            'sp', 'sm', 'smf', 'ARIMA', 'StandardScaler', 
-           'plot_time_series', 'plot_time_series_subset', 'fully_relabel_and_consolidate', 'rename_items', 'rename_items_by_modifications', 'remove_numbers', 
-           'plot_dish_time_series', 'to_dish_time_series',
+           'plot_time_series', 'plot_time_series_subset', 
+           'fully_relabel_and_consolidate', 'rename_items', 'rename_items_by_modifications', 'remove_numbers', 
+           'to_dish_time_series', 'infer_active_days', 'strict_bridge_fill',
+           'plot_dish_time_series','plot_boolean_time_series',
            'find_project_root', 'PROJECT_ROOT',
            'return_dir', 'notebook_settings',
            'load_loc_ids', 'load_static', 'load_timezones', 

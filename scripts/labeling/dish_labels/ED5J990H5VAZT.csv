@@ -1,4 +1,4 @@
-Item,Vegan,Vegetarian,MPBA-Modifiable
+item_name,vegan,vegetarian,mpbamod
 Awkward Aardvark,False,False,True
 Bagel,False,True,True
 Griffith Street,False,True,True
@@ -8,7 +8,6 @@ Egg Meat Cheese,False,False,True
 Scone,False,True,False
 Yeti Sandwich,False,False,True
 The Jesse Sandwich,False,False,True
-Little Little Loaf,False,True,False
 The Yeli Sandwich,False,False,True
 Coffee Cake,False,True,False
 One Punch,False,True,True
@@ -66,3 +65,6 @@ Flan,False,True,False
 Apple Strudel,False,True,False
 Banana Bread,False,True,False
 Croissant Almond,False,True,False
+Pumpkin Loaf,False,True,False
+Banana Loaf,False,True,False
+Matcha Loaf,False,True,False
