@@ -1,0 +1,50 @@
+item_name,vegan,vegetarian,mpbamod
+Breakfast Sandwich,False,False,True
+Muffin, False, True, False
+Toasted Bagels,False,True,False
+Scones,False,True,False
+Pop Tart,False,True,False
+Gluten Free Muffin, False, True, False
+Fresh Baked Banana Bread,False,True,False
+Quiche,False,True,False
+Berry-Licious ASsai Bowl,True,True,False
+Blt,False,False,False
+Driving-Me-Hazy ASsa Bowl,False,True,False
+Butter-Me-Crazy ASsai Bowl,True,True,False
+Grilled Chicken Sandwich,False,False,False
+Bagel Joy Pizza,False,True,False
+Turkey Cheddar Ciabatta Club,False,False,False
+Gourmet Grilled Cheese,False,True,True
+Avocado Toast,False,True,False
+Chocolate Croissant,False,False,False
+Ham and Cheese Croissant,False,False,False
+Butter Croissant,False,True,False
+Spinach Cheese Croissant,False,True,False
+Spinach Quiche,False,True,False
+Ham & Cheese Quiche,False,False,False
+Mix Match ASsa Bowl,True,True,False
+
+Peanut Butter Toast,True,True,False
+Keto Muffins,False,False,False
+Keto Toasted Bagel,False,False,False
+Keto Pepperoni Rolls,False,False,False
+Keto Cookie,False,True,False
+Keto Scones,False,False,False
+Brownie,False,True,False
+Turkey Club Wrap,False,False,False
+Grilled Cheese Toast,False,True,False
+Turkey Cheddar Sandwich,False,False,False
+Keto Cinnamon Rolls,False,False,False
+Gluten Free Brownie,False,True,False
+Chocolate Chip Cookie,False,True,False
+Gluten Free Whoopie Pie,False,False,False
+Gluten Free Cheesecake,False,True,False
+Gluten Free Chocolate Coconut Macaroon,False,True,False
+Gluten Free Coffee Cake,False,True,False
+Gluten Free Chocolate Chip Cookie,False,True,False
+Very Berry Parfait,False,True,False
+Aloha (Pineapple & Coconut),True,True,True
+LetAos Get Tropical ASsa Bowl,
+Bread,
+Danish,
+Chips,

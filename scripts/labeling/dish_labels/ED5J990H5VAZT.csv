@@ -1,70 +1,70 @@
-item_name,vegan,vegetarian,mpbamod
-Awkward Aardvark,False,False,True
-Bagel,False,True,True
-Griffith Street,False,True,True
-Egg Cheese,False,True,True
-Toby Toast,True,True,True
-Egg Meat Cheese,False,False,True
-Scone,False,True,False
-Yeti Sandwich,False,False,True
-The Jesse Sandwich,False,False,True
-The Yeli Sandwich,False,False,True
-Coffee Cake,False,True,False
-One Punch,False,True,True
-The Paul,False,False,True
-Fullmetal Alchemist,False,False,True
-Egg Hummus Pesto,False,True,True
-Anam A Nom,False,False,True
-Build Your Own,False,True,True
-Garden Home,True,True,True
-Careless Whisper,True,True,True
-The Dook,False,True,True
-Muffin,False,True,False
-Oatmeal,True,True,True
-Turkey Sandwich With Side Salad,False,False,False
-Avobagel,False,True,True
-Tom Swanson,False,False,False
-The Craven,False,False,True
-Scone Vanilla Bean,False,True,False
-Tomwich,False,True,False
-Danish Blueberry,False,True,True
-Brownie,False,True,False
-Veggie Sandwich,True,True,False
-Muffin Chocolate,False,True,False
-Chicken Salad Sandwich With Side Salad,False,False,False
-Scone Blueberry,False,True,False
-Egusto,False,True,False
-Egusto Swanson,False,False,False
-Croque Madame,False,False,False
-Egusto Mato,False,True,False
-Danish Lemon,False,True,False
-Pastrami Sandwich With Side Salad,False,False,False
-Egg Meat,False,False,True
-Croissant Cinnamon Twist,False,True,False
-Muffin Marionberry,False,True,False
-Hummus Plate,True,True,False
-Bear Claw,False,True,False
-Croissant Chocolate,False,True,False
-Cinnamon Roll,False,True,False
-Cream Cheese Pocket,False,True,False
-Chocolate Muffin,False,True,True
-Croissant Plain,False,True,True
-Egg,False,True,True
-Avocado Toast,True,True,True
-Black Butte,False,False,False
-Bacon,False,False,True
-Simple Salad,True,True,True
-"Bacon, Cheddar Chive Scone",False,False,False
-Mochi Waffle (Weekends From 9Am-1Pm),False,True,False
-Mochi Cupcake,False,True,False
-Pumpkin Bread,False,True,False
-Toast,True,True,False
-Sausage,False,False,True
-Butterhorn Berry,False,True,False
-Flan,False,True,False
-Apple Strudel,False,True,False
-Banana Bread,False,True,False
-Croissant Almond,False,True,False
-Pumpkin Loaf,False,True,False
-Banana Loaf,False,True,False
-Matcha Loaf,False,True,False
+item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg
+Awkward Aardvark,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bagel,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Griffith Street,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Egg Cheese,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+Toby Toast,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Egg Meat Cheese,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+Scone,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Yeti Sandwich,False,False,True,False,False,False,False,False,False,False,True,False,True,False,True,False,True
+The Jesse Sandwich,False,False,True,False,False,False,False,False,False,False,True,False,True,False,True,False,True
+The Yeli Sandwich,False,False,True,False,False,False,False,False,False,False,True,False,True,False,True,False,True
+Coffee Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+One Punch,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+The Paul,False,False,True,False,False,False,False,False,False,False,True,False,True,False,True,False,True
+Fullmetal Alchemist,False,False,True,False,False,False,False,False,False,False,True,False,True,False,True,False,True
+Egg Hummus Pesto,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+Anam A Nom,False,False,True,False,False,False,False,False,False,False,True,False,True,False,True,False,True
+Build Your Own,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Garden Home,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Careless Whisper,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+The Dook,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Muffin,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Oatmeal,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Turkey Sandwich With Side Salad,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Avobagel,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Tom Swanson,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False,True
+The Craven,False,False,True,False,False,False,False,False,False,False,True,False,True,False,True,False,True
+Scone Vanilla Bean,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Tomwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Danish Blueberry,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Brownie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Veggie Sandwich,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Muffin Chocolate,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Chicken Salad Sandwich With Side Salad,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Scone Blueberry,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Egusto,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Egusto Swanson,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False,True
+Croque Madame,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True
+Egusto Mato,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Danish Lemon,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Pastrami Sandwich With Side Salad,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False
+Egg Meat,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+Croissant Cinnamon Twist,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Muffin Marionberry,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Hummus Plate,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bear Claw,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Croissant Chocolate,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Cinnamon Roll,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Cream Cheese Pocket,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Chocolate Muffin,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Croissant Plain,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Egg,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True
+Avocado Toast,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Black Butte,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False,True
+Bacon,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Simple Salad,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+"Bacon, Cheddar Chive Scone",False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,True,True
+Mochi Waffle (Weekends From 9Am-1Pm),False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Mochi Cupcake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Pumpkin Bread,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Toast,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sausage,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False
+Butterhorn Berry,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Flan,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Apple Strudel,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Banana Bread,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Croissant Almond,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Pumpkin Loaf,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Banana Loaf,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Matcha Loaf,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True

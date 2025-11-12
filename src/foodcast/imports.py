@@ -65,6 +65,9 @@ DATA_DIR_3_4 = DATA_DIR_3 / '4_ai_labeled'
 DATA_DIR_3_5 = DATA_DIR_3 / '5_only_food'
 DATA_DIR_3_6 = DATA_DIR_3 / '6_only_dinein'
 DATA_DIR_3_7 = DATA_DIR_3 / '7_with_targeted'
+DATA_DIR_3_pre_1 = DATA_DIR_3 / 'used_for_ai_labeling' / '1_rule_relabeled'
+DATA_DIR_3_pre_2 = DATA_DIR_3 / 'used_for_ai_labeling' / '2_consolidated'
+DATA_DIR_3_pre_3 = DATA_DIR_3 / 'used_for_ai_labeling' / '3_combined_no_prelabeled_drinks'
 
 
 def return_dir():
@@ -79,9 +82,23 @@ def return_dir():
            DATA_DIR_3_4, 
            DATA_DIR_3_5, 
            DATA_DIR_3_6,
-           DATA_DIR_3_7))
+           DATA_DIR_3_7,
+           (DATA_DIR_3_pre_1, 
+           DATA_DIR_3_pre_2,
+           DATA_DIR_3_pre_3)))
     return dir
 
+# Monkey patching
+pd.DataFrame.print = lambda df: print(df.to_string())
+pd.Series.print = lambda s: print(s.to_string())
+def modifs(df, item): 
+    df = df.assign(bool_mask = lambda df: df.item_name == item)
+    if df.bool_mask.any():
+        df.loc[df.bool_mask][['item_name','item_modifications']].value_counts().print()
+    else: 
+        print(f"Item '{item}' not found!") 
+pd.DataFrame.modifs = lambda df, item: modifs(df, item)
+    
 def notebook_settings():
     """
     DOES THE EQUIVALENT OF THIS:
@@ -135,7 +152,7 @@ def load_timezones():
     timezones = pd.read_csv(DATA_DIR_3 / 'timezones.csv', index_col='location_id')['timezone'].to_dict()
     return timezones
 
-def load_sales():
+def load_all_res_2():
     # Time series sales data for each restaurant
     location_ids_by_coverage = load_loc_ids()
     timezones = load_timezones()
@@ -151,7 +168,7 @@ def load_sales():
             sales_and_menu_data[loc_id] = df.tz_convert(timezones[loc_id])
     return sales_and_menu_data
 
-def load_single_restaurant(loc_id):
+def load_one_res_2(loc_id):
     timezones = load_timezones()
     if loc_id == 'VLZX7K2M9QD4T':
         filename = 'VLZX7K2M9QD4T.parquet'
@@ -162,7 +179,7 @@ def load_single_restaurant(loc_id):
         df = pd.read_parquet(DATA_DIR_2 / 'orders_item_level' / filename).tz_convert(timezones[loc_id])
     return df    
 
-def load_consolidated_sales():
+def load_all_res_3_2_con():
     location_ids_by_coverage = load_loc_ids()
     sales_and_menu_data = {}
     for loc_id in tqdm(location_ids_by_coverage):
@@ -178,7 +195,7 @@ def load_consolidated_sales():
         sales_and_menu_data[loc_id] = df
     return sales_and_menu_data
 
-def load_ai_labeled_sales():
+def load_all_res_3_4_ai():
     location_ids_by_coverage = load_loc_ids()
     data = {}
     for loc_id in tqdm(location_ids_by_coverage):
@@ -186,15 +203,11 @@ def load_ai_labeled_sales():
         data[loc_id] = df
     return data
 
-def load_ai_labeled_sales_with_targeted():
-    location_ids_by_coverage = load_loc_ids()
-    data = {}
-    for loc_id in tqdm(location_ids_by_coverage):
-        df = pd.read_parquet(DATA_DIR_3_4 / 'with_targeted' / f'{loc_id}.parquet')
-        data[loc_id] = df
-    return data
+def load_one_res_3_4_ai(loc_id):
+    df = pd.read_parquet(DATA_DIR_3_4 / f'{loc_id}.parquet')
+    return df
 
-def load_dinein_sales():
+def load_all_res_3_6_dinein():
     location_ids_by_coverage = load_loc_ids()
     data = {}
     for loc_id in tqdm(location_ids_by_coverage):
@@ -202,7 +215,11 @@ def load_dinein_sales():
         data[loc_id] = df
     return data
 
-def load_dinein_sales_with_targeted():
+def load_one_res_3_6_dinein(loc_id):
+    df = pd.read_parquet(DATA_DIR_3_6 / f'{loc_id}.parquet')
+    return df
+
+def load_all_res_3_6_dinein_with_targeted():
     location_ids_by_coverage = load_loc_ids()
     data = {}
     for loc_id in tqdm(location_ids_by_coverage):
@@ -227,6 +244,9 @@ __all__ = ['np', 'pd', 'DateOffset', 'pyarrow',  'yaml',
            'find_project_root', 'PROJECT_ROOT',
            'return_dir', 'notebook_settings',
            'load_loc_ids', 'load_static', 'load_timezones', 
-           'load_sales', 'load_single_restaurant', 'load_consolidated_sales', 'load_ai_labeled_sales', 'load_dinein_sales', 'load_gaps',
-           'load_ai_labeled_sales_with_targeted', 'load_dinein_sales_with_targeted',
+           'load_all_res_2', 'load_one_res_2', 'load_all_res_3_2_con', 
+           'load_all_res_3_4_ai', 'load_one_res_3_4_ai',
+           'load_all_res_3_6_dinein', 'load_one_res_3_6_dinein',
+           'load_gaps',
+           'load_all_res_3_6_dinein_with_targeted',
            'BASE_DIR', 'DATA_DIR_2', 'DATA_DIR_3']
