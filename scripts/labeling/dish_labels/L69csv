@@ -1,0 +1,49 @@
+item_name,animal_categories,reasoning
+Breakfast Sandwich,"['egg', 'savory_dairy', 'bacon', 'sausage']","Contains egg, cheese, bacon, and choice of sausage."
+Muffin,"['egg', 'sweet_dairy']",Common ingredients for muffins.
+Toasted Bagels,[],Plain bagels typically contain no animal ingredients.
+Scones,"['egg', 'sweet_dairy']",Common ingredients for scones.
+Pop Tart,['sweet_dairy'],Common ingredients for pastries like pop tarts.
+Gluten Free Muffin,"['egg', 'sweet_dairy']",Common ingredients for muffins.
+Fresh Baked Banana Bread,"['egg', 'sweet_dairy']",Common ingredients for banana bread.
+Quiche,"['egg', 'chunked_beef_or_pork', 'savory_dairy']","Contains egg, ham (chunked pork), and cheese."
+Berry-Licious ASsai Bowl,[],No animal ingredients listed.
+Blt,['bacon'],Contains bacon.
+Driving-Me-Hazy ASsa Bowl,[],No animal ingredients listed.
+Butter-Me-Crazy ASsai Bowl,[],No animal ingredients listed.
+Grilled Chicken Sandwich,"['unfried_chicken', 'bacon', 'savory_dairy']","Contains grilled chicken, bacon, and cheddar cheese."
+Very Berry Parfait,['savory_dairy'],Commonly contains yogurt.
+Aloha (Pineapple & Coconut),,
+Bagel Joy Pizza,['savory_dairy'],Contains mozzarella cheese.
+Turkey Cheddar Ciabatta Club,"['bacon', 'savory_dairy']",Contains bacon and cheddar cheese. Turkey is not a category.
+Keto Muffins,"['egg', 'sweet_dairy']",Common ingredients for muffins.
+Gourmet Grilled Cheese,['savory_dairy'],Contains cheese and butter.
+Mix Match ASsa Bowl,[],"Toppings are customer's choice, no default animal ingredients."
+Chips,[],No animal ingredients.
+Avocado Toast,['egg'],Topped with a peppered egg.
+Turkey Club Wrap,"['bacon', 'savory_dairy']",Inferred to contain bacon and cheese from similar items. Turkey is not a category.
+Keto Cinnamon Rolls,"['egg', 'sweet_dairy']",Common ingredients for cinnamon rolls.
+Gluten Free Brownie,"['egg', 'sweet_dairy']",Common ingredients for brownies.
+LetAos Get Tropical ASsa Bowl,[],Unable to infer from menu or general knowledge.
+Grilled Cheese Toast,['savory_dairy'],Assumed to contain cheese.
+Keto Toasted Bagel,[],No animal ingredients specified.
+Turkey Cheddar Sandwich,['savory_dairy'],Inferred to contain cheddar cheese. Turkey is not a category.
+Chocolate Chip Cookie,"['egg', 'sweet_dairy']",Common ingredients for cookies.
+Gluten Free Whoopie Pie,"['egg', 'sweet_dairy']",Common ingredients for whoopie pies.
+Keto Pepperoni Rolls,['sausage'],Pepperoni is a type of sausage.
+Gluten Free Cheesecake,['sweet_dairy'],Contains cheese/dairy.
+Keto Scones,"['egg', 'sweet_dairy']",Common ingredients for scones.
+Gluten Free Chocolate Coconut Macaroon,['egg'],Typically made with egg whites.
+Gluten Free Coffee Cake,"['egg', 'sweet_dairy']",Common ingredients for coffee cake.
+Gluten Free Chocolate Chip Cookie,"['egg', 'sweet_dairy']",Common ingredients for cookies.
+Bread,[],Not described; generally no animal ingredients.
+Brownie,"['egg', 'sweet_dairy']",Common ingredients for brownies.
+Keto Cookie,"['egg', 'sweet_dairy']",Common ingredients for cookies.
+Danish,"['egg', 'sweet_dairy']",Common ingredients for danishes.
+Butter Croissant,,
+Chocolate Croissant,,
+Ham & Cheese Quiche,,
+Ham and Cheese Croissant,,
+Peanut Butter Toast,,
+Spinach Cheese Croissant,,
+Spinach Quiche,,

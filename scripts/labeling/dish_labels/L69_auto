@@ -1,0 +1,50 @@
+item_name,animal_categories,reasoning
+Breakfast Sandwich,"['egg', 'savory_dairy', 'bacon', 'sausage']","Contains egg, cheese, bacon, and choice of sausage."
+Muffin,"['egg', 'sweet_dairy']",Common ingredients for muffins.
+# Toasted Bagels,[],Plain bagels typically contain no animal ingredients. However mods have cream cheese option
+Scones,"['egg', 'sweet_dairy']",Common ingredients for scones.
+Pop Tart,['sweet_dairy'],Common ingredients for pastries like pop tarts.
+Gluten Free Muffin,"['egg', 'sweet_dairy']",Common ingredients for muffins.
+Fresh Baked Banana Bread,"['egg', 'sweet_dairy','savory_dairy']",Common ingredients for banana bread. Comes with butter option or Nutella
+Quiche,"['egg', 'chunked_beef_or_pork', 'savory_dairy']","Contains egg, ham (chunked pork), and cheese."
+Berry-Licious ASsai Bowl,[],No animal ingredients listed.
+Blt,"['bacon', 'egg']",Contains bacon and mayo has egg.
+# Driving-Me-Hazy ASsa Bowl,['sweet_dairy'],No animal ingredients listed. But has Nutella drizzle.
+Butter-Me-Crazy ASsai Bowl,[],No animal ingredients listed.
+Grilled Chicken Sandwich,"['unfried_chicken', 'bacon', 'savory_dairy']","Contains grilled chicken, bacon, and cheddar cheese."
+# Bagel Joy Pizza,"['savory_dairy','pepperoni']",Contains mozzarella cheese and options for with or without pepperoni
+Turkey Cheddar Ciabatta Club,"['bacon', 'savory_dairy', 'unfried_chicken']",Contains bacon and cheddar cheese. 
+Gourmet Grilled Cheese,['savory_dairy'],Contains cheese and butter and has vegan cheese option.
+Avocado Toast,['egg'],Topped with a peppered egg.
+Very Berry Parfait,['sweet_dairy_dairy'],Commonly contains yogurt.
+# Aloha (Pineapple & Coconut),['sweet_dairy'],Fruit-based item; might contain milk by default based on item_mods.
+Keto Muffins,"['egg', 'sweet_dairy']",Common ingredients for muffins.
+# Mix Match ASsa Bowl,[],"Toppings are customer's choice, no default animal ingredients."
+Chips,[],No animal ingredients.
+Turkey Club Wrap,"['bacon', 'savory_dairy', 'unfried_chicken']",Inferred to contain bacon and cheese from similar items. 
+Keto Cinnamon Rolls,"['egg', 'sweet_dairy']",Common ingredients for cinnamon rolls.
+Gluten Free Brownie,"['egg', 'sweet_dairy']",Common ingredients for brownies.
+LetAos Get Tropical ASsa Bowl,[],Unable to infer from menu or general knowledge. Based on item_mods probably no dairy
+Grilled Cheese Toast,['savory_dairy'],Assumed to contain cheese.
+Keto Toasted Bagel,[],No animal ingredients specified.
+Turkey Cheddar Sandwich,"['savory_dairy', 'unfried_chicken']",Inferred to contain cheddar cheese.
+Chocolate Chip Cookie,"['egg', 'sweet_dairy']",Common ingredients for cookies.
+Gluten Free Whoopie Pie,"['egg', 'sweet_dairy']",Common ingredients for whoopie pies.
+Keto Pepperoni Rolls,['sausage'],Pepperoni is a type of sausage.
+Gluten Free Cheesecake,['sweet_dairy'],Contains cheese/dairy.
+Keto Scones,"['egg', 'sweet_dairy']",Common ingredients for scones.
+Gluten Free Chocolate Coconut Macaroon,['egg'],Typically made with egg whites.
+Gluten Free Coffee Cake,"['egg', 'sweet_dairy']",Common ingredients for coffee cake.
+Gluten Free Chocolate Chip Cookie,"['egg', 'sweet_dairy']",Common ingredients for cookies.
+Bread,[],Not described; generally no animal ingredients.
+Brownie,"['egg', 'sweet_dairy']",Common ingredients for brownies.
+Keto Cookie,"['egg', 'sweet_dairy']",Common ingredients for cookies.
+Danish,"['egg', 'sweet_dairy']",Common ingredients for danishes.
+Butter Croissant,"['sweet_dairy', 'egg']","Croissants use butter (dairy) and egg in dough/wash."
+Chocolate Croissant,"['sweet_dairy', 'egg']","Contains chocolate (dairy) and egg in pastry."
+Ham and Cheese Croissant,"['chunked_beef_or_pork', 'savory_dairy', 'egg']","Contains ham (chunked pork), cheese, and egg wash."
+Ham & Cheese Quiche,"['egg', 'chunked_beef_or_pork', 'savory_dairy']","Contains egg, ham (chunked pork), and cheese."
+Spinach Quiche,"['egg', 'savory_dairy']","Contains egg and cheese, no meat expected."
+Spinach Cheese Croissant,"['savory_dairy', 'egg']","Contains cheese and egg in pastry."
+Peanut Butter Toast,[],"Contains peanut butter and bread, no animal ingredients expected."
+
