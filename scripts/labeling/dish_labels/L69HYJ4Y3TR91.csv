@@ -1,50 +1,49 @@
-item_name,vegan,vegetarian,mpbamod
-Breakfast Sandwich,False,False,True
-Muffin, False, True, False
-Toasted Bagels,False,True,False
-Scones,False,True,False
-Pop Tart,False,True,False
-Gluten Free Muffin, False, True, False
-Fresh Baked Banana Bread,False,True,False
-Quiche,False,True,False
-Berry-Licious ASsai Bowl,True,True,False
-Blt,False,False,False
-Driving-Me-Hazy ASsa Bowl,False,True,False
-Butter-Me-Crazy ASsai Bowl,True,True,False
-Grilled Chicken Sandwich,False,False,False
-Bagel Joy Pizza,False,True,False
-Turkey Cheddar Ciabatta Club,False,False,False
-Gourmet Grilled Cheese,False,True,True
-Avocado Toast,False,True,False
-Chocolate Croissant,False,False,False
-Ham and Cheese Croissant,False,False,False
-Butter Croissant,False,True,False
-Spinach Cheese Croissant,False,True,False
-Spinach Quiche,False,True,False
-Ham & Cheese Quiche,False,False,False
-Mix Match ASsa Bowl,True,True,False
-
-Peanut Butter Toast,True,True,False
-Keto Muffins,False,False,False
-Keto Toasted Bagel,False,False,False
-Keto Pepperoni Rolls,False,False,False
-Keto Cookie,False,True,False
-Keto Scones,False,False,False
-Brownie,False,True,False
-Turkey Club Wrap,False,False,False
-Grilled Cheese Toast,False,True,False
-Turkey Cheddar Sandwich,False,False,False
-Keto Cinnamon Rolls,False,False,False
-Gluten Free Brownie,False,True,False
-Chocolate Chip Cookie,False,True,False
-Gluten Free Whoopie Pie,False,False,False
-Gluten Free Cheesecake,False,True,False
-Gluten Free Chocolate Coconut Macaroon,False,True,False
-Gluten Free Coffee Cake,False,True,False
-Gluten Free Chocolate Chip Cookie,False,True,False
-Very Berry Parfait,False,True,False
-Aloha (Pineapple & Coconut),True,True,True
-LetAos Get Tropical ASsa Bowl,
-Bread,
-Danish,
-Chips,
+item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg
+Breakfast Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+Muffin,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Toasted Bagels,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Scones,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Pop Tart,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False
+Gluten Free Muffin,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Fresh Baked Banana Bread,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True
+Quiche,False,True,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True
+Berry-Licious ASsai Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Blt,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True
+Driving-Me-Hazy ASsa Bowl,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False
+Butter-Me-Crazy ASsai Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+LetAos Get Tropical ASsa Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Grilled Chicken Sandwich,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+Bagel Joy Pizza,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Turkey Cheddar Ciabatta Club,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+Gourmet Grilled Cheese,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Avocado Toast,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True
+Very Berry Parfait,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False
+Aloha (Pineapple & Coconut),False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False
+Keto Muffins,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Mix Match ASsa Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Peanut Butter Toast,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Keto Toasted Bagel,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Keto Pepperoni Rolls,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False
+Keto Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Keto Scones,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Brownie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Turkey Club Wrap,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+Grilled Cheese Toast,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Turkey Cheddar Sandwich,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Keto Cinnamon Rolls,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Gluten Free Brownie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Chocolate Chip Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Gluten Free Whoopie Pie,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Gluten Free Cheesecake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False
+Gluten Free Chocolate Coconut Macaroon,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True
+Gluten Free Coffee Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Gluten Free Chocolate Chip Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Butter Croissant,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Chocolate Croissant,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Ham and Cheese Croissant,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True
+Ham & Cheese Quiche,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True
+Spinach Quiche,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+Spinach Cheese Croissant,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+Danish,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True
+Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bread,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False

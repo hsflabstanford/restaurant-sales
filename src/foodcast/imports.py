@@ -64,7 +64,8 @@ DATA_DIR_3_3 = DATA_DIR_3 / '3_combined_no_prelabeled_drinks'
 DATA_DIR_3_4 = DATA_DIR_3 / '4_ai_labeled'
 DATA_DIR_3_5 = DATA_DIR_3 / '5_only_food'
 DATA_DIR_3_6 = DATA_DIR_3 / '6_only_dinein'
-DATA_DIR_3_7 = DATA_DIR_3 / '7_with_targeted'
+DATA_DIR_3_7 = DATA_DIR_3 / '7_truly_consolidated'
+DATA_DIR_3_8 = DATA_DIR_3 / '8_with_menu_counts'
 DATA_DIR_3_pre_1 = DATA_DIR_3 / 'used_for_ai_labeling' / '1_rule_relabeled'
 DATA_DIR_3_pre_2 = DATA_DIR_3 / 'used_for_ai_labeling' / '2_consolidated'
 DATA_DIR_3_pre_3 = DATA_DIR_3 / 'used_for_ai_labeling' / '3_combined_no_prelabeled_drinks'
@@ -83,6 +84,7 @@ def return_dir():
            DATA_DIR_3_5, 
            DATA_DIR_3_6,
            DATA_DIR_3_7,
+           DATA_DIR_3_8,
            (DATA_DIR_3_pre_1, 
            DATA_DIR_3_pre_2,
            DATA_DIR_3_pre_3)))
@@ -219,11 +221,22 @@ def load_one_res_3_6_dinein(loc_id):
     df = pd.read_parquet(DATA_DIR_3_6 / f'{loc_id}.parquet')
     return df
 
-def load_all_res_3_6_dinein_with_targeted():
+def load_all_res_3_7_truly_consolidated():
+    data = {}
+    location_ids_by_coverage = load_loc_ids()[:7]
+    for loc_id in tqdm(location_ids_by_coverage):
+        if loc_id == location_ids_by_coverage[0]:
+            df = pd.read_parquet(DATA_DIR_3_6 / f'{loc_id}.parquet')
+        else:
+            df = pd.read_parquet(DATA_DIR_3_7 / f'{loc_id}.parquet')
+        data[loc_id] = df
+    return data
+
+def load_all_res_3_8_menu():
     location_ids_by_coverage = load_loc_ids()
     data = {}
     for loc_id in tqdm(location_ids_by_coverage):
-        df = pd.read_parquet(DATA_DIR_3_6 / 'with_targeted' / f'{loc_id}.parquet')
+        df = pd.read_parquet(DATA_DIR_3_8 / f'{loc_id}.parquet')
         data[loc_id] = df
     return data
 
@@ -247,6 +260,7 @@ __all__ = ['np', 'pd', 'DateOffset', 'pyarrow',  'yaml',
            'load_all_res_2', 'load_one_res_2', 'load_all_res_3_2_con', 
            'load_all_res_3_4_ai', 'load_one_res_3_4_ai',
            'load_all_res_3_6_dinein', 'load_one_res_3_6_dinein',
+           'load_all_res_3_7_truly_consolidated',
+           'load_all_res_3_8_menu',
            'load_gaps',
-           'load_all_res_3_6_dinein_with_targeted',
            'BASE_DIR', 'DATA_DIR_2', 'DATA_DIR_3']
