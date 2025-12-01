@@ -1,0 +1,119 @@
+canonical_name,variants,reasoning
+Anam A Nom,[],Unique dish based on menu context.
+Annie'S,[],No identical or near-identical dishes found.
+Apple,[],No identical or near-identical dishes found.
+Apple Strudel,[],No identical or near-identical dishes found.
+Avobagel,[],Unique dish based on menu context.
+Avocado Toast,[],"Unique dish, represents a basic avocado toast distinct from named variants."
+Awkward Aardvark,[],Unique dish based on menu context.
+Bacon,[],No identical or near-identical dishes found.
+"Bacon, Cheddar Chive Scone",[],Unique dish based on ingredients.
+Bag Of Bagel,['Bagel'],Refers to the same item; 'Bag Of' implies quantity.
+Banana,[],No identical or near-identical dishes found.
+Banana Bread,[],No identical or near-identical dishes found.
+Bear Claw,[],No identical or near-identical dishes found.
+Black Butte,[],No identical or near-identical dishes found.
+Brownie,[],No identical or near-identical dishes found.
+Build Your Own,[],No identical or near-identical dishes found.
+Butterhorn Berry,[],No identical or near-identical dishes found.
+Cardamom,[],No identical or near-identical dishes found.
+Careless Whisper,[],Unique avocado toast variant based on menu context.
+Carton,[],No identical or near-identical dishes found.
+Caveman,[],No identical or near-identical dishes found.
+Chicken Salad Sandwich,[],"Unique dish, distinct from the 'with side salad' version."
+Chicken Salad Sandwich With Side Salad,[],"Unique dish, includes a side salad."
+Chips,[],No identical or near-identical dishes found.
+Choco Beans,[],No identical or near-identical dishes found.
+Chocolate Chip Cookie,"['Cookie - Chocolate Chip', 'Cookie Chocolate Chip']",All refer to the same chocolate chip cookie; variations are formatting.
+Chocolate Muffin,['Muffin Chocolate'],"Same muffin, word order reversed."
+Cinnamon Roll,[],No identical or near-identical dishes found.
+Coffee Cake,[],No identical or near-identical dishes found.
+Coffee Cake Cookie,[],No identical or near-identical dishes found.
+Concord,[],No identical or near-identical dishes found.
+Cookie,"['Cookies', 'House Made Cookie', 'Day Old Cookie']","Generic cookie, plural form, and descriptive adjectives for the same item."
+Cookie - Oatmeal Raisin,['Cookie Oatmeal'],All refer to an oatmeal raisin cookie; variations are formatting.
+Cookie Sampler,[],"Unique item, a collection of cookies."
+Cream Cheese Pocket,[],No identical or near-identical dishes found.
+Croissant Almond,[],No identical or near-identical dishes found.
+Croissant Chocolate,[],No identical or near-identical dishes found.
+Croissant Cinnamon Twist,[],No identical or near-identical dishes found.
+Croissant Plain,[],No identical or near-identical dishes found.
+Croque Madame,[],No identical or near-identical dishes found.
+Danish - Blueberry,['Danish Blueberry'],Same dish; variations are formatting.
+Danish - Lemon,['Danish Lemon'],Same dish; variations are formatting.
+Day Old,[],No identical or near-identical dishes found.
+Day Olds,[],No identical or near-identical dishes found.
+Donut,[],No identical or near-identical dishes found.
+Egg,[],No identical or near-identical dishes found.
+Egg Cheddar,[],"Unique dish name in the input list, corresponding to 'EGG & CHEDDAR' in the menu."
+Egg Hummus Pesto,[],No identical or near-identical dishes found.
+Egg Meat,[],No identical or near-identical dishes found.
+Egg Meat Cheese,[],No identical or near-identical dishes found.
+Egg Sandwich,['Sandwich - Breakfast'],"Both are generic terms for a breakfast sandwich, likely referring to a basic egg sandwich."
+Egusto,[],No identical or near-identical dishes found.
+Egusto Mato,[],No identical or near-identical dishes found.
+Egusto Swanson,[],No identical or near-identical dishes found.
+Ex. Flavor,[],No identical or near-identical dishes found.
+Fig Bar,[],No identical or near-identical dishes found.
+Flan,[],No identical or near-identical dishes found.
+Flavor,[],No identical or near-identical dishes found.
+Fruit,[],No identical or near-identical dishes found.
+Full Metal Alchemist,['Fullmetal Alchemist'],Same dish; only difference is a space/compound word.
+Garden Home,[],Unique dish based on menu context.
+Griffith Street,[],"Distinct from 'GRIFFITH DRIVE' in the menu; 'Street' vs 'Drive' is a meaningful difference, not a typo."
+Honey Cup,[],No identical or near-identical dishes found.
+Honey Stick Pack,[],No identical or near-identical dishes found.
+Hummus,[],"Unique as a standalone item, distinct from 'Hummus Plate'."
+Hummus Plate,[],No identical or near-identical dishes found.
+Inji,[],No identical or near-identical dishes found.
+Kind,['Kind Bar'],Refers to the same brand's product; 'Bar' is a descriptive term.
+Kure Bar,[],No identical or near-identical dishes found.
+Kyushu,[],No identical or near-identical dishes found.
+Little Little Loaf,[],No identical or near-identical dishes found.
+Mango Habanero,[],No identical or near-identical dishes found.
+Mochi Cupcake,[],No identical or near-identical dishes found.
+Mochi Waffle (Weekends From 9Am-1Pm),[],"Unique dish; parenthetical describes availability, not a different dish."
+Muffin,[],"Generic muffin, distinct from specific flavored muffins."
+Muffin - Marionberry,['Muffin Marionberry Cobbler'],All refer to a marionberry muffin; 'cobbler' is descriptive and implies the same dish.
+Ninkasi,[],No identical or near-identical dishes found.
+Oatmeal,[],No identical or near-identical dishes found.
+One Punch,[],Unique avocado toast variant based on menu context.
+Orange,[],No identical or near-identical dishes found.
+Pandan Cookie,[],Unique specific flavor cookie.
+Pastrami Sandwich With Side Salad,[],"Unique dish, includes a side salad."
+Pumpkin Bread,[],No identical or near-identical dishes found.
+Pumpkin Pie,[],No identical or near-identical dishes found.
+Pure,[],No identical or near-identical dishes found.
+Rxbar,[],No identical or near-identical dishes found.
+Salad,['Simple Salad'],"Generic salad; 'Simple' is a decorative adjective, referring to a basic salad."
+Sausage,[],No identical or near-identical dishes found.
+Scone,[],"Generic scone, distinct from specific flavored scones."
+Scone - Blueberry,['Scone Blueberry'],Same dish; variations are formatting.
+Scone - Vanilla Bean,"['Scone Vanilla Bean', 'Vanilla Scone']",All refer to a vanilla bean scone; 'Vanilla Scone' is a common variation of the name.
+Sea Salt Caramel Nutella,[],No identical or near-identical dishes found.
+Strawberry Matcha Cookie,[],Unique specific flavor cookie.
+Strawberry White Chocolate,[],No identical or near-identical dishes found.
+Tap,['TAB'],Typo for 'TAB' (a bagel from menu context); Levenshtein distance 1 (p/b).
+The Craven,[],Unique dish based on menu context.
+The Dook,[],Unique dish based on menu context.
+The Jesse Sandwich,[],"Unique dish, distinct from 'Vegan The Jesse Sandwich'."
+The Paul,[],Unique dish based on menu context.
+The Yeli Sandwich,[],No identical or near-identical dishes found.
+Tlc,[],No identical or near-identical dishes found.
+Toast,[],"Generic toast, distinct from specific avocado toast variants."
+Toby Toast,[],Unique avocado toast variant based on menu context.
+Tom Swanson,[],No identical or near-identical dishes found.
+Tomwich,[],No identical or near-identical dishes found; not an obvious abbreviation or typo of 'Tom Swanson' without further context.
+Turkey Sandwich,[],"Unique dish, distinct from the 'with side salad' version."
+Turkey Sandwich With Side Salad,[],"Unique dish, includes a side salad."
+Variable,[],No identical or near-identical dishes found.
+Vegan The Jesse Sandwich,[],"Unique dish, specified as 'Vegan', indicating a meaningful difference."
+Veggie,[],No identical or near-identical dishes found.
+Veggie Hummus,[],No identical or near-identical dishes found.
+Veggie Sandwich,[],No identical or near-identical dishes found.
+Vive,[],No identical or near-identical dishes found.
+Weekly Special,[],No identical or near-identical dishes found.
+Whole Grain,[],No identical or near-identical dishes found.
+Wow,[],No identical or near-identical dishes found.
+Yeti Sandwich,[],Unique dish based on menu context.
+Zone Perfect,[],No identical or near-identical dishes found.

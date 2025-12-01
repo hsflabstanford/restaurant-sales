@@ -1,0 +1,33 @@
+canonical_name,variants,reasoning
+Add Ons,[],No equivalents in menu context.
+Apple Slices,[],Not found in menu context.
+Bavarian Cream Of Potato Soup,[],Specific soup not found in menu.
+Beyond Sausage,['Beyond Sausage®'],Ignored trademark symbol.
+Big Bob Bratwurst,['The Big Bob Bratwurst'],Ignored decorative article 'The'.
+Big City Beef Frank,[],Exact match in menu.
+Bockwurst,[],"Not found in menu context, distinct from Weisswurst."
+Chicken,[],"Too generic, not a specific menu dish."
+Chicken Sausage,[],"Generic term, not a specific menu dish."
+Chili,['Chili Con Carne'],"Chili is a general term for Chili con Carne, ignoring size differences."
+Currywurst,"[""Curt'S Currywurst""]",Curt's is a specific identifier for the general Currywurst dish.
+Dirtyface Beer Wurst,[],Exact match in menu.
+German Potato Salad,['G.P.S.'],G.P.S. is an obvious abbreviation for German Potato Salad.
+Gingerbread Cookie,[],Not found in menu context.
+Gluten Free Bun,['Gluten-Free Bun'],Ignored punctuation and whitespace differences.
+Hans Jalapeno Cheddar,['Hans’ Jalapeño & Cheddar'],Ignored punctuation and separator differences.
+Helgas Giant Kelbassi,['Helga’s Giant Kelbassi'],Ignored possessive and decorative adjective 'Giant'.
+Italian Organic Chicken,[],Exact match in menu.
+Large Sauerkraut - 8Oz Bowl,[],"Not a specific menu dish, distinct from self-serve condiment."
+Mediterranean Chicken Sausage,[],Not found in menu context.
+Organic Chicken,[],"Generic term for chicken, not a specific dish."
+Organic Chicken Sausage,[],"Generic term for chicken sausage, not a specific dish."
+Potato Chips,['Tim’s Cascade Style Chips'],Potato Chips is a generic term for the brand of chips listed.
+Smoked Chicken Apple,[],Not found in menu context.
+Soup,[],"Too generic, not a specific soup dish listed."
+Spinach Organic Chicken,[],Exact match in menu.
+Turkey Dog,[],Not found in menu context; beef dogs are distinct.
+Vegan Chili,[],"Exact match in menu, ignoring size."
+Vegan Soup,['Veggie Soup'],"Vegan and Veggie Soup refer to the same type of plant-based soup, implied by menu context."
+Veggie Wurst,[],Exact match in menu.
+Warm Bavarian Pretzel,[],Exact match in menu; 'Warm' is a temperature descriptor.
+Weisswurst,['Oma’s Weisswurst'],Oma’s is a specific identifier for Weisswurst.

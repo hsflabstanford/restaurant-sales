@@ -1,0 +1,11 @@
+canonical_name,variants,reasoning
+#1 Hot Dog Combo,"['#1 Combo', '#1 Hot Dog Combo', '1 Hot Dog Combo']","Same combo, numbering/naming variants"
+#3 Sausage Dog Combo,"['#3 Combo', '#3 Sausage Dog Combo']","Same combo, numbering variant"
+Sausage Dog Combo,"['1 Sausage Dog Combo', 'Sausage Dog Combo']","Same combo, quantity format variant"
+Veggie Dog Combo,"['#2 Combo', '#2 Veggie Dog Combo', '1 Veggie Dog Combo', 'Veggie Dog Combo']","Same combo, numbering variants"
+Chili Cheese Fries,"['Chili Cheese Fries', 'Chilli Cheese Fries']","Same dish, spelling variant (i vs ii)"
+Chicken Tenders,"['Chicken Tenders', 'Tenders']","Same item, abbreviated name"
+Chicken Tenders Combo,"['Chicken Tenders Combo', 'Tenders Combo']","Same combo, abbreviated name"
+Cheese Sticks,"['4 Chz Stix', 'Cheese Sticks']","Same item, quantity/abbreviation variant"
+Quarter Lb Burger,"['‚Öì Deluxe Burger', '‚Öì Lb. Burger']","Same 1/4 lb burger variants, encoding issues"
+Wings Combo,"['#5 Wing Combo', 'Wings Combo']","Same wing combo, numbering variant"

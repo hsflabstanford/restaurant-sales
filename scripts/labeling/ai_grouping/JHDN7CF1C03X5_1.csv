@@ -1,0 +1,149 @@
+canonical_name,variants,reasoning
+1 Chocolate,[],Unique item.
+2 Combo,[],Unique item.
+3 Combo,[],Unique item.
+9.99 Combo Meal,[],Unique item.
+Abc Cookies,"[""Abc'S Cookies""]","Same dish, difference in casing/punctuation."
+Acai Bowl,[],Unique item.
+Albacore Melt Panini,[],"Unique item, not found in menu context."
+Apple,['Apple Slice'],"Same fruit, 'slice' indicates a format."
+Apple Tart,[],"Unique item, not found in menu context."
+Asian Chicken Wrap,[],"Unique item, not found in menu context."
+Asian Sesame Salad,[],"Unique item, not found in menu context."
+Avocado Toast,[],Unique item. Other toast variations imply different main ingredients.
+Bada Bean Bada Boom Beans,[],"Unique item, not found in menu context."
+Baked Chips Small Bag,"['Chips', 'City Chips', 'Food Should Taste Good Chips']","All refer to chips; variations indicate packaging, brand, or general term."
+Banana,[],Unique item.
+Bbq Chicken Panini,[],Unique item. 'Vegan Bbq Unchicken Panini' implies a meaningfully different dish.
+Beach Salad,[],Unique item. 'Chickenless Beach Salad' implies a meaningfully different dish.
+Bear Granola Bites,[],"Unique item, not found in menu context."
+Beyond Burger Combo,[],"Unique item, specific combo."
+Beyond Sausage,[],"Unique item, different product from 'Beyond Burger'."
+Beyond Sausage Combo,[],"Unique item, specific combo for a different product."
+Big Panini Platter,['Fresh Panini Platter'],"Both refer to a platter of paninis, with 'fresh' being a descriptive adjective."
+Big Salad Bowls,[],Unique item. 'Vegan Big Salad Bowls' implies a meaningfully different dish.
+Big Wrap Platter,[],Unique item.
+Bite Size Bobo'S Oat,[],"Unique item, not found in menu context."
+Blue Spirulina,[],Unique item. 'Blue Spirulina Bowl' implies a more complete dish.
+Blue Spirulina Bowl,[],Unique item.
+Box Lunch,['Box Lunch 9.95'],"Same dish, price is a modifier."
+Breakfast Panini,[],Unique item.
+Breakfast Wrap,[],Unique item. 'Vegan Breakfast Wrap' implies a meaningfully different dish.
+Byo ProteinSalad Bowl,[],"Unique item, not found in menu context."
+Caesar Blt Chicken Wrap,[],Unique item. 'Chicken Caesar Wrap' and 'Unchicken Blt Wrap' are distinct based on ingredients or protein.
+Cali Bowl,[],Unique item. 'Vegan Cali Bowl' implies a meaningfully different dish.
+Cheese Stick,[],"Unique item, not found in menu context."
+Cheesecake,[],"Unique item, not found in menu context."
+Chicken 2 Combo,[],"Unique item, generic combo."
+Chicken Caesar,['Chicken Caesar Salad'],"Same dish, 'salad' makes it more specific but refers to the same item."
+Chicken Caesar Wrap,[],"Unique item, distinct from 'Caesar Blt Chicken Wrap'."
+Chickenless Beach Salad,[],"Unique item, meaningfully different from 'Beach Salad'."
+City 12 Wrap,[],"Unique item, not found in menu context."
+City Mandys Cookies,[],"Unique item, specific brand."
+City Mandys Cream Pie,[],"Unique item, specific brand."
+City Of Cape Protein Bowl,[],"Unique item, location-specific."
+City Salad,[],Unique item. 'City Salad Protein' implies a meaningfully different dish.
+City Salad Protein,[],"Unique item, distinct from 'City Salad'."
+Cliff Duos,[],"Unique item, distinct product type from 'Cliff Protein Bar'."
+Cliff Protein Bar,[],Unique item.
+Coco Avocado,[],"Unique item, not found in menu context."
+Cranberry Turkey Panini,[],"Unique item, not found in menu context."
+Dairy Fiesta Bowl,[],"Unique item, meaningfully different from 'Fiesta Bowl' due to dairy ingredient implication."
+Early Bird Panini,[],"Unique item, not found in menu context."
+Early Bird Wrap,[],"Unique item, not found in menu context."
+Egg Avocado Toast,[],"Unique item, distinct from plain 'Avocado Toast' due to 'Egg'."
+Egg N Muffin,['English Egg Muffin'],"Same dish, 'English' describes the muffin type."
+Egg Quinoa Chickpeas,[],"Unique item, not found in menu context."
+Egg Vegetarian Wrap,[],"Unique item, not found in menu context."
+Energy Bites,['Energy Bites 3 PK'],"Same product, '3 PK' indicates quantity/packaging."
+Enjoy Life Lentils,[],"Unique item, not found in menu context."
+Fiesta Bowl,[],Unique item.
+Fresh Beyond Burger,[],Unique item.
+Fresh Greens Salad,[],"Unique item, not found in menu context."
+Fresh Soup,[],Unique item. Not explicitly linked to 'Soup Of The Day' or other specific soups.
+Fruit Cup,[],Unique item.
+Greek Yogurt Bowl,[],Unique item. 'Greek Yogurt Bar' implies a different serving style.
+Hard Boiled Egg,['Hard Boiled Egg 2 Pc'],"Same item, '2 Pc' indicates quantity."
+Harvest Signature Bowl,[],Unique item. 'Vegan Harvest Signature Bowl' implies a meaningfully different dish.
+Healthy Start Panini,[],"Unique item, not found in menu context."
+Healthy Start Wrap,[],"Unique item, not found in menu context."
+Heavenly Organics Chocolate Honey Patty,[],"Unique item, not found in menu context."
+Hillshire Snacking,[],"Unique item, not found in menu context."
+Hummus Toast,[],"Unique item, distinct from 'Avocado Toast' due to main ingredient."
+Kale Caesar Salad,[],"Unique item, not found in menu context."
+Kale Turkey Sausage Soup,[],"Unique item, specific soup type."
+Kale Vegetarian Wrap,[],"Unique item, not found in menu context."
+Kid'S Grilled Cheese Panini,[],Unique item. Different from 'Quesadilla' or 'Sandwich' versions.
+Kid'S Grilled Cheese Quesadilla,[],"Unique item, different format from panini/sandwich."
+Kid'S Grilled Cheese Sandwich,[],"Unique item, different format from panini/quesadilla."
+Kids Combo,[],Unique item. Other combos specify additional items.
+Kids Combo With Smoothie,[],"Unique item, distinct combo with specific addition."
+Kids Combo With Squeeze,[],"Unique item, distinct combo with specific addition."
+Mango Mania,[],Unique item. 'Vegan Mango Mania' implies a meaningfully different dish.
+Matcha Green Tea Bowl,[],"Unique item, not found in menu context."
+Meat,[],"Unique item, too generic."
+Meat Combo Meal,[],"Unique item, too generic."
+Meat Salad Bowl ChickenTurkey,[],"Unique item, too generic."
+Mediterranean,[],"Unique item, too vague on its own."
+Mediterranean Bowl,[],Unique item. Other 'Mediterranean' items imply different dish types.
+Mediterranean Spinach Salad,[],"Unique item, distinct from 'Mediterranean Bowl' or 'Mediterranean Wrap'."
+Mission Burrito Wrap,[],Unique item. 'UnchickenBeyond Mission Burrito Wrap' and 'Vegan Mission Burrito Wrap' are distinct protein/dietary versions.
+Moroccan Glow Bowl,[],Unique item. 'Vegan Moroccan Glow Bowl' implies a meaningfully different dish.
+Organic Chicken And Wild Rice,[],"Unique item, specific soup type."
+Over Night Oats,[],Unique item. Different from 'Steel Cut Oat Meal'.
+PJ Panini,[],"Unique item, not found in menu context."
+Pair A Panini,[],Unique item. Part of a combo structure for specific items.
+Pair A Salad,[],Unique item. Part of a combo structure for specific items.
+Pair A Wrap,[],Unique item. Part of a combo structure for specific items.
+Pb2 Bowl,['PB Bowl'],"'Pb2' is a common term for powdered peanut butter, implying the 'PB Bowl'."
+Pitaya Bowl,[],"Unique item, not found in menu context."
+Portobello Balsamic Toast,[],"Unique item, distinct from 'Avocado Toast' due to main ingredient."
+Power Bowl Bar,[],"Unique item, not found in menu context."
+Protein Bowl,['Protein Bowl Box'],"Same dish, 'box' refers to packaging."
+Quesadilla Chicken Fiesta,[],"Unique item, distinct from 'Chicken Pesto quesadillas'."
+Quinoa Chickpeas,[],"Unique item, not found in menu context."
+Quinoa Lentils,[],"Unique item, not found in menu context."
+Quinoa Salad,[],"Unique item, not found in menu context."
+Santa Fe Quesadilla,[],Unique item. 'Vegan Santa Fe Quesadilla' implies a meaningfully different dish.
+Side Salad,[],Unique item.
+Signature Bowls,[],"Unique item, refers to a menu section rather than a specific dish."
+Soba Noodle Bowls,[],"Unique item, not found in menu context."
+Soup Of The Day,[],"Unique item, distinct from 'Fresh Soup' as menu does not explicitly link them."
+Southewestern Fiesta Wrap,[],Unique item. 'Vegan Southewestern Fiesta Wrap' implies a meaningfully different dish.
+Spicy Chicken Panini,[],Unique item. 'Spicy Unchicken Panini' implies a meaningfully different dish.
+Spicy Unchicken Panini,[],"Unique item, distinct protein from 'Spicy Chicken Panini'."
+Steel Cut Oat Meal,[],Unique item. Different from 'Over Night Oats'.
+Super Veg,[],Unique item.
+Teriyaki Bowl,[],Unique item.
+Tex Bowl,[],"Unique item, not found in menu context."
+The Lenny,[],"Unique item, not found in menu context."
+The Marshall,[],"Unique item, not found in menu context."
+Turkey Bacon Avocado Panini,[],Unique item.
+Turkey Bacon Avocado Wrap,[],Unique item.
+Turkey Pesto,['Turkey Pesto Panini'],"'Panini' is a format, often omitted in shorthand; same dish."
+Tuscan White Bean With Chicken,[],"Unique item, specific soup type."
+Unchicken Blt Wrap,[],"Unique item, distinct protein from 'Caesar Blt Chicken Wrap'."
+UnchickenBeyond Mission Burrito Wrap,[],"Unique item, distinct protein from 'Mission Burrito Wrap'."
+Veg Buddha Bowl,['Vegan Buddha Bowl'],'Veg' and 'Vegan' are used interchangeably for this type of bowl in the menu context.
+Vegan Avocado Wrap,[],"Unique item, not found in menu context."
+Vegan Bbq Unchicken Panini,[],"Unique item, distinct protein from 'Bbq Chicken Panini'."
+Vegan Big Salad Bowls,[],"Unique item, distinct from 'Big Salad Bowls'."
+Vegan Breakfast Wrap,[],"Unique item, distinct from 'Breakfast Wrap'."
+Vegan Cali Bowl,[],"Unique item, distinct from 'Cali Bowl'."
+Vegan Combo Meal,[],"Unique item, dietary specific."
+Vegan Harvest Signature Bowl,[],"Unique item, distinct from 'Harvest Signature Bowl'."
+Vegan Mango Mania,[],"Unique item, distinct from 'Mango Mania'."
+Vegan Mediterranean,[],"Unique item, implies a distinct vegan version of a Mediterranean dish."
+Vegan Mission Burrito Wrap,[],"Unique item, distinct protein/dietary version of 'Mission Burrito Wrap'."
+Vegan Moroccan Glow Bowl,[],"Unique item, distinct from 'Moroccan Glow Bowl'."
+Vegan Pesto Panini,[],"Unique item, distinct from 'Turkey Pesto Panini'."
+Vegan Portobello,[],"Unique item, distinct from 'Veggie Portobello' due to ingredients (mozzarella in latter)."
+Vegan Santa Fe Quesadilla,[],"Unique item, distinct from 'Santa Fe Quesadilla'."
+Vegan Soup Of The Day,[],"Unique item, specific dietary restriction for soup."
+Vegan Southewestern Fiesta Wrap,[],"Unique item, distinct from 'Southewestern Fiesta Wrap'."
+Veganized Panini,[],"Unique item, too generic."
+Vegetable Soup,[],"Unique item, specific soup type."
+Vegetarian,[],"Unique item, too generic."
+Vegetarian Caesar Salad,[],"Unique item, distinct from 'Chicken Caesar Salad'."
+Vegetarian Combo Meal,[],"Unique item, dietary specific."
+Veggie Portobello,[],Unique item.
