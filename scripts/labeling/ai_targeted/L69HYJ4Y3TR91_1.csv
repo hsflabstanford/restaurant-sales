@@ -1,49 +1,41 @@
-item_name,animal_categories,reasoning
-Breakfast Sandwich,"['egg', 'savory_dairy']","Contains egg, cheese."
-Muffin,"['egg', 'sweet_dairy']",Common ingredients for muffins.
-Toasted Bagels,[],Plain bagels typically contain no animal ingredients. However mods have cream cheese option
-Scones,"['egg', 'sweet_dairy']",Common ingredients for scones.
-Pop Tart,['sweet_dairy'],Common ingredients for pastries like pop tarts.
-Gluten Free Muffin,"['egg', 'sweet_dairy']",Common ingredients for muffins.
-Fresh Baked Banana Bread,"['egg', 'sweet_dairy','savory_dairy']",Common ingredients for banana bread. Comes with butter option or Nutella
-Quiche,"['egg', 'chunked_beef_or_pork', 'savory_dairy']","Contains egg, ham (chunked pork), and cheese."
-Berry-Licious ASsai Bowl,[],No animal ingredients listed.
-Blt,"['bacon', 'egg']",Contains bacon and mayo has egg.
-Driving-Me-Hazy ASsa Bowl,['sweet_dairy'],No animal ingredients listed. But has Nutella drizzle.
-Butter-Me-Crazy ASsai Bowl,[],No animal ingredients listed.
-Grilled Chicken Sandwich,"['unfried_chicken', 'bacon', 'savory_dairy']","Contains grilled chicken, bacon, and cheddar cheese."
-Bagel Joy Pizza,"['savory_dairy']",Contains mozzarella cheese and options for with or without pepperoni
-Turkey Cheddar Ciabatta Club,"['bacon', 'savory_dairy', 'unfried_chicken']",Contains bacon and cheddar cheese. 
-Gourmet Grilled Cheese,['savory_dairy'],Contains cheese and butter and has vegan cheese option.
-Avocado Toast,['egg'],Topped with a peppered egg.
-Very Berry Parfait,['sweet_dairy'],Commonly contains yogurt.
-Aloha (Pineapple & Coconut),['sweet_dairy'],Fruit-based item; might contain milk by default based on item_mods.
-Keto Muffins,"['egg', 'sweet_dairy']",Common ingredients for muffins.
-Mix Match ASsa Bowl,[],"Toppings are customer's choice, no default animal ingredients."
-Chips,[],No animal ingredients.
-Turkey Club Wrap,"['bacon', 'savory_dairy', 'unfried_chicken']",Inferred to contain bacon and cheese from similar items. 
-Keto Cinnamon Rolls,"['egg', 'sweet_dairy']",Common ingredients for cinnamon rolls.
-Gluten Free Brownie,"['egg', 'sweet_dairy']",Common ingredients for brownies.
-LetAos Get Tropical ASsa Bowl,[],Unable to infer from menu or general knowledge. Based on item_mods probably no dairy
-Grilled Cheese Toast,['savory_dairy'],Assumed to contain cheese.
-Keto Toasted Bagel,[],No animal ingredients specified.
-Turkey Cheddar Sandwich,"['savory_dairy', 'unfried_chicken']",Inferred to contain cheddar cheese.
-Chocolate Chip Cookie,"['egg', 'sweet_dairy']",Common ingredients for cookies.
-Gluten Free Whoopie Pie,"['egg', 'sweet_dairy']",Common ingredients for whoopie pies.
-Keto Pepperoni Rolls,['sausage'],Pepperoni is a type of sausage.
-Gluten Free Cheesecake,['sweet_dairy'],Contains cheese/dairy.
-Keto Scones,"['egg', 'sweet_dairy']",Common ingredients for scones.
-Gluten Free Chocolate Coconut Macaroon,['egg'],Typically made with egg whites.
-Gluten Free Coffee Cake,"['egg', 'sweet_dairy']",Common ingredients for coffee cake.
-Gluten Free Chocolate Chip Cookie,"['egg', 'sweet_dairy']",Common ingredients for cookies.
-Bread,[],Not described; generally no animal ingredients.
-Brownie,"['egg', 'sweet_dairy']",Common ingredients for brownies.
-Keto Cookie,"['egg', 'sweet_dairy']",Common ingredients for cookies.
-Danish,"['egg', 'sweet_dairy']",Common ingredients for danishes.
-Butter Croissant,"['sweet_dairy', 'egg']","Croissants use butter (dairy) and egg in dough/wash."
-Chocolate Croissant,"['sweet_dairy', 'egg']","Contains chocolate (dairy) and egg in pastry."
-Ham and Cheese Croissant,"['chunked_beef_or_pork', 'savory_dairy', 'egg']","Contains ham (chunked pork), cheese, and egg wash."
-Ham & Cheese Quiche,"['egg', 'chunked_beef_or_pork', 'savory_dairy']","Contains egg, ham (chunked pork), and cheese."
-Spinach Quiche,"['egg', 'savory_dairy']","Contains egg and cheese, no meat expected."
-Spinach Cheese Croissant,"['savory_dairy', 'egg']","Contains cheese and egg in pastry."
-Peanut Butter Toast,[],"Contains peanut butter and bread, no animal ingredients expected."
+"item_name","animal_categories","reasoning","vegan","vegetarian","mpbamodifiable"
+"Berry-Licious ASsai Bowl","[]","Acai bowl with honey drizzle - no dairy; honey considered vegan per rules","True","True","False"
+"Butter-Me-Crazy ASsai Bowl","[]","Acai bowl with nut butter - vegan option available","True","True","False"
+"Driving-Me-Hazy ASsa Bowl","['sweet_dairy']","Acai bowl with Nutella drizzle - Nutella contains dairy","False","True","False"
+"LetAos Get Tropical ASsa Bowl","[]","Tropical acai bowl - likely vegan","True","True","False"
+"Mix Match ASsa Bowl","[]","Build your own acai bowl - varies","True","True","False"
+"Aloha (Pineapple & Coconut)","[]","Aloha smoothie - vegan with non-dairy milk option","True","True","True"
+"Avocado Toast","['egg']","Avocado toast topped with peppered egg","False","True","False"
+"Grilled Cheese Toast","['savory_dairy']","Grilled cheese toast","False","True","False"
+"Peanut Butter Toast","[]","Peanut butter toast - vegan","True","True","False"
+"Blt","['bacon', 'egg']","BLT - bacon, lettuce, tomato with Dukes Mayo","False","False","False"
+"Breakfast Sandwich","['egg', 'savory_dairy', 'bacon']","Breakfast sandwich - egg, cheese, choice of bacon/sausage/turkey/impossible. Impossible option!","False","False","True"
+"Gourmet Grilled Cheese","['savory_dairy']","Premium grilled cheese with gouda, havarti, colby jack","False","True","False"
+"Grilled Chicken Sandwich","['unfried_chicken', 'bacon', 'savory_dairy']","Grilled chicken with bacon and cheddar","False","False","False"
+"Turkey Cheddar Ciabatta Club","['unfried_chicken', 'bacon', 'savory_dairy', 'egg']","Turkey club with bacon, cheddar, mayo","False","False","False"
+"Turkey Cheddar Sandwich","['unfried_chicken', 'savory_dairy']","Turkey cheddar sandwich","False","False","False"
+"Turkey Club Wrap","['unfried_chicken', 'bacon', 'savory_dairy']","Turkey club wrap","False","False","False"
+"Butter Croissant","['sweet_dairy', 'egg']","Butter croissant - has butter and likely egg","False","True","False"
+"Chocolate Croissant","['sweet_dairy', 'egg']","Chocolate croissant","False","True","False"
+"Ham and Cheese Croissant","['chunked_beef_or_pork', 'savory_dairy', 'egg']","Ham and cheese croissant","False","False","False"
+"Spinach Cheese Croissant","['savory_dairy', 'egg']","Spinach cheese croissant","False","True","False"
+"Ham & Cheese Quiche","['chunked_beef_or_pork', 'egg', 'savory_dairy']","Ham & cheese quiche","False","False","False"
+"Quiche","['egg', 'savory_dairy']","Generic quiche - has egg and cheese","False","True","False"
+"Spinach Quiche","['egg', 'savory_dairy']","Spinach quiche","False","True","False"
+"Bagel","['savory_dairy']","Bagels including pizza bagel with mozzarella and pepperoni option","False","False","False"
+"Cookie","['egg', 'sweet_dairy']","Chocolate chip cookies - various including GF and keto","False","True","False"
+"Brownie","['egg', 'sweet_dairy']","Brownie / GF brownie","False","True","False"
+"Muffin","['egg', 'sweet_dairy']","Muffins - various types including GF","False","True","False"
+"Gluten Free Cheesecake","['egg', 'sweet_dairy']","GF cheesecake - has cream cheese and eggs","False","True","False"
+"Gluten Free Chocolate Coconut Macaroon","['egg']","GF coconut macaroon - typically has egg whites","False","True","False"
+"Gluten Free Coffee Cake","['egg', 'sweet_dairy']","GF coffee cake","False","True","False"
+"Gluten Free Whoopie Pie","['egg', 'sweet_dairy']","GF whoopie pie","False","True","False"
+"Keto Cinnamon Rolls","['egg', 'sweet_dairy']","Keto cinnamon rolls","False","True","False"
+"Keto Pepperoni Rolls","['sausage', 'savory_dairy']","Keto pepperoni rolls - has pepperoni and cheese","False","False","False"
+"Keto Scones","['egg', 'sweet_dairy']","Keto scones","False","True","False"
+"Danish","['egg', 'sweet_dairy']","Danish pastry","False","True","False"
+"Pop Tart","['egg', 'sweet_dairy']","Homemade pop tart from bakery","False","True","False"
+"Scones","['egg', 'sweet_dairy']","Scones from Great Harvest","False","True","False"
+"Bread","[]","Bread / banana bread - banana bread likely has egg","False","True","False"
+"Chips","[]","Regular chips - vegan","True","True","False"
+"Parfait","['sweet_dairy']","Very Berry Parfait with yogurt and honey","False","True","False"

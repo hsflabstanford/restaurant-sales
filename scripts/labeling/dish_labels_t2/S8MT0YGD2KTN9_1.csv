@@ -1,0 +1,59 @@
+item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg,shrimp,whole_bird_white_meat
+Blue Cow,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Burda,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Crispy Chicken,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False,False,False
+Doggie,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Double Trouble,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+El Patron,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+La Frenchie,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+La Reina,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+MIA,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Mamacita,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Ribs,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Ultimate BC Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+V-Urger,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Venezuelan Cowboy,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Volcano Fries,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,False,False
+Lil Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Bbq Wings,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Buffalo Wings,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Garlic Parmesan Wings,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False,False,False
+Hh Wings,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Blue Fries,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Fuego Fries,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Kalamata Fries,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Loaded Fries,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Bella,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+La Polar Stone,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+La Squisita,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+9 Bucks Tuesday,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Combo Of The Week,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Lucky 7,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Raclette Fries,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Side Fries,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Skinny Fries,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Smoky Fries,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Stinky Fries,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Truff Me,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Promo 9.99,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Promo 25 X 2,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Thursday Promo,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+TequeOs,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Minis,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Lunch Special,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Da Buffalo,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+DaBoss,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+El Papi,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Big Mama,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Lil Mama,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Beef Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Bacon Cheeseburger,False,False,False,False,False,False,True,False,False,False,True,False,False,False,True,False,False,False,False
+Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Cheeseburger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Guay Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Guay Fries,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Hot Dog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Wings,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+to_remove,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Side Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False

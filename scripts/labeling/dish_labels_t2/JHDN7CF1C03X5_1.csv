@@ -1,0 +1,133 @@
+item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg,shrimp,whole_bird_white_meat
+Acai Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Blue Spirulina Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Matcha Green Tea Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pitaya Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pb2 Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Greek Yogurt Bowl,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Protein Bowl,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Byo ProteinSalad Bowl,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+City Of Cape Protein Bowl,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Harvest Signature Bowl,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Vegan Harvest Signature Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Protein Bowl Box,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Signature Bowls,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Buddha Bowl,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Cali Bowl,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Fiesta Bowl,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Mediterranean Bowl,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Moroccan Bowl,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Teriyaki Bowl,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Soba Noodle Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Beach Salad,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Asian Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Spinach Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Quinoa Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+City Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fresh Greens,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Chicken Wrap,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Turkey Wrap,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Breakfast Wrap,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+City Wrap,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Chicken Panini,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Turkey Panini,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Breakfast Panini,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+Albacore Panini,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+PJ Panini,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pair A Panini,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Pair A Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pair A Wrap,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Big Panini Platter,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Big Wrap Platter,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Fresh Panini Platter,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Kids Grilled Cheese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Avocado Toast,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Hummus Toast,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Portobello Balsamic Toast,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Vegan Portobello,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Veggie Portobello,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+English Muffin,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Steel Cut Oat Meal,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Over Night Oats,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Hard Boiled Egg,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Hard Boiled Egg 2 Pc,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Egg Quinoa Chickpeas,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Yogurt,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Beyond Burger,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
+Beyond Sausage,True,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Smoothie,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Kids Combo,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Cliff Duos,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cliff Protein Bar,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Kind Bar,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Power Bowl Bar,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Rx Bars,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sweet Street Bar,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Baked Chips Small Bag,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+City Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Food Should Taste Good Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Like Is Good Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Simply 7 Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Vegetarian Enjoy Life Lentil Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Veggie Sticks,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bada Bean Bada Boom Beans,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bear Granola Bites,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bite Size Bobo'S Oat,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Enjoy Life Lentils,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Hillshire Snacking,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Pretzels And Hummus,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+PretzelsHummus,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sabra Snackers,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Trail Mix,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Energy Bites,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Protein Bites,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Abc Cookies,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Abc'S Cookies,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+City Mandys Cookies,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Protein Bakery Cookies,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Brownie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Cheesecake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+City Mandys Cream Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Heavenly Organics Chocolate Honey Patty,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Mandy'S Bakery,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Muffin,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Sweet Bread,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Sweet Street Krispy,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Sweets Un Sweetened,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+1 Chocolate,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Apple,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Apple Slice,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Apple Tart,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Banana,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fruit Cup,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Mandarin Orange Cup,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Orange,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Quinoa Chickpeas,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Quinoa Lentils,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Meat Bowl,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Cheese Stick,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Heat And Serve,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Loyalty,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Promo,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Vegetarian,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Poultry Caesar Salad,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Caesar Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Vegan Caesar Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Vegan Vegetarian Wrap,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Poultry Vegetarian Wrap,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Burrito Wrap,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Vegan Burrito Wrap,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Poultry Burrito Wrap,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Poultry Vegan Panini,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Vegan Vegan Panini,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Poultry Quesadilla,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Quesadilla,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Vegan Quesadilla,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Soup,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Vegan Soup,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Poultry Soup,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Combo Meal,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Poultry Combo Meal,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Vegan Combo Meal,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+to_remove,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False

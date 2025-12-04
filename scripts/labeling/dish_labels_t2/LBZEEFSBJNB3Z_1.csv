@@ -1,0 +1,72 @@
+item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg,shrimp,whole_bird_white_meat
+B Sting,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Basic,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Bluebird,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Campfire,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Chavo,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Count,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Dipsticks,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Favorite,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Freaking Bomb,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+French Hen,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Getting Figgy,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Grey Stuf,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Hash Smash,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Hashbrowns,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Nash,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,True,False,False
+Nutty Monkey,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Olive You,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Patriot,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Plain Jane,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Tikky Tokky,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Trust Me,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Waffle Fries,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Waffle-Cuterie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True,False,False
+Cherry Chocolate Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pineapple Banana Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Strawberry Mango Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Smoothie Bowl,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+The Almost Chef,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+The Americana,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+The Athens,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+The Bahamas,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+The Caprese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+The Charlie Brown,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+The C.B.R,False,False,False,False,False,False,False,False,False,False,True,False,False,True,True,False,True,False,False
+The Bacon Ones,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,False,False
+The Cali Ones,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+The Carrot Crumbles,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+The Birthday Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Gluten Free Chicken,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Extra Chicken,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Kicked Up,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,True,False,False
+Ice Cream Nachos,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Soft Serve,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Gobbler,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False,False
+Bagel,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Be Mine,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Brunch Box,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+Choose 2 Flavors,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Stuffles,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,True,True,False,False
+The Daybreak,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+The Early Bird,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+The Mama Mia,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+The Med,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+The Mother Clucker,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,True,False,False
+The Paddy Wack,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+The Papa,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,True,False,False
+The S.E.C.,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,True,False,False
+The Stravo,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+The Sunset,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+The Sweetheart,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+The Wake And Fake,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+The Fire Ones,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+The Greek Ones,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+The Pizza Ones,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Waffle,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Chicken Sausage Dipsticks,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False
+Extra Toppings,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+The Elfs Delight,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Triple Berry Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+catering_takeout,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+to_remove,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False

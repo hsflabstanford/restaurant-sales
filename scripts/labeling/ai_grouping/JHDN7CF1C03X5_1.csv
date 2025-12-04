@@ -1,149 +1,133 @@
 canonical_name,variants,reasoning
-1 Chocolate,[],Unique item.
-2 Combo,[],Unique item.
-3 Combo,[],Unique item.
-9.99 Combo Meal,[],Unique item.
-Abc Cookies,"[""Abc'S Cookies""]","Same dish, difference in casing/punctuation."
-Acai Bowl,[],Unique item.
-Albacore Melt Panini,[],"Unique item, not found in menu context."
-Apple,['Apple Slice'],"Same fruit, 'slice' indicates a format."
-Apple Tart,[],"Unique item, not found in menu context."
-Asian Chicken Wrap,[],"Unique item, not found in menu context."
-Asian Sesame Salad,[],"Unique item, not found in menu context."
-Avocado Toast,[],Unique item. Other toast variations imply different main ingredients.
-Bada Bean Bada Boom Beans,[],"Unique item, not found in menu context."
-Baked Chips Small Bag,"['Chips', 'City Chips', 'Food Should Taste Good Chips']","All refer to chips; variations indicate packaging, brand, or general term."
-Banana,[],Unique item.
-Bbq Chicken Panini,[],Unique item. 'Vegan Bbq Unchicken Panini' implies a meaningfully different dish.
-Beach Salad,[],Unique item. 'Chickenless Beach Salad' implies a meaningfully different dish.
-Bear Granola Bites,[],"Unique item, not found in menu context."
-Beyond Burger Combo,[],"Unique item, specific combo."
-Beyond Sausage,[],"Unique item, different product from 'Beyond Burger'."
-Beyond Sausage Combo,[],"Unique item, specific combo for a different product."
-Big Panini Platter,['Fresh Panini Platter'],"Both refer to a platter of paninis, with 'fresh' being a descriptive adjective."
-Big Salad Bowls,[],Unique item. 'Vegan Big Salad Bowls' implies a meaningfully different dish.
-Big Wrap Platter,[],Unique item.
-Bite Size Bobo'S Oat,[],"Unique item, not found in menu context."
-Blue Spirulina,[],Unique item. 'Blue Spirulina Bowl' implies a more complete dish.
-Blue Spirulina Bowl,[],Unique item.
-Box Lunch,['Box Lunch 9.95'],"Same dish, price is a modifier."
-Breakfast Panini,[],Unique item.
-Breakfast Wrap,[],Unique item. 'Vegan Breakfast Wrap' implies a meaningfully different dish.
-Byo ProteinSalad Bowl,[],"Unique item, not found in menu context."
-Caesar Blt Chicken Wrap,[],Unique item. 'Chicken Caesar Wrap' and 'Unchicken Blt Wrap' are distinct based on ingredients or protein.
-Cali Bowl,[],Unique item. 'Vegan Cali Bowl' implies a meaningfully different dish.
-Cheese Stick,[],"Unique item, not found in menu context."
-Cheesecake,[],"Unique item, not found in menu context."
-Chicken 2 Combo,[],"Unique item, generic combo."
-Chicken Caesar,['Chicken Caesar Salad'],"Same dish, 'salad' makes it more specific but refers to the same item."
-Chicken Caesar Wrap,[],"Unique item, distinct from 'Caesar Blt Chicken Wrap'."
-Chickenless Beach Salad,[],"Unique item, meaningfully different from 'Beach Salad'."
-City 12 Wrap,[],"Unique item, not found in menu context."
-City Mandys Cookies,[],"Unique item, specific brand."
-City Mandys Cream Pie,[],"Unique item, specific brand."
-City Of Cape Protein Bowl,[],"Unique item, location-specific."
-City Salad,[],Unique item. 'City Salad Protein' implies a meaningfully different dish.
-City Salad Protein,[],"Unique item, distinct from 'City Salad'."
-Cliff Duos,[],"Unique item, distinct product type from 'Cliff Protein Bar'."
-Cliff Protein Bar,[],Unique item.
-Coco Avocado,[],"Unique item, not found in menu context."
-Cranberry Turkey Panini,[],"Unique item, not found in menu context."
-Dairy Fiesta Bowl,[],"Unique item, meaningfully different from 'Fiesta Bowl' due to dairy ingredient implication."
-Early Bird Panini,[],"Unique item, not found in menu context."
-Early Bird Wrap,[],"Unique item, not found in menu context."
-Egg Avocado Toast,[],"Unique item, distinct from plain 'Avocado Toast' due to 'Egg'."
-Egg N Muffin,['English Egg Muffin'],"Same dish, 'English' describes the muffin type."
-Egg Quinoa Chickpeas,[],"Unique item, not found in menu context."
-Egg Vegetarian Wrap,[],"Unique item, not found in menu context."
-Energy Bites,['Energy Bites 3 PK'],"Same product, '3 PK' indicates quantity/packaging."
-Enjoy Life Lentils,[],"Unique item, not found in menu context."
-Fiesta Bowl,[],Unique item.
-Fresh Beyond Burger,[],Unique item.
-Fresh Greens Salad,[],"Unique item, not found in menu context."
-Fresh Soup,[],Unique item. Not explicitly linked to 'Soup Of The Day' or other specific soups.
-Fruit Cup,[],Unique item.
-Greek Yogurt Bowl,[],Unique item. 'Greek Yogurt Bar' implies a different serving style.
-Hard Boiled Egg,['Hard Boiled Egg 2 Pc'],"Same item, '2 Pc' indicates quantity."
-Harvest Signature Bowl,[],Unique item. 'Vegan Harvest Signature Bowl' implies a meaningfully different dish.
-Healthy Start Panini,[],"Unique item, not found in menu context."
-Healthy Start Wrap,[],"Unique item, not found in menu context."
-Heavenly Organics Chocolate Honey Patty,[],"Unique item, not found in menu context."
-Hillshire Snacking,[],"Unique item, not found in menu context."
-Hummus Toast,[],"Unique item, distinct from 'Avocado Toast' due to main ingredient."
-Kale Caesar Salad,[],"Unique item, not found in menu context."
-Kale Turkey Sausage Soup,[],"Unique item, specific soup type."
-Kale Vegetarian Wrap,[],"Unique item, not found in menu context."
-Kid'S Grilled Cheese Panini,[],Unique item. Different from 'Quesadilla' or 'Sandwich' versions.
-Kid'S Grilled Cheese Quesadilla,[],"Unique item, different format from panini/sandwich."
-Kid'S Grilled Cheese Sandwich,[],"Unique item, different format from panini/quesadilla."
-Kids Combo,[],Unique item. Other combos specify additional items.
-Kids Combo With Smoothie,[],"Unique item, distinct combo with specific addition."
-Kids Combo With Squeeze,[],"Unique item, distinct combo with specific addition."
-Mango Mania,[],Unique item. 'Vegan Mango Mania' implies a meaningfully different dish.
-Matcha Green Tea Bowl,[],"Unique item, not found in menu context."
-Meat,[],"Unique item, too generic."
-Meat Combo Meal,[],"Unique item, too generic."
-Meat Salad Bowl ChickenTurkey,[],"Unique item, too generic."
-Mediterranean,[],"Unique item, too vague on its own."
-Mediterranean Bowl,[],Unique item. Other 'Mediterranean' items imply different dish types.
-Mediterranean Spinach Salad,[],"Unique item, distinct from 'Mediterranean Bowl' or 'Mediterranean Wrap'."
-Mission Burrito Wrap,[],Unique item. 'UnchickenBeyond Mission Burrito Wrap' and 'Vegan Mission Burrito Wrap' are distinct protein/dietary versions.
-Moroccan Glow Bowl,[],Unique item. 'Vegan Moroccan Glow Bowl' implies a meaningfully different dish.
-Organic Chicken And Wild Rice,[],"Unique item, specific soup type."
-Over Night Oats,[],Unique item. Different from 'Steel Cut Oat Meal'.
-PJ Panini,[],"Unique item, not found in menu context."
-Pair A Panini,[],Unique item. Part of a combo structure for specific items.
-Pair A Salad,[],Unique item. Part of a combo structure for specific items.
-Pair A Wrap,[],Unique item. Part of a combo structure for specific items.
-Pb2 Bowl,['PB Bowl'],"'Pb2' is a common term for powdered peanut butter, implying the 'PB Bowl'."
-Pitaya Bowl,[],"Unique item, not found in menu context."
-Portobello Balsamic Toast,[],"Unique item, distinct from 'Avocado Toast' due to main ingredient."
-Power Bowl Bar,[],"Unique item, not found in menu context."
-Protein Bowl,['Protein Bowl Box'],"Same dish, 'box' refers to packaging."
-Quesadilla Chicken Fiesta,[],"Unique item, distinct from 'Chicken Pesto quesadillas'."
-Quinoa Chickpeas,[],"Unique item, not found in menu context."
-Quinoa Lentils,[],"Unique item, not found in menu context."
-Quinoa Salad,[],"Unique item, not found in menu context."
-Santa Fe Quesadilla,[],Unique item. 'Vegan Santa Fe Quesadilla' implies a meaningfully different dish.
-Side Salad,[],Unique item.
-Signature Bowls,[],"Unique item, refers to a menu section rather than a specific dish."
-Soba Noodle Bowls,[],"Unique item, not found in menu context."
-Soup Of The Day,[],"Unique item, distinct from 'Fresh Soup' as menu does not explicitly link them."
-Southewestern Fiesta Wrap,[],Unique item. 'Vegan Southewestern Fiesta Wrap' implies a meaningfully different dish.
-Spicy Chicken Panini,[],Unique item. 'Spicy Unchicken Panini' implies a meaningfully different dish.
-Spicy Unchicken Panini,[],"Unique item, distinct protein from 'Spicy Chicken Panini'."
-Steel Cut Oat Meal,[],Unique item. Different from 'Over Night Oats'.
-Super Veg,[],Unique item.
-Teriyaki Bowl,[],Unique item.
-Tex Bowl,[],"Unique item, not found in menu context."
-The Lenny,[],"Unique item, not found in menu context."
-The Marshall,[],"Unique item, not found in menu context."
-Turkey Bacon Avocado Panini,[],Unique item.
-Turkey Bacon Avocado Wrap,[],Unique item.
-Turkey Pesto,['Turkey Pesto Panini'],"'Panini' is a format, often omitted in shorthand; same dish."
-Tuscan White Bean With Chicken,[],"Unique item, specific soup type."
-Unchicken Blt Wrap,[],"Unique item, distinct protein from 'Caesar Blt Chicken Wrap'."
-UnchickenBeyond Mission Burrito Wrap,[],"Unique item, distinct protein from 'Mission Burrito Wrap'."
-Veg Buddha Bowl,['Vegan Buddha Bowl'],'Veg' and 'Vegan' are used interchangeably for this type of bowl in the menu context.
-Vegan Avocado Wrap,[],"Unique item, not found in menu context."
-Vegan Bbq Unchicken Panini,[],"Unique item, distinct protein from 'Bbq Chicken Panini'."
-Vegan Big Salad Bowls,[],"Unique item, distinct from 'Big Salad Bowls'."
-Vegan Breakfast Wrap,[],"Unique item, distinct from 'Breakfast Wrap'."
-Vegan Cali Bowl,[],"Unique item, distinct from 'Cali Bowl'."
-Vegan Combo Meal,[],"Unique item, dietary specific."
-Vegan Harvest Signature Bowl,[],"Unique item, distinct from 'Harvest Signature Bowl'."
-Vegan Mango Mania,[],"Unique item, distinct from 'Mango Mania'."
-Vegan Mediterranean,[],"Unique item, implies a distinct vegan version of a Mediterranean dish."
-Vegan Mission Burrito Wrap,[],"Unique item, distinct protein/dietary version of 'Mission Burrito Wrap'."
-Vegan Moroccan Glow Bowl,[],"Unique item, distinct from 'Moroccan Glow Bowl'."
-Vegan Pesto Panini,[],"Unique item, distinct from 'Turkey Pesto Panini'."
-Vegan Portobello,[],"Unique item, distinct from 'Veggie Portobello' due to ingredients (mozzarella in latter)."
-Vegan Santa Fe Quesadilla,[],"Unique item, distinct from 'Santa Fe Quesadilla'."
-Vegan Soup Of The Day,[],"Unique item, specific dietary restriction for soup."
-Vegan Southewestern Fiesta Wrap,[],"Unique item, distinct from 'Southewestern Fiesta Wrap'."
-Veganized Panini,[],"Unique item, too generic."
-Vegetable Soup,[],"Unique item, specific soup type."
-Vegetarian,[],"Unique item, too generic."
-Vegetarian Caesar Salad,[],"Unique item, distinct from 'Chicken Caesar Salad'."
-Vegetarian Combo Meal,[],"Unique item, dietary specific."
-Veggie Portobello,[],Unique item.
+Acai Bowl,['Acai Bowl'],Individual item (form factor split)
+Blue Spirulina Bowl,['Blue Spirulina Bowl'],Individual item (form factor split)
+Matcha Green Tea Bowl,['Matcha Green Tea Bowl'],Individual item (form factor split)
+Pitaya Bowl,['Pitaya Bowl'],Individual item (form factor split)
+Pb2 Bowl,['Pb2 Bowl'],Individual item (form factor split)
+Greek Yogurt Bowl,['Greek Yogurt Bowl'],Individual item (form factor split)
+Protein Bowl,['Protein Bowl'],Individual item (form factor split)
+Byo ProteinSalad Bowl,['Byo ProteinSalad Bowl'],Individual item (form factor split)
+City Of Cape Protein Bowl,['City Of Cape Protein Bowl'],Individual item (form factor split)
+Harvest Signature Bowl,['Harvest Signature Bowl'],Individual item (form factor split)
+Vegan Harvest Signature Bowl,['Vegan Harvest Signature Bowl'],Individual item (form factor split)
+Protein Bowl Box,['Protein Bowl Box'],Individual item (form factor split)
+Signature Bowls,['Signature Bowls'],Individual item (form factor split)
+Buddha Bowl,"['Veg Buddha Bowl', 'Vegan Buddha Bowl']",Buddha bowls
+Cali Bowl,"['Cali Bowl', 'Vegan Cali Bowl']",California bowls
+Fiesta Bowl,"['Fiesta Bowl', 'Dairy Fiesta Bowl']",Fiesta bowls
+Mediterranean Bowl,"['Mediterranean', 'Mediterranean Bowl', 'Vegan Mediterranean']",Mediterranean bowls
+Moroccan Bowl,"['Moroccan Glow Bowl', 'Vegan Moroccan Glow Bowl']",Moroccan glow bowls
+Teriyaki Bowl,"['Teriyaki Bowl', 'Tex Bowl']",Asian-style bowls
+Soba Noodle Bowl,['Soba Noodle Bowls'],Soba noodle bowls
+Beach Salad,"['Beach Salad', 'Chickenless Beach Salad']",Beach salads
+Asian Salad,['Asian Sesame Salad'],Asian sesame salad
+Spinach Salad,['Mediterranean Spinach Salad'],Mediterranean spinach salad
+Quinoa Salad,['Quinoa Salad'],Quinoa salad
+City Salad,"['City Salad', 'City Salad Protein']",City salads
+Fresh Greens,"['Fresh Greens Salad', 'Side Salad', 'Vegan Big Salad Bowls', 'Big Salad Bowls']",Green salads
+Chicken Wrap,"['Asian Chicken Wrap', 'Caesar Blt Chicken Wrap', 'Chicken Caesar Wrap']",Chicken wraps
+Turkey Wrap,['Turkey Bacon Avocado Wrap'],Turkey wraps
+Breakfast Wrap,"['Breakfast Wrap', 'Early Bird Wrap', 'Healthy Start Wrap', 'Vegan Breakfast Wrap', 'Egg Vegetarian Wrap']",Breakfast wraps
+City Wrap,['City 12 Wrap'],City wraps
+Chicken Panini,"['Bbq Chicken Panini', 'Spicy Chicken Panini']",Chicken paninis
+Turkey Panini,"['Cranberry Turkey Panini', 'Turkey Bacon Avocado Panini', 'Turkey Pesto', 'Turkey Pesto Panini']",Turkey paninis
+Breakfast Panini,"['Breakfast Panini', 'Early Bird Panini', 'Healthy Start Panini']",Breakfast paninis
+Albacore Panini,['Albacore Melt Panini'],Albacore tuna panini
+PJ Panini,['PJ Panini'],PJ panini
+Pair A Panini,['Pair A Panini'],Individual item (form factor split)
+Pair A Salad,['Pair A Salad'],Individual item (form factor split)
+Pair A Wrap,['Pair A Wrap'],Individual item (form factor split)
+Big Panini Platter,['Big Panini Platter'],Individual item (form factor split)
+Big Wrap Platter,['Big Wrap Platter'],Individual item (form factor split)
+Fresh Panini Platter,['Fresh Panini Platter'],Individual item (form factor split)
+Kids Grilled Cheese,"[""Kid'S Grilled Cheese Panini"", ""Kid'S Grilled Cheese Quesadilla"", ""Kid'S Grilled Cheese Sandwich""]",Kids grilled cheese options
+Avocado Toast,"['Avocado Toast', 'Egg Avocado Toast']",Avocado toast
+Hummus Toast,['Hummus Toast'],Individual item (form factor split)
+Portobello Balsamic Toast,['Portobello Balsamic Toast'],Individual item (form factor split)
+Vegan Portobello,['Vegan Portobello'],Individual item (form factor split)
+Veggie Portobello,['Veggie Portobello'],Individual item (form factor split)
+English Muffin,"['Egg N Muffin', 'English Egg Muffin', 'English Muffin Coffee', 'English Muffin Smoothie', 'English Muffin Squeeze']",English muffin items
+Steel Cut Oat Meal,['Steel Cut Oat Meal'],Individual item (form factor split)
+Over Night Oats,['Over Night Oats'],Individual item (form factor split)
+Hard Boiled Egg,['Hard Boiled Egg'],Individual item (form factor split)
+Hard Boiled Egg 2 Pc,['Hard Boiled Egg 2 Pc'],Individual item (form factor split)
+Egg Quinoa Chickpeas,['Egg Quinoa Chickpeas'],Individual item (form factor split)
+Yogurt,['Yogurt Parfait'],Yogurt parfait
+Beyond Burger,"['Beyond Burger Combo', 'Fresh Beyond Burger']",Beyond burgers
+Beyond Sausage,"['Beyond Sausage', 'Beyond Sausage Combo']",Beyond sausage
+Smoothie,"['Chunky Monkey', 'Coco Avocado', 'Fresh Fit Blast', 'Fresh Fitness Blast', 'Jolly Green', 'Mango Mania', 'Vegan Mango Mania', 'Pineapple Creamsicle', 'Pineapple Creamsicle 2', 'Super Veg', 'The Lenny', 'The Marshall', 'Blue Spirulina']",Smoothies
+Kids Combo,"[""Kid'S Combo With A Smoothie"", 'Kids Combo', 'Kids Combo With Smoothie', 'Kids Combo With Squeeze']",Kids combos
+Cliff Duos,['Cliff Duos'],Individual item (form factor split)
+Cliff Protein Bar,['Cliff Protein Bar'],Individual item (form factor split)
+Kind Bar,['Kind Bar'],Individual item (form factor split)
+Power Bowl Bar,['Power Bowl Bar'],Individual item (form factor split)
+Rx Bars,['Rx Bars'],Individual item (form factor split)
+Sweet Street Bar,['Sweet Street Bar'],Individual item (form factor split)
+Baked Chips Small Bag,['Baked Chips Small Bag'],Individual item (form factor split)
+Chips,['Chips'],Individual item (form factor split)
+City Chips,['City Chips'],Individual item (form factor split)
+Food Should Taste Good Chips,['Food Should Taste Good Chips'],Individual item (form factor split)
+Like Is Good Chips,['Like Is Good Chips'],Individual item (form factor split)
+Simply 7 Chips,['Simply 7 Chips'],Individual item (form factor split)
+Vegetarian Enjoy Life Lentil Chips,['Vegetarian Enjoy Life Lentil Chips'],Individual item (form factor split)
+Veggie Sticks,['Veggie Sticks'],Individual item (form factor split)
+Bada Bean Bada Boom Beans,['Bada Bean Bada Boom Beans'],Individual item (form factor split)
+Bear Granola Bites,['Bear Granola Bites'],Individual item (form factor split)
+Bite Size Bobo'S Oat,"[""Bite Size Bobo'S Oat""]",Individual item (form factor split)
+Enjoy Life Lentils,['Enjoy Life Lentils'],Individual item (form factor split)
+Hillshire Snacking,['Hillshire Snacking'],Individual item (form factor split)
+Pretzels And Hummus,['Pretzels And Hummus'],Individual item (form factor split)
+PretzelsHummus,['PretzelsHummus'],Individual item (form factor split)
+Sabra Snackers,['Sabra Snackers'],Individual item (form factor split)
+Trail Mix,['Trail Mix'],Individual item (form factor split)
+Energy Bites,['Energy Bites'],Individual item (form factor split)
+Protein Bites,['Protein Bites'],Individual item (form factor split)
+Abc Cookies,['Abc Cookies'],Individual item (form factor split)
+Abc'S Cookies,"[""Abc'S Cookies""]",Individual item (form factor split)
+City Mandys Cookies,['City Mandys Cookies'],Individual item (form factor split)
+Protein Bakery Cookies,['Protein Bakery Cookies'],Individual item (form factor split)
+Brownie,"['Protein Bakery Brownie', 'Sweet Street Brownie']",Brownies
+Cheesecake,['Cheesecake'],Individual item (form factor split)
+City Mandys Cream Pie,['City Mandys Cream Pie'],Individual item (form factor split)
+Heavenly Organics Chocolate Honey Patty,['Heavenly Organics Chocolate Honey Patty'],Individual item (form factor split)
+Mandy'S Bakery,"[""Mandy'S Bakery""]",Individual item (form factor split)
+Muffin,['Muffin'],Individual item (form factor split)
+Sweet Bread,['Sweet Bread'],Individual item (form factor split)
+Sweet Street Krispy,['Sweet Street Krispy'],Individual item (form factor split)
+Sweets Un Sweetened,['Sweets Un Sweetened'],Individual item (form factor split)
+1 Chocolate,['1 Chocolate'],Individual item (form factor split)
+Apple,['Apple'],Individual item (form factor split)
+Apple Slice,['Apple Slice'],Individual item (form factor split)
+Apple Tart,['Apple Tart'],Individual item (form factor split)
+Banana,['Banana'],Individual item (form factor split)
+Fruit Cup,['Fruit Cup'],Individual item (form factor split)
+Mandarin Orange Cup,['Mandarin Orange Cup'],Individual item (form factor split)
+Orange,['Orange'],Individual item (form factor split)
+Quinoa Chickpeas,['Quinoa Chickpeas'],Individual item (form factor split)
+Quinoa Lentils,['Quinoa Lentils'],Individual item (form factor split)
+Meat Bowl,"['Meat', 'Meat Salad Bowl ChickenTurkey']",Meat bowl items
+Cheese Stick,['Cheese Stick'],Cheese stick
+Heat And Serve,['Heat And Serve'],Individual item (form factor split)
+Loyalty,['Loyalty Up Grade'],Loyalty program
+Promo,"['A Bit Of Pumpkin A Dab Of Spice, Makes Everything Nice! Fall Is In The Air At Fresh Healthy Cafe!']",Promotional items
+Vegetarian,['Vegetarian'],Vegetarian general
+Poultry Caesar Salad,"['Chicken Caesar', 'Chicken Caesar Salad']",Split from mixed-category Caesar Salad - poultry items
+Caesar Salad,['Kale Caesar Salad'],Split from mixed-category Caesar Salad - neutral items
+Vegan Caesar Salad,['Vegetarian Caesar Salad'],Split from mixed-category Caesar Salad - vegan items
+Vegan Vegetarian Wrap,"['Kale Vegetarian Wrap', 'Vegan Avocado Wrap']",Split from mixed-category Vegetarian Wrap - vegan items
+Poultry Vegetarian Wrap,['Unchicken Blt Wrap'],Split from mixed-category Vegetarian Wrap - poultry items
+Burrito Wrap,"['Mission Burrito Wrap', 'Southewestern Fiesta Wrap']",Split from mixed-category Burrito Wrap - neutral items
+Vegan Burrito Wrap,['Vegan Mission Burrito Wrap'],Split from mixed-category Burrito Wrap - vegan items
+Poultry Burrito Wrap,['UnchickenBeyond Mission Burrito Wrap'],Split from mixed-category Burrito Wrap - poultry items
+Poultry Vegan Panini,['Vegan Bbq Unchicken Panini'],Split from mixed-category Vegan Panini - poultry items
+Vegan Vegan Panini,"['Vegan Pesto Panini', 'Veganized Panini']",Split from mixed-category Vegan Panini - vegan items
+Poultry Quesadilla,['Quesadilla Chicken Fiesta'],Split from mixed-category Quesadilla - poultry items
+Quesadilla,['Santa Fe Quesadilla'],Split from mixed-category Quesadilla - neutral items
+Vegan Quesadilla,['Vegan Santa Fe Quesadilla'],Split from mixed-category Quesadilla - vegan items
+Soup,"['Fresh Soup', 'Soup Of The Day', 'Vegetable Soup']",Split from mixed-category Soup - neutral items
+Vegan Soup,['Vegan Soup Of The Day'],Split from mixed-category Soup - vegan items
+Poultry Soup,"['Organic Chicken And Wild Rice', 'Kale Turkey Sausage Soup', 'Tuscan White Bean With Chicken']",Split from mixed-category Soup - poultry items
+Combo Meal,"['2 Combo', '3 Combo', '9.99 Combo Meal', 'Meat Combo Meal', 'Box Lunch', 'Box Lunch 9.95']",Split from mixed-category Combo Meal - neutral items
+Poultry Combo Meal,['Chicken 2 Combo'],Split from mixed-category Combo Meal - poultry items
+Vegan Combo Meal,"['Vegan Combo Meal', 'Vegetarian Combo Meal']",Split from mixed-category Combo Meal - vegan items
+to_remove,"['Gift Card', 'Catering Utensils Per Person']","Non-food/non-drink items (merch, gift cards, fees, utensils, etc.)"

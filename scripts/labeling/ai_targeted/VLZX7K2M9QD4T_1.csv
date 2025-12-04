@@ -1,32 +1,29 @@
-item_name,animal_categories,reasoning
-Avgolemono Soup,"['egg','unfried_chicken']",Traditional Greek soup made with egg yolk.
-Baklava Crumbles Syrup Frozen Yogurt,['sweet_dairy'],"Contains frozen yogurt, which is dairy and sweet."
-Black Sheep Meatballs With Spanakorizo,"['meatballs']",Contains meatballs; 'Black Sheep' often implies lamb.
-Black Sheep Salad,"['lamb','savory_dairy']",No animal products specified; 'precision over recall' applied.
-Black Sheep Sandwich,"['lamb','savory_dairy']",No animal products specified; 'precision over recall' applied.
-Chicken Salad,"['unfried_chicken','savory_dairy']","Contains chicken, typically cooked but not fried in a salad."
-Chicken Sandwich,"['unfried_chicken','savory_dairy']","Contains chicken, typically cooked but not fried in a sandwich."
-Cretan Wildflower Honey Frozen Yogurt,['sweet_dairy'],"Contains frozen yogurt, which is dairy and sweet."
-Greek Fries,['savory_dairy'],Fries are typically vegetarian.
-Greek Olive Oil Flaky Sea Salt Frozen Yogurt,['sweet_dairy'],"Contains frozen yogurt, which is dairy and sweet."
-Juicy Potatoes,['fried_chicken'],Potatoes are vegetables.
-Lamb Salad,"['lamb','savory_dairy']",Explicitly states 'Lamb'.
-Lamb Sandwich,"['lamb','savory_dairy']",Explicitly states 'Lamb'.
-Melitzanosalata,[],"Traditional Greek eggplant dip, no animal products."
-Pastitsio,"['ground_meat', 'savory_dairy']",Classic Greek dish with ground meat and béchamel sauce (dairy).
-Pita - SideSliced,[],"Pita bread, no animal products."
-Plain Frozen Greek Yogurt,['sweet_dairy'],Frozen yogurt is a sweet dairy product.
-Pork Salad,"['pulled_pork','savory_dairy']",Explicitly states 'Pork'; 'pulled pork' is common for salads.
-Pork Sandwich,"['pulled_pork','savory_dairy']",Explicitly states 'Pork'; 'pulled pork' is common for sandwiches.
-Rainbow Surprise!,['sweet_dairy'],"Vague item name, cannot infer ingredients."
-Side Of Meat,[],"Generic 'side of meat' likely includes lamb (from menu theme), or various forms of pork/beef."
-Side Of Meat (3 Oz.),[],"Generic 'side of meat' likely includes lamb (from menu theme), or various forms of pork/beef."
-Side Of Meat (6 Oz.),[],"Generic 'side of meat' likely includes lamb (from menu theme), or various forms of pork/beef."
-Sour Cherry Syrup Frozen Yogurt,['sweet_dairy'],"Contains frozen yogurt, which is dairy and sweet."
-VLZX7K2M9QD4T Side Green Salad,['savory_dairy'],"Described as a 'Green Salad', no meat specified."
-Straus Organic Greek Yogurt,"['savory_dairy','sweet_dairy']",Plain Greek yogurt is dairy and can be used in savory contexts.
-Stuffed Breakfast Pita,"['egg', 'breakfast_sausage_patty', 'savory_dairy']",Common breakfast pita fillings include egg and breakfast meats.
-Tsoureki Whipped Manouri,['savory_dairy'],"Manouri is a Greek cheese (dairy), typically used in savory applications."
-Tzatziki,['savory_dairy'],Traditional Greek sauce made with yogurt (dairy).
-Veg Salad,"['savory_dairy','savory_dairy']",Explicitly states 'Veg' (vegetarian).
-Veg Sandwich,"['savory_dairy','savory_dairy']",Explicitly states 'Veg' (vegetarian).
+"item_name","animal_categories","reasoning","vegan","vegetarian","mpbamodifiable"
+"Meatballs","['lamb', 'meatballs']","Black Sheep lamb meatballs with spanakorizo (spinach rice)","False","False","False"
+"Side Of Meat","[]","Rotisserie meat - customer selects protein (chicken/lamb/pork) or Veg option available","False","False","True"
+"Fries","['savory_dairy']","Greek fries with feta cheese - No Cheese mod available","False","True","True"
+"Potatoes","[]","Juicy potatoes - plant-based roasted potatoes","True","True","False"
+"Pita","[]","Plain sliced pita bread","True","True","False"
+"Melitzanosalata","[]","Eggplant dip - plant-based","True","True","False"
+"Tzatziki","['savory_dairy']","Greek yogurt cucumber dip","False","True","False"
+"Baklava Crumbles Syrup Frozen Yogurt","['sweet_dairy']","Frozen Greek yogurt with baklava toppings","False","True","False"
+"Cretan Wildflower Honey Frozen Yogurt","['sweet_dairy']","Frozen Greek yogurt with honey","False","True","False"
+"Greek Olive Oil Flaky Sea Salt Frozen Yogurt","['sweet_dairy']","Frozen Greek yogurt with olive oil and sea salt","False","True","False"
+"Plain Frozen Greek Yogurt","['sweet_dairy']","Plain frozen Greek yogurt","False","True","False"
+"Sour Cherry Syrup Frozen Yogurt","['sweet_dairy']","Frozen Greek yogurt with sour cherry syrup","False","True","False"
+"Greek Yogurt","['sweet_dairy']","Straus Organic Greek Yogurt cup","False","True","False"
+"Pastitsio","['savory_dairy', 'ground_meat']","Greek pasta bake with ground meat and bechamel","False","False","False"
+"Soup","['egg', 'unfried_chicken']","Avgolemono - Greek egg-lemon soup with chicken broth","False","False","False"
+"Breakfast","['egg', 'savory_dairy']","Stuffed breakfast pita - likely contains egg and cheese","False","True","False"
+"Tsoureki Whipped Manouri","['sweet_dairy', 'egg']","Greek sweet bread (tsoureki has eggs) with whipped manouri cheese","False","True","False"
+"Rainbow Surprise!","['sweet_dairy']","Kids frozen yogurt treat","False","True","False"
+"Black Sheep Salad","['lamb', 'savory_dairy']","Salad with lamb and feta - No Cheese mod available","False","False","True"
+"Veg Salad","['savory_dairy']","Vegetarian salad with feta - No Cheese implied, can Add Chicken on side","False","True","True"
+"VLZX7K2M9QD4T Side Green Salad","[]","Simple side green salad - vegan","True","True","False"
+"Poultry Salad","['unfried_chicken', 'savory_dairy']","Chicken salad with feta","False","False","False"
+"Lamb Salad","['lamb', 'savory_dairy']","Lamb salad with feta","False","False","False"
+"Pork Salad","['chunked_beef_or_pork', 'savory_dairy']","Pork salad with feta","False","False","False"
+"Sandwich","['savory_dairy']","Veg/Black Sheep sandwich - veg options have cheese, no meat","False","True","True"
+"Poultry Sandwich","['unfried_chicken', 'savory_dairy']","Chicken sandwich with feta","False","False","False"
+"Lamb Sandwich","['lamb', 'savory_dairy']","Lamb sandwich with feta","False","False","False"
+"Pork Sandwich","['chunked_beef_or_pork', 'savory_dairy']","Pork sandwich with feta","False","False","False"

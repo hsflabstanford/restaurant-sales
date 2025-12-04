@@ -1,21 +1,88 @@
-"canonical_name","variants","reasoning"
-"Burger","['Burger', 'Burger (No Side)']","Basic burger with/without side."
-"Burrito","['Burrito', 'Burritoe']","Burrito spelling variants."
-"Closson Chase","['Closson Chase', 'Closson Chase Bottle']","Closson Chase wine variants."
-"Coat Albret","['Coat Albret', 'Coat Albret Bottle', 'Coat Albret Glass']","Coat Albret wine variants."
-"Cubano","['Cubano', 'Cubano.']","Cubano sandwich (spelling variants)."
-"Curly Fries","['Curly Fries', 'Side Curly Fries']","Curly fries variants."
-"Eggs Federal","['Eggs Federal', 'Eggs Federal With Bacon', 'Eggs Federal With Kale']","Eggs Federal dish variants."
-"Four Guys","['Four Guys Burger', 'Four Guys Special']","Four Guys burger/special variants."
-"Gift Card","['Egift Card', 'Gift Card']","Gift card variants."
-"Gold Standard","['Gold Standard', 'Gold Standard (No Sides)', 'Gold Standard Breakfast Sandwich', 'Gold Standard Sandwich', 'Gold Standard Sandwich With Bacon', 'Gold Standard Sandwich With Kale']","Gold Standard sandwich variants."
-"Grapefruit","['Grapefruit', 'Grapefruit & Brown Sugar']","Grapefruit dish variants."
-"Happy Hour","['Happy Hour', 'Happy Hour \uf8ffÜçª']","Happy hour menu items."
-"Nachos","['Brisket Nachos', 'Hh - Nachos', 'Nachos', 'Veggie Nachos']","Nachos variants."
-"Patty Melt","['Beyond Meat Patty Melt', 'Impossible Melt', 'Impossible Patty Melt']","Patty melt variants (including plant-based)."
-"Rosti","['Potato Rosti', 'R√∂Sti', 'Side R√∂Sti']","Potato rosti variants."
-"Scrambled Eggs","['Scrambled Eggs', 'Scrambled Eggs With Sausage', 'Veg Scrambled Eggs With Avocado']","Scrambled egg dish variants."
-"Slaw","['Coleslaw', 'Side Slaw', 'Slaw']","Coleslaw variants."
-"Soup","['Bowl Of Soup', 'Cup Of Soup', 'Soup']","Soup size variants."
-"Trout Plate","['Smoked Trout Plate', 'Trout Plate']","Smoked trout plate variants."
-"Waffles","['Belgian Waffles', 'Kid Menu Waffles', 'Waffles']","Waffle variants."
+canonical_name,variants,reasoning
+Burger,['Burger'],Basic burger with/without side.
+Burrito,['Burrito'],Burrito spelling variants.
+Cubano,['Cubano'],Cubano sandwich (spelling variants).
+Curly Fries,['Curly Fries'],Curly fries variants.
+Eggs Federal,['Eggs Federal'],Eggs Federal dish variants.
+Four Guys,['Four Guys'],Four Guys burger/special variants.
+Gold Standard,['Gold Standard'],Gold Standard sandwich variants.
+Grapefruit,['Grapefruit'],Grapefruit dish variants.
+Patty Melt,['Patty Melt'],Patty melt variants (including plant-based).
+Rosti,['Rosti'],Potato rosti variants.
+Scrambled Eggs,['Scrambled Eggs'],Scrambled egg dish variants.
+Slaw,['Slaw'],Coleslaw variants.
+Soup,['Soup'],Soup size variants.
+Trout Plate,['Trout Plate'],Smoked trout plate variants.
+Waffles,['Waffles'],Waffle variants.
+Arugula Salad,['Arugula Salad'],Individual item (form factor split)
+Caesar Sf,['Caesar Sf'],Individual item (form factor split)
+Cobb Salad,['Cobb Salad'],Individual item (form factor split)
+Burrito,"['Breakfast Burrito', 'Burrito']",Burrito variants.
+Nachos,"['Brisket Nachos', 'Nachos']",Nachos variants.
+Chips N Guac,['Chips N Guac'],Individual item (form factor split)
+Chips Salsa,['Chips Salsa'],Individual item (form factor split)
+Bread And Chips,['Bread And Chips'],Individual item (form factor split)
+Fries,['Cheesy Fries'],Fries variants.
+All Beef Hot Dog,['All Beef Hot Dog'],Individual item (form factor split)
+Corn Dog,['Corn Dog'],Individual item (form factor split)
+Butter Tart,['Butter Tart Pro Max'],Butter tart variants.
+Fried Chicken,"['Hot Fried Chicken', 'Hh - Chix', 'Fried Chicken']",Fried chicken variants.
+Trout,"['Smoked Trout', 'Smoked Trout Kale Caesar', 'Trout Dip']",Trout variants.
+Caesar,"['Kale Caesar', 'The Caesar', 'Caesar']",Caesar salad variants.
+Eggs,"['Side 1 Egg', 'Two Eggs Any Style', 'Omelette', 'Squash Omlette', 'Steak Eggs', 'Eggs']",Egg variants.
+Steak,"['Flat Iron Steak', 'Steak Eggs', 'Steak Frites']",Steak variants.
+Ceviche,"['Hh - Ceviche', 'Ceviche']",Ceviche variants.
+Nachos,"['Hh - Nachos', 'Veggie Nachos', 'Nacho Cheese', 'Nachos']",Nachos variants.
+Kale,"['Kale Caesar', 'Kale Standard', 'Smoked Trout Kale Caesar']",Kale dish variants.
+Rosti,"['RSti', 'Side RSti', 'Rosti']",Rosti variants.
+Squash,"['Squash Omlette', 'Zucchini', 'Squash']",Squash variants.
+Donut,"['Eton Mess', 'Donut']",Dessert variants.
+Ice Cream,"['Toffee Pudding', 'Ice Cream']",Dessert variants.
+Toast,"['Mushroom Toast', 'Toast']",Toast variants.
+Beemster,['Beemster'],Individual item (form factor split)
+Corelli Pecorino,['Corelli Pecorino'],Individual item (form factor split)
+Oliv-Almond,['Oliv-Almond'],Individual item (form factor split)
+Fruit Salad,['Fruit Salad'],Individual item (form factor split)
+Green Salad,['Green Salad'],Individual item (form factor split)
+Potato Salad,['Potato Salad'],Individual item (form factor split)
+Wedge,['Wedge'],Individual item (form factor split)
+Chilaquiles,['Chilaquiles'],Individual item (form factor split)
+Fruit Scone,['Fruit Scone'],Individual item (form factor split)
+Granola Bowl,['Granola Bowl'],Individual item (form factor split)
+Almonds,['Almonds'],Individual item (form factor split)
+Brussel Sprouts,['Brussel Sprouts'],Individual item (form factor split)
+Burrata,['Burrata'],Individual item (form factor split)
+Cornichon,['Cornichon'],Individual item (form factor split)
+Esquites,['Esquites'],Individual item (form factor split)
+Greens,['Greens'],Individual item (form factor split)
+Olives,['Olives'],Individual item (form factor split)
+Chicken,['Curry Chicken'],Chicken dishes
+Burger,"['Veg Burger', 'Burger']",Burger items
+Hotdog,['Hotdog'],Individual item (form factor split)
+Long Dog Inflorescence,['Long Dog Inflorescence'],Individual item (form factor split)
+Hot Oysters,['Hot Oysters'],Individual item (form factor split)
+Mussels,['Mussels'],Individual item (form factor split)
+Sandwich,"['Bulldog Bacon Butty', 'Grilled Cheese']",Sandwich items
+Bacon,['Bacon'],Individual item (form factor split)
+Ham,['Ham'],Individual item (form factor split)
+Sausage,['Sausage'],Individual item (form factor split)
+Falafel,['Falafel'],Falafel
+Okonomiyaki,['Okonomiyaki'],Japanese savory pancake
+Rosti,['Rosti'],Swiss potato dish
+Nachos,['Nachos'],Nachos
+Quesadilla,['Quesadilla'],Quesadilla
+Mac Cheese,['Mac Cheese'],Mac and cheese
+Soup,"['French Onion Soup', 'Soup']",Soup
+Ice Cream,['Ice Cream'],Ice cream
+Fennel Orange,['Fennel Orange'],Individual item (form factor split)
+Grapefruit Brown Sugar,['Grapefruit Brown Sugar'],Individual item (form factor split)
+Strawberry,['Strawberry'],Individual item (form factor split)
+Avocado,['Avocado'],Individual item (form factor split)
+Custom,['Custom'],Individual item (was in misc group)
+Geez Louise,['Geez Louise'],Individual item (was in misc group)
+Janky,['Janky'],Individual item (was in misc group)
+Matron Seasonal,['Matron Seasonal'],Individual item (was in misc group)
+Open,['Open'],Individual item (was in misc group)
+Open Food,['Open Food'],Individual item (was in misc group)
+Ptg,['Ptg'],Individual item (was in misc group)
+to_remove,['Bar'],"Non-food/non-drink items and drinks (coffee, tea, beer, wine, etc.)"

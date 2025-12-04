@@ -1,30 +1,29 @@
-canonical_name,variants,reasoning
-Avgolemono Soup,[],Unique dish.
-Baklava Crumbles Syrup Frozen Yogurt,[],Specific flavored frozen yogurt.
-Black Sheep Meatballs With Spanakorizo,[],Unique dish.
-Black Sheep Salad,[],Specific type of salad.
-Black Sheep Sandwich,[],Specific type of sandwich.
-Chicken Salad,[],Specific type of salad.
-Chicken Sandwich,[],Specific type of sandwich.
-Cretan Wildflower Honey Frozen Yogurt,[],Specific flavored frozen yogurt.
-Greek Fries,[],Specific style of fries.
-Greek Olive Oil Flaky Sea Salt Frozen Yogurt,[],Specific flavored frozen yogurt.
-Juicy Potatoes,[],Specific style of potatoes.
-Lamb Salad,[],Specific type of salad.
-Lamb Sandwich,[],Specific type of sandwich.
-Melitzanosalata,[],Unique dish.
-Pastitsio,[],Unique dish.
-Pita - SideSliced,[],Unique dish.
-Plain Frozen Greek Yogurt,[],Specific type of frozen yogurt.
-Pork Salad,[],Specific type of salad.
-Pork Sandwich,[],Specific type of sandwich.
-Rainbow Surprise!,[],Unique dish.
-Side Of Meat,"['Side Of Meat (3 Oz.)', 'Side Of Meat (6 Oz.)']","Same dish, different quantities."
-Sour Cherry Syrup Frozen Yogurt,[],Specific flavored frozen yogurt.
-VLZX7K2M9QD4T Side Green Salad,[],Specific type of side salad.
-Straus Organic Greek Yogurt,[],"Unique type of yogurt, not frozen."
-Stuffed Breakfast Pita,[],Unique dish.
-Tsoureki Whipped Manouri,[],Unique dish.
-Tzatziki,[],Unique dish.
-Veg Salad,[],Specific type of salad.
-Veg Sandwich,[],Specific type of sandwich.
+"canonical_name","variants","reasoning"
+"Meatballs","['Black Sheep Meatballs With Spanakorizo']","Greek meatballs"
+"Side Of Meat","['Side Of Meat', 'Side Of Meat (3 Oz.)', 'Side Of Meat (6 Oz.)']","Side meat portions"
+"Fries","['Greek Fries']","Greek fries"
+"Potatoes","['Juicy Potatoes']","Roasted potatoes"
+"Pita","['Pita - SideSliced']","Pita bread"
+"Melitzanosalata","['Melitzanosalata']","Individual item (form factor split)"
+"Tzatziki","['Tzatziki']","Individual item (form factor split)"
+"Baklava Crumbles Syrup Frozen Yogurt","['Baklava Crumbles Syrup Frozen Yogurt']","Individual item (form factor split)"
+"Cretan Wildflower Honey Frozen Yogurt","['Cretan Wildflower Honey Frozen Yogurt']","Individual item (form factor split)"
+"Greek Olive Oil Flaky Sea Salt Frozen Yogurt","['Greek Olive Oil Flaky Sea Salt Frozen Yogurt']","Individual item (form factor split)"
+"Plain Frozen Greek Yogurt","['Plain Frozen Greek Yogurt']","Individual item (form factor split)"
+"Sour Cherry Syrup Frozen Yogurt","['Sour Cherry Syrup Frozen Yogurt']","Individual item (form factor split)"
+"Greek Yogurt","['Straus Organic Greek Yogurt']","Greek yogurt"
+"Pastitsio","['Pastitsio']","Greek baked pasta"
+"Soup","['Avgolemono Soup']","Avgolemono soup"
+"Breakfast","['Stuffed Breakfast Pita']","Breakfast pita"
+"Tsoureki Whipped Manouri","['Tsoureki Whipped Manouri']","Individual item (form factor split)"
+"Rainbow Surprise!","['Rainbow Surprise!']","Individual item (form factor split)"
+"Black Sheep Salad","['Black Sheep Salad']","Individual item (form factor split)"
+"Veg Salad","['Veg Salad']","Individual item (form factor split)"
+"VLZX7K2M9QD4T Side Green Salad","['VLZX7K2M9QD4T Side Green Salad']","Individual item (form factor split)"
+"Poultry Salad","['Chicken Salad']","Split from mixed-category Salad - poultry items"
+"Lamb Salad","['Lamb Salad']","Split from mixed-category Salad - lamb items"
+"Pork Salad","['Pork Salad']","Split from mixed-category Salad - pork items"
+"Sandwich","['Black Sheep Sandwich', 'Veg Sandwich']","Split from mixed-category Sandwich - neutral items"
+"Poultry Sandwich","['Chicken Sandwich']","Split from mixed-category Sandwich - poultry items"
+"Lamb Sandwich","['Lamb Sandwich']","Split from mixed-category Sandwich - lamb items"
+"Pork Sandwich","['Pork Sandwich']","Split from mixed-category Sandwich - pork items"

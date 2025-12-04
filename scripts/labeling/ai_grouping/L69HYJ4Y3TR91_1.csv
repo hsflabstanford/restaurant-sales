@@ -1,48 +1,41 @@
-canonical_name,variants,reasoning
-Apple,[],Unique menu item.
-Avocado Toast,[],Unique menu item.
-Bacon,[],Unique menu item.
-Bagel,"['Bagels', 'Toasted Bagels', 'Toasted Bagel']",Variations in pluralization or descriptor (toasted).
-Bagel Joy Pizza,['Bagel Pizza'],"Refers to the same Bagel Pizza, with 'Joy' indicating a specific bakery."
-Berry-Licious ASsai Bowl,[],Typo of 'Açai Bowl'; unique dish name.
-Biscotti,[],Unique menu item.
-Blt,['BLT'],Case variation of the abbreviation.
-Bread,[],"Unique, general term not referring to a specific prepared dish on menu."
-Breakfast Sandwich,[],Unique menu item.
-Brownie,[],Unique menu item; distinct from 'Brookie'.
-Butter-Me-Crazy ASsai Bowl,[],Typo of 'Açai Bowl'; unique dish name.
-Chips,['Combo Chips'],Combo implies a type or variant of chips.
-Chocolate Chip Cookie,[],Unique menu item; distinct from 'Brookie'.
-Croissant,[],Unique menu item.
-Danish,[],Unique menu item.
-Driving-Me-Hazy ASsa Bowl,[],Typo of 'Açaí bowl'; unique dish name.
-Fresh Baked Banana Bread,[],Unique menu item; 'with Nutella' is a distinct variant.
-Fruit Cup,[],Unique menu item.
-Gf Cheesecake,['Gluten Free Cheesecake'],'Gf' is an abbreviation for 'Gluten Free'.
-Gf Coconut Macaroon,"['Gluten Free Coconut Macaroon', 'Gluten Free Chocolate Coconut Macaroon']",'Gf' is an abbreviation; 'Chocolate' is a flavor variant.
-Gluten Free Brownie,[],Unique menu item; distinct from 'Brookie'.
-Gluten Free Chocolate Chip Cookie,[],Unique menu item.
-Gluten Free Coffee Cake,[],Unique menu item.
-Gluten Free Muffin,['Gluten Free Muffins'],Plural variation.
-Gluten Free Whoopie Pie,[],Unique menu item.
-Gourmet Grilled Cheese,['Grilled Cheese Toast'],Generic 'Grilled Cheese Toast' can refer to this specific 'Gourmet' version.
-Gourmet Toasts,[],"Unique item, a category rather than a specific toast dish."
-Grilled Chicken Sandwhich,['Grilled Chicken Sandwich'],Typo correction for the same dish.
-Keto Cinnamon Rolls,[],Unique menu item; 'Keto' diet restriction is distinct from 'Gluten Free' or 'Vegan'.
-Keto Cookie,[],Unique menu item.
-Keto Muffins,[],Unique menu item; distinct from 'Gluten Free Muffins'.
-Keto Pepperoni Rolls,[],Unique menu item.
-Keto Scones,[],Unique menu item; distinct from regular 'Scones'.
-Keto Toasted Bagel,[],Unique menu item; distinct from regular 'Toasted Bagel'.
-LetAos Get Tropical ASsa Bowl,[],Typo in name and 'Acai Bowl' type; unique dish name.
-Melted Grilled Cheese,[],Unique menu item; distinct from 'Gourmet Grilled Cheese' as per description.
-Mix Match ASsa Bowl,[],Typo of 'Mix & Match Açaí bowl'; unique dish name.
-Muffin,[],Unique menu item; distinct from 'Gluten Free Muffins' or 'Keto Muffins'.
-Pear,[],Unique menu item.
-Pop Tart,"['Pop Tarts', 'Strawberry Pop Tart']",Plural and flavor variant of the same item.
-Quiche,['Spinach Quiche'],Spinach is a confirmed flavor variant of Quiche.
-Rice Crispy Treats,[],Unique menu item.
-Scone,['Scones'],Singular vs plural variation.
-Turkey Cheddar Ciabatta Club,['Turkey Cheddar Sandwich'],Ciabatta Club is a specific type of Turkey Cheddar Sandwich.
-Turkey Club Wrap,[],Unique menu item; a wrap is distinct from a sandwich/club.
-Very Berry Parfait,[],Unique menu item.
+"canonical_name","variants","reasoning"
+"Berry-Licious ASsai Bowl","['Berry-Licious ASsai Bowl']","Individual item (form factor split)"
+"Butter-Me-Crazy ASsai Bowl","['Butter-Me-Crazy ASsai Bowl']","Individual item (form factor split)"
+"Driving-Me-Hazy ASsa Bowl","['Driving-Me-Hazy ASsa Bowl']","Individual item (form factor split)"
+"LetAos Get Tropical ASsa Bowl","['LetAos Get Tropical ASsa Bowl']","Individual item (form factor split)"
+"Mix Match ASsa Bowl","['Mix Match ASsa Bowl']","Individual item (form factor split)"
+"Aloha (Pineapple & Coconut)","['Aloha (Pineapple & Coconut)']","Individual item (form factor split)"
+"Avocado Toast","['Avocado Toast']","Individual item (form factor split)"
+"Grilled Cheese Toast","['Grilled Cheese Toast']","Individual item (form factor split)"
+"Peanut Butter Toast","['Peanut Butter Toast']","Individual item (form factor split)"
+"Blt","['Blt']","Individual item (form factor split)"
+"Breakfast Sandwich","['Breakfast Sandwich']","Individual item (form factor split)"
+"Gourmet Grilled Cheese","['Gourmet Grilled Cheese']","Individual item (form factor split)"
+"Grilled Chicken Sandwich","['Grilled Chicken Sandwich']","Individual item (form factor split)"
+"Turkey Cheddar Ciabatta Club","['Turkey Cheddar Ciabatta Club']","Individual item (form factor split)"
+"Turkey Cheddar Sandwich","['Turkey Cheddar Sandwich']","Individual item (form factor split)"
+"Turkey Club Wrap","['Turkey Club Wrap']","Individual item (form factor split)"
+"Butter Croissant","['Butter Croissant']","Individual item (form factor split)"
+"Chocolate Croissant","['Chocolate Croissant']","Individual item (form factor split)"
+"Ham and Cheese Croissant","['Ham and Cheese Croissant']","Individual item (form factor split)"
+"Spinach Cheese Croissant","['Spinach Cheese Croissant']","Individual item (form factor split)"
+"Ham & Cheese Quiche","['Ham & Cheese Quiche']","Individual item (form factor split)"
+"Quiche","['Quiche']","Individual item (form factor split)"
+"Spinach Quiche","['Spinach Quiche']","Individual item (form factor split)"
+"Bagel","['Bagel Joy Pizza', 'Keto Toasted Bagel', 'Toasted Bagels']","Bagel items"
+"Cookie","['Chocolate Chip Cookie', 'Gluten Free Chocolate Chip Cookie', 'Keto Cookie']","Cookie varieties"
+"Brownie","['Brownie', 'Gluten Free Brownie']","Brownie items"
+"Muffin","['Gluten Free Muffin', 'Keto Muffins', 'Muffin']","Muffin varieties"
+"Gluten Free Cheesecake","['Gluten Free Cheesecake']","Individual item (form factor split)"
+"Gluten Free Chocolate Coconut Macaroon","['Gluten Free Chocolate Coconut Macaroon']","Individual item (form factor split)"
+"Gluten Free Coffee Cake","['Gluten Free Coffee Cake']","Individual item (form factor split)"
+"Gluten Free Whoopie Pie","['Gluten Free Whoopie Pie']","Individual item (form factor split)"
+"Keto Cinnamon Rolls","['Keto Cinnamon Rolls']","Individual item (form factor split)"
+"Keto Pepperoni Rolls","['Keto Pepperoni Rolls']","Individual item (form factor split)"
+"Keto Scones","['Keto Scones']","Individual item (form factor split)"
+"Danish","['Danish']","Individual item (form factor split)"
+"Pop Tart","['Pop Tart']","Individual item (form factor split)"
+"Scones","['Scones']","Individual item (form factor split)"
+"Bread","['Bread', 'Fresh Baked Banana Bread']","Bread items"
+"Chips","['Chips']","Chips"
+"Parfait","['Very Berry Parfait']","Parfait"

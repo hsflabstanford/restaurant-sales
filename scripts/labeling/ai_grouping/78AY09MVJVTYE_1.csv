@@ -1,45 +1,85 @@
 canonical_name,variants,reasoning
-Veggielito,"['$3 Veggielito', '$3.5 Veggielito', '$5 Veggielito', 'Veggie-Lito', 'Veggielito']","Same veggie hot dog, price/spelling variants"
-Chilito,"['$3 Chilito', '$5 Chilito', 'Chilito']","Same chilito, price variants"
-Halfsmoke,"['Halfsmoke', 'Halfsmokes']","Same item, plural variant"
-Bratwurst,"['Bratwurst', 'Bratwurst Link']","Same item, link format"
-Chorizo,"['Chorizo', 'Chorizo Link']","Same item, link format"
-Italian,"['Italian', 'Italian Link']","Same sausage, link format"
-Garlic Pork,"['Garlic Pork', 'Garlic Pork Link']","Same sausage, link format"
-Halfsmoke Link,"['Halfsmoke', 'Halfsmoke Link']","Same item, link format"
-Smoked Jalapeno Chicken,"['Smoked Jalapeno Chicken', 'Smoked Jalapeno Chicken Link']","Same chicken sausage, link format"
-Smoked Spicy Chicken,"['Smoked Spicy Chicken', 'Smoked Spicy Chicken Link']","Same chicken sausage, link format"
-Salt & Pepper Chicken,"['Salt & Pepper Chicken', 'Salt And Pepper Chicken Link']","Same chicken sausage, ampersand/naming variant"
-Egg & Cheese Sandwich,"['Egg & Cheese', 'Egg & Cheese Sandwich', 'Egg And Cheese Sandwich']","Same sandwich, naming variants"
-Egg & Cheese Biscuit,"['Egg & Cheese On A Biscuit (Sunday Only!)', 'Egg & Cheese On A Biscuit (Sundays Only!)']","Same biscuit sandwich, day variants"
-Bacon Egg & Cheese,"['Bacon Egg And Cheese Biscuit', 'Bacon Egg And Cheese On A Biscuit (Sunday Only!)', 'Bacon, Egg & Cheese']","Same sandwich, biscuit/day variants"
-"Ham, Egg & Cheese","['Ham, Egg & Cheese', 'Ham, Egg & Cheese (New!)', 'Ham, Egg & Cheese Biscuit', 'Ham, Egg & Cheese On A Biscuit (Sunday Only!)']","Same sandwich, day/format variants"
-"Sausage, Egg & Cheese","['Sausage Egg And Cheese On A Biscuit (Sunday Only!)', 'Sausage, Egg & Cheese']","Same sandwich, day variants"
-Veggie Sausage Egg & Cheese,"['Veggie Sausage Egg & Cheese', 'Veggie Sausage Egg Cheese Biscuit', 'Veggie Sausage Egg Cheese Biscuit (Sunday Only)']","Same sandwich, day/biscuit variants"
-Breakfast Burrito,"['Breakfast Burrito', 'Breakfast Burrito (Saturday Only!)', 'Breakfast Burrito (Saturday Only!) - Preorder', 'Breakfast Burrito (Saturday Only!) - Preorder For 10Am Saturday']","Same burrito, day/preorder variants"
-Breakfast Sausage Pack,"['Breakfast (8Oz Pack)', 'Breakfast Sausage (10Oz Pack)', 'Breakfast Sausage (8Oz Pack)']","Same product, size variants"
-Crispy Potatoes,"['$2 Crispy Potatoes', 'Crispy Potatoes', 'Crispy Potatoes (New!)']","Same side, price/(new) variants"
-Potatoes,"['Potatoes', 'Potatoes (New!)']","Same side, (new) variant"
-Hot Sauce,"['Hot Sauce', 'Hot Sauce!', 'Meats & Foods Hot Sauce', 'Meats & Foods Hot Sauce Refill', 'Meats & Foods Hot Sauce Refill (Bottle Exchange)']","Same product, punctuation variants"
-Hot Sauce Refill,"['Meats & Foods Hot Sauce Refill', 'Meats & Foods Hot Sauce Refill (Bottle Exchange)']","Same refill product, bottle exchange variant"
-Black On Black Shirt,"['Black On Black', 'Black On Black (M  & Xs Only)', 'Black On Black (S Only)', 'Black On Black T-Shirt']","Same shirt, size variants"
-Black On Black Crewneck,"['Black On Black Crewneck', 'Black On Black Crewneck (L-2Xl Only)', 'Black On Black Crewneck (Xxl Only)']","Same crewneck, size variants"
-Black Sweatshirt,"['Black Sweatshirt', 'Black Sweatshirt (L Only)']","Same sweatshirt, size variants"
-Hot Dog Man Shirt,"['Hot Dog Man Shirt', 'Hot Dog Man Shirt #2 (M And Xl Only)', 'Hot Dog Man Shirt #2 (New!)', 'Hot Dog Man Shirt #2 (Xl Only)', 'Hot Dog Man Shirt #2 (Xs Only)', 'Hot Dog Man Shirt (M Only)', 'Hot Dog Man Shirt (S And M Only)', 'Hot Dog Man Shirt (S Only)']","Same shirt, version/size variants"
-Logo T,"['Logo T', 'Logo T (S And M Only)', 'Logo T (S Only)']","Same shirt, size variants"
-Long Sleeve T,"['Long Sleeve T', 'Long Sleeve T (New!)', 'Long Sleeve T (S, Xxl And Xxl)', 'Long Sleeve T (Xs Only)', 'Long Sleeve T (Xxl And Xxxl)']","Same shirt, size/(new) variants"
-Sweatshirt,"['Sweatshirt', 'Sweatshirt (M Only)', 'Sweatshirt (S And M Only)', 'Sweatshirt For Melissa']","Same sweatshirt, size variants"
-Gray Tee,"['Gray Tee', 'Gray Tee (S And M Only)']","Same shirt, size variants"
-Chilito Shirt,"['Chilito Shirt', 'Chilito Shirt (M Only)', 'Chilito Shirt (S And M Only)']","Same shirt, size variants"
-Tank Top,"['Tank Top', 'Tank Top (S Only)']","Same tank, size variants"
-Pack Of Buns,"['Pack Of Buns', 'Pack Of Buns (Limit 1 Per Order)']","Same product, limit notation variant"
-Veggie Link,"['Veggie Link', 'Veggie Link (Limit 3)']","Same product, limit notation variant"
-Quart Of Chili,"['Quart Of Chili', 'Quart Of Chili (Limit 1)']","Same product, limit notation variant"
-Tote Bag,"['Tote Bag', 'Tote Bag (New!)']","Same product, (new) variant"
-Pint Of Sauerkraut,"['Pint Of Kraut', 'Pint Of Sauerkraut']","Same product, naming variants"
-Pint Of Pickled Jalapenos,"['Pint Of Jalape√±Os', 'Pint Of Pickled Jalape√±Os']","Same product, naming variants"
-13th Street Meats Shirt,"['13Th St Meats Shirt, Red', '13Th St Meats Shirt, Red (S And L Only)', '13Th St Meats Shirt, Red (S Only)', '13Th Street Meats Shirt, Black', '13Th Street Meats Shirt, Black (Xxl Only)']","Same shirt, size/color variants"
-Ice Cream Sandwich,"['Ice Cream Sandwich', 'Vanilla Ice Cream Sandwich By Milkcult']","Same dessert, flavor variants"
-Dippy Boys Ice Cream,"['Dippy Boys By Milk Cult (Makrut Lime With Candy Shell & Crispy Rice) *Vegan*', 'Dippy Boys By Milk Cult (Vanilla With Chocolate Shell & Potato Chip)', 'Tiny Party Dippy Boys Ice Cream Novelty Products By Milk Cult‚Ñ¢']","Same product, flavor variants"
-Biscuit,"['Biscuit', 'Biscuit Sunday', 'Plain Biscuit']","Same biscuit, naming variants"
-Side Of Chili,"['Side Chili', 'Side Of Chili']","Same side, wording variant"
+Chilito,['Chilito'],"Same chilito, price variants"
+Halfsmoke,['Halfsmoke'],"Same item, plural variant"
+Bratwurst,['Bratwurst'],"Same item, link format"
+Chorizo,['Chorizo'],"Same item, link format"
+Italian,['Italian'],"Same sausage, link format"
+Garlic Pork,['Garlic Pork'],"Same sausage, link format"
+Smoked Jalapeno Chicken,['Smoked Jalapeno Chicken'],"Same chicken sausage, link format"
+Smoked Spicy Chicken,['Smoked Spicy Chicken'],"Same chicken sausage, link format"
+Salt & Pepper Chicken,['Salt & Pepper Chicken'],"Same chicken sausage, ampersand/naming variant"
+Egg & Cheese Sandwich,['Egg & Cheese Sandwich'],"Same sandwich, naming variants"
+Bacon Egg & Cheese,['Bacon Egg & Cheese'],"Same sandwich, biscuit/day variants"
+"Sausage, Egg & Cheese","['Sausage, Egg & Cheese']","Same sandwich, day variants"
+Veggie Sausage Egg & Cheese,['Veggie Sausage Egg & Cheese'],"Same sandwich, day/biscuit variants"
+Breakfast Burrito,['Breakfast Burrito'],"Same burrito, day/preorder variants"
+Breakfast Sausage Pack,['Breakfast Sausage Pack'],"Same product, size variants"
+Crispy Potatoes,['Crispy Potatoes'],"Same side, price/(new) variants"
+Potatoes,['Potatoes'],"Same side, (new) variant"
+Hot Sauce,['Hot Sauce'],"Same product, punctuation variants"
+Pack Of Buns,['Pack Of Buns'],"Same product, limit notation variant"
+Veggie Link,['Veggie Link'],"Same product, limit notation variant"
+Quart Of Chili,['Quart Of Chili'],"Same product, limit notation variant"
+Pint Of Sauerkraut,['Pint Of Sauerkraut'],"Same product, naming variants"
+Ice Cream Sandwich,['Ice Cream Sandwich'],"Same dessert, flavor variants"
+Biscuit,['Biscuit'],"Same biscuit, naming variants"
+Side Of Chili,['Side Of Chili'],"Same side, wording variant"
+Egg Cheese On A Biscuit (Sundays Only!),['Egg Cheese On A Biscuit (Sundays Only!)'],"Same biscuit item, day spelling variant."
+Pack Of Bacon,['Pack Of Bacon'],Same bacon product.
+Pint Of Pickled JalapeOs,['Pint Of Pickled JalapeOs'],Same pickled jalapenos product.
+Chilito,"['3 Chilito', '5 Chilito', '50 Chilitos', '55 Chilitos', '90 Chilitos', '100 Chilitos!', 'All Souls Chilitos', 'Domestique Chilitos', 'Gluten-Free Chilito', 'Chilito']",Chilito quantity/event variants.
+Veggielito,"['3 Veggielito', '3.5 Veggielito', '5 Veggielito']",Veggielito variants.
+Veganlito,['5 Veganlito'],Veganlito variants.
+Halfsmoke,"['5 Chili Halfsmoke', 'Archies Halfsmokes', 'Chili Cheese Halfsmoke', 'Chili Halfsmoke', 'Halfsmoke Link', 'Halfsmoke Sandwich', 'William Hill Halfsmokes', '50 Halfsmoke, Kraut, Buns 528', '5Lb Halfsmokes', '10Lb Halfsmokes', 'Halfsmoke']",Halfsmoke variants.
+Bratwurst,"['150 Bratwurst', '200 Bratwurst', 'Bratwurst Sandwich', 'Cheddar Brat', 'Jalapeno Cheddar Brat', 'Bratwurst']",Bratwurst variants.
+Chickendog,"['5-Pack Of Chickendogs', 'Chickenburger (New!)', 'Chickendog']",Chicken dog/burger variants.
+Veggie Chili,"['5 Veggie Chili Dog', 'Bowl Of Veggie Chili', 'Veggie Chili Dog', 'Veggie Frito Pie', 'Veggie Frito Pie Bubbles', 'Veggie Chili']",Veggie chili variants.
+Chili,"['Bowl Of All-Beef Chili', 'Cup Of Chili', 'Chili Cheese Potatoes', 'Chili']",Beef chili variants.
+Frito Pie,"['Frito Pie Bubbles', 'Frito Pie']",Frito pie variants.
+Bacon,"['Bacon Pack', 'Bacon Side', 'Bacon, Egg Cheese', 'Bacon']",Bacon product variants.
+Egg Cheese Sandwich,"['Crispy Potato Egg Cheese Sandwich (New!)', 'Ham, Egg Cheese', 'Ham, Egg Cheese (New!)', 'Ham, Egg Cheese Biscuit', 'Ham, Egg Cheese On A Biscuit (Sunday Only!)', 'Sausage, Egg Cheese', 'Veggie Sausage Egg Cheese', 'Egg Cheese Sandwich']",Egg cheese sandwich variants.
+Breakfast Bowl (New!),['Breakfast Bowl (New!)'],Individual item (form factor split)
+Mini Breakfast Bowl (New!),['Mini Breakfast Bowl (New!)'],Individual item (form factor split)
+Breakfast,['Breakfast'],Individual item (form factor split)
+Ham,"['Ham Sandwich (New!)', 'Hot Ham Cheese (New!)', 'Pack Of Sliced Ham']",Ham product variants.
+Chicken Sausage,"['Green Chile Chicken', 'Habanero Chicken', 'Jalapeno Chicken', 'Lemon-Basil Chicken', 'Lemon-Basil Chicken Sandwich', 'Lemongrass Chicken', 'Lemongrass Sandwich', 'Salt Pepper Chicken', 'Spicy Chicken', 'Spicy Chicken With Peppers And JalapeOs', 'Tomato Hatch Chicken']",Chicken sausage variants.
+Pork Sausage,"['Mild Pork', 'Roasted Poblano Pork', 'Roasted Poblano Sandwich', 'JalapeO Pork']",Pork sausage variants.
+Andouille,"['Andouille Sandwich', 'Andouille']",Andouille variants.
+Banger,"['Banger Sandwich', 'Banger']",Banger variants.
+Chorizo,"['Chorizo Sandwich', 'Chorizo With Cheese And Onions', 'Chorizo']",Chorizo variants.
+Italian,"['Italian Sandwich', 'Subbies Italian Sausage', 'Italian']",Italian sausage variants.
+4-Pack,['4-Pack'],Individual item (form factor split)
+Grill Pack,['Grill Pack'],Individual item (form factor split)
+Tailgate Pack,['Tailgate Pack'],Individual item (form factor split)
+Crispy Potatoes,"['2 Crispy Potatoes', 'Crispy Potatoes']",Crispy potato variants.
+Hot Sauce,"['Meats Foods Hot Sauce', 'Meats Foods Hot Sauce Refill', 'Meats Foods Hot Sauce Refill (Bottle Exchange)', 'Hot Sauce']",Hot sauce variants.
+Links,"['Ready-Made', 'Ready-Made Sandwich', 'Links']",Ready-made link variants.
+Ice Cream,"['Avocado Vegan Ice Cream Sandwich By Milkcult', 'Dippy Boys By Milk Cult (Makrut Lime With Candy Shell Crispy Rice) Vegan', 'Dippy Boys By Milk Cult (Vanilla With Chocolate Shell Potato Chip)', 'Ice Cream']",Ice cream variants.
+Sloppy Joe,"['Shreddies', 'Sloppy Joe']",Sloppy joe variants.
+Grilled Cheese,['Grilled Cheese Sandwich'],Grilled cheese variants.
+Garlic With Sauerkraut,['Garlic With Sauerkraut'],Individual item (form factor split)
+Salt And Pepper With Peppers Onions,['Salt And Pepper With Peppers Onions'],Individual item (form factor split)
+Breakfast,['Breakfast'],Individual item (form factor split)
+Polish,['Polish'],Individual item (form factor split)
+Veggie Sausage,['Veggie Sausage'],Individual item (form factor split)
+Bacon,['Bacon'],Bacon items
+Chili,['Chili'],Chili and chili-based items
+Add Egg,['Add Egg'],Individual item (form factor split)
+Bell Pepper,['Bell Pepper'],Individual item (form factor split)
+Jalapeno,['Jalapeno'],Individual item (form factor split)
+Smoked Hatch,['Smoked Hatch'],Individual item (form factor split)
+Turmeric,['Turmeric'],Individual item (form factor split)
+Pint Of Pickles,['Pint Of Pickles'],Individual item (form factor split)
+Pack Of Sauerkraut,['Pack Of Sauerkraut'],Individual item (form factor split)
+6Oz Block Of Beef Tallow,['6Oz Block Of Beef Tallow'],Individual item (form factor split)
+Dozen Eggs,['Dozen Eggs'],Individual item (form factor split)
+Old Westminster Seeds Skins,['Old Westminster Seeds Skins'],Individual item (form factor split)
+Pack Of Tortillas,['Pack Of Tortillas'],Individual item (form factor split)
+Sides,['Veg Side'],Vegetable sides
+BBQ,['Bbq'],BBQ items
+Burrito,['Burrito'],Burrito
+Ice Cream,['Ice Cream'],Ice cream
+Special,['Special'],Individual item (was in misc group)
+Pork Veggie Sausage,['Vegan Sausage'],Split from mixed-category Veggie Sausage - pork items
+Vegan Veggie Sausage,"['Veggie Sandwich', 'Veggie With Sauerkraut']",Split from mixed-category Veggie Sausage - vegan items
+catering_takeout,['Bulk Sausage'],Catering and takeout items

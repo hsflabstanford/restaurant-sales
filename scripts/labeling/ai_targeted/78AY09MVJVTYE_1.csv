@@ -1,313 +1,74 @@
-item_name,categories,reasoning
-$10 Gift Certificate,[],No animal products from the target categories detected.
-$2 Crispy Potatoes,[],No animal products from the target categories detected.
-$25 Gift Certificate,[],No animal products from the target categories detected.
-$3 Chilito,['sausage'],Contains sausage/hot dog.
-$3 Veggielito,['egg'],Contains egg.
-$3.5 Veggielito,['egg'],Contains egg.
-$5 Chili Halfsmoke,['sausage'],Contains sausage/hot dog.
-$5 Chilito,['sausage'],Contains sausage/hot dog.
-$5 Shirt,[],No animal products from the target categories detected.
-$5 Veganlito,[],No animal products from the target categories detected.
-$5 Veggie Chili Dog,['egg'],Contains egg.
-$5 Veggielito,['egg'],Contains egg.
-$50 Gift Certificate (+Free Tshirt Or Tote!),[],No animal products from the target categories detected.
-$50 Gift Certificate + Shirt,[],No animal products from the target categories detected.
-100 Chilitos!,['sausage'],Contains sausage/hot dog.
-10Lb Chorizo,['sausage'],Contains sausage/hot dog.
-10Lb Halfsmokes,['sausage'],Contains sausage/hot dog.
-"13Th St Meats Shirt, Red",[],No animal products from the target categories detected.
-"13Th St Meats Shirt, Red (S And L Only)",[],No animal products from the target categories detected.
-"13Th St Meats Shirt, Red (S Only)",[],No animal products from the target categories detected.
-"13Th Street Meats Shirt, Black",[],No animal products from the target categories detected.
-"13Th Street Meats Shirt, Black (Xxl Only)",[],No animal products from the target categories detected.
-150 Bratwurst,['sausage'],Contains sausage/hot dog.
-15Lb Sausage,['sausage'],Contains sausage/hot dog.
-1St Anniversary Poster,[],No animal products from the target categories detected.
-2.50 Retail Sausage,['sausage'],Contains sausage/hot dog.
-200 Bratwurst,['sausage'],Contains sausage/hot dog.
-2023-06-01 00:00:00,[],No animal products from the target categories detected.
-4-Pack,[],No animal products from the target categories detected.
-5 Flyer,[],No animal products from the target categories detected.
-5-Pack Of Chickendogs,['unfried_chicken'],Contains chicken.
-50 Chilitos,['sausage'],Contains sausage/hot dog.
-"50 Halfsmoke, Kraut, Buns 5/28",['sausage'],Contains sausage/hot dog.
-55 Chilitos,['sausage'],Contains sausage/hot dog.
-5Lb Halfsmokes,['sausage'],Contains sausage/hot dog.
-5Lb Italian,['sausage'],Contains sausage/hot dog.
-5Lb Sausage,['sausage'],Contains sausage/hot dog.
-5Th Annual (2019) Frito Pie & Bubbles Party Poster,[],No animal products from the target categories detected.
-6+Oz Block Of Beef Tallow,[],No animal products from the target categories detected.
-90 Chilitos,['sausage'],Contains sausage/hot dog.
-Add A Bag Of Chips,[],No animal products from the target categories detected.
-Add Egg,['egg'],Contains egg.
-Add Jalapenos,[],No animal products from the target categories detected.
-Air Freshener,[],No animal products from the target categories detected.
-All Souls Chilitos,['sausage'],Contains sausage/hot dog.
-Andouille,['sausage'],Contains sausage/hot dog.
-Andouille Sandwich,['sausage'],Contains sausage/hot dog.
-Anniversary Pennant,[],No animal products from the target categories detected.
-Anniversary Poster,[],No animal products from the target categories detected.
-Archies Halfsmokes,['sausage'],Contains sausage/hot dog.
-Art All Night Catering,[],No animal products from the target categories detected.
-Atla Dance Of Days,[],No animal products from the target categories detected.
-Atlas,[],No animal products from the target categories detected.
-Atlas 1500,[],No animal products from the target categories detected.
-Atlas Home Rule,[],No animal products from the target categories detected.
-Avocado Vegan Ice Cream Sandwich By Milkcult,[],No animal products from the target categories detected.
-Bacon,['bacon'],Contains bacon.
-Bacon Egg And Cheese Biscuit,"['bacon', 'savory_dairy', 'egg']",Contains bacon. Contains cheese/dairy. Contains egg.
-Bacon Egg And Cheese On A Biscuit (Sunday Only!),"['bacon', 'savory_dairy', 'egg']",Contains bacon. Contains cheese/dairy. Contains egg.
-Bacon Pack,['bacon'],Contains bacon.
-Bacon Side,['bacon'],Contains bacon.
-"Bacon, Egg & Cheese","['bacon', 'savory_dairy', 'egg']",Contains bacon. Contains cheese/dairy. Contains egg.
-Banger,['sausage'],Contains sausage/hot dog.
-Banger Sandwich,['sausage'],Contains sausage/hot dog.
-Bartlito Keychain,[],No animal products from the target categories detected.
-Bbq,[],No animal products from the target categories detected.
-Bell Pepper,[],No animal products from the target categories detected.
-Biscuit,[],No animal products from the target categories detected.
-Biscuit Sunday,[],No animal products from the target categories detected.
-Black On Black,[],No animal products from the target categories detected.
-Black On Black (M  & Xs Only),[],No animal products from the target categories detected.
-Black On Black (S Only),[],No animal products from the target categories detected.
-Black On Black Crewneck,[],No animal products from the target categories detected.
-Black On Black Crewneck (L-2Xl Only),[],No animal products from the target categories detected.
-Black On Black Crewneck (Xxl Only),[],No animal products from the target categories detected.
-Black On Black T-Shirt,[],No animal products from the target categories detected.
-Black On Black Tank,[],No animal products from the target categories detected.
-Black Sweatshirt,[],No animal products from the target categories detected.
-Black Sweatshirt (L Only),[],No animal products from the target categories detected.
-Bowl Of All-Beef Chili,['ground_meat'],Contains beef chili.
-Bowl Of Veggie Chili,['egg'],Contains egg.
-Bratwurst,['sausage'],Contains sausage/hot dog.
-Bratwurst Link,['sausage'],Contains sausage/hot dog.
-Bratwurst Sandwich,['sausage'],Contains sausage/hot dog.
-Breakfast,[],No animal products from the target categories detected.
-Breakfast (8Oz Pack),['breakfast_sausage_patty'],Contains breakfast sausage.
-Breakfast Bowl (New!),[],No animal products from the target categories detected.
-Breakfast Burrito,[],No animal products from the target categories detected.
-Breakfast Burrito (Saturday Only!),[],No animal products from the target categories detected.
-Breakfast Burrito (Saturday Only!) - Preorder,[],No animal products from the target categories detected.
-Breakfast Burrito (Saturday Only!) - Preorder For 10Am Saturday,[],No animal products from the target categories detected.
-Breakfast Sausage (10Oz Pack),"['sausage', 'breakfast_sausage_patty']",Contains sausage/hot dog. Contains breakfast sausage.
-Breakfast Sausage (8Oz Pack),"['sausage', 'breakfast_sausage_patty']",Contains sausage/hot dog. Contains breakfast sausage.
-Bucket,[],No animal products from the target categories detected.
-Bun,[],No animal products from the target categories detected.
-Buns,[],No animal products from the target categories detected.
-Burrito,[],No animal products from the target categories detected.
-Carla,[],No animal products from the target categories detected.
-Catering,[],No animal products from the target categories detected.
-Cheddar Brat,"['sausage', 'savory_dairy']",Contains sausage/hot dog. Contains cheese/dairy.
-Chickenburger (New!),['unfried_chicken'],Contains chicken.
-Chickendog,['unfried_chicken'],Contains chicken.
-Chil1To Air Freshener,[],No animal products from the target categories detected.
-Chil1To Enamel Pin,[],No animal products from the target categories detected.
-Chili,[],No animal products from the target categories detected.
-Chili Cheese Halfsmoke,"['sausage', 'savory_dairy']",Contains sausage/hot dog. Contains cheese/dairy.
-Chili Cheese Potatoes,['savory_dairy'],Contains cheese/dairy.
-Chili Halfsmoke,['sausage'],Contains sausage/hot dog.
-Chilicookoff,[],No animal products from the target categories detected.
-Chilito,['sausage'],Contains sausage/hot dog.
-Chilito In A Lambo Enamel Pin,['sausage'],Contains sausage/hot dog.
-Chilito Shirt,['sausage'],Contains sausage/hot dog.
-Chilito Shirt (M Only),['sausage'],Contains sausage/hot dog.
-Chilito Shirt (S And M Only),['sausage'],Contains sausage/hot dog.
-Chips,[],No animal products from the target categories detected.
-Chorizo,['sausage'],Contains sausage/hot dog.
-Chorizo Link,['sausage'],Contains sausage/hot dog.
-Chorizo Sandwich,['sausage'],Contains sausage/hot dog.
-Chorizo With Cheese And Onions,"['sausage', 'savory_dairy']",Contains sausage/hot dog. Contains cheese/dairy.
-Coozie,[],No animal products from the target categories detected.
-Crispy Potato Egg & Cheese Sandwich (New!),"['savory_dairy', 'egg']",Contains cheese/dairy. Contains egg.
-Crispy Potatoes,[],No animal products from the target categories detected.
-Crispy Potatoes (New!),[],No animal products from the target categories detected.
-Cup Of Chili,[],No animal products from the target categories detected.
-Custom Amount,[],No animal products from the target categories detected.
-Dance Of Days,[],No animal products from the target categories detected.
-Dc Bag Tax,[],No animal products from the target categories detected.
-Dc Brau Oktoberfest Packs,[],No animal products from the target categories detected.
-Dippy Boys By Milk Cult (Makrut Lime With Candy Shell & Crispy Rice) *Vegan*,[],No animal products from the target categories detected.
-Dippy Boys By Milk Cult (Vanilla With Chocolate Shell & Potato Chip),[],No animal products from the target categories detected.
-Domestique Chilitos,['sausage'],Contains sausage/hot dog.
-Dozen Eggs,[],No animal products from the target categories detected.
-Egg & Cheese,"['savory_dairy', 'egg']",Contains cheese/dairy. Contains egg.
-Egg & Cheese On A Biscuit (Sunday Only!),"['savory_dairy', 'egg']",Contains cheese/dairy. Contains egg.
-Egg & Cheese On A Biscuit (Sundays Only!),"['savory_dairy', 'egg']",Contains cheese/dairy. Contains egg.
-Egg & Cheese Sandwich,"['savory_dairy', 'egg']",Contains cheese/dairy. Contains egg.
-Egg And Cheese Sandwich,"['savory_dairy', 'egg']",Contains cheese/dairy. Contains egg.
-Egift Card,[],No animal products from the target categories detected.
-Folksbier,[],No animal products from the target categories detected.
-Frito Pie,[],No animal products from the target categories detected.
-Frito Pie & Bubbles,[],No animal products from the target categories detected.
-Garf In A Meats And Foods Sweatshirt Pin,[],No animal products from the target categories detected.
-Garf Pin,[],No animal products from the target categories detected.
-Garlic Pork,['sausage'],Contains sausage/hot dog.
-Garlic Pork Link,['sausage'],Contains sausage/hot dog.
-Garlic With Sauerkraut,[],No animal products from the target categories detected.
-Gift Certificate,[],No animal products from the target categories detected.
-Gluten-Free Chilito,['sausage'],Contains sausage/hot dog.
-Gray Sweatshirt,[],No animal products from the target categories detected.
-Gray Tee,[],No animal products from the target categories detected.
-Gray Tee (S And M Only),[],No animal products from the target categories detected.
-Green Chile Chicken,['unfried_chicken'],Contains chicken.
-Grill Pack,[],No animal products from the target categories detected.
-Grilled Cheese Sandwich,['savory_dairy'],Contains cheese/dairy.
-Habanero Chicken,['unfried_chicken'],Contains chicken.
-Halfsmoke,['sausage'],Contains sausage/hot dog.
-Halfsmoke Link,['sausage'],Contains sausage/hot dog.
-Halfsmoke Sandwich,['sausage'],Contains sausage/hot dog.
-Halfsmokes,['sausage'],Contains sausage/hot dog.
-Ham Sandwich (New!),['chunked_beef_or_pork'],Contains ham.
-"Ham, Egg & Cheese","['chunked_beef_or_pork', 'savory_dairy', 'egg']",Contains ham. Contains cheese/dairy. Contains egg.
-"Ham, Egg & Cheese (New!)","['chunked_beef_or_pork', 'savory_dairy', 'egg']",Contains ham. Contains cheese/dairy. Contains egg.
-"Ham, Egg & Cheese Biscuit","['chunked_beef_or_pork', 'savory_dairy', 'egg']",Contains ham. Contains cheese/dairy. Contains egg.
-"Ham, Egg & Cheese On A Biscuit (Sunday Only!)","['chunked_beef_or_pork', 'savory_dairy', 'egg']",Contains ham. Contains cheese/dairy. Contains egg.
-Hot Dog Man Shirt,[],No animal products from the target categories detected.
-Hot Dog Man Shirt #2 (M And Xl Only),[],No animal products from the target categories detected.
-Hot Dog Man Shirt #2 (New!),[],No animal products from the target categories detected.
-Hot Dog Man Shirt #2 (Xl Only),[],No animal products from the target categories detected.
-Hot Dog Man Shirt #2 (Xs Only),[],No animal products from the target categories detected.
-Hot Dog Man Shirt (M Only),[],No animal products from the target categories detected.
-Hot Dog Man Shirt (S And M Only),[],No animal products from the target categories detected.
-Hot Dog Man Shirt (S Only),[],No animal products from the target categories detected.
-Hot Ham & Cheese (New!),"['chunked_beef_or_pork', 'savory_dairy']",Contains ham. Contains cheese/dairy.
-Hot Sauce,[],No animal products from the target categories detected.
-Hot Sauce!,[],No animal products from the target categories detected.
-Ice Cream,['sweet_dairy'],Contains ice cream.
-Ice Cream Sandwich,['sweet_dairy'],Contains ice cream.
-Italian,['sausage'],Contains sausage/hot dog.
-Italian Link,['sausage'],Contains sausage/hot dog.
-Italian Sandwich,['sausage'],Contains sausage/hot dog.
-Jalapeno,[],No animal products from the target categories detected.
-Jalapeno Cheddar Brat,"['sausage', 'savory_dairy']",Contains sausage/hot dog. Contains cheese/dairy.
-Jalapeno Chicken,['unfried_chicken'],Contains chicken.
-Jalape√±O Pork,[],No animal products from the target categories detected.
-Julia,[],No animal products from the target categories detected.
-Julia 4/2/21,[],No animal products from the target categories detected.
-July 4Th Grill Pack,[],No animal products from the target categories detected.
-Keychain,[],No animal products from the target categories detected.
-Lemon-Basil Chicken,['unfried_chicken'],Contains chicken.
-Lemon-Basil Chicken Sandwich,['unfried_chicken'],Contains chicken.
-Lemongrass Chicken,['unfried_chicken'],Contains chicken.
-Lemongrass Sandwich,[],No animal products from the target categories detected.
-Links,[],No animal products from the target categories detected.
-Logo Shirt,[],No animal products from the target categories detected.
-Logo T,[],No animal products from the target categories detected.
-Logo T (S And M Only),[],No animal products from the target categories detected.
-Logo T (S Only),[],No animal products from the target categories detected.
-Long Sleeve T,[],No animal products from the target categories detected.
-Long Sleeve T (New!),[],No animal products from the target categories detected.
-"Long Sleeve T (S, Xxl And Xxl)",[],No animal products from the target categories detected.
-Long Sleeve T (Xs Only),[],No animal products from the target categories detected.
-Long Sleeve T (Xxl And Xxxl),[],No animal products from the target categories detected.
-M&F Pennant,[],No animal products from the target categories detected.
-Matt Brown,[],No animal products from the target categories detected.
-Maya,[],No animal products from the target categories detected.
-Meats & Foeders Shirt Preorder,[],No animal products from the target categories detected.
-Meats & Foods Hot Sauce,[],No animal products from the target categories detected.
-Meats & Foods Hot Sauce Refill,[],No animal products from the target categories detected.
-Meats & Foods Hot Sauce Refill (Bottle Exchange),[],No animal products from the target categories detected.
-Mild Pork,['sausage'],Contains sausage/hot dog.
-Mini Breakfast Bowl (New!),[],No animal products from the target categories detected.
-Novelty,[],No animal products from the target categories detected.
-Old Westminster Seeds & Skins,[],No animal products from the target categories detected.
-Ollie Tchilitos,['sausage'],Contains sausage/hot dog.
-On A Biscuit,[],No animal products from the target categories detected.
-Onion,[],No animal products from the target categories detected.
-Original Logo Shirt,[],No animal products from the target categories detected.
-Original Tiny Party Poster (2015),[],No animal products from the target categories detected.
-Pack Of Bacon,['bacon'],Contains bacon.
-Pack Of Buns,[],No animal products from the target categories detected.
-Pack Of Buns (Limit 1 Per Order),[],No animal products from the target categories detected.
-Pack Of House-Made Bacon,['bacon'],Contains bacon.
-Pack Of Sauerkraut,[],No animal products from the target categories detected.
-Pack Of Sliced Ham,['chunked_beef_or_pork'],Contains ham.
-Pack Of Tortillas,[],No animal products from the target categories detected.
-Pickle,[],No animal products from the target categories detected.
-Pickle Chips,[],No animal products from the target categories detected.
-Pickles,[],No animal products from the target categories detected.
-Pils,[],No animal products from the target categories detected.
-Pint Of Jalape√±Os,[],No animal products from the target categories detected.
-Pint Of Kraut,[],No animal products from the target categories detected.
-Pint Of Pickled Jalape√±Os,[],No animal products from the target categories detected.
-Pint Of Pickles,[],No animal products from the target categories detected.
-Pint Of Sauerkraut,[],No animal products from the target categories detected.
-Plain Biscuit,[],No animal products from the target categories detected.
-Polish,['sausage'],Contains sausage/hot dog.
-Potatoes,[],No animal products from the target categories detected.
-Potatoes (New!),[],No animal products from the target categories detected.
-Quart Of Chili,[],No animal products from the target categories detected.
-Quart Of Chili (Limit 1),[],No animal products from the target categories detected.
-Ready-Made,[],No animal products from the target categories detected.
-Ready-Made Sandwich,[],No animal products from the target categories detected.
-Retail Sausage,['sausage'],Contains sausage/hot dog.
-Right Proper,[],No animal products from the target categories detected.
-Roasted Poblano Pork,['sausage'],Contains sausage/hot dog.
-Roasted Poblano Sandwich,[],No animal products from the target categories detected.
-Rowan + Matt Chilitos,['sausage'],Contains sausage/hot dog.
-Salt & Pepper Chicken,['unfried_chicken'],Contains chicken.
-Salt And Pepper Chicken Link,['unfried_chicken'],Contains chicken.
-Salt And Pepper With Peppers & Onions,[],No animal products from the target categories detected.
-Sausage Egg And Cheese On A Biscuit (Sunday Only!),"['sausage', 'savory_dairy', 'egg']",Contains sausage/hot dog. Contains cheese/dairy. Contains egg.
-"Sausage, Egg & Cheese","['sausage', 'savory_dairy', 'egg']",Contains sausage/hot dog. Contains cheese/dairy. Contains egg.
-Shipping For T-Shirt (Holiday Promo),[],No animal products from the target categories detected.
-Shirt,[],No animal products from the target categories detected.
-Shirt For Bruce,[],No animal products from the target categories detected.
-Shreddies,[],No animal products from the target categories detected.
-Side Chili,[],No animal products from the target categories detected.
-Side Of Chili,[],No animal products from the target categories detected.
-Side Of Jalapenos,[],No animal products from the target categories detected.
-Side Of Meats & Foods Hot Sauce,[],No animal products from the target categories detected.
-Side Of Pickled Jalapenos,[],No animal products from the target categories detected.
-Side Of Pickles,[],No animal products from the target categories detected.
-Side Of Sauerkraut,[],No animal products from the target categories detected.
-Sloppy Joe,[],No animal products from the target categories detected.
-Smoked Hatch,['sausage'],Contains sausage/hot dog.
-Smoked Jalapeno Chicken,['unfried_chicken'],Contains chicken.
-Smoked Jalapeno Chicken Link,['unfried_chicken'],Contains chicken.
-Smoked Spicy Chicken,['unfried_chicken'],Contains chicken.
-Smoked Spicy Chicken Link,['unfried_chicken'],Contains chicken.
-Special,[],No animal products from the target categories detected.
-Spicy Chicken,['unfried_chicken'],Contains chicken.
-Spicy Chicken With Peppers And Jalape√±Os,['unfried_chicken'],Contains chicken.
-Sticker Pack!,[],No animal products from the target categories detected.
-Subbies Italian Sausage,['sausage'],Contains sausage/hot dog.
-Sweatshirt,[],No animal products from the target categories detected.
-Sweatshirt (M Only),[],No animal products from the target categories detected.
-Sweatshirt (S And M Only),[],No animal products from the target categories detected.
-Sweatshirt For Melissa,[],No animal products from the target categories detected.
-Tailgate Pack,[],No animal products from the target categories detected.
-Tank Top,[],No animal products from the target categories detected.
-Tank Top (S Only),[],No animal products from the target categories detected.
-Tiny Party 2 Ltded Poster,[],No animal products from the target categories detected.
-Tiny Party 2 Ltded Poster Test Print! (2016),[],No animal products from the target categories detected.
-Tiny Party 7 Poster (Pickup Only),[],No animal products from the target categories detected.
-Tiny Party Dippy Boys Ice Cream Novelty Products By Milk Cult‚Ñ¢,[],No animal products from the target categories detected.
-To Go,[],No animal products from the target categories detected.
-Tomato Hatch Chicken,['unfried_chicken'],Contains chicken.
-Tote Bag,[],No animal products from the target categories detected.
-Tote Bag (New!),[],No animal products from the target categories detected.
-Tuk Tuk,[],No animal products from the target categories detected.
-Turmeric,[],No animal products from the target categories detected.
-Vanilla Ice Cream Sandwich By Milkcult,['sweet_dairy'],Contains ice cream.
-Veg Side,[],No animal products from the target categories detected.
-Vegan Sausage,[],No animal products from the target categories detected.
-Veggie Chili,['egg'],Contains egg.
-Veggie Chili Dog,['egg'],Contains egg.
-Veggie Frito Pie,['egg'],Contains egg.
-Veggie Frito Pie & Bubbles,['egg'],Contains egg.
-Veggie Link,['egg'],Contains egg.
-Veggie Link (Limit 3),['egg'],Contains egg.
-Veggie Sandwich,['egg'],Contains egg.
-Veggie Sausage,['egg'],Contains egg.
-Veggie Sausage Egg & Cheese,"['savory_dairy', 'egg']",Contains cheese/dairy. Contains egg.
-Veggie Sausage Egg Cheese Biscuit,"['savory_dairy', 'egg']",Contains cheese/dairy. Contains egg.
-Veggie Sausage Egg Cheese Biscuit (Sunday Only),"['savory_dairy', 'egg']",Contains cheese/dairy. Contains egg.
-Veggie With Sauerkraut,['egg'],Contains egg.
-Veggie-Lito,['egg'],Contains egg.
-Veggielito,['egg'],Contains egg.
-White T (New!),[],No animal products from the target categories detected.
-White T-Shirt (Xs Only),[],No animal products from the target categories detected.
-William Hill Halfsmokes,['sausage'],Contains sausage/hot dog.
-Yonder Cities,[],No animal products from the target categories detected.
+item_name,animal_categories,reasoning,vegan,vegetarian,mpbamodifiable
+Chilito,['sausage'],Signature sausage item (Veggielito is separate item),False,False,False
+Halfsmoke,['sausage'],DC halfsmoke - pork/beef smoked sausage,False,False,False
+Bratwurst,['sausage'],German bratwurst - pork sausage,False,False,False
+Chorizo,['sausage'],Mexican chorizo - pork sausage,False,False,False
+Italian,['sausage'],Italian sausage - pork,False,False,False
+Garlic Pork,['sausage'],Garlic pork sausage link,False,False,False
+Smoked Jalapeno Chicken,['unfried_chicken'],Smoked jalapeno chicken sausage,False,False,False
+Smoked Spicy Chicken,['unfried_chicken'],Smoked spicy chicken sausage,False,False,False
+Salt & Pepper Chicken,['unfried_chicken'],Salt and pepper chicken sausage,False,False,False
+Egg & Cheese Sandwich,"['egg', 'savory_dairy']",Egg and cheese breakfast sandwich,False,True,False
+Bacon Egg & Cheese,"['bacon', 'egg', 'savory_dairy']",Bacon egg cheese sandwich,False,False,False
+"Sausage, Egg & Cheese","['sausage', 'egg', 'savory_dairy']",Sausage egg cheese breakfast sandwich,False,False,False
+Veggie Sausage Egg & Cheese,"['egg', 'savory_dairy']",Veggie sausage with egg and cheese,False,True,False
+Breakfast Burrito,"['egg', 'savory_dairy', 'sausage', 'bacon']",Breakfast burrito with meat (no veggie sub),False,False,False
+Breakfast Sausage Pack,['breakfast_sausage_patty'],Pack of breakfast sausage - pork,False,False,False
+Crispy Potatoes,[],Crispy potatoes,True,True,False
+Potatoes,[],Potatoes side,True,True,False
+Hot Sauce,[],Hot sauce condiment,True,True,False
+Pack Of Buns,[],Hot dog buns,True,True,False
+Veggie Link,[],Veggie sausage link,True,True,False
+Quart Of Chili,['ground_meat'],Quart of all-beef chili,False,False,False
+Pint Of Sauerkraut,[],Sauerkraut,True,True,False
+Ice Cream Sandwich,"['sweet_dairy', 'egg']",Ice cream sandwich,False,True,False
+Biscuit,"['sweet_dairy', 'egg']",Biscuit,False,True,False
+Side Of Chili,['ground_meat'],Side of beef chili,False,False,False
+Egg Cheese On A Biscuit (Sundays Only!),"['egg', 'savory_dairy']",Egg cheese biscuit,False,True,False
+Pack Of Bacon,['bacon'],Pack of house-cured bacon,False,False,False
+Pint Of Pickled JalapeOs,[],Pickled jalapenos,True,True,False
+Veggielito,['savory_dairy'],Veggie sausage with cheese (Veganlito is separate vegan item),False,True,False
+Veganlito,[],Vegan sausage,True,True,False
+Chickendog,['unfried_chicken'],Chicken hot dog,False,False,False
+Veggie Chili,['ground_meat'],Vegetarian chili [FIXED: Chili format - ground meat style dish],True,True,False
+Chili,['ground_meat'],Beef chili,False,False,False
+Frito Pie,"['ground_meat', 'savory_dairy']",Frito pie with chili (Veggie Chili is separate item),False,False,False
+Bacon,['bacon'],Bacon add-on,False,False,False
+Egg Cheese Sandwich,"['egg', 'savory_dairy']",Egg cheese sandwich,False,True,False
+Breakfast Bowl (New!),"['egg', 'sausage', 'bacon']",Breakfast bowl - can add meats,False,False,False
+Mini Breakfast Bowl (New!),"['egg', 'sausage', 'bacon']",Mini breakfast bowl,False,False,False
+Breakfast,"['egg', 'sausage', 'bacon']",Breakfast combo,False,False,False
+Ham,['sausage'],Ham add-on,False,False,False
+Chicken Sausage,['sausage'],Chicken sausage [FIXED: Chicken sausage → sausage format],False,False,False
+Pork Sausage,['sausage'],Pork sausage,False,False,False
+Andouille,['sausage'],Andouille sausage - pork,False,False,False
+Banger,['sausage'],British banger sausage,False,False,False
+4-Pack,['sausage'],4-pack of sausages,False,False,False
+Grill Pack,['sausage'],Grill pack of sausages,False,False,False
+Tailgate Pack,['sausage'],Tailgate sausage pack,False,False,False
+Links,['sausage'],Sausage links,False,False,False
+Ice Cream,"['sweet_dairy', 'egg']",Ice cream [FIXED: Baked goods typically have egg/dairy],False,True,False
+Sloppy Joe,['ground_meat'],Sloppy joe (no veggie sub on menu),False,False,False
+Grilled Cheese,['savory_dairy'],Grilled cheese sandwich,False,True,False
+Garlic With Sauerkraut,['sausage'],Garlic sausage with sauerkraut,False,False,False
+Salt And Pepper With Peppers Onions,['unfried_chicken'],Salt pepper chicken with peppers onions,False,False,False
+Polish,['sausage'],Polish sausage,False,False,False
+Veggie Sausage,[],Veggie sausage,True,True,False
+Add Egg,['egg'],Add egg,False,True,False
+Bell Pepper,[],Bell pepper add-on,True,True,False
+Jalapeno,[],Jalapeno add-on,True,True,False
+Smoked Hatch,[],Smoked hatch chile,True,True,False
+Turmeric,[],Turmeric add-on,True,True,False
+Pint Of Pickles,[],Pint of pickles,True,True,False
+Pack Of Sauerkraut,[],Pack of sauerkraut,True,True,False
+6Oz Block Of Beef Tallow,['ground_meat'],Beef tallow block,False,False,False
+Dozen Eggs,['egg'],Dozen eggs,False,True,False
+Old Westminster Seeds Skins,[],Seeds and skins product,True,True,False
+Pack Of Tortillas,[],Pack of tortillas,True,True,False
+Sides,[],Side dishes,True,True,False
+BBQ,['chunked_beef_or_pork'],BBQ meat item,False,False,False
+Burrito,"['sausage', 'egg', 'savory_dairy']",Burrito (no veggie sub on menu),False,False,False
+Special,['sausage'],Daily special - usually sausage,False,False,False
+Pork Veggie Sausage,[],Pork-free veggie sausage,True,True,False
+Vegan Veggie Sausage,[],Vegan sausage,True,True,False
+catering_takeout,[],Catering and takeout items - varies by content,False,False,False

@@ -223,12 +223,12 @@ def load_one_res_3_6_dinein(loc_id):
 
 def load_all_res_3_7_truly_consolidated():
     data = {}
-    location_ids_by_coverage = load_loc_ids()[:7]
+    location_ids_by_coverage = load_loc_ids()
     for loc_id in tqdm(location_ids_by_coverage):
-        if loc_id == location_ids_by_coverage[0]:
-            df = pd.read_parquet(DATA_DIR_3_6 / f'{loc_id}.parquet')
-        else:
-            df = pd.read_parquet(DATA_DIR_3_7 / f'{loc_id}.parquet')
+        # if loc_id == location_ids_by_coverage[0]:
+        #     df = pd.read_parquet(DATA_DIR_3_6 / f'{loc_id}.parquet')
+        # else:
+        df = pd.read_parquet(DATA_DIR_3_7 / f'{loc_id}.parquet')
         data[loc_id] = df
     return data
 

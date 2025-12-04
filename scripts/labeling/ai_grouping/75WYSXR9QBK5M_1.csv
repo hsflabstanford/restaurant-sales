@@ -1,27 +1,91 @@
-"canonical_name","variants","reasoning"
-"BBQ Chicken Sausage","['Bbq Chicken Frozen', 'Bbq Chicken Sausage', 'Bbq Chicken Sausage Piece', 'Frozen Bbq Chicken Sausages']","Same sausage type variants."
-"Baked Goods","['$2 Baked Goods', '$3 Baked Goods', '$4 Baked Goods', '$5 Baked Goods', '$6 Baked Goods', 'Baked Goods', 'Cater Lemon Cookie', 'Cater Lemon Cookies (Half)']","Baked goods variants."
-"Bento","['$9 Bento', 'Bento', 'Bentos', 'Mini Bento', 'Thanksgiving Bento']","Bento variants."
-"Bratwurst","['Beer Bratwurst', 'Bratwurst']","Same sausage type variants."
-"Breakfast Sausage","['Breakfast Frozen', 'Breakfast Sausage', 'Breakfast Sausage Service Charge', 'Breakfast Sausages', 'Fried Breakfast Stick', 'Frozen Breakfast', 'Frozen Breakfast Sausage']","Same sausage type variants."
-"Burger","['Bacon Mushroom Swiss Burger', 'Bbq Burger', 'Island Burger', 'Kimchee Veggie Burger', 'Kimchi Burger']","All burger variants."
-"Catering","['Cater Bbq Rack Ribs', 'Cater Char Siu Fried Noodles', 'Cater Corn', 'Cater Fried Noodles', 'Cater Fried Noodles (Half)', 'Cater Fried Rice', 'Cater Fries', 'Cater Grilled Steak', 'Cater Grilled Steak (Half)', 'Cater House Sausage', 'Cater Lemon Cookie', 'Cater Lemon Cookies (Half)', 'Cater Noodles', 'Cater Rice', 'Cater Rice (Half)', 'Cater Rolls', 'Cater Salad', 'Cater Salad (Half)', 'Cater Sausage', 'Cater Sausages (Half)', 'Cater Set-Up/Utensils/Plateware/Napkins', 'Cater Sliders', 'Cater Steak', 'Cater Steak (Half)', 'Cater Teriyaki Beef', 'Cater Teriyaki Beef (Half)', 'Cater Wings', 'Cater Wings (Half)']","Catering items."
-"Char Siu","['Cater Char Siu Fried Noodles', 'Char Siu', 'Char Siu Fried Rice', 'Char Siu Frozen', 'Char Siu Jerky', 'Char Siu Sausage', 'Char Siu Sausage Service Charge', 'Char Siu Sausages', 'Frozen Char Siu', 'Frozen Char Siu Sausage']","Same sausage type variants."
-"Chicken Pesto Sausage","['Chicken Pesto', 'Chicken Pesto Frozen', 'Chicken Pesto Sausage']","Same sausage type variants."
-"Chorizo","['Chorizo', 'Chorizo Cheese Dip', 'Chorizo Frozen', 'Chorizo Sausage', 'Chorizo Sausages', 'Chorizo Service Charge', 'Chorizo Sticks', 'Fried Chorizo Stick', 'Frozen Chorizo', 'Frozen Chorizo Sausage', 'Spanish Chorizo']","Same sausage type variants."
-"Fries/Tots","['Avocado Fries', 'Bbq Fries', 'Cater Fries', 'Chili Cheese Fries', 'Elote Fries', 'Fries', 'Garlic Fries', 'Hh Elote Fries', 'Hot Honey Wings With Fries', 'Kimchi Tots', 'Okonomiyaki Fries', 'Plain Fries', 'Stadium Fries', 'Stk No Fries', 'Sub Bbq Fries', 'Sub Okonomiyaki Fries', 'Truffle Tots']","Fries and tots variants."
-"Ginger Miso Sausage","['Fried G.Miso Stick', 'Frozen Ginger Miso', 'Fzn Ginger Miso', 'Ginger Miso', 'Ginger Miso Frozen', 'Ginger Miso Sausage', 'Ginger Miso Sausage Service Charge', 'Gm No Sausage']","Same sausage type variants."
-"Hot Dogs","['Chicago Dog', 'Chili Dog']","Hot dog variants."
-"Italian Sausage","['Frozen Italian', 'Frozen Italian Sausage', 'Italian', 'Italian Frozen', 'Italian Sausage', 'Italian Sticks']","Same sausage type variants."
-"Jerky","['Char Siu Jerky', 'Kalbi Jerky', 'Pipikaula Jerky', 'Prime Rib Jerky']","Jerky products."
-"Kalbi","['Kalbi Jerky', 'Kalbi Sausage']","Same sausage type variants."
-"Pizza","['""Hokulani"" Pizza', '""Kirei"" Pizza', '""The Row"" Pizza', 'Garlic Dipping Sauce For Pizza', 'Island Pizza', 'Pizza']","Pizza variants."
-"Polish Kielbasa","['Frozen Polish Kielbasa', 'Kielbasa', 'Kielbasa Sausage', 'Polish Kielbasa', 'Polish Kielbasa Frozen']","Same sausage type variants."
-"Portuguese Sausage","['Portuguese Salami', 'Portuguese Sausage']","Same sausage type variants."
-"Rice","['Cater Fried Rice', 'Cater Rice', 'Cater Rice (Half)', 'Char Siu Fried Rice', 'Fried Rice', 'Kimchee, Bbq, Fried Rice', 'Ok Fried Rice']","Rice dishes."
-"Salad","['Cater Salad', 'Cater Salad (Half)', 'Chicken Salad', 'Chinese Chicken Salad', 'Pasta Salad', 'Salad', 'Tomato Salad']","Salad variants."
-"Salami/Charcuterie","['Deli Salami', 'Finocchiona', 'Og Salami Sticks', 'Pepperoni', 'Portuguese Salami', 'Salami', 'Salami Bites', 'Smokey Sticks', 'Soppressata']","Cured meat products."
-"Sliders","['Bbq Bacon Sliders', 'Cater Sliders', 'Hh Bbq Bacon Sliders', 'Sliders']","Slider variants."
-"Spicy Korean Sausage","['Frozen Spicy Korean', 'Spicy Korean', 'Spicy Korean Frozen', 'Spicy Korean Sausage']","Same sausage type variants."
-"Thai Chicken Sausage","['Thai', 'Thai Chicken Sausage', 'Thai Sausage']","Same sausage type variants."
-"Wings","['Bbq Fried Chicken Wings', 'Cater Wings', 'Cater Wings (Half)', 'Furikake Wings', 'Garlic Parm Wings', 'Garlic Parmesan Fried Wings', 'Hh Korean Fried Chicken Wings', 'Hh Plain Chicken Wings', 'Hot Honey Wings', 'Hot Honey Wings With Fries', 'Jalape√±O Honey Fried Chicken Wings', 'Korean Fried Chicken Wings', 'Lemongrass Chicken Wings', 'Lemongrass Fried Chicken Wings', 'Plain Chicken Wings', 'Sweet And Spicy Wings']","All wing variants."
+canonical_name,variants,reasoning
+BBQ Chicken Sausage,['BBQ Chicken Sausage'],Same sausage type variants.
+Baked Goods,['Baked Goods'],Individual item (form factor split)
+Bento,['Bento'],Bento variants.
+Bratwurst,['Bratwurst'],Same sausage type variants.
+Breakfast Sausage,['Breakfast Sausage'],Same sausage type variants.
+Chicken Pesto Sausage,['Chicken Pesto Sausage'],Same sausage type variants.
+Fries/Tots,['Fries/Tots'],Fries and tots variants.
+Ginger Miso Sausage,['Ginger Miso Sausage'],Same sausage type variants.
+Hot Dogs,['Hot Dogs'],Hot dog variants.
+Italian Sausage,['Italian Sausage'],Same sausage type variants.
+Jerky,['Jerky'],Jerky products.
+Pizza,['Pizza'],Pizza variants.
+Polish Kielbasa,['Polish Kielbasa'],Same sausage type variants.
+Portuguese Sausage,['Portuguese Sausage'],Same sausage type variants.
+Sliders,['Sliders'],Slider variants.
+Spicy Korean Sausage,['Spicy Korean Sausage'],Same sausage type variants.
+Wings,['Wings'],All wing variants.
+2 Baked Goods,['2 Baked Goods'],Individual item (form factor split)
+3 Baked Goods,['3 Baked Goods'],Individual item (form factor split)
+4 Baked Goods,['4 Baked Goods'],Individual item (form factor split)
+5 Baked Goods,['5 Baked Goods'],Individual item (form factor split)
+6 Baked Goods,['6 Baked Goods'],Individual item (form factor split)
+Baked Goods,['Baked Goods'],Individual item (form factor split)
+Bread Loaf,"['Baked Bread Loaf', 'Bread Loaf']",Bread loaf variants.
+Char Siu,"['Char Siu Fried Rice', 'Char Siu Frozen', 'Char Siu Sausage', 'Char Siu Sausages', 'Char Siu']",Char siu product variants.
+Chorizo,"['Chorizo Cheese Dip', 'Chorizo Frozen', 'Chorizo Sausage', 'Chorizo Sausages', 'Chorizo Sticks', 'Spanish Chorizo', 'Fried Chorizo Stick', 'Chorizo']",Chorizo product variants.
+Chicken Salad,"['Chinese Chicken Salad', 'Chicken Salad']",Chicken salad variants.
+Chicken Lettuce Wrap,"['Hh Chicken Lettuce Wrap', 'Chicken Lettuce Wrap']",Lettuce wrap variants (Hh = Happy Hour).
+Empanada,"['Empanada 1', 'Empanada']",Empanada variants.
+Fried Rice,"['Ok Fried Rice', 'Kimchee, Bbq, Fried Rice', 'Fried Rice']",Fried rice variants.
+Guisantes Plate,"['Guisantes Plate Small', 'Guisantes Plates Large']",Guisantes plate size variants.
+Island Po Boy,"['Island Po Boi', 'Island Po Boii']",Po boy spelling variants.
+Kimchee,"['Kimchi', 'KimchiPickled Daikon', 'Kimchee']",Kimchee/kimchi spelling variants.
+Kimchee Quesadilla,"['Hh Kimchee Quesadilla', 'Kimchee Quesadilla']",Quesadilla variants (Hh = Happy Hour).
+Plate Lunch,"['Daily Plate Lunch', 'Chili Plate', 'Plate Lunch']",Plate lunch variants.
+Salami,"['Deli Salami', 'Salami Bites', 'Salami']",Salami product variants.
+Plain Sausage,['Plain Sausage'],Individual item (form factor split)
+Sausage Single,['Sausage Single'],Individual item (form factor split)
+Sausage Topping,['Sausage Topping'],Individual item (form factor split)
+Sausages,['Sausages'],Individual item (form factor split)
+Kalbi Sausage,['Kalbi Sausage'],Individual item (form factor split)
+Steak Mushroom Sausage,['Steak Mushroom Sausage'],Individual item (form factor split)
+Corned Beef Sausage,['Corned Beef Sausage'],Individual item (form factor split)
+5 Wed Special,['5 Wed Special'],Individual item (was in misc group)
+Wed Special,['Wed Special'],Individual item (was in misc group)
+Bbq,"['Bbq Pork Skewers', 'Bbq']",BBQ dish variants.
+Chicken Sandwich,"['Fried Chicken Sandwich', 'Spicy Chicken Sandwich', 'Caesar Chicken Wrap']",Chicken sandwich/wrap variants.
+BBQ,"['Bbq Sauce', 'Guava Smoked Bbq Brisket Sandwich']",BBQ items and sauces
+Chicken,"['Bucket Chicken', 'JalapeO Honey Fried Chicken Wings']",Chicken items
+Japanese Curry,['Japanese Curry'],Individual item (form factor split)
+Mandoo,['Mandoo'],Individual item (form factor split)
+Mini Manapua,['Mini Manapua'],Individual item (form factor split)
+Yakisoba,['Yakisoba'],Individual item (form factor split)
+Taegu,['Taegu'],Individual item (form factor split)
+Kamaboko Dip,['Kamaboko Dip'],Individual item (form factor split)
+Edamame,"['Chili Garlic Edamame', 'Garlic Soy Edamame']",Edamame variations
+Deli Sandwich,['Deli Sandwich'],Individual item (form factor split)
+Firecracker Sandwich,['Firecracker Sandwich'],Individual item (form factor split)
+Italian Sandwich,['Italian Sandwich'],Individual item (form factor split)
+Charcuterie,['Charcuterie'],Individual item (form factor split)
+Finocchiona,['Finocchiona'],Individual item (form factor split)
+Pepperoni,['Pepperoni'],Individual item (form factor split)
+Soppressata,['Soppressata'],Individual item (form factor split)
+Smokey Sticks,['Smokey Sticks'],Individual item (form factor split)
+Hot Dogs,"['Hot Dogs', 'Frankfurter']",Hot dog items
+Fries/Tots,['Fries/Tots'],Fried potato items
+Poke,['Poke'],Poke bowls
+Salad,['Salad'],Individual item (form factor split)
+Pasta Salad,['Pasta Salad'],Individual item (form factor split)
+Loaded Nachos,['Loaded Nachos'],Individual item (form factor split)
+Pizzadilla,['Pizzadilla'],Individual item (form factor split)
+Bento/Plate,['9 Bento'],Bento and plate lunch items
+Chocolate Cake Slice,['Chocolate Cake Slice'],Individual item (form factor split)
+Doublefat Ice Cream,['Doublefat Ice Cream'],Individual item (form factor split)
+Pumpkin Crunch,['Pumpkin Crunch'],Individual item (form factor split)
+Small Bread Pudding,['Small Bread Pudding'],Individual item (form factor split)
+Bread,['Italian Flat Bread'],Bread items
+Sweet Potato Taro Chips,['Sweet Potato Taro Chips'],Individual item (form factor split)
+Sauerkraut,['Sauerkraut'],Individual item (form factor split)
+Salmon Dip,['Salmon Dip'],Individual item (form factor split)
+Empanada,['Empanada'],Empanadas
+Burger,['Burger'],Burgers
+Steak,['Steak'],Steak
+Breakfast,['Breakfast'],Breakfast items
+Dipping Sauce,['Dipping Sauce'],Dipping sauces
+Mac Cheese,['Huff N Puff Mac'],Mac and cheese
+Mini Bites,['Mini Bites'],Individual item (was in misc group)
+Beef Chili,['Beef Chili'],Individual item (was in misc group)
+Thai Chicken Sausage,['Thai Chicken Sausage'],Split from mixed-category Thai Chicken Sausage - neutral items
+catering_takeout,['Catering'],Catering and takeout items

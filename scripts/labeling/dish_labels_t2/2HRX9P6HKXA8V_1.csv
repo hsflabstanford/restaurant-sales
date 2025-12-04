@@ -1,0 +1,32 @@
+item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg,shrimp,whole_bird_white_meat
+Big Bob Bratwurst,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Bockwurst,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Weisswurst,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Dirtyface Beer Wurst,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Currywurst,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Chicken Sausage,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Italian Organic Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Organic Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Helgas Giant Kelbassi,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Chili,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False
+Chili Con Carne,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False
+Vegan Chili,True,True,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False
+Bavarian Cream Of Potato Soup,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,False,False
+Soup,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Vegan Soup,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Veggie Soup,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Large Sauerkraut - 8Oz Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+German Potato Salad,False,False,False,False,False,False,False,False,False,False,True,False,False,True,True,False,False,False,False
+Warm Bavarian Pretzel,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Potato Chips,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Gingerbread Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Apple Slices,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Add Ons,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Gluten Free Bun,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+G.P.S.,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Big City Beef Frank,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Turkey Dog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Hans Jalapeno Cheddar,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Beyond Sausage,True,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Veggie Wurst,False,True,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False

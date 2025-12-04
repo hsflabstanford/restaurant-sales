@@ -1,15 +1,19 @@
-canonical_name,variants,reasoning
-Beyond Burger,[],Not in menu.
-Bulldog Butty,[],Unique name.
-Cole Slaw,[],Unique name.
-Cool,[],Not in menu.
-Four Guys Burger,[],Unique name.
-Gold Standard - Bacon,[],All refer to the Gold Standard Breakfast Sandwich with different fillings.
-Hi,[],Not in menu.
-Ice Cream Sandwich,['Og Favorite Ice Cream Sandwich'],"""Og Favorite"" is a decorative adjective."
-Impossible Patty Melt,[],Unique name.
-Miss Vickie,[],Unique name.
-Moms Jeans Desserts,[],Not in menu.
-Sabich Salad Sandwich,[],Not in menu.
-Telway Burger,[],Unique name.
-The Alternative,[],Unique name.
+"canonical_name","variants","reasoning"
+"Beyond Burger","['Beyond Burger']","Plant-based burger - vegetarian, different from beef burgers"
+"Four Guys Burger","['Four Guys Burger']","Beef burger with bacon - separate due to bacon"
+"Telway Burger","['Telway Burger']","Beef burger with cheese"
+"Impossible Patty Melt","['Impossible Patty Melt']","Impossible patty melt - vegetarian"
+"Bulldog Butty","['Bulldog Butty']","British bacon butty"
+"Sabich Salad Sandwich","['Sabich Salad Sandwich']","Sabich salad sandwich"
+"The Alternative","['The Alternative']","Vegan option"
+"Gold Standard - Bacon","['Gold Standard - Bacon']","Gold Standard with bacon"
+"Gold Standard - Bacon Kale","['Gold Standard - Bacon Kale']","Gold Standard with bacon and kale"
+"Gold Standard - Impossible","['Gold Standard - Impossible']","Gold Standard with Impossible sausage - vegetarian"
+"Gold Standard - Kale","['Gold Standard - Kale']","Gold Standard with kale - vegetarian, no meat"
+"Cole Slaw","['Cole Slaw']","Coleslaw"
+"Miss Vickie","['Miss Vickie']","Chips"
+"Ice Cream Sandwich","['Ice Cream Sandwich']","Ice cream sandwich"
+"Og Favorite Ice Cream Sandwich","['Og Favorite Ice Cream Sandwich']","OG Favorite ice cream sandwich"
+"Moms Jeans Desserts","['Moms Jeans Desserts']","Desserts"
+"Cool","['Cool']","Misc item"
+"Hi","['Hi']","Misc item"

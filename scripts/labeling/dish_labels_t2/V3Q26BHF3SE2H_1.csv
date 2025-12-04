@@ -1,0 +1,70 @@
+item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg,shrimp,whole_bird_white_meat
+16th Seed,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Arbutus Avo,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Avocado Tomato,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bagel,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Caprese,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Croissant,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Grilled Cheese,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Lox Bagel,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Muffin,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Sausage Breakfast,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False
+Scone,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+The Deep,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Turkey,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Wake N' Bacon,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False
+50 Buffalo Wings,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Wings (V),True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Bbq Chicken,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Caesar Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Danish,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Doughnut,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Cinnamon Bun,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Early Bird,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False
+Fruit Platter,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Hummus,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Mediterranean,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Veggie Platter,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Southwest,False,False,True,False,False,False,False,False,False,False,True,False,True,False,True,False,False,False,False
+Spinach Feta Tart,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Sec Box,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False,True,False,False
+Arbutus Arts Festival Special,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Rise And Grind Special,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False
+Rms Special,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+St.Patty Special,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Kids Meal,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Med Salad Single Serve,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Salad Bar,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+East Drive Garden Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Spinach Bacon Salad,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False
+Wrap Box,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Chicken Apple Arugula Sandwich,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Tomato Basil Panini,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Scrambled Eggs Wheat Toast,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Lemon Bundt Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Banana Blueberry Breakfast Bread,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Zucchini Bread,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Pretzel Bites,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Chocolate Strawberries,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Blazing Bella,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pastry Platter,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Canape Platter,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Pork Canape Platter,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fish Canape Platter,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+catering_takeout,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+to_remove,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bagel Sandwich,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Bananas,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Breakfast Sandwich Platter,False,False,False,False,False,False,False,False,False,True,True,False,False,False,True,False,True,False,False
+Bruschetta Canape Platter,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cookie Platter,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Goat Fig Canape Platter,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Hashbrown,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Prosciutto Canape,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Salmon Canape,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Double Meat,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Side Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sausage Egg And Cheese,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,True,False,False

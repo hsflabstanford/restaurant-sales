@@ -1,0 +1,75 @@
+item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg,shrimp,whole_bird_white_meat
+Ajvar Dip,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Olive Tapenade Dip,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pumpkin Hummus Dip,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Roasted Red Pepper Hummus,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Hummus,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+3 Cheese Caramelized Onion Dip,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Buffalo Broccoli Dip,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Vegan Spinach Dip,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cucumber Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Elote Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Red Cabbage Apple Slaw,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Tahini Cauliflower Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Carrot Pineapple Sunshine Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Blackbean Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Caprese Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Coleslaw,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Daikon Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+German Potato Salad,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False
+Kalamata Cucumber Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Rainbow Pride Salad,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Roasted Broccoli Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Salad Meal,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sweet Potato And Kale Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Tuscan White Bean Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Poultry Salad,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Roasted Cauliflower,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cheese Pizza,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pepperoni Pizza,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+White Pizza,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Red Pie (Vegan) Pizza,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Margarita Pizza,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pie Of The Week Pizza,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+New Year Pizza (Onsite Order),False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+New Year Special Good Luck Pork And Sauerkraut,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pizza,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Soft Pretzel And Big Hop Beer Mustard,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Gratitude Pretzel,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pretzels,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Breadsticks,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Burrito,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Cheese Quesadilla With Salsa,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Cheese Tostada With Salsa,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Red Chile Enchiladas,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Totchos,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Chicken Sandwich,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Pork Sandwich,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+Shellfish Sandwich,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Beef Green Chile,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Pickled Veggies,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Chips And Salsa (Side),True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Potater Chipz,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+French Fries,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cheesey Tots,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Cheese Board,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Posole,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Soup Of The Day,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Beef Chili,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False
+Vegan Chili,True,True,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False
+Pork Chili,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Green Chile,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Pork Green Chile,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Apple Crumble,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Brownie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Nunkin Spice Bread Pudding,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Rice Krispy Treat,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Coconut Smiles,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Baked Goods,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Mac Cheese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Fruit,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Condiment/Spread,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Breakfast,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+catering_takeout,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+to_remove,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False

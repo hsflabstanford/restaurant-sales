@@ -1,398 +1,133 @@
-item_name,animal_categories,reasoning
-item_name,animal_categories,reasoning
-Turkey Bacon Avocado Panini,"['unfried_chicken', 'bacon', 'savory_dairy']","Menu lists Turkey breast ('unfried_chicken'), turkey bacon ('bacon'), and cheddar cheese ('savory_dairy')."
-Spicy Chicken Panini,"['unfried_chicken', 'savory_dairy']","Menu lists chicken breast ('unfried_chicken') and cheddar cheese ('savory_dairy')."
-Turkey Bacon Avocado Wrap,"['unfried_chicken', 'bacon', 'savory_dairy']","Menu lists Turkey breast ('unfried_chicken'), turkey bacon ('bacon'), and cheddar cheese ('savory_dairy')."
-Acai Bowl,[],"Menu lists acai, strawberries, banana, granola, blueberries, and coconut. All plant-based."
-Fresh Beyond Burger,[],"Menu lists a 'Beyond burger patty', which is plant-based."
-Caesar Blt Chicken Wrap,"['unfried_chicken', 'bacon', 'savory_dairy', 'egg']","Menu lists 'Chicken breast' ('unfried_chicken'), 'turkey bacon' ('bacon'), 'parmesan' ('savory_dairy'), and caesar dressing ('egg')."
-Beach Salad,"['unfried_chicken', 'savory_dairy']","Menu lists 'chicken breast' ('unfried_chicken') and 'feta' ('savory_dairy')."
-Turkey Pesto Panini,"['unfried_chicken', 'savory_dairy']","Menu lists 'Turkey breast' ('unfried_chicken') and 'mozzarella' ('savory_dairy')."
-Mango Mania,['sweet_dairy'],"Older menus show this smoothie contains 'non-fat frozen yogurt' ('sweet_dairy'). The current menu lacks it, but this classification reflects its original recipe."
-Breakfast Panini,"['egg', 'bacon', 'savory_dairy']","Menu lists 'Egg', 'turkey bacon' ('bacon'), and 'cheddar cheese' ('savory_dairy')."
-Veggie Portobello,['savory_dairy'],"Menu lists 'mozzarella' ('savory_dairy')."
-Pb2 Bowl,[],"Legacy name for PB Bowl. The menu shows it contains cashew milk and honey (not a category), but no dairy or other animal products."
-Asian Chicken Wrap,['unfried_chicken'],"The full menu shows this contains 'chicken breast' ('unfried_chicken')."
-Bbq Chicken Panini,"['unfried_chicken', 'savory_dairy']","Menu lists 'BBQ Chicken' ('unfried_chicken') and 'cheddar cheese' ('savory_dairy')."
-Southewestern Fiesta Wrap,"['unfried_chicken', 'savory_dairy']","This is a wrap version of the Fiesta Bowl, which contains chicken, cheddar, and greek yogurt. Categories: 'unfried_chicken', 'savory_dairy'."
-Pitaya Bowl,[],"The full menu shows this contains almond milk and fruit. All plant-based."
-Meat Salad Bowl ChickenTurkey,"['unfried_chicken']","Item name indicates 'Chicken' ('unfried_chicken') and 'Turkey' ('unfried_chicken')."
-Avocado Toast,[],"The menu shows this is plant-based by default."
-Mediterranean,"['unfried_chicken', 'savory_dairy']","This is the 'Mediterranean Wrap', which contains chicken breast ('unfried_chicken') and feta cheese ('savory_dairy')."
-Albacore Melt Panini,['savory_dairy'],"This item contains tuna (not a category) and cheese ('savory_dairy')."
-Chicken Caesar Wrap,"['unfried_chicken', 'bacon', 'savory_dairy', 'egg']","Legacy name for Caesar BLT Wrap. Contains chicken ('unfried_chicken'), parmesan ('savory_dairy'), caesar dressing ('egg') and inferred bacon ('bacon') from its modern counterpart."
-Veg Buddha Bowl,['savory_dairy'],"Menu lists 'feta' ('savory_dairy')."
-Mission Burrito Wrap,"['unfried_chicken', 'savory_dairy']","Menu lists choice of 'chicken breast' ('unfried_chicken') or 'Beyond Beef' (plant-based), plus 'cheddar' and 'greek yogurt' ('savory_dairy')."
-Greek Yogurt Bowl,['sweet_dairy'],"Menu lists 'Greek yogurt' ('sweet_dairy')."
-Fiesta Bowl,"['unfried_chicken', 'savory_dairy']","Menu lists choice of 'chicken breast' ('unfried_chicken') or 'Beyond Beef' (plant-based), plus 'cheddar' and 'greek yogurt' ('savory_dairy')."
-Breakfast Wrap,"['egg', 'bacon', 'savory_dairy']","Menu lists 'egg', 'turkey bacon' ('bacon'), and 'cheddar cheese' ('savory_dairy')."
-Teriyaki Bowl,['unfried_chicken'],"Menu lists 'grilled chicken' ('unfried_chicken')."
-Kale Vegetarian Wrap,['savory_dairy'],"The full menu shows this wrap contains feta cheese ('savory_dairy')."
-Super Veg,[],"Menu lists beet, kale, hummus, and other vegetables. All plant-based."
-Mediterranean Spinach Salad,['savory_dairy'],"Inferred to contain feta cheese ('savory_dairy'), consistent with other Mediterranean items."
-Asian Sesame Salad,[],"This salad is plant-based by default; chicken is a common add-on, not a default ingredient."
-Quesadilla Chicken Fiesta,"['unfried_chicken', 'savory_dairy']","The menu lists this as 'Chicken Pesto quesadillas', containing chicken ('unfried_chicken') and mozzarella ('savory_dairy')."
-Healthy Start Wrap,"['egg', 'bacon', 'savory_dairy']","The full menu shows this contains 'egg', 'turkey bacon' ('bacon'), and 'cheddar cheese' ('savory_dairy')."
-Kid'S Grilled Cheese Panini,['savory_dairy'],"Name implies 'Grilled Cheese' ('savory_dairy')."
-Kid'S Grilled Cheese Quesadilla,['savory_dairy'],"Name implies 'Grilled Cheese' ('savory_dairy')."
-Kid'S Grilled Cheese Sandwich,['savory_dairy'],"Name implies 'Grilled Cheese' ('savory_dairy')."
-Healthy Start Panini,"['egg', 'bacon', 'savory_dairy']","The full menu shows this contains 'egg', 'turkey bacon' ('bacon'), and 'cheddar cheese' ('savory_dairy')."
-English Egg Muffin,['egg'],"This breakfast sandwich contains 'egg' by default, but no default meat."
-Early Bird Panini,"['egg', 'bacon', 'savory_dairy']","The full menu shows this contains 'egg', 'turkey bacon' ('bacon'), and 'mozzarella cheese' ('savory_dairy')."
-Vegetarian Combo Meal,['savory_dairy'],"A combo of vegetarian items, which often contain cheese ('savory_dairy') like the Veggie Portobello panini."
-Early Bird Wrap,"['egg', 'bacon', 'savory_dairy']","The full menu shows this contains 'egg', 'turkey bacon' ('bacon'), and 'mozzarella cheese' ('savory_dairy')."
-Quinoa Chickpeas,[],"Menu lists only plant-based ingredients."
-Santa Fe Quesadilla,"['unfried_chicken', 'savory_dairy'],","A quesadilla implies cheese ('savory_dairy'), and the full menu shows it can be ordered with chicken ('unfried_chicken')."
-Quinoa Salad,[],"Menu lists only plant-based ingredients."
-Cheesecake,['sweet_dairy', 'egg'],"Name implies cheese in a sweet context ('sweet_dairy') and egg."
-Quinoa Lentils,[],"Menu lists only plant-based ingredients."
-Tex Bowl,"['unfried_chicken', 'bacon']","Inferred from modifications ('No Turkey', 'No Bacon') to contain turkey ('unfried_chicken') and/or bacon ('bacon') by default."
-Kale Caesar Salad,"['savory_dairy', 'egg'],","The full menu shows this contains parmesan cheese ('savory_dairy') and caesar dressing ('egg')."
-Hummus Toast,[],"The full menu shows this is plant-based by default."
-Portobello Balsamic Toast,['savory_dairy'],"The full menu shows this toast contains feta cheese ('savory_dairy')."
-Cali Bowl,['sweet_dairy'],"Inferred from modifications ('Greek On Side') to contain a yogurt-based sauce ('sweet_dairy')."
-Cranberry Turkey Panini,['unfried_chicken', 'savory_dairy'],"The full menu shows this contains turkey ('unfried_chicken') and mozzarella ('savory_dairy')."
-The Lenny,[],"Inferred from modifications to be a plant-based smoothie."
-Vegan Combo Meal,[],"A combo of vegan items."
-PJ Panini,[],"Inferred to be Peanut Butter & Jelly, which is plant-based."
-Chicken Caesar Salad,"['unfried_chicken', 'savory_dairy', 'egg']","The full menu shows this contains chicken ('unfried_chicken'), parmesan ('savory_dairy') and caesar dressing ('egg')."
-Blue Spirulina,[],"Spirulina is algae; assumed to be a plant-based smoothie."
-Chicken 2 Combo,['unfried_chicken'],"Name implies a combo centered around a chicken ('unfried_chicken') item."
-Blue Spirulina Bowl,[],"Assumed to be a plant-based power bowl like Acai or Pitaya."
-Organic Chicken And Wild Rice,['unfried_chicken'],"Name indicates chicken ('unfried_chicken'). Likely a soup."
-Mediterranean Bowl,"['unfried_chicken', 'savory_dairy']","Menu lists Turkey Breast ('unfried_chicken') and feta cheese ('savory_dairy')."
-Beyond Sausage,[],"Contains 'Beyond Sausage', which is plant-based."
-Coco Avocado,[],"Inferred from name and modifications to be a plant-based smoothie."
-Moroccan Glow Bowl,['sweet_dairy'],"Inferred from modifications ('No Yogurt') to contain a yogurt-based sauce ('sweet_dairy')."
-The Marshall,[],"This appears to be a plant-based smoothie base. Customer protein add-ins are customizations, not default ingredients."
-Vegetable Soup,[],"Inferred from name and other soup data to be plant-based."
-Vegan Soup Of The Day,[],"Name explicitly states it's vegan."
-Matcha Green Tea Bowl,['sweet_dairy'],"The 'Matcha blueberry smoothie' on the menu contains 'vanilla greek yogurt' ('sweet_dairy'). This bowl is a variation of that."
-Apple Tart,[],"Inferred to be a plant-based dessert."
-Soba Noodle Bowls,[],"Inferred from modifications to be a plant-based 'build your own' bowl."
-Vegetarian Caesar Salad,"['savory_dairy', 'egg']","A vegetarian Caesar still contains parmesan ('savory_dairy') and caesar dressing ('egg')."
-Steel Cut Oat Meal,[],"The 'Spiced Oatmeal' on the full menu is plant-based."
-1 Chocolate,['sweet_dairy'],"Chocolate products often contain dairy ('sweet_dairy')."
-2 Combo,[],"Pricing package, not a food item."
-3 Combo,[],"Pricing package, not a food item."
-9.99 Combo Meal,[],"Pricing package, not a food item."
-"A Bit Of Pumpkin A Dab Of Spice, Makes Everything Nice! Fall Is In The Air At Fresh Healthy Cafe!",[],"Promotional text."
-Abc Cookies,[],"Menu states 'no dairy, no eggs, no animal ingredients'."
-Abc'S Cookies,[],"Menu states 'no dairy, no eggs, no animal ingredients'."
-Apple,[],"Fruit."
-Apple Slice,[],"Fruit."
-Bada Bean Bada Boom Beans,[],"Packaged snack."
-Baked Chips Small Bag,[],"Packaged snack."
-Banana,[],"Fruit."
-Bear Granola Bites,[],"Packaged snack."
-Beyond Burger Combo,[],"Combo centered around a 'Beyond burger' (plant-based)."
-Beyond Sausage Combo,[],"Combo centered around a 'Beyond Sausage' (plant-based)."
-Big Panini Platter,"['unfried_chicken', 'bacon', 'savory_dairy']","Catering platter. Contains an assortment of paninis with chicken, bacon, and cheese."
-Big Salad Bowls,"['unfried_chicken', 'savory_dairy']","Catering platter. Contains an assortment of salads, some with chicken and cheese."
-Big Wrap Platter,"['unfried_chicken', 'bacon', 'savory_dairy']","Catering platter. Contains an assortment of wraps with chicken, bacon, and cheese."
-Bite Size Bobo'S Oat,[],"Packaged snack."
-Box Lunch,[],"Generic catering item."
-Box Lunch 9.95,[],"Generic catering item."
-Byo ProteinSalad Bowl,"['unfried_chicken', 'savory_dairy']","A 'Build Your Own' bowl where chicken ('unfried_chicken') and cheese/yogurt ('savory_dairy') are common options."
-Catering Utensils Per Person,[],"Non-food item."
-Cheese Stick,['savory_dairy'],"Name indicates 'cheese' ('savory_dairy')."
-Chicken Caesar,"['unfried_chicken', 'bacon', 'savory_dairy', 'egg']","Legacy name for Caesar BLT Wrap, contains chicken ('unfried_chicken'), parmesan ('savory_dairy'), caesar dressing ('egg') and inferred bacon ('bacon')."
-Chickenless Beach Salad,['savory_dairy'],"The base Beach Salad contains feta ('savory_dairy'). This version removes the chicken."
-Chips,[],"Packaged snack."
-Chunky Monkey,['sweet_dairy'],"Menu lists 'vanilla greek yogurt' ('sweet_dairy')."
-City 12 Wrap,[],"Off-menu wrap with unknown ingredients."
-City Chips,[],"Packaged snack."
-City Mandys Cookies,[],"Packaged snack."
-City Mandys Cream Pie,['sweet_dairy'],"Name implies a cream-based dessert ('sweet_dairy')."
-City Of Cape Protein Bowl,"['unfried_chicken', 'savory_dairy'],","A custom protein bowl, likely containing chicken ('unfried_chicken') and a dairy element like cheese or yogurt ('savory_dairy')."
-City Salad,[],"Off-menu salad with unknown ingredients."
-City Salad Protein,"['unfried_chicken', 'savory_dairy'],","A custom protein salad, likely containing chicken ('unfried_chicken') and a dairy element like cheese ('savory_dairy')."
-Cliff Duos,[],"Packaged snack."
-Cliff Protein Bar,[],"Packaged snack."
-Dairy Fiesta Bowl,"['unfried_chicken', 'savory_dairy']","This is the Fiesta Bowl, which has chicken/Beyond and dairy. The name emphasizes the 'savory_dairy' (cheddar, yogurt)."
-Egg Avocado Toast,['egg'],"Name indicates 'egg'."
-Egg N Muffin,['egg'],"Legacy name for English Egg Muffin, contains 'egg'."
-Egg Quinoa Chickpeas,['egg'],"Name indicates 'egg'."
-Egg Vegetarian Wrap,['egg'],"Name indicates 'egg'."
-Egift Card,[],"Non-food item."
-Energy Bites,[],"Packaged snack."
-English Muffin Coffee,[],"Drink and a bread item."
-English Muffin Smoothie,['sweet_dairy'],"A smoothie, which often contains yogurt ('sweet_dairy')."
-English Muffin Squeeze,[],"A juice, which is plant-based."
-Enjoy Life Lentils,[],"Packaged snack."
-Food Should Taste Good Chips,[],"Packaged snack."
-Fresh Fit Blast,['sweet_dairy'],"Sounds like a smoothie, likely contains yogurt ('sweet_dairy')."
-Fresh Fitness Blast,['sweet_dairy'],"Sounds like a smoothie, likely contains yogurt ('sweet_dairy')."
-Fresh Greens Salad,[],"Likely a base salad with only vegetables."
-Fresh Panini Platter,"['unfried_chicken', 'bacon', 'savory_dairy']","Catering platter. Contains an assortment of paninis with chicken, bacon, and cheese."
-Fresh Soup,[],"Generic soup item, ingredients vary."
-Fruit Cup,[],"Fruit."
-Gift Card,[],"Non-food item."
-Hard Boiled Egg,['egg'],"Name indicates 'egg'."
-Hard Boiled Egg 2 Pc,['egg'],"The menu lists 'egg bites' which can contain turkey bacon or be spinach/feta. This item is just the egg."
-Harvest Signature Bowl,"['unfried_chicken', 'savory_dairy']","The full menu shows signature bowls contain chicken/turkey ('unfried_chicken') and dairy ('savory_dairy')."
-Heat And Serve,[],"Generic item."
-Heavenly Organics Chocolate Honey Patty,[],"Packaged snack."
-Hillshire Snacking,['chunked_beef_or_pork', 'sausage'],"Packaged snack from a meat company, likely contains 'chunked_beef_or_pork' or 'sausage'."
-Jolly Green,[],"Name suggests a plant-based juice or smoothie."
-Kale Turkey Sausage Soup,['sausage', 'unfried_chicken'],"Name indicates 'turkey' ('unfried_chicken') 'sausage' ('sausage')."
-Kid'S Combo With A Smoothie,['sweet_dairy'],"The smoothie portion likely contains yogurt ('sweet_dairy')."
-Kids Combo,[],"Pricing package."
-Kids Combo With Smoothie,[],"Pricing package."
-Kids Combo With Squeeze,[],"Pricing package."
-Kind Bar,[],"Packaged snack."
-Like Is Good Chips,[],"Packaged snack."
-Loyalty Up Grade,[],"Non-food item."
-Mandarin Orange Cup,[],"Fruit."
-Mandy'S Bakery,"['sweet_dairy', 'egg']","Generic bakery item, likely contains dairy and egg."
-Meat,['beef_or_pork_burger'],"Inferred from modifications to be a customizable hamburger ('beef_or_pork_burger')."
-Meat Combo Meal,[],"Pricing package."
-Muffin,['egg', 'sweet_dairy'],"Baked goods like muffins typically contain 'egg' and dairy ('sweet_dairy')."
-Orange,[],"Fruit."
-Over Night Oats,[],"The menu lists 'Over Night Oats + Protein' with cashew milk and honey. This is the plant-based (non-vegan) base."
-Pair A Panini,[],"Pricing package."
-Pair A Salad,[],"Pricing package."
-Pair A Wrap,[],"Pricing package."
-Pineapple Creamsicle,['sweet_dairy'],"Name 'Creamsicle' implies a dairy-based smoothie ('sweet_dairy')."
-Pineapple Creamsicle 2,['sweet_dairy'],"Name 'Creamsicle' implies a dairy-based smoothie ('sweet_dairy')."
-Power Bowl Bar,[],"Catering setup, not a single dish."
-Pretzels And Hummus,[],"Plant-based snack."
-PretzelsHummus,[],"Plant-based snack."
-Protein Bakery Brownie,"['sweet_dairy', 'egg']","Packaged snack, likely contains dairy and egg."
-Protein Bakery Cookies,"['sweet_dairy', 'egg']","Packaged snack, likely contains dairy and egg."
-Protein Bites,[],"Packaged snack."
-Protein Bowl,"['sweet_dairy', 'unfried_chicken']","The menu's 'chocolate protein bowl' and 'Protein Power' smoothie have a yogurt base. This customizable bowl would start with that and allow chicken add-ins."
-Protein Bowl Box,"['sweet_dairy', 'unfried_chicken'],","Same as Protein Bowl, a customizable bowl with dairy and chicken as common components."
-Rx Bars,[],"Packaged snack."
-Sabra Snackers,[],"Packaged snack."
-Side Salad,[],"Base salad is plant-based."
-Signature Bowls,[],"Category heading."
-Simply 7 Chips,[],"Packaged snack."
-Soup Of The Day,[],"Generic soup item, ingredients vary."
-Sweet Bread,['egg', 'sweet_dairy'],"Baked goods like sweet bread typically contain 'egg' and dairy ('sweet_dairy')."
-Sweet Street Bar,"['sweet_dairy', 'egg']","Packaged snack, likely contains dairy and egg."
-Sweet Street Brownie,"['sweet_dairy', 'egg']","Packaged snack, likely contains dairy and egg."
-Sweet Street Krispy,['sweet_dairy'],"Rice Krispy treats typically contain butter ('sweet_dairy') and sometimes gelatin (not a category)."
-Sweets Un Sweetened,[],"Generic item."
-Trail Mix,[],"Packaged snack."
-Turkey Pesto,['unfried_chicken', 'savory_dairy'],"Legacy name for Turkey Pesto Panini, contains turkey ('unfried_chicken') and mozzarella ('savory_dairy')."
-Tuscan White Bean With Chicken,['unfried_chicken'],"Name indicates chicken ('unfried_chicken')."
-Unchicken Blt Wrap,"['bacon', 'savory_dairy']","Contains 'Unchicken' (plant-based). A BLT contains bacon ('bacon'). Wraps often have aioli/cheese ('savory_dairy')."
-UnchickenBeyond Mission Burrito Wrap,['savory_dairy'],"Contains 'Unchicken' and 'Beyond' (plant-based). The base wrap has cheddar and yogurt ('savory_dairy')."
-Vegan Avocado Wrap,[],"Explicitly vegan."
-Vegan Bbq Unchicken Panini,[],"Vegan version of BBQ Chicken Panini."
-Vegan Big Salad Bowls,[],"Explicitly vegan catering item."
-Vegan Breakfast Wrap,[],"Vegan version of Breakfast Wrap."
-Vegan Buddha Bowl,[],"Vegan version of Veg Buddha Bowl."
-Vegan Cali Bowl,[],"Vegan version of Cali Bowl."
-Vegan Harvest Signature Bowl,[],"Vegan version of a signature bowl."
-Vegan Mango Mania,[],"Vegan version of Mango Mania."
-Vegan Mediterranean,[],"Vegan version of Mediterranean Wrap."
-Vegan Mission Burrito Wrap,[],"Vegan version of Mission Burrito."
-Vegan Moroccan Glow Bowl,[],"Vegan version of Moroccan Glow Bowl."
-Vegan Pesto Panini,[],"Vegan version of Turkey Pesto Panini."
-Vegan Portobello,[],"Vegan version of Veggie Portobello."
-Vegan Santa Fe Quesadilla,[],"Vegan version of a quesadilla."
-Veganized Panini,[],"A standard panini made vegan."
-Vegetarian,[],"Generic category."
-Vegetarian Enjoy Life Lentil Chips,[],"Packaged snack."
-Veggie Sticks,[],"Vegetables."
-Yogurt Parfait,['sweet_dairy'],"Name indicates 'yogurt' ('sweet_dairy')."
-
-Spicy Chicken Panini,"['unfried_chicken', 'savory_dairy']","Menu lists chicken breast ('unfried_chicken') and cheddar cheese ('savory_dairy')."
-Turkey Bacon Avocado Wrap,"['unfried_chicken', 'bacon', 'savory_dairy']","Menu lists Turkey breast ('unfried_chicken'), turkey bacon ('bacon'), and cheddar cheese ('savory_dairy')."
-Acai Bowl,[],"Menu lists acai, strawberries, banana, granola, blueberries, and coconut. All plant-based."
-Fresh Beyond Burger,"['beef_or_pork_burger']","Menu lists a 'Beyond burger patty', which is an analog for the 'beef_or_pork_burger' category."
-Caesar Blt Chicken Wrap,"['unfried_chicken', 'bacon', 'savory_dairy']","Menu lists 'Chicken breast' ('unfried_chicken'), 'turkey bacon' ('bacon'), and 'parmesan' ('savory_dairy')."
-Beach Salad,"['unfried_chicken', 'savory_dairy']","Menu lists 'chicken breast' ('unfried_chicken') and 'feta' ('savory_dairy')."
-Turkey Pesto Panini,"['unfried_chicken', 'savory_dairy']","Menu lists 'Turkey breast' ('unfried_chicken') and 'mozzarella' ('savory_dairy')."
-Mango Mania,['sweet_dairy'],"Older menus show this smoothie contains 'non-fat frozen yogurt' ('sweet_dairy'). The current menu lacks it, but this classification reflects its original recipe."
-Breakfast Panini,"['egg', 'bacon', 'savory_dairy']","Menu lists 'Egg', 'turkey bacon' ('bacon'), and 'cheddar cheese' ('savory_dairy')."
-Veggie Portobello,['savory_dairy'],"Menu lists 'mozzarella' ('savory_dairy')."
-Pb2 Bowl,[],"Legacy name for PB Bowl. The menu shows it contains cashew milk and honey (not a category), but no dairy or other animal products."
-Asian Chicken Wrap,['unfried_chicken'],"The full menu shows this contains 'chicken breast' ('unfried_chicken')."
-Bbq Chicken Panini,"['unfried_chicken', 'savory_dairy']","Menu lists 'BBQ Chicken' ('unfried_chicken') and 'cheddar cheese' ('savory_dairy')."
-Southewestern Fiesta Wrap,"['unfried_chicken', 'ground_meat', 'savory_dairy']","This is a wrap version of the Fiesta Bowl, which contains chicken/Beyond, cheddar, and greek yogurt. Categories: 'unfried_chicken', 'ground_meat', 'savory_dairy'."
-Pitaya Bowl,[],"The full menu shows this contains almond milk and fruit. All plant-based."
-Meat Salad Bowl ChickenTurkey,"['unfried_chicken']","Item name indicates 'Chicken' ('unfried_chicken') and 'Turkey' ('unfried_chicken')."
-Avocado Toast,[],"The menu shows this is plant-based by default."
-Mediterranean,"['unfried_chicken', 'savory_dairy']","This is the 'Mediterranean Wrap', which contains chicken breast ('unfried_chicken') and feta cheese ('savory_dairy')."
-Albacore Melt Panini,['savory_dairy'],"This item contains tuna (not a category) and cheese ('savory_dairy')."
-Chicken Caesar Wrap,"['unfried_chicken', 'bacon', 'savory_dairy']","Legacy name for Caesar BLT Wrap. Contains chicken ('unfried_chicken'), parmesan ('savory_dairy'), and inferred bacon ('bacon') from its modern counterpart."
-Veg Buddha Bowl,['savory_dairy'],"Menu lists 'feta' ('savory_dairy')."
-Mission Burrito Wrap,"['unfried_chicken', 'ground_meat', 'savory_dairy']","Menu lists choice of 'chicken breast' ('unfried_chicken') or 'Beyond Beef' ('ground_meat' analog), plus 'cheddar' and 'greek yogurt' ('savory_dairy')."
-Greek Yogurt Bowl,['sweet_dairy'],"Menu lists 'Greek yogurt' ('sweet_dairy')."
-Fiesta Bowl,"['unfried_chicken', 'ground_meat', 'savory_dairy']","Menu lists choice of 'chicken breast' ('unfried_chicken') or 'Beyond Beef' ('ground_meat' analog), plus 'cheddar' and 'greek yogurt' ('savory_dairy')."
-Breakfast Wrap,"['egg', 'bacon', 'savory_dairy']","Menu lists 'egg', 'turkey bacon' ('bacon'), and 'cheddar cheese' ('savory_dairy')."
-Teriyaki Bowl,['unfried_chicken'],"Menu lists 'grilled chicken' ('unfried_chicken')."
-Kale Vegetarian Wrap,['savory_dairy'],"The full menu shows this wrap contains feta cheese ('savory_dairy')."
-Super Veg,[],"Menu lists beet, kale, hummus, and other vegetables. All plant-based."
-Mediterranean Spinach Salad,['savory_dairy'],"Inferred to contain feta cheese ('savory_dairy'), consistent with other Mediterranean items."
-Asian Sesame Salad,[],"This salad is plant-based by default; chicken is a common add-on, not a default ingredient."
-Quesadilla Chicken Fiesta,"['unfried_chicken', 'savory_dairy']","The menu lists this as 'Chicken Pesto quesadillas', containing chicken ('unfried_chicken') and mozzarella ('savory_dairy')."
-Healthy Start Wrap,"['egg', 'bacon', 'savory_dairy']","The full menu shows this contains 'egg', 'turkey bacon' ('bacon'), and 'cheddar cheese' ('savory_dairy')."
-Kid'S Grilled Cheese Panini,['savory_dairy'],"Name implies 'Grilled Cheese' ('savory_dairy')."
-Kid'S Grilled Cheese Quesadilla,['savory_dairy'],"Name implies 'Grilled Cheese' ('savory_dairy')."
-Kid'S Grilled Cheese Sandwich,['savory_dairy'],"Name implies 'Grilled Cheese' ('savory_dairy')."
-Healthy Start Panini,"['egg', 'bacon', 'savory_dairy']","The full menu shows this contains 'egg', 'turkey bacon' ('bacon'), and 'cheddar cheese' ('savory_dairy')."
-English Egg Muffin,['egg'],"This breakfast sandwich contains 'egg' by default, but no default meat."
-Early Bird Panini,"['egg', 'bacon', 'savory_dairy']","The full menu shows this contains 'egg', 'turkey bacon' ('bacon'), and 'mozzarella cheese' ('savory_dairy')."
-Vegetarian Combo Meal,['savory_dairy'],"A combo of vegetarian items, which often contain cheese ('savory_dairy') like the Veggie Portobello panini."
-Early Bird Wrap,"['egg', 'bacon', 'savory_dairy']","The full menu shows this contains 'egg', 'turkey bacon' ('bacon'), and 'mozzarella cheese' ('savory_dairy')."
-Quinoa Chickpeas,[],"Menu lists only plant-based ingredients."
-Santa Fe Quesadilla,"['unfried_chicken', 'savory_dairy']","A quesadilla implies cheese ('savory_dairy'), and the full menu shows it can be ordered with chicken ('unfried_chicken')."
-Quinoa Salad,[],"Menu lists only plant-based ingredients."
-Cheesecake,['sweet_dairy'],"Name implies cheese in a sweet context ('sweet_dairy')."
-Quinoa Lentils,[],"Menu lists only plant-based ingredients."
-Tex Bowl,"['unfried_chicken', 'bacon']","Inferred from modifications ('No Turkey', 'No Bacon') to contain turkey ('unfried_chicken') and/or bacon ('bacon') by default."
-Kale Caesar Salad,['savory_dairy'],"The full menu shows this contains parmesan cheese ('savory_dairy')."
-Hummus Toast,[],"The full menu shows this is plant-based by default."
-Portobello Balsamic Toast,['savory_dairy'],"The full menu shows this toast contains feta cheese ('savory_dairy')."
-Cali Bowl,"['sweet_dairy','egg']","Inferred from modifications ('Greek On Side') to contain a yogurt-based sauce ('sweet_dairy')."
-Cranberry Turkey Panini,['unfried_chicken', 'savory_dairy'],"The full menu shows this contains turkey ('unfried_chicken') and mozzarella ('savory_dairy')."
-The Lenny,[],"Inferred from modifications to be a plant-based smoothie."
-Vegan Combo Meal,"['unfried_chicken', 'ground_meat', 'savory_dairy']","A combo of vegan items, reflecting analogs for the most complex possibilities like the Mission Burrito (chicken/beef, cheese/yogurt)."
-PJ Panini,[],"Inferred to be Peanut Butter & Jelly, which is plant-based."
-Chicken Caesar Salad,"['unfried_chicken', 'savory_dairy']","The full menu shows this contains chicken ('unfried_chicken') and parmesan ('savory_dairy')."
-Blue Spirulina,[],"Spirulina is algae; assumed to be a plant-based smoothie."
-Chicken 2 Combo,['unfried_chicken'],"Name implies a combo centered around a chicken ('unfried_chicken') item."
-Blue Spirulina Bowl,[],"Assumed to be a plant-based power bowl like Acai or Pitaya."
-Organic Chicken And Wild Rice,['unfried_chicken'],"Name indicates chicken ('unfried_chicken'). Likely a soup."
-Mediterranean Bowl,['unfried_chicken', 'savory_dairy'],"Menu lists Turkey Breast ('unfried_chicken') and feta cheese ('savory_dairy')."
-Beyond Sausage,['sausage'],"Contains 'Beyond Sausage', an analog for the 'sausage' category."
-Coco Avocado,[],"Inferred from name and modifications to be a plant-based smoothie."
-Moroccan Glow Bowl,['sweet_dairy'],"Inferred from modifications ('No Yogurt') to contain a yogurt-based sauce ('sweet_dairy')."
-The Marshall,[],"This appears to be a plant-based smoothie base. Customer protein add-ins are customizations, not default ingredients."
-Vegetable Soup,[],"Inferred from name and other soup data to be plant-based."
-Vegan Soup Of The Day,[],"Name explicitly states it's vegan."
-Matcha Green Tea Bowl,['sweet_dairy'],"The 'Matcha blueberry smoothie' on the menu contains 'vanilla greek yogurt' ('sweet_dairy'). This bowl is a variation of that."
-Apple Tart,[],"Inferred to be a plant-based dessert."
-Soba Noodle Bowls,[],"Inferred from modifications to be a plant-based 'build your own' bowl."
-Vegetarian Caesar Salad,['savory_dairy'],"A vegetarian Caesar still contains parmesan ('savory_dairy')."
-Steel Cut Oat Meal,[],"The 'Spiced Oatmeal' on the full menu is plant-based."
-1 Chocolate,['sweet_dairy'],"Chocolate products often contain dairy ('sweet_dairy')."
-2 Combo,[],"Pricing package, not a food item."
-3 Combo,[],"Pricing package, not a food item."
-9.99 Combo Meal,[],"Pricing package, not a food item."
-"A Bit Of Pumpkin A Dab Of Spice, Makes Everything Nice! Fall Is In The Air At Fresh Healthy Cafe!",[],"Promotional text."
-Abc Cookies,[],"Menu states 'no dairy, no eggs, no animal ingredients'."
-Abc'S Cookies,[],"Menu states 'no dairy, no eggs, no animal ingredients'."
-Apple,[],"Fruit."
-Apple Slice,[],"Fruit."
-Bada Bean Bada Boom Beans,[],"Packaged snack."
-Baked Chips Small Bag,[],"Packaged snack."
-Banana,[],"Fruit."
-Bear Granola Bites,[],"Packaged snack."
-Beyond Burger Combo,['beef_or_pork_burger'],"Combo centered around a 'Beyond burger' ('beef_or_pork_burger' analog)."
-Beyond Sausage Combo,['sausage'],"Combo centered around a 'Beyond Sausage' ('sausage' analog)."
-Big Panini Platter,"['unfried_chicken', 'bacon', 'savory_dairy']","Catering platter. Contains an assortment of paninis with chicken, bacon, and cheese."
-Big Salad Bowls,"['unfried_chicken', 'savory_dairy']","Catering platter. Contains an assortment of salads, some with chicken and cheese."
-Big Wrap Platter,"['unfried_chicken', 'bacon', 'savory_dairy']","Catering platter. Contains an assortment of wraps with chicken, bacon, and cheese."
-Bite Size Bobo'S Oat,[],"Packaged snack."
-Box Lunch,[],"Generic catering item."
-Box Lunch 9.95,[],"Generic catering item."
-Byo ProteinSalad Bowl,"['unfried_chicken', 'savory_dairy']","A 'Build Your Own' bowl where chicken ('unfried_chicken') and cheese/yogurt ('savory_dairy') are common options."
-Catering Utensils Per Person,[],"Non-food item."
-Cheese Stick,['savory_dairy'],"Name indicates 'cheese' ('savory_dairy')."
-Chicken Caesar,"['unfried_chicken', 'bacon', 'savory_dairy']","Legacy name for Caesar BLT Wrap, contains chicken ('unfried_chicken'), parmesan ('savory_dairy'), and inferred bacon ('bacon')."
-Chickenless Beach Salad,['savory_dairy'],"The base Beach Salad contains feta ('savory_dairy'). This version removes the chicken."
-Chips,[],"Packaged snack."
-Chunky Monkey,['sweet_dairy'],"Menu lists 'vanilla greek yogurt' ('sweet_dairy')."
-City 12 Wrap,[],"Off-menu wrap with unknown ingredients."
-City Chips,[],"Packaged snack."
-City Mandys Cookies,[],"Packaged snack."
-City Mandys Cream Pie,['sweet_dairy'],"Name implies a cream-based dessert ('sweet_dairy')."
-City Of Cape Protein Bowl,"['unfried_chicken', 'savory_dairy'],","A custom protein bowl, likely containing chicken ('unfried_chicken') and a dairy element like cheese or yogurt ('savory_dairy')."
-City Salad,[],"Off-menu salad with unknown ingredients."
-City Salad Protein,"['unfried_chicken', 'savory_dairy'],","A custom protein salad, likely containing chicken ('unfried_chicken') and a dairy element like cheese ('savory_dairy')."
-Cliff Duos,[],"Packaged snack."
-Cliff Protein Bar,[],"Packaged snack."
-Dairy Fiesta Bowl,"['unfried_chicken', 'ground_meat', 'savory_dairy']","This is the Fiesta Bowl, which has chicken/Beyond and dairy. The name emphasizes the 'savory_dairy' (cheddar, yogurt)."
-Egg Avocado Toast,['egg'],"Name indicates 'egg'."
-Egg N Muffin,['egg'],"Legacy name for English Egg Muffin, contains 'egg'."
-Egg Quinoa Chickpeas,['egg'],"Name indicates 'egg'."
-Egg Vegetarian Wrap,['egg'],"Name indicates 'egg'."
-Egift Card,[],"Non-food item."
-Energy Bites,[],"Packaged snack."
-English Muffin Coffee,[],"Drink and a bread item."
-English Muffin Smoothie,['sweet_dairy'],"A smoothie, which often contains yogurt ('sweet_dairy')."
-English Muffin Squeeze,[],"A juice, which is plant-based."
-Enjoy Life Lentils,[],"Packaged snack."
-Food Should Taste Good Chips,[],"Packaged snack."
-Fresh Fit Blast,['sweet_dairy'],"Sounds like a smoothie, likely contains yogurt ('sweet_dairy')."
-Fresh Fitness Blast,['sweet_dairy'],"Sounds like a smoothie, likely contains yogurt ('sweet_dairy')."
-Fresh Greens Salad,[],"Likely a base salad with only vegetables."
-Fresh Panini Platter,"['unfried_chicken', 'bacon', 'savory_dairy']","Catering platter. Contains an assortment of paninis with chicken, bacon, and cheese."
-Fresh Soup,[],"Generic soup item, ingredients vary."
-Fruit Cup,[],"Fruit."
-Gift Card,[],"Non-food item."
-Hard Boiled Egg,['egg'],"Name indicates 'egg'."
-Hard Boiled Egg 2 Pc,['egg'],"The menu lists 'egg bites' which can contain turkey bacon or be spinach/feta. This item is just the egg."
-Harvest Signature Bowl,"['unfried_chicken', 'savory_dairy']","The full menu shows signature bowls contain chicken/turkey ('unfried_chicken') and dairy ('savory_dairy')."
-Heat And Serve,[],"Generic item."
-Heavenly Organics Chocolate Honey Patty,[],"Packaged snack."
-Hillshire Snacking,['chunked_beef_or_pork'],"Packaged snack from a meat company, likely contains 'chunked_beef_or_pork'."
-Jolly Green,[],"Name suggests a plant-based juice or smoothie."
-Kale Turkey Sausage Soup,['sausage', 'unfried_chicken'],"Name indicates 'turkey' ('unfried_chicken') 'sausage' ('sausage')."
-Kid'S Combo With A Smoothie,['sweet_dairy'],"The smoothie portion likely contains yogurt ('sweet_dairy')."
-Kids Combo,[],"Pricing package."
-Kids Combo With Smoothie,[],"Pricing package."
-Kids Combo With Squeeze,[],"Pricing package."
-Kind Bar,[],"Packaged snack."
-Like Is Good Chips,[],"Packaged snack."
-Loyalty Up Grade,[],"Non-food item."
-Mandarin Orange Cup,[],"Fruit."
-Mandy'S Bakery,[],"Generic bakery item."
-Meat,['beef_or_pork_burger'],"Inferred from modifications to be a customizable hamburger ('beef_or_pork_burger')."
-Meat Combo Meal,[],"Pricing package."
-Muffin,['egg', 'sweet_dairy'],"Baked goods like muffins typically contain 'egg' and dairy ('sweet_dairy')."
-Orange,[],"Fruit."
-Over Night Oats,[],"The menu lists 'Over Night Oats + Protein' with cashew milk and honey. This is the plant-based (non-vegan) base."
-Pair A Panini,[],"Pricing package."
-Pair A Salad,[],"Pricing package."
-Pair A Wrap,[],"Pricing package."
-Pineapple Creamsicle,['sweet_dairy'],"Name 'Creamsicle' implies a dairy-based smoothie ('sweet_dairy')."
-Pineapple Creamsicle 2,['sweet_dairy'],"Name 'Creamsicle' implies a dairy-based smoothie ('sweet_dairy')."
-Power Bowl Bar,[],"Catering setup, not a single dish."
-Pretzels And Hummus,[],"Plant-based snack."
-PretzelsHummus,[],"Plant-based snack."
-Protein Bakery Brownie,[],"Packaged snack."
-Protein Bakery Cookies,[],"Packaged snack."
-Protein Bites,[],"Packaged snack."
-Protein Bowl,['sweet_dairy', 'unfried_chicken'],"The menu's 'chocolate protein bowl' and 'Protein Power' smoothie have a yogurt base. This customizable bowl would start with that and allow chicken add-ins."
-Protein Bowl Box,"['sweet_dairy', 'unfried_chicken'],","Same as Protein Bowl, a customizable bowl with dairy and chicken as common components."
-Rx Bars,[],"Packaged snack."
-Sabra Snackers,[],"Packaged snack."
-Side Salad,[],"Base salad is plant-based."
-Signature Bowls,[],"Category heading."
-Simply 7 Chips,[],"Packaged snack."
-Soup Of The Day,[],"Generic soup item, ingredients vary."
-Sweet Bread,['egg', 'sweet_dairy'],"Baked goods like sweet bread typically contain 'egg' and dairy ('sweet_dairy')."
-Sweet Street Bar,[],"Packaged snack."
-Sweet Street Brownie,[],"Packaged snack."
-Sweet Street Krispy,['sweet_dairy'],"Rice Krispy treats typically contain butter ('sweet_dairy') and sometimes gelatin (not a category)."
-Sweets Un Sweetened,[],"Generic item."
-Trail Mix,[],"Packaged snack."
-Turkey Pesto,['unfried_chicken', 'savory_dairy'],"Legacy name for Turkey Pesto Panini, contains turkey ('unfried_chicken') and mozzarella ('savory_dairy')."
-Tuscan White Bean With Chicken,['unfried_chicken'],"Name indicates chicken ('unfried_chicken')."
-Unchicken Blt Wrap,"['unfried_chicken', 'bacon', 'savory_dairy'],","Contains 'Unchicken' ('unfried_chicken' analog). A BLT contains bacon ('bacon'). Wraps often have aioli/cheese ('savory_dairy')."
-UnchickenBeyond Mission Burrito Wrap,"['unfried_chicken', 'ground_meat', 'savory_dairy']","Contains 'Unchicken' ('unfried_chicken') and 'Beyond' ('ground_meat') analogs. The base wrap has cheddar and yogurt ('savory_dairy')."
-Vegan Avocado Wrap,[],"Explicitly vegan."
-Vegan Bbq Unchicken Panini,"['unfried_chicken', 'savory_dairy']","Vegan version of BBQ Chicken Panini. Contains 'Unchicken' ('unfried_chicken' analog) and vegan cheese ('savory_dairy' analog)."
-Vegan Big Salad Bowls,[],"Explicitly vegan catering item."
-Vegan Breakfast Wrap,"['egg', 'bacon', 'savory_dairy']","Vegan version of Breakfast Wrap. Contains analogs for 'egg', 'bacon', and 'savory_dairy'."
-Vegan Buddha Bowl,['savory_dairy'],"Vegan version of Veg Buddha Bowl. Contains an analog for feta cheese ('savory_dairy')."
-Vegan Cali Bowl,"['sweet_dairy','egg']","Vegan version of Cali Bowl. Contains an analog for the Greek yogurt sauce ('sweet_dairy')."
-Vegan Harvest Signature Bowl,"['unfried_chicken', 'savory_dairy']","Vegan version of a signature bowl. Contains analogs for chicken ('unfried_chicken') and cheese ('savory_dairy')."
-Vegan Mango Mania,['sweet_dairy'],"Vegan version of Mango Mania. Contains an analog for the frozen yogurt ('sweet_dairy')."
-Vegan Mediterranean,['unfried_chicken', 'savory_dairy'],"Vegan version of Mediterranean Wrap. Contains 'Unchicken' ('unfried_chicken' analog) and vegan feta ('savory_dairy' analog)."
-Vegan Mission Burrito Wrap,"['unfried_chicken', 'ground_meat', 'savory_dairy']","Vegan version of Mission Burrito. Contains analogs for chicken/beef ('unfried_chicken'/'ground_meat') and cheese/yogurt ('savory_dairy')."
-Vegan Moroccan Glow Bowl,['sweet_dairy'],"Vegan version of Moroccan Glow Bowl. Contains an analog for the yogurt sauce ('sweet_dairy')."
-Vegan Pesto Panini,"['unfried_chicken', 'savory_dairy']","Vegan version of Turkey Pesto Panini. Contains 'Unchicken' ('unfried_chicken' analog) and vegan mozzarella ('savory_dairy' analog)."
-Vegan Portobello,['savory_dairy'],"Vegan version of Veggie Portobello. Contains an analog for mozzarella cheese ('savory_dairy')."
-Vegan Santa Fe Quesadilla,"['unfried_chicken', 'savory_dairy'],","Vegan version of a quesadilla. Contains analogs for chicken ('unfried_chicken') and cheese ('savory_dairy')."
-Veganized Panini,"['unfried_chicken', 'bacon', 'savory_dairy']","A standard panini made vegan. It would contain analogs for the original meat ('unfried_chicken', 'bacon') and cheese ('savory_dairy')."
-Vegetarian,[],"Generic category."
-Vegetarian Enjoy Life Lentil Chips,[],"Packaged snack."
-Veggie Sticks,[],"Vegetables."
-Yogurt Parfait,['sweet_dairy'],"Name indicates 'yogurt' ('sweet_dairy')."
+item_name,animal_categories,reasoning,vegan,vegetarian,mpbamodifiable
+Acai Bowl,[],Acai bowl - vegan,True,True,False
+Blue Spirulina Bowl,[],Blue spirulina bowl - vegan,True,True,False
+Matcha Green Tea Bowl,[],Matcha bowl - vegan,True,True,False
+Pitaya Bowl,[],Dragon fruit bowl - vegan,True,True,False
+Pb2 Bowl,[],PB2 bowl - vegan,True,True,False
+Greek Yogurt Bowl,['sweet_dairy'],Greek yogurt bowl,False,True,False
+Protein Bowl,"['unfried_chicken', 'savory_dairy']",Protein bowl with chicken option,False,False,False
+Byo ProteinSalad Bowl,"['unfried_chicken', 'savory_dairy']",Build your own protein bowl,False,False,False
+City Of Cape Protein Bowl,['unfried_chicken'],Cape protein bowl with chicken,False,False,False
+Harvest Signature Bowl,"['unfried_chicken', 'savory_dairy']",Harvest bowl with chicken,False,False,False
+Vegan Harvest Signature Bowl,[],Vegan harvest bowl,True,True,False
+Protein Bowl Box,"['unfried_chicken', 'savory_dairy']",Protein bowl box catering,False,False,False
+Signature Bowls,"['unfried_chicken', 'savory_dairy']",Signature bowl,False,False,False
+Buddha Bowl,['savory_dairy'],VEG Buddha bowl - has feta cheese per menu,False,True,False
+Cali Bowl,"['unfried_chicken', 'savory_dairy']",California bowl,False,False,False
+Fiesta Bowl,"['unfried_chicken', 'savory_dairy']",Fiesta bowl,False,False,True
+Mediterranean Bowl,"['unfried_chicken', 'savory_dairy']",Mediterranean bowl has turkey breast and feta per menu,False,False,False
+Moroccan Bowl,['unfried_chicken'],Moroccan bowl,False,False,False
+Teriyaki Bowl,['unfried_chicken'],Teriyaki bowl with chicken,False,False,False
+Soba Noodle Bowl,[],Soba noodle bowl - vegan base,True,True,False
+Beach Salad,"['unfried_chicken', 'savory_dairy']",Beach salad has chicken breast and feta per menu,False,False,False
+Asian Salad,[],Asian salad - vegan base,True,True,False
+Spinach Salad,['savory_dairy'],Spinach salad - may have cheese,False,True,False
+Quinoa Salad,[],Quinoa salad - vegan,True,True,False
+City Salad,[],City salad - vegan base,True,True,False
+Fresh Greens,[],Fresh greens - vegan,True,True,False
+Chicken Wrap,"['unfried_chicken', 'savory_dairy']",Chicken wrap,False,False,False
+Turkey Wrap,['unfried_chicken'],Turkey wrap,False,False,False
+Breakfast Wrap,"['egg', 'savory_dairy', 'bacon']",Breakfast wrap with egg,False,False,False
+City Wrap,"['unfried_chicken', 'savory_dairy']",City wrap,False,False,False
+Chicken Panini,"['unfried_chicken', 'savory_dairy']",Chicken panini with cheese,False,False,False
+Turkey Panini,"['unfried_chicken', 'savory_dairy']",Turkey panini,False,False,False
+Breakfast Panini,"['egg', 'savory_dairy', 'bacon']",Breakfast panini,False,False,False
+Albacore Panini,['savory_dairy'],Tuna panini - fish,False,False,False
+PJ Panini,['savory_dairy'],PJ panini,False,True,False
+Pair A Panini,"['unfried_chicken', 'savory_dairy']",Panini pair combo,False,False,False
+Pair A Salad,['savory_dairy'],Salad pair combo,False,True,False
+Pair A Wrap,"['unfried_chicken', 'savory_dairy']",Wrap pair combo,False,False,False
+Big Panini Platter,"['unfried_chicken', 'savory_dairy']",Big panini platter,False,False,False
+Big Wrap Platter,"['unfried_chicken', 'savory_dairy']",Big wrap platter,False,False,False
+Fresh Panini Platter,"['unfried_chicken', 'savory_dairy']",Fresh panini platter,False,False,False
+Kids Grilled Cheese,['savory_dairy'],Kids grilled cheese,False,True,False
+Avocado Toast,[],Avocado toast - vegan base,True,True,False
+Hummus Toast,[],Hummus toast - vegan,True,True,False
+Portobello Balsamic Toast,['savory_dairy'],Portobello toast - may have cheese,False,True,False
+Vegan Portobello,[],Vegan portobello item,True,True,False
+Veggie Portobello,['savory_dairy'],Veggie portobello with cheese,False,True,False
+English Muffin,[],English muffin - plain bread,True,True,False
+Steel Cut Oat Meal,[],Oatmeal - vegan base,True,True,False
+Over Night Oats,['sweet_dairy'],Overnight oats - may have yogurt,False,True,False
+Hard Boiled Egg,['egg'],Hard boiled egg,False,True,False
+Hard Boiled Egg 2 Pc,['egg'],2 hard boiled eggs,False,True,False
+Egg Quinoa Chickpeas,['egg'],Egg quinoa chickpea bowl,False,True,False
+Yogurt,['sweet_dairy'],Yogurt,False,True,False
+Beyond Burger,['beef_or_pork_burger'],Beyond burger - already vegan [FIXED: Burger format - vegan burger patty],True,True,False
+Beyond Sausage,['sausage'],Beyond sausage - vegan [FIXED: Sausage format - vegan sausage],True,True,False
+Smoothie,[],Smoothie - vegan base,True,True,False
+Kids Combo,"['unfried_chicken', 'savory_dairy']",Kids combo meal,False,False,False
+Cliff Duos,[],Cliff bar duos,True,True,False
+Cliff Protein Bar,[],Cliff protein bar,True,True,False
+Kind Bar,[],Kind bar,True,True,False
+Power Bowl Bar,[],Power bowl bar,True,True,False
+Rx Bars,[],RX bars,True,True,False
+Sweet Street Bar,"['sweet_dairy', 'egg']",Sweet street bar,False,True,False
+Baked Chips Small Bag,[],Baked chips,True,True,False
+Chips,[],Chips,True,True,False
+City Chips,[],City chips,True,True,False
+Food Should Taste Good Chips,[],Food should taste good chips,True,True,False
+Like Is Good Chips,[],Like is good chips,True,True,False
+Simply 7 Chips,[],Simply 7 chips,True,True,False
+Vegetarian Enjoy Life Lentil Chips,[],Enjoy life lentil chips - vegan,True,True,False
+Veggie Sticks,[],Veggie sticks,True,True,False
+Bada Bean Bada Boom Beans,[],Bean snack,True,True,False
+Bear Granola Bites,[],Bear granola bites,True,True,False
+Bite Size Bobo'S Oat,[],Bobo's oat bites,True,True,False
+Enjoy Life Lentils,[],Enjoy life lentils,True,True,False
+Hillshire Snacking,"['sausage', 'savory_dairy']",Hillshire snacking - meat,False,False,False
+Pretzels And Hummus,[],Pretzels and hummus,True,True,False
+PretzelsHummus,[],Pretzels hummus,True,True,False
+Sabra Snackers,[],Sabra snackers - hummus,True,True,False
+Trail Mix,[],Trail mix,True,True,False
+Energy Bites,[],Energy bites,True,True,False
+Protein Bites,[],Protein bites,True,True,False
+Abc Cookies,[],ABC cookies - no dairy no eggs no animal ingredients per menu,True,True,False
+Abc'S Cookies,[],ABC's cookies - no dairy no eggs no animal ingredients per menu,True,True,False
+City Mandys Cookies,"['sweet_dairy', 'egg']",City Mandy's cookies,False,True,False
+Protein Bakery Cookies,"['egg', 'sweet_dairy']",Protein bakery cookies [FIXED: Baked goods typically have egg/dairy],False,True,False
+Brownie,"['sweet_dairy', 'egg']",Brownie,False,True,False
+Cheesecake,"['sweet_dairy', 'egg']",Cheesecake,False,True,False
+City Mandys Cream Pie,"['sweet_dairy', 'egg']",City Mandy's cream pie,False,True,False
+Heavenly Organics Chocolate Honey Patty,[],Chocolate honey patty,True,True,False
+Mandy'S Bakery,"['sweet_dairy', 'egg']",Mandy's bakery item,False,True,False
+Muffin,"['sweet_dairy', 'egg']",Muffin,False,True,False
+Sweet Bread,"['sweet_dairy', 'egg']",Sweet bread,False,True,False
+Sweet Street Krispy,['sweet_dairy'],Rice krispy treat,False,True,False
+Sweets Un Sweetened,[],Unsweetened sweets,True,True,False
+1 Chocolate,['sweet_dairy'],Chocolate,False,True,False
+Apple,[],Apple,True,True,False
+Apple Slice,[],Apple slices,True,True,False
+Apple Tart,"['sweet_dairy', 'egg']",Apple tart,False,True,False
+Banana,[],Banana,True,True,False
+Fruit Cup,[],Fruit cup,True,True,False
+Mandarin Orange Cup,[],Mandarin orange cup,True,True,False
+Orange,[],Orange,True,True,False
+Quinoa Chickpeas,[],Quinoa chickpeas - vegan,True,True,False
+Quinoa Lentils,[],Quinoa lentils - vegan,True,True,False
+Meat Bowl,"['unfried_chicken', 'chunked_beef_or_pork']",Meat bowl,False,False,False
+Cheese Stick,['savory_dairy'],Cheese stick,False,True,False
+Heat And Serve,"['unfried_chicken', 'savory_dairy']",Heat and serve item,False,False,False
+Loyalty,[],Loyalty reward,True,True,False
+Promo,[],Promo item,True,True,False
+Vegetarian,[],Vegetarian item,True,True,False
+Poultry Caesar Salad,"['unfried_chicken', 'savory_dairy']",Chicken caesar salad,False,False,False
+Caesar Salad,['savory_dairy'],Caesar salad - vegetarian,False,True,False
+Vegan Caesar Salad,[],Vegan caesar salad,True,True,False
+Vegan Vegetarian Wrap,[],Vegan vegetarian wrap,True,True,False
+Poultry Vegetarian Wrap,['unfried_chicken'],Poultry vegetarian wrap,False,False,False
+Burrito Wrap,['savory_dairy'],Burrito wrap - vegetarian base,False,True,True
+Vegan Burrito Wrap,[],Vegan burrito wrap,True,True,False
+Poultry Burrito Wrap,"['unfried_chicken', 'savory_dairy']",Poultry burrito wrap,False,False,False
+Poultry Vegan Panini,['unfried_chicken'],Poultry vegan panini,False,False,False
+Vegan Vegan Panini,[],Vegan vegan panini,True,True,False
+Poultry Quesadilla,"['unfried_chicken', 'savory_dairy']",Chicken quesadilla,False,False,False
+Quesadilla,['savory_dairy'],Quesadilla - vegetarian,False,True,False
+Vegan Quesadilla,[],Vegan quesadilla,True,True,False
+Soup,[],Soup - varies,True,True,False
+Vegan Soup,[],Vegan soup,True,True,False
+Poultry Soup,['unfried_chicken'],Chicken soup,False,False,False
+Combo Meal,['savory_dairy'],Combo meal - vegetarian base,False,True,True
+Poultry Combo Meal,"['unfried_chicken', 'savory_dairy']",Poultry combo meal,False,False,False
+Vegan Combo Meal,[],Vegan combo meal,True,True,False
+to_remove,[],"Non-food/non-drink items (merch, gift cards, fees, utensils, etc.)",False,False,False

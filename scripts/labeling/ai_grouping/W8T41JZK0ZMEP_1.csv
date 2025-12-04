@@ -1,250 +1,101 @@
-canonical_name,variants,reasoning
-,[],Unique dish name.
-1 Day Nutrition Reboot,[],Unique dish name.
-3 Day Nutrition Reboot,[],Unique dish name.
-Abdullah,[],Specific product or distinct dish type.
-Acai Bowl,['Acai Smoothie Bowl'],Different descriptions or slightly varied names for Acai Bowl.
-Acai Smoothie,['Collagen Acai Smoothie Bowl'],Different descriptions or slightly varied names for Acai Smoothie.
-Antioxidant Trail Mix,[],Unique dish name.
-Apple Walnut Salad,['Chicken Apple Walnut Salad'],"Same core dish, different phrasing or minor descriptors."
-Applesauce,[],Unique dish name.
-April Showers Smoothie Bowl,['April Showers Smoothie Bowl- Limited Offering!'],"Same core dish, different phrasing or minor descriptors."
-Asian Peanut Noodles,['Thai Peanut Noodles'],"Same core dish, different phrasing or minor descriptors."
-Autumn Salad,"['Autumn Salad Bowl', 'Chicken Autumn Salad Bowl']","Same core dish, different phrasing or minor descriptors."
-Avo Toast Microgreens,[],Unique dish name.
-Avocado Toast,['Avocado Toast - Gf Available'],Avocado Toast with minor variations/options.
-Badda Bean,[],Specific product or distinct dish type.
-Bahn Mi,"['Banh Mi', 'Banh Mi-New For May!', 'Banh Mi-Special For May !']",Banh Mi with seasonal/new descriptors.
-Banana Chocolate Chip Muffin,[],Unique dish name.
-Bean Corn Salad,[],Unique dish name.
-"Beesknees, Cinnamon Maple Syrup","['Spicy Honey, Beesknees']",Honey/Maple Syrup products.
-Beet Burger,[],Unique dish name.
-Beet Feta Salad,[],Unique dish name.
-Berry Crumble Bar,[],Unique dish name.
-Beyond Burger,['Cheese Beyond Burger'],"Same core dish, different phrasing or minor descriptors."
-Black Bean Brownie,[],Unique dish name.
-Black Bean Burger,['Black Bean Burger Chips'],Black Bean Burger with side or descriptive additions.
-Black Bean Soup,[],Unique dish name.
-Black Magic: NEW FORMULA,[],Unique dish name.
-Blue Ocean Protein Balls,[],Unique dish name.
-Blueberry Almond Chia Pudding,[],Unique dish name.
-Blueberry Thrill,[],Unique dish name.
-Breakfast Bowl,"['Cheesy Breakfast Bowl W Egg', 'Vegan Breakfast Bowl']","Same core dish, different phrasing or minor descriptors."
-Breakfast Supreme,[],Unique dish name.
-Breakfast Wrap,"['Breakfast Wrap- Gf Wrap Available', 'Eggy Cheezy Breakfast Wrap', 'Vegan Breakfast Wrap']",Breakfast wrap with dietary options/descriptors.
-"Browned butter chocolate chip cookie, GF",[],Unique dish name.
-Buddha Bowl,"['Buddha Bowl-VeganGluten FreeDairy Free', 'Buddha Salad Bowl', 'Chicken Buddha Bowl', 'Energy Buddha Bowl', 'Enlightened Buddha Bowl', 'Erie Buddha Bowl', 'Power Buddha Bowl']",Buddha Bowl/Salad variations and descriptors.
-"Buffalo ""Tofu Chicken"" Wrap",['Buffalo Tofu Chicken Wrap'],Buffalo Tofu Chicken Wrap with minor phrasing variations.
-Butternut Curry,"['Butternut Squash Spinach Curry', 'Butternut Squash Spinach Curry-Limited Run!', 'Punjabi Butternut Chickpea Spinach Curry']","Same core dish, different phrasing or minor descriptors."
-Butternut Squash Soup,[],"Butternut Squash Soup (same dish, slight phrasing)."
-Caesar Salad WBlue Oyster Mushrooms-VGf,[],Unique dish name.
-Cake Bites,[],Unique dish name.
-Cake Pop (1)-Gf,"['Cake Pops(2) Gluten -Free', 'Cake Pops- Gluten -Free']","Same core dish, different phrasing or minor descriptors."
-CALM,[],Unique dish name.
-Caprese Focaccia Sandwich,['Chicken Caprese'],"Same core dish, different phrasing or minor descriptors."
-"Caramel ""Cheese""Cake","['Carmel Cheesecake With Slated Caramel Sauce', 'V - ""Cheese""Cake']","Same core dish, different phrasing or minor descriptors."
-Carrot Cake,"['Carrot Cake With Buttercream Frosting- VGt Whole Cake', 'Carrot Cake, Slice']",Carrot cake in different sizes/formats/descriptors.
-Carrot Cake Cupcake,"['Carrot Cake Cupcake - Gf', 'Carrot Cake Cupcake - Gluten Free']",Carrot cake in different sizes/formats/descriptors.
-Carrot Cake Smoothie Bowl,[],Unique dish name.
-Carrot cake smoothie,[],Unique dish name.
-Cashew Chocolate Patty,['Cashew Patty'],Cashew patties with or without chocolate.
-Cauliflower Flatbread Pizza,"['Chicken Cauliflower Flatbread Pizza', 'Vegan Cheese Cauliflower Flatbread Pizza']","Same core dish, different phrasing or minor descriptors."
-Cbd Jellybeans,[],Specific product or distinct dish type.
-Celery,[],Specific product or distinct dish type.
-Chai Latte Smoothie,[],Unique dish name.
-Cheddar Broccoli Quiche Side Salad (Gf),[],Unique dish name.
-Cherry Chocolate Cluster Patty,['Cherry Cluster Patty'],Patty/Meltaway variants with different flavor profiles.
-Chia Pudding,"['Chia Pudding ( GfDf) Rotating Variations Of Fruits Superfoods', 'Chia Pudding Fruit Parfait', 'Fresh Fruit Chia Pudding']",Chia pudding with different add-ins or descriptions.
-Chicken Curry Couscous On Greens,"['Chicken Curry Over Rice', 'Curried Chicken Couscous']","Same core dish, different phrasing or minor descriptors."
-Chicken Egg Bakes,[],Unique dish name.
-Chicken Farmer'S Market Salad,"[""Vegan Farmer'S Market Salad""]","Same core dish, different phrasing or minor descriptors."
-Chicken Goddess Salad,"['Chicken Green Goddess Salad Bowl', 'Egg Goddess Salad', 'Goddess Salad', 'Green Goddess Bowl', 'Green Goddess Salad Bowl', 'Green Goddess Smoothie Bowl']",Goddess Salad/Green Goddess Salad/Bowl/Smoothie with variations.
-Chicken Salad Over Greens,"['Chicken Salad Over Greens, Small Clamshell', 'Chicken Salad With Baby Micro Medi Greens, Domed Salad Bowl', 'Chicken Salads']",Chicken salad with descriptive additions or packaging details.
-Chicken Spinach Salad,[],Unique dish name.
-ChickenSour Cream Toasted Quesadilla,[],Unique dish name.
-Chickpea Burger,"['Smash Burger', 'Smash Burger Chips']",Smash burger with or without chips.
-Chickpea Curry,"['Punjabi Chickpea Curry', 'Spinach Tofu Curry']","Same core dish, different phrasing or minor descriptors."
-Chickpea Salad,"['Chickpea Salad Over Greens', 'Chickpea Salad Over Greens (V)', 'Chickpea Salad Wrap', 'Chickpea Salad Wrap -V Gf Wrap On Request', 'Chickpea Smash Wrap', 'V - Chickpea Salad Wrap', 'V - Chickpea Salad Wrap Gf Wrap Available', 'V - Chickpea Salad Wrap, Gf Wrap Available', 'V - Smash Wrap']",Chickpea salad with descriptive additions or wrap format.
-Choc-Chip Bar,"['Choc-Chip Cookie Bar, VGf', 'Chocolate Chip Cookie Bar, VGfNd', 'V - Cookie Bar']",Chocolate chip cookie bars/cookies with different descriptors.
-Chocolate Covered Oreos,"['Oreos, Chocolate Covered, Vegan']",Chocolate covered Oreos.
-Chocolate Covered Strawberry,['Chocolate Covered Strawberries'],Chocolate Covered Strawberries.
-"Chocolate Cake With Ganache And Raspberries, Gf",[],Unique dish name.
-Chocolate ClusterMeltawayPatty,[],Patty/Meltaway variants with different flavor profiles.
-Chocolate Peanut Butter Meltaway,['Peanut Butter Meltaway'],Patty/Meltaway variants with different flavor profiles.
-Chocolate Pretzel Bark,['Pretzel Bark'],"Pretzel products (bark, thins, or with hummus)."
-Chole Daal,[],Specific product or distinct dish type.
-Christmas Bowl,['Christmas Smoothie Bowl'],"Same core dish, different phrasing or minor descriptors."
-Cilantro Lime Coleslaw,['Cilantro Lime Coleslaw-Vegan Gf'],Cilantro Lime Coleslaw with dietary labels.
-Citrus Blast shot,[],Unique dish name.
-Coconut Patty,[],Patty/Meltaway variants with different flavor profiles.
-Cranberry Chicken Salad,"['Cranberry Chicken Salad Wrap-organic, hormone and antibiotic free chicken', 'Cranberry Chicken Salad- Hormone Antibiotic Free, Organic Chicken!', 'Cranberry Chicken Wrap']",Cranberry Chicken Salad/Wrap with detailed descriptions.
-Cranberry Orange Muffin,['V-Cranberry Orange Muffin'],"Same core dish, different phrasing or minor descriptors."
-Creamed Tomato,"['Creamy Tomato', 'Creamy Tomato Soup', 'House Tomato Soup', 'Roasted Red Pep Soup', 'Tomato Basil Soup', 'Tomato Soup']","Tomato Soup variants, including 'Creamy Tomato'."
-Creamsicle,[],Unique dish name.
-Crisped Rice Bar,"['Rice Krispie Bar', 'Rice KrispieScotchy Bar']",Rice Krispie Bar/Treat variations.
-Curried Cauliflower,['Curried Cauliflower Soup'],Curried Cauliflower Soup (same dish).
-Custom Smoothie,['Custom'],"Same core dish, different phrasing or minor descriptors."
-Daily Special,[],Specific product or distinct dish type.
-Dated Cinnamon Rolls,['Vegan Cinnamon Roll'],"Same core dish, different phrasing or minor descriptors."
-Desserts Baked Goods,['Gluten Free Desserts Baked Goods'],"Same core dish, different phrasing or minor descriptors."
-Dragon Smoothie Bowl,['Dragon Smoothie Bowl- May Seasonal'],Dragon Smoothie Bowl with seasonal descriptor.
-EASE,[],Unique dish name.
-Egg Avocado Toast,[],Unique dish name.
-Egg Bakes,[],Unique dish name.
-Elderberry Boost Smoothie,[],Unique dish name.
-Elderberry Gummies,[],Specific product or distinct dish type.
-Elderberry Syrup 8Oz,[],Specific product or distinct dish type.
-Elements Chocolate Bar2Oz Bar,['Elements Chocolate Square (1Oz)'],"Same core dish, different phrasing or minor descriptors."
-Enchant Mint,"['Enchant Mint Bowl', 'Mint Condition Bowl', 'Mint To Be', 'Mint To Be Smoothie Bowl']",Mint flavored smoothie bowls.
-Endangered Chocolate Bar,[],Unique dish name.
-Energy Bars,"['Energy Bites', 'Energy Bites - GfDairy-FreeKeto Friendly', 'Energy Bites, DfNdK']",Energy bites/bars with different descriptors/formats.
-Enlightened Bean Crisps,['Enlightened Beans'],Specific product or distinct dish type.
-Entree,[],Specific product or distinct dish type.
-"Extra Virgin Grapeseed Oil, Kosher",[],Specific product or distinct dish type.
-Falafel,"['Falafel Pita', 'Falafel Pita VGf', 'Falafel Wrap VDf', 'Mediterranean Falafel Bowl', 'Mediterranean Falafel Salad']",Falafel served as a pita or wrap.
-Farmer'S Market Salad,[],Unique dish name.
-Feta Toast,['Whipped Feta Toast'],"Same core dish, different phrasing or minor descriptors."
-Flu Shot,[],Unique dish name.
-Foiled Chocolate Carrots,[],Specific product or distinct dish type.
-Forbidden Toasted Wrap,['Forbidden Wrap'],"Same core dish, different phrasing or minor descriptors."
-Frittata,"['Frittata And Side Salad', 'Frittata Side Salad']",Frittata served with or without side salad.
-Fudgy Brownie -,"['Fudgy Brownie - VGfDairy Free', 'Fudgy Brownie VGf', 'Fudgy Brownie, VGfNd', 'Fudgy Espresso Brownie', 'Fudgy Espresso Brownie, VGf', 'Fudgy Espresso Brownie, VGfNd', 'Ganache Brownie: Gf', 'Peppermint Brownie', 'Peppermint Frosted Brownie (VGfDf)']",Fudgy brownie with espresso or other descriptors.
-GF Raspberry Almond Cupcake,[],Unique dish name.
-Gf Cookie,[],Unique dish name.
-Gin Bao,[],Specific product or distinct dish type.
-Ginger Chocolate Bar,[],Unique dish name.
-"Ginger Molasses Cookies, VGfNd","['Molasses Cookie VGf', 'V - Ginger Molasses Cookies', 'V - Ginger Molasses Cookies (1)']",Ginger Molasses Cookies with dietary labels.
-Ginger Shot,[],Unique dish name.
-Gingersnap Cheesecake VGf,[],Specific product or distinct dish type.
-GLOW,[],Unique dish name.
-Goldblum Bowl,[],Specific product or distinct dish type.
-Good Gut,[],Unique dish name.
-Granola,"['Housemade Granola (Gf)', 'Housemade Granola (VGf)']","Same core dish, different phrasing or minor descriptors."
-Great Pumpkin Bowl,['Great Pumpkin Bowl (Dairy)'],Great Pumpkin Bowl with or without dairy.
-"Greek Yogurt, Fruit + Granola",[],Greek Yogurt with fruit and granola (consistent).
-Grilled Cheese Soup,"['Grilled Cheese Tomato Soup', 'Seasonal Soup - Grilled Cheese', 'Soup And Cheese Melt', 'Soup Grilled Cheese', 'Soup Grilled Sandwich', 'Soup Grilled Vegan Cheese', 'Vegan Grilled Cheese Tomato Soup']",Grilled Cheese and Soup combo with variations.
-Grilled Chicken Sandwich,[],Unique dish name.
-"Gum, Simply Gum",[],Unique dish name.
-"Gummy Dinosaurs, Gf","['Gummy Sharks, Gf', 'Jelly Beans']","Gummy candies (different shapes, but fundamentally similar product category)."
-Haley Beiber-Strawberry Glaze,[],Unique dish name.
-Hallow'S Eve Quesadilla,[],Unique dish name.
-Happy Mug Coffee 12Oz Bag,[],Unique dish name.
-"Hard Boiled Eggs, 2, Packaged",[],Specific product or distinct dish type.
-High Voltage,[],Unique dish name.
-"Hippea Cheddar Puff, 4Oz","['Hippea Tortilla Chip', 'Hippea Tortilla Chips', 'Hippea, 1.5Oz Puffs', 'Hippea, 10 Oz Cheddarpuffs', 'Hippea, 10 Oz Puffs, Whtcheddar', 'Hippea, 4Oz Puffs Siracha', 'Hippea, 5Oz Srirachapuff', ""Luke'S Cheese Puffs, 4Oz""]",Hippea puffs/chips with different flavors or sizes.
-Honey By John,"['Honey Comb In Honey', 'Honey Pops', 'Honey-By John', 'Honey-Quart Bear (Mv Power)', 'Honey-Raintree Farms']",Honey/Maple Syrup products.
-Hot Soup,"['Hot Soup(VGf) With Grilled Turkey And Cheese (Vegan, Gf Option By Request)', 'Soup', 'Soup Sandwich Special', 'Vegan Hot Soup']","Same core dish, different phrasing or minor descriptors."
-Hot chocolate mix- Raaka- Double Dark Hot Chocolate - Holiday & Winter,[],Unique dish name.
-Hummus,"['Hummus Veggie Cup', 'Pretzel Or Carrots And Hummus']","Same core dish, different phrasing or minor descriptors."
-Immunity Shot,[],Unique dish name.
-Jackfruit Tacos,['Tacos (3)GF/vegan options'],"Tacos with various options (jackfruit, chickpea)."
-Juice Cleanse,[],"Juice cleanse, varying by duration."
-Kale Vegan Chicken Herb Ranch Dressing,[],Unique dish name.
-Kale! Ceasar Salad,['Regular Kale! Cesar Salad'],Kale Caesar Salad with variations.
-Keto Bar,[],Specific product or distinct dish type.
-Kettle Chips(2 oz. Bag)-Bacon/Dill/Sweet Potato Assortment-,"['Kettle Chips, Good Health']",Kettle chips with different brand/flavor descriptors.
-Lake Erie Chocolates,[],Unique dish name.
-Lemon Bar - Gf,"['Lemon Bar-Gf', 'Lemon Bars', 'Lemon Bars, V, Gf', 'V- Lemon Bar', 'V-Lemon Bar']",Lemon bar with different dietary labels.
-"Lemon Drop Cookie, Gf",[],Unique dish name.
-Lentil Highland Rice Bowl,[],Specific product or distinct dish type.
-Lion'S Mane Crab Cakes,[],Specific product or distinct dish type.
-Loaded Sweet Potato Fries,"['Side Of Fries', 'Sweet Potato Fries']","Same core dish, different phrasing or minor descriptors."
-Love Bites,['V - Love Bites'],Love Bites (same product with dietary label).
-Majestic Baking Company,[],Unique dish name.
-Majestic Pretzels,[],Unique dish name.
-Mango Dream,[],Unique dish name.
-Matcha LOVE bowl,[],"Matcha Love Bowl (specific name, consistent)."
-Matcha Pancakes - VGfDf,[],Specific product or distinct dish type.
-Mediterranean Breakfast wrap,[],Mediterranean Breakfast Wrap (consistent).
-Mellow Moon Functional Dark Choc,[],Specific product or distinct dish type.
-Mexican Fiesta Salad (GF + V),['Southwest Salad'],"Southwest themed dishes (wrap, burrito, quesadilla, salad)."
-Microgreens,"['Microgreens, Clamshell']",Microgreens in different packaging.
-"Mints, Simply Mints",['Nude Mints'],Mints with different brands/descriptors.
-Morning Glory Muffin,"['Morning Glory Muffin, V']",Morning Glory Muffin (consistent with dietary notes).
-Morning Mocha,[],Unique dish name.
-NOURISH,[],Unique dish name.
-Nutella + PB toast,[],Unique dish name.
-Nuts.Com Snack Pack,[],Specific product or distinct dish type.
-"Oatmeal-Gluten Free, Organic Oats!",['Oatmeal'],Oatmeal with different qualifiers.
-Orchard Valley Nut mix,[],Unique dish name.
-Oui Yogurt,[],Specific product or distinct dish type.
-PB & J Bowl,"['Collagen Pb J', 'Collagen Pb J Bowl', 'Pb J', 'Pb Smoothie Bowl']",PB&J Bowl/Smoothie variations with collagen.
-PB Protein,[],Unique dish name.
-PB + Honey Toast,[],Unique dish name.
-"Pb Choc Cookie, VGf","['Pb Choc Cookie-VGf', 'Pb Choc Tart', 'Pb Chocolate Cupcake VGf', 'Peanut Butter Chocolate Cake', 'V - Pb Choc Cupcake', 'V-Pb Choc Cupcake']",Peanut Butter Chocolate desserts (cookie/cake/tart/cupcake).
-"Pb Scotchy, VGf","['Peanut Butter Scotchy Bar', 'Peanut Butter Scotchy Bar, GfNdK']",Peanut Butter Scotchy Bar/Treat variations.
-Pear Ginger,[],Specific product or distinct dish type.
-Pear Salad Butternut Soup,[],Unique dish name.
-Pecan And Yam Bundt Cake,"['Pecan And Yam Bundt Cake, GfNd']",Pecan and Yam Bundt Cake with dietary labels.
-Peppermint Mocha Bowl,['Peppermint Mocha Smoothie Bowl'],Peppermint Mocha Smoothie Bowl with consistent name.
-Peppermint Patty Meltaway,[],Patty/Meltaway variants with different flavor profiles.
-Pineapple Coconut Rice Bowl,"['Pineapple Coconut Rice Bowl (VGf)', 'Pineapple Coconut Rice Bowl, VGf']",Pineapple Coconut Rice Bowl with dietary labels.
-Pirates Booty Veggie Straws,[],Unique dish name.
-Polar Bear,[],Unique dish name.
-Pomegranate Power Salad,[],Unique dish name.
-Pop Corners,"['Popcorn', 'Popcorn, Large Red Bag', 'Popcorn, Small']",Popcorn in different sizes.
-Pot O' Gold,[],Specific product or distinct dish type.
-"Potato Chips, Dirty Potato Company",[],Unique dish name.
-PROTECT,[],Unique dish name.
-Pumpkin Muffin - VGf,"['V Gf Pumpkin Waffles', 'VGf Pumpkin Muffin']",Pumpkin muffin with dietary labels.
-Quesadilla,"['Sofritas Quesadilla', 'Southwest Quesadilla', 'Sw Quesadilla', 'Toasted Quesadilla', 'Vegan Cheddar Sofritas Quesadilla', 'Vegan Toasted Quesadilla']",Quesadilla with various fillings or descriptors.
-Quiche,['Quiche (Artichoke Red Pepper) W Side Salad'],Quiche with various flavors or served with a side.
-REVIVE,[],Unique dish name.
-Rainbow Wrap,[],Specific product or distinct dish type.
-Raisin Patty,[],Specific product or distinct dish type.
-Raspbalance,[],Unique dish name.
-Ratatouille With Chickpea Over Rice Or With Thick Cut Sourdough,[],Specific product or distinct dish type.
-Red Lentil Soup,[],Specific product or distinct dish type.
-Red Velvet Smoothie,[],Unique dish name.
-Redwhite Berry Bowl,[],Specific product or distinct dish type.
-Rehab shot,[],Specific product or distinct dish type.
-RENEW,[],Unique dish name.
-Reuben And Fries,"['Reuben-Vegan Or Regular', 'Reuben-Vegan(Tofu) Or Rachel(Turkey)', 'Turkey Reuben-Vegan(Tofu) Or Rachel(Turkey)', 'Vegan Reuben And Fries']","Reuben sandwich variants (vegan, regular, turkey)."
-Roasted Beet Sweet Potato Salad,[],Roasted Beet Sweet Potato Salad (consistent).
-Salads,['The Big Salad'],"Same core dish, different phrasing or minor descriptors."
-Salaminjaro,[],Specific product or distinct dish type.
-Savory Mushroom Flatbread,[],Specific product or distinct dish type.
-Savory Protein Rice Bowl,[],Savory Protein Rice Bowl (consistent).
-Serenity Now,[],Specific product or distinct dish type.
-Shepard'S Pie Side Salad,['Vegan Shepards Pie'],Shepard's Pie with side salad option.
-Side Sauces,[],Unique dish name.
-Snakes On A Plane,[],Unique dish name.
-Soba Noodles,[],Specific product or distinct dish type.
-Solid Chocolate Bar,[],Specific product or distinct dish type.
-Southwest Quesadilla,"['Sw Burrito Bowl', 'Sw Burrito Wrap']","Southwest themed dishes (wrap, burrito, quesadilla, salad)."
-"Spiced Yam Cake Wedge, GfDf","['Spiced Yam Cake Wedge, GfNd', 'Spiced Yam Cake- Wedge']",Spiced Yam Cake in wedge format with dietary labels.
-Spicy Beet,[],Unique dish name.
-Spinach Lentil Rice Bowl,[],Spinach Lentil Rice Bowl (consistent).
-Spinach Salad,[],Unique dish name.
-Strawberry Banana,[],Unique dish name.
-"Strawberry, feta, almond salad","['Strawberry, Feta, Toasted Almond Salad']","Strawberry, Feta, Almond Salad (consistent)."
-Sugar Bunnies,[],Specific product or distinct dish type.
-Sunrise,[],Unique dish name.
-Sushi Bowl,[],Specific product or distinct dish type.
-Sweet Potato Curry,[],Specific product or distinct dish type.
-Taali Water Lily Pops,[],Specific product or distinct dish type.
-Tacos (3)GF/vegan options,['Tacos'],"Tacos with various options (jackfruit, chickpea)."
-Taffy,[],Specific product or distinct dish type.
-Teriyaki Bowl VGf,[],Teriyaki Bowl (consistent with dietary label).
-Tex Mex Burrito Bowl,['Texmex Bowl'],"Southwest themed dishes (wrap, burrito, quesadilla, salad)."
-Thai Veggie Curry,['Tofu Curry'],Specific product or distinct dish type.
-The Roots,[],Specific product or distinct dish type.
-The Southwest,['SWest wrap'],"Southwest themed dishes (wrap, burrito, quesadilla, salad)."
-Tropical Green Goddess,[],Tropical Green Goddess Smoothie (consistent).
-Tropical Nice Cream Bowl,[],Specific product or distinct dish type.
-"Twix"" Bar VGf",[],Specific product or distinct dish type.
-V - Raspberry Lemon No Bake,[],Unique dish name.
-"V - Raw Raspberry ""Cheesecake"" Bar",[],Unique dish name.
-V-Protein Packed Banana Muffin,['V-Protein Packed Banana Nut Muffin'],"Same core dish, different phrasing or minor descriptors."
-Vegan Breakfast Sandwich,"['Vegan Breakfast Sandwich-The Jj Sammy', 'Veg Breakfast Sandwich']","Vegan breakfast sandwich variants (e.g., The Jj Sammy)."
-Vegan Cheesecake,[],Vegan Cheesecake variants.
-Vegan Chicken Wrap,[],Unique dish name.
-Vegan Mac Cheese,[],Unique dish name.
-Vegan Veggie Melt Tomato Basil Soup,"['Vegan Veggie Melt Tomato Soup', 'Veggie Melt Soup', 'Veggie Melt Tomato Basil Soup', 'Veggie Melt Tomato Soup']",Vegan Veggie Melt with different soup pairings.
-Veggie Lentil,[],Unique dish name.
-Vitali-D,[],Vitali-D shot (consistent).
-Winter Protein Salad,['Winter Salad'],Winter Salad with protein option.
-ZINGER,[],Unique dish name.
-Zucchini Berry Muffin,"['Zucchini Blue Muffin', 'Zucchini Blue Muffin Gf', 'Zucchini Blue Muffin GfNd', 'Zucchini Blueberry Muffin']",Zucchini Blueberry Muffin with dietary labels.
-"1/2 gallon juice, cold pressed",['one gallon cold pressed juice'],"Cold-pressed juice, varying by volume."
-PROTECT,[],Unique dish name.
+"canonical_name","variants","reasoning"
+"Acai Bowl","['Acai Bowl']","Individual item (form factor split)"
+"April Showers Smoothie Bowl","['April Showers Smoothie Bowl']","Individual item (form factor split)"
+"Carrot Cake Smoothie Bowl","['Carrot Cake Smoothie Bowl']","Individual item (form factor split)"
+"Dragon Smoothie Bowl","['Dragon Smoothie Bowl']","Individual item (form factor split)"
+"Great Pumpkin Bowl","['Great Pumpkin Bowl']","Individual item (form factor split)"
+"Green Goddess Smoothie Bowl","['Green Goddess Smoothie Bowl']","Individual item (form factor split)"
+"Matcha Love Bowl","['Matcha Love Bowl']","Individual item (form factor split)"
+"Pb & J Bowl","['Pb & J Bowl']","Individual item (form factor split)"
+"Peppermint Mocha Bowl","['Peppermint Mocha Bowl']","Individual item (form factor split)"
+"Specialty Smoothie Bowl","['Specialty Smoothie Bowl']","Individual item (form factor split)"
+"Buddha Bowl","['Buddha Bowl', 'Green Goddess Salad Bowl']","Buddha and green goddess bowls"
+"Burrito Bowl","['Sw Burrito Bowl', 'Tex Mex Burrito Bowl']","Burrito bowls"
+"Butternut Curry","['Butternut Curry']","Individual item (form factor split)"
+"Curry","['Curry']","Individual item (form factor split)"
+"Punjabi Butternut Chickpea Spinach Curry","['Punjabi Butternut Chickpea Spinach Curry']","Individual item (form factor split)"
+"Pineapple Coconut Rice Bowl","['Pineapple Coconut Rice Bowl']","Individual item (form factor split)"
+"Spinach Lental Rice Bow","['Spinach Lental Rice Bow']","Individual item (form factor split)"
+"Sushi Bowl","['Sushi Bowl']","Individual item (form factor split)"
+"Breakfast Bowl","['Breakfast Bowl']","Breakfast bowl"
+"Apple Walnut Salad","['Apple Walnut Salad']","Individual item (form factor split)"
+"Autumn Salad","['Autumn Salad']","Individual item (form factor split)"
+"Bean Corn Salad","['Bean Corn Salad']","Individual item (form factor split)"
+"Chicken Salad Over Greens","['Chicken Salad Over Greens']","Individual item (form factor split)"
+"Chickpea Salad Over Greens","['Chickpea Salad Over Greens']","Individual item (form factor split)"
+"Cranberry Chicken Salad","['Cranberry Chicken Salad']","Individual item (form factor split)"
+"Farmer's Market Salad","[""Farmer's Market Salad""]","Individual item (form factor split)"
+"Kale! Ceasar Salad","['Kale! Ceasar Salad']","Individual item (form factor split)"
+"Mediterranean Falafel Salad","['Mediterranean Falafel Salad']","Individual item (form factor split)"
+"Pear Salad Butternut Soup","['Pear Salad Butternut Soup']","Individual item (form factor split)"
+"Pomegranate Power Salad","['Pomegranate Power Salad']","Individual item (form factor split)"
+"Roasted Beet Sweet Potato Salad","['Roasted Beet Sweet Potato Salad']","Individual item (form factor split)"
+"Southwest Salad","['Southwest Salad']","Individual item (form factor split)"
+"Spinach Salad","['Spinach Salad']","Individual item (form factor split)"
+"The Big Salad","['The Big Salad']","Individual item (form factor split)"
+"Winter Protein Salad","['Winter Protein Salad']","Individual item (form factor split)"
+"Winter Salad","['Winter Salad']","Individual item (form factor split)"
+"Wrap","['Breakfast Wrap', 'Buffalo Tofu Chicken Wrap', 'Chickpea Salad Wrap', 'Cranberry Chicken Wrap', 'Forbidden Wrap', 'Rainbow Wrap', 'Sw Burrito Wrap', 'Vegan Chicken Wrap']","Wrap varieties"
+"Burger","['Beet Burger', 'Beyond Burger', 'Black Bean Burger', 'Smash Burger']","Burger varieties"
+"Soup","['Black Bean Soup', 'Butternut Squash Soup', 'Curried Cauliflower Soup', 'House Tomato Soup', 'Soup']","Soup varieties"
+"Egg Bake","['Egg Bake']","Individual item (form factor split)"
+"Matcha Pancakes","['Matcha Pancakes']","Individual item (form factor split)"
+"Oatmeal","['Oatmeal']","Individual item (form factor split)"
+"Pumpkin Waffles","['Pumpkin Waffles']","Individual item (form factor split)"
+"Quiche","['Quiche']","Individual item (form factor split)"
+"Chia Pudding","['Chia Pudding', 'Granola']","Chia and granola"
+"Toast","['Avocado Toast']","Avocado toast"
+"Falafel","['Falafel']","Falafel"
+"Quesadilla","['Quesadilla']","Quesadilla"
+"Tacos","['Tacos']","Tacos"
+"Cauliflower Flatbread Pizza","['Cauliflower Flatbread Pizza']","Individual item (form factor split)"
+"Savory Mushroom Flatbread","['Savory Mushroom Flatbread']","Individual item (form factor split)"
+"Asian Peanut Noodles","['Asian Peanut Noodles']","Individual item (form factor split)"
+"Vegan Mac Cheese","['Vegan Mac Cheese']","Individual item (form factor split)"
+"Fries","['Sweet Potato Fries']","Sweet potato fries"
+"Chips","['Chips House Pico']","Chips"
+"Coleslaw","['Cilantro Lime Coleslaw']","Coleslaw"
+"Applesauce","['Applesauce']","Individual item (was in misc group)"
+"Microgreens","['Microgreens']","Individual item (was in misc group)"
+"Gf Cookie","['Gf Cookie']","Individual item (form factor split)"
+"Molasses Cookies","['Molasses Cookies']","Individual item (form factor split)"
+"Vegan Cookie Bar","['Vegan Cookie Bar']","Individual item (form factor split)"
+"Cookie Bar Sandwich","['Cookie Bar Sandwich']","Individual item (form factor split)"
+"Brownie","['Chocolate Chip Brownie', 'Fudgy Brownie', 'Fudgy Espresso Brownie', 'Peppermint Brownie', 'Walnut Brownie']","Brownie varieties"
+"Chocolate Chip Cookie Bar","['Chocolate Chip Cookie Bar']","Individual item (form factor split)"
+"Energy Bars","['Energy Bars']","Individual item (form factor split)"
+"Lemon Bar","['Lemon Bar']","Individual item (form factor split)"
+"Peanut Butter Scotchy Bar","['Peanut Butter Scotchy Bar']","Individual item (form factor split)"
+"Raspberry Bar","['Raspberry Bar']","Individual item (form factor split)"
+"Rice Krispie Bar","['Rice Krispie Bar']","Individual item (form factor split)"
+"Vegan Lemon Bar","['Vegan Lemon Bar']","Individual item (form factor split)"
+"Almond Pear Cake","['Almond Pear Cake']","Individual item (form factor split)"
+"Carrot Cake","['Carrot Cake']","Individual item (form factor split)"
+"Chocolate Cake","['Chocolate Cake']","Individual item (form factor split)"
+"Pb Chocolate Cake","['Pb Chocolate Cake']","Individual item (form factor split)"
+"Spiced Yam Cake- Wedge","['Spiced Yam Cake- Wedge']","Individual item (form factor split)"
+"Vegan Gf Cake Slice","['Vegan Gf Cake Slice']","Individual item (form factor split)"
+"Cupcake","['Carrot Cake Cupcake', 'Pb Choc Cupcake', 'Vegan Cupcake']","Cupcakes"
+"Muffin","['Muffins', 'Pumpkin Muffin', 'V-Protein Packed Banana Muffin', 'Vegan Muffin', 'Zucchini Muffin']","Muffin varieties"
+"Cinnamon Roll","['Cinnamon Roll']","Cinnamon roll"
+"Cheesecake","['Vegan Cheesecake']","Vegan cheesecake"
+"Cake Pops","['Cake Pops']","Individual item (was in misc group)"
+"Candy Patty","['Candy Patty']","Individual item (was in misc group)"
+"Chocolate Covered Oreos","['Chocolate Covered Oreos']","Individual item (was in misc group)"
+"Pb Choc Tart","['Pb Choc Tart']","Individual item (was in misc group)"
+"Pretzel Bark","['Pretzel Bark']","Individual item (was in misc group)"
+"Vegan Peanut Butter Fudge","['Vegan Peanut Butter Fudge']","Individual item (was in misc group)"
+"Enlightened Bean Crisps","['Enlightened Bean Crisps']","Individual item (form factor split)"
+"Organic Hickory Smokehouse Mushroom Jerky","['Organic Hickory Smokehouse Mushroom Jerky']","Individual item (form factor split)"
+"Taali Water Lily Pops","['Taali Water Lily Pops']","Individual item (form factor split)"
+"Honey","['Honey By John']","Local honey"
+"Bakery Brand","['Majestic Baking Company']","Majestic baking products"
+"Mint To Be","['Mint To Be']","Mint to be item"
+"Sandwich","['Banh Mi']","Split from mixed-category Sandwich - neutral items"
+"Poultry Sandwich","['Grilled Chicken Sandwich']","Split from mixed-category Sandwich - poultry items"
+"Vegan Sandwich","['Reuben-Vegan Or Regular', 'Veggie Grilled Cheese', 'Vegan Breakfast Sandwich']","Split from mixed-category Sandwich - vegan items"
+"Chicken Curry Couscous On Greens","['Chicken Curry Couscous On Greens']","Individual item (was in misc group)"
+"Lion'S Mane Crab Cakes","[""Lion'S Mane Crab Cakes""]","Individual item (was in misc group)"
+"Ratatouille With Chickpea Over Rice Or With Thick Cut Sourdough","['Ratatouille With Chickpea Over Rice Or With Thick Cut Sourdough']","Individual item (was in misc group)"
+"Daily Special","['Daily Special']","Individual item (was in misc group)"
+"Vegan Shepards Pie","['Vegan Shepards Pie']","Individual item (was in misc group)"

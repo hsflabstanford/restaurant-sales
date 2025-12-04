@@ -1,0 +1,19 @@
+item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg,shrimp,whole_bird_white_meat
+Beyond Burger,False,True,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Four Guys Burger,False,False,False,False,False,False,True,False,False,False,True,False,False,False,True,False,False,False,False
+Telway Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Impossible Patty Melt,False,True,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Bulldog Butty,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+Sabich Salad Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+The Alternative,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Gold Standard - Bacon,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+Gold Standard - Bacon Kale,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+Gold Standard - Impossible,False,True,False,False,False,False,False,False,False,False,False,True,False,False,True,False,True,False,False
+Gold Standard - Kale,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Cole Slaw,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Miss Vickie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Ice Cream Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Og Favorite Ice Cream Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Moms Jeans Desserts,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Cool,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Hi,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False

@@ -1,0 +1,298 @@
+item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg,shrimp,whole_bird_white_meat
+Alfredo,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Amaretti Cookies,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Antipasti,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Artichoke Cilantro Shells,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Arugula Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Banana Nutella Tart,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Beef,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Beef Pasta,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Beef Sandwich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Beet Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Benedict,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Biscotti,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Black And White Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Bourbon Pecan Tartelette,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Bowtie Pasta,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Box Lunch,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Braised Beef,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Braised Beef Sandwich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Bread,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Breakfast Sangwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Broccoli,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Brown Butter Pecan Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Bruschetta,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bulumu,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bundt Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Burrata,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Butter Cookies,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Butternut Squash Ravioli,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Caesar Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Cake Or Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Cannoli,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Caprese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Caprese Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Carbonara,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+Cheesecake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Chicken Parm And Spaghetti,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Chicken Parm Sandwich,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Chicken Parm Side,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Chicken Parm Sliders,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Chicken Parmesan,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Chocolate,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Chocolate Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Chocolate Chip Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Chocolate Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Chocolate Cookie Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Coconut Cream Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Coconut Cream Tart,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Cold Cut,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Cold Cut Sandwich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Crazy,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cream Puff,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Creminelli,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+D Chocolate Lab,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+D Madeleine,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+D Pizzelles,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Date Night,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Dipping Oil,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Dolce Chocolate,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Dolce Rainbow,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Dolce Walnut,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Duck Ravioli,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False,False
+Egg Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Eggplant Parm,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Eggplant Parm And Spaghetti,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Eggplant Parm Side,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Eggplant Parm Sliders,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Eggplant Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Eggplant Side,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Eggs,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Eggs In Purgatory,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Espresso Butter,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Fall Pasta,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Fettuccine,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Fettuccine With Sun-Dried Tomato Pesto,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Flatbread,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Florentine,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Flour,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fm Ricotta,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Food,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fregola,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+French Toast,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Fresh Pasta,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Fusilli,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Garlic Bread,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Gf Brown Butter Oatmeal Chocolate Chip,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Ginger Molasses Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Gluten Free Fettuccine,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Gluten Free Penne,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Gnocchi,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+H Penne Vodka,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Hh Crow Canyon,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Hh Meat And Cheese,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Impossible Meatball Sandwich,True,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False
+Impossible Meatball Side,True,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False
+Impossible Sausage Sandwich,True,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Italian Cuban,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Italian Dinner,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Italian Field Greens,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Italian Flag,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Italian Sandwich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Italian Sausage Sandwich,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Italian Sausage Side,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Lasagna,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Lemon Bar,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Lemon Meringue Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Lemon Meringue Tart,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Lemon Olive Oil,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Lemon Tart,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Lunch Special,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Macaroni Monday,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Macaroon,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Meat And Cheese,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Meatball Sandwich,False,False,True,False,False,False,False,False,True,False,False,False,False,False,True,False,False,False,False
+Meatball Side,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,False,False
+Mini Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Mmlocal Peppers Lg,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Mmlocal Pickles,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Mousse,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Mozzarella Ball,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Naked Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Nutella Gelato,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Olives,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+One Dozen Ricottas,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Orzo,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Panini,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Panna Cotta,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Panzanella,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pappardelle,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Parfait,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Pasta,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pasta Agnolotti,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Pasta Angel Hair,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pasta Cavatelli,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pasta Gluten Free,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pasta Linguini,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pasta Ravioli,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Pasta Ravioli No Meat,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Pasta With Pesto,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Penne,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Penne For A Penny,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Penne With Pesto,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pepperoni,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Perugina Chocolates,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Pesto,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pesto Chicken Sandwich,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Pistachios,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pizza Logs,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Polenta,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pomm Chocolate,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Porchetta,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pork Pasta,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pork Sandwich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Portobello,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Poultry Sandwich,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Prosciutto Sandwich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pumpkin Dessert,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Pumpkin Pappardelle,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Pumpkin Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Pumpkin Tart,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Quinoa Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Rainbow,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Raspberry Cheescake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Raspberry Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Raspberry Truffle,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Ravioli,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Red Velvet Cheesecake Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Restaurant Week,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Ricotta Cheese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Ricotta Cookies,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True,False,False
+Rigatoni,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Risotto,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+S Italian Dressing,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+S Ragu,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,False,False
+Salad Asparagus,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Salad Farro,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Salad Orange,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Salad Polenta,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Salad Quinoa,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Salmon,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Salsa Verde,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sandwich Alfredo,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Sandwich Blt,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,False,False
+Sandwich Breakfast,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Sandwich Red Pepper,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Sandwich Tomato Egg,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Sausage Lasagna,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,True,False,False
+Sausage Peppers And Onions,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Sausage Sandwich,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Seasonal,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Seasonal Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Shellfish Pasta,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Shortbread,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Side Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Side Tomato Toast,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Side Vegetable,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sliders,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Snickerdoodle,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Soup,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Spaghetti,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Spaghetti No Meatball,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Spaghetti Parm,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Spaghetti Squash,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Spaghettini,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Spinach Lasagna,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Spinach Pappardelle,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Squid,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Strawberry Rhubarb Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Stuffed Peppers,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Stuffed Shells,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Sweet Corn Ravioli,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Sweet Pea Ravioli,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Sweets Aikopop,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Sweets Gelato,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Sweets Granita,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Tart,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Thumbprint Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Tiramisu,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Tomato,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Tomato Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Tomato Sauce,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Trifle,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Truffle Tasting,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Vegan Pasta,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Vegan Sandwich,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Vodka Sauce,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Walnut,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Watermelon Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Wedding Cookies,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+White Chocolate Cranberry Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Whoopie Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Wild Women Cheese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+catering_takeout,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+$10 Sandwich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Alfredo Sauce,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Anelloni,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Artichoke Pesto,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Baci Chocolate Truffles,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Basil Pesto,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bucatini,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Caesar Dressing,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Caprese Skewers,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Caserecci,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Cheese Ricotta,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Chocolate Walnut,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Cold Side Sausage,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Cookie Dough,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+D Biscotti,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+D Cheesecake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+D Coconut Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+D Macaroons,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+D Pizelles,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+D Tiramisu,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Difrancos Cookies,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Difrancos Truffles,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Dolce Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Dressing,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Duck,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Extra Cheese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Extra Sauce,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fm Tomato Sauce,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fm Vodka Sauce,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+GF Cannoli,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Gluten Free Pasta,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+H Garlic Bread,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+H Italian Field Greens,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+H Meat Lasagna,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+H Spaghetti,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+H Stuffed Shells,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+H Tiramisu,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+H Veggie Lasagna,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Italian Dressing,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Kids Pasta,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Mushroom Crostini,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Olive Oil,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Olives And Nuts,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+P Cavatelli,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pasta And Drink,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pasta Penne,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pasta Spaghetti,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pesto Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Pesto Stuffed Shells,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Portobello Sandwich,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Red Sauce,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+S Tomato Sauce,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Salad Tomato,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sandwich Cold Cut,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Sandwich Eggplant,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Sandwich Portobello,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sandwich Sausage,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Side Eggplant,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Side Garlic Toast,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Sweets Chips And Dip,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+to_remove,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Brownie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Kids Mac And Cheese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False

@@ -1,655 +1,241 @@
-"item_name","categories","reasoning"
-"$10 For Plates - $9.30 Discount","[]","Item without specified animal products."
-"$10 Sandwich","[]","Item without specified animal products."
-"$8 Sandwiches","[]","Item without specified animal products."
-"$9 Sandwiches","[]","Item without specified animal products."
-"10 Sandwich","[]","Item without specified animal products."
-"2 Tarts","[]","Plant-based item."
-"32 Oz Red Sauce","[]","Plant-based item."
-"4Noses","[]","Wine/beer item."
-"A 2 Truffle Tasting","[]","Event/package item."
-"A 3 Truffle Tasting","[]","Event/package item."
-"A Corte Alla Flora Wine Dinner","[]","Wine/beer item."
-"A Restaurant Week","[]","Event/package item."
-"A Restaurant Week Single","[]","Event/package item."
-"A Valentines Day Dinner With Wine","[]","Event/package item."
-"A Wild Women Cheese Only 3","[]","Event/package item."
-"A Wild Women Cheese Plate","[]","Event/package item."
-"A Wild Women Delivery","[]","Non-food/service item."
-"A Wine Dinner","[]","Event/package item."
-"A Youthbiz Date Night","[]","Event/package item."
-"Academia Olive Oil","[]","Plant-based item."
-"Add/Sub Mozzerella","['savory_dairy']","Contains cheese."
-"Alfredo","['savory_dairy']","Contains cheese."
-"Alfredo Sauce","['savory_dairy']","Contains cheese."
-"Allergies","[]","Item without specified animal products."
-"Amaretti","[]","Plant-based item."
-"Amaretti Cookies","['egg']","Contains egg."
-"Amaretto Cookies","['egg']","Contains egg."
-"An Italy Wine Dinner","[]","Event/package item."
-"Anelloni","[]","Plant-based item."
-"Antipasti","[]","Item without specified animal products."
-"Antipasti Per Person / Catering","[]","Item without specified animal products."
-"Antipasto","[]","Item without specified animal products."
-"Artichoke Cilantro Shells","[]","Plant-based item."
-"Artichoke Pesto","[]","Plant-based item."
-"Arugula","[]","Plant-based item."
-"Arugula Sat","[]","Plant-based item."
-"Baci Chocolate Truffles","[]","Item without specified animal products."
-"Bag Of Chips","[]","Plant-based item."
-"Baguette","[]","Plant-based item."
-"Banana Nutella Tart","[]","Plant-based item."
-"Barbaresco","[]","Wine/beer item."
-"Basil Pesto","[]","Plant-based item."
-"Beef","['chunked_beef_or_pork']","Contains beef."
-"Beer Blackshirt","[]","Wine/beer item."
-"Beet","[]","Plant-based item."
-"Beet Salad","[]","Plant-based item."
-"Biscotti","[]","Plant-based item."
-"Black & White Cookie","['egg']","Contains egg."
-"Black And White","[]","Item without specified animal products."
-"Black And White Cookie","['egg']","Contains egg."
-"Bn Squash Ravioli","[]","Plant-based item."
-"Bourbon Pecan Tartelette","[]","Plant-based item."
-"Box Lunch","[]","Item without specified animal products."
-"Box Lunch Mdds","[]","Item without specified animal products."
-"Boxcar Wholebean","[]","Item without specified animal products."
-"Boxed Lunch","[]","Item without specified animal products."
-"Braised Beef","['chunked_beef_or_pork']","Contains beef."
-"Braised Beef Hash","['chunked_beef_or_pork']","Contains beef."
-"Braised Beef Sandwich","['chunked_beef_or_pork']","Contains beef."
-"Bread","[]","Plant-based item."
-"Breakfast Sangwich","[]","Item without specified animal products."
-"Broccoli","[]","Plant-based item."
-"Brown Butter Pecan Cookie","['egg', 'sweet_dairy']","Contains dairy (dessert), egg."
-"Bruscetta Crostini","[]","Item without specified animal products."
-"Bruschetta","[]","Plant-based item."
-"Bucatini","[]","Plant-based item."
-"Bulumu","[]","Wine/beer item."
-"Bundt","['sweet_dairy']","Contains dairy (dessert)."
-"Burrata","['savory_dairy']","Contains cheese."
-"Butter Cookies","['egg', 'sweet_dairy']","Contains dairy (dessert), egg."
-"Butternut Squash Ravioli","[]","Plant-based item."
-"Caesar","['savory_dairy']","Contains cheese."
-"Caesar Dressing Pint**","['savory_dairy']","Contains cheese."
-"Caesar Salad","['savory_dairy']","Contains cheese."
-"Caesar**","['savory_dairy']","Contains cheese."
-"Cake Or Pie","[]","Plant-based item."
-"Cake Or Tart","[]","Plant-based item."
-"Cannoli","['egg']","Contains egg."
-"Cannoli Mini","['egg']","Contains egg."
-"Cannoli Small","['egg']","Contains egg."
-"Cantina Barbaresco","[]","Wine/beer item."
-"Cantina Barbera","[]","Wine/beer item."
-"Cantina Del Pino Nebbiolo","[]","Wine/beer item."
-"Cappello'S Cookie Dough","['egg']","Contains egg."
-"Caprese Crostini","['savory_dairy']","Contains cheese."
-"Caprese Panini","['savory_dairy']","Contains cheese."
-"Caprese Sandwich","['savory_dairy']","Contains cheese."
-"Caprese Skewers","['savory_dairy']","Contains cheese."
-"Carbonara","['bacon', 'egg', 'savory_dairy']","Contains bacon, cheese, egg."
-"Caronara","['bacon', 'egg', 'savory_dairy']","Contains bacon, cheese, egg."
-"Carrot Cake","['sweet_dairy']","Contains dairy (dessert)."
-"Caserecci","[]","Plant-based item."
-"Celio Olive Oil","[]","Plant-based item."
-"Chafing Dish","[]","Non-food/service item."
-"Cheese Ricotta","['savory_dairy']","Contains cheese."
-"Cheesecake","['sweet_dairy']","Contains dairy (dessert)."
-"Chicken Cutlet","['unfried_chicken']","Contains chicken."
-"Chicken Parm + Spaghetti","['fried_chicken', 'savory_dairy']","Contains fried chicken (parm), cheese."
-"Chicken Parm And Spaghetti","['fried_chicken', 'savory_dairy']","Contains fried chicken (parm), cheese."
-"Chicken Parm Sand","['fried_chicken', 'savory_dairy']","Contains fried chicken (parm), cheese."
-"Chicken Parm Sandwich","['fried_chicken', 'savory_dairy']","Contains fried chicken (parm), cheese."
-"Chicken Parm Side","['fried_chicken', 'savory_dairy']","Contains fried chicken (parm), cheese."
-"Chicken Parm Sliders","['fried_chicken', 'savory_dairy']","Contains fried chicken (parm), cheese."
-"Chicken Parmesan","['fried_chicken', 'savory_dairy']","Contains fried chicken (parm), cheese."
-"Chips","[]","Plant-based item."
-"Chocolate","[]","Item without specified animal products."
-"Chocolate Cake","['sweet_dairy']","Contains dairy (dessert)."
-"Chocolate Cake Gluten & Dairy Free","['sweet_dairy']","Contains dairy (dessert)."
-"Chocolate Chip","[]","Item without specified animal products."
-"Chocolate Chip (1)","[]","Item without specified animal products."
-"Chocolate Chip Cookie Sandwich","['egg', 'sweet_dairy']","Contains dairy (dessert), egg."
-"Chocolate Cookie","['egg', 'sweet_dairy']","Contains dairy (dessert), egg."
-"Chocolate Cookie Sandwich","['egg', 'sweet_dairy']","Contains dairy (dessert), egg."
-"Chocolate Stout Whoopie Pie","['sweet_dairy']","Contains dairy (dessert)."
-"Chocolate Walnut","[]","Item without specified animal products."
-"Chocolate Whoopie Pie","['sweet_dairy']","Contains dairy (dessert)."
-"Christmas Sugar Cookies","['egg']","Contains egg."
-"Ciabatta","[]","Plant-based item."
-"Claymore","[]","Wine/beer item."
-"Coconut Cream Pie","['sweet_dairy']","Contains dairy (dessert)."
-"Coconut Cream Tart","['sweet_dairy']","Contains dairy (dessert)."
-"Cold Cut","['chunked_beef_or_pork', 'sausage']","Contains cold cuts, sausage."
-"Cold Cut Sand","['chunked_beef_or_pork', 'sausage']","Contains cold cuts, sausage."
-"Cold Side Sausage","['sausage']","Contains sausage."
-"Coldcut Slider","['chunked_beef_or_pork', 'sausage']","Contains cold cuts, sausage."
-"Colorado Flags","[]","Item without specified animal products."
-"Confetti Cookie","['egg']","Contains egg."
-"Cookie Dough","['egg']","Contains egg."
-"Corte White","[]","Wine/beer item."
-"Costa Di Bussia Barolo","[]","Wine/beer item."
-"Crazy","[]","Wine/beer item."
-"Crazy Mountain","[]","Wine/beer item."
-"Cream Puff","['sweet_dairy']","Contains dairy (dessert)."
-"Cream Puffs","['sweet_dairy']","Contains dairy (dessert)."
-"Crow Canyon","[]","Wine/beer item."
-"Crow Canyon Red","[]","Wine/beer item."
-"D Biscotti","[]","Plant-based item."
-"D Cake Or Pie","[]","Plant-based item."
-"D Cannoli","['egg']","Contains egg."
-"D Cannoli Baby","['egg']","Contains egg."
-"D Cappelleos Cookie","['egg']","Contains egg."
-"D Cheesecake","['sweet_dairy']","Contains dairy (dessert)."
-"D Chocolate Lab","[]","Item without specified animal products."
-"D Coconut Cookie","['egg']","Contains egg."
-"D Difrancos Truffles","[]","Item without specified animal products."
-"D Macaroons","['egg']","Contains egg."
-"D Madeleine","['egg']","Contains egg."
-"D Pizelles","[]","Item without specified animal products."
-"D Pizzelles","[]","Plant-based item."
-"D Pumpkin Pound Cake","[]","Plant-based item."
-"D Tart","[]","Plant-based item."
-"D Tiramisu","['sweet_dairy']","Contains dairy (dessert)."
-"D Wedding Cookies","['egg']","Contains egg."
-"Date Night","[]","Event/package item."
-"Date Night Special","[]","Event/package item."
-"Date Night To Go","[]","Event/package item."
-"Date Nite","[]","Item without specified animal products."
-"Delivery","[]","Non-food/service item."
-"Delivery Charge","[]","Non-food/service item."
-"Delivery Fee","[]","Non-food/service item."
-"Denver Restaurant Week Special","[]","Event/package item."
-"Difranco'S Cookies","['egg']","Contains egg."
-"Difranco'S Florentine","['egg']","Contains egg."
-"Difranco'S Gf","[]","Item without specified animal products."
-"Difranco'S Special","[]","Item without specified animal products."
-"Difrancos Btl","[]","Item without specified animal products."
-"Difrancos Pasta Special","[]","Plant-based item."
-"Difrancos Red","[]","Item without specified animal products."
-"Difrancos Special","[]","Item without specified animal products."
-"Difrancos Tasting","[]","Event/package item."
-"Dipping Oil","[]","Item without specified animal products."
-"Dolce Chocolate","[]","Item without specified animal products."
-"Dolce Cookie","['egg']","Contains egg."
-"Dolce Florentine","['egg']","Contains egg."
-"Dolce Rainbow","[]","Item without specified animal products."
-"Dolce Walnut","[]","Item without specified animal products."
-"Dolcetto","[]","Wine/beer item."
-"Double Chocolate Cookie","['egg', 'sweet_dairy']","Contains dairy (dessert), egg."
-"Dozen Difranco'S Cookies","['egg']","Contains egg."
-"Dressing","[]","Plant-based item."
-"Dried Flavored Pasta","[]","Plant-based item."
-"Duck","['unfried_chicken']","Contains duck."
-"Duck Ravioli","['unfried_chicken']","Contains duck."
-"Duck Yolk","['unfried_chicken']","Contains duck."
-"Duck Yolk Ravioli","['unfried_chicken']","Contains duck."
-"Dz Ricotta Cookies","['egg', 'sweet_dairy']","Contains dairy (dessert), egg."
-"Egg Sandwich","['egg']","Contains egg."
-"Eggplant","[]","Plant-based item."
-"Eggplant Parm","['savory_dairy']","Contains cheese."
-"Eggplant Parm + Spaghetti","['savory_dairy']","Contains cheese."
-"Eggplant Parm And Spaghetti","['savory_dairy']","Contains cheese."
-"Eggplant Parm Side","['savory_dairy']","Contains cheese."
-"Eggplant Parm Sliders","['savory_dairy']","Contains cheese."
-"Eggplant Sandwich","[]","Plant-based item."
-"Eggplant Side","[]","Plant-based item."
-"Eggplant Sub","[]","Plant-based item."
-"Eggs","['egg']","Contains egg."
-"Eggs In Purgatory","['egg']","Contains egg."
-"Egift Card","[]","Non-food/service item."
-"Epic","[]","Wine/beer item."
-"Espresso Butter","[]","Item without specified animal products."
-"Extra Bread","[]","Plant-based item."
-"Extra Mozz","['savory_dairy']","Contains cheese."
-"Extra Pecorino","['savory_dairy']","Contains cheese."
-"Extra Portion Braised Beef","['chunked_beef_or_pork']","Contains beef."
-"Extra Sauce","[]","Plant-based item."
-"Extra Vodka Sauce","[]","Plant-based item."
-"F  Spaghetti","[]","Plant-based item."
-"F Bowtie","[]","Item without specified animal products."
-"F Caesar","['savory_dairy']","Contains cheese."
-"F Caprese","['savory_dairy']","Contains cheese."
-"F Chicken Parm","['fried_chicken', 'savory_dairy']","Contains fried chicken (parm), cheese."
-"F Cutlets","['unfried_chicken']","Contains chicken."
-"F Eggplant","[]","Plant-based item."
-"F Garlic Bread","[]","Plant-based item."
-"F Ital Sausage","['sausage']","Contains sausage."
-"F Italian","[]","Item without specified animal products."
-"F Meat Lasagna","['savory_dairy', 'meatballs']","Contains meatballs, cheese."
-"F Meatballs","['meatballs']","Contains meatballs."
-"F Penne","[]","Plant-based item."
-"F Penne Basil","[]","Plant-based item."
-"F Quinoa","[]","Plant-based item."
-"F Shells","[]","Plant-based item."
-"F Veggie Lasagna","['egg']","Contains egg."
-"Face Down","[]","Wine/beer item."
-"Fall Panini","[]","Item without specified animal products."
-"Fall Pasta","[]","Plant-based item."
-"Family Meal","[]","Event/package item."
-"Fett Gf","[]","Item without specified animal products."
-"Fettuccine","[]","Plant-based item."
-"Fettuccine Individual","[]","Plant-based item."
-"Fettuccine No Sausage","['sausage']","Contains sausage."
-"Fettuccine With Sun-Dried Tomato Pesto","[]","Plant-based item."
-"Flatbread","[]","Plant-based item."
-"Florentine","['egg']","Contains egg."
-"Flour","[]","Plant-based item."
-"Fm Basil Pesto","[]","Plant-based item."
-"Fm Eggs","['egg']","Contains egg."
-"Fm Pasta","[]","Plant-based item."
-"Fm Ricotta","['savory_dairy']","Contains cheese."
-"Fm Tomato Sauce","[]","Plant-based item."
-"Fm Vodka Sauce","[]","Plant-based item."
-"Food","[]","Item without specified animal products."
-"Food And Wine","[]","Event/package item."
-"Fregola","[]","Plant-based item."
-"French Toast","['egg', 'sweet_dairy']","Contains dairy (dessert), egg."
-"Fresh Fettuccine Portion","[]","Plant-based item."
-"Fresh Mozzarella","['savory_dairy']","Contains cheese."
-"Fresh Pasta","[]","Plant-based item."
-"Fresh Pasta Gf","[]","Plant-based item."
-"Fresh Ravioli","[]","Plant-based item."
-"Fresh Spaghetti Portion","[]","Plant-based item."
-"Fusilli","[]","Plant-based item."
-"Garlic Bread","[]","Plant-based item."
-"Gf Brown Butter Oatmeal Chocolate Chip","[]","Item without specified animal products."
-"Gf Cannoli","['egg']","Contains egg."
-"Gf Penne With Basil Pesto","[]","Plant-based item."
-"Gf Wedding Cookie","['egg']","Contains egg."
-"Gift Card","[]","Non-food/service item."
-"Ginger Molasses Cookie","['egg']","Contains egg."
-"Gluten Free Bread","[]","Plant-based item."
-"Gluten Free Cannoli","['egg']","Contains egg."
-"Gluten Free Fettuccine Portion","[]","Plant-based item."
-"Gluten Free Pasta","[]","Plant-based item."
-"Gluten Free Penne With Pesto","[]","Plant-based item."
-"Gluten Free Penne With Red","[]","Plant-based item."
-"Gnocchi","[]","Plant-based item."
-"Gnocchi 1/4#","[]","Plant-based item."
-"Gnocchi Gf","[]","Plant-based item."
-"Graham Cracker Whoopie Pie","['chunked_beef_or_pork', 'sweet_dairy']","Contains ham, dairy (dessert)."
-"Gratuity","[]","Non-food/service item."
-"Great Divide","[]","Wine/beer item."
-"Great Divide Seasonal","[]","Wine/beer item."
-"Guests For Dinner","[]","Event/package item."
-"H Bowtie","[]","Item without specified animal products."
-"H Bread","[]","Plant-based item."
-"H Caesar","['savory_dairy']","Contains cheese."
-"H Caprese","['savory_dairy']","Contains cheese."
-"H Chicken Parm","['fried_chicken', 'savory_dairy']","Contains fried chicken (parm), cheese."
-"H Cutlets","['unfried_chicken']","Contains chicken."
-"H Eggplant","[]","Plant-based item."
-"H Eggplant Parm","['savory_dairy']","Contains cheese."
-"H Field Greens","[]","Item without specified animal products."
-"H Garlic Bread","[]","Plant-based item."
-"H Ital Sausage","['sausage']","Contains sausage."
-"H Italian","[]","Item without specified animal products."
-"H Italian Field Greens","[]","Item without specified animal products."
-"H Italian Sausage","['sausage']","Contains Italian sausage."
-"H Meat Lasagna","['savory_dairy', 'meatballs']","Contains meatballs, cheese."
-"H Meatballs","['meatballs']","Contains meatballs."
-"H Penne","[]","Plant-based item."
-"H Penne Basil","[]","Plant-based item."
-"H Penne Pesto","[]","Plant-based item."
-"H Penne Red","[]","Plant-based item."
-"H Penne Vodka","[]","Plant-based item."
-"H Quinoa","[]","Plant-based item."
-"H Sausage Peppers Onions","['sausage']","Contains sausage."
-"H Shells","[]","Plant-based item."
-"H Spaghetti","[]","Plant-based item."
-"H Stuffed Shells","['savory_dairy']","Contains cheese."
-"H Tiramisu","['sweet_dairy']","Contains dairy (dessert)."
-"H Veggie Lasagna","['egg']","Contains egg."
-"Half Date Night Chicken Parm Fg  Cc Cannoli","[]","Event/package item."
-"Ham Benedict","['egg', 'chunked_beef_or_pork']","Contains ham, egg."
-"Hh Antipasti","[]","Item without specified animal products."
-"Hh Bruschetta","[]","Plant-based item."
-"Hh Burrata","['savory_dairy']","Contains cheese."
-"Hh Chicken Parm","['fried_chicken', 'savory_dairy']","Contains fried chicken (parm), cheese."
-"Hh Crow Canyon","[]","Wine/beer item."
-"Hh Dipping Oil","[]","Item without specified animal products."
-"Hh Meat + Cheese","['chunked_beef_or_pork', 'savory_dairy']","Contains pork/beef, cheese."
-"Hh Meat And Cheese","['chunked_beef_or_pork', 'savory_dairy']","Contains pork/beef, cheese."
-"Hh Meatball","['meatballs']","Contains meatballs."
-"Hh Pizza Logs","['savory_dairy']","Contains cheese."
-"Honey Pistachio Whoopie Pie","['sweet_dairy']","Contains dairy (dessert)."
-"Hot Beef","['chunked_beef_or_pork']","Contains beef."
-"Impossible ""Meat"" Ball Sandwich","['meatballs']","Plant-based item labeled with what regular contains: meatballs."
-"Impossible ""Meat""Ball Side","['meatballs']","Plant-based item labeled with what regular contains: meatballs."
-"Impossible Sausage Sandwich","['sausage']","Plant-based item labeled with what regular contains: sausage."
-"Ital Dressing","[]","Plant-based item."
-"Italian Cuban","['chunked_beef_or_pork']","Contains pork/beef."
-"Italian Date Night","[]","Event/package item."
-"Italian Dinner","[]","Event/package item."
-"Italian Dressing","[]","Plant-based item."
-"Italian Dressing Togo","[]","Plant-based item."
-"Italian Family Meal","[]","Event/package item."
-"Italian Field Greens","[]","Item without specified animal products."
-"Italian Flag","[]","Item without specified animal products."
-"Italian Meal","[]","Event/package item."
-"Italian Saus Sand","[]","Item without specified animal products."
-"Italian Sausage","['sausage']","Contains Italian sausage."
-"Italian Sausage Sand","['sausage']","Contains Italian sausage."
-"Italian Sausage Sandwich","['sausage']","Contains Italian sausage."
-"Italian Sausage Side","['sausage']","Contains Italian sausage."
-"Italian Steak And Cheese","['chunked_beef_or_pork', 'savory_dairy']","Contains pork/beef, cheese."
-"Italian-Cuban","['chunked_beef_or_pork']","Contains pork/beef."
-"Kids Pasta","[]","Plant-based item."
-"Kids Penne","[]","Plant-based item."
-"Lamb Gnocchi","['lamb']","Contains lamb."
-"Large Tart","[]","Plant-based item."
-"Lasagna","['savory_dairy']","Contains cheese."
-"Lasagna Dinner","[]","Event/package item."
-"Lasagna Piece","['savory_dairy']","Contains cheese."
-"Lasagna Special","['savory_dairy']","Contains cheese."
-"Lemon Bar","[]","Plant-based item."
-"Lemon Meringue Pie","[]","Plant-based item."
-"Lemon Meringue Tart","[]","Plant-based item."
-"Lemon Olive Oil","[]","Plant-based item."
-"Lemon Tart","[]","Plant-based item."
-"Lemon Thumbprint Cookie","['egg']","Contains egg."
-"Lunch Special","[]","Item without specified animal products."
-"Mac Monday","[]","Item without specified animal products."
-"Macaroni Monday","[]","Item without specified animal products."
-"Macaroon","['egg']","Contains egg."
-"Made On Monday'S","[]","Item without specified animal products."
-"Meat + Cheese","['chunked_beef_or_pork', 'savory_dairy']","Contains pork/beef, cheese."
-"Meat And Cheese","['chunked_beef_or_pork', 'savory_dairy']","Contains pork/beef, cheese."
-"Meatball","['meatballs']","Contains meatballs."
-"Meatball Sand","['meatballs']","Contains meatballs."
-"Meatball Sandwich","['meatballs']","Contains meatballs."
-"Meatball Side","['meatballs']","Contains meatballs."
-"Mini Bundt Cake (Vg)","['sweet_dairy']","Contains dairy (dessert)."
-"Mini Cannoli","['egg']","Contains egg."
-"Mini Meatballs","['meatballs']","Contains meatballs."
-"Mini Pie","[]","Plant-based item."
-"Mmlocal Beets","[]","Plant-based item."
-"Mmlocal Peppers Lg","[]","Item without specified animal products."
-"Mmlocal Pickles","[]","Item without specified animal products."
-"Mousse","['sweet_dairy']","Contains dairy (dessert)."
-"Mozz Ball","['savory_dairy']","Contains cheese."
-"Mozz Ball 3 Oz","['savory_dairy']","Contains cheese."
-"Mushroom Crostini","[]","Plant-based item."
-"Mushroom Ragu","[]","Plant-based item."
-"Mushrooms Sliders","[]","Plant-based item."
-"Naked","[]","Item without specified animal products."
-"Naked Chicken","['unfried_chicken']","Contains chicken."
-"Naked Chicken Cutlet","['unfried_chicken']","Contains chicken."
-"Nebbiolo","[]","Wine/beer item."
-"Nekkid","[]","Item without specified animal products."
-"New Belgium","[]","Wine/beer item."
-"Non Refundable Deposit","[]","Non-food/service item."
-"Nutella Gelato","['sweet_dairy']","Contains dairy (dessert)."
-"Odell'S Seasonal","[]","Wine/beer item."
-"Olives","[]","Plant-based item."
-"Olives + Nuts","[]","Plant-based item."
-"One Dozen Ricottas","['savory_dairy']","Contains cheese."
-"Orzo","[]","Plant-based item."
-"P Capello'S Cookie Dough","['egg']","Contains egg."
-"P Capello'S Lasagne Sheets","[]","Item without specified animal products."
-"P Capello'S Pasta","[]","Plant-based item."
-"P Cavatelli","[]","Item without specified animal products."
-"P Fresh Pasta","[]","Plant-based item."
-"P Fresh Ravioli","[]","Plant-based item."
-"P Fresh Tag","[]","Item without specified animal products."
-"Panini","[]","Item without specified animal products."
-"Panna Cotta","['sweet_dairy']","Contains dairy (dessert)."
-"Panzanella","[]","Item without specified animal products."
-"Pappardelle","[]","Plant-based item."
-"Papparedelle","[]","Item without specified animal products."
-"Parfait","['sweet_dairy']","Contains dairy (dessert)."
-"Partanna Evoo","[]","Plant-based item."
-"Pasta","[]","Plant-based item."
-"Pasta & Drink","[]","Plant-based item."
-"Pasta Agnolotti","[]","Plant-based item."
-"Pasta Angel Hair","[]","Plant-based item."
-"Pasta Angel Hair No Meatball","['meatballs']","Contains meatballs."
-"Pasta Carbonara","['bacon', 'egg', 'savory_dairy']","Contains bacon, cheese, egg."
-"Pasta Cavatelli","[]","Plant-based item."
-"Pasta Fettuccine","[]","Plant-based item."
-"Pasta Gluten Free","[]","Plant-based item."
-"Pasta Gnocchi","[]","Plant-based item."
-"Pasta Linguini","[]","Plant-based item."
-"Pasta Pappardelle","[]","Plant-based item."
-"Pasta Penne","[]","Plant-based item."
-"Pasta Ravioli","[]","Plant-based item."
-"Pasta Ravioli No Meat","[]","Plant-based item."
-"Pasta Rigatoni","[]","Plant-based item."
-"Pasta Sheets - 1Lb","[]","Plant-based item."
-"Pasta Shells Full","[]","Plant-based item."
-"Pasta Shells Half","[]","Plant-based item."
-"Pasta Spaghetti","[]","Plant-based item."
-"Pasta Spaghetti No Meatball","['meatballs']","Contains meatballs."
-"Pasta With Basil Pesto","[]","Plant-based item."
-"Pasta With Pesto","[]","Plant-based item."
-"Penne","[]","Plant-based item."
-"Penne For A Penny","[]","Plant-based item."
-"Penne Pesto Individual","[]","Plant-based item."
-"Penne Red Gf","[]","Plant-based item."
-"Penne Vodka Gf","[]","Plant-based item."
-"Pepperoni","['sausage']","Contains pepperoni."
-"Perugina Chocolates","[]","Item without specified animal products."
-"Pesto","[]","Plant-based item."
-"Pesto Chick Sand","['unfried_chicken']","Contains chicken."
-"Pesto Chick Sandwich","['unfried_chicken']","Contains chicken."
-"Pesto Chicken","['unfried_chicken']","Contains chicken."
-"Pesto Chicken Sandwich","['unfried_chicken']","Contains chicken."
-"Pesto Stuffed Shells","['savory_dairy']","Contains cheese."
-"Pistachio Panna Cotta","['sweet_dairy']","Contains dairy (dessert)."
-"Pistachios","[]","Plant-based item."
-"Pizza Logs","['savory_dairy']","Contains cheese."
-"Polenta","[]","Plant-based item."
-"Pomm Chocolate","[]","Item without specified animal products."
-"Porchetta","['chunked_beef_or_pork']","Contains porchetta."
-"Porchetta Sub","['chunked_beef_or_pork']","Contains porchetta."
-"Portabello","[]","Plant-based item."
-"Portabello Sandwich","[]","Plant-based item."
-"Portabello Side","[]","Plant-based item."
-"Portabello Sliders","[]","Plant-based item."
-"Portobello","[]","Plant-based item."
-"Portobello Mushroom","[]","Plant-based item."
-"Portobello Sandwich","[]","Plant-based item."
-"Pumpkin Gnocchi","[]","Plant-based item."
-"Pumpkin Papardelle","[]","Plant-based item."
-"Pumpkin Pappadelle","[]","Plant-based item."
-"Pumpkin Pappardelle","[]","Plant-based item."
-"Pumpkin Pie","[]","Plant-based item."
-"Pumpkin Roll","[]","Plant-based item."
-"Pumpkin Tart","[]","Plant-based item."
-"Pumpkin Tiramisu","['sweet_dairy']","Contains dairy (dessert)."
-"Quinoa","[]","Plant-based item."
-"Quinoa No Chk/ Out First","[]","Plant-based item."
-"Quinoa Salad","[]","Plant-based item."
-"R Bonacquisti","[]","Wine/beer item."
-"R Manos Glass","[]","Wine/beer item."
-"R Pali Bottle","[]","Wine/beer item."
-"R Pali Glass","[]","Wine/beer item."
-"R Podere","[]","Wine/beer item."
-"R San Silvestro","[]","Wine/beer item."
-"Rainbow","[]","Item without specified animal products."
-"Rainbow Cake","['sweet_dairy']","Contains dairy (dessert)."
-"Raspberry Cheescake","[]","Item without specified animal products."
-"Raspberry Cookie","['egg']","Contains egg."
-"Raspberry Truffle","[]","Item without specified animal products."
-"Ravioli","[]","Plant-based item."
-"Ravioli Piece","[]","Plant-based item."
-"Red","[]","Item without specified animal products."
-"Red Abstract","[]","Wine/beer item."
-"Red Atrea","[]","Wine/beer item."
-"Red August West","[]","Wine/beer item."
-"Red Baby Blue","[]","Wine/beer item."
-"Red Clayhouse","[]","Wine/beer item."
-"Red Owen Roe","[]","Wine/beer item."
-"Red Pepper","[]","Plant-based item."
-"Red Peter Franus","[]","Wine/beer item."
-"Red Point Conception","[]","Wine/beer item."
-"Red Prisoner","[]","Wine/beer item."
-"Red Rook","[]","Wine/beer item."
-"Red Saldo","[]","Wine/beer item."
-"Red Sandler","[]","Wine/beer item."
-"Red Sauce","[]","Plant-based item."
-"Red Spice Rack","[]","Wine/beer item."
-"Red Velvet Cheesecake Cookie","['egg', 'sweet_dairy']","Contains dairy (dessert), egg."
-"Redacted","[]","Wine/beer item."
-"Referee Dinner","[]","Event/package item."
-"Reg Pasta","[]","Plant-based item."
-"Renegade","[]","Wine/beer item."
-"Restaurant Week","[]","Event/package item."
-"Restaurant Week Single","[]","Event/package item."
-"Ricotta Cheese","['savory_dairy']","Contains cheese."
-"Ricotta Cookies","['egg', 'sweet_dairy']","Contains dairy (dessert), egg."
-"Ricotta Gnocchi","['savory_dairy']","Contains cheese."
-"Rigatoni","[]","Plant-based item."
-"Risotto","[]","Plant-based item."
-"Roast Beef Sandwich","['chunked_beef_or_pork']","Contains beef."
-"Roasted Beet","[]","Plant-based item."
-"Rum Cake","['sweet_dairy']","Contains dairy (dessert)."
-"S Italian Dressing","[]","Plant-based item."
-"S Pesto","[]","Plant-based item."
-"S Ragu","[]","Item without specified animal products."
-"S Salsa Verde","[]","Item without specified animal products."
-"S Tomato Sauce (Home-Made)","[]","Plant-based item."
-"Salad Arugula","[]","Plant-based item."
-"Salad Asparagus","[]","Plant-based item."
-"Salad Caesar","['savory_dairy']","Contains cheese."
-"Salad Farro","[]","Plant-based item."
-"Salad Italian","[]","Plant-based item."
-"Salad Italian With Chicken","['unfried_chicken']","Contains chicken."
-"Salad Orange","[]","Plant-based item."
-"Salad Panzanella","[]","Plant-based item."
-"Salad Polenta","[]","Plant-based item."
-"Salad Quinoa","[]","Plant-based item."
-"Salad Quinoa No Chicken","['unfried_chicken']","Contains chicken."
-"Salad Tomato","[]","Plant-based item."
-"Salmon","[]","Item without specified animal products."
-"Salsa Verde","[]","Item without specified animal products."
-"Sandwich Alfredo","['savory_dairy']","Contains cheese."
-"Sandwich Blt","['bacon']","Contains bacon."
-"Sandwich Breakfast","[]","Item without specified animal products."
-"Sandwich Breakfast Prosciutto","['chunked_beef_or_pork']","Contains prosciutto."
-"Sandwich Chicken Alfredo","['savory_dairy', 'unfried_chicken']","Contains chicken, cheese."
-"Sandwich Chicken Parm","['fried_chicken', 'savory_dairy']","Contains fried chicken (parm), cheese."
-"Sandwich Cold Cut","['chunked_beef_or_pork', 'sausage']","Contains cold cuts, sausage."
-"Sandwich Eggplant","[]","Plant-based item."
-"Sandwich Gluten Free","[]","Item without specified animal products."
-"Sandwich Italian","[]","Item without specified animal products."
-"Sandwich Meatball","['meatballs']","Contains meatballs."
-"Sandwich Mortadella","['sausage']","Contains mortadella."
-"Sandwich Portobello","[]","Plant-based item."
-"Sandwich Prosciutto","['chunked_beef_or_pork']","Contains prosciutto."
-"Sandwich Red Pepper","[]","Plant-based item."
-"Sandwich Sausage","['sausage']","Contains sausage."
-"Sandwich Tomato + Egg","['egg']","Contains egg."
-"Sandwich Veggie","['egg']","Contains egg."
-"Sat Dec 22 Cadaretta","[]","Item without specified animal products."
-"Sat Dec 7 Castello","[]","Item without specified animal products."
-"Sausage","['sausage']","Contains sausage."
-"Sausage Lasagna","['savory_dairy', 'sausage']","Contains sausage, cheese."
-"Sausage Peppers And Onions","['sausage']","Contains sausage."
-"Sausage Sandwich","['sausage']","Contains sausage."
-"Sausage Sub","['sausage']","Contains sausage."
-"Seasonal","[]","Plant-based item."
-"Seasonal Cookie","['egg']","Contains egg."
-"Shells","[]","Plant-based item."
-"Short Cake","['sweet_dairy']","Contains dairy (dessert)."
-"Shortbread","[]","Plant-based item."
-"Shrimp Spaghetti","[]","Plant-based item."
-"Si Araucana Eggs","['egg']","Contains egg."
-"Si Ciabatta Loaf","[]","Plant-based item."
-"Si Creminelli Barolo","[]","Wine/beer item."
-"Si Creminelli Casalingo","['chunked_beef_or_pork']","Contains pork/beef."
-"Si Farm Eggs","['egg']","Contains egg."
-"Si Pepperoni","['sausage']","Contains pepperoni."
-"Side Chicken Cutlet","['unfried_chicken']","Contains chicken."
-"Side Chicken Parm","['fried_chicken', 'savory_dairy']","Contains fried chicken (parm), cheese."
-"Side Dipping Oil","[]","Item without specified animal products."
-"Side Eggplant","[]","Plant-based item."
-"Side Garlic Toast","[]","Plant-based item."
-"Side Meatball","['meatballs']","Contains meatballs."
-"Side Naked Cutlet","['unfried_chicken']","Contains chicken."
-"Side Of Eggs","['egg']","Contains egg."
-"Side Salad","[]","Plant-based item."
-"Side Sausage","['sausage']","Contains sausage."
-"Side Tomato Toast","[]","Plant-based item."
-"Side Vegetable","[]","Non-food/service item."
-"Sliders","[]","Item without specified animal products."
-"Sliders Chicken Parm","['fried_chicken', 'savory_dairy']","Contains fried chicken (parm), cheese."
-"Sliders Eggplant Parm","['savory_dairy']","Contains cheese."
-"Small Pesto","[]","Plant-based item."
-"Snickerdoodle","[]","Plant-based item."
-"Snickerdoodle Nutella Cookie","['egg']","Contains egg."
-"Soup","[]","Plant-based item."
-"Southern Tier","[]","Wine/beer item."
-"Spaghetti","[]","Plant-based item."
-"Spaghetti Individual","[]","Plant-based item."
-"Spaghetti No Meatball","['meatballs']","Contains meatballs."
-"Spaghetti Parm","['savory_dairy']","Contains cheese."
-"Spaghetti Squash","[]","Plant-based item."
-"Spaghetti With Meatball","['meatballs']","Contains meatballs."
-"Spaghettini","[]","Plant-based item."
-"Spinach Lasagna","[]","Plant-based item."
-"Spinach Pappardelle","[]","Plant-based item."
-"Spooky Whoopie Pie","['sweet_dairy']","Contains dairy (dessert)."
-"Spring Gnocchi","[]","Plant-based item."
-"Squid","[]","Item without specified animal products."
-"Staffing","[]","Non-food/service item."
-"Strawberry Rhubarb Pie","[]","Plant-based item."
-"Stuffed Peppers","[]","Item without specified animal products."
-"Stuffed Shells","['savory_dairy']","Contains cheese."
-"Sub Gluten Free Penne","[]","Plant-based item."
-"Summer Fusilli","[]","Plant-based item."
-"Summer Panini","[]","Item without specified animal products."
-"Supper Club","[]","Event/package item."
-"Sweet Corn Ravioli","[]","Plant-based item."
-"Sweet Corn Soup","[]","Plant-based item."
-"Sweet Pea Ravioli","[]","Plant-based item."
-"Sweets Aikopop","[]","Item without specified animal products."
-"Sweets Chips & Dip","[]","Plant-based item."
-"Sweets Gelato","['sweet_dairy']","Contains dairy (dessert)."
-"Sweets Granita","[]","Item without specified animal products."
-"T-Shirt","[]","Non-food/service item."
-"Table","[]","Non-food/service item."
-"Take N Bake Sausage Lasagna","['savory_dairy', 'sausage']","Contains sausage, cheese."
-"Take N Bake Spinach Lasagna","[]","Plant-based item."
-"Tart","[]","Plant-based item."
-"Tasting Dinner","[]","Event/package item."
-"Tasting Party","[]","Event/package item."
-"Team","[]","Non-food/service item."
-"Telluride Brown","[]","Wine/beer item."
-"Test Order From Postmates","[]","Non-food/service item."
-"Thumbprint Cookie","['egg']","Contains egg."
-"Tiramisu","['sweet_dairy']","Contains dairy (dessert)."
-"Tiramisu (Gf)","['sweet_dairy']","Contains dairy (dessert)."
-"Tiramisu For 2","['sweet_dairy']","Contains dairy (dessert)."
-"Togo Box Lunch","[]","Item without specified animal products."
-"Tomato","[]","Plant-based item."
-"Tomato Basil Benedict","['egg']","Contains egg."
-"Tomato Salad","[]","Plant-based item."
-"Tomato Sauce","[]","Plant-based item."
-"Trifle","['sweet_dairy']","Contains dairy (dessert)."
-"Turtle Cake","['sweet_dairy']","Contains dairy (dessert)."
-"V Day Dinner","[]","Item without specified animal products."
-"Vegan Turtle Bundt Cake","['sweet_dairy']","Vegan item labeled with what regular version contains."
-"Vodka Sauce","[]","Plant-based item."
-"W Bonaccorsi Glass","[]","Wine/beer item."
-"W Broadbent Glass","[]","Wine/beer item."
-"W Casamata Glass","[]","Wine/beer item."
-"W Walter Hansel Bottle","[]","Wine/beer item."
-"W Walter Hansel Glass","[]","Wine/beer item."
-"Walnut","[]","Item without specified animal products."
-"Watermelon Salad","[]","Plant-based item."
-"Wedding","[]","Item without specified animal products."
-"Wedding Cookie","['egg']","Contains egg."
-"Wedding Cookies","['egg']","Contains egg."
-"White","[]","Item without specified animal products."
-"White Blindfold","[]","Wine/beer item."
-"White Bonaccorsi","[]","Wine/beer item."
-"White Choc Cran","[]","Item without specified animal products."
-"White Chocolate Cranberry","[]","Item without specified animal products."
-"White Jaspiblanc","[]","Wine/beer item."
-"White Jezebel","[]","Wine/beer item."
-"White Prezzolini","[]","Wine/beer item."
-"Wine Dinner","[]","Event/package item."
-"Winter Panini","[]","Item without specified animal products."
-"Wooden Spoons","[]","Non-food/service item."
+item_name,animal_categories,reasoning,vegan,vegetarian,mpbamodifiable
+Alfredo,['savory_dairy'],Creamy alfredo sauce with dairy,False,True,False
+Amaretti Cookies,"['sweet_dairy', 'egg']",Italian almond cookies typically contain eggs and may have butter,False,True,False
+Antipasti,['savory_dairy'],Italian appetizer plate typically with cheese and cured meats,False,False,False
+Artichoke Cilantro Shells,['savory_dairy'],Stuffed pasta shells with cheese,False,True,False
+Arugula Salad,[],"Plain arugula salad, vegan base",True,True,False
+Banana Nutella Tart,"['sweet_dairy', 'egg']",Tart with Nutella (contains dairy) and likely egg in crust,False,True,False
+Beef,['chunked_beef_or_pork'],Beef protein,False,False,False
+Beef Pasta,"['chunked_beef_or_pork', 'savory_dairy']",Pasta with beef and cheese,False,False,False
+Beef Sandwich,"['chunked_beef_or_pork', 'savory_dairy']",Beef sandwich with cheese,False,False,False
+Beet Salad,['savory_dairy'],Roasted beet salad with goat cheese,False,True,False
+Benedict,"['egg', 'savory_dairy']",Eggs Benedict with hollandaise,False,True,False
+Biscotti,"['egg', 'sweet_dairy']",Italian cookies with eggs,False,True,False
+Black And White Cookie,"['egg', 'sweet_dairy']",Classic cookie with eggs and butter,False,True,False
+Bourbon Pecan Tartelette,"['egg', 'sweet_dairy']",Tart with egg and butter in filling/crust,False,True,False
+Bowtie Pasta,['savory_dairy'],Pasta likely served with cheese sauce,False,True,False
+Box Lunch,[],Generic box lunch - contents vary,False,False,False
+Braised Beef,['chunked_beef_or_pork'],Braised beef dish,False,False,False
+Braised Beef Sandwich,"['chunked_beef_or_pork', 'savory_dairy']",Beef sandwich,False,False,False
+Bread,[],"Plain bread, likely vegan sourdough",True,True,False
+Breakfast Sangwich,"['egg', 'savory_dairy']",Breakfast sandwich with egg and cheese,False,True,False
+Broccoli,['savory_dairy'],Sauteed broccoli with pecorino and garlic butter,False,True,False
+Brown Butter Pecan Cookie,"['sweet_dairy', 'egg']",Cookie with butter and eggs,False,True,False
+Bruschetta,[],"Toasted bread with tomatoes, typically vegan base",True,True,False
+Bulumu,[],Unknown item,False,False,False
+Bundt Cake,"['egg', 'sweet_dairy']",Cake with eggs and butter,False,True,False
+Burrata,['savory_dairy'],Creamy mozzarella stuffed with ricotta,False,True,False
+Butter Cookies,"['sweet_dairy', 'egg']",Butter cookies with eggs,False,True,False
+Butternut Squash Ravioli,"['savory_dairy', 'egg']",Ravioli with cheese and egg pasta,False,True,False
+Caesar Salad,"['savory_dairy', 'egg']",Caesar with pecorino and egg-based dressing,False,True,False
+Cake,"['egg', 'sweet_dairy']",Cake with eggs and dairy,False,True,False
+Cake Or Pie,"['egg', 'sweet_dairy']",Cake or pie with eggs and dairy,False,True,False
+Cannoli,"['sweet_dairy', 'egg']",Italian pastry with ricotta cream filling,False,True,False
+Caprese,['savory_dairy'],"Fresh mozzarella, tomato, basil",False,True,False
+Caprese Sandwich,['savory_dairy'],Sandwich with fresh mozzarella,False,True,False
+Carbonara,"['egg', 'savory_dairy', 'bacon']","Pasta with egg, cheese, and guanciale/pancetta",False,False,False
+Cheesecake,"['sweet_dairy', 'egg']",Cheesecake with cream cheese and eggs,False,True,False
+Chicken Parm And Spaghetti,"['unfried_chicken', 'savory_dairy']",Breaded chicken with mozzarella and pecorino,False,False,True
+Chicken Parm Sandwich,"['unfried_chicken', 'savory_dairy']",Breaded chicken sandwich with cheese,False,False,True
+Chicken Parm Side,"['unfried_chicken', 'savory_dairy']",Chicken parm cutlets with cheese,False,False,False
+Chicken Parm Sliders,"['unfried_chicken', 'savory_dairy']",Mini chicken parm sandwiches,False,False,False
+Chicken Parmesan,"['unfried_chicken', 'savory_dairy']",Breaded chicken with mozzarella,False,False,True
+Chocolate,['sweet_dairy'],"Chocolate item, likely contains dairy",False,True,False
+Chocolate Cake,"['egg', 'sweet_dairy']",Chocolate cake with eggs and dairy,False,True,False
+Chocolate Chip Cookie,"['egg', 'sweet_dairy']",Cookie with butter and eggs,False,True,False
+Chocolate Cookie,"['egg', 'sweet_dairy']",Chocolate cookie with eggs and butter,False,True,False
+Chocolate Cookie Sandwich,"['egg', 'sweet_dairy']",Ice cream cookie sandwich,False,True,False
+Coconut Cream Pie,"['sweet_dairy', 'egg']",Pie with cream and egg custard,False,True,False
+Coconut Cream Tart,"['sweet_dairy', 'egg']",Tart with cream filling,False,True,False
+Cold Cut,"['chunked_beef_or_pork', 'savory_dairy']","Italian cold cuts (salami, prosciutto) with cheese",False,False,False
+Cold Cut Sandwich,"['chunked_beef_or_pork', 'savory_dairy']",Cold cut sandwich with cheese,False,False,False
+Crazy,[],Unknown item,False,False,False
+Cream Puff,"['sweet_dairy', 'egg']",Choux pastry with cream filling,False,True,False
+Creminelli,['chunked_beef_or_pork'],Creminelli brand cured meats,False,False,False
+D Chocolate Lab,['sweet_dairy'],Chocolate dessert item,False,True,False
+D Madeleine,"['egg', 'sweet_dairy']",French butter cakes with eggs,False,True,False
+D Pizzelles,"['egg', 'sweet_dairy']",Italian waffle cookies with eggs,False,True,False
+Date Night,['savory_dairy'],Date night special with entrees and wine,False,False,False
+Difrancos,[],Restaurant branded item,False,False,False
+Dipping Oil,[],Balsamic and olive oil - vegan,True,True,False
+Dolce Chocolate,['sweet_dairy'],Chocolate dessert,False,True,False
+Dolce Rainbow,"['sweet_dairy', 'egg']",Rainbow cookie/dessert with eggs,False,True,False
+Dolce Walnut,"['sweet_dairy', 'egg']",Walnut dessert with dairy and eggs,False,True,False
+Duck Ravioli,"['unfried_chicken', 'savory_dairy', 'egg']",Duck-filled ravioli with cheese,False,False,False
+Egg Sandwich,"['egg', 'savory_dairy']",Egg sandwich with cheese,False,True,False
+Eggplant Parm,['savory_dairy'],Eggplant with mozzarella and pecorino,False,True,False
+Eggplant Parm And Spaghetti,['savory_dairy'],Eggplant parm with pasta,False,True,False
+Eggplant Parm Side,['savory_dairy'],Eggplant parm side portion,False,True,False
+Eggplant Parm Sliders,['savory_dairy'],Mini eggplant parm sandwiches,False,True,False
+Eggplant Sandwich,['savory_dairy'],Eggplant sandwich with cheese,False,True,False
+Eggplant Side,['savory_dairy'],Eggplant side dish with cheese,False,True,False
+Eggs,['egg'],Plain eggs,False,True,False
+Eggs In Purgatory,"['egg', 'savory_dairy']",Eggs poached in tomato sauce with cheese,False,True,False
+Espresso Butter,['sweet_dairy'],Espresso flavored butter,False,True,False
+F Spaghetti,['savory_dairy'],Fresh spaghetti with sauce,False,True,False
+Fall Pasta,['savory_dairy'],Seasonal fall pasta dish,False,True,False
+Fettuccine,"['savory_dairy', 'egg']",Fresh fettuccine (contains eggs) with alfredo,False,True,False
+Fettuccine With Sun-Dried Tomato Pesto,"['savory_dairy', 'egg']",Fettuccine with pesto and cheese,False,True,False
+Flatbread,['savory_dairy'],Flatbread pizza with cheese,False,True,False
+Florentine,"['egg', 'savory_dairy']",Eggs Florentine with spinach,False,True,False
+Flour,[],Plain flour ingredient,True,True,False
+Fm Ricotta,['savory_dairy'],Fresh made ricotta cheese,False,True,False
+Food,[],Generic food item,False,False,False
+Fregola,['savory_dairy'],Sardinian pasta dish with cheese,False,True,False
+French Toast,"['egg', 'sweet_dairy']",French toast with egg and butter,False,True,False
+Fresh Pasta,['egg'],Fresh pasta made with eggs,False,True,False
+Fusilli,['savory_dairy'],Fusilli pasta with sauce,False,True,False
+Garlic Bread,['savory_dairy'],Sourdough with garlic butter and pecorino,False,True,False
+Gf Brown Butter Oatmeal Chocolate Chip,"['egg', 'sweet_dairy']",GF cookie with butter and eggs,False,True,False
+Ginger Molasses Cookie,"['egg', 'sweet_dairy']",Cookie with butter and eggs,False,True,False
+Gluten Free Fettuccine,['savory_dairy'],GF pasta with sauce,False,True,False
+Gluten Free Penne,['savory_dairy'],GF penne with sauce,False,True,False
+Gnocchi,"['savory_dairy', 'egg']",Potato gnocchi often with egg and cheese sauce,False,True,False
+H Penne Vodka,"['savory_dairy', 'chunked_beef_or_pork']",Penne with prosciutto vodka sauce (contains meat),False,False,False
+Half Date Night Chicken Parm Fg Cc Cannoli,"['unfried_chicken', 'savory_dairy', 'egg']",Chicken parm with cannoli,False,False,False
+Hh Crow Canyon,[],Unknown item,False,False,False
+Hh Meat And Cheese,"['chunked_beef_or_pork', 'savory_dairy']",Meat and cheese plate,False,False,False
+Impossible Meatball Sandwich,['meatballs'],Plant-based meatball sandwich (impossible meatballs dairy-free per menu; sourdough bread is vegan),True,True,False
+Impossible Meatball Side,['meatballs'],Plant-based meatball (dairy-free per menu) - meatball dish format,True,True,False
+Impossible Sausage Sandwich,['sausage'],Plant-based sausage sandwich - sausage dish format,True,True,False
+Italian Cuban,"['chunked_beef_or_pork', 'savory_dairy']",Cuban-style Italian sandwich with meat,False,False,False
+Italian Dinner,['savory_dairy'],Italian dinner combo,False,False,False
+Italian Field Greens,[],Mixed greens with italian dressing - vegan base,True,True,False
+Italian Flag,"['savory_dairy', 'egg']",Italian flag dessert/cookie,False,True,False
+Italian Sandwich,"['chunked_beef_or_pork', 'savory_dairy']",Italian cold cut sandwich,False,False,False
+Italian Sausage Sandwich,"['sausage', 'savory_dairy']",Italian sausage sandwich,False,False,False
+Italian Sausage Side,['sausage'],Italian sausage link,False,False,False
+Lasagna,"['savory_dairy', 'egg']",Lasagna with cheese and egg pasta,False,True,False
+Lemon Bar,"['egg', 'sweet_dairy']",Lemon bar with butter crust and egg filling,False,True,False
+Lemon Meringue Pie,"['egg', 'sweet_dairy']",Pie with egg meringue and custard,False,True,False
+Lemon Meringue Tart,"['egg', 'sweet_dairy']",Tart with lemon curd and meringue,False,True,False
+Lemon Olive Oil,[],Lemon olive oil - vegan,True,True,False
+Lemon Tart,"['egg', 'sweet_dairy']",Lemon tart with custard,False,True,False
+Lunch Special,['savory_dairy'],Lunch special combo,False,False,False
+Macaroni Monday,['savory_dairy'],Mac and cheese special,False,True,False
+Macaroon,['egg'],Coconut macaroon with egg whites,False,True,False
+Meat And Cheese,"['chunked_beef_or_pork', 'savory_dairy']",Meat and cheese board,False,False,False
+Meat Lasagna,"['ground_meat', 'savory_dairy', 'egg']",Lasagna with meat sauce,False,False,False
+Meatball Sandwich,"['meatballs', 'savory_dairy']",Pork/beef meatball sandwich (meatballs contain cheese) - can sub Impossible meatballs,False,False,True
+Meatball Side,"['meatballs', 'savory_dairy']",Pork/beef meatball (contains pecorino inside),False,False,False
+Mini Pie,"['egg', 'sweet_dairy']",Mini pie with butter crust,False,True,False
+Mmlocal Peppers Lg,[],Local peppers - vegan,True,True,False
+Mmlocal Pickles,[],Local pickles - vegan,True,True,False
+Mousse,"['sweet_dairy', 'egg']",Mousse with cream and eggs,False,True,False
+Mozzarella Ball,['savory_dairy'],Fresh mozzarella,False,True,False
+Naked Chicken,['unfried_chicken'],Pan-seared chicken breast (no breading),False,False,False
+Nutella Gelato,['sweet_dairy'],Gelato with Nutella,False,True,False
+Olives,[],Olives - vegan,True,True,False
+Olives Nuts,[],Olives and nuts - vegan,True,True,False
+One Dozen Ricottas,"['savory_dairy', 'egg']",Dozen ricotta cookies,False,True,False
+Orzo,['savory_dairy'],Orzo pasta dish with cheese,False,True,False
+Panini,['savory_dairy'],Generic panini with cheese,False,False,False
+Panna Cotta,"['sweet_dairy', 'egg']",Italian cream dessert [FIXED: Baked goods typically have egg/dairy],False,True,False
+Panzanella,['savory_dairy'],"Tuscan bread salad, may have cheese",False,True,False
+Pappardelle,"['savory_dairy', 'egg']",Wide fresh pasta with sauce,False,True,False
+Parfait,['sweet_dairy'],Parfait with cream/yogurt,False,True,False
+Pasta,['savory_dairy'],Generic pasta with sauce,False,True,False
+Pasta Agnolotti,"['savory_dairy', 'egg']",Stuffed pasta with cheese,False,True,False
+Pasta Angel Hair,['savory_dairy'],Angel hair pasta with sauce,False,True,False
+Pasta Cavatelli,['savory_dairy'],Cavatelli pasta dish,False,True,False
+Pasta Gluten Free,['savory_dairy'],GF pasta with sauce,False,True,False
+Pasta Linguini,['savory_dairy'],Linguini pasta dish,False,True,False
+Pasta Ravioli,"['savory_dairy', 'egg']",Ravioli pasta,False,True,False
+Pasta Ravioli No Meat,"['savory_dairy', 'egg']",Vegetarian ravioli,False,True,False
+Pasta With Pesto,['savory_dairy'],Pasta with basil pesto and cheese,False,True,False
+Penne,"['savory_dairy', 'chunked_beef_or_pork']",Penne with prosciutto vodka sauce,False,False,False
+Penne For A Penny,['savory_dairy'],Promotional penne dish,False,True,False
+Penne With Pesto,['savory_dairy'],Penne with basil pesto,False,True,False
+Pepperoni,['chunked_beef_or_pork'],Pepperoni meat,False,False,False
+Perugina Chocolates,['sweet_dairy'],Italian chocolates with milk,False,True,False
+Pesto,['savory_dairy'],Basil pesto with pecorino,False,True,False
+Pesto Chicken Sandwich,"['unfried_chicken', 'savory_dairy']",Chicken sandwich with pesto and provolone,False,False,True
+Pistachios,[],Plain pistachios - vegan,True,True,False
+Pizza Logs,"['savory_dairy', 'chunked_beef_or_pork']",Mozzarella and pepperoni wrapped,False,False,False
+Polenta,['savory_dairy'],Polenta often made with butter/cheese,False,True,False
+Pomm Chocolate,['sweet_dairy'],Chocolate product,False,True,False
+Porchetta,['chunked_beef_or_pork'],Italian roast pork,False,False,False
+Pork Pasta,"['chunked_beef_or_pork', 'savory_dairy']",Pasta with pork,False,False,False
+Pork Sandwich,"['chunked_beef_or_pork', 'savory_dairy']",Pork sandwich,False,False,False
+Portobello,['savory_dairy'],Portobello mushroom dish with cheese,False,True,True
+Poultry Sandwich,"['unfried_chicken', 'savory_dairy']",Chicken/turkey sandwich,False,False,False
+Prosciutto Sandwich,"['chunked_beef_or_pork', 'savory_dairy']",Prosciutto sandwich,False,False,False
+Pumpkin Dessert,"['egg', 'sweet_dairy']",Pumpkin dessert with eggs/cream,False,True,False
+Pumpkin Pappardelle,"['savory_dairy', 'egg']",Pumpkin pasta dish,False,True,False
+Pumpkin Pie,"['egg', 'sweet_dairy']",Pumpkin pie with egg custard,False,True,False
+Pumpkin Tart,"['egg', 'sweet_dairy']",Pumpkin tart,False,True,False
+Quinoa Salad,[],Quinoa salad - typically vegan base,True,True,False
+Rainbow,"['egg', 'sweet_dairy']",Italian rainbow cookie with eggs,False,True,False
+Raspberry Cheescake,"['sweet_dairy', 'egg']",Raspberry cheesecake,False,True,False
+Raspberry Cookie,"['egg', 'sweet_dairy']",Raspberry cookie,False,True,False
+Raspberry Truffle,['sweet_dairy'],Chocolate truffle,False,True,False
+Ravioli,"['savory_dairy', 'egg']",Cheese ravioli,False,True,False
+Red Velvet Cheesecake Cookie,"['egg', 'sweet_dairy']",Red velvet cookie,False,True,False
+Restaurant Week,[],Restaurant week special,False,False,False
+Ricotta Cheese,['savory_dairy'],Ricotta cheese,False,True,False
+Ricotta Cookies,"['savory_dairy', 'egg', 'sweet_dairy']",Butter cookies made with ricotta [FIXED: Baked goods typically have egg/dairy],False,True,False
+Rigatoni,['savory_dairy'],Rigatoni pasta with sauce,False,True,False
+Risotto,['savory_dairy'],Risotto with butter and cheese,False,True,False
+S Italian Dressing,[],Italian dressing - typically vegan,True,True,False
+S Ragu,"['ground_meat', 'savory_dairy']",Meat ragu sauce,False,False,False
+Salad Asparagus,[],Asparagus salad - vegan base,True,True,False
+Salad Farro,[],Farro salad - typically vegan,True,True,False
+Salad Orange,[],Orange salad - vegan,True,True,False
+Salad Polenta,['savory_dairy'],Polenta salad with cheese,False,True,False
+Salad Quinoa,[],Quinoa salad - vegan base,True,True,False
+Salmon,[],Salmon fish (not meat category),False,False,False
+Salsa Verde,[],Green sauce - typically vegan,True,True,False
+Sandwich Alfredo,"['savory_dairy', 'unfried_chicken']",Alfredo chicken sandwich,False,False,False
+Sandwich Blt,"['bacon', 'savory_dairy']",BLT sandwich,False,False,False
+Sandwich Breakfast,"['egg', 'savory_dairy']",Breakfast sandwich,False,True,False
+Sandwich Red Pepper,['savory_dairy'],Red pepper sandwich with cheese,False,True,False
+Sandwich Tomato Egg,"['egg', 'savory_dairy']",Tomato egg sandwich,False,True,False
+Sausage Lasagna,"['sausage', 'savory_dairy', 'egg']",Lasagna with Italian sausage,False,False,False
+Sausage Peppers And Onions,['sausage'],Italian sausage with peppers,False,False,False
+Sausage Sandwich,"['sausage', 'savory_dairy']",Italian sausage sandwich,False,False,False
+Seasonal,[],Seasonal menu item,False,False,False
+Seasonal Cookie,"['egg', 'sweet_dairy']",Seasonal cookie,False,True,False
+Shellfish Pasta,['savory_dairy'],Pasta with shellfish (not meat category),False,False,False
+Shortbread,['sweet_dairy'],Butter shortbread,False,True,False
+Side Salad,[],Side salad - vegan base,True,True,False
+Side Tomato Toast,[],Tomato bruschetta - vegan,True,True,False
+Side Vegetable,[],Vegetable side - likely vegan,True,True,False
+Sliders,['savory_dairy'],Mini sandwiches,False,False,False
+Snickerdoodle,"['egg', 'sweet_dairy']",Cinnamon sugar cookie,False,True,False
+Soup,['savory_dairy'],Soup - varies,False,True,False
+Spaghetti,['savory_dairy'],Spaghetti with red sauce and ricotta salata,False,True,False
+Spaghetti No Meatball,['savory_dairy'],Spaghetti without meatball,False,True,False
+Spaghetti Parm,"['savory_dairy', 'unfried_chicken']",Spaghetti with chicken/eggplant parm,False,False,False
+Spaghetti Squash,[],Spaghetti squash - vegan base,True,True,False
+Spaghettini,['savory_dairy'],Thin spaghetti with sauce,False,True,False
+Spinach Lasagna,"['savory_dairy', 'egg']",Spinach lasagna with alfredo and cheese,False,True,False
+Spinach Pappardelle,"['savory_dairy', 'egg']",Spinach pasta,False,True,False
+Squid,[],Calamari (not meat category),False,False,False
+Strawberry Rhubarb Pie,"['egg', 'sweet_dairy']",Fruit pie with butter crust,False,True,False
+Stuffed Peppers,['savory_dairy'],Stuffed peppers with cheese,False,True,False
+Stuffed Shells,['savory_dairy'],Ricotta and mozzarella stuffed shells,False,True,False
+Sweet Corn Ravioli,"['savory_dairy', 'egg']",Corn ravioli with cheese,False,True,False
+Sweet Pea Ravioli,"['savory_dairy', 'egg']",Pea ravioli with cheese,False,True,False
+Sweets Aikopop,[],Unknown sweet item,False,True,False
+Sweets Chips Dip,[],Chips and dip snack,False,True,False
+Sweets Gelato,['sweet_dairy'],Italian ice cream,False,True,False
+Sweets Granita,[],Italian ice - typically vegan,True,True,False
+Tart,"['egg', 'sweet_dairy']",Generic tart with butter crust,False,True,False
+Thumbprint Cookie,"['egg', 'sweet_dairy']",Butter cookie with jam,False,True,False
+Tiramisu,"['egg', 'sweet_dairy']",Italian dessert with mascarpone and eggs,False,True,False
+Tomato,[],Plain tomato - vegan,True,True,False
+Tomato Salad,[],Tomato salad - vegan,True,True,False
+Tomato Sauce,[],"Red sauce - dairy free, vegan per menu",True,True,False
+Trifle,"['sweet_dairy', 'egg']",Layered dessert with cream,False,True,False
+Truffle Tasting,['savory_dairy'],Truffle tasting with cheese,False,True,False
+Vegan Pasta,[],Vegan pasta option,True,True,False
+Vegan Sandwich,[],Vegan sandwich option,True,True,False
+Veggie Lasagna,"['savory_dairy', 'egg']",Vegetable lasagna with cheese,False,True,False
+Vodka Sauce,"['savory_dairy', 'chunked_beef_or_pork']",Prosciutto vodka sauce (contains meat and dairy),False,False,False
+Walnut,[],Plain walnuts - vegan,True,True,False
+Watermelon Salad,[],Watermelon salad - vegan,True,True,False
+Wedding Cookies,"['sweet_dairy', 'egg']",Italian wedding cookies with butter [FIXED: Baked goods typically have egg/dairy],False,True,False
+White Chocolate Cranberry Cookie,"['egg', 'sweet_dairy']",Cookie with butter and eggs,False,True,False
+Whoopie Pie,"['egg', 'sweet_dairy']",Chocolate cake sandwich with cream,False,True,False
+Wild Women Cheese,['savory_dairy'],Specialty cheese,False,True,False
+catering_takeout,[],Catering and takeout items - varies by content,False,False,False

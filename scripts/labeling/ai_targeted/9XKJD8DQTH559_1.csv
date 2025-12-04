@@ -1,1433 +1,524 @@
-item_name,categories,reasoning
-"""007""",[],No animal products from the target categories detected.
-"""007"" Pizza",[],No animal products from the target categories detected.
-"""Dumplings""",[],No animal products from the target categories detected.
-"""Shorty"" Pizza",[],No animal products from the target categories detected.
-$12 Passed,[],No animal products from the target categories detected.
-$16 Passed,[],No animal products from the target categories detected.
-$21 Passed,[],No animal products from the target categories detected.
-$5 Passed,[],No animal products from the target categories detected.
-$6 Passed,[],No animal products from the target categories detected.
-$7 Passed,[],No animal products from the target categories detected.
-$9 Passed,[],No animal products from the target categories detected.
-(K) Chicken & Rice,[],No animal products from the target categories detected.
-(K) Kids Chicken And Rice,[],No animal products from the target categories detected.
-(K) Pizza Rolls,[],No animal products from the target categories detected.
-(K) Rice & Spaghetti Sauce,[],No animal products from the target categories detected.
-(K) Spaghetti,[],No animal products from the target categories detected.
-(K) Veggie & Rice,['egg'],Contains egg.
-(K) Veggie Stacks,['egg'],Contains egg.
-(M) Baguette (The General Muir),[],No animal products from the target categories detected.
-(M) Baseball Tee,[],No animal products from the target categories detected.
-(M) Breakfast Buns,[],No animal products from the target categories detected.
-(M) C Town Sauce,[],No animal products from the target categories detected.
-(M) Char Siu Bao,['chunked_beef_or_pork'],Contains chunked beef or pork.
-(M) Chicken & Dumplings,['unfried_chicken'],Contains unfried chicken.
-(M) Chicken Noodle,['unfried_chicken'],Contains unfried chicken.
-(M) Chili Crisp,[],No animal products from the target categories detected.
-(M) Cioppino,[],No animal products from the target categories detected.
-(M) Duck Sauce,[],No animal products from the target categories detected.
-(M) Egg Rolls - Mushroom,[],No animal products from the target categories detected.
-(M) Egg Rolls - Shrimp,[],No animal products from the target categories detected.
-(M) Eggplant Parmesan,[],No animal products from the target categories detected.
-(M) Employee Baseball Tee,[],No animal products from the target categories detected.
-(M) Family Size Mac N Cheese Quart,['savory_dairy'],Contains savory dairy.
-(M) Fermented Black Bean Ribs,['chunked_beef_or_pork'],Contains chunked beef or pork.
-(M) Fresh Frozen Pasta,[],No animal products from the target categories detected.
-(M) Gift Sampler,[],No animal products from the target categories detected.
-(M) Hasselback Potatoes,[],No animal products from the target categories detected.
-(M) Hats,[],No animal products from the target categories detected.
-(M) Hoodie,[],No animal products from the target categories detected.
-(M) House Pickles,[],No animal products from the target categories detected.
-(M) Hunter Cattle Grass-Fed Ribeye,['chunked_beef_or_pork'],Contains chunked beef or pork.
-(M) Hunter Cattle Pastured Bacon,['bacon'],Contains bacon.
-(M) Hunter Cattle Pork Chops,['chunked_beef_or_pork'],Contains chunked beef or pork.
-(M) Hunter Cattle Pork Chops (2),['chunked_beef_or_pork'],Contains chunked beef or pork.
-(M) Jams,[],No animal products from the target categories detected.
-(M) Jerky,[],No animal products from the target categories detected.
-(M) Jiayou Chili,[],No animal products from the target categories detected.
-(M) Kolaches,['sausage'],Contains sausage or processed meat.
-(M) Lasagna,[],No animal products from the target categories detected.
-(M) Lasagna Casserole,[],No animal products from the target categories detected.
-(M) Lo Mai Gai,[],No animal products from the target categories detected.
-(M) Mac N Cheese,['savory_dairy'],Contains savory dairy.
-(M) Meatloaf,['meatballs'],Contains meatballs.
-(M) Papa Chan'S Chicken Wings,['unfried_chicken'],Contains unfried chicken.
-(M) Pizza Rolls,[],No animal products from the target categories detected.
-(M) Pomodoro Sauce,[],No animal products from the target categories detected.
-(M) Pot Pie,[],No animal products from the target categories detected.
-(M) Potstickers,[],No animal products from the target categories detected.
-(M) Pride T-Shirt,[],No animal products from the target categories detected.
-(M) Ribs,['chunked_beef_or_pork'],Contains chunked beef or pork.
-(M) Ricotta Meatballs,"['meatballs', 'savory_dairy']",Contains meatballs. Contains savory dairy.
-(M) Salmon Dip,[],No animal products from the target categories detected.
-(M) Sancocho,[],No animal products from the target categories detected.
-(M) Sancocho Kit,[],No animal products from the target categories detected.
-(M) Soups,[],No animal products from the target categories detected.
-(M) Spinach Casserole,[],No animal products from the target categories detected.
-(M) Stroganoff,[],No animal products from the target categories detected.
-(M) Stuffed Mushrooms,[],No animal products from the target categories detected.
-(M) T-Shirt,[],No animal products from the target categories detected.
-11/26 Deposit,[],No animal products from the target categories detected.
-2 Day Grass-Fed Chili (16 Oz),[],No animal products from the target categories detected.
-2 Day Grass-Fed Chili For Cabbagetown  (16 Oz),[],No animal products from the target categories detected.
-3 Day Hoisin Duck,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-3 Day Ramen,[],No animal products from the target categories detected.
-300 App Spread,[],No animal products from the target categories detected.
-420,[],No animal products from the target categories detected.
-48 Hour Marinated Chkn Thigh & Sticky Rice,[],No animal products from the target categories detected.
-75Th Conniption Fit,[],No animal products from the target categories detected.
-Achiote Chicken,['unfried_chicken'],Contains unfried chicken.
-Achiote Pork Egg Roll,['pulled_pork'],Contains pulled/shredded pork.
-Achiote Pork Egg Rolls,['pulled_pork'],Contains pulled/shredded pork.
-Achiote Pork Fried Rice,['pulled_pork'],Contains pulled/shredded pork.
-Achiote Pork Nachos,"['pulled_pork', 'savory_dairy']",Contains pulled/shredded pork. Contains savory dairy.
-Add One Egg,['egg'],Contains egg.
-Aebleskivers,[],No animal products from the target categories detected.
-Aebleskivers¬≥,[],No animal products from the target categories detected.
-Ahi Tuna,[],No animal products from the target categories detected.
-Ahi Tuna Verde,[],No animal products from the target categories detected.
-Ahu Tuna Tostada,[],No animal products from the target categories detected.
-Albacea Monastrell,[],No animal products from the target categories detected.
-All The Mushrooms Pizza,[],No animal products from the target categories detected.
-Almond Chicken Or Tofu,['unfried_chicken'],May contain chicken (option).
-Almond Cookie Chocolate Mousse Sundae,['sweet_dairy'],Contains sweet dairy.
-Almond Cookies,[],No animal products from the target categories detected.
-Almond Fried Chicken,['fried_chicken'],Contains fried chicken.
-Almond Gravy Chicken And Mashed Potatoes,['unfried_chicken'],Contains unfried chicken.
-Almond Gravy Fried Chicken,['fried_chicken'],Contains fried chicken.
-Anniversary Dinner,[],No animal products from the target categories detected.
-Apple French Toast,[],No animal products from the target categories detected.
-Apple Moat,[],No animal products from the target categories detected.
-Apple Tart,[],No animal products from the target categories detected.
-Arancini,[],No animal products from the target categories detected.
-Arches Of The Moment,[],No animal products from the target categories detected.
-Asian Slaw,[],No animal products from the target categories detected.
-Asian Southern Fried Chicken,['fried_chicken'],Contains fried chicken.
-Asparagus & Mushrooms,[],No animal products from the target categories detected.
-Asw Fiddler,[],No animal products from the target categories detected.
-Atl Chili Week,[],No animal products from the target categories detected.
-Atlanta Hartsfield,[],No animal products from the target categories detected.
-Avocado Fried Rice,[],No animal products from the target categories detected.
-Avocado Potato Nachos,['savory_dairy'],Contains savory dairy.
-Award Winning Jiayou Chili,[],No animal products from the target categories detected.
-B - Monday Night,[],No animal products from the target categories detected.
-B - Wild Leap,[],No animal products from the target categories detected.
-B- New Realm,[],No animal products from the target categories detected.
-Baby Jamey,[],No animal products from the target categories detected.
-Bacon & Blue Cheese House Chips,"['bacon', 'savory_dairy']",Contains bacon. Contains savory dairy.
-Bacon & Eggs Taco,"['bacon', 'egg']",Contains bacon. Contains egg.
-Bacon Charred Caesar,['bacon'],Contains bacon.
-Bacon Egg Grilled Cheese,"['bacon', 'savory_dairy', 'egg']",Contains bacon. Contains savory dairy. Contains egg.
-Bacon Is My Jam,['bacon'],Contains bacon.
-Bacon Is My Jam Taco,['bacon'],Contains bacon.
-Banana Pudding,[],No animal products from the target categories detected.
-Banana Pudding For Two,[],No animal products from the target categories detected.
-Bananas Foster,['sweet_dairy'],Contains sweet dairy.
-Banh Mi Hot Dog (Vegan Version Available),['sausage'],Contains sausage or processed meat.
-Bao,[],No animal products from the target categories detected.
-Bao (Brunch),[],No animal products from the target categories detected.
-Bao Of The Day,[],No animal products from the target categories detected.
-Bbq Brisket Taco,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Bbq Chicken Or Kimchi Fried Rice,['unfried_chicken'],Contains unfried chicken.
-"Bbq Chicken, Kimchi, Or Tofu Fried Rice",['unfried_chicken'],May contain chicken (option).
-Bbq Tri Tip Taco,[],No animal products from the target categories detected.
-Be Mine Appetizer,[],No animal products from the target categories detected.
-Be Mine Dessert,[],No animal products from the target categories detected.
-Be Mine Entree,[],No animal products from the target categories detected.
-Beausoleil Oysters,[],No animal products from the target categories detected.
-Beef Stroganoff Bread Bowl,[],No animal products from the target categories detected.
-Beef Teriyaki,[],No animal products from the target categories detected.
-Beer Cheese Bites,['savory_dairy'],Contains savory dairy.
-Beignets,[],No animal products from the target categories detected.
-Benedict,['egg'],Contains egg.
-Best Damn Coffee Cake,[],No animal products from the target categories detected.
-Bingo,[],No animal products from the target categories detected.
-Bird'S Nest,[],No animal products from the target categories detected.
-Biscuit,[],No animal products from the target categories detected.
-Biscuit & Jam,[],No animal products from the target categories detected.
-Biscuit & Red Eye Gravy,[],No animal products from the target categories detected.
-Biscuit And Gravy,[],No animal products from the target categories detected.
-Biscuit Filet Benedict,['egg'],Contains egg.
-Biscuit Red Eye Gravy,[],No animal products from the target categories detected.
-Biscuit Sandwiches,[],No animal products from the target categories detected.
-Biscuit Sausage Gravy,['sausage'],Contains sausage or processed meat.
-"Biscuit, Egg",['egg'],Contains egg.
-"Biscuit, Ham, Egg",['egg'],Contains egg.
-"Biscuit, Ham, Syrup",[],No animal products from the target categories detected.
-"Biscuit, Lamb, Syrup",['lamb'],Contains lamb.
-"Biscuit, Pork",[],No animal products from the target categories detected.
-"Biscuit, Sausage, Egg","['sausage', 'egg']",Contains sausage or processed meat. Contains egg.
-Black Bean & Charred Corn Tostada,[],No animal products from the target categories detected.
-Black Bean & Sunny Egg Tostada,['egg'],Contains egg.
-Black Bean Patty Melt,[],No animal products from the target categories detected.
-Black Bean Ribs,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Black Bean Tostada,[],No animal products from the target categories detected.
-Black Cocoa Miso Chocolate Chip Ice Cream Sandwich,['sweet_dairy'],Contains sweet dairy.
-Black Cocoa Miso Chocolate Chip Ice Cream Sandwich.,['sweet_dairy'],Contains sweet dairy.
-Black Cod Over Kholrabi,[],No animal products from the target categories detected.
-Blistered Shishito Peppers,[],No animal products from the target categories detected.
-Blondie Brownie With Caramel,[],No animal products from the target categories detected.
-Blue Oyster Mushroom Bao,[],No animal products from the target categories detected.
-Blueberry Cobbler W/ Ging. Lav.,[],No animal products from the target categories detected.
-Boiled Peanuts,[],No animal products from the target categories detected.
-Bok Choy,[],No animal products from the target categories detected.
-Bologna Sandwhich,['sausage'],Contains sausage or processed meat.
-Bologna Slider,['sausage'],Contains sausage or processed meat.
-Boston Butt & Apple Slaw Taco,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Boston Butt Mac & Cheese,"['chunked_beef_or_pork', 'savory_dairy']",Contains chunked beef or pork. Contains savory dairy.
-Boston Butt Mac And Cheese,"['chunked_beef_or_pork', 'savory_dairy']",Contains chunked beef or pork. Contains savory dairy.
-Boulevard Drive,[],No animal products from the target categories detected.
-Bowls,[],No animal products from the target categories detected.
-Braciole Entree,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Braciole Fried Arancini,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Branzino,[],No animal products from the target categories detected.
-Brat Poutine,[],No animal products from the target categories detected.
-Bratwurst,['sausage'],Contains sausage or processed meat.
-Bread Pudding,['sweet_dairy'],Contains sweet dairy.
-Breakfast Banh Mi,[],No animal products from the target categories detected.
-Breakfast Buns,[],No animal products from the target categories detected.
-Breakfast Egg Roll,[],No animal products from the target categories detected.
-Breakfast Egg Rolls,[],No animal products from the target categories detected.
-Breakfast Fries,[],No animal products from the target categories detected.
-Breakfast Kolaches & Potatoes,['sausage'],Contains sausage or processed meat.
-Breakfast Nachos,['savory_dairy'],Contains savory dairy.
-Breakfast Pizza,[],No animal products from the target categories detected.
-Breakfast Pork Nachos,['savory_dairy'],Contains savory dairy.
-Breakfast Tacos,[],No animal products from the target categories detected.
-Breakfast Tostado,[],No animal products from the target categories detected.
-Breakfast Wrap,[],No animal products from the target categories detected.
-Brie Stuffed Chicken,"['unfried_chicken', 'savory_dairy']",Contains unfried chicken. Contains savory dairy.
-Brioche Sticky Bun,[],No animal products from the target categories detected.
-Brisket  Mac & Cheese,"['chunked_beef_or_pork', 'savory_dairy']",Contains chunked beef or pork. Contains savory dairy.
-Brisket & Brie Melt,"['chunked_beef_or_pork', 'savory_dairy']",Contains chunked beef or pork. Contains savory dairy.
-Brisket & Chips,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Brisket Benedict,"['chunked_beef_or_pork', 'egg']",Contains chunked beef or pork. Contains egg.
-Brisket Brie Crostini,"['chunked_beef_or_pork', 'savory_dairy']",Contains chunked beef or pork. Contains savory dairy.
-Brisket Jenchan,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Brisket Mac & Cheese,"['chunked_beef_or_pork', 'savory_dairy']",Contains chunked beef or pork. Contains savory dairy.
-Brisket Mac And Cheese,"['chunked_beef_or_pork', 'savory_dairy']",Contains chunked beef or pork. Contains savory dairy.
-Brisket Melt,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Brisket On Biscuit,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Brisket Salad,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Brisket Taco,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Brisket Tacos,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Broccoli Banchan,[],No animal products from the target categories detected.
-Broccolini,[],No animal products from the target categories detected.
-Bronze Fennel Panna Cotta,['sweet_dairy'],Contains sweet dairy.
-Brown Cage Free Eggs (M),['egg'],Contains egg.
-Brunch Egg Roll,[],No animal products from the target categories detected.
-Brunch Tostada,[],No animal products from the target categories detected.
-Brussels Sprouts,[],No animal products from the target categories detected.
-Buffalo Chicken Katsu Pizza,['unfried_chicken'],Contains unfried chicken.
-Buffalo Chicken Pizza,['unfried_chicken'],Contains unfried chicken.
-Buffalo Katsu Chicken Or Tofu Sandwich,['unfried_chicken'],May contain chicken (option).
-Buffalo Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Build Your Own Pizza,[],No animal products from the target categories detected.
-Build Your Own Pizza Test,[],No animal products from the target categories detected.
-Burger Week - Bulgogi,['beef_or_pork_burger'],Contains burger patty.
-Burger Week - Korean Bbq,['beef_or_pork_burger'],Contains burger patty.
-Burrata & Herbs,['savory_dairy'],Contains savory dairy.
-Burrata Fennel,['savory_dairy'],Contains savory dairy.
-Butter Beans,[],No animal products from the target categories detected.
-Buttermilk Biscuit,[],No animal products from the target categories detected.
-Buttermilk Biscuit & Bacon,['bacon'],Contains bacon.
-Buttermilk Biscuit & Butter,[],No animal products from the target categories detected.
-Buttermilk Biscuit & Ham,[],No animal products from the target categories detected.
-Buttermilk Biscuit Sandwiches,[],No animal products from the target categories detected.
-"Buttermilk Biscuits, Eggs, & Cheese","['savory_dairy', 'egg']",Contains savory dairy. Contains egg.
-Buttermilk Panna Cotta Blueberry Jam,['sweet_dairy'],Contains sweet dairy.
-Buttermilk Panna Cotta With Blackberry Chartreuse,['sweet_dairy'],Contains sweet dairy.
-Buttermilk Panna Cotta With Peach Mango Compote,['sweet_dairy'],Contains sweet dairy.
-Butternut Squash,[],No animal products from the target categories detected.
-Butternut Squash Soup,[],No animal products from the target categories detected.
-Butternut Squash Tostado,[],No animal products from the target categories detected.
-Byo Pizza,[],No animal products from the target categories detected.
-Byo Pizza Gluten Free,[],No animal products from the target categories detected.
-Byo Pizza Large,[],No animal products from the target categories detected.
-Byo Pizza Small,[],No animal products from the target categories detected.
-C Town Cauliflower Taco,[],No animal products from the target categories detected.
-C Town Sauce Market,[],No animal products from the target categories detected.
-C-Town Fried Sandwich,[],No animal products from the target categories detected.
-C-Town Fried Tofu Sandwich,[],No animal products from the target categories detected.
-C-Town Mi,[],No animal products from the target categories detected.
-C-Town Pizza,[],No animal products from the target categories detected.
-C-Town Slice Special,[],No animal products from the target categories detected.
-C-Town Spicy Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Cabbagetown Reviver,[],No animal products from the target categories detected.
-Cacio E Pepe,[],No animal products from the target categories detected.
-Caesar Salad,[],No animal products from the target categories detected.
-Cafe Cabalero,[],No animal products from the target categories detected.
-Cafe Caballero,[],No animal products from the target categories detected.
-Cajun Boiled Peanuts,[],No animal products from the target categories detected.
-Cake Cutting Fee,[],No animal products from the target categories detected.
-Cantonese Mahi,[],No animal products from the target categories detected.
-Cantonese Mahi Mahi,[],No animal products from the target categories detected.
-Cantonese Market Fish,[],No animal products from the target categories detected.
-Cantonese Noodles (Market),[],No animal products from the target categories detected.
-Caribbean Ribs & Rice,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Caroline'S Coca Cola & Peanuts Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Carpaccio,[],No animal products from the target categories detected.
-Carrot & Asparagus W/ Tiger Sauce,[],No animal products from the target categories detected.
-Carrot & Coriander,[],No animal products from the target categories detected.
-Carrot Coriander Soup,[],No animal products from the target categories detected.
-Carrot Soup,[],No animal products from the target categories detected.
-Carrot Top Pesto Slice Special,[],No animal products from the target categories detected.
-Casas Del Bosque,[],No animal products from the target categories detected.
-Casas Del Bosque Carmenere,[],No animal products from the target categories detected.
-Casas Del Carmenere,[],No animal products from the target categories detected.
-Catering,[],No animal products from the target categories detected.
-Catering For 18,[],No animal products from the target categories detected.
-Catfish Poutine,[],No animal products from the target categories detected.
-Cauliflower Bao,[],No animal products from the target categories detected.
-Cauliflower Potato Hash,[],No animal products from the target categories detected.
-Cauliflower Taco,[],No animal products from the target categories detected.
-Cauliflower Tacos (3),[],No animal products from the target categories detected.
-Cavalry Glass,[],No animal products from the target categories detected.
-Chai Tea Pork Bao,[],No animal products from the target categories detected.
-Chanterelles,[],No animal products from the target categories detected.
-Char Siu Bao,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Char Sui Bao,[],No animal products from the target categories detected.
-Charred Baby Vidalia,[],No animal products from the target categories detected.
-Charred Caesar Salmon Belly,[],No animal products from the target categories detected.
-Charred Caeser With Soft Shell Crab,[],No animal products from the target categories detected.
-"Charred Corn, Tom. & Vidalia",[],No animal products from the target categories detected.
-"Charred Romaine, Fennel, Chicken Or Tofu",['unfried_chicken'],May contain chicken (option).
-Charred Vidalia,[],No animal products from the target categories detected.
-Charred Vidalia Onion,[],No animal products from the target categories detected.
-Cheese Bread,['savory_dairy'],Contains savory dairy.
-Cheese Grits & Beet Greens,['savory_dairy'],Contains savory dairy.
-Cheese Slice N Beer,['savory_dairy'],Contains savory dairy.
-Cheese Slice N Highlife,['savory_dairy'],Contains savory dairy.
-Cheesesteak,['savory_dairy'],Contains savory dairy.
-Cheesy Grit Cake,[],No animal products from the target categories detected.
-Cheesy Potato And Egg,['egg'],Contains egg.
-Cheesy Potato Skin,[],No animal products from the target categories detected.
-Cheong Fun,[],No animal products from the target categories detected.
-Chicken & Ricotta Dumplings,"['unfried_chicken', 'savory_dairy']",Contains unfried chicken. Contains savory dairy.
-Chicken Caesar Salad,['unfried_chicken'],Contains unfried chicken.
-Chicken Chilaquiles,['unfried_chicken'],Contains unfried chicken.
-Chicken Chilaquilese,['unfried_chicken'],Contains unfried chicken.
-Chicken Crunch Wrap,['unfried_chicken'],Contains unfried chicken.
-Chicken Florentine,['unfried_chicken'],Contains unfried chicken.
-Chicken Katsu,['unfried_chicken'],Contains unfried chicken.
-Chicken Lettuce Wraps,['unfried_chicken'],Contains unfried chicken.
-Chicken Miknuggets,['unfried_chicken'],Contains unfried chicken.
-Chicken Parmesan,['unfried_chicken'],Contains unfried chicken.
-Chicken Pot Pie,['unfried_chicken'],Contains unfried chicken.
-Chicken Salad,['unfried_chicken'],Contains unfried chicken.
-Chicken Salad Lettuce Wraps,['unfried_chicken'],Contains unfried chicken.
-Chicken Thigh & Arugula,['unfried_chicken'],Contains unfried chicken.
-Chickpeas,[],No animal products from the target categories detected.
-Chilaguiles Verde,[],No animal products from the target categories detected.
-Chilaquiles,[],No animal products from the target categories detected.
-Chili,[],No animal products from the target categories detected.
-Chili Cheesy Pizza,[],No animal products from the target categories detected.
-Chili Crisp,[],No animal products from the target categories detected.
-Chili For Cabbagetown,[],No animal products from the target categories detected.
-Chili Fries,[],No animal products from the target categories detected.
-Chili Lime Tortilla Pork,[],No animal products from the target categories detected.
-Chili Market Quart,[],No animal products from the target categories detected.
-Chilled Elote Soup,[],No animal products from the target categories detected.
-Chilled Elote Soup & Shrimp,[],No animal products from the target categories detected.
-Chilled Glass Noodles,[],No animal products from the target categories detected.
-Chinese Bbq Ribs,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Chinese Broccoli Slaw,[],No animal products from the target categories detected.
-Chinese Lemon Pepper Wet Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Chinese New Year Deposit (9 Top),[],No animal products from the target categories detected.
-Chinese Smoked Ribs,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Chinese Steamed Egg,['egg'],Contains egg.
-Chinese Tomato Stir Fry,[],No animal products from the target categories detected.
-Chips & Salsa,[],No animal products from the target categories detected.
-Chips And Salsa,[],No animal products from the target categories detected.
-Chochoyotes,[],No animal products from the target categories detected.
-Chocolate & Coffee Entremet,[],No animal products from the target categories detected.
-Chocolate Cake,['sweet_dairy'],Contains sweet dairy.
-Chocolate Mousse,['sweet_dairy'],Contains sweet dairy.
-"Chocolate Mousse, Orange Zest, Shaved Salt",['sweet_dairy'],Contains sweet dairy.
-Chocolate Sponge Cake,[],No animal products from the target categories detected.
-Chocolate Terrine,[],No animal products from the target categories detected.
-Chocolate Torte,['sweet_dairy'],Contains sweet dairy.
-Chocolate Torte W/ Maple Pecan & Pom.,['sweet_dairy'],Contains sweet dairy.
-Chomp Cheesesteak,['savory_dairy'],Contains savory dairy.
-Chomp Egg Rolls,[],No animal products from the target categories detected.
-Chomp Mushroom Cheesesteak,['savory_dairy'],Contains savory dairy.
-Chomp Pizza,[],No animal products from the target categories detected.
-Chomp Spoon,[],No animal products from the target categories detected.
-Chomp Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Chop N Eggs,['egg'],Contains egg.
-Chris' Car,[],No animal products from the target categories detected.
-Clam Chowder,[],No animal products from the target categories detected.
-Coco Curry Bowl,[],No animal products from the target categories detected.
-Coco Curry Noodle,[],No animal products from the target categories detected.
-Coco Curry Pizza,[],No animal products from the target categories detected.
-Coco Curry Pizza (Tofu Or Chicken),[],No animal products from the target categories detected.
-Coco Curry Taco,[],No animal products from the target categories detected.
-Coconut Chocolate Mousse,['sweet_dairy'],Contains sweet dairy.
-Coddled Pork,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Coffee Cake,[],No animal products from the target categories detected.
-Cold Noodles,[],No animal products from the target categories detected.
-Confit Turkey Wing,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Copperhead Cup,[],No animal products from the target categories detected.
-Corn Fritters,[],No animal products from the target categories detected.
-Cornbread,[],No animal products from the target categories detected.
-Cornbread Pudding,['sweet_dairy'],Contains sweet dairy.
-Cornbread Pudding & Collards,['sweet_dairy'],Contains sweet dairy.
-Country Croque,[],No animal products from the target categories detected.
-Crab Cake,[],No animal products from the target categories detected.
-Crab Cake & Lettuce,[],No animal products from the target categories detected.
-Crab Fingers,[],No animal products from the target categories detected.
-Crab Mac N Cheese,['savory_dairy'],Contains savory dairy.
-Crab Noodles,[],No animal products from the target categories detected.
-Cranberry Toast,[],No animal products from the target categories detected.
-Cranberry Walnut French Toast,[],No animal products from the target categories detected.
-Cranberrytoast,[],No animal products from the target categories detected.
-Crappie,[],No animal products from the target categories detected.
-Crawfish Hand Pies,[],No animal products from the target categories detected.
-Crawfish Handpies,[],No animal products from the target categories detected.
-Crawl-O-Ween,[],No animal products from the target categories detected.
-Cream Cheese Wonton Vegetarian,['savory_dairy'],Contains savory dairy.
-Creamy Chicken & Rice,['unfried_chicken'],Contains unfried chicken.
-Creole,[],No animal products from the target categories detected.
-Creole Gumbo,[],No animal products from the target categories detected.
-Crispy Asian Shrimp Or Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Crispy Asian Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Crispy Asian Wings Or Shrimp,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Crispy Chicken Asian Salad,['unfried_chicken'],Contains unfried chicken.
-Crispy Lentil Fritters,[],No animal products from the target categories detected.
-Crispy No Chicken Asian Salad,[],No animal products from the target categories detected.
-Crispy Potato Nachos,['savory_dairy'],Contains savory dairy.
-Crispy Potatoes & Zhug,[],No animal products from the target categories detected.
-Crispy Shaved Okra,[],No animal products from the target categories detected.
-Crispy Smashed Potato & Egg,['egg'],Contains egg.
-Croissant,[],No animal products from the target categories detected.
-Crostini,[],No animal products from the target categories detected.
-Crunch Wrap,[],No animal products from the target categories detected.
-Cuban Lunch Special,[],No animal products from the target categories detected.
-Cuban Pork Lettuce Wraps,['pulled_pork'],Contains pulled/shredded pork.
-Cuban Sandwich,['pulled_pork'],Contains pulled/shredded pork.
-Cuban Sandwich Plantains & Salad,['pulled_pork'],Contains pulled/shredded pork.
-Curry,[],No animal products from the target categories detected.
-Curry Dal Bowl,[],No animal products from the target categories detected.
-Curry Dal Soup,[],No animal products from the target categories detected.
-Curry Paste (Market),[],No animal products from the target categories detected.
-Custom Amount,[],No animal products from the target categories detected.
-Custom Taco Bar,[],No animal products from the target categories detected.
-Cuvee Bastien,[],No animal products from the target categories detected.
-Daycation,[],No animal products from the target categories detected.
-Deep Fried Pot Stickers,[],No animal products from the target categories detected.
-Delaforce Duoro,[],No animal products from the target categories detected.
-Delivery,[],No animal products from the target categories detected.
-Delivery / Drop,[],No animal products from the target categories detected.
-Delivery Fee,[],No animal products from the target categories detected.
-Deposit,[],No animal products from the target categories detected.
-Deposit October 20 6Pm,[],No animal products from the target categories detected.
-Deviled Eggs,['egg'],Contains egg.
-Domaine De Chateaumar Bastien,[],No animal products from the target categories detected.
-Donut,[],No animal products from the target categories detected.
-Doubanjiang Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Driopi Nemea,[],No animal products from the target categories detected.
-Drunk Mushroom Fried Rice,[],No animal products from the target categories detected.
-Drunk Mushroom Riblets,[],No animal products from the target categories detected.
-Duck Bao Mi,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Duck Confit,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Duck Duck Mousse,"['unfried_chicken', 'sweet_dairy']",Contains poultry (duck/quail/turkey/chicken wings). Contains sweet dairy.
-Duck Fries,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Duck Poutine,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Duck Prosciutto,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Duck Salad,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Duck Tacos (3),['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Dumplings,[],No animal products from the target categories detected.
-Dumplings Yum Cha,[],No animal products from the target categories detected.
-Edamame,[],No animal products from the target categories detected.
-Eeyore'S Meadow,[],No animal products from the target categories detected.
-Egg (Single),['egg'],Contains egg.
-Egg Drop Soup,['egg'],Contains egg.
-Egg Mik-Muffin (M),['egg'],Contains egg.
-Egg Rolls,[],No animal products from the target categories detected.
-Egg Rolls (Best Damn Sauce),[],No animal products from the target categories detected.
-Eggplant Shakshuka,[],No animal products from the target categories detected.
-Eggs (2),['egg'],Contains egg.
-Eggs Bread & Salad,['egg'],Contains egg.
-Eggs Florentine,['egg'],Contains egg.
-Eggs Salad Toast,['egg'],Contains egg.
-Egift Card,[],No animal products from the target categories detected.
-Elote Corn,[],No animal products from the target categories detected.
-Empanadas,[],No animal products from the target categories detected.
-Employee Baseball Tee,[],No animal products from the target categories detected.
-Employee Hat,[],No animal products from the target categories detected.
-Employee Pride T-Shirt,[],No animal products from the target categories detected.
-Employee Tshirt,[],No animal products from the target categories detected.
-Endive And Smoked Salmon,[],No animal products from the target categories detected.
-Endive Will Always Love You,[],No animal products from the target categories detected.
-Event App,[],No animal products from the target categories detected.
-Event Corn Fritters,[],No animal products from the target categories detected.
-Event Mini Kolaches,['sausage'],Contains sausage or processed meat.
-Event Pimento (1),['savory_dairy'],Contains savory dairy.
-Exotic Mushroom Scramble,['egg'],Contains egg.
-Falafel,[],No animal products from the target categories detected.
-Falafel & Hummus Salad,[],No animal products from the target categories detected.
-Falafel Appetizer,[],No animal products from the target categories detected.
-Falafel Pita,[],No animal products from the target categories detected.
-Famiglia Italian Night,[],No animal products from the target categories detected.
-Family Meal,[],No animal products from the target categories detected.
-Family Suppers,[],No animal products from the target categories detected.
-Family Thit Heo Kho Trung,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Farm Plate,[],No animal products from the target categories detected.
-Farm Salad,[],No animal products from the target categories detected.
-February 7 Deposit,[],No animal products from the target categories detected.
-Fennel & Radish,[],No animal products from the target categories detected.
-Fermented Black Bean Pork Ribs,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Fermented Black Bean Ribs Dinner Special,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Feta Tomato Scramble,"['savory_dairy', 'egg']",Contains savory dairy. Contains egg.
-Filet & Taters,[],No animal products from the target categories detected.
-Filet Benny,"['chunked_beef_or_pork', 'egg']",Contains chunked beef or pork. Contains egg.
-Filet Mignon,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Fish & Chips,[],No animal products from the target categories detected.
-Fish & Chips (Street Fries),[],No animal products from the target categories detected.
-Fish And Chips,[],No animal products from the target categories detected.
-Fish Of The Day,[],No animal products from the target categories detected.
-Fish Pho,[],No animal products from the target categories detected.
-Fish Po' Boy,[],No animal products from the target categories detected.
-Five Spice Donut,[],No animal products from the target categories detected.
-Flank Steak Bao,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Flank Steak Dinner,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Flank Steak Dinner With Miso Mushroom Compound Butter,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Flat Shoals,[],No animal products from the target categories detected.
-Flowering Chives,[],No animal products from the target categories detected.
-Flowering Chives & Cipollini,[],No animal products from the target categories detected.
-Flowering Chives & Cippolinis,[],No animal products from the target categories detected.
-Fm,[],No animal products from the target categories detected.
-Forty Creek,[],No animal products from the target categories detected.
-Frangipane & Peach Tart With Sorrel Pastry,[],No animal products from the target categories detected.
-Frangipane Peach Tart,[],No animal products from the target categories detected.
-French Onion Chicken Gordita Crunch Wrap,['unfried_chicken'],Contains unfried chicken.
-French Tacos,[],No animal products from the target categories detected.
-French Toast,[],No animal products from the target categories detected.
-French Toast Bites,[],No animal products from the target categories detected.
-French Toast Points,[],No animal products from the target categories detected.
-French Toast Sticks,[],No animal products from the target categories detected.
-Fried Arancini,[],No animal products from the target categories detected.
-Fried Blue Crab Claws,[],No animal products from the target categories detected.
-Fried Catfish & Grits,['savory_dairy'],Contains savory dairy.
-Fried Catfish Taco,[],No animal products from the target categories detected.
-Fried Chic & Eggs,['egg'],Contains egg.
-Fried Chicken,['fried_chicken'],Contains fried chicken.
-Fried Chicken & Eggs,"['fried_chicken', 'egg']",Contains fried chicken. Contains egg.
-Fried Chicken & Gravy,['fried_chicken'],Contains fried chicken.
-Fried Chicken & Szechuan Honey,['fried_chicken'],Contains fried chicken.
-Fried Chicken Friday,['fried_chicken'],Contains fried chicken.
-Fried Chicken Friday (Gluten Free Option!),['fried_chicken'],Contains fried chicken.
-Fried Chicken Special (Gluten Free Option!),['fried_chicken'],Contains fried chicken.
-Fried Chicken Taco,['fried_chicken'],Contains fried chicken.
-Fried Chicken Thigh,['fried_chicken'],Contains fried chicken.
-Fried Chicken Waffle,['fried_chicken'],Contains fried chicken.
-"Fried Chicken, Biscuit",['fried_chicken'],Contains fried chicken.
-"Fried Chicken, Gravy, Egg","['fried_chicken', 'egg']",Contains fried chicken. Contains egg.
-Fried Crappie,[],No animal products from the target categories detected.
-Fried Maitake Mushrooms,[],No animal products from the target categories detected.
-Fried Maitake Mushrooms (Yum Cha),[],No animal products from the target categories detected.
-Fried Mushrooms,[],No animal products from the target categories detected.
-Fried Okra App,[],No animal products from the target categories detected.
-Fried Oyster Appetizer,[],No animal products from the target categories detected.
-Fried Oyster Poboy,[],No animal products from the target categories detected.
-Fried Oyster Taco,[],No animal products from the target categories detected.
-Fried Oysters,[],No animal products from the target categories detected.
-Fried Plantains,[],No animal products from the target categories detected.
-Fried Plantains & Gado Gado Sauce,[],No animal products from the target categories detected.
-Fried Potato And Egg,['egg'],Contains egg.
-Fried Potato Egg Salad,['egg'],Contains egg.
-Fried Potato Pancake,[],No animal products from the target categories detected.
-Fried Potstickers,[],No animal products from the target categories detected.
-Fried Quail Succotash,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Fried Rice,[],No animal products from the target categories detected.
-Fried Rice & Flank Steak,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Fried Rice Entree,[],No animal products from the target categories detected.
-Fried Rice Pork Belly & Eggs,"['chunked_beef_or_pork', 'egg']",Contains chunked beef or pork. Contains egg.
-Fried Rice Upcharge,[],No animal products from the target categories detected.
-Fried Rice W/ Tenderloin Tips,[],No animal products from the target categories detected.
-"Fried Rice With Flank Steak, Bbq Chicken, Tofu, Or Kimchi","['chunked_beef_or_pork', 'unfried_chicken']",Contains chunked beef or pork. Contains unfried chicken.
-Fried Shrimp Or Fried Tofu Tacos,[],No animal products from the target categories detected.
-Fried Shrimp Taco,[],No animal products from the target categories detected.
-Fried Shumai Rolls,[],No animal products from the target categories detected.
-Fried Smashed Potatoes,[],No animal products from the target categories detected.
-Fried Tofu & Grits,['savory_dairy'],Contains savory dairy.
-Fried Tofu Bowl,[],No animal products from the target categories detected.
-Fried Tofu Jook,[],No animal products from the target categories detected.
-Fried Tofu Mushroom,[],No animal products from the target categories detected.
-Fried Tofu Salad,[],No animal products from the target categories detected.
-Fried Tofu Salad Lunch,[],No animal products from the target categories detected.
-Fried Tofu Taco,[],No animal products from the target categories detected.
-Fries,[],No animal products from the target categories detected.
-Frittata,['egg'],Contains egg.
-Frog Legs,[],No animal products from the target categories detected.
-Fromage Blanc Pizza,[],No animal products from the target categories detected.
-Fundraiser,[],No animal products from the target categories detected.
-Funny Egg,['egg'],Contains egg.
-Gado Bowl,[],No animal products from the target categories detected.
-Gado Gado Lettuce Wraps (3),[],No animal products from the target categories detected.
-Gado-Gado,[],No animal products from the target categories detected.
-Gado-Gado App,[],No animal products from the target categories detected.
-Galbi & Banchan,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Garlic Tahini Rice Noodles,[],No animal products from the target categories detected.
-Gay Card,[],No animal products from the target categories detected.
-Gazpacho,[],No animal products from the target categories detected.
-General Provisions,[],No animal products from the target categories detected.
-General Tsao'S,[],No animal products from the target categories detected.
-General Tsao'S Chicken Or Beyond Chicken,[],No animal products from the target categories detected.
-General Tsao'S Chicken Or Tofu,['unfried_chicken'],May contain chicken (option).
-General Tsao'S Fried Tofu,[],No animal products from the target categories detected.
-Georgia Lady Peas (Family Size),[],No animal products from the target categories detected.
-Georgia On My Mind,[],No animal products from the target categories detected.
-Georgia On My Mind Slice,[],No animal products from the target categories detected.
-Gerneral Provisions,[],No animal products from the target categories detected.
-Gf Choc Torte,[],No animal products from the target categories detected.
-Gf Chocolate Torte,['sweet_dairy'],Contains sweet dairy.
-Gift Card,[],No animal products from the target categories detected.
-Gift Card Reload,[],No animal products from the target categories detected.
-Ginger Curry Bowl,[],No animal products from the target categories detected.
-Ginger Jasmine Rice,[],No animal products from the target categories detected.
-Ginger Lime Salmon Special,[],No animal products from the target categories detected.
-Ginger Nishiki Rice,[],No animal products from the target categories detected.
-Ginger Shrimp Crispy Noodles,[],No animal products from the target categories detected.
-Ginger Sriracha Shrimp Roll,[],No animal products from the target categories detected.
-Gingerbread Layer Cake,['sweet_dairy'],Contains sweet dairy.
-Glencadam,[],No animal products from the target categories detected.
-Gluten Free Byo Pizza,[],No animal products from the target categories detected.
-Gluten Free Pizza,[],No animal products from the target categories detected.
-Gluten Free Special Pizzas,[],No animal products from the target categories detected.
-Goat Yogurt,['savory_dairy'],Contains savory dairy.
-Gochujang,[],No animal products from the target categories detected.
-Gochujang Collards,[],No animal products from the target categories detected.
-Gochujang Hot Chicken,['unfried_chicken'],Contains unfried chicken.
-Good Fortune Orange Tart,[],No animal products from the target categories detected.
-Gorgonzola Grapes,['savory_dairy'],Contains savory dairy.
-Gorgonzola Pork Chop & Roasted Broccoli,"['chunked_beef_or_pork', 'savory_dairy']",Contains chunked beef or pork. Contains savory dairy.
-Gorgonzola Spinach Dip,['savory_dairy'],Contains savory dairy.
-Grandma'S Pound Cake,['sweet_dairy'],Contains sweet dairy.
-Grass-Fed Chili,[],No animal products from the target categories detected.
-Gratuity,[],No animal products from the target categories detected.
-Grilled Chanterelles Salad,[],No animal products from the target categories detected.
-Grilled Cheese,['savory_dairy'],Contains savory dairy.
-Grilled Cheese & Pomodoro,['savory_dairy'],Contains savory dairy.
-Grilled Cheese N Arugula Sandwich,['savory_dairy'],Contains savory dairy.
-Grilled Cornbread,[],No animal products from the target categories detected.
-Grilled Jumbo Bbq Shrimp Caesar,[],No animal products from the target categories detected.
-Grit Cake & Steak,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Guacamole,[],No animal products from the target categories detected.
-Guacamole Potato Nachos,['savory_dairy'],Contains savory dairy.
-Guacamole Potato Tostado,[],No animal products from the target categories detected.
-Guava Queso French Toast,['savory_dairy'],Contains savory dairy.
-Guava Queso Waffle,['savory_dairy'],Contains savory dairy.
-Gumbo,[],No animal products from the target categories detected.
-Gunsmoke Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Gunsmoke Wings With Spicy Peanuts,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Hainanese Chicken,['unfried_chicken'],Contains unfried chicken.
-Hake & Potatoes,[],No animal products from the target categories detected.
-"Ham, Egg, & Cheese Egg Rolls",['savory_dairy'],Contains savory dairy.
-Happy Hour Asian Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Happy Hour C-Town Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Happy Hour Deviled Eggs,['egg'],Contains egg.
-Happy Hour Edamame,[],No animal products from the target categories detected.
-Happy Hour Lemon Pepper Wet Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Happy Hour Special,[],No animal products from the target categories detected.
-Hashbrown Of The Day,[],No animal products from the target categories detected.
-Hashbrown Scramble,['egg'],Contains egg.
-Hawaiian Garlic Shrimp Macaroni Salad,[],No animal products from the target categories detected.
-Heap O' Fried Rice,[],No animal products from the target categories detected.
-Heap O' Fried Rice & Mushrooms,[],No animal products from the target categories detected.
-Herb Tagliatelle,[],No animal products from the target categories detected.
-Hh Cheesesteak,['savory_dairy'],Contains savory dairy.
-Hh Corn Fritters,[],No animal products from the target categories detected.
-Hh Cuban,[],No animal products from the target categories detected.
-Hh Shrimp Cocktail,[],No animal products from the target categories detected.
-Hh Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Hoisin Bacon Bao,['bacon'],Contains bacon.
-Hoisin Boston Butt Bao,"['chunked_beef_or_pork', 'pulled_pork']",Contains chunked beef or pork. Contains pulled/shredded pork.
-Hoisin Boston Butt Taco,"['chunked_beef_or_pork', 'pulled_pork']",Contains chunked beef or pork. Contains pulled/shredded pork.
-Hoisin Duck,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Hoisin Duck Salad,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Hoisin Duck Taco,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Hoisin Duck Taco (1),['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Hoisin Meatball Bao Bun,['meatballs'],Contains meatballs.
-Hoisin Mushroom Bao,[],No animal products from the target categories detected.
-Hoison Mushroom Tostado,[],No animal products from the target categories detected.
-Hoison Pork Belly,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Homemade Pizza Rolls,[],No animal products from the target categories detected.
-Homestyle Pancake,[],No animal products from the target categories detected.
-Honey Sriracha Moos,[],No animal products from the target categories detected.
-Honeybun Cake,['sweet_dairy'],Contains sweet dairy.
-Hong Kong French Toast,[],No animal products from the target categories detected.
-Hong Shao Rou,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Hong Shao Rou Taco,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Honoro Monastrell,[],No animal products from the target categories detected.
-Hot And Sour Soup,[],No animal products from the target categories detected.
-Hot Fried Chicken Sliders,['fried_chicken'],Contains fried chicken.
-Hot Ham Cheese Fries,['savory_dairy'],Contains savory dairy.
-Hot Peaches & Cream,['sweet_dairy'],Contains sweet dairy.
-House Bacon,['bacon'],Contains bacon.
-House Lasagna,[],No animal products from the target categories detected.
-House Pizza,[],No animal products from the target categories detected.
-House Sub,[],No animal products from the target categories detected.
-Hummus & Such,[],No animal products from the target categories detected.
-Hunter Cattle Pastured Bacon,['bacon'],Contains bacon.
-Ice Cream,['sweet_dairy'],Contains sweet dairy.
-Ice Cream And Apples,['sweet_dairy'],Contains sweet dairy.
-Ice Cream Antisocial,['sweet_dairy'],Contains sweet dairy.
-Ice Cream Antisocial Boozy,['sweet_dairy'],Contains sweet dairy.
-Ice Cream Sandwich,['sweet_dairy'],Contains sweet dairy.
-Iceberg Wedge,[],No animal products from the target categories detected.
-Inman Park Festival,[],No animal products from the target categories detected.
-Ipsum,[],No animal products from the target categories detected.
-Jalapeno Poppers,[],No animal products from the target categories detected.
-Jamaican Jerk Hamburger Steak,['beef_or_pork_burger'],Contains burger patty.
-Jasmine Rice,[],No animal products from the target categories detected.
-Jc'S Black Cocoa Miso Chocolate Chip Ice Cream Sandwich,['sweet_dairy'],Contains sweet dairy.
-Jen Chan,[],No animal products from the target categories detected.
-Jen Chan Lunch,[],No animal products from the target categories detected.
-Jen'S Cold Cut,[],No animal products from the target categories detected.
-Jenchan,[],No animal products from the target categories detected.
-Jiayou Chili,[],No animal products from the target categories detected.
-Jook,[],No animal products from the target categories detected.
-Jook Brunch,[],No animal products from the target categories detected.
-Juevos Rancheros,['egg'],Contains egg.
-Jumbo Ginger Beer Or Chicken Shrimp Lo Mein,['unfried_chicken'],Contains unfried chicken.
-Jumbo Ginger Beer Or Fried Chicken Shrimp Lo Mein,['fried_chicken'],Contains fried chicken.
-Jumbo Ginger Beer Shrimp Lo Mein,[],No animal products from the target categories detected.
-June 7 Catering,[],No animal products from the target categories detected.
-June 8 Catering,[],No animal products from the target categories detected.
-Just Taco,[],No animal products from the target categories detected.
-Justaco,[],No animal products from the target categories detected.
-Justaco Yum Cha,[],No animal products from the target categories detected.
-Katsu Chicken Taco,['unfried_chicken'],Contains unfried chicken.
-Katsu Fried Chicken Farm Salad,['fried_chicken'],Contains fried chicken.
-Keepin' It Classy,[],No animal products from the target categories detected.
-Kerala Shrimp Moiliee (Coconut Curry),[],No animal products from the target categories detected.
-Ki-We,[],No animal products from the target categories detected.
-Kid'S Chicken Breast With Honey Mustard,['unfried_chicken'],Contains unfried chicken.
-Kid'S Chicken Tenders Honey Mustard,['unfried_chicken'],Contains unfried chicken.
-Kid'S Fried Chicken With Ranch,['fried_chicken'],Contains fried chicken.
-Kid'S Spaghetti,[],No animal products from the target categories detected.
-Kid'S Veggies And Rice,['egg'],Contains egg.
-Kids Shrimp And Rice,[],No animal products from the target categories detected.
-Kim Marie,[],No animal products from the target categories detected.
-Kimchi Breakfast Nachos,['savory_dairy'],Contains savory dairy.
-Kimchi Fried Rice,[],No animal products from the target categories detected.
-Kimchi Side,[],No animal products from the target categories detected.
-Kitchen Sink Scramble,['egg'],Contains egg.
-Kolache,['sausage'],Contains sausage or processed meat.
-Kolaches,['sausage'],Contains sausage or processed meat.
-Korean Bbq Meatballs,['meatballs'],Contains meatballs.
-Korean Bulgogi Ribs,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Kung Pao Chicken Taco,['unfried_chicken'],Contains unfried chicken.
-Kung Pao Chickpeas,[],No animal products from the target categories detected.
-Kung Pao Stirfry Veggies,['egg'],Contains egg.
-Kung Pao Taco,[],No animal products from the target categories detected.
-Kung Pao Veggies,['egg'],Contains egg.
-Labor,[],No animal products from the target categories detected.
-Lamb Belly & Egg,"['lamb', 'egg']",Contains lamb. Contains egg.
-Lamb Belly Bao,['lamb'],Contains lamb.
-Lamb Kofta,['lamb'],Contains lamb.
-Lamb Lazzagna,['lamb'],Contains lamb.
-Lap Cheong Focaccia,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Lap Cheong Fried Rice,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Lap Cheong Jook,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Lap Cheong Pizza,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Lasagna,[],No animal products from the target categories detected.
-Lasagna Enchilada,[],No animal products from the target categories detected.
-Lasagna Sauce (Quart),[],No animal products from the target categories detected.
-Lasagna Single Portion,[],No animal products from the target categories detected.
-Lazzagna,[],No animal products from the target categories detected.
-Lazzagna Pizza,[],No animal products from the target categories detected.
-Lemon Blueberry Cake,['sweet_dairy'],Contains sweet dairy.
-Lemon Curd Donut,[],No animal products from the target categories detected.
-Les Promesses,[],No animal products from the target categories detected.
-Lettuce Wrap,[],No animal products from the target categories detected.
-Lion'S Mane Mushroom Umami Broth,[],No animal products from the target categories detected.
-Lion'S Mane Poutine,[],No animal products from the target categories detected.
-Lions Mane Arancini Squares,[],No animal products from the target categories detected.
-Little Neck Clams,[],No animal products from the target categories detected.
-Lo Mai Gai,[],No animal products from the target categories detected.
-Lo Mein,[],No animal products from the target categories detected.
-Lo Mein Yum Cha,[],No animal products from the target categories detected.
-Loaded Gunsmoke Nachos,['savory_dairy'],Contains savory dairy.
-Loaded Hash,[],No animal products from the target categories detected.
-Loaded Hashbrowns,[],No animal products from the target categories detected.
-Loaded Potato & Pork,[],No animal products from the target categories detected.
-Loaded Potato Skins,[],No animal products from the target categories detected.
-Loaded Smashed Potatoes,[],No animal products from the target categories detected.
-Loaded Street Fries,[],No animal products from the target categories detected.
-Local Lettuce & Radish,[],No animal products from the target categories detected.
-Long Life Bok Choy,[],No animal products from the target categories detected.
-Longevity Noodles,[],No animal products from the target categories detected.
-Low Country Charcuterie,[],No animal products from the target categories detected.
-Lump Crab & Jumbo Shrimp Salad,[],No animal products from the target categories detected.
-Lump Crab Cake,[],No animal products from the target categories detected.
-Lump Crab Cake Appetizer,[],No animal products from the target categories detected.
-Lump Crab Scramble,['egg'],Contains egg.
-Luna Granache,[],No animal products from the target categories detected.
-Lunch Specials,[],No animal products from the target categories detected.
-Lunchables,[],No animal products from the target categories detected.
-Mac & Cheese,['savory_dairy'],Contains savory dairy.
-Mac & Cheese Balls,['savory_dairy'],Contains savory dairy.
-Mac & Chs. Balls,[],No animal products from the target categories detected.
-Mac And Cheese,['savory_dairy'],Contains savory dairy.
-Mac N Cheese,['savory_dairy'],Contains savory dairy.
-Maduros (Fried Sweet Plantains),[],No animal products from the target categories detected.
-Maggi,[],No animal products from the target categories detected.
-Mahi & Salmon Croquette,[],No animal products from the target categories detected.
-Mahi Mahi,[],No animal products from the target categories detected.
-Mahi Mahi Salad,[],No animal products from the target categories detected.
-Mahi Mahi Special,[],No animal products from the target categories detected.
-Maple Sausage & Grits,"['sausage', 'savory_dairy']",Contains sausage or processed meat. Contains savory dairy.
-Mapo Tofu,[],No animal products from the target categories detected.
-Mapo Tofu Pizza,[],No animal products from the target categories detected.
-Market Bacon,['bacon'],Contains bacon.
-Market Boiled Peanuts,[],No animal products from the target categories detected.
-Market Clam Chowder,[],No animal products from the target categories detected.
-Market Crab Cake,[],No animal products from the target categories detected.
-Market Lasagna,[],No animal products from the target categories detected.
-Market Pasta,[],No animal products from the target categories detected.
-Market Poptart,[],No animal products from the target categories detected.
-Market Pot Pie,[],No animal products from the target categories detected.
-Market Smoked Gouda And Tillamook Mac & Cheese,['savory_dairy'],Contains savory dairy.
-Market Stroganoff,[],No animal products from the target categories detected.
-Mashed Potatoes & Ribs,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Mcs Black Cocoa Miso Chocolate Chip Ice Cream Sandwich.,['sweet_dairy'],Contains sweet dairy.
-Meatball Slider,['meatballs'],Contains meatballs.
-Meatball Sub,['meatballs'],Contains meatballs.
-Meatloaf,['meatballs'],Contains meatballs.
-Mediterranean Sammy,[],No animal products from the target categories detected.
-Meema'S Chicken,['unfried_chicken'],Contains unfried chicken.
-Mexican Empire,[],No animal products from the target categories detected.
-Mexican Pizza,[],No animal products from the target categories detected.
-Mezcal Tomato Meatballs,['meatballs'],Contains meatballs.
-Mik Chan Pizza,[],No animal products from the target categories detected.
-Mikkelsens,[],No animal products from the target categories detected.
-Milltown C-Town Spicy Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Milltown Crispy Asian Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Milltown Egg Rolls,[],No animal products from the target categories detected.
-Milltown Fried Shrimp Or Fried Tofu Tacos,[],No animal products from the target categories detected.
-Milltown Loaded Street Fries,[],No animal products from the target categories detected.
-Milltown Mongolian Beef Cheesesteak,['savory_dairy'],Contains savory dairy.
-Milltown Panko Jumbo Fried Shrimp Dinner (8),[],No animal products from the target categories detected.
-Miso Chocolate Chip Cookies,[],No animal products from the target categories detected.
-Miso Chocolate Chip Cookies 2Pack,[],No animal products from the target categories detected.
-Miso Donut,[],No animal products from the target categories detected.
-Miso Ice Cream Sandwich,['sweet_dairy'],Contains sweet dairy.
-Miso Soup,[],No animal products from the target categories detected.
-Mixed Berry Fry Pie,[],No animal products from the target categories detected.
-Mn Big Softy,[],No animal products from the target categories detected.
-Moda Foca Monastrell,[],No animal products from the target categories detected.
-Monday Night,[],No animal products from the target categories detected.
-Mongolian Beef,[],No animal products from the target categories detected.
-Mongolian Beef & Grits,['savory_dairy'],Contains savory dairy.
-Mongolian Beef Bao,[],No animal products from the target categories detected.
-Mongolian Beef Bowl,[],No animal products from the target categories detected.
-Mongolian Beef Cheesesteak,['savory_dairy'],Contains savory dairy.
-Mongolian Beef Egg Rolls,[],No animal products from the target categories detected.
-Mongolian Beef French Tacos,[],No animal products from the target categories detected.
-Mongolian Beef Fried Rice,[],No animal products from the target categories detected.
-Mongolian Beef Loaded Baked Potato,[],No animal products from the target categories detected.
-Mongolian Beef Pizza,[],No animal products from the target categories detected.
-Mongolian Beef Poutine,[],No animal products from the target categories detected.
-Mongolian Beef Quesadilla,['savory_dairy'],Contains savory dairy.
-Mongolian Beef Rice Bowl & Egg,['egg'],Contains egg.
-Mongolian Beef Taco,[],No animal products from the target categories detected.
-Mongolian Bok Choy,[],No animal products from the target categories detected.
-Mongolian Bowl,[],No animal products from the target categories detected.
-Mongolian Cheesesteak,['savory_dairy'],Contains savory dairy.
-Mongolian Pizza,[],No animal products from the target categories detected.
-Mongolian Potato,[],No animal products from the target categories detected.
-Monte Cristo,[],No animal products from the target categories detected.
-Moos In A Blanket,[],No animal products from the target categories detected.
-Mortadello Benny,['egg'],Contains egg.
-Moules Marinieres,[],No animal products from the target categories detected.
-Mousee,[],No animal products from the target categories detected.
-Moussaka,[],No animal products from the target categories detected.
-Mousse,['sweet_dairy'],Contains sweet dairy.
-Mousse Cookie,['sweet_dairy'],Contains sweet dairy.
-Mousse Sandwich,['sweet_dairy'],Contains sweet dairy.
-Mousse Sundae,['sweet_dairy'],Contains sweet dairy.
-Mr. B'S Bbq Shrimp,[],No animal products from the target categories detected.
-Mr. Big Is Dead,[],No animal products from the target categories detected.
-Mushroom Bao,[],No animal products from the target categories detected.
-Mushroom Lo Mein,[],No animal products from the target categories detected.
-Mushroom Melt,[],No animal products from the target categories detected.
-Mushroom Shawarma Pita,[],No animal products from the target categories detected.
-Mushroom Stroganoff,[],No animal products from the target categories detected.
-Mushroom Toast,[],No animal products from the target categories detected.
-Mushroom Umami Soup,[],No animal products from the target categories detected.
-Mushroom Wellington,[],No animal products from the target categories detected.
-Muskmelon & Cantelope,[],No animal products from the target categories detected.
-Mussels,[],No animal products from the target categories detected.
-N.O. Bbq Shrimp,[],No animal products from the target categories detected.
-Nacho Fries,['savory_dairy'],Contains savory dairy.
-Nachos,['savory_dairy'],Contains savory dairy.
-Name This Pizza Pizza,[],No animal products from the target categories detected.
-Nc Trout,[],No animal products from the target categories detected.
-Nc Trout & Asparagus Puree,[],No animal products from the target categories detected.
-New Orleans Style Bbq Shrimp,[],No animal products from the target categories detected.
-New Realm,[],No animal products from the target categories detected.
-North Carolina Trout Salad,[],No animal products from the target categories detected.
-North Carolina Trout Special,[],No animal products from the target categories detected.
-Nye Dinner,[],No animal products from the target categories detected.
-Nye Dinner Allergy Or Special,[],No animal products from the target categories detected.
-Omelette Of The Day,['egg'],Contains egg.
-Omurice Omelette,['egg'],Contains egg.
-One Hot Donut,[],No animal products from the target categories detected.
-One Pound Of Jenchan'S Smoked Pastured Chicken Salad,['unfried_chicken'],Contains unfried chicken.
-Onetable,[],No animal products from the target categories detected.
-Open Item,[],No animal products from the target categories detected.
-Orange Duck,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Orange Ginger Edamame,[],No animal products from the target categories detected.
-Orange Salmon,[],No animal products from the target categories detected.
-Osso Bucco,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Otto'S Cbd,[],No animal products from the target categories detected.
-Oysters On The Half Shell,[],No animal products from the target categories detected.
-P-Chz Bologna Sandwich,['sausage'],Contains sausage or processed meat.
-Pan Seared Salmon,[],No animal products from the target categories detected.
-Pan Seared Trout,[],No animal products from the target categories detected.
-Panko Fried Green Hill,[],No animal products from the target categories detected.
-Papa Chan Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Papa'S Fried Crappie,[],No animal products from the target categories detected.
-Papalo & Pork Belly,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Parfait,['sweet_dairy'],Contains sweet dairy.
-Pate Crostini,[],No animal products from the target categories detected.
-Peach Bread Pudding,['sweet_dairy'],Contains sweet dairy.
-Peach Cobbler,[],No animal products from the target categories detected.
-Peach Frangipane,[],No animal products from the target categories detected.
-Peach Granola,[],No animal products from the target categories detected.
-Peaches & Cream,['sweet_dairy'],Contains sweet dairy.
-Peanut Noodle Salad,[],No animal products from the target categories detected.
-Pearson Farm Peaches,[],No animal products from the target categories detected.
-Pearson Peaches Cream,['sweet_dairy'],Contains sweet dairy.
-Pei Mussels,[],No animal products from the target categories detected.
-Pei Mussels Special,[],No animal products from the target categories detected.
-Pepp Slice N Beer,[],No animal products from the target categories detected.
-Pepp Slice N Highlife,[],No animal products from the target categories detected.
-Pepper Steak,[],No animal products from the target categories detected.
-Pickled Herring Taco,[],No animal products from the target categories detected.
-Pimiento Cheese Egg Rolls,['savory_dairy'],Contains savory dairy.
-Pimiento Cheese Eggs Rolls,"['savory_dairy', 'egg']",Contains savory dairy. Contains egg.
-Piri Piri Fish Taco,[],No animal products from the target categories detected.
-Pita Melt,[],No animal products from the target categories detected.
-Pizza,[],No animal products from the target categories detected.
-Pizza (10‚Äù),[],No animal products from the target categories detected.
-Pizza Egg Rolls,[],No animal products from the target categories detected.
-Pizza For Breakfast,[],No animal products from the target categories detected.
-Pizza Smashed Potatoes,[],No animal products from the target categories detected.
-Pizza Special,[],No animal products from the target categories detected.
-Poached Peaches & Cream,['sweet_dairy'],Contains sweet dairy.
-Poblano Chicken Gordita,[],No animal products from the target categories detected.
-Pollo Pibil | Orange Chicken,['unfried_chicken'],Contains unfried chicken.
-Pop Tart,[],No animal products from the target categories detected.
-Popcorn Crab,[],No animal products from the target categories detected.
-Poptart,[],No animal products from the target categories detected.
-Pork & Greens,[],No animal products from the target categories detected.
-Pork Bao,[],No animal products from the target categories detected.
-Pork Belly Benny,"['chunked_beef_or_pork', 'egg']",Contains chunked beef or pork. Contains egg.
-Pork Belly Bites,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Pork Belly Mac And Cheese,"['chunked_beef_or_pork', 'savory_dairy']",Contains chunked beef or pork. Contains savory dairy.
-Pork Belly Taco,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Pork Butt Egg Cheese,"['chunked_beef_or_pork', 'savory_dairy', 'egg']",Contains chunked beef or pork. Contains savory dairy. Contains egg.
-Pork Chop,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Pork Chop & Eggs,"['chunked_beef_or_pork', 'egg']",Contains chunked beef or pork. Contains egg.
-Pork Egg N Cheese Roll,"['savory_dairy', 'egg']",Contains savory dairy. Contains egg.
-Pork Egg Rolls,[],No animal products from the target categories detected.
-Pork Fried Rice,[],No animal products from the target categories detected.
-Pork Fried Rice Entree,[],No animal products from the target categories detected.
-Pork Mac N Cheese,['savory_dairy'],Contains savory dairy.
-Pork Or Tofu Egg Rolls,[],No animal products from the target categories detected.
-Pork Quesadilla,['savory_dairy'],Contains savory dairy.
-Pork Roll Egg Cheese,"['savory_dairy', 'egg']",Contains savory dairy. Contains egg.
-Pork Roll Egg Cheese Please,"['savory_dairy', 'egg']",Contains savory dairy. Contains egg.
-Pork Shoulder  Mac & Cheese,['savory_dairy'],Contains savory dairy.
-Pork Shoulder Mac & Cheese,['savory_dairy'],Contains savory dairy.
-Pork Taco Egg Roll,[],No animal products from the target categories detected.
-Pork Tenderloin,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Pork Tenderloin Special,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Pork Wonton,[],No animal products from the target categories detected.
-Portlandia,[],No animal products from the target categories detected.
-Pot Roast,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Pot Roast Taco,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Pot Stickers,[],No animal products from the target categories detected.
-Pot Stickers (8),[],No animal products from the target categories detected.
-Potato Egg Salad Pimiento Grilled Cheese,"['savory_dairy', 'egg']",Contains savory dairy. Contains egg.
-Potato Hash,[],No animal products from the target categories detected.
-Potato Hash Over Easy Egg,['egg'],Contains egg.
-Potato Salad,[],No animal products from the target categories detected.
-Potato Salad (Quart),[],No animal products from the target categories detected.
-Potato Soup,[],No animal products from the target categories detected.
-Potato Sticks,[],No animal products from the target categories detected.
-Potatoes & Onions,[],No animal products from the target categories detected.
-Potstickers (4),[],No animal products from the target categories detected.
-Potstickers (8),[],No animal products from the target categories detected.
-Poutine,[],No animal products from the target categories detected.
-Prawns A La Plancha,[],No animal products from the target categories detected.
-Preserved Meyer Lemon Szechuan Pepper Wet Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Prime Rib,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Prime Rib & Egg,"['chunked_beef_or_pork', 'egg']",Contains chunked beef or pork. Contains egg.
-Prime Rib Potato Croquette,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Prime Rib Taco,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Proteins,[],No animal products from the target categories detected.
-Pumpkin Pancakes,[],No animal products from the target categories detected.
-Pupusa Popup,[],No animal products from the target categories detected.
-Q'S Banh Mi Cabbagetown,[],No animal products from the target categories detected.
-Quart Of Cold Cucumber Soup,[],No animal products from the target categories detected.
-Quart Soup (M),[],No animal products from the target categories detected.
-Queso,['savory_dairy'],Contains savory dairy.
-Quiche,['egg'],Contains egg.
-Quiche Yum Cha,['egg'],Contains egg.
-Radish Wraps,[],No animal products from the target categories detected.
-Rainbow Carrots & Kale,[],No animal products from the target categories detected.
-Ravioli,[],No animal products from the target categories detected.
-Red Braised Szechuan Pork Cheeks,[],No animal products from the target categories detected.
-Red Rider,[],No animal products from the target categories detected.
-Red Snapper (Fish Of The Day),[],No animal products from the target categories detected.
-Red Yeast Pork Bao,[],No animal products from the target categories detected.
-Ribeye Steak,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Ribeye Tostado,['chunked_beef_or_pork'],Contains chunked beef or pork.
-"Ribeye, English Muffin, Poached Egg","['chunked_beef_or_pork', 'egg']",Contains chunked beef or pork. Contains egg.
-Ribs,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Rice Bowl,[],No animal products from the target categories detected.
-Rice Noodles And Spaghetti Sauce,[],No animal products from the target categories detected.
-Ricotta Meatball Pasta,"['meatballs', 'savory_dairy']",Contains meatballs. Contains savory dairy.
-Ricotta Meatball Pizza,"['meatballs', 'savory_dairy']",Contains meatballs. Contains savory dairy.
-Ricotta Meatball Sub,"['meatballs', 'savory_dairy']",Contains meatballs. Contains savory dairy.
-Ricotta Meatballs,"['meatballs', 'savory_dairy']",Contains meatballs. Contains savory dairy.
-Ricotta Pancakes,['savory_dairy'],Contains savory dairy.
-Ricotta Pomodoro Poached Eggs,"['savory_dairy', 'egg']",Contains savory dairy. Contains egg.
-Ricotta Zeppole,['savory_dairy'],Contains savory dairy.
-Roasted Asparagus & Mushrooms,[],No animal products from the target categories detected.
-Roasted Beet & Goat Yogurt,['savory_dairy'],Contains savory dairy.
-Roasted Beets,[],No animal products from the target categories detected.
-Roasted Chickpeas,[],No animal products from the target categories detected.
-Roasted Fennel Bacon Jam,['bacon'],Contains bacon.
-Roasted Mushroom & Corn Tostada,[],No animal products from the target categories detected.
-Roasted Trout Belly Charred Caesar,[],No animal products from the target categories detected.
-Roasted Vidalia Onion,[],No animal products from the target categories detected.
-Roasted Vidalia Onion & Fennel,[],No animal products from the target categories detected.
-Roasted Vidalia Onion & Peas,[],No animal products from the target categories detected.
-Roasted Vidalia Onion & Radish,[],No animal products from the target categories detected.
-Robby'S Kung Pao Pie,[],No animal products from the target categories detected.
-Robby'S Kung Pao Pizza,[],No animal products from the target categories detected.
-Rock Shrimp,[],No animal products from the target categories detected.
-Rock Shrimp Roll,[],No animal products from the target categories detected.
-Romaine & Smoked Salmon,[],No animal products from the target categories detected.
-Romesco Chicken,['unfried_chicken'],Contains unfried chicken.
-Ropa Vieja,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Ropa Vieja Arepa,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Ropa Vieja Arepa (Beef Or Jackfruit),['chunked_beef_or_pork'],Contains chunked beef or pork.
-Rou Jia Mo,[],No animal products from the target categories detected.
-Royal Red Shrimp Boil,[],No animal products from the target categories detected.
-Ruthie'S Sweets,[],No animal products from the target categories detected.
-Salad,[],No animal products from the target categories detected.
-Salmon,[],No animal products from the target categories detected.
-Salmon & Cabbage,[],No animal products from the target categories detected.
-Salmon & Endive,[],No animal products from the target categories detected.
-Salmon & Napa,[],No animal products from the target categories detected.
-Salmon & Rice,[],No animal products from the target categories detected.
-Salmon & Snow Peas,[],No animal products from the target categories detected.
-Salmon And Grits,['savory_dairy'],Contains savory dairy.
-Salmon Croquette,[],No animal products from the target categories detected.
-Salmon Croquettes,[],No animal products from the target categories detected.
-Salmon N Rice Cake,[],No animal products from the target categories detected.
-Salmon Raita,[],No animal products from the target categories detected.
-Salmon Special,[],No animal products from the target categories detected.
-Salmon Zhug Fingerlings,[],No animal products from the target categories detected.
-Salt & Pepper Squid,[],No animal products from the target categories detected.
-Satsuma Orange Steamed Egg,['egg'],Contains egg.
-Sauces,[],No animal products from the target categories detected.
-Sausage Egg & Cheese,"['sausage', 'savory_dairy', 'egg']",Contains sausage or processed meat. Contains savory dairy. Contains egg.
-Sausage Egg And Cheese Kaiser,"['sausage', 'savory_dairy', 'egg']",Contains sausage or processed meat. Contains savory dairy. Contains egg.
-Sausage Gravy & Eggs,"['sausage', 'egg']",Contains sausage or processed meat. Contains egg.
-Sausage Gravy Calzone,['sausage'],Contains sausage or processed meat.
-Sausage Patty,"['sausage', 'breakfast_sausage_patty']",Contains sausage or processed meat. Contains breakfast sausage patty.
-Scallion Pancake,[],No animal products from the target categories detected.
-Scallops Rockefeller,[],No animal products from the target categories detected.
-Scone,[],No animal products from the target categories detected.
-Scramble,['egg'],Contains egg.
-Scramble Of The Day,['egg'],Contains egg.
-Scrambled Eggs And Pork,['egg'],Contains egg.
-Sea Scallops,[],No animal products from the target categories detected.
-Seared Tuna,[],No animal products from the target categories detected.
-Seasonal Salad,[],No animal products from the target categories detected.
-Seasonal Vegetable,[],No animal products from the target categories detected.
-Seasonal Vegetable Side,[],No animal products from the target categories detected.
-Seasonal Veggies,['egg'],Contains egg.
-Sesame & Tajin Seared Tuna,[],No animal products from the target categories detected.
-Sesame Boiled Peanuts,[],No animal products from the target categories detected.
-Sesame Street Fries,[],No animal products from the target categories detected.
-Sexual Chocolate,[],No animal products from the target categories detected.
-Shakshuka Cream,['egg'],Contains egg.
-Sheet Pan Nachos,['savory_dairy'],Contains savory dairy.
-Shiitake Fried Rice,[],No animal products from the target categories detected.
-Short Rib Egg Roll,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Short Rib Taco,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Short Rib Tacos,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Short Rib Tacos (3),['chunked_beef_or_pork'],Contains chunked beef or pork.
-Short Rib Tacos Dinner (3),['chunked_beef_or_pork'],Contains chunked beef or pork.
-Shrimp & Cheese Grits,['savory_dairy'],Contains savory dairy.
-Shrimp & Grits,['savory_dairy'],Contains savory dairy.
-Shrimp & Pimiento Cheese Grits,['savory_dairy'],Contains savory dairy.
-Shrimp Cheong Fun,[],No animal products from the target categories detected.
-Shrimp Cocktail,[],No animal products from the target categories detected.
-Shrimp Dip,[],No animal products from the target categories detected.
-Shrimp Egg Rolls,[],No animal products from the target categories detected.
-Shrimp N Noodles,[],No animal products from the target categories detected.
-Shrimp Po' Boy,[],No animal products from the target categories detected.
-Shrimp Po'Boy,[],No animal products from the target categories detected.
-Shrimp Rangon,[],No animal products from the target categories detected.
-Shrimp Risotto,[],No animal products from the target categories detected.
-Shrimp Scramble,['egg'],Contains egg.
-Shrimp Toast,[],No animal products from the target categories detected.
-Shrimp Zhug Fingerlings,[],No animal products from the target categories detected.
-Shumai,[],No animal products from the target categories detected.
-Shumai Appetizer,[],No animal products from the target categories detected.
-Side Caesar Salad,[],No animal products from the target categories detected.
-Side Chicken,['unfried_chicken'],Contains unfried chicken.
-Side Chips,[],No animal products from the target categories detected.
-Side Fried Rice,[],No animal products from the target categories detected.
-Side Fried Tofu,[],No animal products from the target categories detected.
-Side Fries,[],No animal products from the target categories detected.
-Side Leg Quarter,[],No animal products from the target categories detected.
-Side Of Asian Slaw,[],No animal products from the target categories detected.
-Side Of Bacon,['bacon'],Contains bacon.
-Side Of Fried Rice,[],No animal products from the target categories detected.
-Side Of Fries,[],No animal products from the target categories detected.
-Side Of House Smoked Bacon,['bacon'],Contains bacon.
-Side Of Kimchi,[],No animal products from the target categories detected.
-Side Of Kimchi Collards,[],No animal products from the target categories detected.
-Side Of White Rice,[],No animal products from the target categories detected.
-Side One Egg,['egg'],Contains egg.
-Side Salad,[],No animal products from the target categories detected.
-Side Salmon,[],No animal products from the target categories detected.
-Side Shrimp (5) Skewer,[],No animal products from the target categories detected.
-Side Shrimp Skewer,[],No animal products from the target categories detected.
-Side Slaw,[],No animal products from the target categories detected.
-Side Steak,[],No animal products from the target categories detected.
-Side Veg (Kung Pao),[],No animal products from the target categories detected.
-Sides,[],No animal products from the target categories detected.
-Skate Wing And Bacon Banh Mi,['bacon'],Contains bacon.
-Skatewing And Bacon Banh Mi,['bacon'],Contains bacon.
-Slainte Sammy,[],No animal products from the target categories detected.
-Slaw,[],No animal products from the target categories detected.
-Slice Of Pizza,[],No animal products from the target categories detected.
-Slider Special,[],No animal products from the target categories detected.
-Sliders,[],No animal products from the target categories detected.
-Sloppy Jen,[],No animal products from the target categories detected.
-Sloppy Joe,[],No animal products from the target categories detected.
-Small Soup (M),[],No animal products from the target categories detected.
-Smashed Chinese Cucumbers,[],No animal products from the target categories detected.
-Smashed Fingerling Nachos,['savory_dairy'],Contains savory dairy.
-Smashed Potato Nachos,['savory_dairy'],Contains savory dairy.
-Smashed Szechuan Cucumbers,[],No animal products from the target categories detected.
-Smoke Salmon & Flowering Chive,[],No animal products from the target categories detected.
-Smoke Sturgeon,[],No animal products from the target categories detected.
-Smoked Black Cod Lettuce Cup,[],No animal products from the target categories detected.
-Smoked Chicken & Duck Noodle Soup,['unfried_chicken'],Contains unfried chicken.
-Smoked Chicken Salad & Romaine,['unfried_chicken'],Contains unfried chicken.
-"Smoked Corn, Tom. & Vidalia",[],No animal products from the target categories detected.
-Smoked Duck,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Smoked Duck Taco,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Smoked Gouda & Nr Ale Mac & Cheese,['savory_dairy'],Contains savory dairy.
-Smoked Sablefish,[],No animal products from the target categories detected.
-Smoked Salmon,[],No animal products from the target categories detected.
-Smoked Salmon & Flowering Chive,[],No animal products from the target categories detected.
-Smoked Salmon & Sorrel,[],No animal products from the target categories detected.
-Smoked Salmon And Rice,[],No animal products from the target categories detected.
-Smoked Salmon Belly,[],No animal products from the target categories detected.
-Smoked Salmon Dip,[],No animal products from the target categories detected.
-Smoked Salmon Fritters,[],No animal products from the target categories detected.
-Smoked Salmon Lettuce Cup,[],No animal products from the target categories detected.
-Smoked Salmon Salad,[],No animal products from the target categories detected.
-Smoked Salmon Succatash,[],No animal products from the target categories detected.
-Smoked Salmon Succotash,[],No animal products from the target categories detected.
-Smoked Salmon Sunny Up Egg,['egg'],Contains egg.
-Smoked Storugeon,[],No animal products from the target categories detected.
-Smoked Sturgeon,[],No animal products from the target categories detected.
-Smoked Sturgeon Taco,[],No animal products from the target categories detected.
-Smoked Tomato Cream Scallops,[],No animal products from the target categories detected.
-Smoked Tomato Mussels,[],No animal products from the target categories detected.
-Smoked Trout,[],No animal products from the target categories detected.
-Smoked Trout Endive Salad,[],No animal products from the target categories detected.
-Smoked Trout English Muffin,[],No animal products from the target categories detected.
-Smorbord,[],No animal products from the target categories detected.
-Smorrebrod,[],No animal products from the target categories detected.
-Sm√∂Rg√•Sbord,[],No animal products from the target categories detected.
-Snapper Pho,[],No animal products from the target categories detected.
-Snow Crab Cluster,[],No animal products from the target categories detected.
-Snow Peas,[],No animal products from the target categories detected.
-Soda Bread,[],No animal products from the target categories detected.
-Soda Bread & Lap Cheong,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Soft Shell Crab Charred Caesar,[],No animal products from the target categories detected.
-Soft Shell Crab French Fries,[],No animal products from the target categories detected.
-Soft Shell Crab Fries,[],No animal products from the target categories detected.
-Soft Smoked Salmon,[],No animal products from the target categories detected.
-Soft Tofu Avocado Taco,[],No animal products from the target categories detected.
-Soft Tofu Avocado Tostado,[],No animal products from the target categories detected.
-Soup Dumplings,[],No animal products from the target categories detected.
-Soup Of The Day,[],No animal products from the target categories detected.
-Soup Of The Day:  Sancocho,[],No animal products from the target categories detected.
-Soups Market,[],No animal products from the target categories detected.
-Southern Bbq Ribs,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Southern Biscuit Blueberry Bread Pudding,['sweet_dairy'],Contains sweet dairy.
-Southern Cap Shrooms,[],No animal products from the target categories detected.
-Southern Fried Quail,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Soy Orange Glazed Duck Confit,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Soy Sauce Chicken,['unfried_chicken'],Contains unfried chicken.
-Soy Sauce Deviled Eggs,['egg'],Contains egg.
-Soy Sauce Orange Chicken,['unfried_chicken'],Contains unfried chicken.
-Soy Sauce Salmon,[],No animal products from the target categories detected.
-Soy Sesame Chili Boiled Peanuts,[],No animal products from the target categories detected.
-Spam Fried Rice,['sausage'],Contains sausage or processed meat.
-Spare Ribs,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Spatzle,[],No animal products from the target categories detected.
-Spec Chili N Eggs,['egg'],Contains egg.
-Spec Grilled Cheese (Slainte),['savory_dairy'],Contains savory dairy.
-Spec Ricotta Pancakes,['savory_dairy'],Contains savory dairy.
-Spec Salad W Mahi,[],No animal products from the target categories detected.
-Special Dessert,[],No animal products from the target categories detected.
-Special Mac N Cheese,['savory_dairy'],Contains savory dairy.
-Special Mac N Cheese + Ball,['savory_dairy'],Contains savory dairy.
-Special Side,[],No animal products from the target categories detected.
-Special Smoked Salmon Dip,[],No animal products from the target categories detected.
-Special Taco,[],No animal products from the target categories detected.
-Special Taco #1,[],No animal products from the target categories detected.
-Special Taco #2,[],No animal products from the target categories detected.
-Special Viet Sticky Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Special Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Special: Chanterelle & Porcini Cream Pasta,[],No animal products from the target categories detected.
-Special: Fish & Chips,[],No animal products from the target categories detected.
-Special: Flowering Chives & Cippolinis,[],No animal products from the target categories detected.
-Special: Pei Mussels With Pomodoro White Wine And Basil,[],No animal products from the target categories detected.
-"Special: Scallops With Pomdoro, Pesto, And Basil",[],No animal products from the target categories detected.
-Special: Scallops With Pomodoro & Pesto,[],No animal products from the target categories detected.
-Special: Scallops With Pomodoro And Pesto,[],No animal products from the target categories detected.
-Special: Scallops With Thai Peanut Sauce,[],No animal products from the target categories detected.
-Spicy Mac & Cheese,['savory_dairy'],Contains savory dairy.
-Spicy Peanut Noodles,[],No animal products from the target categories detected.
-Spicy Peanuts,[],No animal products from the target categories detected.
-Spinach And Eggs,['egg'],Contains egg.
-Spinach And Tomato Frittata,['egg'],Contains egg.
-Spinach And Tomato Scramble,['egg'],Contains egg.
-Spinach Artichoke Dip,[],No animal products from the target categories detected.
-Spinach Dip Pizza,[],No animal products from the target categories detected.
-Spinach Salad,[],No animal products from the target categories detected.
-"Spinach, Artichoke, Tomato Frittata",['egg'],Contains egg.
-"Spring Salmon, Corn, & Tomato Salad",[],No animal products from the target categories detected.
-Springtime Burrito,[],No animal products from the target categories detected.
-Sriracha,[],No animal products from the target categories detected.
-St Patrick'S,[],No animal products from the target categories detected.
-St. Louis Style Overnight Smoked Pastured Pork Bbq Ribs,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Staff,[],No animal products from the target categories detected.
-Steak & Egg,"['chunked_beef_or_pork', 'egg']",Contains chunked beef or pork. Contains egg.
-Steak & Eggs,"['chunked_beef_or_pork', 'egg']",Contains chunked beef or pork. Contains egg.
-Steak & Potatoes,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Steak & Taters,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Steak And Eggs,['egg'],Contains egg.
-Steak Fries & Zhoug,[],No animal products from the target categories detected.
-Steak Fries W/ Zhoug,[],No animal products from the target categories detected.
-Steak N Eggs,"['chunked_beef_or_pork', 'egg']",Contains chunked beef or pork. Contains egg.
-Steak Poutine And Eggs,"['chunked_beef_or_pork', 'egg']",Contains chunked beef or pork. Contains egg.
-Steak Taco,['chunked_beef_or_pork'],Contains chunked beef or pork.
-"Steak, Fried Rice, & Poached Yolk",['chunked_beef_or_pork'],Contains chunked beef or pork.
-Steamed Dumplings,[],No animal products from the target categories detected.
-Steamed Egg,['egg'],Contains egg.
-Steelhead Trout Crudo,[],No animal products from the target categories detected.
-Steelhead Trout Filet,[],No animal products from the target categories detected.
-Stir Fry,[],No animal products from the target categories detected.
-Stir Fry Veggies,['egg'],Contains egg.
-Stirfry Veggies,['egg'],Contains egg.
-Strawberries,[],No animal products from the target categories detected.
-Strawberries & Cream,['sweet_dairy'],Contains sweet dairy.
-Strawberry Meringue,[],No animal products from the target categories detected.
-Strawberry Muffin,[],No animal products from the target categories detected.
-Strawberry Romaine,[],No animal products from the target categories detected.
-Strawberry Scone,[],No animal products from the target categories detected.
-Street Corn,[],No animal products from the target categories detected.
-Street Fries,[],No animal products from the target categories detected.
-Street Fries Side,[],No animal products from the target categories detected.
-Street Pizza,[],No animal products from the target categories detected.
-Stuffed Bell Pepper,[],No animal products from the target categories detected.
-Stuffed Blue Oyster Mushroom,[],No animal products from the target categories detected.
-Stuffed French Toast,[],No animal products from the target categories detected.
-Stuffed Pork Tender &  Eggs,"['chunked_beef_or_pork', 'egg']",Contains chunked beef or pork. Contains egg.
-Stuffed Pork Tenderloin,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Stuffed Sweet Potato,[],No animal products from the target categories detected.
-Summer Roll Special,[],No animal products from the target categories detected.
-Summer Rolls,[],No animal products from the target categories detected.
-Summer Salad,[],No animal products from the target categories detected.
-Summer Seafood Specials,[],No animal products from the target categories detected.
-Summer Solstice Specials,[],No animal products from the target categories detected.
-Summertime Succotash,[],No animal products from the target categories detected.
-Sunday Vibes Pizza,[],No animal products from the target categories detected.
-Sunflower Pesto Pasta,[],No animal products from the target categories detected.
-Super Margherita,[],No animal products from the target categories detected.
-Super Margherita Pizza,[],No animal products from the target categories detected.
-Super Marherita,[],No animal products from the target categories detected.
-Supper For 2,[],No animal products from the target categories detected.
-Surf & Turf,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Sweet & Sour,[],No animal products from the target categories detected.
-Sweet & Sour Chicken Or Tofu,['unfried_chicken'],May contain chicken (option).
-Sweet & Sour Pork Ribs,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Sweet Ass,[],No animal products from the target categories detected.
-Sweet Peas & Bronze Fennel,[],No animal products from the target categories detected.
-Sweet Peas & Tendrils Salad,[],No animal products from the target categories detected.
-Sweet Potato Bites,[],No animal products from the target categories detected.
-Sweet Potato Hash,[],No animal products from the target categories detected.
-Sweet Potato Tostada,[],No animal products from the target categories detected.
-Sweet Potato Tostado,[],No animal products from the target categories detected.
-Sweet Potatoes,[],No animal products from the target categories detected.
-Szechuan Boiled Peanuts,[],No animal products from the target categories detected.
-Szechuan Bok Choy,[],No animal products from the target categories detected.
-Szechuan Chicken Bowl,['unfried_chicken'],Contains unfried chicken.
-Szechuan Chicken Gordita,['unfried_chicken'],Contains unfried chicken.
-Szechuan Chicken Salad,['unfried_chicken'],Contains unfried chicken.
-Szechuan Chicken Salad Salad,['unfried_chicken'],Contains unfried chicken.
-Szechuan Chicken Salad Slider,['unfried_chicken'],Contains unfried chicken.
-Szechuan Chicken Sandwich,['unfried_chicken'],Contains unfried chicken.
-Szechuan Chicken Sliders,['unfried_chicken'],Contains unfried chicken.
-Szechuan Chinese Vegetables,[],No animal products from the target categories detected.
-Szechuan Linguini,[],No animal products from the target categories detected.
-Szechuan Shrimp,[],No animal products from the target categories detected.
-Szechuan Shrimp Cocktail,[],No animal products from the target categories detected.
-Szechuan Snow Peas,[],No animal products from the target categories detected.
-Szechuan Yu Choy,[],No animal products from the target categories detected.
-Tabbouleh,[],No animal products from the target categories detected.
-Taco Kits,[],No animal products from the target categories detected.
-Taco Tuesday,[],No animal products from the target categories detected.
-Tacos,[],No animal products from the target categories detected.
-Tahini Noodles,[],No animal products from the target categories detected.
-Tahini Shrimp,[],No animal products from the target categories detected.
-Tasting Menu,[],No animal products from the target categories detected.
-Teaches Of Peaches,[],No animal products from the target categories detected.
-Tenderloin Tips,[],No animal products from the target categories detected.
-Tenderloin Tips & Fried Rice,[],No animal products from the target categories detected.
-Tex Mex Frittata,['egg'],Contains egg.
-Thai Chili Fried Rice Brunch,[],No animal products from the target categories detected.
-Thai Wheat Cup,[],No animal products from the target categories detected.
-Thaini Noodles,[],No animal products from the target categories detected.
-Thank You For Being A Friend,[],No animal products from the target categories detected.
-The Bohemian Bear,[],No animal products from the target categories detected.
-The Courtney Canady,[],No animal products from the target categories detected.
-The Jenchan,[],No animal products from the target categories detected.
-The Justaco,[],No animal products from the target categories detected.
-The Kimmy,[],No animal products from the target categories detected.
-The Palleson,[],No animal products from the target categories detected.
-The Red Bag,[],No animal products from the target categories detected.
-The Schwarz,[],No animal products from the target categories detected.
-This Is Bbq Rub,[],No animal products from the target categories detected.
-This Is Taco Seasoning,[],No animal products from the target categories detected.
-Thit Bacon Taco,"['chunked_beef_or_pork', 'bacon']",Contains chunked beef or pork. Contains bacon.
-Thit Bacon Tostado,"['chunked_beef_or_pork', 'bacon']",Contains chunked beef or pork. Contains bacon.
-Thit Heo Kho Trung,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Thit Kho,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Thit Kho And Rice,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Thit Kho Bao,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Thit Kho Taco,['chunked_beef_or_pork'],Contains chunked beef or pork.
-Tiramisu,['sweet_dairy'],Contains sweet dairy.
-Toaster Strudel,[],No animal products from the target categories detected.
-Tofu Egg Roll,[],No animal products from the target categories detected.
-Tofu Sticks,[],No animal products from the target categories detected.
-Tom Kai With Scallops,[],No animal products from the target categories detected.
-Tom Kha Mussels,[],No animal products from the target categories detected.
-Tom Kha Shrimp,[],No animal products from the target categories detected.
-Tomato Jam Shrimp & Grits,['savory_dairy'],Contains savory dairy.
-"Tomato, Broccoli, Goat Cheese Scramble","['savory_dairy', 'egg']",Contains savory dairy. Contains egg.
-"Tomato, Goat, Scramble",['egg'],Contains egg.
-"Tomato, Green Hill, Scramble",['egg'],Contains egg.
-"Tomato, Mushroom, Goat Cheese Scramble","['savory_dairy', 'egg']",Contains savory dairy. Contains egg.
-Torta,[],No animal products from the target categories detected.
-Tostada,[],No animal products from the target categories detected.
-Tostado,[],No animal products from the target categories detected.
-Tres Leches,['sweet_dairy'],Contains sweet dairy.
-Tres Leches For 2,['sweet_dairy'],Contains sweet dairy.
-Tropical Crab & Shrimp Salad,[],No animal products from the target categories detected.
-Tropical Shrimp Salad,[],No animal products from the target categories detected.
-Trout Sashimi,[],No animal products from the target categories detected.
-Twice Baked & Maple Sausage,['sausage'],Contains sausage or processed meat.
-Twice Baked & Viet Pork,[],No animal products from the target categories detected.
-Twice Baked & Vietnamese Sausage,['sausage'],Contains sausage or processed meat.
-Twice Baked Potato,[],No animal products from the target categories detected.
-Twice Baked Potato And Maple Sausage,['sausage'],Contains sausage or processed meat.
-Ukiyo,[],No animal products from the target categories detected.
-Ultimate Benedict Saturday,['egg'],Contains egg.
-Ultimate Benedict Sunday,['egg'],Contains egg.
-Ultimate Benedicts (4 Options),['egg'],Contains egg.
-Unearthing Farm Salad,[],No animal products from the target categories detected.
-Valentines Dinner,[],No animal products from the target categories detected.
-Valentines Vegetarian,[],No animal products from the target categories detected.
-Vegan Beef Bowl,[],No animal products from the target categories detected.
-Vegan Pork Bowl,[],No animal products from the target categories detected.
-Vegan Sausage Scramble,['egg'],Contains egg.
-Vegan Soft Tofu Scramble,['egg'],Contains egg.
-Vegan Soup,[],No animal products from the target categories detected.
-Vegetarian Sausage Egg & Cheese,"['savory_dairy', 'egg']",Contains savory dairy. Contains egg.
-Veggie & Fried Potato Hash,['egg'],Contains egg.
-Veggie Medley,['egg'],Contains egg.
-Veggie Plate (Seasonals),['egg'],Contains egg.
-Veggie Scramble Of The Day,['egg'],Contains egg.
-Verde Tacos,[],No animal products from the target categories detected.
-Vidalia Bulb,[],No animal products from the target categories detected.
-Vidalia Onion Egg,['egg'],Contains egg.
-Vietnamese Ground Pork Sammy,['ground_meat'],Contains ground meat.
-Vietnamese Pork Bowl,['ground_meat'],Contains ground meat.
-Vietnamese Pork Bowl (Vegan Version Available),[],No animal products from the target categories detected.
-Vietnamese Pork Breakfast Nachos,"['ground_meat', 'savory_dairy']",Contains ground meat. Contains savory dairy.
-Vietnamese Pork Crispy Noodles,['ground_meat'],Contains ground meat.
-Vietnamese Pork Egg Roll,['ground_meat'],Contains ground meat.
-Vietnamese Pork Egg Roll (1),['ground_meat'],Contains ground meat.
-Vietnamese Pork Fried Rice Brunch,['ground_meat'],Contains ground meat.
-Vietnamese Pork Jook,['ground_meat'],Contains ground meat.
-Vietnamese Pork Meatball,"['ground_meat', 'meatballs']",Contains ground meat. Contains meatballs.
-Vietnamese Pork Pizza,['ground_meat'],Contains ground meat.
-Vietnamese Pork Quesadilla,"['ground_meat', 'savory_dairy']",Contains ground meat. Contains savory dairy.
-Vietnamese Pork Taco,['ground_meat'],Contains ground meat.
-Vietnamese Pork Tacos,['ground_meat'],Contains ground meat.
-Waffle-Wich,[],No animal products from the target categories detected.
-Wasabi Popcorn,[],No animal products from the target categories detected.
-Watermelon Radish Tacos,[],No animal products from the target categories detected.
-Wealthy Dumplings (6),[],No animal products from the target categories detected.
-Wellington (M),[],No animal products from the target categories detected.
-Wellington Special,[],No animal products from the target categories detected.
-What The Duck Pizza,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-When Figs Pie,[],No animal products from the target categories detected.
-White Rice,[],No animal products from the target categories detected.
-White Rice & Eggs,['egg'],Contains egg.
-White Rice & Soft Scrambled Eggs,['egg'],Contains egg.
-Whole Organic Chicken,['unfried_chicken'],Contains unfried chicken.
-Whole Snapper,[],No animal products from the target categories detected.
-Wild Leap,[],No animal products from the target categories detected.
-Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Wings (Crispy Asian Or Buffalo),['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Wings Hh,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Wwjcd,[],No animal products from the target categories detected.
-Yellowfin Tuna Taco,[],No animal products from the target categories detected.
-Yogurt,[],No animal products from the target categories detected.
-Yogurt Dill Jumbo Shrimp Salad,[],No animal products from the target categories detected.
-Yogurt Parfait,['sweet_dairy'],Contains sweet dairy.
-Yonshakudama,[],No animal products from the target categories detected.
-Yook Baeng,[],No animal products from the target categories detected.
-Yook Baeng Bites,[],No animal products from the target categories detected.
-Youtiao,[],No animal products from the target categories detected.
-Yu Choy,[],No animal products from the target categories detected.
-Yum Bok Choy,[],No animal products from the target categories detected.
-Yum Cha Crispy Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Yum Cha Donut,[],No animal products from the target categories detected.
-Yum Cha Dumplings,[],No animal products from the target categories detected.
-Yum Cha Pot Stickers,[],No animal products from the target categories detected.
-Yum Cha Shumai,[],No animal products from the target categories detected.
-Yum Cha Tiramasu,[],No animal products from the target categories detected.
-Yum Cha Wings,['unfried_chicken'],Contains poultry (duck/quail/turkey/chicken wings).
-Yum Cha Yu Choy,[],No animal products from the target categories detected.
-Yum Choy,[],No animal products from the target categories detected.
-Yurei,[],No animal products from the target categories detected.
-Yureii,[],No animal products from the target categories detected.
-Yuzu Custard,[],No animal products from the target categories detected.
-Zestos,[],No animal products from the target categories detected.
-Zhug,[],No animal products from the target categories detected.
-Zhug Potatoes,[],No animal products from the target categories detected.
-Zhug-Shroom Pizza,[],No animal products from the target categories detected.
-Zuchini Chips,[],No animal products from the target categories detected.
+item_name,animal_categories,reasoning,vegan,vegetarian,mpbamodifiable
+Aebleskivers,[],No animal products detected in name,True,True,False
+Bao,[],No animal products detected in name,True,True,False
+Biscuit & Red Eye Gravy,[],No animal products detected in name,True,True,False
+Boston Butt Mac & Cheese,['savory_dairy'],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+BYO Pizza,[],No animal products detected in name,True,True,False
+Char Siu Bao,[],No animal products detected in name,True,True,False
+Chili For Cabbagetown,['ground_meat'],Contains meat,False,False,False
+Chips & Salsa,[],No animal products detected in name,True,True,False
+Cranberry Toast,[],No animal products detected in name,True,True,False
+Crawfish Hand Pies,[],Contains fish/shellfish,False,False,False
+Fish & Chips,[],Contains fish/shellfish,False,False,False
+Side Fried Rice,[],No animal products detected in name,True,True,False
+Gado-Gado,[],No animal products detected in name,True,True,False
+Hoisin Duck Taco,['unfried_chicken'],Contains meat; protein likely substitutable,False,False,False
+Black Cocoa Miso Ice Cream Sandwich,"['sweet_dairy', 'egg']",Contains dairy or egg (no vegan dairy sub) [FIXED: Baked goods typically have egg/dairy],False,True,False
+Jenchan,[],No animal products detected in name,True,True,False
+Justaco,[],No animal products detected in name,True,True,False
+Mac & Cheese,['savory_dairy'],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Mongolian Beef Cheesesteak,"['chunked_beef_or_pork', 'savory_dairy']",Contains meat,False,False,True
+Poptart,[],No animal products detected in name,True,True,False
+Potstickers,[],No animal products detected in name,True,True,False
+Pork Roll Egg Cheese,"['egg', 'savory_dairy']",Contains meat,False,False,False
+Shrimp Po' Boy,[],Contains fish/shellfish,False,False,False
+Smoked Salmon Succotash,[],Contains fish/shellfish,False,False,False
+Smorrebrod,[],No animal products detected in name,True,True,False
+Super Margherita Pizza,[],No animal products detected in name,True,True,False
+Sweet Potato Tostada,[],No animal products detected in name,True,True,False
+Tahini Noodles,[],No animal products detected in name,True,True,False
+Vietnamese Pork Egg Roll,[],Contains meat; protein likely substitutable,False,False,False
+Yurei,[],No animal products detected in name,True,True,False
+Side Fries,[],No animal products detected in name,True,True,False
+Tostada,[],No animal products detected in name,True,True,False
+Dumplings,[],No animal products detected in name,True,True,False
+Skate Wing And Bacon Banh Mi,['bacon'],Contains meat,False,False,False
+Stir Fry Veggies,[],No animal products detected in name,True,True,False
+Brisket Mac And Cheese,"['chunked_beef_or_pork', 'savory_dairy']",Contains meat,False,False,False
+Cantonese Mahi Mahi,[],Contains fish/shellfish,False,False,False
+Crispy Asian Wings,['fried_chicken'],Contains meat [FIXED: Wings are typically fried],False,False,False
+2 Day Grass-Fed Chili (16 Oz),['ground_meat'],Contains meat,False,False,False
+Yum Cha Dumplings,[],No animal products detected in name,True,True,False
+Hh Wings,['fried_chicken'],Contains meat [FIXED: Wings are typically fried],False,False,False
+Kimchi Side,[],No animal products detected in name,True,True,False
+Special: Scallops With Pomodoro And Pesto,[],Contains fish/shellfish,False,False,False
+Steak And Eggs,['egg'],Contains meat,False,False,False
+Szechuan Chicken Salad,['unfried_chicken'],Contains meat; protein likely substitutable,False,False,False
+Brisket,['chunked_beef_or_pork'],Contains meat,False,False,False
+Breakfast Banh Mi,[],No animal products detected in name,True,True,False
+Breakfast Buns,[],No animal products detected in name,True,True,False
+Breakfast Egg Roll,[],No animal products detected in name,True,True,False
+Breakfast Egg Rolls,[],No animal products detected in name,True,True,False
+Breakfast Fries,[],No animal products detected in name,True,True,False
+Breakfast Kolaches Potatoes,['sausage'],Contains meat,False,False,False
+Breakfast Nachos,[],No animal products detected in name,True,True,False
+Breakfast Pizza,[],No animal products detected in name,True,True,False
+Breakfast Pork Nachos,[],Contains meat,False,False,False
+Breakfast Tacos,[],No animal products detected in name,True,True,False
+Breakfast Tostado,[],No animal products detected in name,True,True,False
+Breakfast Wrap,[],No animal products detected in name,True,True,False
+Fried Chicken,['fried_chicken'],Contains meat,False,False,False
+Salmon,[],Contains fish/shellfish,False,False,False
+Shrimp,[],Contains fish/shellfish,False,False,False
+Mongolian Beef,['chunked_beef_or_pork'],Contains meat,False,False,False
+Wings,['fried_chicken'],Contains meat [FIXED: Wings are typically fried],False,False,False
+Pork Belly,['chunked_beef_or_pork'],Contains meat,False,False,False
+French Toast,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Dumplings,[],No animal products detected in name,True,True,False
+Soup,[],No animal products detected in name,True,True,False
+Nachos,[],No animal products detected in name,True,True,False
+Steak,[],Contains meat,False,False,False
+Kolache,['sausage'],Contains meat,False,False,False
+Tofu,[],Tofu-based dish,True,True,False
+Duck,['unfried_chicken'],Contains meat,False,False,False
+Ribs,['chunked_beef_or_pork'],Contains meat,False,False,False
+Lo Mein,[],No animal products detected in name,True,True,False
+Lasagna,['ground_meat'],Contains meat,False,False,False
+Crostini,[],No animal products detected in name,True,True,False
+Grilled Cheese,['savory_dairy'],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Cuban,[],No animal products detected in name,True,True,False
+Mousse,"['sweet_dairy', 'egg']",Contains dairy or egg (no vegan dairy sub) [FIXED: Baked goods typically have egg/dairy],False,True,False
+Tiramisu,"['sweet_dairy', 'egg']",Contains dairy or egg (no vegan dairy sub) [FIXED: Baked goods typically have egg/dairy],False,True,False
+Donut,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Bread Pudding,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Panna Cotta,"['sweet_dairy', 'egg']",Contains dairy or egg (no vegan dairy sub) [FIXED: Baked goods typically have egg/dairy],False,True,False
+Vietnamese Pork,['pulled_pork'],Contains meat,False,False,True
+Coco Curry,[],No animal products detected in name,True,True,False
+Oyster,[],Contains fish/shellfish,False,False,False
+Crab,[],Contains fish/shellfish,False,False,False
+Trout,[],Contains fish/shellfish,False,False,False
+Boiled Peanuts,[],No animal products detected in name,True,True,False
+Edamame,[],No animal products detected in name,True,True,False
+Cheong Fun,[],No animal products detected in name,True,True,False
+Arancini,[],No animal products detected in name,True,True,False
+Falafel,[],No animal products detected in name,True,True,False
+Deviled Eggs,['egg'],Contains dairy or egg,False,True,False
+Ropa Vieja,[],No animal products detected in name,True,True,False
+Corn Fritters,[],No animal products detected in name,True,True,False
+Plantains,[],No animal products detected in name,True,True,False
+Chocolate Cake,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Ice Cream,"['sweet_dairy', 'egg']",Contains dairy or egg (no vegan dairy sub) [FIXED: Baked goods typically have egg/dairy],False,True,False
+Peaches,[],No animal products detected in name,True,True,False
+Cookie,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Sausage,['sausage'],Contains meat,False,False,False
+Waffle,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Family Suppers,[],No animal products detected in name,True,True,False
+Famiglia Italian Night,[],No animal products detected in name,True,True,False
+Mikkelsens,[],No animal products detected in name,True,True,False
+Monday Night,[],No animal products detected in name,True,True,False
+New Realm,[],No animal products detected in name,True,True,False
+Nye Dinner,[],No animal products detected in name,True,True,False
+Nye Dinner Allergy Or Special,[],No animal products detected in name,True,True,False
+Onetable,[],No animal products detected in name,True,True,False
+Special Dessert,[],No animal products detected in name,True,True,False
+Special Side,[],No animal products detected in name,True,True,False
+Valentines Dinner,[],No animal products detected in name,True,True,False
+Valentines Vegetarian,[],No animal products detected in name,True,True,False
+Wellington (M),[],No animal products detected in name,True,True,False
+Wellington Special,[],No animal products detected in name,True,True,False
+Charred Caeser With Soft Shell Crab,[],Contains fish/shellfish,False,False,False
+Fried Blue Crab Claws,[],Contains fish/shellfish,False,False,False
+Little Neck Clams,[],Contains fish/shellfish,False,False,False
+Moules Marinieres,[],No animal products detected in name,True,True,False
+Mussels,[],Contains fish/shellfish,False,False,False
+Pei Mussels,[],Contains fish/shellfish,False,False,False
+Pei Mussels Special,[],Contains fish/shellfish,False,False,False
+Prawns A La Plancha,[],Contains fish/shellfish,False,False,False
+Royal Red Shrimp Boil,[],Contains fish/shellfish,False,False,False
+Salt Pepper Squid,[],Contains fish/shellfish,False,False,False
+Scallops Rockefeller,[],Contains fish/shellfish,False,False,False
+Sea Scallops,[],Contains fish/shellfish,False,False,False
+Smoked Tomato Cream Scallops,['sweet_dairy'],Contains fish/shellfish,False,False,False
+Smoked Tomato Mussels,[],Contains fish/shellfish,False,False,False
+Special: Pei Mussels With Pomodoro White Wine And Basil,[],Contains fish/shellfish,False,False,False
+"Special: Scallops With Pomdoro, Pesto, And Basil",[],Contains fish/shellfish,False,False,False
+Special: Scallops With Thai Peanut Sauce,[],Contains fish/shellfish,False,False,False
+Tomato Jam Shrimp Grits,['savory_dairy'],Contains fish/shellfish,False,False,False
+Slider,[],No animal products detected in name,True,True,False
+Chinese Greens,[],No animal products detected in name,True,True,False
+Broccoli Banchan,[],No animal products detected in name,True,True,False
+Galbi Banchan,[],No animal products detected in name,True,True,False
+Gochujang,[],No animal products detected in name,True,True,False
+Gochujang Collards,[],No animal products detected in name,True,True,False
+Side Of Kimchi Collards,[],No animal products detected in name,True,True,False
+Yook Baeng,[],No animal products detected in name,True,True,False
+Yook Baeng Bites,[],No animal products detected in name,True,True,False
+Braciole Entree,[],No animal products detected in name,True,True,False
+Cacio E Pepe,[],No animal products detected in name,True,True,False
+Market Pasta,[],No animal products detected in name,True,True,False
+Osso Bucco,[],No animal products detected in name,True,True,False
+Ravioli,[],No animal products detected in name,True,True,False
+Red Braised Szechuan Pork Cheeks,[],Contains meat,False,False,False
+Spatzle,[],No animal products detected in name,True,True,False
+Special: Chanterelle Porcini Cream Pasta,['sweet_dairy'],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Sunflower Pesto Pasta,[],No animal products detected in name,True,True,False
+Chili,['ground_meat'],Contains meat,False,False,False
+300 App Spread,[],No animal products detected in name,True,True,False
+Bacon Blue Cheese House Chips,"['bacon', 'savory_dairy']",Contains meat,False,False,False
+Beer Cheese Bites,['savory_dairy'],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Blistered Shishito Peppers,[],No animal products detected in name,True,True,False
+Burrata Fennel,['savory_dairy'],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Burrata Herbs,['savory_dairy'],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Carpaccio,[],No animal products detected in name,True,True,False
+Cheese Bread,['savory_dairy'],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Crispy Lentil Fritters,[],No animal products detected in name,True,True,False
+Crispy Shaved Okra,[],No animal products detected in name,True,True,False
+Fried Okra App,[],No animal products detected in name,True,True,False
+Gorgonzola Grapes,['savory_dairy'],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Gorgonzola Spinach Dip,['savory_dairy'],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Hummus Such,[],No animal products detected in name,True,True,False
+Jalapeno Poppers,[],No animal products detected in name,True,True,False
+Low Country Charcuterie,[],No animal products detected in name,True,True,False
+Moos In A Blanket,[],No animal products detected in name,True,True,False
+Panko Fried Green Hill,[],No animal products detected in name,True,True,False
+Spinach Artichoke Dip,[],No animal products detected in name,True,True,False
+Wasabi Popcorn,[],No animal products detected in name,True,True,False
+Quiche,['egg'],Contains dairy or egg,False,True,False
+Best Damn Coffee Cake,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Brioche Sticky Bun,[],No animal products detected in name,True,True,False
+Coffee Cake,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Croissant,[],No animal products detected in name,True,True,False
+Scone,[],No animal products detected in name,True,True,False
+Soda Bread,[],No animal products detected in name,True,True,False
+Strawberry Muffin,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Strawberry Scone,[],No animal products detected in name,True,True,False
+Toaster Strudel,[],No animal products detected in name,True,True,False
+Banana Pudding,[],No animal products detected in name,True,True,False
+Banana Pudding For Two,[],No animal products detected in name,True,True,False
+Bananas Foster,[],No animal products detected in name,True,True,False
+Beignets,[],No animal products detected in name,True,True,False
+Blondie Brownie With Caramel,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Blueberry Cobbler W Ging. Lav.,[],No animal products detected in name,True,True,False
+Gingerbread Layer Cake,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Good Fortune Orange Tart,[],No animal products detected in name,True,True,False
+Grandma'S Pound Cake,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Honeybun Cake,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Lemon Blueberry Cake,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Market Poptart,[],No animal products detected in name,True,True,False
+Mixed Berry Fry Pie,[],No animal products detected in name,True,True,False
+Ricotta Zeppole,['savory_dairy'],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Ruthie'S Sweets,[],No animal products detected in name,True,True,False
+Strawberries,[],No animal products detected in name,True,True,False
+Strawberries Cream,['sweet_dairy'],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Strawberry Meringue,[],No animal products detected in name,True,True,False
+Tres Leches,['sweet_dairy'],No animal products detected in name,True,True,False
+Tres Leches For 2,['sweet_dairy'],No animal products detected in name,True,True,False
+Yuzu Custard,['sweet_dairy'],No animal products detected in name,True,True,False
+Apple Moat,[],No animal products detected in name,True,True,False
+Apple Tart,[],No animal products detected in name,True,True,False
+Muskmelon Cantelope,[],No animal products detected in name,True,True,False
+Yogurt,[],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+"""007""",[],No animal products detected in name,True,True,False
+Baby Jamey,[],No animal products detected in name,True,True,False
+Bacon Is My Jam,['bacon'],Contains meat,False,False,False
+Bird'S Nest,[],No animal products detected in name,True,True,False
+Creole,[],No animal products detected in name,True,True,False
+Eeyore'S Meadow,[],No animal products detected in name,True,True,False
+Endive Will Always Love You,[],No animal products detected in name,True,True,False
+Flat Shoals,[],No animal products detected in name,True,True,False
+Fm,[],No animal products detected in name,True,True,False
+Georgia On My Mind,[],No animal products detected in name,True,True,False
+Keepin' It Classy,[],No animal products detected in name,True,True,False
+Mn Big Softy,[],No animal products detected in name,True,True,False
+Mr. Big Is Dead,[],No animal products detected in name,True,True,False
+Portlandia,[],No animal products detected in name,True,True,False
+Red Rider,[],No animal products detected in name,True,True,False
+SmRgSbord,[],No animal products detected in name,True,True,False
+St Patrick'S,[],No animal products detected in name,True,True,False
+Sweet Ass,[],No animal products detected in name,True,True,False
+Thank You For Being A Friend,[],No animal products detected in name,True,True,False
+The Bohemian Bear,[],No animal products detected in name,True,True,False
+The Courtney Canady,[],No animal products detected in name,True,True,False
+The Kimmy,[],No animal products detected in name,True,True,False
+The Palleson,[],No animal products detected in name,True,True,False
+The Red Bag,[],No animal products detected in name,True,True,False
+The Schwarz,[],No animal products detected in name,True,True,False
+Ukiyo,[],No animal products detected in name,True,True,False
+Wwjcd,[],No animal products detected in name,True,True,False
+Yonshakudama,[],No animal products detected in name,True,True,False
+Zestos,[],No animal products detected in name,True,True,False
+Bacon,['bacon'],Contains meat,False,False,False
+Wings,['fried_chicken'],Contains meat [FIXED: Wings are typically fried],False,False,False
+Maggi,[],No animal products detected in name,True,True,False
+Sauces,[],No animal products detected in name,True,True,False
+Sriracha,[],No animal products detected in name,True,True,False
+Zhug,[],No animal products detected in name,True,True,False
+Jen Chan Lunch,[],No animal products detected in name,True,True,False
+Justaco Yum Cha,[],No animal products detected in name,True,True,False
+Lunchables,[],No animal products detected in name,True,True,False
+Poutine,[],No animal products detected in name,True,True,False
+Pizza,[],No animal products detected in name,True,True,False
+Sandwich 2,[],No animal products detected in name,True,True,False
+Chips,[],No animal products detected in name,True,True,False
+Biscuit,[],No animal products detected in name,True,True,False
+Beef Biscuit,[],Contains meat,False,False,False
+Pork Biscuit,[],Contains meat,False,False,False
+Lamb Biscuit,['lamb'],Contains meat,False,False,False
+Beef Benedict,['egg'],Contains meat,False,False,False
+Benedict,['egg'],Contains dairy or egg,False,True,False
+Pork Benedict,['egg'],Contains meat,False,False,False
+Fried Rice,[],No animal products detected in name,True,True,False
+Poultry Fried Rice,['unfried_chicken'],Contains meat; protein likely substitutable,False,False,True
+Beef Fried Rice,[],Contains meat; protein likely substitutable,False,False,True
+Pork Fried Rice,[],Contains meat; protein likely substitutable,False,False,True
+Pork Taco,[],Contains meat (no taco base with Beyond on menu),False,False,False
+Taco,[],No animal products detected in name,True,True,False
+Beef Taco,[],Contains meat (no taco base with Beyond on menu),False,False,False
+Poultry Taco,['unfried_chicken'],Contains meat (no taco base with Beyond on menu),False,False,False
+Fish Taco,[],Contains fish/shellfish,False,False,False
+Shellfish Taco,[],Contains fish/shellfish,False,False,False
+Vegan Taco,[],Explicitly marked vegan,True,True,False
+Pizza,[],No animal products detected in name,True,True,False
+Poultry Pizza,['unfried_chicken'],Contains meat (specific pizza - no sub),False,False,False
+Vegan Pizza,[],Explicitly marked vegan,True,True,False
+Beef Pizza,[],Contains meat (specific pizza - no sub),False,False,False
+Pork Pizza,[],Contains meat (specific pizza - no sub),False,False,False
+Pork Egg Roll,[],Contains meat (no Beyond option on menu),False,False,False
+Egg Roll,[],No animal products detected in name,True,True,False
+Beef Egg Roll,[],Contains meat (no Beyond option on menu),False,False,False
+Shellfish Egg Roll,[],Contains fish/shellfish,False,False,False
+Vegan Egg Roll,[],Explicitly marked vegan,True,True,False
+Grits,['savory_dairy'],No animal products detected in name,True,True,False
+Fish Grits,['savory_dairy'],Contains fish/shellfish,False,False,False
+Vegan Grits,['savory_dairy'],Explicitly marked vegan,True,True,False
+Beef Grits,['savory_dairy'],Contains meat (no Beyond option for grits),False,False,False
+Pork Grits,['savory_dairy'],Contains meat (no Beyond option for grits),False,False,False
+Shellfish Grits,['savory_dairy'],Contains fish/shellfish,False,False,False
+Mac Cheese,['savory_dairy'],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Shellfish Mac Cheese,['savory_dairy'],Contains fish/shellfish,False,False,False
+Pork Mac Cheese,['savory_dairy'],Contains meat,False,False,False
+Bao,[],No animal products detected in name,True,True,False
+Shellfish Bao,[],Contains fish/shellfish,False,False,False
+Pork Bao,[],Contains meat; protein likely substitutable,False,False,False
+Poultry Bao,['unfried_chicken'],Contains meat; protein likely substitutable,False,False,False
+Beef Bao,[],Contains meat; protein likely substitutable,False,False,False
+Lamb Bao,['lamb'],Contains meat; protein likely substitutable,False,False,False
+Pork Pork,[],Contains meat,False,False,False
+Fish Pork,[],Contains meat,False,False,False
+Beef Salad,[],Contains meat (no Beyond for salads),False,False,False
+Caesar Salad,[],No animal products detected in name,True,True,False
+Farm Salad,[],No animal products detected in name,True,True,False
+Grilled Chanterelles Salad,[],No animal products detected in name,True,True,False
+Iceberg Wedge,[],No animal products detected in name,True,True,False
+Peanut Noodle Salad,[],No animal products detected in name,True,True,False
+Potato Salad,[],No animal products detected in name,True,True,False
+Potato Salad (Quart),[],No animal products detected in name,True,True,False
+Salad,[],No animal products detected in name,True,True,False
+Seasonal Salad,[],No animal products detected in name,True,True,False
+Side Caesar Salad,[],No animal products detected in name,True,True,False
+Side Salad,[],No animal products detected in name,True,True,False
+Spinach Salad,[],No animal products detected in name,True,True,False
+Strawberry Romaine,[],No animal products detected in name,True,True,False
+Summer Salad,[],No animal products detected in name,True,True,False
+Sweet Peas Tendrils Salad,[],No animal products detected in name,True,True,False
+Unearthing Farm Salad,[],No animal products detected in name,True,True,False
+Rainbow Carrots Kale,[],No animal products detected in name,True,True,False
+Poultry Salad,['unfried_chicken'],Contains meat (no Beyond for salads),False,False,False
+Vegan Salad,[],Explicitly marked vegan,True,True,False
+Shellfish Salad,[],Contains fish/shellfish,False,False,False
+Fish Salad,[],Contains fish/shellfish,False,False,False
+Pork Salad,[],Contains meat (no Beyond for salads),False,False,False
+Poultry Chicken,['unfried_chicken'],Contains meat,False,False,False
+Chicken,['unfried_chicken'],Contains meat,False,False,False
+Vegan Chicken,['unfried_chicken'],Explicitly marked vegan,True,True,False
+Poutine,[],No animal products detected in name,True,True,False
+Fish Poutine,[],Contains fish/shellfish,False,False,False
+Poultry Poutine,['unfried_chicken'],Contains meat (no Beyond for poutine),False,False,False
+Beef Poutine,[],Contains meat (no Beyond for poutine),False,False,False
+Beef Meatball,"['ground_meat', 'meatballs']",Contains meat,False,False,False
+Pork Meatball,"['ground_meat', 'meatballs']",Contains meat,False,False,False
+Fries,[],No animal products detected in name,True,True,False
+Pork Fries,[],Contains meat,False,False,False
+Shellfish Fries,[],Contains fish/shellfish,False,False,False
+Beef Fries,[],Contains meat,False,False,False
+Potatoes,[],No animal products detected in name,True,True,False
+Pork Potatoes,[],Contains meat,False,False,False
+Vegan Potatoes,[],Explicitly marked vegan,True,True,False
+Vegan Jook,[],Explicitly marked vegan,True,True,False
+Jook,[],No animal products detected in name,True,True,False
+Pork Jook,[],Contains meat (no Beyond for jook),False,False,False
+Noodles,[],No animal products detected in name,True,True,False
+Shellfish Noodles,[],Contains fish/shellfish,False,False,False
+Fish Noodles,[],Contains fish/shellfish,False,False,False
+Pork Noodles,[],Contains meat (no Beyond for noodles),False,False,False
+Scramble,['egg'],Contains dairy or egg,False,True,False
+Shellfish Scramble,['egg'],Contains fish/shellfish,False,False,False
+Pork Scramble,['egg'],Contains meat,False,False,False
+Vegan Scramble,['egg'],Explicitly marked vegan,True,True,False
+Beef Quesadilla,[],Contains meat; protein likely substitutable,False,False,False
+Pork Quesadilla,[],Contains meat; protein likely substitutable,False,False,False
+Poultry Kids,['unfried_chicken'],Contains meat,False,False,False
+Kid'S Spaghetti,[],No animal products detected in name,True,True,False
+(K) Pizza Rolls,[],No animal products detected in name,True,True,False
+(K) Rice Spaghetti Sauce,[],No animal products detected in name,True,True,False
+(K) Spaghetti,[],No animal products detected in name,True,True,False
+Vegan Kids,[],Explicitly marked vegan,True,True,False
+Shellfish Kids,[],Contains fish/shellfish,False,False,False
+Mushroom,[],No animal products detected in name,True,True,False
+Shellfish Mushroom,[],Contains fish/shellfish,False,False,False
+Beef Mushroom,[],Contains meat,False,False,False
+Vegan Mushroom,[],Explicitly marked vegan,True,True,False
+Fish Tostada,[],Contains fish/shellfish,False,False,False
+Tostada,[],No animal products detected in name,True,True,False
+Beef Tostada,[],Contains meat,False,False,False
+Vegan Tostada,[],Explicitly marked vegan,True,True,False
+Pork Tostada,[],Contains meat,False,False,False
+Vegan Wonton,[],Explicitly marked vegan,True,True,False
+Pork Wonton,[],Contains meat,False,False,False
+Shellfish Wonton,[],Contains fish/shellfish,False,False,False
+Bacon Egg Grilled Cheese,"['bacon', 'egg', 'savory_dairy']",Contains meat,False,False,False
+Stuffed Pork Tender Eggs,['egg'],Contains meat,False,False,False
+Egg (Single),['egg'],Contains dairy or egg,False,True,False
+Egg Mik-Muffin (M),"['egg', 'sweet_dairy']",Contains dairy or egg [FIXED: Baked goods typically have egg/dairy],False,True,False
+Eggs (2),['egg'],Contains dairy or egg,False,True,False
+Eggs Bread Salad,['egg'],Contains dairy or egg,False,True,False
+Eggs Florentine,['egg'],Contains dairy or egg,False,True,False
+Eggs Salad Toast,['egg'],Contains dairy or egg,False,True,False
+Frittata,['egg'],Contains dairy or egg,False,True,False
+Funny Egg,['egg'],Contains dairy or egg,False,True,False
+Homestyle Pancake,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Juevos Rancheros,[],No animal products detected in name,True,True,False
+Omelette Of The Day,['egg'],Contains dairy or egg,False,True,False
+Omurice Omelette,['egg'],Contains dairy or egg,False,True,False
+Pumpkin Pancakes,"['sweet_dairy', 'egg']",No animal products detected in name [FIXED: Baked goods typically have egg/dairy],False,True,False
+Ricotta Pancakes,"['savory_dairy', 'sweet_dairy', 'egg']",Contains dairy or egg (no vegan dairy sub) [FIXED: Baked goods typically have egg/dairy],False,True,False
+Ricotta Pomodoro Poached Eggs,"['egg', 'savory_dairy']",Contains dairy or egg,False,True,False
+Spec Chili N Eggs,"['egg', 'ground_meat']",Contains meat,False,False,False
+Spec Ricotta Pancakes,"['savory_dairy', 'sweet_dairy', 'egg']",Contains dairy or egg (no vegan dairy sub) [FIXED: Baked goods typically have egg/dairy],False,True,False
+Spinach And Eggs,['egg'],Contains dairy or egg,False,True,False
+Spinach And Tomato Frittata,['egg'],Contains dairy or egg,False,True,False
+"Spinach, Artichoke, Tomato Frittata",['egg'],Contains dairy or egg,False,True,False
+Steamed Egg,['egg'],Contains dairy or egg,False,True,False
+Tex Mex Frittata,['egg'],Contains dairy or egg,False,True,False
+Vidalia Onion Egg,['egg'],Contains dairy or egg,False,True,False
+White Rice Eggs,['egg'],Contains dairy or egg,False,True,False
+White Rice Soft Scrambled Eggs,['egg'],Contains dairy or egg,False,True,False
+Chinese Steamed Egg,['egg'],Contains dairy or egg,False,True,False
+Satsuma Orange Steamed Egg,['egg'],Contains dairy or egg,False,True,False
+Lamb Eggs/Breakfast,"['egg', 'lamb']",Contains meat,False,False,False
+Fish Fish,[],Contains fish/shellfish,False,False,False
+Branzino,[],Contains fish/shellfish,False,False,False
+Crappie,[],Contains fish/shellfish,False,False,False
+Fried Crappie,[],Contains fish/shellfish,False,False,False
+Hake Potatoes,[],Contains fish/shellfish,False,False,False
+Papa'S Fried Crappie,[],Contains fish/shellfish,False,False,False
+Smoke Sturgeon,[],Contains fish/shellfish,False,False,False
+Smoked Storugeon,[],No animal products detected in name,True,True,False
+Smoked Sturgeon,[],Contains fish/shellfish,False,False,False
+Pork Sandwich,[],Contains meat (no Beyond for sandwiches),False,False,False
+Sandwich,[],No animal products detected in name,True,True,False
+Poultry Sandwich,['unfried_chicken'],Contains meat (no Beyond for sandwiches),False,False,False
+Beef Sandwich,[],Contains meat (no Beyond for sandwiches),False,False,False
+Burger,[],No animal products detected in name,True,True,False
+Beef Burger,['beef_or_pork_burger'],Contains meat,False,False,False
+Pork Burger,[],Contains meat,False,False,False
+Bowls,[],No animal products detected in name,True,True,False
+Curry Dal Bowl,[],No animal products detected in name,True,True,False
+Gado Bowl,[],No animal products detected in name,True,True,False
+Ginger Curry Bowl,[],No animal products detected in name,True,True,False
+Rice Bowl,[],No animal products detected in name,True,True,False
+Poultry Bowl,['unfried_chicken'],Contains meat (no Beyond for bowls),False,False,False
+Beef Bowl,[],Contains meat (no Beyond for bowls),False,False,False
+Pork Bowl,[],Contains meat (no Beyond for bowls),False,False,False
+48 Hour Marinated Chkn Thigh Sticky Rice,[],No animal products detected in name,True,True,False
+3 Day Ramen,[],No animal products detected in name,True,True,False
+Asian Slaw,[],No animal products detected in name,True,True,False
+Fried Shumai Rolls,[],No animal products detected in name,True,True,False
+Gado Gado Lettuce Wraps (3),[],No animal products detected in name,True,True,False
+Hong Shao Rou,[],No animal products detected in name,True,True,False
+Lap Cheong Focaccia,['sausage'],Contains meat,False,False,False
+Lettuce Wrap,[],No animal products detected in name,True,True,False
+Lo Mai Gai,[],No animal products detected in name,True,True,False
+Radish Wraps,[],No animal products detected in name,True,True,False
+Scallion Pancake,[],Asian scallion pancake - vegan,True,True,False
+Smashed Chinese Cucumbers,[],No animal products detected in name,True,True,False
+Soda Bread Lap Cheong,['sausage'],Contains meat,False,False,False
+Summer Roll Special,[],No animal products detected in name,True,True,False
+Summer Rolls,[],No animal products detected in name,True,True,False
+Youtiao,[],No animal products detected in name,True,True,False
+Beef Asian,[],Contains meat,False,False,False
+Poultry Asian,['unfried_chicken'],Contains meat,False,False,False
+Szechuan,[],No animal products detected in name,True,True,False
+Vegan Szechuan,[],Explicitly marked vegan,True,True,False
+Chilaguiles Verde,[],No animal products detected in name,True,True,False
+Chilaquiles,[],No animal products detected in name,True,True,False
+Chochoyotes,[],No animal products detected in name,True,True,False
+Crunch Wrap,[],No animal products detected in name,True,True,False
+Custom Taco Bar,[],No animal products detected in name,True,True,False
+Elote Corn,[],No animal products detected in name,True,True,False
+Empanadas,[],No animal products detected in name,True,True,False
+French Tacos,[],No animal products detected in name,True,True,False
+Guacamole,[],No animal products detected in name,True,True,False
+Pupusa Popup,[],No animal products detected in name,True,True,False
+Queso,['savory_dairy'],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Springtime Burrito,[],No animal products detected in name,True,True,False
+Street Corn,[],No animal products detected in name,True,True,False
+Tabbouleh,[],No animal products detected in name,True,True,False
+Taco Kits,[],No animal products detected in name,True,True,False
+Poultry Mexican,['unfried_chicken'],Contains meat,False,False,False
+Shellfish Mexican,[],Contains fish/shellfish,False,False,False
+Broccolini,[],No animal products detected in name,True,True,False
+Brussels Sprouts,[],No animal products detected in name,True,True,False
+Butter Beans,[],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Butternut Squash,[],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Carrot Asparagus W Tiger Sauce,[],No animal products detected in name,True,True,False
+Charred Baby Vidalia,[],No animal products detected in name,True,True,False
+"Charred Corn, Tom. Vidalia",[],No animal products detected in name,True,True,False
+Charred Vidalia,[],No animal products detected in name,True,True,False
+Charred Vidalia Onion,[],No animal products detected in name,True,True,False
+Chickpeas,[],No animal products detected in name,True,True,False
+Chinese Tomato Stir Fry,[],No animal products detected in name,True,True,False
+Cornbread,[],No animal products detected in name,True,True,False
+Fennel Radish,[],No animal products detected in name,True,True,False
+Georgia Lady Peas (Family Size),[],No animal products detected in name,True,True,False
+Grilled Cornbread,[],No animal products detected in name,True,True,False
+Local Lettuce Radish,[],No animal products detected in name,True,True,False
+Roasted Beet Goat Yogurt,[],Contains dairy or egg; dairy could be omitted (no vegan dairy sub),False,True,False
+Roasted Beets,[],No animal products detected in name,True,True,False
+Roasted Chickpeas,[],No animal products detected in name,True,True,False
+Roasted Vidalia Onion,[],No animal products detected in name,True,True,False
+Roasted Vidalia Onion Fennel,[],No animal products detected in name,True,True,False
+Roasted Vidalia Onion Peas,[],No animal products detected in name,True,True,False
+Roasted Vidalia Onion Radish,[],No animal products detected in name,True,True,False
+Seasonal Vegetable,[],No animal products detected in name,True,True,False
+Seasonal Vegetable Side,[],No animal products detected in name,True,True,False
+Side Chips,[],No animal products detected in name,True,True,False
+Side Of Asian Slaw,[],No animal products detected in name,True,True,False
+Side Of White Rice,[],No animal products detected in name,True,True,False
+Side Slaw,[],No animal products detected in name,True,True,False
+Sides,[],No animal products detected in name,True,True,False
+Slaw,[],No animal products detected in name,True,True,False
+"Smoked Corn, Tom. Vidalia",[],No animal products detected in name,True,True,False
+Stir Fry,[],No animal products detected in name,True,True,False
+Summertime Succotash,[],No animal products detected in name,True,True,False
+Sweet Peas Bronze Fennel,[],No animal products detected in name,True,True,False
+Vidalia Bulb,[],No animal products detected in name,True,True,False
+Pork Sides,[],Contains meat,False,False,False
+Vegan Sides,[],Explicitly marked vegan,True,True,False
+Beef Entrees,[],Contains meat,False,False,False
+Frog Legs,[],No animal products detected in name,True,True,False
+Market Pot Pie,[],No animal products detected in name,True,True,False
+Market Stroganoff,[],No animal products detected in name,True,True,False
+Meatloaf,['ground_meat'],Contains meat,False,False,False
+Moussaka,[],No animal products detected in name,True,True,False
+Pot Roast,[],No animal products detected in name,True,True,False
+Stuffed Bell Pepper,[],No animal products detected in name,True,True,False
+Poultry Entrees,['unfried_chicken'],Contains meat,False,False,False
+Pork Entrees,[],Contains meat,False,False,False
+Lamb Entrees,['lamb'],Contains meat,False,False,False
+Soup,[],No animal products detected in name,True,True,False
+Poultry Soup,['unfried_chicken'],Contains meat,False,False,False
+Vegan Soup,[],Explicitly marked vegan,True,True,False
+Be Mine Appetizer,[],No animal products detected in name,True,True,False
+Chop N Eggs,['egg'],Contains dairy or egg,False,True,False
+Curry,[],No animal products detected in name,True,True,False
+Event Pimento (1),[],No animal products detected in name,True,True,False
+Farm Plate,[],No animal products detected in name,True,True,False
+Open Item,[],No animal products detected in name,True,True,False
+Proteins,[],No animal products detected in name,True,True,False
+Shakshuka Cream,"['egg', 'sweet_dairy']",Contains dairy or egg,False,True,False
+Thai Wheat Cup,[],No animal products detected in name,True,True,False
+One Pound Of Jenchan'S Smoked Pastured Chicken Salad,['unfried_chicken'],Contains meat; protein likely substitutable,False,False,False
+Eggplant Shakshuka,[],No animal products detected in name,True,True,False
+Special: Fish Chips,[],Contains fish/shellfish,False,False,False
+catering_takeout,[],Catering and takeout items - varies by content,False,False,False

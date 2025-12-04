@@ -1,78 +1,28 @@
-item_name,categories,reasoning
-# 11 Combo,[],No animal products from the target categories detected.
-#1 Combo,['sausage'],Combo includes hot dog.
-#1 Hot Dog Combo,['sausage'],Contains hot dog (sausage).
-#10 Combo,['sausage'],Combo includes hot dog.
-#12 Combo,['sausage'],Combo includes hot dog.
-#2 Combo,[],No animal products from the target categories detected.
-#2 Veggie Dog Combo,[],No animal products from the target categories detected.
-#3 Combo,['sausage'],Combo includes sausage.
-#3 Sausage Dog Combo,['sausage'],Contains sausage.
-#4 Chicken Tenders Combo,['fried_chicken'],Contains fried chicken.
-#4 Combo,[],No animal products from the target categories detected.
-#4 Hamburger Combo,['beef_or_pork_burger'],Contains beef burger patty.
-#5 Combo,[],No animal products from the target categories detected.
-#5 Hamburger Combo,['beef_or_pork_burger'],Contains beef burger patty.
-#5 Wing Combo,['fried_chicken'],Contains chicken wings.
-#6 Beyond Burger Combo,[],No animal products from the target categories detected.
-#6 Combo,[],No animal products from the target categories detected.
-#6 Veggie Burger Combo,[],No animal products from the target categories detected.
-#7 Combo,[],No animal products from the target categories detected.
-#8 Combo,[],No animal products from the target categories detected.
-#9 Combo,[],No animal products from the target categories detected.
-1 Hot Dog Combo,['sausage'],Contains hot dog (sausage).
-1 Sausage Dog Combo,['sausage'],Contains sausage.
-1 Veggie Dog Combo,[],No animal products from the target categories detected.
-2 Hot Dogs Combo,['sausage'],Contains hot dog (sausage).
-4 Chz Stix,['savory_dairy'],Contains cheese/dairy.
-4 Tenders Combo,['fried_chicken'],Contains fried chicken.
-60 Hot Dogs For Women'S Conference,['sausage'],Contains hot dog (sausage).
-Beyond Burger,[],No animal products from the target categories detected.
-Burger,['beef_or_pork_burger'],Contains beef burger patty.
-Burger Combo,['beef_or_pork_burger'],Contains beef burger patty.
-Cheese Fries,['savory_dairy'],Contains cheese/dairy.
-Cheese Sticks,['savory_dairy'],Contains cheese/dairy.
-Chicken Tenders,['fried_chicken'],Contains fried chicken.
-Chicken Tenders Combo,['fried_chicken'],Contains fried chicken.
-Chili Cheese Fries,['savory_dairy'],Contains cheese/dairy.
-Chilli Cheese Fries,['savory_dairy'],Contains cheese/dairy.
-Chips,[],No animal products from the target categories detected.
-Cup Of Ice,[],No animal products from the target categories detected.
-Delta Sigma Theta Blood Drive Voucher,[],No animal products from the target categories detected.
-Deluxe Dog,['sausage'],Contains hot dog (sausage).
-Deluxe Sausage Dog,['sausage'],Contains sausage.
-Event Minimum,[],No animal products from the target categories detected.
-Extra: Bbq,[],No animal products from the target categories detected.
-Extra: Buffalo,[],No animal products from the target categories detected.
-Extra: Honey Mustard,[],No animal products from the target categories detected.
-Extra: Ranch,[],No animal products from the target categories detected.
-Fries,[],No animal products from the target categories detected.
-Hamburger,['beef_or_pork_burger'],Contains beef burger patty.
-High Point University,[],No animal products from the target categories detected.
-Hot Dog,['sausage'],Contains hot dog (sausage).
-Hot Dog Combo,['sausage'],Contains hot dog (sausage).
-Kid'S Combo,[],No animal products from the target categories detected.
-Kid'S Hot Dog Combo,['sausage'],Contains hot dog (sausage).
-Kid'S Tenders,['fried_chicken'],Contains fried chicken.
-Kid'S Tenders Combo,['fried_chicken'],Contains fried chicken.
-Lebleu,[],No animal products from the target categories detected.
-Mozzarella Sticks,['savory_dairy'],Contains cheese/dairy.
-Nachos,['savory_dairy'],Contains cheese/dairy.
-Off,[],No animal products from the target categories detected.
-Party Package #1,[],No animal products from the target categories detected.
-Plain Dog,['sausage'],Contains hot dog (sausage).
-Ranch,[],No animal products from the target categories detected.
-Sausage Dog,['sausage'],Contains sausage.
-Sausage Dog Combo,['sausage'],Contains sausage.
-Tenders,['fried_chicken'],Contains fried chicken.
-Tenders & Fries,['fried_chicken'],Contains fried chicken.
-Tenders Combo,['fried_chicken'],Contains fried chicken.
-Unc Lccc Staff Event,[],No animal products from the target categories detected.
-Veggie Burger,[],No animal products from the target categories detected.
-Veggie Burger Combo,[],No animal products from the target categories detected.
-Veggie Dog,[],No animal products from the target categories detected.
-Veggie Dog Combo,[],No animal products from the target categories detected.
-Wings,['fried_chicken'],Contains chicken wings.
-Wings Combo,['fried_chicken'],Contains chicken wings.
-‚Öì Deluxe Burger,['beef_or_pork_burger'],Contains beef burger patty.
-‚Öì Lb. Burger,['beef_or_pork_burger'],Contains beef burger patty.
+item_name,animal_categories,reasoning,vegan,vegetarian,mpbamodifiable
+#1 Hot Dog Combo,"['sausage', 'savory_dairy']",Hot dog combo with chili cheese option,False,False,False
+Hot Dog,['sausage'],Hot dog - various sizes and combos,False,False,False
+Sausage Dog,['sausage'],Sausage dog - pork sausage,False,False,False
+Sausage Dog Combo,['sausage'],Sausage dog combo,False,False,False
+Veggie Dog,[],Veggie dog - plant-based hot dog,True,True,False
+Veggie Dog Combo,[],Veggie dog combo - plant-based,True,True,False
+Pork Hot Dog,['sausage'],Bulk hot dogs for event,False,False,False
+Pork Combo,['sausage'],Hot dog combo,False,False,False
+Beyond Burger,['beef_or_pork_burger'],Beyond Burger - plant-based burger patty [FIXED: Burger format - vegan burger patty],True,True,False
+Veggie Burger,['beef_or_pork_burger'],Veggie burger - plant-based,True,True,False
+Beef Hamburger,"['beef_or_pork_burger', 'savory_dairy']",Beef burger with cheese option,False,False,False
+Beef Combo,"['beef_or_pork_burger', 'savory_dairy']",Burger combo with cheese,False,False,False
+Pork Hamburger,['beef_or_pork_burger'],Hamburger combo,False,False,False
+Pork Burger,"['beef_or_pork_burger', 'savory_dairy']",Hamburger with toppings,False,False,False
+Chicken Tenders,['fried_chicken'],Fried chicken tenders,False,False,False
+Chicken Tenders Combo,['fried_chicken'],Chicken tenders combo,False,False,False
+Tenders,['fried_chicken'],Kids tenders / tenders fries combo,False,False,False
+Wings,['fried_chicken'],"Chicken wings - buffalo, jamaican jerk, bbq [FIXED: Wings are typically fried]",False,False,False
+Wings Combo,['fried_chicken'],Wings combo [FIXED: Wings are typically fried],False,False,False
+Fries,[],Fries - plain or with cheese,True,True,False
+Chili Cheese Fries,"['ground_meat', 'savory_dairy']",Fries with chili and cheese,False,False,False
+Cheese Sticks,['savory_dairy'],Cheese sticks - dairy,False,True,False
+Mozzarella Sticks,['savory_dairy'],Mozzarella sticks with marinara or ranch,False,True,False
+Nachos,['savory_dairy'],"Nachos with cheese, chili, jalapenos options",False,True,False
+Combo,[],Generic numbered combo - varies,False,False,False
+Kids Combo,[],Kids combo meal,False,False,False
+catering_takeout,[],Catering and takeout items - varies by content,False,False,False

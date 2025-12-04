@@ -1,0 +1,83 @@
+item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg,shrimp,whole_bird_white_meat
+Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Burrito,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Cubano,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Curly Fries,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Eggs Federal,False,False,True,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+Gold Standard,False,False,True,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+Grapefruit,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Patty Melt,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Rosti,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Scrambled Eggs,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Slaw,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Soup,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Waffles,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Arugula Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cobb Salad,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False,True,False,False
+Nachos,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Chips N Guac,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Chips Salsa,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bread And Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fries,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+All Beef Hot Dog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Corn Dog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,True,False,False
+Butter Tart,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Fried Chicken,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Trout,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Caesar,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Eggs,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Steak,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Ceviche,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Kale,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Squash,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Donut,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Ice Cream,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Toast,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Beemster,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Corelli Pecorino,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Oliv-Almond,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fruit Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Green Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Potato Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Wedge,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,False,False
+Chilaquiles,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Fruit Scone,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Granola Bowl,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Almonds,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Brussel Sprouts,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Burrata,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Cornichon,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Esquites,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Greens,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Olives,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Hotdog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Hot Oysters,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Mussels,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bacon,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False
+Ham,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sausage,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Falafel,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Okonomiyaki,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Quesadilla,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Mac Cheese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Fennel Orange,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Strawberry,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Avocado,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Geez Louise,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Janky,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Matron Seasonal,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+to_remove,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bacon Butty,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,False,False
+Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Curry Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Eton Mess,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Four Guys Burger,False,False,True,False,False,False,True,False,False,False,True,False,False,False,True,False,False,False,False
+Grilled Cheese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Jello Shot,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Marie Sharps,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Omelette,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Steak & Eggs,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Toffee Pudding,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Zucchini,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bagel With Cream Cheese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False

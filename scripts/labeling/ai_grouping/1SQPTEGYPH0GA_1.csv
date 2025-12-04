@@ -1,34 +1,244 @@
-"canonical_name","variants","reasoning"
-"Amaretti Cookies","['Amaretti', 'Amaretti Cookies', 'Amaretto Cookies']","Amaretti cookie spelling variants."
-"Biscotti","['Biscotti', 'D Biscotti']","Biscotti variants."
-"Black And White Cookie","['Black & White Cookie', 'Black And White Cookie']","Black & White cookie spelling variants."
-"Box Lunch","['Box Lunch', 'Box Lunch Mdds', 'Boxed Lunch', 'Togo Box Lunch']","Box lunch catering variants."
-"Caesar Salad","['Caesar', 'Caesar Salad', 'Caesar**', 'F Caesar', 'H Caesar', 'Salad Caesar']","Caesar salad variants."
-"Cannoli","['Cannoli', 'Cannoli Mini', 'Cannoli Small', 'D Cannoli', 'D Cannoli Baby', 'Gf Cannoli', 'Gluten Free Cannoli', 'Mini Cannoli']","Cannoli size variants."
-"Caprese Sandwich","['Caprese Panini', 'Caprese Sandwich']","Caprese sandwich/panini variants."
-"Cheesecake","['Cheesecake', 'D Cheesecake']","Cheesecake variants."
-"Chicken Parm","['Chicken Parm + Spaghetti', 'Chicken Parm And Spaghetti', 'Chicken Parm Sand', 'Chicken Parm Sandwich', 'Chicken Parm Side', 'Chicken Parm Sliders', 'Chicken Parmesan', 'F Chicken Parm', 'H Chicken Parm', 'Hh Chicken Parm', 'Sandwich Chicken Parm', 'Side Chicken Parm', 'Sliders Chicken Parm']","Chicken Parm dish variants (sizes, formats)."
-"Date Night","['A Youthbiz Date Night', 'Date Night', 'Date Night Special', 'Date Night To Go', 'Date Nite', 'Half Date Night Chicken Parm Fg  Cc Cannoli', 'Italian Date Night']","Date Night special variants."
-"Difrancos","['D Difrancos Truffles', ""Difranco'S Cookies"", ""Difranco'S Florentine"", ""Difranco'S Gf"", ""Difranco'S Special"", 'Difrancos Btl', 'Difrancos Pasta Special', 'Difrancos Red', 'Difrancos Special', 'Difrancos Tasting', ""Dozen Difranco'S Cookies""]","Difranco's product variants."
-"Eggplant Parm","['Eggplant Parm', 'Eggplant Parm + Spaghetti', 'Eggplant Parm And Spaghetti', 'Eggplant Parm Side', 'Eggplant Parm Sliders', 'H Eggplant Parm', 'Sliders Eggplant Parm']","Eggplant Parm dish variants."
-"Fettuccine","['Fettuccine', 'Fettuccine Individual', 'Fresh Fettuccine Portion', 'Pasta Fettuccine']","Plain fettuccine variants."
-"Garlic Bread","['F Garlic Bread', 'Garlic Bread', 'H Garlic Bread', 'Side Garlic Toast']","Garlic bread/toast variants."
-"Gift Card","['Egift Card', 'Gift Card']","Gift card variants."
-"Italian Sausage","['F Ital Sausage', 'H Ital Sausage', 'H Italian Sausage', 'Italian Sausage', 'Italian Sausage Sand', 'Italian Sausage Sandwich', 'Italian Sausage Side']","Italian sausage dish variants."
-"Meat Lasagna","['F Meat Lasagna', 'H Meat Lasagna']","Meat lasagna size variants."
-"Meatball","['F Meatballs', 'H Meatballs', 'Hh Meatball', 'Meatball', 'Meatball Sand', 'Meatball Sandwich', 'Meatball Side', 'Mini Meatballs', 'Sandwich Meatball', 'Side Meatball', 'Spaghetti With Meatball']","Meatball dish variants."
-"Penne","['F Penne', 'H Penne', 'Kids Penne', 'Pasta Penne', 'Penne']","Plain penne size variants."
-"Portobello","['Portabello', 'Portabello Sandwich', 'Portabello Side', 'Portabello Sliders', 'Portobello', 'Portobello Mushroom', 'Portobello Sandwich', 'Sandwich Portobello']","Portobello spelling variants."
-"Pumpkin Pappardelle","['Pumpkin Papardelle', 'Pumpkin Pappadelle', 'Pumpkin Pappardelle']","Pumpkin Pappardelle spelling variants."
-"Restaurant Week","['A Restaurant Week', 'A Restaurant Week Single', 'Denver Restaurant Week Special', 'Restaurant Week', 'Restaurant Week Single']","Restaurant Week special variants."
-"Ricotta Cookies","['Dz Ricotta Cookies', 'Ricotta Cookies']","Ricotta cookie variants."
-"Sausage Lasagna","['Sausage Lasagna', 'Take N Bake Sausage Lasagna']","Sausage lasagna variants."
-"Spaghetti","['F  Spaghetti', 'Fresh Spaghetti Portion', 'H Spaghetti', 'Pasta Spaghetti', 'Spaghetti', 'Spaghetti Individual']","Plain spaghetti size variants."
-"Spinach Lasagna","['Spinach Lasagna', 'Take N Bake Spinach Lasagna']","Spinach lasagna variants."
-"Stuffed Shells","['H Stuffed Shells', 'Pesto Stuffed Shells', 'Stuffed Shells']","Stuffed Shells variants."
-"Tiramisu","['D Tiramisu', 'H Tiramisu', 'Tiramisu', 'Tiramisu (Gf)', 'Tiramisu For 2']","Tiramisu variants."
-"Tomato Sauce","['32 Oz Red Sauce', 'Fm Tomato Sauce', 'Red Sauce', 'S Tomato Sauce (Home-Made)', 'Tomato Sauce']","Tomato sauce retail variants."
-"Veggie Lasagna","['F Veggie Lasagna', 'H Veggie Lasagna']","Veggie lasagna size variants."
-"Vodka Sauce","['Extra Vodka Sauce', 'Fm Vodka Sauce', 'Vodka Sauce']","Vodka sauce variants."
-"Wedding Cookies","['D Wedding Cookies', 'Gf Wedding Cookie', 'Wedding Cookie', 'Wedding Cookies']","Wedding cookie variants."
-"Whoopie Pie","['Chocolate Stout Whoopie Pie', 'Chocolate Whoopie Pie', 'Graham Cracker Whoopie Pie', 'Honey Pistachio Whoopie Pie', 'Spooky Whoopie Pie']","Whoopie pie flavor variants."
+canonical_name,variants,reasoning
+Amaretti Cookies,['Amaretti Cookies'],Amaretti cookie spelling variants.
+Biscotti,['Biscotti'],Biscotti variants.
+Black And White Cookie,['Black And White Cookie'],Black & White cookie spelling variants.
+Box Lunch,['Box Lunch'],Box lunch catering variants.
+Caesar Salad,['Caesar Salad'],Caesar salad variants.
+Cannoli,['Cannoli'],Cannoli size variants.
+Caprese Sandwich,['Caprese Sandwich'],Caprese sandwich/panini variants.
+Cheesecake,['Cheesecake'],Cheesecake variants.
+Date Night,['Date Night'],Date Night special variants.
+Difrancos,['Difrancos'],Difranco's product variants.
+Fettuccine,['Fettuccine'],Plain fettuccine variants.
+Garlic Bread,['Garlic Bread'],Garlic bread/toast variants.
+Meat Lasagna,['Meat Lasagna'],Meat lasagna size variants.
+Penne,['Penne'],Plain penne size variants.
+Portobello,['Portobello'],Portobello spelling variants.
+Pumpkin Pappardelle,['Pumpkin Pappardelle'],Pumpkin Pappardelle spelling variants.
+Restaurant Week,['Restaurant Week'],Restaurant Week special variants.
+Ricotta Cookies,['Ricotta Cookies'],Ricotta cookie variants.
+Sausage Lasagna,['Sausage Lasagna'],Sausage lasagna variants.
+Spaghetti,['Spaghetti'],Plain spaghetti size variants.
+Spinach Lasagna,['Spinach Lasagna'],Spinach lasagna variants.
+Stuffed Shells,['Stuffed Shells'],Stuffed Shells variants.
+Tiramisu,['Tiramisu'],Tiramisu variants.
+Tomato Sauce,['Tomato Sauce'],Tomato sauce retail variants.
+Veggie Lasagna,['Veggie Lasagna'],Veggie lasagna size variants.
+Vodka Sauce,['Vodka Sauce'],Vodka sauce variants.
+Wedding Cookies,['Wedding Cookies'],Wedding cookie variants.
+Italian Cuban,['Italian Cuban'],"Same item, hyphen vs space."
+Hh Meat And Cheese,['Hh Meat And Cheese'],"Same item, And vs no And."
+Pasta With Pesto,['Pasta With Pesto'],Same pasta dish.
+Ricotta Cheese,['Ricotta Cheese'],"Same item, word order reversed."
+Cold Cut,['Cold Cut'],"Same sandwich, Sandwich prefix removed."
+Pasta Gluten Free,['Pasta Gluten Free'],"Same pasta, word order."
+Meat And Cheese,['Meat And Cheese'],"Same item, And removed."
+Pesto Chicken Sandwich,['Pesto Chicken Sandwich'],Same sandwich item.
+Sandwich Red Pepper,['Sandwich Red Pepper'],Same sandwich item.
+Tomato Salad,['Tomato Salad'],"Same salad, word order."
+Sausage Sandwich,['Sausage Sandwich'],"Same sandwich, word order."
+Chicken Parm And Spaghetti,['Chicken Parm And Spaghetti'],"Same dish, different separators."
+Chicken Parm Sandwich,"['Chicken Parm Sand', 'Chicken Parm Sandwich', 'Sandwich Chicken Parm']","Same sandwich item, word order and abbreviation variants."
+Chicken Parm Side,"['Chicken Parm Side', 'Side Chicken Parm', 'F Chicken Parm', 'H Chicken Parm', 'Hh Chicken Parm']","Same side dish item, size prefixes and word order variants."
+Chicken Parm Sliders,"['Chicken Parm Sliders', 'Sliders Chicken Parm']","Same slider item, word order variant."
+Eggplant Parm And Spaghetti,['Eggplant Parm And Spaghetti'],"Same dish, different separators."
+Eggplant Parm Side,"['Eggplant Parm Side', 'H Eggplant Parm']","Same side dish item, size prefix variant."
+Eggplant Parm Sliders,"['Eggplant Parm Sliders', 'Sliders Eggplant Parm']","Same slider item, word order variant."
+Eggplant Side,"['Eggplant', 'Eggplant Side', 'F Eggplant', 'H Eggplant']","Same side dish, size prefixes and word order variants."
+Eggplant Sandwich,"['Eggplant Sandwich', 'Eggplant Sub']",Same sandwich item variants.
+Meatball Sandwich,"['Meatball Sand', 'Meatball Sandwich', 'Sandwich Meatball']","Same sandwich item, abbreviation and word order variants."
+Meatball Side,"['Meatball', 'Meatball Side', 'Side Meatball', 'Hh Meatball', 'F Meatballs', 'H Meatballs', 'Mini Meatballs']","Same side dish item, size variants."
+Spaghetti No Meatball,"['Spaghetti No Meatball', 'Pasta Spaghetti No Meatball', 'Pasta Angel Hair No Meatball']",Same no-meatball pasta variants.
+Italian Sausage Side,"['Italian Sausage', 'Italian Sausage Side', 'Side Sausage', 'Sausage', 'F Ital Sausage', 'H Ital Sausage', 'H Italian Sausage']","Same side dish item, abbreviation and size variants."
+Italian Sausage Sandwich,"['Italian Sausage Sand', 'Italian Sausage Sandwich', 'Sausage Sub']",Same sandwich item variants.
+Sausage Peppers And Onions,"['Sausage Peppers And Onions', 'H Sausage Peppers Onions']","Same dish, size prefix variant."
+Tart,"['2 Tarts', 'D Tart', 'Large Tart', 'Tart']",Tart size variants.
+Truffle Tasting,"['A 2 Truffle Tasting', 'A 3 Truffle Tasting']",Truffle tasting quantity variants.
+Wild Women Cheese,"['A Wild Women Cheese Only 3', 'A Wild Women Cheese Plate']",Wild Women Cheese event variants.
+Antipasti,"['Antipasti', 'Antipasti Per Person Catering', 'Antipasto', 'Hh Antipasti']",Antipasti/Antipasto spelling and size variants.
+Arugula Salad,"['Arugula', 'Arugula Sat', 'Salad Arugula']",Arugula salad variants.
+Black And White Cookie,"['Black White Cookie', 'Black And White Cookie']",Black & White cookie variant.
+Butternut Squash Ravioli,"['Bn Squash Ravioli', 'Butternut Squash Ravioli']",Butternut squash ravioli abbreviation variant.
+Carbonara,"['Carbonara', 'Caronara', 'Pasta Carbonara']",Carbonara spelling variants.
+Naked Chicken,"['Chicken Cutlet', 'F Cutlets', 'H Cutlets', 'Naked Chicken', 'Naked Chicken Cutlet', 'Side Chicken Cutlet', 'Side Naked Cutlet', 'Naked', 'Nekkid']",Naked/unbreaded chicken cutlet variants.
+Chocolate Chip Cookie,"['Chocolate Chip', 'Chocolate Chip (1)']",Chocolate chip cookie variants.
+Chocolate Cookie,"['Chocolate Cookie', 'Double Chocolate Cookie']",Chocolate cookie variants.
+Chocolate Cookie Sandwich,"['Chocolate Chip Cookie Sandwich', 'Chocolate Cookie Sandwich']",Chocolate cookie sandwich variants.
+Cream Puff,"['Cream Puff', 'Cream Puffs']",Cream puff singular/plural.
+Duck Ravioli,"['Duck Ravioli', 'Duck Yolk Ravioli']",Duck ravioli variants.
+Whoopie Pie,"['Chocolate Stout Whoopie Pie', 'Chocolate Whoopie Pie', 'Graham Cracker Whoopie Pie', 'Honey Pistachio Whoopie Pie', 'Spooky Whoopie Pie']",Whoopie pie flavor variants.
+Coconut Cream Pie,['Coconut Cream Pie'],Individual item (form factor split)
+Coconut Cream Tart,['Coconut Cream Tart'],Individual item (form factor split)
+Cold Cut Sandwich,"['Cold Cut Sand', 'Coldcut Slider']",Cold cut sandwich variants.
+Bruschetta,"['Bruschetta', 'Hh Bruschetta']",Bruschetta size variants.
+Burrata,"['Burrata', 'Hh Burrata']",Burrata size variants.
+Dipping Oil,"['Dipping Oil', 'Hh Dipping Oil', 'Side Dipping Oil']",Dipping oil size variants.
+White Chocolate Cranberry Cookie,"['White Choc Cran', 'White Chocolate Cranberry']",White chocolate cranberry abbreviation.
+Macaroni Monday,"['Mac Monday', 'Macaroni Monday', ""Made On Monday'S""]",Macaroni Monday abbreviations.
+Pesto Chicken Sandwich,"['Pesto Chick Sand', 'Pesto Chick Sandwich', 'Pesto Chicken Sandwich']",Pesto chicken sandwich abbreviations.
+Lemon Tart,['Lemon Tart'],Individual item (form factor split)
+Lemon Meringue Pie,['Lemon Meringue Pie'],Individual item (form factor split)
+Lemon Meringue Tart,['Lemon Meringue Tart'],Individual item (form factor split)
+Pappardelle,"['Pappardelle', 'Papparedelle', 'Pasta Pappardelle']",Pappardelle spelling variants.
+Porchetta,"['Porchetta', 'Porchetta Sub']",Porchetta sandwich variants.
+Pizza Logs,"['Pizza Logs', 'Hh Pizza Logs']",Pizza logs size variants.
+Beet Salad,"['Beet', 'Beet Salad', 'Roasted Beet', 'Mmlocal Beets']",Beet/Beet salad variants.
+Mozzarella Ball,"['Fresh Mozzarella', 'Mozz Ball', 'Mozz Ball 3 Oz']",Fresh mozzarella variants.
+Gnocchi,"['Gnocchi', 'Gnocchi 14', 'Gnocchi Gf', 'Pasta Gnocchi', 'Ricotta Gnocchi', 'Lamb Gnocchi', 'Pumpkin Gnocchi', 'Spring Gnocchi']",Gnocchi variants.
+Panna Cotta,"['Panna Cotta', 'Pistachio Panna Cotta']",Panna cotta variants.
+Quinoa Salad,"['Quinoa', 'Quinoa No Chk Out First', 'Salad Quinoa No Chicken', 'F Quinoa', 'H Quinoa']",Quinoa salad variants.
+Caprese,"['Caprese Crostini', 'F Caprese', 'H Caprese']",Caprese appetizer variants.
+Stuffed Shells,"['F Shells', 'H Shells', 'Pasta Shells Full', 'Pasta Shells Half', 'Shells', 'Stuffed Shells']",Stuffed shells variants.
+Bowtie Pasta,"['F Bowtie', 'H Bowtie']",Bowtie pasta size variants.
+Italian Field Greens,"['Italian Field Greens', 'H Field Greens', 'Salad Italian', 'Salad Italian With Chicken']",Italian salad variants.
+Penne With Pesto,"['F Penne Basil', 'H Penne Basil', 'H Penne Pesto', 'Penne Pesto Individual', 'Gf Penne With Basil Pesto', 'Gluten Free Penne With Pesto']",Penne pesto variants.
+Gluten Free Penne,"['Penne Red Gf', 'Penne Vodka Gf', 'Gluten Free Penne With Red', 'Sub Gluten Free Penne', 'Fett Gf']",GF penne variants.
+Italian Dinner,"['Italian Dinner', 'Italian Family Meal', 'Italian Meal', 'Family Meal', 'Lasagna Dinner', 'Referee Dinner', 'Tasting Dinner', 'Tasting Party', 'V Day Dinner', 'Wine Dinner', 'Food And Wine']",Italian dinner event variants.
+Lasagna,"['Lasagna Piece', 'Lasagna Special']",Lasagna variants.
+Italian Sandwich,"['F Italian', 'H Italian', 'Sandwich Italian', 'Italian Saus Sand']",Italian sandwich variants.
+Prosciutto Sandwich,"['Sandwich Prosciutto', 'Sandwich Breakfast Prosciutto']",Prosciutto sandwich variants.
+Eggs,"['Fm Eggs', 'Si Araucana Eggs', 'Si Farm Eggs']",Egg retail variants.
+Pepperoni,"['Pepperoni', 'Si Pepperoni']",Pepperoni variants.
+Bread,"['Bread', 'Baguette', 'Ciabatta', 'Extra Bread', 'H Bread', 'Si Ciabatta Loaf', 'Gluten Free Bread']",Bread variants.
+Pesto,"['Pesto', 'Fm Basil Pesto', 'S Pesto', 'Small Pesto']",Pesto retail variants.
+Fresh Pasta,"['Fresh Pasta', 'Fresh Pasta Gf', 'Fm Pasta', 'Reg Pasta', 'Kids Pasta', 'Pasta Sheets - 1Lb']",Fresh pasta retail variants.
+Gluten Free Fettuccine,['Gluten Free Fettuccine Portion'],GF fettuccine variant.
+Eggplant Parm,"['Eggplant Parm', 'Eggplant Parm Spaghetti']",Eggplant parm variants.
+Chicken Parmesan,"['Chicken Parm Spaghetti', 'Chicken Parmesan']",Chicken parm variants.
+Impossible Meatball Sandwich,"['Impossible ""Meat"" Ball Sandwich']",Impossible meatball sandwich.
+Impossible Meatball Side,"['Impossible ""Meat""Ball Side']",Impossible meatball side.
+Impossible Sausage Sandwich,['Impossible Sausage Sandwich'],Impossible sausage sandwich.
+Bundt Cake,"['Bundt', 'Mini Bundt Cake (Vg)', 'Vegan Turtle Bundt Cake']",Bundt cake variants.
+Thumbprint Cookie,"['Thumbprint Cookie', 'Lemon Thumbprint Cookie']",Thumbprint cookie variants.
+Seasonal Cookie,"['Seasonal Cookie', 'Christmas Sugar Cookies', 'Confetti Cookie']",Seasonal/holiday cookie variants.
+Ravioli,['Ravioli'],Individual item (form factor split)
+Pasta Ravioli,['Pasta Ravioli'],Individual item (form factor split)
+Pasta Ravioli No Meat,['Pasta Ravioli No Meat'],Individual item (form factor split)
+Artichoke Cilantro Shells,['Artichoke Cilantro Shells'],Individual item (form factor split)
+Sweet Corn Ravioli,['Sweet Corn Ravioli'],Individual item (form factor split)
+Sweet Pea Ravioli,['Sweet Pea Ravioli'],Individual item (form factor split)
+Rigatoni,"['Rigatoni', 'Pasta Rigatoni']",Rigatoni variants.
+Fusilli,"['Fusilli', 'Summer Fusilli']",Fusilli variants.
+Spinach Pappardelle,['Spinach Pappardelle'],Spinach pappardelle.
+Dolce Chocolate,['Dolce Chocolate'],Individual item (form factor split)
+Dolce Rainbow,['Dolce Rainbow'],Individual item (form factor split)
+Dolce Walnut,['Dolce Walnut'],Individual item (form factor split)
+Salsa Verde,"['Salsa Verde', 'S Salsa Verde']",Salsa verde variants.
+Panini,"['Panini', 'Fall Panini', 'Summer Panini', 'Winter Panini']",Seasonal panini variants.
+Sweets Aikopop,['Sweets Aikopop'],Individual item (form factor split)
+Sweets Chips Dip,['Sweets Chips Dip'],Individual item (form factor split)
+Sweets Gelato,['Sweets Gelato'],Individual item (form factor split)
+Sweets Granita,['Sweets Granita'],Individual item (form factor split)
+Nutella Gelato,['Nutella Gelato'],Individual item (form factor split)
+Side Salad,['Side Salad'],Side salad.
+Panzanella,"['Panzanella', 'Salad Panzanella']",Panzanella salad variants.
+Chocolate Cake,"['Chocolate Cake Gluten Dairy Free', 'Chocolate Cake']",Chocolate cake GF variant.
+Sliders,"['Mushrooms Sliders', 'Sliders']",Slider variant naming.
+Snickerdoodle,"['Snickerdoodle Nutella Cookie', 'Snickerdoodle']",Snickerdoodle cookie variants.
+Benedict,"['Ham Benedict', 'Tomato Basil Benedict']",Benedict dish variants.
+Braised Beef,"['Braised Beef Hash', 'Extra Portion Braised Beef']",Braised beef variants.
+Creminelli,"['Si Creminelli Barolo', 'Si Creminelli Casalingo']",Creminelli salumi variants.
+Salad Asparagus,['Salad Asparagus'],Individual item (form factor split)
+Salad Farro,['Salad Farro'],Individual item (form factor split)
+Salad Orange,['Salad Orange'],Individual item (form factor split)
+Salad Polenta,['Salad Polenta'],Individual item (form factor split)
+Watermelon Salad,['Watermelon Salad'],Individual item (form factor split)
+Cake,"['Carrot Cake', 'Rainbow Cake', 'Rum Cake', 'Short Cake', 'Turtle Cake']",Cake varieties
+Banana Nutella Tart,['Banana Nutella Tart'],Individual item (form factor split)
+Bourbon Pecan Tartelette,['Bourbon Pecan Tartelette'],Individual item (form factor split)
+Mini Pie,['Mini Pie'],Individual item (form factor split)
+Pumpkin Pie,['Pumpkin Pie'],Individual item (form factor split)
+Pumpkin Tart,['Pumpkin Tart'],Individual item (form factor split)
+Strawberry Rhubarb Pie,['Strawberry Rhubarb Pie'],Individual item (form factor split)
+Pumpkin Dessert,"['D Pumpkin Pound Cake', 'Pumpkin Roll', 'Pumpkin Tiramisu']",Pumpkin desserts
+Brown Butter Pecan Cookie,['Brown Butter Pecan Cookie'],Individual item (form factor split)
+Butter Cookies,['Butter Cookies'],Individual item (form factor split)
+Gf Brown Butter Oatmeal Chocolate Chip,['Gf Brown Butter Oatmeal Chocolate Chip'],Individual item (form factor split)
+Ginger Molasses Cookie,['Ginger Molasses Cookie'],Individual item (form factor split)
+Raspberry Cookie,['Raspberry Cookie'],Individual item (form factor split)
+Red Velvet Cheesecake Cookie,['Red Velvet Cheesecake Cookie'],Individual item (form factor split)
+Shortbread,['Shortbread'],Individual item (form factor split)
+Chocolate,['Chocolate'],Individual item (form factor split)
+D Chocolate Lab,['D Chocolate Lab'],Individual item (form factor split)
+D Madeleine,['D Madeleine'],Individual item (form factor split)
+D Pizzelles,['D Pizzelles'],Individual item (form factor split)
+Lemon Bar,['Lemon Bar'],Individual item (form factor split)
+Macaroon,['Macaroon'],Individual item (form factor split)
+Mousse,['Mousse'],Individual item (form factor split)
+Parfait,['Parfait'],Individual item (form factor split)
+Perugina Chocolates,['Perugina Chocolates'],Individual item (form factor split)
+Pomm Chocolate,['Pomm Chocolate'],Individual item (form factor split)
+Raspberry Cheescake,['Raspberry Cheescake'],Individual item (form factor split)
+Raspberry Truffle,['Raspberry Truffle'],Individual item (form factor split)
+Trifle,['Trifle'],Individual item (form factor split)
+Breakfast Sangwich,['Breakfast Sangwich'],Individual item (form factor split)
+Eggs In Purgatory,['Eggs In Purgatory'],Individual item (form factor split)
+Florentine,['Florentine'],Individual item (form factor split)
+French Toast,['French Toast'],Individual item (form factor split)
+Fm Ricotta,['Fm Ricotta'],Individual item (form factor split)
+One Dozen Ricottas,['One Dozen Ricottas'],Individual item (form factor split)
+Broccoli,['Broccoli'],Individual item (form factor split)
+Olives,['Olives'],Individual item (form factor split)
+Olives Nuts,['Olives Nuts'],Individual item (form factor split)
+Pistachios,['Pistachios'],Individual item (form factor split)
+Side Tomato Toast,['Side Tomato Toast'],Individual item (form factor split)
+Side Vegetable,['Side Vegetable'],Individual item (form factor split)
+Stuffed Peppers,['Stuffed Peppers'],Individual item (form factor split)
+Tomato,['Tomato'],Individual item (form factor split)
+Walnut,['Walnut'],Individual item (form factor split)
+Soup,"['Soup', 'Sweet Corn Soup']",Soup items
+Bulumu,['Bulumu'],Individual item (was in misc group)
+Crazy,['Crazy'],Individual item (was in misc group)
+Half Date Night Chicken Parm Fg Cc Cannoli,['Half Date Night Chicken Parm Fg Cc Cannoli'],Individual item (was in misc group)
+Hh Crow Canyon,['Hh Crow Canyon'],Individual item (was in misc group)
+Rainbow,['Rainbow'],Individual item (was in misc group)
+Seasonal,['Seasonal'],Individual item (was in misc group)
+Flatbread,['Flatbread'],Flatbread
+Espresso Butter,['Espresso Butter'],Individual item (was in misc group)
+Flour,['Flour'],Individual item (was in misc group)
+Food,['Food'],Individual item (was in misc group)
+Lemon Olive Oil,['Lemon Olive Oil'],Individual item (was in misc group)
+Lunch Special,['Lunch Special'],Individual item (was in misc group)
+Mmlocal Peppers Lg,['Mmlocal Peppers Lg'],Individual item (was in misc group)
+Mmlocal Pickles,['Mmlocal Pickles'],Individual item (was in misc group)
+S Italian Dressing,['S Italian Dressing'],Individual item (was in misc group)
+Beef,"['Beef', 'Hot Beef']",Beef items
+Salmon,['Salmon'],Salmon
+Squid,['Squid'],Squid/calamari
+Alfredo,['Alfredo'],Individual item (form factor split)
+F Spaghetti,['F Spaghetti'],Individual item (form factor split)
+Fall Pasta,['Fall Pasta'],Individual item (form factor split)
+Fettuccine With Sun-Dried Tomato Pesto,['Fettuccine With Sun-Dried Tomato Pesto'],Individual item (form factor split)
+Fregola,['Fregola'],Individual item (form factor split)
+H Penne Vodka,['H Penne Vodka'],Individual item (form factor split)
+Orzo,['Orzo'],Individual item (form factor split)
+Pasta Agnolotti,['Pasta Agnolotti'],Individual item (form factor split)
+Pasta Angel Hair,['Pasta Angel Hair'],Individual item (form factor split)
+Pasta Cavatelli,['Pasta Cavatelli'],Individual item (form factor split)
+Pasta Linguini,['Pasta Linguini'],Individual item (form factor split)
+Penne For A Penny,['Penne For A Penny'],Individual item (form factor split)
+Polenta,['Polenta'],Individual item (form factor split)
+Risotto,['Risotto'],Individual item (form factor split)
+S Ragu,['S Ragu'],Individual item (form factor split)
+Spaghetti Parm,['Spaghetti Parm'],Individual item (form factor split)
+Spaghetti Squash,['Spaghetti Squash'],Individual item (form factor split)
+Spaghettini,['Spaghettini'],Individual item (form factor split)
+Pasta,['Pasta'],Individual item (form factor split)
+Pork Pasta,['Fettuccine No Sausage'],Split from mixed-category Pasta - pork items
+Beef Pasta,['Spaghetti With Meatball'],Split from mixed-category Pasta - beef items
+Vegan Pasta,['Mushroom Ragu'],Split from mixed-category Pasta - vegan items
+Shellfish Pasta,['Shrimp Spaghetti'],Split from mixed-category Pasta - shellfish items
+Beef Sandwich,"['Italian Steak And Cheese', 'Roast Beef Sandwich']",Split from mixed-category Sandwich - beef items
+Pork Sandwich,['Sandwich Mortadella'],Split from mixed-category Sandwich - pork items
+Egg Sandwich,['Egg Sandwich'],Individual item (form factor split)
+Italian Flag,['Italian Flag'],Individual item (form factor split)
+Sandwich Alfredo,['Sandwich Alfredo'],Individual item (form factor split)
+Sandwich Blt,['Sandwich Blt'],Individual item (form factor split)
+Sandwich Breakfast,['Sandwich Breakfast'],Individual item (form factor split)
+Sandwich Tomato Egg,['Sandwich Tomato Egg'],Individual item (form factor split)
+Poultry Sandwich,['Sandwich Chicken Alfredo'],Split from mixed-category Sandwich - poultry items
+Vegan Sandwich,['Sandwich Veggie'],Split from mixed-category Sandwich - vegan items
+Salad Quinoa,['Salad Quinoa'],Individual item
+Braised Beef Sandwich,['Braised Beef Sandwich'],Individual item
+Cake Or Pie,"['Cake Or Pie', 'Cake Or Tart', 'D Cake Or Pie']",Customer choice dessert item - cake or pie/tart
+catering_takeout,['Sandwich Catering'],Catering and takeout items

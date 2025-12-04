@@ -308,9 +308,26 @@ cpi_base <- cpi_food_away %>%
 # ─────────────────────────────────────────────────────────────
 
 direc1 <- "data/4_data_parquet_modeling/"
-#direc2 <- "customer/all_locations_daily_customers"
-direc2 <- "all_locations_daily"
-directory <- paste0(direc1, direc2, ".parquet")
+
+
+
+for (direc2 in c(
+  "its/all_locations_daily",
+  "customer/all_locations_daily_customers",
+  "proportion/all_locations_daily_mpbamod_dishes_count",
+  "proportion/all_locations_daily_mpbamod_dishes_prop",
+  "proportion/all_locations_daily_vegan_dishes_count",
+  "proportion/all_locations_daily_vegan_dishes_prop",
+  "proportion/all_locations_daily_vegetarian_dishes_count",
+  "proportion/all_locations_daily_vegetarian_dishes_prop",
+  "proportion_targeted/all_locations_daily_breakfast_dishes_count",
+  "proportion_targeted/all_locations_daily_breakfast_dishes_presence",
+  "proportion_targeted/all_locations_daily_textured_dishes_count",
+  "proportion_targeted/all_locations_daily_textured_dishes_presence",
+  "proportion_targeted/all_locations_daily_untextured_dishes_count",
+  "proportion_targeted/all_locations_daily_untextured_dishes_presence")){
+
+  directory <- paste0(direc1, direc2, ".parquet")
 
 # Join inflation and weather data with main data
 df_all_daily <- read_parquet(directory) %>%
@@ -478,3 +495,5 @@ loc_id <- "75WYSXR9QBK5M"
 # plot_vegan(loc_id, '2019-01-01', '2023-06-01')
 plot_nonvegan(loc_id, '2022-05-01', '2023-07-01')
 
+
+  }

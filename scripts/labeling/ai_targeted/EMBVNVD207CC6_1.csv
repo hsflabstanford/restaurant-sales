@@ -1,119 +1,78 @@
-item_name,animal_categories,reasoning
-"3 Cheese Caramelized Onion Dip","['savory_dairy']","Contains three types of cheese."
-"Ajvar Dip","[]","Roasted red pepper dip, no animal products."
-"Ajvar Dip (Onsite Order)","[]","Roasted red pepper dip, no animal products."
-"Apple Crumble","['sweet_dairy']","Typical crumble contains butter."
-"Bacon","['bacon']","Is bacon."
-"Bbq Pulled Pork Sandwich","['pulled_pork']","Contains pulled pork."
-"Beefy Chili","['ground_meat']","Contains ground beef."
-"Blackbean Salad","[]","Bean and vegetable salad, no animal products."
-"Blueberries","[]","Fresh fruit, no animal products."
-"Breadsticks","['savory_dairy']","Mods show 'Cheesy' option; base likely has cheese or butter."
-"Brownie","['sweet_dairy', 'egg']","Typical brownie contains butter and eggs."
-"Buffalo Broccoli Dip","['savory_dairy']","Buffalo dip typically contains cheese and/or ranch base."
-"Burrito","['savory_dairy']","Mods show 'No Cheese' and 'Vegan' options, base contains cheese."
-"Caponata","[]","Sicilian eggplant dish, traditionally vegan."
-"Caprese Salad","['savory_dairy']","Contains mozzarella cheese."
-"Carrot Pineapple Salad (Onsite Order)","[]","Fruit/vegetable salad, no animal products."
-"Carrot Pineapple Sunshine Salad","[]","Fruit/vegetable salad, no animal products."
-"Catering Breadstix","['savory_dairy']","Mods show 'Cheesy' and 'Plain' options."
-"Catering Dip","[]","Unknown dip type, cannot determine ingredients."
-"Catering Hummus","[]","Hummus is traditionally vegan."
-"Catering Pizza","['savory_dairy']","Pizza contains cheese; mods show pepperoni/veggie/cheese/vegan options."
-"Catering Pretzel Bites","[]","Pretzels typically vegan unless specified."
-"Catering Salad","[]","Generic salad, cannot determine specific ingredients."
-"Cheese Board","['savory_dairy']","Contains cheese."
-"Cheese Pizza","['savory_dairy']","Contains mozzarella cheese."
-"Cheese Pizza (On-Site Order)","['savory_dairy']","Contains mozzarella cheese."
-"Cheese Pizza Slice","['savory_dairy']","Contains mozzarella cheese."
-"Cheese Plate","['savory_dairy']","Contains cheese."
-"Cheese Quesadilla With Salsa","['savory_dairy']","Contains cheese; mods show chicken option but base is cheese."
-"Cheese Tostada With Salsa","['savory_dairy']","Contains cheese; mods show chicken option but base is cheese."
-"Cheesey Tots","['savory_dairy']","Contains cheese."
-"Chicken Poboy","['fried_chicken']","Contains fried chicken (poboy is typically fried)."
-"Chicken Salad","['unfried_chicken']","Contains chicken."
-"Chips","[]","Plain chips, no animal products."
-"Chips And Salsa (Side)","[]","Chips and salsa, no animal products."
-"Coleslaw","['egg']","Traditional coleslaw contains mayonnaise."
-"Cucumber Salad","[]","Vegetable salad, no animal products."
-"Cucumber Salad (Onsite Order)","[]","Vegetable salad, no animal products."
-"Daikon Salad","[]","Vegetable salad, no animal products."
-"Dill Pickle Hummus","[]","Hummus is traditionally vegan."
-"Eliza'S Lime Curd!","['egg', 'sweet_dairy']","Lime curd contains eggs and butter."
-"Elote Salad","['savory_dairy', 'egg']","Mexican street corn salad with cheese (cotija) and mayo."
-"Elote Salad (Onsite Order)","['savory_dairy', 'egg']","Mexican street corn salad with cheese and mayo."
-"Extra Sauce","[]","Unknown sauce type."
-"French Fries","[]","Fried potatoes, no animal products."
-"Fried Chicken Sandwich","['fried_chicken']","Contains fried chicken."
-"German Potato Salad","['bacon']","Traditional German potato salad contains bacon."
-"Gratitude Pretzel","['savory_dairy']","Mods show cream cheese and beer cheese options."
-"Gratitude Pretzel (On-Site Order)","['savory_dairy']","Mods show cream cheese and beer cheese options."
-"Green Chile Cheese Frittata","['egg', 'savory_dairy']","Frittata contains eggs; name includes cheese."
-"Green Chile Cheeseburger","['beef_or_pork_burger', 'savory_dairy']","Contains burger patty and cheese."
-"Green Chile Pork Stew","['chunked_beef_or_pork']","Contains chunked pork."
-"Kalamata Cucumber Salad","['savory_dairy']","Mods show cheese option; likely has feta."
-"Mac & Cheese","['savory_dairy']","Contains cheese."
-"Margarita Pizza","['savory_dairy']","Contains mozzarella cheese."
-"Migas!","['egg', 'savory_dairy']","Tex-Mex scrambled egg dish with cheese."
-"Mr. Burrito","['savory_dairy']","Burrito typically contains cheese."
-"New Year Pizza (Onsite Order)","['chunked_beef_or_pork', 'savory_dairy']","Mods show pork and sauerkraut or jackfruit options; pizza has cheese."
-"New Year Special Good Luck Pork And Sauerkraut","['chunked_beef_or_pork']","Mods show pork or jackfruit options; base is pork."
-"Nunkin Spice Bread Pudding","['sweet_dairy', 'egg']","Bread pudding contains eggs and dairy."
-"Olive Tapenade Dip","[]","Olive-based dip, traditionally vegan."
-"Olive Tapenade Dip (Onsite Order)","[]","Olive-based dip, traditionally vegan."
-"Pepperoni Pizza","['sausage', 'savory_dairy']","Contains pepperoni (cured sausage) and cheese."
-"Pepperoni Pizza (On-Site Order)","['sausage', 'savory_dairy']","Contains pepperoni and cheese."
-"Pepperoni Pizza Slice","['sausage', 'savory_dairy']","Contains pepperoni and cheese."
-"Pickled Veggies","[]","Pickled vegetables, no animal products."
-"Pickled Veggies (On-Site Order)","[]","Pickled vegetables, no animal products."
-"Pickles","[]","Pickled cucumbers, no animal products."
-"Plain Pretzel (No Salt, No Mustard, No Barleywine)","[]","Plain pretzel, typically vegan."
-"Posole","['chunked_beef_or_pork']","Traditional Mexican soup with pork."
-"Pretzels","[]","Plain pretzels, typically vegan."
-"Prohibition Pastries Gratitude Pretzel (On-Site Order)","['savory_dairy']","Mods show cream cheese and beer cheese options."
-"Pumpkin Hummus  Dip","[]","Hummus is traditionally vegan."
-"Pumpkin Hummus Dip (Onsite Order)","[]","Hummus is traditionally vegan."
-"Quart Of Pickled Veggies","[]","Pickled vegetables, no animal products."
-"Rainbow Pride Salad","['savory_dairy']","Mods show cheese/vegan cheese options; base has cheese."
-"Ranch Side","['savory_dairy', 'egg']","Ranch contains dairy and mayonnaise (eggs)."
-"Ranch Side (Reg/Vegan)","['savory_dairy', 'egg']","Name indicates regular version has dairy/egg; vegan option available."
-"Red Cabbage Apple Slaw","[]","Vegetable slaw, appears to be vegan variant."
-"Red Cabbage Apple Slaw(Onsite Order)","[]","Vegetable slaw, appears to be vegan variant."
-"Red Chile Enchiladas","['savory_dairy']","Enchiladas typically contain cheese."
-"Red Pie (Vegan) Pizza","['savory_dairy']","Vegan variant name, but base pizza contains cheese."
-"Rice Krispy Treat","['sweet_dairy']","Contains butter and marshmallows."
-"Roasted Broccoli Salad","[]","Vegetable salad, no animal products indicated."
-"Roasted Cauliflower Poboy","[]","Cauliflower poboy is its own dish, not a vegan variant of chicken poboy."
-"Roasted Cauliflower Salad","[]","Vegetable salad, no animal products."
-"Roasted Red Pepper Hummus","[]","Hummus is traditionally vegan."
-"Rrp Hummus","[]","Roasted red pepper hummus, vegan."
-"Salad Meal","[]","Generic salad, cannot determine specific ingredients."
-"Shrimp Poboy","[]","Contains shrimp (not a tracked category)."
-"Snacks","[]","Generic item, cannot determine ingredients."
-"Soft Pretzel And Big Hop Beer Mustard","[]","Pretzel with mustard, typically vegan."
-"Soft Pretzel And Big Hop Beer Mustard (On-Site Order)","[]","Pretzel with mustard, typically vegan."
-"Soup Of The Day","[]","Mods show bacon add-on options; base soup unknown and varies."
-"Summer Blackbean Salad","[]","Bean and vegetable salad, no animal products."
-"Sweet Potato And Kale Salad","[]","Vegetable salad, no animal products."
-"Tahini Cauliflower Salad","[]","Vegetable salad with tahini, vegan."
-"Tahini Cauliflower Salad (Onsite Order)","[]","Vegetable salad with tahini, vegan."
-"Take 'N Bake Cheese Pizza","['savory_dairy']","Contains cheese."
-"Take 'N Bake Pizza Of The Week","['savory_dairy']","Mods show meaty/vegetarian/vegan options; base has cheese."
-"Take N' Bake Pepperoni Pizza","['sausage', 'savory_dairy']","Contains pepperoni and cheese."
-"Totchos","['savory_dairy']","Tater tot nachos with cheese."
-"Tuscan White Bean Salad","[]","Bean salad, typically vegan."
-"Vegan Burrito","['savory_dairy']","Vegan variant, but base burrito contains cheese."
-"Vegan Chili","['ground_meat']","Vegan variant of chili; base chili contains ground beef (see Beefy Chili)."
-"Vegan Chorizo Chili","['sausage']","Vegan variant; base chorizo chili contains chorizo sausage."
-"Vegan Spinach Dip","['savory_dairy']","Vegan variant; base spinach dip contains dairy."
-"Vegan Tamale Pie","['savory_dairy']","Vegan variant; base tamale pie typically contains cheese."
-"Veggie Chili W/Cornbread","[]","Vegetable chili is its own dish, not a vegan variant of beef chili."
-"White Pizza","['savory_dairy']","White pizza contains ricotta/mozzarella cheese."
-"Slice","['savory_dairy']","Generic pizza slice, contains cheese."
-"Hot Honey","[]","Honey condiment, considered vegan per project rules."
-"Potater Chipz","[]","Chips, no animal products."
-"""Daily Special"" Pizza","['savory_dairy']","Daily pizza special, contains cheese; mods show vegan/meaty options."
-"""Pie Of The Week"" Pizza","['savory_dairy']","Weekly pizza special, contains cheese."
-"""Pie Of The Week"" Pizza (On-Site Order)","['savory_dairy']","Weekly pizza special, contains cheese."
-"""Pie Of The Week"" Pizza Slice","['savory_dairy']","Weekly pizza special slice, contains cheese."
-"""Pie Of The Week"" Slice","['savory_dairy']","Weekly pizza special slice, contains cheese."
+item_name,animal_categories,reasoning,vegan,vegetarian,mpbamodifiable
+Ajvar Dip,[],Ajvar - roasted red pepper/eggplant dip - vegan,True,True,False
+Olive Tapenade Dip,[],Olive tapenade - vegan,True,True,False
+Pumpkin Hummus Dip,[],Pumpkin hummus - vegan,True,True,False
+Roasted Red Pepper Hummus,[],Red pepper hummus - vegan,True,True,False
+Hummus,[],Dill Pickle/Catering hummus - vegan,True,True,False
+3 Cheese Caramelized Onion Dip,['savory_dairy'],Three cheese caramelized onion dip,False,True,False
+Buffalo Broccoli Dip,['savory_dairy'],Buffalo broccoli dip - likely has cheese/cream,False,True,False
+Vegan Spinach Dip,[],Vegan spinach dip - plant-based,True,True,False
+Cucumber Salad,[],Cucumber salad - likely vegan,True,True,False
+Elote Salad,['savory_dairy'],"Elote salad - Mexican street corn style, has cheese/mayo",False,True,False
+Red Cabbage Apple Slaw,[],Red cabbage apple slaw - likely vegan,True,True,False
+Tahini Cauliflower Salad,[],Tahini cauliflower - vegan,True,True,False
+Carrot Pineapple Sunshine Salad,[],Carrot pineapple salad - vegan,True,True,False
+Blackbean Salad,[],Black bean salad - vegan,True,True,False
+Caprese Salad,['savory_dairy'],Caprese - tomato mozzarella basil. Vegan cheese option exists.,False,True,True
+Coleslaw,['egg'],Coleslaw - likely has mayo (egg-based),False,True,False
+Daikon Salad,[],Daikon salad - vegan,True,True,False
+German Potato Salad,['bacon'],German potato salad - traditionally has bacon,False,False,False
+Kalamata Cucumber Salad,['savory_dairy'],Kalamata cucumber salad - has cheese option,False,True,True
+Rainbow Pride Salad,['savory_dairy'],Rainbow Pride salad - has cheese option,False,True,True
+Roasted Broccoli Salad,[],Roasted broccoli salad - vegan,True,True,False
+Salad Meal,[],Generic salad meal,False,False,False
+Sweet Potato And Kale Salad,[],Sweet potato kale salad - vegan,True,True,False
+Tuscan White Bean Salad,[],Tuscan white bean salad - vegan,True,True,False
+Poultry Salad,['unfried_chicken'],Chicken salad,False,False,False
+Roasted Cauliflower,[],Roasted cauliflower poboy/salad - vegan,True,True,False
+Cheese Pizza,['savory_dairy'],Cheese pizza - vegan cheese option exists,False,True,True
+Pepperoni Pizza,"['sausage', 'savory_dairy']",Pepperoni pizza - vegan pie option,False,False,True
+White Pizza,['savory_dairy'],White pizza - cream/cheese based,False,True,False
+Red Pie (Vegan) Pizza,[],Red Pie vegan pizza - already vegan,True,True,False
+Margarita Pizza,['savory_dairy'],"Margherita pizza - mozzarella, basil",False,True,False
+Pie Of The Week Pizza,[],Pie of the week - varies,False,False,False
+New Year Pizza (Onsite Order),['chunked_beef_or_pork'],NY pork and sauerkraut pizza - has jackfruit option,False,False,True
+New Year Special Good Luck Pork And Sauerkraut,['chunked_beef_or_pork'],Pork and sauerkraut - jackfruit option,False,False,True
+Pizza,['savory_dairy'],Pizza slice - pepperoni/cheese/weekly options,False,False,False
+Soft Pretzel And Big Hop Beer Mustard,[],Soft pretzel with beer mustard - vegan,True,True,False
+Gratitude Pretzel,['savory_dairy'],"Gratitude pretzel - has beer cheese option, hot agave tofu cream cheese option",False,True,True
+Pretzels,[],Plain pretzels - vegan,True,True,False
+Breadsticks,['savory_dairy'],Breadsticks - plain or cheesy option,False,True,True
+Loaf,[],Bread loaf - likely vegan,True,True,False
+Burrito,['savory_dairy'],Burrito - vegan option exists,False,True,True
+Cheese Quesadilla With Salsa,"['savory_dairy', 'unfried_chicken']",Cheese quesadilla - chicken or black bean veggie option,False,False,True
+Cheese Tostada With Salsa,"['savory_dairy', 'unfried_chicken']",Cheese tostada - chicken or black bean veggie,False,False,True
+Red Chile Enchiladas,['savory_dairy'],Red chile enchiladas / vegan tamale pie,False,True,True
+Totchos,['savory_dairy'],Totchos - loaded tots with cheese/beans,False,True,False
+Chicken Sandwich,['fried_chicken'],Fried chicken sandwich/poboy,False,False,False
+Pork Sandwich,['pulled_pork'],BBQ pulled pork sandwich,False,False,False
+Shellfish Sandwich,[],Shrimp poboy - shellfish,False,False,False
+Beef Green Chile,"['beef_or_pork_burger', 'savory_dairy']",Green chile cheeseburger,False,False,False
+Pickled Veggies,[],Pickled veggies - vegan,True,True,False
+Chips And Salsa (Side),[],Chips and salsa - vegan,True,True,False
+Potater Chipz,[],Potato chips - vegan,True,True,False
+Chips,[],Chips - vegan,True,True,False
+Chips/Snacks,[],Snacks - varies,True,True,False
+French Fries,[],French fries - vegan,True,True,False
+Cheesey Tots,['savory_dairy'],Cheesy tots - has cheese,False,True,False
+Pickled Items,[],Pickles - vegan,True,True,False
+Cheese Board,['savory_dairy'],Cheese plate/board - dairy,False,True,False
+Posole,['chunked_beef_or_pork'],Posole - Mexican pork stew,False,False,False
+Soup Of The Day,[],"Soup of the day - varies, cheese/sour cream options",False,False,False
+Beef Chili,['ground_meat'],Beefy chili,False,False,False
+Vegan Chili,['ground_meat'],Vegan/veggie chili - plant-based [FIXED: Chili format - ground meat style dish],True,True,False
+Pork Chili,['chunked_beef_or_pork'],Pork chili - contains pork,False,False,False
+Green Chile,"['egg', 'savory_dairy']",Green chile cheese frittata - has egg and cheese,False,True,False
+Pork Green Chile,['chunked_beef_or_pork'],Green chile pork stew,False,False,False
+Apple Crumble,['sweet_dairy'],Apple crumble - likely has butter,False,True,False
+Brownie,"['egg', 'sweet_dairy']",Brownie - has eggs/butter,False,True,False
+Nunkin Spice Bread Pudding,"['egg', 'sweet_dairy']",Pumpkin spice bread pudding - has egg/dairy,False,True,False
+Rice Krispy Treat,['sweet_dairy'],Rice Krispy treat - has butter/marshmallow,False,True,False
+Coconut Smiles,[],"Coconut smiles - unclear, possibly vegan",False,True,False
+Baked Goods,[],Blackstrap cake mix - baked goods,False,True,False
+Mac Cheese,['savory_dairy'],Mac and cheese - dairy,False,True,False
+Fruit,[],Blueberries - vegan,True,True,False
+Condiment/Spread,[],Eliza's lime curd - likely has egg/butter,False,True,False
+Breakfast,['egg'],Migas - Mexican scrambled eggs,False,True,False
+catering_takeout,[],Catering and takeout items - varies by content,False,False,False
+to_remove,[],"Non-food/non-drink items and drinks (coffee, tea, beer, wine, etc.)",False,False,False

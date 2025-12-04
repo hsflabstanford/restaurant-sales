@@ -1,0 +1,101 @@
+item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg,shrimp,whole_bird_white_meat
+Acai Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+April Showers Smoothie Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Carrot Cake Smoothie Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Dragon Smoothie Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Great Pumpkin Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Green Goddess Smoothie Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Matcha Love Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pb & J Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Peppermint Mocha Bowl,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Specialty Smoothie Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Buddha Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Burrito Bowl,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Butternut Curry,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Curry,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Punjabi Butternut Chickpea Spinach Curry,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pineapple Coconut Rice Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Spinach Lental Rice Bow,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sushi Bowl,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Breakfast Bowl,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Apple Walnut Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Autumn Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bean Corn Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Chicken Salad Over Greens,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Chickpea Salad Over Greens,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cranberry Chicken Salad,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Farmer's Market Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Kale! Ceasar Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Mediterranean Falafel Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pear Salad Butternut Soup,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pomegranate Power Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Roasted Beet Sweet Potato Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Southwest Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Spinach Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+The Big Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Winter Protein Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Winter Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Wrap,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False,False
+Burger,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Soup,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Egg Bake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Matcha Pancakes,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Oatmeal,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pumpkin Waffles,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Quiche,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Chia Pudding,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Toast,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Falafel,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Quesadilla,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Tacos,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cauliflower Flatbread Pizza,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Savory Mushroom Flatbread,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Asian Peanut Noodles,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Vegan Mac Cheese,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fries,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Coleslaw,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Applesauce,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Microgreens,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Gf Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Molasses Cookies,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Vegan Cookie Bar,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cookie Bar Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Brownie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Chocolate Chip Cookie Bar,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Energy Bars,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Lemon Bar,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Peanut Butter Scotchy Bar,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Raspberry Bar,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Rice Krispie Bar,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Vegan Lemon Bar,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Almond Pear Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Carrot Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Chocolate Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Pb Chocolate Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Spiced Yam Cake- Wedge,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Vegan Gf Cake Slice,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cupcake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Muffin,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Cinnamon Roll,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Cheesecake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Cake Pops,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Candy Patty,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Chocolate Covered Oreos,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Pb Choc Tart,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Pretzel Bark,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Vegan Peanut Butter Fudge,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Enlightened Bean Crisps,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Organic Hickory Smokehouse Mushroom Jerky,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Taali Water Lily Pops,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Honey,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bakery Brand,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Mint To Be,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Poultry Sandwich,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Vegan Sandwich,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Chicken Curry Couscous On Greens,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Lion'S Mane Crab Cakes,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Ratatouille With Chickpea Over Rice Or With Thick Cut Sourdough,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Daily Special,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Vegan Shepards Pie,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False

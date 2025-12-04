@@ -1,203 +1,80 @@
-"item_name","categories","reasoning"
-"All Beef Hot Dog","['sausage']","Contains hot dog."
-"Almonds","[]","Plant-based item."
-"Arugula Salad","[]","Plant-based item."
-"Avocado","[]","Plant-based item."
-"Bacon","['bacon']","Contains bacon."
-"Bar","[]","Non-food/service item."
-"Beemster","['savory_dairy']","Contains cheese/dairy."
-"Belgian Waffles","['sweet_dairy']","Contains waffles (dairy batter)."
-"Beyond Meat Patty Melt","['beef_or_pork_burger']","Plant-based item labeled with what regular version contains: beef_or_pork_burger."
-"Bowl Of Soup","[]","Plant-based item."
-"Brand Fleurs Maceration","[]","Wine/beverage item."
-"Bread And Chips","[]","Plant-based item."
-"Breakfast Burrito","['savory_dairy', 'egg']","Contains egg, cheese/dairy."
-"Brisket Nachos","['chunked_beef_or_pork', 'savory_dairy']","Contains brisket, cheese/dairy."
-"Brunet 100","[]","Wine/beverage item."
-"Brussel Sprouts","[]","Plant-based item."
-"Bulldog Bacon Butty","['bacon']","Contains bacon."
-"Burdock Seasonal","[]","Wine/beverage item."
-"Burdock Three","[]","Wine/beverage item."
-"Burdock Vermont","[]","Wine/beverage item."
-"Burger","['beef_or_pork_burger']","Contains burger patty."
-"Burger (No Side)","['beef_or_pork_burger']","Contains burger patty."
-"Burrata","['savory_dairy']","Contains cheese/dairy."
-"Burrito","['savory_dairy']","Contains cheese/dairy."
-"Burritoe","['savory_dairy']","Contains cheese/dairy."
-"Butter Tart Pro Max","['sweet_dairy']","Contains sweet dairy."
-"Byob","[]","Non-food/service item."
-"Caesar","['savory_dairy']","Contains cheese/dairy."
-"Caesar Sf","['savory_dairy']","Contains cheese/dairy."
-"Cendrillon","[]","Wine/beverage item."
-"Ceviche","[]","Seafood item, no matching animal category."
-"Cheesy Fries","['savory_dairy']","Contains cheese/dairy."
-"Chilaquiles","['savory_dairy', 'egg']","Contains egg, cheese/dairy."
-"Chips N/ Guac","[]","Plant-based item."
-"Chips Salsa","[]","Plant-based item."
-"Cirelli Red","[]","Wine/beverage item."
-"Closson Chase","[]","Wine/beverage item."
-"Closson Chase Bottle","[]","Wine/beverage item."
-"Coat Albret","[]","Wine/beverage item."
-"Coat Albret Bottle","[]","Wine/beverage item."
-"Coat Albret Glass","[]","Wine/beverage item."
-"Cobb Salad","['savory_dairy', 'egg', 'bacon']","Contains bacon, egg, cheese/dairy."
-"Coleslaw","[]","Plant-based item."
-"Cool Ranch Doritos","[]","Plant-based item."
-"Corelli Pecorino","[]","Wine/beverage item."
-"Corn Dog","['sausage']","Contains corn dog."
-"Cornichon","[]","Plant-based item."
-"Cubano","['chunked_beef_or_pork']","Contains pork (cuban)."
-"Cubano.","['chunked_beef_or_pork']","Contains pork (cuban)."
-"Cup Of Soup","[]","Plant-based item."
-"Curly Fries","[]","Plant-based item."
-"Curry Chicken","['unfried_chicken']","Contains chicken."
-"Custom","[]","Non-food/service item."
-"Donut","['sweet_dairy']","Contains donut."
-"Dunkel","[]","Wine/beverage item."
-"Eggs","['egg']","Contains egg."
-"Eggs Federal","['egg']","Contains egg."
-"Eggs Federal With Bacon","['bacon', 'egg']","Contains bacon, egg."
-"Eggs Federal With Kale","['egg']","Contains egg."
-"Egift Card","[]","Non-food/service item."
-"Elisabetta Foradori ‚Äòlez√©R‚Äô","[]","Wine/beverage item."
-"Elora","[]","Wine/beverage item."
-"Esquites","[]","Plant-based item."
-"Eton Mess","['sweet_dairy']","Contains sweet dairy."
-"Falafel","[]","Plant-based item."
-"Fennel Orange","[]","Plant-based item."
-"Flat Iron Steak","['chunked_beef_or_pork']","Contains steak."
-"Flat Tire","[]","Wine/beverage item."
-"Foradori Lezer","[]","Wine/beverage item."
-"Four Guys Burger","['beef_or_pork_burger', 'savory_dairy']","Contains burger patty, cheese/dairy."
-"Four Guys Special","['beef_or_pork_burger', 'savory_dairy']","Contains burger patty, cheese/dairy."
-"French Onion Soup","[]","Plant-based item."
-"Fried Chicken","['fried_chicken']","Contains fried chicken."
-"Friend Pint","[]","Wine/beverage item."
-"Fruit Salad","[]","Plant-based item."
-"Fruit Scone","['sweet_dairy']","Contains scone (dairy)."
-"Geez Louise","[]","Wine/beverage item."
-"Gift Card","[]","Non-food/service item."
-"Giro","[]","Item without specified animal products."
-"Godspeed","[]","Wine/beverage item."
-"Gold Standard","['savory_dairy', 'egg']","Contains egg, cheese/dairy."
-"Gold Standard (No Sides)","['savory_dairy', 'egg']","Contains egg, cheese/dairy."
-"Gold Standard Breakfast Sandwich","['savory_dairy', 'egg']","Contains egg, cheese/dairy."
-"Gold Standard Sandwich","['savory_dairy', 'egg']","Contains egg, cheese/dairy."
-"Gold Standard Sandwich With Bacon","['bacon', 'egg', 'savory_dairy']","Contains bacon, egg, cheese/dairy."
-"Gold Standard Sandwich With Kale","['savory_dairy', 'egg']","Contains egg, cheese/dairy."
-"Granola Bowl","['sweet_dairy']","Contains yogurt."
-"Grapefruit","[]","Plant-based item."
-"Grapefruit & Brown Sugar","[]","Plant-based item."
-"Green Salad","[]","Plant-based item."
-"Greens","[]","Plant-based item."
-"Grilled Cheese","['savory_dairy']","Contains cheese/dairy."
-"Gut O Wines","[]","Wine/beverage item."
-"Gut Oggau Maskarade Rot","[]","Wine/beverage item."
-"Gut Oggau Pck","[]","Wine/beverage item."
-"Ham","['chunked_beef_or_pork']","Contains ham."
-"Happy Hour","[]","Wine/beverage item."
-"Happy Hour Üçª","[]","Wine/beverage item."
-"Herv√© Vdf","[]","Wine/beverage item."
-"Hh - Ceviche","[]","Seafood item, no matching animal category."
-"Hh - Chix","['fried_chicken']","Contains fried chicken."
-"Hh - Nachos","['savory_dairy']","Contains cheese/dairy."
-"Hot Fried Chicken","['fried_chicken']","Contains fried chicken."
-"Hot Oysters","[]","Seafood item, no matching animal category."
-"Hotdog","['sausage']","Contains hot dog."
-"Ibi Vidal","[]","Wine/beverage item."
-"Ice Cream","['sweet_dairy']","Contains ice cream."
-"Impossible Melt","['beef_or_pork_burger']","Plant-based item labeled with what regular version contains: beef_or_pork_burger."
-"Impossible Patty Melt","['beef_or_pork_burger']","Plant-based item labeled with what regular version contains: beef_or_pork_burger."
-"Integrale","[]","Wine/beverage item."
-"Janky","[]","Wine/beverage item."
-"Jell-O Shot","[]","Plant-based item."
-"Kale Caesar","['savory_dairy']","Contains cheese/dairy."
-"Kale Standard","['savory_dairy', 'egg']","Contains egg, cheese/dairy."
-"Kid Menu Waffles","['sweet_dairy']","Contains waffles (dairy batter)."
-"Kitchen","[]","Non-food/service item."
-"Koppitsch Homok","[]","Wine/beverage item."
-"Koppitsch Rozsa","[]","Wine/beverage item."
-"L'Imparfait La Crescent","[]","Wine/beverage item."
-"L'Imparfait Maceration","[]","Wine/beverage item."
-"Lammidia Panda","[]","Wine/beverage item."
-"Lammidia Rosh","[]","Wine/beverage item."
-"Laura Palmer'S Hidden Secrets","[]","Wine/beverage item."
-"Long Dog Inflorescence","[]","Wine/beverage item."
-"L‚Äôaudacieuse","[]","Wine/beverage item."
-"Mac & Cheese","['savory_dairy']","Contains cheese/dairy."
-"Marie Sharp'S","[]","Wine/beverage item."
-"Marie Sharps","[]","Wine/beverage item."
-"Marie Sharps Hot Sauce 5Oz","[]","Wine/beverage item."
-"Martin Texier La Preyna","[]","Wine/beverage item."
-"Masieri","[]","Wine/beverage item."
-"Matron Seasonal","[]","Wine/beverage item."
-"Milan Haru","[]","Wine/beverage item."
-"Mushroom Toast","[]","Plant-based item."
-"Mussels","[]","Seafood item, no matching animal category."
-"Nacho Cheese","['savory_dairy']","Contains cheese/dairy."
-"Nachos","['savory_dairy']","Contains cheese/dairy."
-"Nester Forks And Knives Red","[]","Wine/beverage item."
-"Okonomiyaki","['egg']","Contains egg."
-"Oliv-Almond","[]","Plant-based item."
-"Olives","[]","Plant-based item."
-"Omelette","['egg']","Contains egg."
-"Open","[]","Non-food/service item."
-"Open Food","[]","Non-food/service item."
-"Other","[]","Non-food/service item."
-"Pm Cocktail List","[]","Non-food/service item."
-"Potato Rosti","['egg']","Contains egg."
-"Potato Salad","[]","Plant-based item."
-"Pretty Boy","[]","Wine/beverage item."
-"Ptg","[]","Wine/beverage item."
-"Purple Üçá","[]","Wine/beverage item."
-"Puszta Libre","[]","Wine/beverage item."
-"Puszta!","[]","Wine/beverage item."
-"Quesadilla","['savory_dairy']","Contains cheese/dairy."
-"Raisins Gaulois","[]","Wine/beverage item."
-"Revel","[]","Wine/beverage item."
-"Rojo Loco","[]","Wine/beverage item."
-"Rosewood Flora","[]","Wine/beverage item."
-"R√∂Sti","['egg']","Contains egg."
-"Sausage","['sausage']","Contains sausage."
-"Scrambled Eggs","['egg']","Contains egg."
-"Scrambled Eggs With Sausage","['egg', 'sausage']","Contains sausage, egg."
-"Service And Gratuity","[]","Non-food/service item."
-"Sextant ‚Äòcoteaux Bourguignons‚Äô","[]","Wine/beverage item."
-"Shipping","[]","Non-food/service item."
-"Side 1 Egg","['egg']","Contains egg."
-"Side Curly Fries","[]","Plant-based item."
-"Side R√∂Sti","['egg']","Contains egg."
-"Side Slaw","[]","Plant-based item."
-"Slaw","[]","Plant-based item."
-"Smoked Trout","[]","Seafood item, no matching animal category."
-"Smoked Trout Kale Caesar","['savory_dairy']","Contains cheese/dairy."
-"Smoked Trout Plate","[]","Seafood item, no matching animal category."
-"Sonnen Hill","[]","Wine/beverage item."
-"Soup","[]","Plant-based item."
-"Squash","[]","Plant-based item."
-"Squash Omlette","[]","Plant-based item."
-"Steak & Eggs","['chunked_beef_or_pork', 'egg']","Contains steak, egg."
-"Steak Frites","['chunked_beef_or_pork']","Contains steak."
-"Strawberry","[]","Plant-based item."
-"Sub Sp68 Bianco","[]","Wine/beverage item."
-"Tap","[]","Non-food/service item."
-"Terre Forte Rouge!","[]","Wine/beverage item."
-"The Caesar","['savory_dairy']","Contains cheese/dairy."
-"Toast","[]","Plant-based item."
-"Toffee Pudding","['sweet_dairy']","Contains sweet dairy."
-"Trout Dip","[]","Seafood item, no matching animal category."
-"Trout Plate","[]","Seafood item, no matching animal category."
-"Two Eggs Any Style","['egg']","Contains egg."
-"Veg Burger","['beef_or_pork_burger']","Plant-based item labeled with what regular version contains: beef_or_pork_burger."
-"Veg Scrambled Eggs With Avocado","['egg']","Vegan egg dish labeled with what regular contains: egg."
-"Veggie Nachos","['savory_dairy']","Veggie nachos labeled with cheese (savory_dairy)."
-"Ventenac Aure","[]","Wine/beverage item."
-"Vini Viti","[]","Wine/beverage item."
-"Viola Note Di Bianco","[]","Wine/beverage item."
-"Waffles","['sweet_dairy']","Contains waffles (dairy batter)."
-"Wedge","[]","Plant-based item."
-"Willibald","[]","Wine/beverage item."
-"Willibald Üçá","[]","Wine/beverage item."
-"Yerba","[]","Wine/beverage item."
-"Zucchini","[]","Plant-based item."
-"√À Rosato","[]","Wine/beverage item."
+item_name,animal_categories,reasoning,vegan,vegetarian,mpbamodifiable
+Burger,"['beef_or_pork_burger', 'savory_dairy']",Cheeseburger - Detroit style,False,False,False
+Burrito,"['egg', 'savory_dairy']",Breakfast burrito,False,True,False
+Cubano,"['chunked_beef_or_pork', 'savory_dairy']",Cuban sandwich with pork/ham,False,False,False
+Curly Fries,[],Curly fries,True,True,False
+Eggs Federal,"['egg', 'savory_dairy', 'bacon']",Eggs Federal - eggs with bacon option,False,False,False
+Four Guys,"['beef_or_pork_burger', 'bacon', 'savory_dairy']",Four guys double patty burger with bacon,False,False,False
+Gold Standard,"['egg', 'savory_dairy', 'bacon']",Breakfast sandwich - bacon/kale/impossible option,False,False,False
+Grapefruit,[],Grapefruit dish,True,True,False
+Patty Melt,['savory_dairy'],Beyond/Impossible patty melt - vegetarian,False,True,False
+Rosti,"['egg', 'savory_dairy']",Potato rosti - can have egg (no vegan sub on menu),False,True,False
+Scrambled Eggs,"['egg', 'savory_dairy']",Scrambled eggs,False,True,False
+Slaw,[],Coleslaw,True,True,False
+Soup,[],Soup - varies by day,True,True,False
+Trout Plate,[],Trout plate - fish,False,False,False
+Waffles,"['sweet_dairy', 'egg']",Waffles,False,True,False
+Arugula Salad,[],Arugula salad,True,True,False
+Caesar Sf,"['savory_dairy', 'egg']","Caesar salad - parmesan, anchovy dressing",False,True,False
+Cobb Salad,"['bacon', 'egg', 'savory_dairy', 'unfried_chicken']",Cobb salad with bacon chicken egg,False,False,False
+Nachos,['savory_dairy'],Nachos with cheese,False,True,False
+Chips N Guac,[],Chips and guacamole,True,True,False
+Chips Salsa,[],Chips and salsa,True,True,False
+Bread And Chips,[],Bread and chips,True,True,False
+Fries,[],French fries,True,True,False
+All Beef Hot Dog,['sausage'],All beef hot dog,False,False,False
+Corn Dog,"['sausage', 'sweet_dairy', 'egg']",Corn dog - batter has egg,False,False,False
+Butter Tart,"['sweet_dairy', 'egg']",Butter tart,False,True,False
+Fried Chicken,['fried_chicken'],Fried chicken,False,False,False
+Trout,[],Trout - fish,False,False,False
+Caesar,"['savory_dairy', 'egg']",Caesar salad,False,True,False
+Eggs,['egg'],Eggs,False,True,False
+Steak,['chunked_beef_or_pork'],Steak,False,False,False
+Ceviche,[],Ceviche - fish/seafood,False,False,False
+Kale,[],Kale side,True,True,False
+Squash,[],Squash dish,True,True,False
+Donut,"['sweet_dairy', 'egg']",Donut,False,True,False
+Ice Cream,"['sweet_dairy', 'egg']",Ice cream [FIXED: Baked goods typically have egg/dairy],False,True,False
+Toast,[],Toast,True,True,False
+Beemster,['savory_dairy'],Beemster cheese,False,True,False
+Corelli Pecorino,['savory_dairy'],Pecorino cheese,False,True,False
+Oliv-Almond,[],Olive almond appetizer,True,True,False
+Fruit Salad,[],Fruit salad,True,True,False
+Green Salad,[],Green salad,True,True,False
+Potato Salad,"['egg', 'savory_dairy']",Potato salad - likely has mayo/egg,False,True,False
+Wedge,"['savory_dairy', 'bacon']",Wedge salad with blue cheese and bacon,False,False,False
+Chilaquiles,"['egg', 'savory_dairy']",Chilaquiles with egg (no vegan sub on menu),False,True,False
+Fruit Scone,"['sweet_dairy', 'egg']",Fruit scone,False,True,False
+Granola Bowl,['sweet_dairy'],Granola bowl - likely has yogurt (no vegan sub),False,True,False
+Almonds,[],Almonds,True,True,False
+Brussel Sprouts,[],Brussels sprouts,True,True,False
+Burrata,['savory_dairy'],Burrata cheese,False,True,False
+Cornichon,[],Cornichons/pickles,True,True,False
+Esquites,['savory_dairy'],Mexican street corn - has cheese/mayo (no vegan sub),False,True,False
+Greens,[],Greens side,True,True,False
+Olives,[],Olives,True,True,False
+Chicken,['unfried_chicken'],Chicken dish,False,False,False
+Hotdog,['sausage'],Hot dog,False,False,False
+Long Dog Inflorescence,['sausage'],Long hot dog,False,False,False
+Hot Oysters,[],Hot oysters - shellfish,False,False,False
+Mussels,[],Mussels - shellfish,False,False,False
+Sandwich,"['savory_dairy', 'bacon', 'egg']",Generic sandwich (has bacon - no vegan sub),False,False,False
+Bacon,['bacon'],Bacon side,False,False,False
+Ham,['chunked_beef_or_pork'],Ham,False,False,False
+Sausage,['sausage'],Sausage,False,False,False
+Falafel,[],Falafel - vegan,True,True,False
+Okonomiyaki,"['egg', 'savory_dairy']",Japanese pancake - can add egg (no vegan sub),False,True,False
+Quesadilla,['savory_dairy'],Quesadilla with cheese,False,True,False
+Mac Cheese,['savory_dairy'],Mac and cheese,False,True,False
+Fennel Orange,[],Fennel orange salad/dish,True,True,False
+Grapefruit Brown Sugar,[],Grapefruit with brown sugar,True,True,False
+Strawberry,[],Strawberry dish,True,True,False
+Avocado,[],Avocado dish,True,True,False
+Custom,[],Custom order,True,True,False
+Geez Louise,"['sweet_dairy', 'egg']",Dessert/special item,False,True,False
+Janky,[],Janky item,True,True,False
+Matron Seasonal,[],Seasonal item,True,True,False
+Open,[],Open item,True,True,False
+Open Food,[],Open food item,True,True,False
+Ptg,[],PTG item,True,True,False
+to_remove,[],"Non-food/non-drink items and drinks (coffee, tea, beer, wine, etc.)",False,False,False

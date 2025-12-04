@@ -1,18 +1,81 @@
 canonical_name,variants,reasoning
-"Ajvar Dip","['Ajvar Dip (Onsite Order)']","Same dip, different order format."
-"Cheese Pizza","['Cheese Pizza (On-Site Order)', 'Cheese Pizza Slice', ""Take 'N Bake Cheese Pizza""]","Same base pizza in different formats: on-site, slice, take-and-bake."
-"Pepperoni Pizza","['Pepperoni Pizza (On-Site Order)', 'Pepperoni Pizza Slice', ""Take N' Bake Pepperoni Pizza""]","Same base pizza in different formats."
-"Cucumber Salad","['Cucumber Salad (Onsite Order)']","Same salad, different order format."
-"Elote Salad","['Elote Salad (Onsite Order)']","Same salad, different order format."
-"Olive Tapenade Dip","['Olive Tapenade Dip (Onsite Order)']","Same dip, different order format."
-"Pickled Veggies","['Pickled Veggies (On-Site Order)', 'Quart Of Pickled Veggies']","Same product in different formats/quantities."
-"Pumpkin Hummus Dip","['Pumpkin Hummus  Dip', 'Pumpkin Hummus Dip (Onsite Order)']","Same hummus; one has extra space in name, one is onsite order."
-"Ranch Side","['Ranch Side (Reg/Vegan)']","Same ranch side with vegan option noted in variant name."
-"Red Cabbage Apple Slaw","['Red Cabbage Apple Slaw(Onsite Order)']","Same slaw, different order format."
-"Soft Pretzel And Big Hop Beer Mustard","['Soft Pretzel And Big Hop Beer Mustard (On-Site Order)']","Same pretzel, different order format."
-"Tahini Cauliflower Salad","['Tahini Cauliflower Salad (Onsite Order)']","Same salad, different order format."
-"Gratitude Pretzel","['Gratitude Pretzel (On-Site Order)', 'Prohibition Pastries Gratitude Pretzel (On-Site Order)']","Same pretzel product; Prohibition Pastries is vendor branding."
-"Burrito","['Mr. Burrito']","'Mr.' is decorative prefix for same burrito."
-"Roasted Red Pepper Hummus","['Rrp Hummus']","RRP is abbreviation for Roasted Red Pepper."
-"Carrot Pineapple Sunshine Salad","['Carrot Pineapple Salad (Onsite Order)']","Same salad; 'Sunshine' is decorative, onsite is order format."
-"""Pie Of The Week"" Pizza","[""\"Pie Of The Week\" Pizza (On-Site Order)"", ""\"Pie Of The Week\" Pizza Slice"", ""\"Pie Of The Week\" Slice"", ""\"Daily Special\" Pizza"", ""Take 'N Bake Pizza Of The Week""]","All refer to rotating special pizza in various formats."
+Ajvar Dip,['Ajvar Dip'],"Same dip, different order format."
+Cheese Pizza,['Cheese Pizza'],"Same base pizza in different formats: on-site, slice, take-and-bake."
+Pepperoni Pizza,['Pepperoni Pizza'],Same base pizza in different formats.
+Cucumber Salad,['Cucumber Salad'],"Same salad, different order format."
+Elote Salad,['Elote Salad'],"Same salad, different order format."
+Olive Tapenade Dip,['Olive Tapenade Dip'],"Same dip, different order format."
+Pickled Veggies,['Pickled Veggies'],Same product in different formats/quantities.
+Pumpkin Hummus Dip,['Pumpkin Hummus Dip'],"Same hummus; one has extra space in name, one is onsite order."
+Red Cabbage Apple Slaw,['Red Cabbage Apple Slaw'],"Same slaw, different order format."
+Soft Pretzel And Big Hop Beer Mustard,['Soft Pretzel And Big Hop Beer Mustard'],"Same pretzel, different order format."
+Tahini Cauliflower Salad,['Tahini Cauliflower Salad'],"Same salad, different order format."
+Gratitude Pretzel,['Gratitude Pretzel'],Same pretzel product; Prohibition Pastries is vendor branding.
+Burrito,['Burrito'],'Mr.' is decorative prefix for same burrito.
+Roasted Red Pepper Hummus,['Roasted Red Pepper Hummus'],RRP is abbreviation for Roasted Red Pepper.
+Carrot Pineapple Sunshine Salad,['Carrot Pineapple Sunshine Salad'],"Same salad; 'Sunshine' is decorative, onsite is order format."
+Pie Of The Week Pizza,['Pie Of The Week Pizza'],"All Pie Of The Week pizzas consolidated regardless of format (on-site, slice, take-n-bake, quoted name)."
+Loaf,['Loaf'],Different sizes of the same bread product consolidated.
+Coconut Smiles,['Coconut Smiles'],Different sizes of the same baked good consolidated.
+White Pizza,['White Pizza'],Individual item (form factor split)
+Red Pie (Vegan) Pizza,['Red Pie (Vegan) Pizza'],Individual item (form factor split)
+Margarita Pizza,['Margarita Pizza'],Individual item (form factor split)
+Chips And Salsa (Side),['Chips And Salsa (Side)'],Individual item (form factor split)
+Potater Chipz,['Potater Chipz'],Individual item (form factor split)
+Chips,['Chips'],Individual item (form factor split)
+Hummus,"['Dill Pickle Hummus', 'Catering Hummus']",Hummus variants.
+Pretzels,"['Plain Pretzel (No Salt, No Mustard, No Barleywine)', 'Catering Pretzel Bites', 'Pretzels']",Pretzel variants.
+Roasted Cauliflower,"['Roasted Cauliflower Poboy', 'Roasted Cauliflower Salad']",Roasted cauliflower dish variants.
+Chicken Sandwich,"['Chicken Poboy', 'Fried Chicken Sandwich']",Chicken sandwich variants.
+Blackbean Salad,"['Summer Blackbean Salad', 'Blackbean Salad']",Blackbean salad variants.
+Cheese Board,"['Cheese Plate', 'Cheese Board']",Cheese board/plate variants.
+New Year Pizza (Onsite Order),['New Year Pizza (Onsite Order)'],Individual item (was in misc group)
+New Year Special Good Luck Pork And Sauerkraut,['New Year Special Good Luck Pork And Sauerkraut'],Individual item (was in misc group)
+Breadsticks,"['Catering Breadstix', 'Breadsticks']",Breadstick variants.
+Pizza,['Slice'],Various pizza types and slices
+3 Cheese Caramelized Onion Dip,['3 Cheese Caramelized Onion Dip'],Individual item (form factor split)
+Buffalo Broccoli Dip,['Buffalo Broccoli Dip'],Individual item (form factor split)
+Vegan Spinach Dip,['Vegan Spinach Dip'],Individual item (form factor split)
+Burrito,"['Burrito', 'Vegan Burrito']",Burritos including vegan option
+Cheese Quesadilla With Salsa,['Cheese Quesadilla With Salsa'],Individual item (form factor split)
+Cheese Tostada With Salsa,['Cheese Tostada With Salsa'],Individual item (form factor split)
+Red Chile Enchiladas,"['Red Chile Enchiladas', 'Vegan Tamale Pie']",Red chile Mexican dishes
+Apple Crumble,['Apple Crumble'],Individual item (form factor split)
+Brownie,['Brownie'],Individual item (form factor split)
+Nunkin Spice Bread Pudding,['Nunkin Spice Bread Pudding'],Individual item (form factor split)
+Rice Krispy Treat,['Rice Krispy Treat'],Individual item (form factor split)
+French Fries,['French Fries'],Individual item (form factor split)
+Cheesey Tots,['Cheesey Tots'],Individual item (form factor split)
+Totchos,['Totchos'],Individual item (form factor split)
+Pretzels,['Pretzels'],Pretzel items
+Pickled Items,['Pickles'],Pickled items
+Chips/Snacks,['Snacks'],Snack items
+Posole,['Posole'],Individual item (form factor split)
+Soup Of The Day,['Soup Of The Day'],Individual item (form factor split)
+Mac Cheese,['Mac Cheese'],Mac and cheese
+Cheese Board,"['Cheese Board', 'Caponata']",Cheese and appetizer boards
+Baked Goods,['Blackstrap Cake Mix'],Baked goods and breads
+Fruit,['Blueberries'],Fresh fruit
+Condiment/Spread,"[""Eliza'S Lime Curd!""]",Specialty condiments
+Breakfast,['Migas!'],Breakfast dishes
+Beef Chili,['Beefy Chili'],Split from mixed-category Chili - beef items
+Vegan Chili,"['Vegan Chili', 'Veggie Chili WCornbread']",Split from mixed-category Chili - vegan items
+Pork Chili,['Vegan Chorizo Chili'],Split from mixed-category Chili - pork items
+Caprese Salad,['Caprese Salad'],Individual item (form factor split)
+Coleslaw,['Coleslaw'],Individual item (form factor split)
+Daikon Salad,['Daikon Salad'],Individual item (form factor split)
+German Potato Salad,['German Potato Salad'],Individual item (form factor split)
+Kalamata Cucumber Salad,['Kalamata Cucumber Salad'],Individual item (form factor split)
+Rainbow Pride Salad,['Rainbow Pride Salad'],Individual item (form factor split)
+Roasted Broccoli Salad,['Roasted Broccoli Salad'],Individual item (form factor split)
+Salad Meal,['Salad Meal'],Individual item (form factor split)
+Sweet Potato And Kale Salad,['Sweet Potato And Kale Salad'],Individual item (form factor split)
+Tuscan White Bean Salad,['Tuscan White Bean Salad'],Individual item (form factor split)
+Poultry Salad,['Chicken Salad'],Split from mixed-category Salad - poultry items
+Green Chile,['Green Chile Cheese Frittata'],Split from mixed-category Green Chile - neutral items
+Beef Green Chile,['Green Chile Cheeseburger'],Split from mixed-category Green Chile - beef items
+Pork Green Chile,['Green Chile Pork Stew'],Split from mixed-category Green Chile - pork items
+Pork Sandwich,['Bbq Pulled Pork Sandwich'],Split from mixed-category Sandwich - pork items
+Shellfish Sandwich,['Shrimp Poboy'],Split from mixed-category Sandwich - shellfish items
+catering_takeout,"['Catering Dip', 'Catering Salad', 'Catering Pizza']",Catering and takeout items
+to_remove,"['Caribbean Amphibian', 'Cosmic Kyler', 'Crystal Schip', 'Fakin The Funk', 'Falutin', 'Honey Heather', 'Pomme Saigon']","Non-food/non-drink items and drinks (coffee, tea, beer, wine, etc.)"

@@ -1,130 +1,101 @@
-item_name,animal_categories,reasoning
-Pb & J Bowl,"['sweet_dairy']","Smoothie bowl type with nut butter and fruit, classed as a dessert-like or breakfast sweet dish."
-Energy Bars,"['sweet_dairy']","Sweet snack bar type, categorized as dessert or confectionery."
-Cranberry Chicken Wrap,"['unfried_chicken','egg']","Wrap centered on chicken; poultry main."
-Chickpea Salad Wrap,[],"Legume-based wrap, no meat or dairy analog."
-Buddha Bowl,[],"Vegetable and grain bowl type, no animal analog category."
-Vegan Breakfast Sandwich,"['breakfast_sausage_patty','egg','savory_dairy']","Analog to breakfast sandwich with sausage patty, egg, and cheese."
-Zucchini Muffin,"['sweet_dairy','egg']","Baked good typically containing eggs and dairy."
-Avocado Toast,[],"Breakfast item often served with egg and cheese options."
-Acai Bowl,"['sweet_dairy']","Smoothie bowl with fruit and granola, dessert/breakfast category."
-Breakfast Wrap,"['egg','savory_dairy']","Standard breakfast wrap with eggs, cheese, and sometimes chicken."
-Rice Krispie Bar,"['sweet_dairy']","Sweet dessert bar, classified under sweet dairy due to marshmallow/butter type preparation."
-Vegan Cookie Bar,"['sweet_dairy','egg']","Dessert bar analog to cookies containing dairy and egg."
-Carrot Cake Cupcake,"['sweet_dairy','egg']","Baked dessert type with frosting and egg-based batter."
-Breakfast Bowl,"['egg']","Breakfast meal with egg and cheese, often with poultry."
-Peanut Butter Scotchy Bar,"['sweet_dairy']","Sweet dessert bar using butterscotch chips, classified under sweet dairy."
-Fudgy Brownie,"['sweet_dairy','egg']","Standard brownie type containing butter and eggs."
-Chocolate Chip Cookie Bar,"['sweet_dairy','egg']","Cookie analog dessert, categorized under sweet dairy and egg."
-Carrot Cake Smoothie Bowl,"['sweet_dairy']","Dessert-style smoothie bowl category, analogous to sweet dairy dessert."
-Chickpea Salad Over Greens,[],"Legume-based salad, not animal-analog type."
-Veggie Grilled Cheese,"['savory_dairy']","Grilled cheese sandwich class, centered on dairy cheese."
-Tacos,"['pulled_pork','savory_dairy']","Main dish type using meat and cheese fillings."
-Quesadilla,"['savory_dairy']","Cheese-centered tortilla dish, classified as savory dairy."
-Cranberry Chicken Salad,"['unfried_chicken','egg']","Chicken-based salad with dressing or dairy components."
-Granola,"['sweet_dairy']","Sweet breakfast/snack item often paired with yogurt or milk."
-Dragon Smoothie Bowl,"['sweet_dairy']","Sweet smoothie bowl category with fruit and toppings."
-Black Bean Burger,[],"Plant-based analog of burger type."
-Fudgy Espresso Brownie,"['sweet_dairy','egg']","Dessert brownie category containing chocolate and egg analog."
-Beyond Burger,"['beef_or_pork_burger','savory_dairy']","Plant-based analog of beef burger."
-Chia Pudding,"['sweet_dairy']","Pudding category classified under sweet dairy desserts."
-Chicken Salad Over Greens,"['unfried_chicken','egg']","Chicken main with creamy dressing."
-Pumpkin Muffin,"['sweet_dairy','egg']","Muffin dessert category, baked good classification."
-Oatmeal,"['sweet_dairy']","Breakfast porridge commonly served with milk or cream."
-Matcha Love Bowl,"['sweet_dairy']","Smoothie bowl with sweet dairy-style base."
-Raspberry Bar,"['sweet_dairy']","Dessert bar category, under sweet dairy."
-Soup,"['savory_dairy']","General soup category often includes dairy-based variants."
-Tex Mex Burrito Bowl,"['savory_dairy']","Dish type typical of Tex-Mex beef/cheese combinations."
-Sweet Potato Fries,[],"Vegetable side dish category, no animal analog."
-Muffins,"['sweet_dairy','egg']","General baked sweet item category."
-Specialty Smoothie Bowl,"['sweet_dairy']","Dessert or breakfast bowl category."
-Mediterranean Falafel Salad,['savory_dairy'],"Legume-based salad, no meat analog category."
-Asian Peanut Noodles,[],"Noodle-based plant dish, no animal analog."
-Southwest Salad,"['savory_dairy']","Tex-Mex style salad with chicken and cheese types."
-Lemon Bar,"['sweet_dairy','egg']","Dessert bar type using eggs and butter."
-Vegan Cupcake,"['sweet_dairy','egg']","Analog of egg/dairy baked cupcake."
-Chocolate Chip Brownie,"['sweet_dairy','egg']","Dessert baked good containing chocolate and egg analog."
-The Big Salad,[],"Mixed salad dish without distinct meat analog."
-Great Pumpkin Bowl,"['sweet_dairy']","Smoothie-style sweet bowl category."
-Rainbow Wrap,[],"Vegetable-based wrap, not animal analog."
-Molasses Cookies,"['sweet_dairy','egg']","Cookie dessert classification."
-Green Goddess Smoothie Bowl,"['sweet_dairy']","Smoothie bowl category under sweet dairy."
-Walnut Brownie,"['sweet_dairy','egg']","Brownie dessert type."
-Butternut Squash Soup,"['savory_dairy']","Soup category that commonly uses cream or butter base."
-Curry,"['unfried_chicken','savory_dairy']","Dish type associated with meat or dairy curry bases."
-Daily Special,[],"Placeholder entry, no fixed classification."
-Farmer's Market Salad,[],"Vegetable-heavy salad category."
-Buffalo Tofu Chicken Wrap,[],"Analog to buffalo chicken wrap, categorized under fried chicken."
-Candy Patty,"['sweet_dairy']","Confectionery sweet category."
-Vegan Cheesecake,"['sweet_dairy','egg']","Analog to cheesecake dessert category."
-Honey By John,"['sweet_dairy']","Sweet ingredient type; fits confectionary/sweet dairy."
-Forbidden Wrap,"['unfried_chicken']","Analog to chicken or meat wrap dish."
-Banh Mi,[],"Vietnamese sandwich style."
-Chicken Curry Couscous On Greens,"['unfried_chicken']","Chicken-based curry dish type."
-Vegan Chicken Wrap,"['unfried_chicken']","Plant-based analog of chicken wrap dish."
-Smash Burger,[],"Analog of smashed-style beef burger."
-Falafel,[],"Legume fritter type, no animal analog."
-Reuben-Vegan Or Regular,"['ground_meat','savory_dairy']","Sandwich type traditionally containing beef and cheese."
-Kale! Ceasar Salad,"['savory_dairy','egg']","Salad type using creamy cheese and egg dressing base."
-Cilantro Lime Coleslaw,"['egg']","Coleslaw category containing mayo (egg)."
-Black Bean Soup,"['savory_dairy']","Soup type, typically with cheese or sour cream toppings."
-Pear Salad Butternut Soup,"['savory_dairy']","Soup/salad combination under savory dairy base."
-Cake Pops,"['sweet_dairy','egg']","Baked dessert category."
-Chocolate Covered Oreos,"['sweet_dairy']","Sweet confectionary category."
-House Tomato Soup,"['savory_dairy']","Soup category with dairy potential."
-Peppermint Brownie,"['sweet_dairy','egg']","Dessert brownie category."
-Green Goddess Salad Bowl,[],"Salad category, vegetable dominant."
-April Showers Smoothie Bowl,"['sweet_dairy']","Smoothie bowl category with fruit and yogurt analog."
-Sw Burrito Bowl,"['savory_dairy']","Tex-Mex burrito bowl type."
-Quiche,"['egg','savory_dairy']","Egg-based baked dish."
-Winter Salad,[],"Vegetable-based salad dish."
-Autumn Salad,[],"Vegetable-based seasonal salad."
-Mint To Be,"['sweet_dairy']","Dessert item with mint, classified under sweet dairy."
-Bean Corn Salad,[],"Vegetable-legume salad category."
-Sw Burrito Wrap,"['savory_dairy']","Wrap analog to burrito category."
-Lion'S Mane Crab Cakes,"[]","Analog to crab cakes, classified under ground meat type."
-Majestic Baking Company,"['sweet_dairy']","Dessert/bakery classification."
-Grilled Chicken Sandwich,"['unfried_chicken','savory_dairy']","Sandwich centered on grilled chicken and cheese."
-Vegan Muffin,"['sweet_dairy','egg']","Analog to muffin baked goods."
-Spiced Yam Cake- Wedge,"['sweet_dairy','egg']","Baked dessert type, cake category."
-Carrot Cake,"['sweet_dairy','egg']","Baked dessert cake category."
-Pumpkin Waffles,"['sweet_dairy','egg']","Breakfast sweet dish with egg and butter analog."
-Chips House Pico,[],"Side dish category, not animal analog."
-Almond Pear Cake,"['sweet_dairy','egg']","Cake dessert type."
-Vegan Peanut Butter Fudge,"['sweet_dairy']","Analog to fudge, classified under sweet dairy."
-Sushi Bowl,"['unfried_chicken','ground_meat']","Analog to fish/meat-based bowl dish."
-Pomegranate Power Salad,[],"Salad category, no animal analog."
-Peppermint Mocha Bowl,"['sweet_dairy']","Sweet smoothie/dessert bowl type."
-Pretzel Bark,"['sweet_dairy']","Confectionery dessert category."
-Pb Choc Tart,"['sweet_dairy','egg']","Dessert pastry type."
-Vegan Lemon Bar,"['sweet_dairy','egg']","Analog to lemon bar dessert type."
-Pb Choc Cupcake,"['sweet_dairy','egg']","Cupcake dessert category."
-Gf Cookie,"['sweet_dairy','egg']","Cookie dessert type."
-Curried Cauliflower Soup,"['savory_dairy']","Soup category typically with cream or butter."
-Egg Bake,"['egg','savory_dairy']","Egg-centered baked breakfast dish."
-Pineapple Coconut Rice Bowl,"['sweet_dairy']","Sweet fruit-based bowl category."
-Winter Protein Salad,"['unfried_chicken']","Salad type with protein such as chicken analog."
-Applesauce,"['sweet_dairy']","Sweet side/dessert type."
-Apple Walnut Salad,[],"Fruit and nut salad, not animal analog."
-V-Protein Packed Banana Muffin,"['sweet_dairy','egg']","Muffin baked goods category."
-Beet Burger,[],"Analog to burger category."
-Enlightened Bean Crisps,[],"Snack category, not animal analog."
-Taali Water Lily Pops,[],"Snack category, not animal analog."
-Spinach Lental Rice Bow,[],"Vegetable and lentil dish, not animal analog."
-Microgreens,[],"Ingredient category, not dish type."
-Vegan Mac Cheese,"['savory_dairy']","Analog to mac and cheese dish."
-Vegan Gf Cake Slice,"['sweet_dairy','egg']","Analog to cake dessert."
-Cauliflower Flatbread Pizza,"['savory_dairy']","Pizza dish category under savory dairy."
-Matcha Pancakes,"['sweet_dairy','egg']","Breakfast sweet dish category."
-Vegan Shepards Pie,"['lamb','ground_meat','savory_dairy']","Analog to shepherd’s pie using lamb and beef types."
-Cookie Bar Sandwich,"['sweet_dairy','egg']","Dessert cookie type."
-Butternut Curry,"['unfried_chicken','savory_dairy']","Curry dish type category."
-Cinnamon Roll,"['sweet_dairy','egg']","Sweet breakfast baked dish."
-Pb Chocolate Cake,"['sweet_dairy','egg']","Cake dessert category."
-Chocolate Cake,"['sweet_dairy','egg']","Classic dessert cake category."
-Punjabi Butternut Chickpea Spinach Curry,"['savory_dairy']","Curry dish type under savory dairy."
-Roasted Beet Sweet Potato Salad,[],"Vegetable salad type."
-Savory Mushroom Flatbread,"['savory_dairy']","Flatbread pizza analog with cheese."
-Ratatouille With Chickpea Over Rice Or With Thick Cut Sourdough,[],"Vegetable stew dish type."
-Spinach Salad,[],"Vegetable salad category."
-Organic Hickory Smokehouse Mushroom Jerky,"['chunked_beef_or_pork']","Analog to smoked meat jerky type."
+item_name,animal_categories,reasoning,vegan,vegetarian,mpbamodifiable
+Acai Bowl,[],Acai bowl - vegan,True,True,False
+April Showers Smoothie Bowl,[],Seasonal smoothie bowl - vegan,True,True,False
+Carrot Cake Smoothie Bowl,[],Carrot cake flavored smoothie bowl - vegan,True,True,False
+Dragon Smoothie Bowl,[],Dragon fruit smoothie bowl - vegan,True,True,False
+Great Pumpkin Bowl,[],Pumpkin smoothie bowl - vegan,True,True,False
+Green Goddess Smoothie Bowl,[],Green smoothie bowl - vegan,True,True,False
+Matcha Love Bowl,[],Matcha smoothie bowl - vegan,True,True,False
+Pb & J Bowl,[],PB&J smoothie bowl - vegan,True,True,False
+Peppermint Mocha Bowl,[],Peppermint mocha bowl - may have dairy (no vegan sub on menu),False,True,False
+Specialty Smoothie Bowl,[],Specialty smoothie bowl - vegan base,True,True,False
+Buddha Bowl,[],Buddha bowl - vegan,True,True,False
+Burrito Bowl,"['egg', 'savory_dairy']",Burrito bowl - has egg/cheese options,False,True,True
+Butternut Curry,[],Butternut curry - vegan,True,True,False
+Curry,[],Curry - vegan,True,True,False
+Punjabi Butternut Chickpea Spinach Curry,[],Punjabi curry - vegan,True,True,False
+Pineapple Coconut Rice Bowl,[],Pineapple coconut rice - vegan,True,True,False
+Spinach Lental Rice Bow,[],Spinach lentil rice - vegan,True,True,False
+Sushi Bowl,[],Sushi bowl - may have fish,False,False,False
+Breakfast Bowl,['egg'],Breakfast bowl with scrambled egg,False,True,True
+Apple Walnut Salad,[],Apple walnut salad - vegan,True,True,False
+Autumn Salad,[],Autumn salad - vegan,True,True,False
+Bean Corn Salad,[],Bean corn salad - vegan,True,True,False
+Chicken Salad Over Greens,['unfried_chicken'],Chicken salad,False,False,False
+Chickpea Salad Over Greens,[],Chickpea salad - vegan,True,True,False
+Cranberry Chicken Salad,['unfried_chicken'],Cranberry chicken salad,False,False,False
+Farmer's Market Salad,[],Farmers market salad - vegan,True,True,False
+Kale! Ceasar Salad,['savory_dairy'],Kale caesar - has parmesan (no vegan parmesan),False,True,False
+Mediterranean Falafel Salad,[],Mediterranean falafel - vegan,True,True,False
+Pear Salad Butternut Soup,[],Pear salad with soup - vegan,True,True,False
+Pomegranate Power Salad,[],Pomegranate salad - vegan,True,True,False
+Roasted Beet Sweet Potato Salad,[],Beet sweet potato salad - vegan,True,True,False
+Southwest Salad,[],Southwest salad - vegan base,True,True,False
+Spinach Salad,[],Spinach salad - vegan,True,True,False
+The Big Salad,[],Big salad - vegan base,True,True,False
+Winter Protein Salad,[],Winter protein salad - vegan,True,True,False
+Winter Salad,[],Winter salad - vegan,True,True,False
+Wrap,"['egg', 'savory_dairy', 'unfried_chicken']",Wrap - various options,False,False,False
+Burger,[],Veggie burger - vegan,True,True,False
+Soup,[],Soup - vegan,True,True,False
+Egg Bake,"['egg', 'savory_dairy']",Egg bake - vegetarian,False,True,False
+Matcha Pancakes,"['egg', 'sweet_dairy']",Matcha pancakes - has egg,False,True,False
+Oatmeal,[],Oatmeal - vegan,True,True,False
+Pumpkin Waffles,"['egg', 'sweet_dairy']",Pumpkin waffles - has egg,False,True,False
+Quiche,"['egg', 'savory_dairy']",Quiche - egg and cheese,False,True,False
+Chia Pudding,[],Chia pudding - vegan,True,True,False
+Toast,[],Toast - vegan base,True,True,False
+Falafel,[],Falafel - vegan,True,True,False
+Quesadilla,['savory_dairy'],Quesadilla with cheese,False,True,False
+Tacos,[],Tacos - vegan option available,True,True,False
+Cauliflower Flatbread Pizza,['savory_dairy'],Cauliflower pizza - has cheese (no vegan sub),False,True,False
+Savory Mushroom Flatbread,['savory_dairy'],Mushroom flatbread - may have cheese (no vegan sub),False,True,False
+Asian Peanut Noodles,[],Asian peanut noodles - vegan,True,True,False
+Vegan Mac Cheese,[],Vegan mac and cheese,True,True,False
+Fries,[],Fries - vegan,True,True,False
+Chips,[],Chips - vegan,True,True,False
+Coleslaw,[],Coleslaw - likely vegan,True,True,False
+Applesauce,[],Applesauce - vegan,True,True,False
+Microgreens,[],Microgreens - vegan,True,True,False
+Gf Cookie,"['sweet_dairy', 'egg']",Gluten free cookie,False,True,False
+Molasses Cookies,"['sweet_dairy', 'egg']",Molasses cookies,False,True,False
+Vegan Cookie Bar,[],Vegan cookie bar,True,True,False
+Cookie Bar Sandwich,"['sweet_dairy', 'egg']",Cookie bar sandwich - likely has dairy [FIXED: Baked goods typically have egg/dairy],False,True,False
+Brownie,"['sweet_dairy', 'egg']",Brownie,False,True,False
+Chocolate Chip Cookie Bar,"['sweet_dairy', 'egg']",Chocolate chip cookie bar,False,True,False
+Energy Bars,[],Energy bars - vegan,True,True,False
+Lemon Bar,"['sweet_dairy', 'egg']",Lemon bar,False,True,False
+Peanut Butter Scotchy Bar,"['sweet_dairy', 'egg']",PB scotchy bar,False,True,False
+Raspberry Bar,"['sweet_dairy', 'egg']",Raspberry bar,False,True,False
+Rice Krispie Bar,['sweet_dairy'],Rice krispie bar - marshmallow,False,True,False
+Vegan Lemon Bar,[],Vegan lemon bar,True,True,False
+Almond Pear Cake,"['sweet_dairy', 'egg']",Almond pear cake,False,True,False
+Carrot Cake,"['sweet_dairy', 'egg']",Carrot cake,False,True,False
+Chocolate Cake,"['sweet_dairy', 'egg']",Chocolate cake,False,True,False
+Pb Chocolate Cake,"['sweet_dairy', 'egg']",PB chocolate cake,False,True,False
+Spiced Yam Cake- Wedge,"['sweet_dairy', 'egg']",Spiced yam cake,False,True,False
+Vegan Gf Cake Slice,[],Vegan GF cake,True,True,False
+Cupcake,"['sweet_dairy', 'egg']",Cupcake,False,True,False
+Muffin,"['sweet_dairy', 'egg']",Muffin,False,True,False
+Cinnamon Roll,"['sweet_dairy', 'egg']",Cinnamon roll,False,True,False
+Cheesecake,"['sweet_dairy', 'egg']",Cheesecake,False,True,False
+Cake Pops,"['sweet_dairy', 'egg']",Cake pops,False,True,False
+Candy Patty,['sweet_dairy'],Candy patty,False,True,False
+Chocolate Covered Oreos,['sweet_dairy'],Chocolate covered oreos,False,True,False
+Pb Choc Tart,"['sweet_dairy', 'egg']",PB chocolate tart,False,True,False
+Pretzel Bark,['sweet_dairy'],Pretzel bark,False,True,False
+Vegan Peanut Butter Fudge,[],Vegan PB fudge,True,True,False
+Enlightened Bean Crisps,[],Bean crisps - vegan,True,True,False
+Organic Hickory Smokehouse Mushroom Jerky,[],Mushroom jerky - vegan,True,True,False
+Taali Water Lily Pops,[],Water lily pops - vegan,True,True,False
+Honey,[],Honey,True,True,False
+Bakery Brand,"['sweet_dairy', 'egg']",Bakery brand item,False,True,False
+Mint To Be,[],Mint to be item,True,True,False
+Sandwich,"['savory_dairy', 'egg']",Sandwich - various options (Vegan Sandwich is separate),False,True,False
+Poultry Sandwich,['unfried_chicken'],Chicken/turkey sandwich,False,False,False
+Vegan Sandwich,[],Vegan sandwich,True,True,False
+Chicken Curry Couscous On Greens,['unfried_chicken'],Chicken curry couscous,False,False,False
+Lion'S Mane Crab Cakes,[],Lions mane mushroom crab cakes - vegan,True,True,False
+Ratatouille With Chickpea Over Rice Or With Thick Cut Sourdough,[],Ratatouille - vegan,True,True,False
+Daily Special,[],Daily special - varies,True,True,False
+Vegan Shepards Pie,[],Vegan shepherds pie,True,True,False

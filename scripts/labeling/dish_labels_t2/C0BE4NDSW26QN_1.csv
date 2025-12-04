@@ -1,0 +1,409 @@
+item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg,shrimp,whole_bird_white_meat
+3 Little Pigs,False,False,False,False,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False
+Add Bacon,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False
+Andouille,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Anny Sides,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Apple Fritter,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Apple Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Apple Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Arugula Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Asian,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Asparagus Pizza,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Asparagus Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Auttuno D'Italia,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Autumnal Grain Bowl,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+B-L-T,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,False,False
+BLT,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,False,False
+Bagel Sando,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Baguette Sandwich,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Banh Mi,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Barleywine Vinegar,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bavarian Pretzel,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Bean Dip,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Beef And Cheddar,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Beef Asian,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Beef Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Beef Jerky,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Beef Meat,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Beef Sandwich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Beef Tacos,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Beer Cheese Dip,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Beet Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Beignets,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Berry Panzanella Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Berry Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bill'S Turkey Sandwich,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Biscotti 12,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Blondie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Blueberry Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Bologna,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Boysenberry,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Brambles,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Brat,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Bratwurst,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Brown Eyes,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Brownie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Brussel Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Brussels Sprouts,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Budak Fire Pizza,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Buffalo Cauliflower,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Buffalo Chicken Pizza,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Burger,False,False,True,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Burrata,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Burrito,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Caesar Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Cake Pop,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Calabrian,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+California Burrito,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Carolina,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+CatAos Meow!,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cauliflower App,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Chard,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cheese - Garlic Dill Spread,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Cheese - Lemon Poppy,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Cheese - Pleasant St Manchego,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Cheese - Wooster Pike Blue,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Cheese On A Stick,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Cheesecake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Cheesesteak,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Chef Salad,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False,False
+Cherry Fritter,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+ChickAon Waffles,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,True,False,False
+Chicken Biscuit,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False,False,False
+Chicken Nuggies,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Chicken Salad,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Chicken Sandwich,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False,False,False
+Chicken Smalls,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Chicken Waffle,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,True,False,False
+Chilaquiles,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Chili,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,False,False
+Chips And Dip,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Chivito,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Chocolate Bar,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Cinnamon Buns,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Club,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False,False,False,False
+Coffee Waffles 12Oz,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Combo,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Corn Dog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Crab Smash,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Croustade,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Crudite,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cuban Sandwich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Cupcake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Curds,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+DeejayAos 12 Amish Eggs,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Deviled Eggs,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Dripping Smith Bits,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Drumstick,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Duck,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Dumplings,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Egg Rolls,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Egg Sando,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Everything Bagel Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Extra Fried Pita,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Falafel,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Feta Dip,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Fish Fry,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fish Sammich,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fish Tacos,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fried Chicken,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Fried Green Tomatoes,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Fries,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fry Pie!,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Generic Sample,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Goulash,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Grill Bread,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Grilled Cheese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Ham And Cheese,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Harvest Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Harvest Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Herb,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Hoagie,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Hot Dog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Hot Dog/Sausage,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Hot Sauce,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Hummus,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Ice Cream Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Impossible Burger,False,True,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Italian,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Italian Sausage,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Jerk Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Katg,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Katsu Sando,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False,False,False
+Kids Menu,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Kielbasa,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+KilbaneAos,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Knock Knock,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+L.O.L Plus,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Lamb,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Lamb Sandwich,False,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Lemon Make You Happy Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Lemon Puff,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Loaded Fries,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,False,False
+Lu,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Lu Empanada,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Luna Vegan Cherry Brownie,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Meat And Cheese,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Meatball Sub,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,False,False
+Melon Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Melt,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Mezze,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Mini Donuts,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Mouth Candy,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Muhammara,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Mushroom Jerky,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Mushroom Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Naan Mi,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Nachos,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+New Spring Turkey,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Nob Sib,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Noble Boy,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Noble Pig,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Nye Prix Fixe Dinner,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Obatzda,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Old Brooklyn Cheese Board,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Open Face,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Oyster Po'boy,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Paddle Around,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Panzanella Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pasta,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pb Bananas Foster 12Oz,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
+Peach Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Peach Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pepperoni Pizza,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pepperoni Roll,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Perogies,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Pico De Greeko,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pie - Mixed Berry,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Pie - Strawberry Apricot,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Pierogies,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+"Pizza - ""Foghorn Leghorn""",False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Pizza - 4 Cheese Garlic Pizza,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - 7 Spice Lebanese Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Pizza - Acadian Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Are You Speaking My Lengua?,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Autumn Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Backyard Bbq,False,False,False,False,False,True,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Bahn Mi,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Black White,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Blt Pie,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,False,False
+Pizza - Breakfast Pie,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+Pizza - Brecky Pie,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
+Pizza - Burrata Or Nada,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Calabrian,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Pizza - Catalonian Spring,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Cheatball Pie,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,False,False
+Pizza - Chicken Barbie,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Pizza - Clam Bake!,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Corn On The Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Fall Puy,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - For Cheese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - French Onion,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Georgia On My Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+"Pizza - Goodbye, Son",False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Green Bean Casserole,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Gyro Pyro,False,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - I Dream Of Aubergine,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - I'M A Pepper,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Inspectah Speck,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,False,False
+Pizza - Kenny'S Favorite,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Mama,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Margherita,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Meat Darlings,False,False,False,False,True,False,False,False,False,True,True,False,False,False,True,False,False,False,False
+Pizza - Mitchell Is 30!,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Mushroom,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Nawlins,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Pizza - O,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Papa,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Perfect Pork,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Pesto,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Pierogie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Pollo Peruano,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Pizza - Pork Adobo Pie,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Porky'S Last Stand,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Prosciutto,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Roman Artichoke,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Sausage,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Pizza - Shaksuka Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Pizza - Shepherds Pie,False,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Shrimp On The Barpie,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Shrimpie,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Sloppy Trout,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Smokin' Soubise,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Snyder'S Sweet Heat Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Speck Sells,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,False,False
+Pizza - Spring Market,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Steak Night,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - The Dax,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - The Ryan Gosling,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - The Van Helsing,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - The Vegan Mary,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pizza - We Have The Meats,False,False,False,False,True,False,False,False,False,True,True,False,False,False,True,False,False,False,False
+Pizza - Wonton Disregard,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza - Yo Quiero Pizza Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza Bbq Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Pizza Beer Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Pizza Budalk Fire,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza Buffalo Cauli,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza Chicken Bacon,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False,False,False,False
+Pizza Chx Meatball,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False,False,False
+Pizza Dads Day,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza East Sider,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza Fun Guy Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza In German,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Pizza Insalata,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza Mediterrano,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza Mrs Robinson,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza Pesto Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Pizza Shakshuka,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Pizza Spring Veggie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza Spring Veggie with Bacon,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,False,False
+Plum Cat,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Po Boy,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Popcorn,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Porchetta Sandwich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pork Belly Tonkatsu,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pork Buns,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pork Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Pork Hot Ham,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pork Meat,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pork Rinds,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Pork Sandwich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pork Veggie Sandwich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pot De Creme,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Potato Pizza,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Poultry Hot Ham,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Poultry Meat,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Poutine,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pulled Pork,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+Radish And Bean Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Ratatouille Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Reuben,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Roast Beef Sandwich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Robert,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+S Moon Gold,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+S Stf,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Salmon,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Salsa,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sasha Treat Of The Day,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Sasha'S Shorty,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sauce,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Saucy,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sausage,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Schnitzel,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False,False,False
+Schwein-Wich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Short Rib Sando,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Shrimp,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Shrimp Roll,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Side Homefries,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Side Of Naan,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Side Of Sauce,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Side Slaw,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Skordalia,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Sliders,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Sloppy Joe,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,False,False
+Smoked Turkey Sandwich,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Smokehouse Stacker,False,False,False,False,True,False,False,False,False,False,True,False,False,False,True,False,False,False,False
+Soba Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Soup,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special - 2020 Dumpster Fire,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Special - Artichoke Dip,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special - Bacon Broccoli Cheddar Soup,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,False,False
+Special - Beer And Barfley Soup,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special - Beer Cheese Dip,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special - Breadsticks,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special - Cauli Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Special - Cheeky Beast,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special - Chick Loaf,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Special - Chicken Livers,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Special - Dessert,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Special - Double Down Dip,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special - Gas Station Bbq,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+Special - German Boy,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Special - Kenny'S Cheesesteak,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special - Lil Buff Boys,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Special - Massaman Curry,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Special - NiO Polacko,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Special - Nicolo Picolo,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special - Porkstrami,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special - Pound Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Special - Pretzel Bites,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special - Rochelle Rochelle,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Special - Rochester Sando,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special - South Mouth,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Special - Spinach Artichoke Dip,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special - SwintonAos Pride,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Special - Toast,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special - Triple Cholcolate Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Special - World Cup Special,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Special - World Cup Special- Torta Milanese,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False,False,False
+Special Asparagus,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Special Bbq Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Special French Dip,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special Khao-Soi,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Special Meatloaf Sando,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,False,False
+Special Pimento Cheese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Special Salad with Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Special- Whip Dip,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Special: Pootie Call,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Spiced,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Spring Bean Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Spring Market Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Spring Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Squash Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Strawberry And Rhubarb Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Strawberry Apricot Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Strawberry Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Street Corn,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Stuffed Peppers,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,False,False
+Summer Bean Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Summer Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Tacos,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Terrine,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Texan Beast,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+The Carina,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+The Dalmatian,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+The Mitch,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+The Noble Feast,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Tofu,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Tomato N Peach,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Tonkatsu,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Treat Of The Day,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Tuna,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Turkey,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Turkey And Swiss,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Turkey Salad,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Uau Gold,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Ue Space,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+UeaUe Goodbye Forver,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Uncle Tony,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Vanilla Apple Swiss Roll,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Vegan Sandwich,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Vegan Veggie Sandwich,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Vegetarian Pizza - Acadian Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Velocity Broker,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+War Canary,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Watermelon Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Wheatberry Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+White Monkey10,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Widow Maker,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
+Wings,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Winter Spinach Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Yellow House Lemon Poppy,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Zagans,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Zucchini Fritters,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+catering_takeout,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+to_remove,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Appetizers,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Chicken Alfredo,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Cornbread Slices,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Crackers,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Fruit,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Gizzards,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
+Lunchable,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Oyster,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False
+Roll,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Savory Snacks,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Vegetable Tray,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False

@@ -270,7 +270,7 @@ def infer_active_days(dates, max_gap_days=45, mult=8):
     # Expand to daily presence
     all_days = []
     for _, row in segments.iterrows():
-        days = pd.date_range(row.start, row.end, freq="D")
+        days = pd.date_range(row.start, row.end, freq="D", ambiguous=True)
         all_days.append(pd.Series(True, index=days))
     
     if not all_days:

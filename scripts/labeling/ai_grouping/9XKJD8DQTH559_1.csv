@@ -1,37 +1,524 @@
 canonical_name,variants,reasoning
-Aebleskivers,"['Aebleskivers', 'Aebleskivers¬≥']","Same Danish pancake dish, special character variant"
-Bao,"['Bao', 'Bao (Brunch)']","Same bao dish, brunch variant"
-Biscuit & Red Eye Gravy,"['Biscuit & Red Eye Gravy', 'Biscuit Red Eye Gravy']","Same dish, formatting variants"
-Boston Butt Mac & Cheese,"['Boston Butt Mac & Cheese', 'Boston Butt Mac And Cheese']","Same dish, ampersand variants"
-BYO Pizza,"['Build Your Own Pizza', 'Build Your Own Pizza Test', 'Byo Pizza', 'Byo Pizza Gluten Free', 'Byo Pizza Large', 'Byo Pizza Small', 'Gluten Free Byo Pizza']",Same build-your-own pizza with size/test variants
-Cafe Caballero,"['Cafe Cabalero', 'Cafe Caballero']","Same item, spelling variant"
-Char Siu Bao,"['Char Siu Bao', 'Char Sui Bao']","Same dish, spelling variant"
-Chili For Cabbagetown,"['2 Day Grass-Fed Chili For Cabbagetown  (16 Oz)', 'Chili For Cabbagetown']","Same dish, naming variants"
-Chips & Salsa,"['Chips & Salsa', 'Chips And Salsa']","Same dish, ampersand variant"
-Cranberry Toast,"['Cranberry Toast', 'Cranberrytoast']","Same dish, formatting variant (cranberrytoast)"
-Crawfish Hand Pies,"['Crawfish Hand Pies', 'Crawfish Handpies']","Same dish, spacing variant"
-Fish & Chips,"['Fish & Chips', 'Fish & Chips (Street Fries)', 'Fish And Chips']","Same dish, ampersand and formatting variants"
-Side Fried Rice,"['Side Fried Rice', 'Side Of Fried Rice']","Same side dish, wording variant"
-Gado-Gado,"['Gado-Gado', 'Gado-Gado App']",Same dish as appetizer
-General Tsao's,"[""General Tsao'S"", ""General Tsao'S Chicken Or Beyond Chicken"", ""General Tsao'S Chicken Or Tofu"", ""General Tsao'S Fried Tofu""]",Same dish with protein options/variants
-Gluten Free Pizza,"['Byo Pizza Gluten Free', 'Gluten Free Byo Pizza', 'Gluten Free Pizza', 'Gluten Free Special Pizzas']","Gluten free pizza variants (BYO, special)"
-Hoisin Duck Taco,"['Hoisin Duck Taco', 'Hoisin Duck Taco (1)']","Same taco, quantity variant"
-Black Cocoa Miso Ice Cream Sandwich,"['Black Cocoa Miso Chocolate Chip Ice Cream Sandwich', 'Black Cocoa Miso Chocolate Chip Ice Cream Sandwich.', ""Jc'S Black Cocoa Miso Chocolate Chip Ice Cream Sandwich"", 'Mcs Black Cocoa Miso Chocolate Chip Ice Cream Sandwich.']","Same specialty sandwich, punctuation/initial variants"
-Jenchan,"['Jen Chan', 'Jenchan', 'The Jenchan']","Same dish, spacing/article variant"
-Justaco,"['Just Taco', 'Justaco', 'The Justaco']","Same dish, spacing/article variant"
-Mac & Cheese,"['Mac & Cheese', 'Mac And Cheese', 'Mac N Cheese']","Same dish, ampersand/formatting variants"
-Mongolian Beef Cheesesteak,"['Milltown Mongolian Beef Cheesesteak', 'Mongolian Beef Cheesesteak', 'Mongolian Cheesesteak']","Same dish, naming variants"
-Poptart,"['Pop Tart', 'Poptart']","Same pastry, spacing variant"
-Potstickers,"['Pot Stickers', 'Pot Stickers (8)', 'Potstickers (4)', 'Potstickers (8)']","Same dish, quantity/spacing variants"
-Pork Roll Egg Cheese,"['Pork Egg N Cheese Roll', 'Pork Roll Egg Cheese', 'Pork Roll Egg Cheese Please']","Same sandwich, naming variants"
-Shrimp Po' Boy,"[""Shrimp Po' Boy"", ""Shrimp Po'Boy""]","Same sandwich, apostrophe variant"
-Smoked Salmon Succotash,"['Smoked Salmon Succatash', 'Smoked Salmon Succotash']","Same dish, spelling variant"
-Smoked Sturgeon,"['Smoke Sturgeon', 'Smoked Storugeon', 'Smoked Sturgeon', 'Smoked Sturgeon Taco']","Same fish dish, typo variants"
-Smorrebrod,"['Smorbord', 'Smorrebrod']","Same Scandinavian dish, spelling/encoding variants"
-Super Margherita Pizza,"['Super Margherita', 'Super Margherita Pizza', 'Super Marherita']","Same pizza, spelling/naming variants"
-Sweet Potato Tostada,"['Sweet Potato Tostada', 'Sweet Potato Tostado']","Same dish, a/o spelling variant"
-Tahini Noodles,"['Tahini Noodles', 'Thaini Noodles']","Same noodle dish, typo variant"
-Vietnamese Pork Egg Roll,"['Vietnamese Pork Egg Roll', 'Vietnamese Pork Egg Roll (1)']","Same egg roll, quantity variant"
-Yurei,"['Yurei', 'Yureii']","Same item, typo variant (extra i)"
-Side Fries,"['Side Fries', 'Side Of Fries']","Same side, wording variant"
-Tostada,"['Tostada', 'Tostado']","Same dish, a/o variant"
+Aebleskivers,['Aebleskivers'],"Same Danish pancake dish, special character variant"
+Bao,['Bao'],"Same bao dish, brunch variant"
+Biscuit & Red Eye Gravy,['Biscuit & Red Eye Gravy'],"Same dish, formatting variants"
+Boston Butt Mac & Cheese,['Boston Butt Mac & Cheese'],"Same dish, ampersand variants"
+BYO Pizza,['BYO Pizza'],Same build-your-own pizza with size/test variants
+Char Siu Bao,['Char Siu Bao'],"Same dish, spelling variant"
+Chili For Cabbagetown,['Chili For Cabbagetown'],"Same dish, naming variants"
+Chips & Salsa,['Chips & Salsa'],"Same dish, ampersand variant"
+Cranberry Toast,['Cranberry Toast'],"Same dish, formatting variant (cranberrytoast)"
+Crawfish Hand Pies,['Crawfish Hand Pies'],"Same dish, spacing variant"
+Fish & Chips,['Fish & Chips'],"Same dish, ampersand and formatting variants"
+Side Fried Rice,['Side Fried Rice'],"Same side dish, wording variant"
+Gado-Gado,['Gado-Gado'],Same dish as appetizer
+Hoisin Duck Taco,['Hoisin Duck Taco'],"Same taco, quantity variant"
+Black Cocoa Miso Ice Cream Sandwich,['Black Cocoa Miso Ice Cream Sandwich'],"Same specialty sandwich, punctuation/initial variants"
+Jenchan,['Jenchan'],"Same dish, spacing/article variant"
+Justaco,['Justaco'],"Same dish, spacing/article variant"
+Mac & Cheese,['Mac & Cheese'],"Same dish, ampersand/formatting variants"
+Mongolian Beef Cheesesteak,['Mongolian Beef Cheesesteak'],"Same dish, naming variants"
+Poptart,['Poptart'],"Same pastry, spacing variant"
+Potstickers,['Potstickers'],"Same dish, quantity/spacing variants"
+Pork Roll Egg Cheese,['Pork Roll Egg Cheese'],"Same sandwich, naming variants"
+Shrimp Po' Boy,"[""Shrimp Po' Boy""]","Same sandwich, apostrophe variant"
+Smoked Salmon Succotash,['Smoked Salmon Succotash'],"Same dish, spelling variant"
+Smorrebrod,['Smorrebrod'],"Same Scandinavian dish, spelling/encoding variants"
+Super Margherita Pizza,['Super Margherita Pizza'],"Same pizza, spelling/naming variants"
+Sweet Potato Tostada,['Sweet Potato Tostada'],"Same dish, a/o spelling variant"
+Tahini Noodles,['Tahini Noodles'],"Same noodle dish, typo variant"
+Vietnamese Pork Egg Roll,['Vietnamese Pork Egg Roll'],"Same egg roll, quantity variant"
+Yurei,['Yurei'],"Same item, typo variant (extra i)"
+Side Fries,['Side Fries'],"Same side, wording variant"
+Tostada,['Tostada'],"Same dish, a/o variant"
+Dumplings,['Dumplings'],"Same item, quotes removed."
+Skate Wing And Bacon Banh Mi,['Skate Wing And Bacon Banh Mi'],"Same item, space in Skate Wing."
+Stir Fry Veggies,['Stir Fry Veggies'],"Same item, space vs no space."
+Brisket Mac And Cheese,['Brisket Mac And Cheese'],"Same item, And removed."
+Cantonese Mahi Mahi,['Cantonese Mahi Mahi'],"Same fish dish, abbreviated name."
+Crispy Asian Wings,['Crispy Asian Wings'],Same wings item with combo options consolidated.
+2 Day Grass-Fed Chili (16 Oz),['2 Day Grass-Fed Chili (16 Oz)'],Same chili product.
+Yum Cha Dumplings,['Yum Cha Dumplings'],"Same item, word order reversed."
+Hh Wings,['Hh Wings'],"Same item, word order reversed."
+Kimchi Side,['Kimchi Side'],Same side item.
+Special: Scallops With Pomodoro And Pesto,['Special: Scallops With Pomodoro And Pesto'],Individual item (was in misc group)
+Steak And Eggs,['Steak And Eggs'],"Same item, And removed."
+Szechuan Chicken Salad,['Szechuan Chicken Salad'],"Same salad, duplicate word removed."
+Brisket,"['Brisket Benedict', 'Brisket Brie Crostini', 'Brisket Brie Melt', 'Brisket Chips', 'Brisket Jenchan', 'Brisket Melt', 'Brisket On Biscuit', 'Brisket Salad', 'Brisket Taco', 'Brisket Tacos', 'Bbq Brisket Taco']",Brisket variants.
+Breakfast Banh Mi,['Breakfast Banh Mi'],Individual item (form factor split)
+Breakfast Buns,['Breakfast Buns'],Individual item (form factor split)
+Breakfast Egg Roll,['Breakfast Egg Roll'],Individual item (form factor split)
+Breakfast Egg Rolls,['Breakfast Egg Rolls'],Individual item (form factor split)
+Breakfast Fries,['Breakfast Fries'],Individual item (form factor split)
+Breakfast Kolaches Potatoes,['Breakfast Kolaches Potatoes'],Individual item (form factor split)
+Breakfast Nachos,['Breakfast Nachos'],Individual item (form factor split)
+Breakfast Pizza,['Breakfast Pizza'],Individual item (form factor split)
+Breakfast Pork Nachos,['Breakfast Pork Nachos'],Individual item (form factor split)
+Breakfast Tacos,['Breakfast Tacos'],Individual item (form factor split)
+Breakfast Tostado,['Breakfast Tostado'],Individual item (form factor split)
+Breakfast Wrap,['Breakfast Wrap'],Individual item (form factor split)
+Fried Chicken,"['Almond Fried Chicken', 'Almond Gravy Chicken And Mashed Potatoes', 'Almond Gravy Fried Chicken', 'Asian Southern Fried Chicken', 'Fried Chicken', 'Fried Chicken Eggs', 'Fried Chicken Friday', 'Fried Chicken Friday (Gluten Free Option!)', 'Fried Chicken Gravy', 'Fried Chicken Special (Gluten Free Option!)', 'Fried Chicken Szechuan Honey', 'Fried Chicken Taco', 'Fried Chicken Thigh', 'Fried Chicken Waffle', 'Fried Chicken, Biscuit', 'Fried Chicken, Gravy, Egg', 'Fried Chic Eggs', 'Hot Fried Chicken Sliders']",Fried chicken variants.
+Salmon,"['Charred Caesar Salmon Belly', 'Endive And Smoked Salmon', 'Ginger Lime Salmon Special', 'Mahi Salmon Croquette', 'Orange Salmon', 'Pan Seared Salmon', 'Roasted Trout Belly Charred Caesar', 'Romaine Smoked Salmon', 'Salmon', 'Salmon And Grits', 'Salmon Cabbage', 'Salmon Croquette', 'Salmon Croquettes', 'Salmon Endive', 'Salmon N Rice Cake', 'Salmon Napa', 'Salmon Raita', 'Salmon Rice', 'Salmon Snow Peas', 'Salmon Special', 'Salmon Zhug Fingerlings', 'Side Salmon', 'Smoke Salmon Flowering Chive', 'Smoked Salmon', 'Smoked Salmon And Rice', 'Smoked Salmon Belly', 'Smoked Salmon Dip', 'Smoked Salmon Flowering Chive', 'Smoked Salmon Fritters', 'Smoked Salmon Lettuce Cup', 'Smoked Salmon Salad', 'Smoked Salmon Sorrel', 'Smoked Salmon Sunny Up Egg', 'Soft Smoked Salmon', 'Soy Sauce Salmon', 'Special Smoked Salmon Dip', 'Spring Salmon, Corn, Tomato Salad']",Salmon variants.
+Shrimp,"['Ginger Shrimp Crispy Noodles', 'Ginger Sriracha Shrimp Roll', 'Grilled Jumbo Bbq Shrimp Caesar', 'Hawaiian Garlic Shrimp Macaroni Salad', 'Hh Shrimp Cocktail', 'Jumbo Ginger Beer Or Chicken Shrimp Lo Mein', 'Jumbo Ginger Beer Or Fried Chicken Shrimp Lo Mein', 'Jumbo Ginger Beer Shrimp Lo Mein', 'Kerala Shrimp Moiliee (Coconut Curry)', 'Kids Shrimp And Rice', 'Lump Crab Jumbo Shrimp Salad', 'Milltown Fried Shrimp Or Fried Tofu Tacos', 'Milltown Panko Jumbo Fried Shrimp Dinner (8)', ""Mr. B'S Bbq Shrimp"", 'N.O. Bbq Shrimp', 'New Orleans Style Bbq Shrimp', 'Rock Shrimp', 'Rock Shrimp Roll', 'Shrimp Cheese Grits', 'Shrimp Cheong Fun', 'Shrimp Cocktail', 'Shrimp Dip', 'Shrimp Egg Rolls', 'Shrimp Grits', 'Shrimp N Noodles', 'Shrimp Pimiento Cheese Grits', 'Shrimp Rangon', 'Shrimp Risotto', 'Shrimp Scramble', 'Shrimp Toast', 'Shrimp Zhug Fingerlings', 'Side Shrimp (5) Skewer', 'Side Shrimp Skewer', 'Szechuan Shrimp', 'Szechuan Shrimp Cocktail', 'Tahini Shrimp', 'Tropical Crab Shrimp Salad', 'Tropical Shrimp Salad', 'Yogurt Dill Jumbo Shrimp Salad']",Shrimp variants.
+Mongolian Beef,"['Mongolian Beef Bao', 'Mongolian Beef Bowl', 'Mongolian Beef Egg Rolls', 'Mongolian Beef French Tacos', 'Mongolian Beef Fried Rice', 'Mongolian Beef Grits', 'Mongolian Beef Loaded Baked Potato', 'Mongolian Beef Pizza', 'Mongolian Beef Poutine', 'Mongolian Beef Quesadilla', 'Mongolian Beef Rice Bowl Egg', 'Mongolian Beef Taco', 'Mongolian Bok Choy', 'Mongolian Bowl', 'Mongolian Pizza', 'Mongolian Potato', 'Mongolian Beef']",Mongolian beef variants.
+Wings,"['Buffalo Wings', 'C-Town Spicy Wings', ""Caroline'S Coca Cola Peanuts Wings"", 'Chinese Lemon Pepper Wet Wings', 'Chomp Wings', 'Doubanjiang Wings', 'Gunsmoke Wings', 'Gunsmoke Wings With Spicy Peanuts', 'Happy Hour Asian Wings', 'Happy Hour C-Town Wings', 'Happy Hour Lemon Pepper Wet Wings', 'Milltown C-Town Spicy Wings', 'Milltown Crispy Asian Wings', 'Papa Chan Wings', 'Preserved Meyer Lemon Szechuan Pepper Wet Wings', 'Special Viet Sticky Wings', 'Special Wings', 'Wings', 'Wings (Crispy Asian Or Buffalo)', 'Yum Cha Crispy Wings', 'Yum Cha Wings']",Wing variants.
+Pork Belly,"['Hoison Pork Belly', 'Papalo Pork Belly', 'Pork Belly Benny', 'Pork Belly Bites', 'Pork Belly Mac And Cheese', 'Pork Belly Taco']",Pork belly variants.
+French Toast,"['Apple French Toast', 'Cranberry Walnut French Toast', 'French Toast', 'French Toast Bites', 'French Toast Points', 'French Toast Sticks', 'Guava Queso French Toast', 'Hong Kong French Toast', 'Stuffed French Toast']",French toast variants.
+Dumplings,"['Chicken Ricotta Dumplings', 'Deep Fried Pot Stickers', 'Fried Potstickers', 'Shumai', 'Shumai Appetizer', 'Soup Dumplings', 'Steamed Dumplings', 'Wealthy Dumplings (6)', 'Yum Cha Pot Stickers', 'Yum Cha Shumai', 'Dumplings']",Dumpling variants.
+Soup,"['Butternut Squash Soup', 'Carrot Coriander', 'Carrot Coriander Soup', 'Carrot Soup', 'Chilled Elote Soup', 'Chilled Elote Soup Shrimp', 'Clam Chowder', 'Creole Gumbo', 'Curry Dal Soup', 'Egg Drop Soup', 'Gazpacho', 'Gumbo', 'Hot And Sour Soup', 'Market Clam Chowder', 'Miso Soup', 'Mushroom Umami Soup', 'Potato Soup', 'Quart Of Cold Cucumber Soup', 'Quart Soup (M)', 'Small Soup (M)', 'Soup Of The Day', 'Soup Of The Day: Sancocho', 'Soups Market', 'Tom Kai With Scallops', 'Tom Kha Mussels', 'Tom Kha Shrimp']",Soup variants.
+Nachos,"['Achiote Pork Nachos', 'Avocado Potato Nachos', 'Breakfast Nachos', 'Breakfast Pork Nachos', 'Crispy Potato Nachos', 'Guacamole Potato Nachos', 'Kimchi Breakfast Nachos', 'Loaded Gunsmoke Nachos', 'Nacho Fries', 'Nachos', 'Sheet Pan Nachos', 'Smashed Fingerling Nachos', 'Smashed Potato Nachos', 'Vietnamese Pork Breakfast Nachos']",Nachos variants.
+Steak,"['Filet Mignon', 'Filet Taters', 'Flank Steak Bao', 'Flank Steak Dinner', 'Flank Steak Dinner With Miso Mushroom Compound Butter', 'Grit Cake Steak', 'Pepper Steak', 'Prime Rib', 'Prime Rib Egg', 'Prime Rib Potato Croquette', 'Prime Rib Taco', 'Ribeye Steak', 'Ribeye Tostado', 'Ribeye, English Muffin, Poached Egg', 'Side Steak', 'Steak Egg', 'Steak Fries W Zhoug', 'Steak Fries Zhoug', 'Steak N Eggs', 'Steak Potatoes', 'Steak Poutine And Eggs', 'Steak Taco', 'Steak Taters', 'Steak, Fried Rice, Poached Yolk', 'Surf Turf', 'Tenderloin Tips', 'Tenderloin Tips Fried Rice']",Steak variants.
+Kolache,"['Breakfast Kolaches Potatoes', 'Event Mini Kolaches', 'Kolache', 'Kolaches']",Kolache variants.
+Tofu,"['C-Town Fried Tofu Sandwich', 'Fried Tofu Bowl', 'Fried Tofu Grits', 'Fried Tofu Jook', 'Fried Tofu Mushroom', 'Fried Tofu Salad', 'Fried Tofu Salad Lunch', 'Fried Tofu Taco', ""General Tsao'S Fried Tofu"", 'Mapo Tofu', 'Mapo Tofu Pizza', 'Side Fried Tofu', 'Soft Tofu Avocado Taco', 'Soft Tofu Avocado Tostado', 'Tofu Egg Roll', 'Tofu Sticks']",Tofu variants.
+Duck,"['3 Day Hoisin Duck', 'Duck Bao Mi', 'Duck Confit', 'Duck Duck Mousse', 'Duck Fries', 'Duck Prosciutto', 'Duck Salad', 'Duck Tacos (3)', 'Hoisin Duck', 'Hoisin Duck Salad', 'Orange Duck', 'Smoked Duck', 'Smoked Duck Taco', 'Soy Orange Glazed Duck Confit', 'What The Duck Pizza']",Duck variants.
+Ribs,"['Black Bean Ribs', 'Caribbean Ribs Rice', 'Chinese Bbq Ribs', 'Chinese Smoked Ribs', 'Fermented Black Bean Pork Ribs', 'Fermented Black Bean Ribs Dinner Special', 'Korean Bulgogi Ribs', 'Mashed Potatoes Ribs', 'Ribs', 'Southern Bbq Ribs', 'Spare Ribs', 'St. Louis Style Overnight Smoked Pastured Pork Bbq Ribs', 'Sweet Sour Pork Ribs']",Ribs variants.
+Lo Mein,"['Jumbo Ginger Beer Or Chicken Shrimp Lo Mein', 'Jumbo Ginger Beer Or Fried Chicken Shrimp Lo Mein', 'Jumbo Ginger Beer Shrimp Lo Mein', 'Lo Mein', 'Lo Mein Yum Cha', 'Mushroom Lo Mein']",Lo mein variants.
+Lasagna,"['House Lasagna', 'Lamb Lazzagna', 'Lasagna', 'Lasagna Enchilada', 'Lasagna Sauce (Quart)', 'Lasagna Single Portion', 'Lazzagna', 'Lazzagna Pizza', 'Market Lasagna']",Lasagna variants.
+Crostini,"['Brisket Brie Crostini', 'Crostini', 'Pate Crostini']",Crostini variants.
+Grilled Cheese,"['Grilled Cheese', 'Grilled Cheese N Arugula Sandwich', 'Grilled Cheese Pomodoro', 'Potato Egg Salad Pimiento Grilled Cheese', 'Spec Grilled Cheese (Slainte)']",Grilled cheese variants.
+Cuban,"['Cuban Lunch Special', 'Cuban Pork Lettuce Wraps', 'Cuban Sandwich', 'Cuban Sandwich Plantains Salad', 'Hh Cuban']",Cuban variants.
+Mousse,"['Almond Cookie Chocolate Mousse Sundae', 'Chocolate Mousse', 'Chocolate Mousse, Orange Zest, Shaved Salt', 'Coconut Chocolate Mousse', 'Duck Duck Mousse', 'Mousse', 'Mousse Cookie', 'Mousse Sandwich', 'Mousse Sundae', 'Mousee']",Mousse variants.
+Tiramisu,"['Tiramisu', 'Yum Cha Tiramasu']",Tiramisu variants.
+Donut,"['Donut', 'Five Spice Donut', 'Lemon Curd Donut', 'Miso Donut', 'One Hot Donut', 'Yum Cha Donut']",Donut variants.
+Bread Pudding,"['Bread Pudding', 'Cornbread Pudding', 'Cornbread Pudding Collards', 'Peach Bread Pudding', 'Southern Biscuit Blueberry Bread Pudding']",Bread pudding variants.
+Panna Cotta,"['Bronze Fennel Panna Cotta', 'Buttermilk Panna Cotta Blueberry Jam', 'Buttermilk Panna Cotta With Blackberry Chartreuse', 'Buttermilk Panna Cotta With Peach Mango Compote']",Panna cotta variants.
+Vietnamese Pork,"['Family Thit Heo Kho Trung', 'Thit Bacon Taco', 'Thit Bacon Tostado', 'Thit Heo Kho Trung', 'Thit Kho', 'Thit Kho And Rice', 'Thit Kho Bao', 'Thit Kho Taco', 'Twice Baked Viet Pork', 'Twice Baked Vietnamese Sausage', 'Vietnamese Ground Pork Sammy', 'Vietnamese Pork Bowl', 'Vietnamese Pork Bowl (Vegan Version Available)', 'Vietnamese Pork Breakfast Nachos', 'Vietnamese Pork Crispy Noodles', 'Vietnamese Pork Fried Rice Brunch', 'Vietnamese Pork Jook', 'Vietnamese Pork Meatball', 'Vietnamese Pork Pizza', 'Vietnamese Pork Quesadilla', 'Vietnamese Pork Taco', 'Vietnamese Pork Tacos']",Vietnamese pork variants.
+Coco Curry,"['Coco Curry Bowl', 'Coco Curry Noodle', 'Coco Curry Pizza', 'Coco Curry Pizza (Tofu Or Chicken)', 'Coco Curry Taco']",Coconut curry variants.
+Oyster,"['Beausoleil Oysters', 'Fried Oyster Appetizer', 'Fried Oyster Poboy', 'Fried Oyster Taco', 'Fried Oysters', 'Oysters On The Half Shell']",Oyster variants.
+Crab,"['Crab Cake', 'Crab Cake Lettuce', 'Crab Fingers', 'Crab Mac N Cheese', 'Crab Noodles', 'Lump Crab Cake', 'Lump Crab Cake Appetizer', 'Lump Crab Jumbo Shrimp Salad', 'Lump Crab Scramble', 'Market Crab Cake', 'Popcorn Crab', 'Snow Crab Cluster', 'Soft Shell Crab Charred Caesar', 'Soft Shell Crab French Fries', 'Soft Shell Crab Fries', 'Tropical Crab Shrimp Salad']",Crab variants.
+Trout,"['Nc Trout', 'Nc Trout Asparagus Puree', 'North Carolina Trout Salad', 'North Carolina Trout Special', 'Pan Seared Trout', 'Roasted Trout Belly Charred Caesar', 'Smoked Trout', 'Smoked Trout Endive Salad', 'Smoked Trout English Muffin', 'Steelhead Trout Crudo', 'Steelhead Trout Filet', 'Trout Sashimi']",Trout variants.
+Boiled Peanuts,"['Boiled Peanuts', 'Cajun Boiled Peanuts', 'Market Boiled Peanuts', 'Sesame Boiled Peanuts', 'Soy Sesame Chili Boiled Peanuts', 'Szechuan Boiled Peanuts', 'Spicy Peanuts']",Boiled peanut variants.
+Edamame,"['Edamame', 'Happy Hour Edamame', 'Orange Ginger Edamame']",Edamame variants.
+Cheong Fun,"['Cheong Fun', 'Shrimp Cheong Fun']",Cheong fun variants.
+Arancini,"['Arancini', 'Braciole Fried Arancini', 'Fried Arancini', 'Lions Mane Arancini Squares']",Arancini variants.
+Falafel,"['Falafel', 'Falafel Appetizer', 'Falafel Hummus Salad', 'Falafel Pita']",Falafel variants.
+Deviled Eggs,"['Deviled Eggs', 'Happy Hour Deviled Eggs', 'Soy Sauce Deviled Eggs']",Deviled eggs variants.
+Ropa Vieja,"['Ropa Vieja', 'Ropa Vieja Arepa', 'Ropa Vieja Arepa (Beef Or Jackfruit)']",Ropa vieja variants.
+Corn Fritters,"['Corn Fritters', 'Event Corn Fritters', 'Hh Corn Fritters']",Corn fritter variants.
+Plantains,"['Fried Plantains', 'Fried Plantains Gado Gado Sauce', 'Maduros (Fried Sweet Plantains)']",Plantain variants.
+Chocolate Cake,"['Chocolate Cake', 'Chocolate Coffee Entremet', 'Chocolate Sponge Cake', 'Chocolate Terrine', 'Chocolate Torte', 'Chocolate Torte W Maple Pecan Pom.', 'Gf Choc Torte', 'Gf Chocolate Torte', 'Sexual Chocolate']",Chocolate cake variants.
+Ice Cream,"['Ice Cream', 'Ice Cream And Apples', 'Ice Cream Antisocial', 'Ice Cream Antisocial Boozy', 'Ice Cream Sandwich', 'Miso Ice Cream Sandwich']",Ice cream variants.
+Peaches,"['Frangipane Peach Tart', 'Frangipane Peach Tart With Sorrel Pastry', 'Hot Peaches Cream', 'Peach Bread Pudding', 'Peach Cobbler', 'Peach Frangipane', 'Peach Granola', 'Peaches Cream', 'Pearson Farm Peaches', 'Pearson Peaches Cream', 'Poached Peaches Cream', 'Teaches Of Peaches']",Peaches dessert variants.
+Cookie,"['Almond Cookies', 'Miso Chocolate Chip Cookies', 'Miso Chocolate Chip Cookies 2Pack', 'Mousse Cookie']",Cookie variants.
+Sausage,"['Bratwurst', 'Maple Sausage Grits', 'Sausage Egg And Cheese Kaiser', 'Sausage Egg Cheese', 'Sausage Gravy Calzone', 'Sausage Gravy Eggs', 'Sausage Patty', 'Twice Baked Maple Sausage', 'Twice Baked Vietnamese Sausage', 'Vegan Sausage Scramble', 'Vegetarian Sausage Egg Cheese']",Sausage variants.
+Waffle,"['Fried Chicken Waffle', 'Guava Queso Waffle', 'Waffle-Wich']",Waffle variants.
+Family Suppers,['Family Suppers'],Individual item (was in misc group)
+Famiglia Italian Night,['Famiglia Italian Night'],Individual item (was in misc group)
+Mikkelsens,['Mikkelsens'],Individual item (was in misc group)
+Monday Night,['Monday Night'],Individual item (was in misc group)
+New Realm,['New Realm'],Individual item (was in misc group)
+Nye Dinner,['Nye Dinner'],Individual item (was in misc group)
+Nye Dinner Allergy Or Special,['Nye Dinner Allergy Or Special'],Individual item (was in misc group)
+Onetable,['Onetable'],Individual item (was in misc group)
+Special Dessert,['Special Dessert'],Individual item (was in misc group)
+Special Side,['Special Side'],Individual item (was in misc group)
+Valentines Dinner,['Valentines Dinner'],Individual item (was in misc group)
+Valentines Vegetarian,['Valentines Vegetarian'],Individual item (was in misc group)
+Wellington (M),['Wellington (M)'],Individual item (was in misc group)
+Wellington Special,['Wellington Special'],Individual item (was in misc group)
+Charred Caeser With Soft Shell Crab,['Charred Caeser With Soft Shell Crab'],Individual item (form factor split)
+Fried Blue Crab Claws,['Fried Blue Crab Claws'],Individual item (form factor split)
+Little Neck Clams,['Little Neck Clams'],Individual item (form factor split)
+Moules Marinieres,['Moules Marinieres'],Individual item (form factor split)
+Mussels,['Mussels'],Individual item (form factor split)
+Pei Mussels,['Pei Mussels'],Individual item (form factor split)
+Pei Mussels Special,['Pei Mussels Special'],Individual item (form factor split)
+Prawns A La Plancha,['Prawns A La Plancha'],Individual item (form factor split)
+Royal Red Shrimp Boil,['Royal Red Shrimp Boil'],Individual item (form factor split)
+Salt Pepper Squid,['Salt Pepper Squid'],Individual item (form factor split)
+Scallops Rockefeller,['Scallops Rockefeller'],Individual item (form factor split)
+Sea Scallops,['Sea Scallops'],Individual item (form factor split)
+Smoked Tomato Cream Scallops,['Smoked Tomato Cream Scallops'],Individual item (form factor split)
+Smoked Tomato Mussels,['Smoked Tomato Mussels'],Individual item (form factor split)
+Special: Pei Mussels With Pomodoro White Wine And Basil,['Special: Pei Mussels With Pomodoro White Wine And Basil'],Individual item (form factor split)
+"Special: Scallops With Pomdoro, Pesto, And Basil","['Special: Scallops With Pomdoro, Pesto, And Basil']",Individual item (form factor split)
+Special: Scallops With Thai Peanut Sauce,['Special: Scallops With Thai Peanut Sauce'],Individual item (form factor split)
+Tomato Jam Shrimp Grits,['Tomato Jam Shrimp Grits'],Individual item (form factor split)
+Slider,"['Slider Special', 'Sliders']",Slider items
+Chinese Greens,"['Bok Choy', 'Chinese Broccoli Slaw', 'Flowering Chives', 'Flowering Chives Cipollini', 'Flowering Chives Cippolinis', 'Long Life Bok Choy', 'Snow Peas', 'Special: Flowering Chives Cippolinis', 'Yu Choy', 'Yum Bok Choy', 'Yum Cha Yu Choy', 'Yum Choy']",Chinese greens
+Broccoli Banchan,['Broccoli Banchan'],Individual item (form factor split)
+Galbi Banchan,['Galbi Banchan'],Individual item (form factor split)
+Gochujang,['Gochujang'],Individual item (form factor split)
+Gochujang Collards,['Gochujang Collards'],Individual item (form factor split)
+Side Of Kimchi Collards,['Side Of Kimchi Collards'],Individual item (form factor split)
+Yook Baeng,['Yook Baeng'],Individual item (form factor split)
+Yook Baeng Bites,['Yook Baeng Bites'],Individual item (form factor split)
+Braciole Entree,['Braciole Entree'],Individual item (form factor split)
+Cacio E Pepe,['Cacio E Pepe'],Individual item (form factor split)
+Market Pasta,['Market Pasta'],Individual item (form factor split)
+Osso Bucco,['Osso Bucco'],Individual item (form factor split)
+Ravioli,['Ravioli'],Individual item (form factor split)
+Red Braised Szechuan Pork Cheeks,['Red Braised Szechuan Pork Cheeks'],Individual item (form factor split)
+Spatzle,['Spatzle'],Individual item (form factor split)
+Special: Chanterelle Porcini Cream Pasta,['Special: Chanterelle Porcini Cream Pasta'],Individual item (form factor split)
+Sunflower Pesto Pasta,['Sunflower Pesto Pasta'],Individual item (form factor split)
+Chili,"['Award Winning Jiayou Chili', 'Chili', 'Chili Crisp', 'Chili Market Quart', 'Grass-Fed Chili', 'Jiayou Chili']",Chili items
+300 App Spread,['300 App Spread'],Individual item (form factor split)
+Bacon Blue Cheese House Chips,['Bacon Blue Cheese House Chips'],Individual item (form factor split)
+Beer Cheese Bites,['Beer Cheese Bites'],Individual item (form factor split)
+Blistered Shishito Peppers,['Blistered Shishito Peppers'],Individual item (form factor split)
+Burrata Fennel,['Burrata Fennel'],Individual item (form factor split)
+Burrata Herbs,['Burrata Herbs'],Individual item (form factor split)
+Carpaccio,['Carpaccio'],Individual item (form factor split)
+Cheese Bread,['Cheese Bread'],Individual item (form factor split)
+Crispy Lentil Fritters,['Crispy Lentil Fritters'],Individual item (form factor split)
+Crispy Shaved Okra,['Crispy Shaved Okra'],Individual item (form factor split)
+Fried Okra App,['Fried Okra App'],Individual item (form factor split)
+Gorgonzola Grapes,['Gorgonzola Grapes'],Individual item (form factor split)
+Gorgonzola Spinach Dip,['Gorgonzola Spinach Dip'],Individual item (form factor split)
+Hummus Such,['Hummus Such'],Individual item (form factor split)
+Jalapeno Poppers,['Jalapeno Poppers'],Individual item (form factor split)
+Low Country Charcuterie,['Low Country Charcuterie'],Individual item (form factor split)
+Moos In A Blanket,['Moos In A Blanket'],Individual item (form factor split)
+Panko Fried Green Hill,['Panko Fried Green Hill'],Individual item (form factor split)
+Spinach Artichoke Dip,['Spinach Artichoke Dip'],Individual item (form factor split)
+Wasabi Popcorn,['Wasabi Popcorn'],Individual item (form factor split)
+Quiche,"['Quiche', 'Quiche Yum Cha']",Quiche
+Best Damn Coffee Cake,['Best Damn Coffee Cake'],Individual item (form factor split)
+Brioche Sticky Bun,['Brioche Sticky Bun'],Individual item (form factor split)
+Coffee Cake,['Coffee Cake'],Individual item (form factor split)
+Croissant,['Croissant'],Individual item (form factor split)
+Scone,['Scone'],Individual item (form factor split)
+Soda Bread,['Soda Bread'],Individual item (form factor split)
+Strawberry Muffin,['Strawberry Muffin'],Individual item (form factor split)
+Strawberry Scone,['Strawberry Scone'],Individual item (form factor split)
+Toaster Strudel,['Toaster Strudel'],Individual item (form factor split)
+Banana Pudding,['Banana Pudding'],Individual item (form factor split)
+Banana Pudding For Two,['Banana Pudding For Two'],Individual item (form factor split)
+Bananas Foster,['Bananas Foster'],Individual item (form factor split)
+Beignets,['Beignets'],Individual item (form factor split)
+Blondie Brownie With Caramel,['Blondie Brownie With Caramel'],Individual item (form factor split)
+Blueberry Cobbler W Ging. Lav.,['Blueberry Cobbler W Ging. Lav.'],Individual item (form factor split)
+Gingerbread Layer Cake,['Gingerbread Layer Cake'],Individual item (form factor split)
+Good Fortune Orange Tart,['Good Fortune Orange Tart'],Individual item (form factor split)
+Grandma'S Pound Cake,"[""Grandma'S Pound Cake""]",Individual item (form factor split)
+Honeybun Cake,['Honeybun Cake'],Individual item (form factor split)
+Lemon Blueberry Cake,['Lemon Blueberry Cake'],Individual item (form factor split)
+Market Poptart,['Market Poptart'],Individual item (form factor split)
+Mixed Berry Fry Pie,['Mixed Berry Fry Pie'],Individual item (form factor split)
+Ricotta Zeppole,['Ricotta Zeppole'],Individual item (form factor split)
+Ruthie'S Sweets,"[""Ruthie'S Sweets""]",Individual item (form factor split)
+Strawberries,['Strawberries'],Individual item (form factor split)
+Strawberries Cream,['Strawberries Cream'],Individual item (form factor split)
+Strawberry Meringue,['Strawberry Meringue'],Individual item (form factor split)
+Tres Leches,['Tres Leches'],Individual item (form factor split)
+Tres Leches For 2,['Tres Leches For 2'],Individual item (form factor split)
+Yuzu Custard,['Yuzu Custard'],Individual item (form factor split)
+Apple Moat,['Apple Moat'],Individual item (form factor split)
+Apple Tart,['Apple Tart'],Individual item (form factor split)
+Muskmelon Cantelope,['Muskmelon Cantelope'],Individual item (form factor split)
+Yogurt,"['Goat Yogurt', 'Parfait', 'Yogurt', 'Yogurt Parfait']",Yogurt items
+"""007""","['""007""']",Individual item (was in misc group)
+Baby Jamey,['Baby Jamey'],Individual item (was in misc group)
+Bacon Is My Jam,['Bacon Is My Jam'],Individual item (was in misc group)
+Bird'S Nest,"[""Bird'S Nest""]",Individual item (was in misc group)
+Creole,['Creole'],Individual item (was in misc group)
+Eeyore'S Meadow,"[""Eeyore'S Meadow""]",Individual item (was in misc group)
+Endive Will Always Love You,['Endive Will Always Love You'],Individual item (was in misc group)
+Flat Shoals,['Flat Shoals'],Individual item (was in misc group)
+Fm,['Fm'],Individual item (was in misc group)
+Georgia On My Mind,['Georgia On My Mind'],Individual item (was in misc group)
+Keepin' It Classy,"[""Keepin' It Classy""]",Individual item (was in misc group)
+Mn Big Softy,['Mn Big Softy'],Individual item (was in misc group)
+Mr. Big Is Dead,['Mr. Big Is Dead'],Individual item (was in misc group)
+Portlandia,['Portlandia'],Individual item (was in misc group)
+Red Rider,['Red Rider'],Individual item (was in misc group)
+SmRgSbord,['SmRgSbord'],Individual item (was in misc group)
+St Patrick'S,"[""St Patrick'S""]",Individual item (was in misc group)
+Sweet Ass,['Sweet Ass'],Individual item (was in misc group)
+Thank You For Being A Friend,['Thank You For Being A Friend'],Individual item (was in misc group)
+The Bohemian Bear,['The Bohemian Bear'],Individual item (was in misc group)
+The Courtney Canady,['The Courtney Canady'],Individual item (was in misc group)
+The Kimmy,['The Kimmy'],Individual item (was in misc group)
+The Palleson,['The Palleson'],Individual item (was in misc group)
+The Red Bag,['The Red Bag'],Individual item (was in misc group)
+The Schwarz,['The Schwarz'],Individual item (was in misc group)
+Ukiyo,['Ukiyo'],Individual item (was in misc group)
+Wwjcd,['Wwjcd'],Individual item (was in misc group)
+Yonshakudama,['Yonshakudama'],Individual item (was in misc group)
+Zestos,['Zestos'],Individual item (was in misc group)
+Bacon,"['Brown Cage Free Eggs (M)', 'House Bacon', 'Hunter Cattle Pastured Bacon', 'Market Bacon']",Bacon/eggs
+Wings,"['Honey Sriracha Moos', 'Wings']",Wing items
+Maggi,['Maggi'],Individual item (form factor split)
+Sauces,['Sauces'],Individual item (form factor split)
+Sriracha,['Sriracha'],Individual item (form factor split)
+Zhug,['Zhug'],Individual item (form factor split)
+Jen Chan Lunch,['Jen Chan Lunch'],Individual item (form factor split)
+Justaco Yum Cha,['Justaco Yum Cha'],Individual item (form factor split)
+Lunchables,['Lunchables'],Individual item (form factor split)
+Poutine,"[""Lion'S Mane Poutine"", 'Poutine']",Poutine
+Pizza,"['C-Town Slice Special', 'Carrot Top Pesto Slice Special', 'Homemade Pizza Rolls', 'Pizza']",Pizza items
+Sandwich 2,['P-Chz Bologna Sandwich'],Bologna sandwich
+Chips,['Zuchini Chips'],Zucchini chips
+Biscuit,"['Biscuit And Gravy', 'Biscuit Jam', 'Biscuit Sandwiches', 'Biscuit, Egg', 'Buttermilk Biscuit', 'Buttermilk Biscuit Butter', 'Buttermilk Biscuit Sandwiches', 'Buttermilk Biscuits, Eggs, Cheese', 'Biscuit']",Split from mixed-category Biscuit - neutral items
+Beef Biscuit,['Biscuit Filet Benedict'],Split from mixed-category Biscuit - beef items
+Pork Biscuit,"['Biscuit Sausage Gravy', 'Biscuit, Ham, Egg', 'Biscuit, Ham, Syrup', 'Biscuit, Pork', 'Biscuit, Sausage, Egg', 'Buttermilk Biscuit Bacon', 'Buttermilk Biscuit Ham']",Split from mixed-category Biscuit - pork items
+Lamb Biscuit,"['Biscuit, Lamb, Syrup']",Split from mixed-category Biscuit - lamb items
+Beef Benedict,"['Biscuit Filet Benedict', 'Brisket Benedict', 'Filet Benny']",Split from mixed-category Benedict - beef items
+Benedict,"['Mortadello Benny', 'Ultimate Benedict Saturday', 'Ultimate Benedict Sunday', 'Ultimate Benedicts (4 Options)', 'Benedict']",Split from mixed-category Benedict - neutral items
+Pork Benedict,['Pork Belly Benny'],Split from mixed-category Benedict - pork items
+Fried Rice,"['Avocado Fried Rice', 'Drunk Mushroom Fried Rice', 'Fried Rice', 'Fried Rice Entree', 'Fried Rice W Tenderloin Tips', ""Heap O' Fried Rice"", ""Heap O' Fried Rice Mushrooms"", 'Kimchi Fried Rice', 'Lap Cheong Fried Rice', 'Shiitake Fried Rice', 'Spam Fried Rice', 'Thai Chili Fried Rice Brunch']",Split from mixed-category Fried Rice - neutral items
+Poultry Fried Rice,"['Bbq Chicken Or Kimchi Fried Rice', 'Bbq Chicken, Kimchi, Or Tofu Fried Rice', 'Fried Rice With Flank Steak, Bbq Chicken, Tofu, Or Kimchi']",Split from mixed-category Fried Rice - poultry items
+Beef Fried Rice,"['Fried Rice Flank Steak', 'Mongolian Beef Fried Rice']",Split from mixed-category Fried Rice - beef items
+Pork Fried Rice,"['Fried Rice Pork Belly Eggs', 'Pork Fried Rice', 'Pork Fried Rice Entree', 'Vietnamese Pork Fried Rice Brunch', 'Achiote Pork Fried Rice']",Split from mixed-category Fried Rice - pork items
+Pork Taco,"['Bacon Eggs Taco', 'Bacon Is My Jam Taco', 'Pork Belly Taco', 'Pork Taco Egg Roll', 'Thit Bacon Taco', 'Vietnamese Pork Taco', 'Vietnamese Pork Tacos']",Split from mixed-category Taco - pork items
+Taco,"['Bbq Tri Tip Taco', 'Black Bean Tostada', 'Boston Butt Apple Slaw Taco', 'C Town Cauliflower Taco', 'Cauliflower Taco', 'Cauliflower Tacos (3)', 'Coco Curry Taco', 'Hoisin Boston Butt Taco', 'Hong Shao Rou Taco', 'Kung Pao Taco', 'Pickled Herring Taco', 'Pot Roast Taco', 'Short Rib Taco', 'Short Rib Tacos', 'Short Rib Tacos (3)', 'Short Rib Tacos Dinner (3)', 'Smoked Sturgeon Taco', 'Special Taco', 'Special Taco 1', 'Special Taco 2', 'Tacos', 'Thit Kho Taco', 'Verde Tacos', 'Watermelon Radish Tacos']",Split from mixed-category Taco - neutral items
+Beef Taco,"['Brisket Taco', 'Brisket Tacos', 'Mongolian Beef Taco', 'Prime Rib Taco', 'Steak Taco']",Split from mixed-category Taco - beef items
+Poultry Taco,"['Duck Tacos (3)', 'Fried Chicken Taco', 'Katsu Chicken Taco', 'Kung Pao Chicken Taco', 'Smoked Duck Taco']",Split from mixed-category Taco - poultry items
+Fish Taco,"['Fried Catfish Taco', 'Piri Piri Fish Taco', 'Yellowfin Tuna Taco']",Split from mixed-category Taco - fish items
+Shellfish Taco,"['Fried Oyster Taco', 'Fried Shrimp Taco']",Split from mixed-category Taco - shellfish items
+Vegan Taco,['Fried Tofu Taco'],Split from mixed-category Taco - vegan items
+Pizza,"['""007"" Pizza', '""Shorty"" Pizza', 'All The Mushrooms Pizza', 'C-Town Pizza', 'Chili Cheesy Pizza', 'Chomp Pizza', 'Coco Curry Pizza', 'Fromage Blanc Pizza', 'Georgia On My Mind Slice', 'Gluten Free Pizza', 'Gluten Free Special Pizzas', 'House Pizza', 'Lap Cheong Pizza', 'Lazzagna Pizza', 'Mexican Pizza', 'Mik Chan Pizza', 'Mongolian Pizza', 'Name This Pizza Pizza', 'Pizza', 'Pizza Egg Rolls', 'Pizza For Breakfast', 'Pizza Smashed Potatoes', 'Pizza Special', 'Slice Of Pizza', 'Spinach Dip Pizza', 'Street Pizza', 'Sunday Vibes Pizza', 'When Figs Pie', 'Zhug-Shroom Pizza']",Split from mixed-category Pizza - neutral items
+Poultry Pizza,"['Buffalo Chicken Katsu Pizza', 'Buffalo Chicken Pizza', 'Coco Curry Pizza (Tofu Or Chicken)', 'What The Duck Pizza']",Split from mixed-category Pizza - poultry items
+Vegan Pizza,['Mapo Tofu Pizza'],Split from mixed-category Pizza - vegan items
+Beef Pizza,"['Mongolian Beef Pizza', 'Ricotta Meatball Pizza']",Split from mixed-category Pizza - beef items
+Pork Pizza,['Vietnamese Pork Pizza'],Split from mixed-category Pizza - pork items
+Pork Egg Roll,"['Achiote Pork Egg Roll', 'Achiote Pork Egg Rolls', 'Ham, Egg, Cheese Egg Rolls', 'Pork Egg Rolls', 'Pork Or Tofu Egg Rolls']",Split from mixed-category Egg Roll - pork items
+Egg Roll,"['Breakfast Egg Roll', 'Breakfast Egg Rolls', 'Brunch Egg Roll', 'Chomp Egg Rolls', 'Egg Rolls', 'Egg Rolls (Best Damn Sauce)', 'Milltown Egg Rolls', 'Pimiento Cheese Egg Rolls', 'Pimiento Cheese Eggs Rolls', 'Pizza Egg Rolls', 'Short Rib Egg Roll']",Split from mixed-category Egg Roll - neutral items
+Beef Egg Roll,['Mongolian Beef Egg Rolls'],Split from mixed-category Egg Roll - beef items
+Shellfish Egg Roll,['Shrimp Egg Rolls'],Split from mixed-category Egg Roll - shellfish items
+Vegan Egg Roll,['Tofu Egg Roll'],Split from mixed-category Egg Roll - vegan items
+Grits,"['Cheese Grits Beet Greens', 'Cheesy Grit Cake']",Split from mixed-category Grits - neutral items
+Fish Grits,['Fried Catfish Grits'],Split from mixed-category Grits - fish items
+Vegan Grits,['Fried Tofu Grits'],Split from mixed-category Grits - vegan items
+Beef Grits,"['Grit Cake Steak', 'Mongolian Beef Grits']",Split from mixed-category Grits - beef items
+Pork Grits,['Maple Sausage Grits'],Split from mixed-category Grits - pork items
+Shellfish Grits,"['Shrimp Cheese Grits', 'Shrimp Grits', 'Shrimp Pimiento Cheese Grits']",Split from mixed-category Grits - shellfish items
+Mac Cheese,"['Boston Butt Mac Cheese', 'Mac Cheese', 'Mac Cheese Balls', 'Mac Chs. Balls', 'Market Smoked Gouda And Tillamook Mac Cheese', 'Smoked Gouda Nr Ale Mac Cheese', 'Special Mac N Cheese', 'Special Mac N Cheese Ball', 'Spicy Mac Cheese']",Split from mixed-category Mac Cheese - neutral items
+Shellfish Mac Cheese,['Crab Mac N Cheese'],Split from mixed-category Mac Cheese - shellfish items
+Pork Mac Cheese,"['Pork Belly Mac And Cheese', 'Pork Mac N Cheese', 'Pork Shoulder Mac Cheese']",Split from mixed-category Mac Cheese - pork items
+Bao,"['Bao Of The Day', 'Cauliflower Bao', 'Hoisin Boston Butt Bao', 'Hoisin Mushroom Bao', 'Mushroom Bao', 'Thit Kho Bao', 'Bao']",Split from mixed-category Bao - neutral items
+Shellfish Bao,['Blue Oyster Mushroom Bao'],Split from mixed-category Bao - shellfish items
+Pork Bao,"['Chai Tea Pork Bao', 'Hoisin Bacon Bao', 'Pork Bao', 'Red Yeast Pork Bao']",Split from mixed-category Bao - pork items
+Poultry Bao,['Duck Bao Mi'],Split from mixed-category Bao - poultry items
+Beef Bao,"['Flank Steak Bao', 'Hoisin Meatball Bao Bun', 'Mongolian Beef Bao']",Split from mixed-category Bao - beef items
+Lamb Bao,['Lamb Belly Bao'],Split from mixed-category Bao - lamb items
+Pork Pork,"['Chai Tea Pork Bao', 'Chili Lime Tortilla Pork', 'Pork Butt Egg Cheese', 'Pork Chop', 'Pork Chop Eggs', 'Pork Egg Rolls', 'Pork Fried Rice Entree', 'Pork Greens', 'Pork Mac N Cheese', 'Pork Or Tofu Egg Rolls', 'Pork Shoulder Mac Cheese', 'Pork Taco Egg Roll', 'Pork Tenderloin', 'Pork Tenderloin Special', 'Red Yeast Pork Bao', 'Scrambled Eggs And Pork']",Split from mixed-category Pork - pork items
+Fish Pork,['Coddled Pork'],Split from mixed-category Pork - fish items
+Beef Salad,['Brisket Salad'],Split from mixed-category Salad - beef items
+Caesar Salad,['Caesar Salad'],Individual item (form factor split)
+Farm Salad,['Farm Salad'],Individual item (form factor split)
+Grilled Chanterelles Salad,['Grilled Chanterelles Salad'],Individual item (form factor split)
+Iceberg Wedge,['Iceberg Wedge'],Individual item (form factor split)
+Peanut Noodle Salad,['Peanut Noodle Salad'],Individual item (form factor split)
+Potato Salad,['Potato Salad'],Individual item (form factor split)
+Potato Salad (Quart),['Potato Salad (Quart)'],Individual item (form factor split)
+Salad,['Salad'],Individual item (form factor split)
+Seasonal Salad,['Seasonal Salad'],Individual item (form factor split)
+Side Caesar Salad,['Side Caesar Salad'],Individual item (form factor split)
+Side Salad,['Side Salad'],Individual item (form factor split)
+Spinach Salad,['Spinach Salad'],Individual item (form factor split)
+Strawberry Romaine,['Strawberry Romaine'],Individual item (form factor split)
+Summer Salad,['Summer Salad'],Individual item (form factor split)
+Sweet Peas Tendrils Salad,['Sweet Peas Tendrils Salad'],Individual item (form factor split)
+Unearthing Farm Salad,['Unearthing Farm Salad'],Individual item (form factor split)
+Rainbow Carrots Kale,['Rainbow Carrots Kale'],Individual item (form factor split)
+Poultry Salad,"['Charred Romaine, Fennel, Chicken Or Tofu', 'Chicken Caesar Salad', 'Chicken Salad', 'Chicken Salad Lettuce Wraps', 'Crispy Chicken Asian Salad', 'Crispy No Chicken Asian Salad', 'Duck Salad', 'Hoisin Duck Salad', 'Katsu Fried Chicken Farm Salad', 'Smoked Chicken Salad Romaine']",Split from mixed-category Salad - poultry items
+Vegan Salad,"['Fried Tofu Salad', 'Fried Tofu Salad Lunch']",Split from mixed-category Salad - vegan items
+Shellfish Salad,"['Hawaiian Garlic Shrimp Macaroni Salad', 'Lump Crab Jumbo Shrimp Salad', 'Tropical Crab Shrimp Salad', 'Tropical Shrimp Salad', 'Yogurt Dill Jumbo Shrimp Salad']",Split from mixed-category Salad - shellfish items
+Fish Salad,"['Mahi Mahi Salad', 'North Carolina Trout Salad', 'Smoked Salmon Salad', 'Smoked Trout Endive Salad', 'Spring Salmon, Corn, Tomato Salad', 'Spec Salad W Mahi']",Split from mixed-category Salad - fish items
+Pork Salad,['Bacon Charred Caesar'],Split from mixed-category Salad - pork items
+Poultry Chicken,"['Achiote Chicken', 'Almond Chicken Or Tofu', 'Brie Stuffed Chicken', 'Chicken Chilaquiles', 'Chicken Chilaquilese', 'Chicken Crunch Wrap', 'Chicken Florentine', 'Chicken Katsu', 'Chicken Lettuce Wraps', 'Chicken Miknuggets', 'Chicken Parmesan', 'Chicken Pot Pie', 'Chicken Ricotta Dumplings', 'Chicken Salad', 'Chicken Salad Lettuce Wraps', 'Chicken Thigh Arugula', 'Confit Turkey Wing', ""General Tsao'S Chicken Or Beyond Chicken"", ""General Tsao'S Chicken Or Tofu"", 'Gochujang Hot Chicken', 'Hainanese Chicken', ""Meema'S Chicken"", 'Pollo Pibil Orange Chicken', 'Romesco Chicken', 'Side Chicken', 'Soy Sauce Chicken', 'Soy Sauce Orange Chicken', 'Szechuan Chicken Bowl', 'Szechuan Chicken Gordita', 'Szechuan Chicken Salad Slider', 'Szechuan Chicken Sandwich', 'Szechuan Chicken Sliders', 'Whole Organic Chicken']",Split from mixed-category Chicken - poultry items
+Chicken,"[""General Tsao'S"", 'Side Leg Quarter']",Split from mixed-category Chicken - neutral items
+Vegan Chicken,"[""General Tsao'S Fried Tofu""]",Split from mixed-category Chicken - vegan items
+Poutine,"['Brat Poutine', 'Poutine']",Split from mixed-category Poutine - neutral items
+Fish Poutine,['Catfish Poutine'],Split from mixed-category Poutine - fish items
+Poultry Poutine,"['Duck Fries', 'Duck Poutine']",Split from mixed-category Poutine - poultry items
+Beef Poutine,"['Mongolian Beef Poutine', 'Steak Poutine And Eggs']",Split from mixed-category Poutine - beef items
+Beef Meatball,"['Hoisin Meatball Bao Bun', 'Korean Bbq Meatballs', 'Meatball Slider', 'Meatball Sub', 'Mezcal Tomato Meatballs', 'Ricotta Meatball Pasta', 'Ricotta Meatball Pizza', 'Ricotta Meatball Sub', 'Ricotta Meatballs']",Split from mixed-category Meatball - beef items
+Pork Meatball,['Vietnamese Pork Meatball'],Split from mixed-category Meatball - pork items
+Fries,"['Breakfast Fries', 'Chili Fries', 'Fries', 'Loaded Street Fries', 'Milltown Loaded Street Fries', 'Nacho Fries', 'Sesame Street Fries', 'Street Fries', 'Street Fries Side']",Split from mixed-category Fries - neutral items
+Pork Fries,['Hot Ham Cheese Fries'],Split from mixed-category Fries - pork items
+Shellfish Fries,"['Soft Shell Crab French Fries', 'Soft Shell Crab Fries']",Split from mixed-category Fries - shellfish items
+Beef Fries,"['Steak Fries W Zhoug', 'Steak Fries Zhoug']",Split from mixed-category Fries - beef items
+Potatoes,"['Cauliflower Potato Hash', 'Cheesy Potato And Egg', 'Cheesy Potato Skin', 'Crispy Potato Nachos', 'Crispy Potatoes Zhug', 'Crispy Smashed Potato Egg', 'Fried Potato And Egg', 'Fried Potato Egg Salad', 'Fried Potato Pancake', 'Fried Smashed Potatoes', 'Guacamole Potato Nachos', 'Guacamole Potato Tostado', 'Hashbrown Of The Day', 'Hashbrown Scramble', 'Loaded Hash', 'Loaded Hashbrowns', 'Loaded Potato Skins', 'Loaded Smashed Potatoes', 'Mashed Potatoes Ribs', 'Pizza Smashed Potatoes', 'Potato Egg Salad Pimiento Grilled Cheese', 'Potato Hash', 'Potato Hash Over Easy Egg', 'Potato Salad', 'Potato Salad (Quart)', 'Potato Soup', 'Potato Sticks', 'Potatoes Onions', 'Smashed Fingerling Nachos', 'Smashed Potato Nachos', 'Smashed Szechuan Cucumbers', 'Sweet Potato Bites', 'Sweet Potato Hash', 'Sweet Potatoes', 'Stuffed Sweet Potato', 'Twice Baked Potato', 'Zhug Potatoes']",Split from mixed-category Potatoes - neutral items
+Pork Potatoes,['Loaded Potato Pork'],Split from mixed-category Potatoes - pork items
+Vegan Potatoes,['Veggie Fried Potato Hash'],Split from mixed-category Potatoes - vegan items
+Vegan Jook,['Fried Tofu Jook'],Split from mixed-category Jook - vegan items
+Jook,"['Jook', 'Jook Brunch', 'Lap Cheong Jook']",Split from mixed-category Jook - neutral items
+Pork Jook,['Vietnamese Pork Jook'],Split from mixed-category Jook - pork items
+Noodles,"['Cantonese Noodles (Market)', 'Chilled Glass Noodles', 'Cold Noodles', 'Herb Tagliatelle', 'Longevity Noodles', 'Rice Noodles And Spaghetti Sauce', 'Spicy Peanut Noodles', 'Szechuan Linguini']",Split from mixed-category Noodles - neutral items
+Shellfish Noodles,"['Crab Noodles', 'Ginger Shrimp Crispy Noodles', 'Shrimp N Noodles']",Split from mixed-category Noodles - shellfish items
+Fish Noodles,['Garlic Tahini Rice Noodles'],Split from mixed-category Noodles - fish items
+Pork Noodles,['Vietnamese Pork Crispy Noodles'],Split from mixed-category Noodles - pork items
+Scramble,"['Exotic Mushroom Scramble', 'Feta Tomato Scramble', 'Hashbrown Scramble', 'Kitchen Sink Scramble', 'Scramble', 'Scramble Of The Day', 'Spinach And Tomato Scramble', 'Tomato, Broccoli, Goat Cheese Scramble', 'Tomato, Goat, Scramble', 'Tomato, Green Hill, Scramble', 'Tomato, Mushroom, Goat Cheese Scramble']",Split from mixed-category Scramble - neutral items
+Shellfish Scramble,"['Lump Crab Scramble', 'Shrimp Scramble']",Split from mixed-category Scramble - shellfish items
+Pork Scramble,"['Scrambled Eggs And Pork', 'Vegan Sausage Scramble']",Split from mixed-category Scramble - pork items
+Vegan Scramble,"['Vegan Soft Tofu Scramble', 'Veggie Scramble Of The Day']",Split from mixed-category Scramble - vegan items
+Beef Quesadilla,['Mongolian Beef Quesadilla'],Split from mixed-category Quesadilla - beef items
+Pork Quesadilla,"['Pork Quesadilla', 'Vietnamese Pork Quesadilla']",Split from mixed-category Quesadilla - pork items
+Poultry Kids,"[""Kid'S Chicken Breast With Honey Mustard"", ""Kid'S Chicken Tenders Honey Mustard"", ""Kid'S Fried Chicken With Ranch"", '(K) Chicken Rice', '(K) Kids Chicken And Rice']",Split from mixed-category Kids - poultry items
+Kid'S Spaghetti,"[""Kid'S Spaghetti""]",Individual item (form factor split)
+(K) Pizza Rolls,['(K) Pizza Rolls'],Individual item (form factor split)
+(K) Rice Spaghetti Sauce,['(K) Rice Spaghetti Sauce'],Individual item (form factor split)
+(K) Spaghetti,['(K) Spaghetti'],Individual item (form factor split)
+Vegan Kids,"[""Kid'S Veggies And Rice"", '(K) Veggie Rice', '(K) Veggie Stacks']",Split from mixed-category Kids - vegan items
+Shellfish Kids,['Kids Shrimp And Rice'],Split from mixed-category Kids - shellfish items
+Mushroom,"['All The Mushrooms Pizza', 'Asparagus Mushrooms', 'Chanterelles', 'Drunk Mushroom Fried Rice', 'Drunk Mushroom Riblets', 'Exotic Mushroom Scramble', 'Fried Maitake Mushrooms', 'Fried Maitake Mushrooms (Yum Cha)', 'Fried Mushrooms', 'Grilled Chanterelles Salad', 'Hoisin Mushroom Bao', 'Hoison Mushroom Tostado', 'Lions Mane Arancini Squares', 'Mushroom Bao', 'Mushroom Lo Mein', 'Mushroom Melt', 'Mushroom Shawarma Pita', 'Mushroom Stroganoff', 'Mushroom Toast', 'Mushroom Umami Soup', 'Mushroom Wellington', 'Roasted Asparagus Mushrooms', 'Southern Cap Shrooms', 'Zhug-Shroom Pizza']",Split from mixed-category Mushroom - neutral items
+Shellfish Mushroom,"['Blue Oyster Mushroom Bao', 'Stuffed Blue Oyster Mushroom']",Split from mixed-category Mushroom - shellfish items
+Beef Mushroom,['Chomp Mushroom Cheesesteak'],Split from mixed-category Mushroom - beef items
+Vegan Mushroom,['Fried Tofu Mushroom'],Split from mixed-category Mushroom - vegan items
+Fish Tostada,['Ahu Tuna Tostada'],Split from mixed-category Tostada - fish items
+Tostada,"['Black Bean Charred Corn Tostada', 'Black Bean Sunny Egg Tostada', 'Black Bean Tostada', 'Brunch Tostada', 'Butternut Squash Tostado', 'Guacamole Potato Tostado', 'Hoison Mushroom Tostado', 'Roasted Mushroom Corn Tostada', 'Tostada']",Split from mixed-category Tostada - neutral items
+Beef Tostada,['Ribeye Tostado'],Split from mixed-category Tostada - beef items
+Vegan Tostada,['Soft Tofu Avocado Tostado'],Split from mixed-category Tostada - vegan items
+Pork Tostada,['Thit Bacon Tostado'],Split from mixed-category Tostada - pork items
+Vegan Wonton,['Cream Cheese Wonton Vegetarian'],Split from mixed-category Wonton - vegan items
+Pork Wonton,['Pork Wonton'],Split from mixed-category Wonton - pork items
+Shellfish Wonton,['Shrimp Rangon'],Split from mixed-category Wonton - shellfish items
+Bacon Egg Grilled Cheese,['Bacon Egg Grilled Cheese'],Individual item (form factor split)
+Stuffed Pork Tender Eggs,['Stuffed Pork Tender Eggs'],Individual item (form factor split)
+Egg (Single),['Egg (Single)'],Individual item (form factor split)
+Egg Mik-Muffin (M),['Egg Mik-Muffin (M)'],Individual item (form factor split)
+Eggs (2),['Eggs (2)'],Individual item (form factor split)
+Eggs Bread Salad,['Eggs Bread Salad'],Individual item (form factor split)
+Eggs Florentine,['Eggs Florentine'],Individual item (form factor split)
+Eggs Salad Toast,['Eggs Salad Toast'],Individual item (form factor split)
+Frittata,['Frittata'],Individual item (form factor split)
+Funny Egg,['Funny Egg'],Individual item (form factor split)
+Homestyle Pancake,['Homestyle Pancake'],Individual item (form factor split)
+Juevos Rancheros,['Juevos Rancheros'],Individual item (form factor split)
+Omelette Of The Day,['Omelette Of The Day'],Individual item (form factor split)
+Omurice Omelette,['Omurice Omelette'],Individual item (form factor split)
+Pumpkin Pancakes,['Pumpkin Pancakes'],Individual item (form factor split)
+Ricotta Pancakes,['Ricotta Pancakes'],Individual item (form factor split)
+Ricotta Pomodoro Poached Eggs,['Ricotta Pomodoro Poached Eggs'],Individual item (form factor split)
+Spec Chili N Eggs,['Spec Chili N Eggs'],Individual item (form factor split)
+Spec Ricotta Pancakes,['Spec Ricotta Pancakes'],Individual item (form factor split)
+Spinach And Eggs,['Spinach And Eggs'],Individual item (form factor split)
+Spinach And Tomato Frittata,['Spinach And Tomato Frittata'],Individual item (form factor split)
+"Spinach, Artichoke, Tomato Frittata","['Spinach, Artichoke, Tomato Frittata']",Individual item (form factor split)
+Steamed Egg,['Steamed Egg'],Individual item (form factor split)
+Tex Mex Frittata,['Tex Mex Frittata'],Individual item (form factor split)
+Vidalia Onion Egg,['Vidalia Onion Egg'],Individual item (form factor split)
+White Rice Eggs,['White Rice Eggs'],Individual item (form factor split)
+White Rice Soft Scrambled Eggs,['White Rice Soft Scrambled Eggs'],Individual item (form factor split)
+Chinese Steamed Egg,['Chinese Steamed Egg'],Individual item (form factor split)
+Satsuma Orange Steamed Egg,['Satsuma Orange Steamed Egg'],Individual item (form factor split)
+Lamb Eggs/Breakfast,['Lamb Belly Egg'],Split from mixed-category Eggs/Breakfast - lamb items
+Fish Fish,"['Ahi Tuna', 'Ahi Tuna Verde', 'Black Cod Over Kholrabi', 'Cantonese Market Fish', 'Fish Chips', 'Fish Chips (Street Fries)', 'Fish Of The Day', 'Fish Pho', ""Fish Po' Boy"", 'Mahi Mahi', 'Mahi Mahi Special', 'Red Snapper (Fish Of The Day)', 'Seared Tuna', 'Sesame Tajin Seared Tuna', 'Smoked Sablefish', 'Snapper Pho', 'Whole Snapper', 'Smoked Black Cod Lettuce Cup']",Split from mixed-category Fish - fish items
+Branzino,['Branzino'],Individual item (form factor split)
+Crappie,['Crappie'],Individual item (form factor split)
+Fried Crappie,['Fried Crappie'],Individual item (form factor split)
+Hake Potatoes,['Hake Potatoes'],Individual item (form factor split)
+Papa'S Fried Crappie,"[""Papa'S Fried Crappie""]",Individual item (form factor split)
+Smoke Sturgeon,['Smoke Sturgeon'],Individual item (form factor split)
+Smoked Storugeon,['Smoked Storugeon'],Individual item (form factor split)
+Smoked Sturgeon,['Smoked Sturgeon'],Individual item (form factor split)
+Pork Sandwich,"['Banh Mi Hot Dog (Vegan Version Available)', ""Jen'S Cold Cut""]",Split from mixed-category Sandwich - pork items
+Sandwich,"['Bologna Sandwhich', 'Bologna Slider', 'C-Town Fried Sandwich', 'C-Town Mi', 'Country Croque', 'House Sub', 'Mediterranean Sammy', 'Monte Cristo', 'Pita Melt', ""Q'S Banh Mi Cabbagetown"", 'Rou Jia Mo', 'Slainte Sammy', 'Sloppy Jen', 'Sloppy Joe', 'Torta']",Split from mixed-category Sandwich - neutral items
+Poultry Sandwich,['Buffalo Katsu Chicken Or Tofu Sandwich'],Split from mixed-category Sandwich - poultry items
+Beef Sandwich,"['Cheesesteak', 'Chomp Cheesesteak', 'Hh Cheesesteak']",Split from mixed-category Sandwich - beef items
+Burger,['Black Bean Patty Melt'],Split from mixed-category Burger - neutral items
+Beef Burger,"['Burger Week - Bulgogi', 'Burger Week - Korean Bbq']",Split from mixed-category Burger - beef items
+Pork Burger,['Jamaican Jerk Hamburger Steak'],Split from mixed-category Burger - pork items
+Bowls,['Bowls'],Individual item (form factor split)
+Curry Dal Bowl,['Curry Dal Bowl'],Individual item (form factor split)
+Gado Bowl,['Gado Bowl'],Individual item (form factor split)
+Ginger Curry Bowl,['Ginger Curry Bowl'],Individual item (form factor split)
+Rice Bowl,['Rice Bowl'],Individual item (form factor split)
+Poultry Bowl,['Creamy Chicken Rice'],Split from mixed-category Bowl - poultry items
+Beef Bowl,['Vegan Beef Bowl'],Split from mixed-category Bowl - beef items
+Pork Bowl,['Vegan Pork Bowl'],Split from mixed-category Bowl - pork items
+48 Hour Marinated Chkn Thigh Sticky Rice,['48 Hour Marinated Chkn Thigh Sticky Rice'],Individual item (form factor split)
+3 Day Ramen,['3 Day Ramen'],Individual item (form factor split)
+Asian Slaw,['Asian Slaw'],Individual item (form factor split)
+Fried Shumai Rolls,['Fried Shumai Rolls'],Individual item (form factor split)
+Gado Gado Lettuce Wraps (3),['Gado Gado Lettuce Wraps (3)'],Individual item (form factor split)
+Hong Shao Rou,['Hong Shao Rou'],Individual item (form factor split)
+Lap Cheong Focaccia,['Lap Cheong Focaccia'],Individual item (form factor split)
+Lettuce Wrap,['Lettuce Wrap'],Individual item (form factor split)
+Lo Mai Gai,['Lo Mai Gai'],Individual item (form factor split)
+Radish Wraps,['Radish Wraps'],Individual item (form factor split)
+Scallion Pancake,['Scallion Pancake'],Individual item (form factor split)
+Smashed Chinese Cucumbers,['Smashed Chinese Cucumbers'],Individual item (form factor split)
+Soda Bread Lap Cheong,['Soda Bread Lap Cheong'],Individual item (form factor split)
+Summer Roll Special,['Summer Roll Special'],Individual item (form factor split)
+Summer Rolls,['Summer Rolls'],Individual item (form factor split)
+Youtiao,['Youtiao'],Individual item (form factor split)
+Beef Asian,['Beef Teriyaki'],Split from mixed-category Asian - beef items
+Poultry Asian,['Sweet Sour Chicken Or Tofu'],Split from mixed-category Asian - poultry items
+Szechuan,"['Kung Pao Chickpeas', ""Robby'S Kung Pao Pie"", ""Robby'S Kung Pao Pizza"", 'Szechuan Bok Choy', 'Szechuan Chinese Vegetables', 'Szechuan Snow Peas', 'Szechuan Yu Choy', 'Side Veg (Kung Pao)']",Split from mixed-category Szechuan - neutral items
+Vegan Szechuan,"['Kung Pao Stirfry Veggies', 'Kung Pao Veggies']",Split from mixed-category Szechuan - vegan items
+Chilaguiles Verde,['Chilaguiles Verde'],Individual item (form factor split)
+Chilaquiles,['Chilaquiles'],Individual item (form factor split)
+Chochoyotes,['Chochoyotes'],Individual item (form factor split)
+Crunch Wrap,['Crunch Wrap'],Individual item (form factor split)
+Custom Taco Bar,['Custom Taco Bar'],Individual item (form factor split)
+Elote Corn,['Elote Corn'],Individual item (form factor split)
+Empanadas,['Empanadas'],Individual item (form factor split)
+French Tacos,['French Tacos'],Individual item (form factor split)
+Guacamole,['Guacamole'],Individual item (form factor split)
+Pupusa Popup,['Pupusa Popup'],Individual item (form factor split)
+Queso,['Queso'],Individual item (form factor split)
+Springtime Burrito,['Springtime Burrito'],Individual item (form factor split)
+Street Corn,['Street Corn'],Individual item (form factor split)
+Tabbouleh,['Tabbouleh'],Individual item (form factor split)
+Taco Kits,['Taco Kits'],Individual item (form factor split)
+Poultry Mexican,"['French Onion Chicken Gordita Crunch Wrap', 'Poblano Chicken Gordita']",Split from mixed-category Mexican - poultry items
+Shellfish Mexican,['Fried Shrimp Or Fried Tofu Tacos'],Split from mixed-category Mexican - shellfish items
+Broccolini,['Broccolini'],Individual item (form factor split)
+Brussels Sprouts,['Brussels Sprouts'],Individual item (form factor split)
+Butter Beans,['Butter Beans'],Individual item (form factor split)
+Butternut Squash,['Butternut Squash'],Individual item (form factor split)
+Carrot Asparagus W Tiger Sauce,['Carrot Asparagus W Tiger Sauce'],Individual item (form factor split)
+Charred Baby Vidalia,['Charred Baby Vidalia'],Individual item (form factor split)
+"Charred Corn, Tom. Vidalia","['Charred Corn, Tom. Vidalia']",Individual item (form factor split)
+Charred Vidalia,['Charred Vidalia'],Individual item (form factor split)
+Charred Vidalia Onion,['Charred Vidalia Onion'],Individual item (form factor split)
+Chickpeas,['Chickpeas'],Individual item (form factor split)
+Chinese Tomato Stir Fry,['Chinese Tomato Stir Fry'],Individual item (form factor split)
+Cornbread,['Cornbread'],Individual item (form factor split)
+Fennel Radish,['Fennel Radish'],Individual item (form factor split)
+Georgia Lady Peas (Family Size),['Georgia Lady Peas (Family Size)'],Individual item (form factor split)
+Grilled Cornbread,['Grilled Cornbread'],Individual item (form factor split)
+Local Lettuce Radish,['Local Lettuce Radish'],Individual item (form factor split)
+Roasted Beet Goat Yogurt,['Roasted Beet Goat Yogurt'],Individual item (form factor split)
+Roasted Beets,['Roasted Beets'],Individual item (form factor split)
+Roasted Chickpeas,['Roasted Chickpeas'],Individual item (form factor split)
+Roasted Vidalia Onion,['Roasted Vidalia Onion'],Individual item (form factor split)
+Roasted Vidalia Onion Fennel,['Roasted Vidalia Onion Fennel'],Individual item (form factor split)
+Roasted Vidalia Onion Peas,['Roasted Vidalia Onion Peas'],Individual item (form factor split)
+Roasted Vidalia Onion Radish,['Roasted Vidalia Onion Radish'],Individual item (form factor split)
+Seasonal Vegetable,['Seasonal Vegetable'],Individual item (form factor split)
+Seasonal Vegetable Side,['Seasonal Vegetable Side'],Individual item (form factor split)
+Side Chips,['Side Chips'],Individual item (form factor split)
+Side Of Asian Slaw,['Side Of Asian Slaw'],Individual item (form factor split)
+Side Of White Rice,['Side Of White Rice'],Individual item (form factor split)
+Side Slaw,['Side Slaw'],Individual item (form factor split)
+Sides,['Sides'],Individual item (form factor split)
+Slaw,['Slaw'],Individual item (form factor split)
+"Smoked Corn, Tom. Vidalia","['Smoked Corn, Tom. Vidalia']",Individual item (form factor split)
+Stir Fry,['Stir Fry'],Individual item (form factor split)
+Summertime Succotash,['Summertime Succotash'],Individual item (form factor split)
+Sweet Peas Bronze Fennel,['Sweet Peas Bronze Fennel'],Individual item (form factor split)
+Vidalia Bulb,['Vidalia Bulb'],Individual item (form factor split)
+Pork Sides,"['Roasted Fennel Bacon Jam', 'Side Of Bacon', 'Side Of House Smoked Bacon']",Split from mixed-category Sides - pork items
+Vegan Sides,"['Seasonal Veggies', 'Veggie Medley', 'Veggie Plate (Seasonals)']",Split from mixed-category Sides - vegan items
+Beef Entrees,['Beef Stroganoff Bread Bowl'],Split from mixed-category Entrees - beef items
+Frog Legs,['Frog Legs'],Individual item (form factor split)
+Market Pot Pie,['Market Pot Pie'],Individual item (form factor split)
+Market Stroganoff,['Market Stroganoff'],Individual item (form factor split)
+Meatloaf,['Meatloaf'],Individual item (form factor split)
+Moussaka,['Moussaka'],Individual item (form factor split)
+Pot Roast,['Pot Roast'],Individual item (form factor split)
+Stuffed Bell Pepper,['Stuffed Bell Pepper'],Individual item (form factor split)
+Poultry Entrees,"['Fried Quail Succotash', 'Southern Fried Quail']",Split from mixed-category Entrees - poultry items
+Pork Entrees,"['Gorgonzola Pork Chop Roasted Broccoli', 'Stuffed Pork Tenderloin', 'Twice Baked Potato And Maple Sausage']",Split from mixed-category Entrees - pork items
+Lamb Entrees,['Lamb Kofta'],Split from mixed-category Entrees - lamb items
+Soup,"[""Lion'S Mane Mushroom Umami Broth""]",Split from mixed-category Soup - neutral items
+Poultry Soup,['Smoked Chicken Duck Noodle Soup'],Split from mixed-category Soup - poultry items
+Vegan Soup,['Vegan Soup'],Split from mixed-category Soup - vegan items
+Be Mine Appetizer,['Be Mine Appetizer'],Individual item (was in misc group)
+Chop N Eggs,['Chop N Eggs'],Individual item (was in misc group)
+Curry,['Curry'],Individual item (was in misc group)
+Event Pimento (1),['Event Pimento (1)'],Individual item (was in misc group)
+Farm Plate,['Farm Plate'],Individual item (was in misc group)
+Open Item,['Open Item'],Individual item (was in misc group)
+Proteins,['Proteins'],Individual item (was in misc group)
+Shakshuka Cream,['Shakshuka Cream'],Individual item (was in misc group)
+Thai Wheat Cup,['Thai Wheat Cup'],Individual item (was in misc group)
+One Pound Of Jenchan'S Smoked Pastured Chicken Salad,"[""One Pound Of Jenchan'S Smoked Pastured Chicken Salad""]",Individual item (was in misc group)
+Eggplant Shakshuka,['Eggplant Shakshuka'],Individual item (was in misc group)
+Special: Fish Chips,['Special: Fish Chips'],Individual item (was in misc group)
+catering_takeout,['Family Meal'],Catering and takeout items

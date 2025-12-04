@@ -1,0 +1,40 @@
+item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg,shrimp,whole_bird_white_meat
+#1 Hot Dog Combo,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Hot Dog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Sausage Dog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Sausage Dog Combo,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Veggie Dog,True,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Veggie Dog Combo,True,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Beyond Burger,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
+Veggie Burger,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
+Chicken Tenders,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Chicken Tenders Combo,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Wings,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Wings Combo,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+Fries,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Chili Cheese Fries,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,False,False
+Cheese Sticks,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Nachos,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Combo,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+catering_takeout,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+#2 Veggie Dog Combo,True,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+#3 Sausage Dog Combo,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+#4 Chicken Tenders Combo,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+#4 Hamburger Combo,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
+#5 Hamburger Combo,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
+#5 Wing Combo,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+#6 Beyond Burger Combo,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
+#6 Veggie Burger Combo,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
+Deluxe Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
+Deluxe Dog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Hamburger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
+Hot Dog Combo,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Plain Dog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+to_remove,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Gluten Free Roll,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Kids Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Side,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Side Chips,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Side Fruit,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Side Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
