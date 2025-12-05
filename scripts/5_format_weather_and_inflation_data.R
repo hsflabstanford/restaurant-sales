@@ -42,9 +42,7 @@ process_toronto_file <- function(loc_id, year) {
 }
 
 params <- crossing(
-  loc_id = c("SRQS8F7JWA9MZ"#, 
-  #"CB2KHY1C2G9PT"
-  ), # Location IDs for Toronto
+  loc_id = c("SRQS8F7JWA9MZ","CB2KHY1C2G9PT"), # Location IDs for Toronto
   year = 2019:2023
 )
 
@@ -71,18 +69,18 @@ noaa_files_to_ids <- list(
   "data/weather_data/cape_girardeau_mo.csv" = "JHDN7CF1C03X5",
   "data/weather_data/ashburn_va.csv" = "L69HYJ4Y3TR91",
   "data/weather_data/beaverton_or.csv" = "ED5J990H5VAZT",
-  "data/weather_data/erie_pa.csv" = "W8T41JZK0ZMEP"#,
-  # "data/weather_data/pittsburgh_pa.csv" = "EMBVNVD207CC6",
-  # "data/weather_data/cleveland_oh.csv" = "C0BE4NDSW26QN",
-  # "data/weather_data/honolulu_hi.csv" = "75WYSXR9QBK5M",
-  # "data/weather_data/arbutus_md.csv" = "V3Q26BHF3SE2H",
-  # "data/weather_data/brentwood_ca.csv" = "LBZEEFSBJNB3Z",
-  # "data/weather_data/los_angeles_ca.csv" = "SAFK7ND1HR6XS",
-  # "data/weather_data/miami_fl.csv" = "S8MT0YGD2KTN9",
-  # "data/weather_data/denver_co.csv" = "1SQPTEGYPH0GA",
-  # "data/weather_data/atlanta_ga.csv" = "9XKJD8DQTH559",
-  # "data/weather_data/greensboro_nc.csv" = "LQ5EH4BKGV61T",
-  # "data/weather_data/washington_dc.csv" = "78AY09MVJVTYE"
+  "data/weather_data/erie_pa.csv" = "W8T41JZK0ZMEP",
+  "data/weather_data/pittsburgh_pa.csv" = "EMBVNVD207CC6",
+  "data/weather_data/cleveland_oh.csv" = "C0BE4NDSW26QN",
+  "data/weather_data/honolulu_hi.csv" = "75WYSXR9QBK5M",
+  "data/weather_data/arbutus_md.csv" = "V3Q26BHF3SE2H",
+  "data/weather_data/brentwood_ca.csv" = "LBZEEFSBJNB3Z",
+  "data/weather_data/los_angeles_ca.csv" = "SAFK7ND1HR6XS",
+  "data/weather_data/miami_fl.csv" = "S8MT0YGD2KTN9",
+  "data/weather_data/denver_co.csv" = "1SQPTEGYPH0GA",
+  "data/weather_data/atlanta_ga.csv" = "9XKJD8DQTH559",
+  "data/weather_data/greensboro_nc.csv" = "LQ5EH4BKGV61T",
+  "data/weather_data/washington_dc.csv" = "78AY09MVJVTYE"
 )
 
 process_noaa_file <- function(file_path, loc_id) {
@@ -158,8 +156,8 @@ print("Combining all processed weather datasets...")
 
 all_weather_data <- bind_rows(
   toronto_weather_data,  
-  noaa_weather_data#,      
-  #newcomb_weather_data,
+  noaa_weather_data,      
+  newcomb_weather_data,
 )
 
 
@@ -376,8 +374,14 @@ df_all_daily <- read_parquet(directory) %>%
     breakfast_price_real = breakfast_window_avg_item_price / (Value / cpi_base),
     textured_price_real = textured_window_avg_item_price / (Value / cpi_base),
     untextured_price_real = untextured_window_avg_item_price / (Value / cpi_base),
-    inflation = Value
-  ) %>% 
+    chicken_price_real = chicken_window_avg_item_price / (Value / cpi_base),
+    dairy_price_real = dairy_window_avg_item_price / (Value / cpi_base),
+    breakfast_t2_price_real = breakfast_t2_window_avg_item_price / (Value / cpi_base),
+    textured_t2_price_real = textured_t2_window_avg_item_price / (Value / cpi_base),
+    untextured_t2_price_real = untextured_t2_window_avg_item_price / (Value / cpi_base),
+    chicken_t2_price_real = chicken_t2_window_avg_item_price / (Value / cpi_base),
+    dairy_t2_price_real = dairy_t2_window_avg_item_price / (Value / cpi_base),
+    inflation = Value) %>% 
   { print(dim(.)); . } %>%
   left_join(all_weather_data, by = c("location_id", "created_at")) %>%
   { print(dim(.)); . } %>% # check that merge was done correctly

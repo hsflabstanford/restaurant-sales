@@ -93,6 +93,7 @@ def return_dir():
 # Monkey patching
 pd.DataFrame.print = lambda df: print(df.to_string())
 pd.Series.print = lambda s: print(s.to_string())
+pd.Index.print = lambda idx: print(idx.to_series().reset_index(drop=True).to_string())
 def modifs(df, item): 
     df = df.assign(bool_mask = lambda df: df.item_name == item)
     if df.bool_mask.any():
