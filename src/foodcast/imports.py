@@ -18,7 +18,9 @@ import time
 import itertools
 import math
 import os
+import ast
 from pathlib import Path
+import pickle
 import re
 import gc
 import tabulate
@@ -249,7 +251,7 @@ def load_gaps():
 
 __all__ = ['np', 'pd', 'DateOffset', 'pyarrow',  'yaml',
            'plt', 'mcolors', 'cm', 'mpatches', 'inset_axes', 'FuncFormatter', 'sns', 
-           'tqdm', 'itertools', 'math', 'os', 're', 'gc', 'Path', 'tabulate', 'display', 'Markdown', 'unicodedata',
+           'tqdm', 'itertools', 'math', 'os', 're', 'gc', 'pickle','ast','Path', 'tabulate', 'display', 'Markdown', 'unicodedata',
            'sp', 'sm', 'smf', 'ARIMA', 'StandardScaler', 
            'plot_time_series', 'plot_time_series_subset', 
            'fully_relabel_and_consolidate', 'rename_items', 'rename_items_by_modifications', 'remove_numbers', 
