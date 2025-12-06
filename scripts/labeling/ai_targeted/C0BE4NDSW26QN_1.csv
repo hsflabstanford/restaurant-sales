@@ -129,6 +129,7 @@ Hot Sauce,[],Hot sauce - vegan,True,True,False
 Hummus,[],Hummus - vegan,True,True,False
 Ice Cream Sandwich,"['sweet_dairy', 'egg']",Ice cream sandwich,False,True,False
 Impossible Burger,"['savory_dairy', 'beef_or_pork_burger']",Impossible patty with cheese [FIXED: Burger format - vegan burger patty],False,True,False
+Beyond Burger,"['savory_dairy', 'beef_or_pork_burger']",Beyond patty with cheese [FIXED: Burger format - vegan burger patty],False,True,False
 Italian,"['chunked_beef_or_pork', 'savory_dairy']",Italian cold cuts,False,False,False
 Italian Sausage,['sausage'],Italian sausage,False,False,False
 Jerk Chicken,['unfried_chicken'],Jerk chicken,False,False,False

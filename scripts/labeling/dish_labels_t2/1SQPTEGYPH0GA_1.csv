@@ -35,11 +35,11 @@ Caprese,False,True,False,False,False,False,False,False,False,False,False,False,F
 Caprese Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Carbonara,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
 Cheesecake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
-Chicken Parm And Spaghetti,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
-Chicken Parm Sandwich,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Chicken Parm And Spaghetti,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Chicken Parm Sandwich,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
 Chicken Parm Side,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
 Chicken Parm Sliders,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
-Chicken Parmesan,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Chicken Parmesan,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
 Chocolate,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
 Chocolate Cake,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
 Chocolate Chip Cookie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
@@ -92,9 +92,9 @@ Gnocchi,False,True,False,False,False,False,False,False,False,False,False,False,F
 H Penne Vodka,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Hh Crow Canyon,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Hh Meat And Cheese,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
-Impossible Meatball Sandwich,True,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False
-Impossible Meatball Side,True,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False
-Impossible Sausage Sandwich,True,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Impossible Meatball Sandwich,True,True,True,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False
+Impossible Meatball Side,True,True,True,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False
+Impossible Sausage Sandwich,True,True,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
 Italian Cuban,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Italian Dinner,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Italian Field Greens,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
@@ -113,7 +113,7 @@ Macaroni Monday,False,True,False,False,False,False,False,False,False,False,False
 Macaroon,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
 Meat And Cheese,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Meatball Sandwich,False,False,True,False,False,False,False,False,True,False,False,False,False,False,True,False,False,False,False
-Meatball Side,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,False,False
+Meatball Side,False,False,True,False,False,False,False,False,True,False,False,False,False,False,True,False,False,False,False
 Mini Pie,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
 Mmlocal Peppers Lg,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Mmlocal Pickles,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
@@ -144,7 +144,7 @@ Penne With Pesto,False,True,False,False,False,False,False,False,False,False,Fals
 Pepperoni,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Perugina Chocolates,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
 Pesto,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
-Pesto Chicken Sandwich,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
+Pesto Chicken Sandwich,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
 Pistachios,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Pizza Logs,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Polenta,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
@@ -199,7 +199,7 @@ Sliders,False,False,False,False,False,False,False,False,False,False,False,False,
 Snickerdoodle,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
 Soup,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Spaghetti,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
-Spaghetti No Meatball,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Spaghetti No Meatball,False,True,True,False,False,False,False,False,True,False,False,False,False,False,True,False,False,False,False
 Spaghetti Parm,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
 Spaghetti Squash,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Spaghettini,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False

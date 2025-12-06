@@ -53,8 +53,8 @@ Hard Boiled Egg,False,True,False,False,False,False,False,False,False,False,False
 Hard Boiled Egg 2 Pc,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
 Egg Quinoa Chickpeas,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
 Yogurt,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
-Beyond Burger,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
-Beyond Sausage,True,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Beyond Burger,True,True,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
+Beyond Sausage,True,True,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
 Smoothie,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Kids Combo,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False,False
 Cliff Duos,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False

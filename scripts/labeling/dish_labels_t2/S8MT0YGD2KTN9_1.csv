@@ -11,8 +11,8 @@ MIA,False,False,False,False,False,False,True,False,False,False,False,False,False
 Mamacita,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
 Ribs,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Ultimate BC Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
-V-Urger,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
-Venezuelan Cowboy,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+V-Urger,True,True,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
+Venezuelan Cowboy,False,False,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
 Volcano Fries,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,False,False
 Lil Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
 Bbq Wings,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
@@ -48,8 +48,8 @@ Big Mama,False,False,False,False,False,False,True,False,False,False,False,False,
 Lil Mama,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
 Beef Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
 Bacon Cheeseburger,False,False,False,False,False,False,True,False,False,False,True,False,False,False,True,False,False,False,False
-Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
-Cheeseburger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Burger,False,False,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
+Cheeseburger,False,False,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
 Guay Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
 Guay Fries,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Hot Dog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False

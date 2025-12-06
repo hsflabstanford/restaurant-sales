@@ -27,7 +27,10 @@ Fruit Platter,"['Large Fruit Platter', 'Fruit Platter']",Fruit platter size vari
 Hummus,"['Hummus Pita', 'Hummus Platter']",Hummus dish variants.
 Mediterranean,"['Mediterranean Salad', 'Mediterranean Sandwich', 'Santorini Salad']",Mediterranean dish variants.
 Veggie Platter,"['Large Vegetable Platter', 'Veggie Platter']",Vegetable platter size variants.
-Southwest,"['Southwest Panini (V)', 'Southwest Panini Box', 'Southwest Retriever', 'Southwest Retriever Box', 'Southwest Retriever Sandwich', 'Southwest Sandwich', 'Southwest Sausage Egg Cheese (V)', 'Southwest Sec Box (V)', 'Sw Sausage Egg Cheese (V)']",Southwest dish variants.
+Southwest Panini,"['Southwest Panini (V)', 'Southwest Panini Box', 'Southwest Sandwich']",Southwest dish variants.
+Southwest Sausauge Egg & Cheese,"['Southwest Sausage Egg Cheese (V)', 'Sw Sausage Egg Cheese (V)']",Southwest sausage egg & cheese dish variants.
+Southwest Sec,"['Southwest Sec Box (V)']",Southwest sec box variant.
+South Retriever,"['Southwest Retriever', 'Southwest Retriever Box', 'Southwest Retriever Sandwich']",Southwest retriever dish variants.
 Spinach Feta Tart,"['Spinach Feta Tart Platter', 'Spinach Feta Tart']",Spinach feta tart variants.
 Sec Box,"['Sec Breakfast Box', 'Sec Box']",Sec box variants.
 Arbutus Arts Festival Special,['Arbutus Arts Festival Special'],Individual item (was in misc group)
@@ -42,7 +45,7 @@ Spinach Bacon Salad,['Spinach Bacon Salad'],Individual item (form factor split)
 Wrap Box,['Blt Wrap Box'],Wrap box variants.
 Chicken Apple Arugula Sandwich,['Chicken Apple Arugula Sandwich'],Individual item (form factor split)
 Tomato Basil Panini,['Tomato Basil Panini'],Individual item (form factor split)
-Chipotle Sausage Egg Cheese (V),['Chipotle Sausage Egg Cheese (V)'],Individual item (form factor split)
+Chipotle Sausage Egg Cheese,['Chipotle Sausage Egg Cheese (V)'],Individual item (form factor split)
 Scrambled Eggs Wheat Toast,['Scrambled Eggs Wheat Toast'],Individual item (form factor split)
 Burger,['Beyond Burger'],Beyond burger
 Lemon Bundt Cake,['Lemon Bundt Cake'],Individual item (form factor split)

@@ -6,7 +6,7 @@ Roasted Red Pepper Hummus,True,True,False,False,False,False,False,False,False,Fa
 Hummus,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 3 Cheese Caramelized Onion Dip,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Buffalo Broccoli Dip,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
-Vegan Spinach Dip,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Vegan Spinach Dip,True,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Cucumber Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Elote Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Red Cabbage Apple Slaw,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
@@ -17,7 +17,7 @@ Caprese Salad,False,True,False,False,False,False,False,False,False,False,False,F
 Coleslaw,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
 Daikon Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 German Potato Salad,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False
-Kalamata Cucumber Salad,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Kalamata Cucumber Salad,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Rainbow Pride Salad,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Roasted Broccoli Salad,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Salad Meal,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
@@ -26,14 +26,14 @@ Tuscan White Bean Salad,True,True,False,False,False,False,False,False,False,Fals
 Poultry Salad,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False
 Roasted Cauliflower,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Cheese Pizza,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
-Pepperoni Pizza,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+Pepperoni Pizza,False,False,True,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
 White Pizza,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
-Red Pie (Vegan) Pizza,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Red Pie (Vegan) Pizza,True,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Margarita Pizza,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
-Pie Of The Week Pizza,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pie Of The Week Pizza,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 New Year Pizza (Onsite Order),False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 New Year Special Good Luck Pork And Sauerkraut,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
-Pizza,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Pizza,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Soft Pretzel And Big Hop Beer Mustard,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Gratitude Pretzel,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Pretzels,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
@@ -57,7 +57,7 @@ Cheese Board,False,True,False,False,False,False,False,False,False,False,False,Fa
 Posole,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Soup Of The Day,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Beef Chili,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False
-Vegan Chili,True,True,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False
+Vegan Chili,True,True,True,False,False,False,False,True,False,False,False,False,False,False,True,False,False,False,False
 Pork Chili,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Green Chile,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
 Pork Green Chile,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False

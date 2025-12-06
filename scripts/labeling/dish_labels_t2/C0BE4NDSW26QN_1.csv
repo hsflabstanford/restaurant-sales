@@ -22,7 +22,7 @@ Bavarian Pretzel,False,True,False,False,False,False,False,False,False,False,Fals
 Bean Dip,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Beef And Cheddar,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Beef Asian,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
-Beef Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Beef Burger,False,False,True,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
 Beef Jerky,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Beef Meat,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Beef Sandwich,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
@@ -125,7 +125,8 @@ Hot Dog/Sausage,False,False,False,False,False,False,False,False,False,True,False
 Hot Sauce,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Hummus,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Ice Cream Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
-Impossible Burger,False,True,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Impossible Burger,False,True,True,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
+Beyond Burger,False,True,True,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False
 Italian,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Italian Sausage,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
 Jerk Chicken,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False

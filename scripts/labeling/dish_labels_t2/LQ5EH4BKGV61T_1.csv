@@ -3,9 +3,9 @@ item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or
 Hot Dog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
 Sausage Dog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
 Sausage Dog Combo,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
-Veggie Dog,True,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
-Veggie Dog Combo,True,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
-Beyond Burger,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
+Veggie Dog,True,True,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Veggie Dog Combo,True,True,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Beyond Burger,True,True,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
 Veggie Burger,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
 Chicken Tenders,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
 Chicken Tenders Combo,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
@@ -17,13 +17,13 @@ Cheese Sticks,False,True,False,False,False,False,False,False,False,False,False,F
 Nachos,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Combo,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 catering_takeout,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
-#2 Veggie Dog Combo,True,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+#2 Veggie Dog Combo,True,True,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
 #3 Sausage Dog Combo,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
 #4 Chicken Tenders Combo,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
 #4 Hamburger Combo,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
 #5 Hamburger Combo,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
 #5 Wing Combo,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
-#6 Beyond Burger Combo,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
+#6 Beyond Burger Combo,True,True,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
 #6 Veggie Burger Combo,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
 Deluxe Burger,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False
 Deluxe Dog,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
