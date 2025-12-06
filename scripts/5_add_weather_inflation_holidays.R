@@ -67,7 +67,9 @@ for (direc2 in c(
   "proportion_targeted/all_locations_daily_chicken_dishes_count",
   "proportion_targeted/all_locations_daily_chicken_dishes_presence",
   "proportion_targeted/all_locations_daily_dairy_dishes_count",
-  "proportion_targeted/all_locations_daily_dairy_dishes_presence")){
+  "proportion_targeted/all_locations_daily_dairy_dishes_presence",
+  "proportion_targeted/all_locations_daily_egg_dishes_count",
+  "proportion_targeted/all_locations_daily_egg_dishes_presence")){
 
   directory <- paste0(direc1, 'aggregated/', direc2, ".parquet")
 
@@ -114,14 +116,27 @@ read_parquet(directory) %>% glimpse()
     ungroup() %>%
     left_join(cpi_food_away, by = c("year", "month")) %>%
     mutate(
+      # Main prices
       vegan_price_real = vegan_window_avg_item_price / (Value / cpi_base), # inflation-adjusted
       vegetarian_price_real = vegetarian_window_avg_item_price / (Value / cpi_base),
       meat_price_real = meat_window_avg_item_price / (Value / cpi_base),
+      
+      # Proportion analysis prices
+      breakfast_p_price_real = breakfast_p_window_avg_item_price / (Value / cpi_base),
+      textured_p_price_real = textured_p_window_avg_item_price / (Value / cpi_base),
+      untextured_p_price_real = untextured_p_window_avg_item_price / (Value / cpi_base),
+      chicken_p_price_real = chicken_p_window_avg_item_price / (Value / cpi_base),
+      dairy_p_price_real = dairy_p_window_avg_item_price / (Value / cpi_base),
+      egg_p_price_real = egg_p_window_avg_item_price / (Value / cpi_base),
+
+      # Targeted analysis prices
       breakfast_price_real = breakfast_window_avg_item_price / (Value / cpi_base),
       textured_price_real = textured_window_avg_item_price / (Value / cpi_base),
       untextured_price_real = untextured_window_avg_item_price / (Value / cpi_base),
       chicken_price_real = chicken_window_avg_item_price / (Value / cpi_base),
       dairy_price_real = dairy_window_avg_item_price / (Value / cpi_base),
+
+      # T2 prices
       breakfast_t2_price_real = breakfast_t2_window_avg_item_price / (Value / cpi_base),
       textured_t2_price_real = textured_t2_window_avg_item_price / (Value / cpi_base),
       untextured_t2_price_real = untextured_t2_window_avg_item_price / (Value / cpi_base),
