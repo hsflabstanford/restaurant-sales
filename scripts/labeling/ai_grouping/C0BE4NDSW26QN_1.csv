@@ -1,115 +1,112 @@
 canonical_name,variants,reasoning
-Add Bacon,['Add Bacon'],These are all variations of adding or ordering a side of bacon.
-B-L-T,['B-L-T'],Grouping BLT and PLT sandwiches.
-Bavarian Pretzel,['Bavarian Pretzel'],Both refer to the same pretzel item on the menu.
-Bean Dip,['Bean Dip'],Grouping bean dips.
-Beef And Cheddar,['Beef And Cheddar'],Grouping beef and cheddar sandwiches.
-Beet Salad,['Beet Salad'],Grouping beet salads.
-Beignets,['Beignets'],Grouping beignets.
-Bratwurst,['Bratwurst'],All are types or specials of bratwurst.
-Brussel Salad,['Brussel Salad'],Grouping brussel sprout salads.
-Buffalo Chicken Pizza,['Buffalo Chicken Pizza'],Grouping specific pizza type.
-Caesar Salad,['Caesar Salad'],Grouping Caesar-style salads and related items.
-Cake Pop,['Cake Pop'],Grouping cake pops.
-Cauliflower App,['Cauliflower App'],Grouping cauliflower appetizers.
-Chicken Sandwich,['Chicken Sandwich'],Grouping various forms of chicken sandwiches.
-Chicken Waffle,['Chicken Waffle'],Grouping chicken and waffles.
-Chicken Wings,['Chicken Wings'],Consolidating all chicken wing entries.
-Chips And Dip,['Chips And Dip'],All refer to chips served with a form of dip.
-Chocolate Bar,['Chocolate Bar'],Grouping chocolate bars.
-Cinnamon Buns,['Cinnamon Buns'],Grouping cinnamon buns and sticky buns.
-Club,['Club'],Grouping club sandwiches.
-Cookie,['Cookie'],Grouping all cookie-related items.
-Cuban Sandwich,['Cuban Sandwich'],Consolidating all names for the Cuban sandwich.
-DeejayAos 12 Amish Eggs,['DeejayAos 12 Amish Eggs'],Grouping eggs.
-Egg Rolls,['Egg Rolls'],Grouping all types of egg rolls.
-Fish Sammich,['Fish Sammich'],Grouping fish sandwiches.
-Fries,['Fries'],Grouping all variations of fries.
-Grilled Cheese,['Grilled Cheese'],Consolidating all types of grilled cheese sandwiches.
-Ham And Cheese,['Ham And Cheese'],Grouping ham and cheese sandwiches and related specials.
-Hoagie,['Hoagie'],Grouping hoagies.
-Hot Dog,['Hot Dog'],Consolidating all hot dog variations.
-Hot Sauce,['Hot Sauce'],Grouping hot sauces.
-Hummus,['Hummus'],Grouping hummus items.
-Impossible Burger,['Impossible Burger'],Grouping Impossible Burger items.
-Italian Sausage,['Italian Sausage'],Grouping types of Italian sausage.
-KilbaneAos,['KilbaneAos'],Grouping KilbaneAos items.
-Mouth Candy,['Mouth Candy'],Grouping Mouth Candy items.
-Mushroom Salad,['Mushroom Salad'],Same salad with variations.
-Obatzda,['Obatzda'],Grouping Obatzda items.
-Oyster Po'boy,"[""Oyster Po'boy""]",Grouping oyster po'boys.
-Panzanella Salad,['Panzanella Salad'],Same salad with variations.
-Pepperoni Pizza,['Pepperoni Pizza'],Grouping specific pizza type.
+Add Bacon,"['Add Bacon', 'DeejayAos Bacon']",These are all variations of adding or ordering a side of bacon.
+B-L-T,"['B-L-T', 'Blt', 'Plt', 'Special- ‚Äúplt‚Äù', 'The Blt', 'Special- AupltAu']",Grouping BLT and PLT sandwiches.
+Bavarian Pretzel,"['Bavarian Pretzel', 'Pretzel', 'Spent Grain Bavarian Pretzel']",Both refer to the same pretzel item on the menu.
+Bean Dip,"['Bean Dip', 'Black Bean Dip']",Grouping bean dips.
+Beef And Cheddar,"['Beef And Cheddar', 'Beef N Ched', 'Special - Beef N Chedda']",Grouping beef and cheddar sandwiches.
+Beet Salad,"['Beet And Butternut Salad', 'Beet And Butternut Salad with Chicken', 'Beet Salad', 'Beet Salad with Chicken']",Grouping beet salads.
+Beignets,"['Beignets', 'Special - Beignets', 'Special Beignets']",Grouping beignets.
+Bratwurst,"['Bratwurst', 'Deejay‚Äôs Bratwurst', 'Frozen Bratwurst', 'DeejayAos Bratwurst', 'Special - BobAos Banger']",All are types or specials of bratwurst.
+Brussel Salad,"['Brussel Salad', 'Brussel Salad without Bacon']",Grouping brussel sprout salads.
+Buffalo Chicken Pizza,"['Pizza - Buffalo Chicken', 'Pizza Buffalo Chicken']",Grouping specific pizza type.
+Caesar Salad,"['Caesar Salad', 'Caeser Wedge', 'Cesar Salad', 'Mediterranean Salad']",Grouping Caesar-style salads and related items.
+Cake Pop,"['Br Cake Pop', 'Cake Pop']",Grouping cake pops.
+Cauliflower App,"['Cauliflower App', 'Fried Cauliflower', 'Special Cauliflower', 'Vegan Cauliflower App', 'Vegan Fried Cauliflower', 'Vegan Special Cauliflower']",Grouping cauliflower appetizers.
+Chicken Sandwich,"['Brunch Chicken Sandwich', 'Crispy Chicken Sandwich', 'Greek Chicken Sandwich', 'Spring Chicken Sandwich']",Grouping various forms of chicken sandwiches.
+Chicken Waffle,"['Chicken + Waffle', 'Special - Chicken & Waffle', 'Soho Collab: Chicken NAo Waffles']",Grouping chicken and waffles.
+Chips And Dip,"['Carmelized Onion Dip', 'Chips & Dip', 'Chips & Dip - Mexican Style', 'Chips And Dip', 'Greek Dip', 'Obatza Dip', 'Chips Dip']",All refer to chips served with a form of dip.
+Chocolate Bar,"['Chocolate Bar', 'Cleveland Chocolate Company Dark WSea Salt']",Grouping chocolate bars.
+Cinnamon Buns,"['Cinnamon Buns', 'Special - Sasha‚Äôs Sticky Buns', 'Sticky Bun', 'Sweet Bun']",Grouping cinnamon buns and sticky buns.
+Club,"['Club', 'The Club']",Grouping club sandwiches.
+Cookie,"['Bake-At-Home Cookies 4Pk', 'Bba Coffee Cookies', 'Bba Cookies 12Oz', 'Bba Cookies N Milk', 'Cookie', 'Cookie Trio', 'Cookies And Milk', 'Cookies And Milk 12Oz', 'Day Old Cookie', 'Kitchen Sink Cookie', 'Kitchen Sink Mini Cookies (4)', 'Mini Cookie', 'Rasp/Vanilla Bba Cookies 500Ml', '\uf8ffÜç™ Mini Cookie', 'RaspVanilla Bba Cookies 500Ml']",Grouping all cookie-related items.
+Cuban Sandwich,"['Cuban', 'Cubano', 'Cubano De Juan', 'Cubano De Juano']",Consolidating all names for the Cuban sandwich.
+DeejayAos 12 Amish Eggs,"['12 Amish Eggs', '12 Eggs', 'Deejay‚Äôs 12 Amish Eggs']",Grouping eggs.
+Egg Rolls,"['Cassoulet Egg Rolls', 'Egg Roll', 'Egg Rolls', 'Irish Egg Rolls', 'Mushroom Eggrolls', 'Special - Egg Rolls', 'Special - Irish Egg Rolls']",Grouping all types of egg rolls.
+Fish Sammich,"['Fish Sammich', 'Lenten Special - Fried Fish-Wich', 'Special - Fish Sando', 'Special - Fish-Wich', 'Special - Fried Fish-Wich']",Grouping fish sandwiches.
+Fries,"['Basket Of Fries', 'Beast Fries', 'Chili Fries', 'Fries', 'Hand-Cut Fries', 'Nacho Fries: Zesty Fries, Carnitas, Lime Crema, Cheese Sauce, Gochujang Drizzle, Scallions', 'Porky Fries', 'Special - Loaded ‚Äúfrench‚Äù French Fries', 'Special - Porky Fries', 'Special Chili Fries', 'Vindaloo Fries', 'Special - Loaded AufrenchAu French Fries']",Grouping all variations of fries.
+Grilled Cheese,"['Apple Grilled Cheese', 'Berry + Basil Grilled Cheese', 'Brie & Berry Grilled Cheese', 'Caprese Grilled Cheese', 'French Onion Grilled Cheese', 'Grilled Cheese', 'Grilled Chz', 'Jalape√±O Grilled Cheese', 'Kids Grilled Cheese', 'Mediterranean Grilled Cheese', 'Mushies And Swiss Grilled Cheese', 'Pimento Grilled Cheese', 'Pumpkin Grilled Cheese', 'Shaksuka Grilled Cheese', 'Special - Bnb Grilled Cheese', 'Spinach And Artichoke Grilled Cheese', 'Squashed Grilled Cheese', 'Tomato + Basil Grilled Cheese', 'Winter Squash Grilled Cheese', 'Berry Basil Grilled Cheese', 'Brie Berry Grilled Cheese', 'JalapeO Grilled Cheese', 'Tomato Basil Grilled Cheese']",Consolidating all types of grilled cheese sandwiches.
+Ham And Cheese,"['Brittney‚Äôs Ham Sandwich', 'Ham And Cheese', 'Ham And Cheese Brunch', 'Ham And Cheese Special', 'Special Ham And Brie', 'BrittneyAos Ham Sandwich']",Grouping ham and cheese sandwiches and related specials.
+Hoagie,"['Hoagie', 'Hoagie Hoagie', 'Smoked Pork Hoagie', 'Special - Hoagie', 'Special - Hoagie Mouth', 'Special - Roastie Hoagie']",Grouping hoagies.
+Hot Dog,"['12 Dogs', 'Hot Dog', 'Kids Hot Dog', 'Nati Dog', 'Special - Argentinian Hot Dog', 'Pigs In A Blanket']",Consolidating all hot dog variations.
+Hot Sauce,"['Hot Sauce', 'Hot Sauce - Chili Of The Corn', 'Hot Sauce - House Green', 'Hot Sauce - House Hot']",Grouping hot sauces.
+Hummus,"['Carrot Hummus', 'Frijoles Refritos Hummus', 'Hummus', 'Hummus Plate', 'Special - Hummus', 'Special Hummus', 'White Bean Hummus']",Grouping hummus items.
+Impossible Burger,"['Impossible Burg', 'Impossible Burger', 'Impossible Patty', 'DeejayAos Burgers']",Grouping Impossible Burger items.
+Italian Sausage,"['Deejay‚Äôs Italian Sausage', 'Frozen Sweet Italian Sausage', 'Italian Sausage', 'DeejayAos Italian Sausage']",Grouping types of Italian sausage.
+KilbaneAos,"['Kilbane‚Äôs', '‚Òòô∏È Kilbane‚Äôs', 'OooE KilbaneAos']",Grouping KilbaneAos items.
+Mouth Candy,"['Mouth Candy', 'Mouth Candy Ripa', 'Candy']",Grouping Mouth Candy items.
+Mushroom Salad,"['Mushroom Salad with Chicken', 'Special - Mushroom Salad']",Same salad with variations.
+Obatzda,"['Obatzda', 'Obatzda!!']",Grouping Obatzda items.
+Oyster Po'boy,"['Oyster Po‚Äôboy', 'Special - Oyster Po‚Äôboy', 'Oyster PoAoboy', 'Special - Aoshroom PoAo Boy', 'Special - Oyster PoAoboy', 'Special - PoAo Boi']",Grouping oyster po'boys.
+Panzanella Salad,"['Panzanella Salad', 'Special - Charred Broccoli Panzanella Salad']",Same salad with variations.
+Pepperoni Pizza,"['Pepperoni Pizza', 'Pizza - Pepperoni', 'Pizza Pepperoni']",Grouping specific pizza type.
 Perogies,['Perogies'],Grouping perogies.
-Pizza - Bahn Mi,['Pizza - Bahn Mi'],Grouping Bahn Mi pizza.
-Pizza - Margherita,['Pizza - Margherita'],Same pizza type.
-Pizza - Mushroom,['Pizza - Mushroom'],Same pizza type.
-Pizza - Pesto,['Pizza - Pesto'],Same pizza type.
-Pizza - Sausage,['Pizza - Sausage'],Same pizza type.
-Popcorn,['Popcorn'],Grouping popcorn.
-Pot De Creme,['Pot De Creme'],Grouping pot de creme.
-Reuben,['Reuben'],Consolidating all Reuben and Rachel sandwich variations.
-Roast Beef Sandwich,['Roast Beef Sandwich'],All refer to a roast beef sandwich.
-Sh Elec,['Sh Elec'],Grouping electric items.
-Shrimp Roll,['Shrimp Roll'],Grouping shrimp rolls.
-Sliders,['Sliders'],Grouping sliders.
-Soba Salad,['Soba Salad'],Same salad with variations.
-Special - Corn Chowdah,['Special - Corn Chowdah'],Individual item (was in misc group)
-Spring Bean Salad,['Spring Bean Salad'],Same salad with variations.
-Spring Salad,['Spring Salad'],Grouping spring salads.
-Squash Salad,['Squash Salad'],Same salad with variations.
-Summer Salad,['Summer Salad'],Grouping summer salads.
-Treat Of The Day,['Treat Of The Day'],Grouping 'Treat of the Day' items.
-Tuna,['Tuna'],Grouping tuna items.
-Turkey,['Turkey'],Grouping all variations of turkey sandwiches.
-Watermelon Salad,['Watermelon Salad'],Same salad with variations.
-Wings,['Wings'],Consolidating all chicken wing entries.
-Winter Spinach Salad,['Winter Spinach Salad'],Same salad with variations.
-Naan Mi,['Naan Mi'],"Same item, just hyphen vs space difference."
-Pork Belly Tonkatsu,['Pork Belly Tonkatsu'],Typo fix - 'Tonkmattsu' is misspelling of 'Tonkatsu'.
+Pizza - Bahn Mi,"['Pizza - Bahn Mi', 'Pizza Bahn Mi', 'Vegetarian Pizza - Bahn Mi']",Grouping Bahn Mi pizza.
+Pizza - Margherita,"['Pizza - Margherita', 'Pizza Margarita', 'Pizza Margherita']",Same pizza type.
+Pizza - Mushroom,"['Pizza - Foraged Mushroom', 'Pizza Mushroom']",Same pizza type.
+Pizza - Pesto,['Pizza - Pesto Pie'],Same pizza type.
+Pizza - Sausage,"['Pizza - Sausage', 'Pizza Sausage']",Same pizza type.
+Popcorn,"['Pig Popcorn', 'Pizza Popcorn', 'Popcorn', 'Popcorn Mix']",Grouping popcorn.
+Pot De Creme,"['Pot De Creme', 'Pot De Creme For Here', 'Pot De Creme To Go']",Grouping pot de creme.
+Reuben,"['Hot Rachel', 'Lamb Reuben', 'Special - Rachel', 'Special- Rakel', 'The Baker‚Äôs Russian']",Consolidating all Reuben and Rachel sandwich variations.
+Roast Beef Sandwich,"['Hot Roast Beef Special', 'Roast Beast', 'Roast Beef', 'Roast Beef Sammie', 'Roast Beef Sando', 'Roast Beef Sandwich', 'Roast Beef Sandwich Special', 'Special- Roast Beef']",All refer to a roast beef sandwich.
+Shrimp Roll,"['Lenten Special - Shrimp Roll', 'Shrimp Roll', 'Special - Po‚Äô Boi', 'Special - Scrimp Roll', 'Special - Shrimp Roll', 'Lenten Special - ""Peel Eat"" Shrimp Basket']",Grouping shrimp rolls.
+Sliders,"['Buffalo Sliders', 'Sliders', 'Wing Sliders']",Grouping sliders.
+Soba Salad,"['Noble Soba Salad', 'Vegan Soba Salad']",Same salad with variations.
+Spring Bean Salad,"['Spring Bean Salad', 'Spring Bean Salad with Chicken']",Same salad with variations.
+Spring Salad,"['Spring Salad', 'Spring Salad with Meat', 'Vegan Spring Salad']",Grouping spring salads.
+Squash Salad,"['Squash Salad', 'Squash Salad with Chicken']",Same salad with variations.
+Summer Salad,"['Summer Salad', 'Summer Salad Special', 'Summer Salad with Chicken']",Grouping summer salads.
+Treat Of The Day,"['Carina‚Äôs Treat Of The Day', 'Sashajoe‚Äôs Treat Of The Day', 'Sasha‚Äôs Treat Of The Day', 'Treat Of The Day', 'CarinaAos Treat Of The Day', 'SashaAos Treat Of The Day', 'SashajoeAos Treat Of The Day']",Grouping 'Treat of the Day' items.
+Tuna,"['Lenten Special - Tuna Melt', 'Special - Tuna Melt', 'Tuna', 'Tuna 16Oz']",Grouping tuna items.
+Turkey,"['Bills Turkey', 'Bill‚Äôs Turkey', 'Smoked Turkey', 'Turkey', 'Turkey Club', 'Turkey Sam', 'Turkey Sand', 'Turkey Sando', 'Turkey Sandwich', 'Turkey Turkey', 'BillAos Turkey']",Grouping all variations of turkey sandwiches.
+Watermelon Salad,"['Watermelon Salad', 'Watermelon Salad with Chicken']",Same salad with variations.
+Wings,"['12 Wings Special', '6 Wings', '6 Wings Wing Night', 'Ann‚Äôy Wings', 'Carnival Wings', 'Wings', 'Wings N‚Äô Dones', 'AnnAoy Wings', 'Fried Fish And Wings']",Consolidating all chicken wing entries.
+Winter Spinach Salad,"['Winter Spinach Salad', 'Winter Spinach Salad with Chicken']",Same salad with variations.
+Naan Mi,"['Naan Mi', 'Naan-Mi']","Same item, just hyphen vs space difference."
+Pork Belly Tonkatsu,"['Pork Belly Tonkatsu', 'Pork Belly Tonkmattsu']",Typo fix - 'Tonkmattsu' is misspelling of 'Tonkatsu'.
 Bill'S Turkey Sandwich,"[""Bill'S Turkey Sandwich""]",Same sandwich with different name formats.
 Smoked Turkey Sandwich,['Smoked Turkey Sandwich'],Same item - abbreviated vs full name.
-KilbaneAos,['KilbaneAos'],Same item - with and without apostrophe encoding.
-Noble Boy,['Noble Boy'],Same item with and without The prefix.
-Asparagus Pizza,['Asparagus Pizza'],"Same pizza, word order reversed."
-Potato Pizza,['Potato Pizza'],"Same pizza, word order reversed."
-Arugula Salad,"['Arugula Salad with Chicken', 'Arugula Salad']",Same salad with protein add-on.
-Brussels Sprouts,"['Brussee Sprouts', 'Brussels Sprouts']",Typo variant.
-Brownie,"['Luna Rich Chocolate Brownie', 'Brownie Sandwich', 'Brownie']",Brownie product variants.
-Buffalo Cauliflower,"['Vegan Buffalo Cauliflower', 'Buffalo Cauliflower']",Same dish with vegan label.
-Burrata,"['Burrata Salad', 'Burrata']",Burrata dish variants.
-Cheesesteak,"['Berbere Cheesesteak', ""Joe'S Cheesesteak"", ""Kenny'S Cheesesteak"", 'Special Berbere Cheesesteak', 'Special - Cheesesteak', 'Special - Smoky Cheesesteak', 'Cheesesteak']",Cheesesteak variants.
-Chicken Salad,"['Curry Salad Sammie', 'Curry Salad Sandwich', 'Chicken Salad']",Chicken/curry salad sandwich variants.
-Crudite,"['CruditS', 'Crudite']",Same item different spelling.
-Dumplings,"['Dumps', 'Special - Shrimp Dumplings', 'Dumplings']",Dumpling variants.
-Egg Sando,"['Sausage Egg Sando', 'Egg Sando']",Egg sandwich variants.
-Everything Bagel Salad,"['Vegetarian Everything Bagel Salad', 'Everything Bagel Salad']",Same salad with veg option.
-Fried Chicken,"['Fried Chicken Biscuit', 'Special - Fried Chicken', 'Piece Of Chicken', 'Special - Half Chicken', 'Special- 12 Chicken', 'Fried Chicken']",Fried chicken dish variants.
-Italian,"['Italian Beef', 'Italian Focaccia', 'Italian Wrap', 'Italian']",Italian sandwich variants.
-Katsu Sando,"['Katsu Special', 'Katsu Sando']",Katsu sandwich variants.
-Kielbasa,"['DeejayAos Kielbasa', 'Kielbasa']",Kielbasa variants.
-Andouille,"['DeejayAos Andouille', 'Pizza Andouille', 'Andouille']",Andouille sausage variants.
-Meatball Sub,"['Special Meatball Segal', 'Gnarly Balls', 'Llama Balls', 'Meatball Sub']",Meatball dish variants.
+KilbaneAos,"['Kilbane‚Äôs', '‚Òòô∏È Kilbane‚Äôs']",Same item - with and without apostrophe encoding.
+Noble Boy,"['Noble Boy', 'The Noble Boy']",Same item with and without The prefix.
+Asparagus Pizza,"['Asparagus Pizza', 'Pizza Asparagus']","Same pizza, word order reversed."
+Potato Pizza,"['Pizza Potato', 'Potato Pizza']","Same pizza, word order reversed."
+Arugula Salad,"['Arugula Salad', 'Arugula Salad with Chicken']",Same salad with protein add-on.
+Brussels Sprouts,"['Brussee Sprouts', 'Brussels Sprouts', 'Caesar Brussels Sprouts']",Typo variant.
+Brownie,"['Brownie', 'Brownie Sandwich', 'Luna Rich Chocolate Brownie', 'Brownie/Cookie']",Brownie product variants.
+Buffalo Cauliflower,"['Buffalo Cauliflower', 'Vegan Buffalo Cauliflower']",Same dish with vegan label.
+Burrata,"['Burrata', 'Burrata Salad']",Burrata dish variants.
+Cheesesteak,"['Berbere Cheesesteak', 'Cheesesteak', ""Joe'S Cheesesteak"", ""Kenny'S Cheesesteak"", 'Special - Cheesesteak', 'Special - Smoky Cheesesteak', 'Special Berbere Cheesesteak']",Cheesesteak variants.
+Chicken Salad,"['Chicken Salad', 'Curry Salad Sammie', 'Curry Salad Sandwich']",Chicken/curry salad sandwich variants.
+Crudite,"['Crudite', 'Crudit√©S']",Same item different spelling.
+Dumplings,"['Dumpling Soup', 'Dumplings', 'Dumps', 'Special - Shrimp Dumplings']",Dumpling variants.
+Egg Sando,"['Egg Sando', 'Sausage Egg Sando']",Egg sandwich variants.
+Everything Bagel Salad,"['Everything Bagel Salad', 'Vegetarian Everything Bagel Salad']",Same salad with veg option.
+Fried Chicken,"['Fried Chicken', 'Fried Chicken Biscuit', 'Piece Of Chicken', 'Special - Fried Chicken', 'Special - Half Chicken', 'Special- 1/2 Chicken', 'Special - HerbAos Chix', 'Special- 12 Chicken']",Fried chicken dish variants.
+Italian,"['Italian', 'Italian Beef', 'Italian Focaccia', 'Italian Hoagie', 'Italian Wrap', 'Sweet Italian']",Italian sandwich variants.
+Katsu Sando,"['Katsu Sando', 'Katsu Special']",Katsu sandwich variants.
+Kielbasa,"['Deejay‚Äôs Kielbasa', 'Kielbasa']",Kielbasa variants.
+Andouille,"['Andouille', 'Andouille Dog', 'Deejay‚Äôs Andouille', 'Pizza Andouille']",Andouille sausage variants.
+Meatball Sub,"['Gnarly Balls', 'Llama Balls', 'Meatball Sub', 'Special Meatball Segal']",Meatball dish variants.
 Mezze,"['Greek Mezze', 'Italian Mezze', 'Noble Mezze', 'Special - Mezze']",Mezze plate variants.
 Pork Buns,"['Pork Bun', 'Pork Buns']",Same item singular/plural.
-Pork Sandwich,"['Pork Sammy', 'Pork Tenderloin Sandy', 'Special - Bbq Pork Sando', 'Genoa Pork Sandwich', 'Special - Roast Pork', 'Special - Macau Pork', 'Special Pork', 'Special - Pork Loin', 'Special - Pork Belly']",Pork sandwich variants.
-Poutine,"['Special - Poutine', 'Poutine']",Poutine variants.
-Pulled Pork,"['Special - Pulled Pork', 'Pulled Pork']",Pulled pork variants.
-Ratatouille Sandwich,"['Vegan Ratatouille Sandwich', 'Ratatouille Sandwich']",Same sandwich with vegan label.
-Salsa,"['Watermelon Salsa', 'Salsa']",Salsa variants.
-Schnitzel,"['Special - Pork Schnitzel Sandwich', 'Schnitzel']",Schnitzel variants.
+Pork Sandwich,"['Genoa Pork Sandwich', 'Pork Sammy', 'Pork Tenderloin Sandy', 'Special - Bbq Pork Sando', 'Special - Macau Pork', 'Special - Pork Belly', 'Special - Pork Loin', 'Special - Roast Pork', 'Special Pork']",Pork sandwich variants.
+Poutine,"['Poutine', 'Special - Poutine']",Poutine variants.
+Pulled Pork,"['Pulled Pork', 'Special - Pulled Pork']",Pulled pork variants.
+Ratatouille Sandwich,"['Ratatouille Sandwich', 'Vegan Ratatouille Sandwich']",Same sandwich with vegan label.
+Salsa,"['Salsa', 'Watermelon Salsa']",Salsa variants.
+Schnitzel,"['Schnitzel', 'Special - Pork Schnitzel Sandwich']",Schnitzel variants.
 Sloppy Joe,"['Sloppi Poppi', 'Sloppy Joe']",Sloppy joe variants.
 Stuffed Peppers,"['Stuffed Pepper', 'Stuffed Peppers']",Singular/plural variant.
-Tomato N Peach,"['Tomato N Peach with Chicken', 'Tomato N Peach']",Same dish with protein.
-3 Little Pigs,"['Three Little Pigs', '3 Little Pigs']",Same item different naming.
-Po Boy,"['Lent Special - Shrimp Po Boy', 'Special - Shrimp Po Boy', 'Special - Aoshroom PoAo Boy', 'Special - PoAo Boi', 'Po Boy']",Po boy sandwich variants.
-Brat,"['Beer Brat', 'Special - Brat', 'Special - Pork Brat', 'Brat Special']",Bratwurst variants.
+Tomato N Peach,"['Tomato N Peach', 'Tomato N Peach with Chicken']",Same dish with protein.
+3 Little Pigs,"['3 Little Pigs', 'Three Little Pigs']",Same item different naming.
+Po Boy,"['Lent Special - Shrimp Po Boy', 'Po Boy', 'Special - Shrimp Po Boy', 'Special - ‚Äòshroom Po‚Äô Boy']",Po boy sandwich variants.
+Brat,"['Beer Brat', 'Brat Special', 'Cheddar Brat', 'Special - Brat', 'Special - Pork Brat']",Bratwurst variants.
 Fish Fry,"['Special - Fish Fry', 'Special - Fishywichy']",Fish fry variants.
 Apple Fritter,['Apple Fritter'],Individual item (form factor split)
 Cherry Fritter,['Cherry Fritter'],Individual item (form factor split)
 Zucchini Fritters,['Zucchini Fritters'],Individual item (form factor split)
-Chili,"['Special - Chili', 'Chili']",Chili variants.
-Lamb,"['Lamb Ham Hash', 'Lamb Naan Mi', 'Special - Lamb', 'Special Lamb Pastrami', 'Pizza Lamb']",Lamb dish variants.
+Chili,"['Chili', 'Special - Chili']",Chili variants.
+Lamb,"['Lamb Ham Hash', 'Lamb Naan Mi', 'Pizza Lamb', 'Special - Lamb', 'Special Lamb Pastrami']",Lamb dish variants.
 Short Rib Sando,"['Briskett', 'Comeback City Brisket', 'Short Rib Sando']",Beef sandwich variants.
 Blueberry Salad,['Blueberry Salad'],Individual item (form factor split)
 Radish And Bean Salad,['Radish And Bean Salad'],Individual item (form factor split)
@@ -122,31 +119,31 @@ Peach Pie,['Peach Pie'],Individual item (form factor split)
 Strawberry Apricot Pie,['Strawberry Apricot Pie'],Individual item (form factor split)
 Pie - Mixed Berry,['Pie - Mixed Berry'],Individual item (form factor split)
 Pie - Strawberry Apricot,['Pie - Strawberry Apricot'],Individual item (form factor split)
-Fry Pie!,['Fry Pie!'],Individual item (form factor split)
-Porchetta Sandwich,"['Special - Porchetta', 'Porchetta Sandwich']",Porchetta sandwich variants.
+Fry Pie!,['Fry Pie!!'],Individual item (form factor split)
+Porchetta Sandwich,"['Porchetta Sandwich', 'Special - Porchetta']",Porchetta sandwich variants.
 Special Salad,['Special Salad'],Individual item (was in misc group)
-Shrimp,"['Lenten Special - ""Peel Eat"" Shrimp Basket', 'Special - Shrimp Basket', 'Special - Shrimp Salad']",Shrimp dish variants.
-Street Corn,"['Special- Elote', 'Street Corn']",Street corn variants.
+Shrimp,"['Lenten Special - ""Peel & Eat"" Shrimp Basket', 'Special - Shrimp Basket', 'Special - Shrimp Salad', 'Special- Shrimp Nachos', 'Lenten Special - ""Peel Eat"" Shrimp Basket']",Shrimp dish variants.
+Street Corn,"['Special- Elote', 'Street Corn', 'Corn On The Cob', 'Special - AuitAos Corn!Au']",Street corn variants.
 Tonkatsu,['Special- Tonkatsu'],Tonkatsu variants.
-Bagel Sando,"['Bagel Special', 'Special-Bagley Bagel', 'Bagel Sando']",Bagel sandwich variants.
-Baguette Sandwich,"['Brioche', 'Baguette Sandwich']",Bread sandwich variants.
-Bologna,"['Bologna Sando', 'Bologna']",Bologna sandwich variants.
-California Burrito,"['Special - California Burrito', 'California Burrito']",California burrito variants.
+Bagel Sando,"['Bagel Sando', 'Bagel Special', 'Special-Bagley Bagel']",Bagel sandwich variants.
+Baguette Sandwich,"['Baguette Sandwich', 'Brioche']",Bread sandwich variants.
+Bologna,"['Bologna', 'Bologna Sando']",Bologna sandwich variants.
+California Burrito,"['California Burrito', 'Special - California Burrito']",California burrito variants.
 Burrito,"['Special - Burrito', 'Special - Burrito- Carne Asada']",Burrito variants.
-Cheesecake,"['Special - Cheesecake', 'Cheesecake']",Cheesecake variants.
+Cheesecake,"['Cheesecake', 'Special - Cheesecake']",Cheesecake variants.
 BLT,['Special - Blt'],BLT sandwich variants.
-Chicken Biscuit,"['Bfast Corndog', 'Chicken Biscuit']",Breakfast item variants.
-Kids Menu,"['Kids ""A""BJ', 'Kids Cdogs', 'Kids Mac Chz']",Kids menu items.
-Goulash,"['Special - Goulash', 'Chicken Paprikash', 'Special - Paprigosh']",Eastern European stew variants.
-Jerk Chicken,"['Special - Jerk Chicken', 'Filipino Chicken', 'Confit Chicken', 'Special - HerbAos Chix', 'Caprese Chicken']",Chicken dish variants.
-Ice Cream Sandwich,"['Strawberry Crunch', 'Ice Cream Sandwich']",Frozen dessert variants.
-Corn Dog,"['Cle Corndog', 'Frankie Lindog']",Corn dog variants.
+Chicken Biscuit,"['Bfast Corndog', 'Chicken + Biscuit']",Breakfast item variants.
+Kids Menu,"['Kids ""A""B&J', 'Kids Cdogs', 'Kids Mac & Chz']",Kids menu items.
+Goulash,"['Chicken Paprikash', 'Special - Goulash', 'Special - Paprigosh']",Eastern European stew variants.
+Jerk Chicken,"['Caprese Chicken', 'Confit Chicken', 'Filipino Chicken', 'Special - Jerk Chicken']",Chicken dish variants.
+Ice Cream Sandwich,"['Ice Cream Sandwich', 'Strawberry Crunch']",Frozen dessert variants.
+Corn Dog,"['Cle Corndog', 'Frankie Lindog', 'Kids Corn Dogs']",Corn dog variants.
 Harvest Cake,['Harvest Cake'],Individual item (form factor split)
 Lemon Make You Happy Cake,['Lemon Make You Happy Cake'],Individual item (form factor split)
 Special - Pound Cake,['Special - Pound Cake'],Individual item (form factor split)
 Special - Triple Cholcolate Cake,['Special - Triple Cholcolate Cake'],Individual item (form factor split)
 Vanilla Apple Swiss Roll,['Vanilla Apple Swiss Roll'],Individual item (form factor split)
-Cupcake,['Cupcake!'],Cupcake variants.
+Cupcake,['Cupcake!!!'],Cupcake variants.
 Beer Cheese Dip,['Beer Cheese Dip'],Individual item (form factor split)
 Feta Dip,['Feta Dip'],Individual item (form factor split)
 Muhammara,['Muhammara'],Individual item (form factor split)
@@ -154,7 +151,7 @@ Skordalia,['Skordalia'],Individual item (form factor split)
 Special - Artichoke Dip,['Special - Artichoke Dip'],Individual item (form factor split)
 Special - Beer Cheese Dip,['Special - Beer Cheese Dip'],Individual item (form factor split)
 Special - Double Down Dip,['Special - Double Down Dip'],Individual item (form factor split)
-Special - Spinach Artichoke Dip,['Special - Spinach Artichoke Dip'],Individual item (form factor split)
+Special - Spinach Artichoke Dip,['Special - Spinach & Artichoke Dip'],Individual item (form factor split)
 Special- Whip Dip,['Special- Whip Dip'],Individual item (form factor split)
 Old Brooklyn Cheese Board,['Old Brooklyn Cheese Board'],Individual item (form factor split)
 Cheese - Garlic Dill Spread,['Cheese - Garlic Dill Spread'],Individual item (form factor split)
@@ -164,31 +161,31 @@ Cheese - Wooster Pike Blue,['Cheese - Wooster Pike Blue'],Individual item (form 
 Cheese On A Stick,['Cheese On A Stick'],Individual item (form factor split)
 Special Pimento Cheese,['Special Pimento Cheese'],Individual item (form factor split)
 Yellow House Lemon Poppy,['Yellow House Lemon Poppy'],Individual item (form factor split)
-Hummus,"['Smoked White Bean Hummus', 'Hummus']",Hummus variants.
-Curds,"['Pickle Chips', 'Curds']",Fried side variants.
+Hummus,"['Carrot Hummus', 'Frijoles Refritos Hummus', 'Hummus', 'Hummus Plate', 'Smoked White Bean Hummus', 'Special - Hummus', 'Special Hummus', 'White Bean Hummus']",Hummus variants.
+Curds,"['Curds', 'Pickle Chips']",Fried side variants.
 Beef Jerky,['Beef Jerky'],Individual item (form factor split)
 Mushroom Jerky,['Mushroom Jerky'],Individual item (form factor split)
 Open Face,"['Croque Madame', 'Open Face']",Open face sandwich variants.
 Salmon,"['Gravlox', 'Special - Salmon']",Salmon dish variants.
-Sausage,"['Ocp Sausage', 'Smokies', 'Special - Sausage', 'Special - BobAos Banger', 'The Bagley Banger', 'Special - Country Wiener']",Sausage variants.
-Pepperoni Roll,"['Special Stromboli', 'Pepperoni Roll']",Italian stuffed bread variants.
-Pierogies,['Special Pierogies'],Pierogi variants.
-Loaded Fries,"['Special- Loaded Fries', 'Special- Cactus Fries']",Loaded fries variants.
+Sausage,"['Bacon', 'Bacon Side', 'Deejay‚Äôs Bacon', 'Ocp Sausage', 'Pizza Spicy Sausage', 'Smokies', 'Special - Country Wiener', 'Special - Sausage', 'The Bagley Banger']",Sausage variants.
+Pepperoni Roll,"['Pepperoni Roll', 'Special Stromboli']",Italian stuffed bread variants.
+Pierogies,"['Special - J-Rogis', 'Special Pierogies', 'Special- Pierogies']",Pierogi variants.
+Loaded Fries,"['Special - Loaded Fries', 'Special- Cactus Fries', 'Special- Loaded Fries']",Loaded fries variants.
 Tofu,['Special Tofu Wings'],Tofu dish variants.
 Deviled Eggs,['Special Deviled Eggs'],Deviled eggs variants.
-Duck,['Special Duck.'],Duck dish variants.
-Banh Mi,"['Special - Bahn Mi', 'Chicken Adobo Sub']",Vietnamese sandwich variants.
-Melt,"['Special - Melt', 'Mousetrap']",Melt sandwich variants.
-Asparagus Salad,['Asparagus Salad'],Individual item (form factor split)
-Berry Panzanella Salad,['Berry Panzanella Salad'],Individual item (form factor split)
-Berry Salad,['Berry Salad'],Individual item (form factor split)
-Harvest Salad,['Harvest Salad'],Individual item (form factor split)
-Melon Salad,['Melon Salad'],Individual item (form factor split)
-Spring Market Salad,['Spring Market Salad'],Individual item (form factor split)
-Summer Bean Salad,['Summer Bean Salad'],Individual item (form factor split)
-Wheatberry Salad,['Wheatberry Salad'],Individual item (form factor split)
-Burger,['Burger'],Burger items
-Hot Dog/Sausage,['Choripan'],Hot dogs and sausages
+Duck,"['Special - Duck Soup', 'Special Duck‚Ä¶..']",Duck dish variants.
+Banh Mi,"['Chicken Adobo Sub', 'Special - Bahn Mi']",Vietnamese sandwich variants.
+Melt,"['Miso Pumpkin Melt', 'Miso-Pumpkin Melt', 'Mousetrap', 'Special - Melt']",Melt sandwich variants.
+Asparagus Salad,"['Asparagus Salad', 'Asparagus Salad with Chicken', 'Vegan Asparagus Salad']",Individual item (form factor split)
+Berry Panzanella Salad,"['Berry Panzanella Salad', 'Berry Panzanella Salad with Chicken', 'Vegan Berry Panzanella Salad']",Individual item (form factor split)
+Berry Salad,"['Berry Salad', 'Berry Salad with Chicken', 'Vegan Berry Salad']",Individual item (form factor split)
+Harvest Salad,"['Harvest Salad', 'Harvest Salad with Chicken', 'Vegan Harvest Salad']",Individual item (form factor split)
+Melon Salad,"['Melon Salad', 'Melon Salad with Chicken', 'Vegan Melon Salad']",Individual item (form factor split)
+Spring Market Salad,"['Spring Market Salad', 'Spring Market Salad with Chicken', 'Vegan Spring Market Salad']",Individual item (form factor split)
+Summer Bean Salad,"['Summer Bean Salad', 'Summer Bean Salad with Chicken', 'Vegan Summer Bean Salad']",Individual item (form factor split)
+Wheatberry Salad,"['Vegan Wheatberry Salad', 'Wheatberry Salad', 'Wheatberry Salad with Chicken']",Individual item (form factor split)
+Burger,"['Burger', 'Burger Special', 'Burgers', 'Chicken Burger', 'Deejay‚Äôs Burgers', 'Frozen Burgers', 'Houes Burger', 'House Burger', 'Jalape√±O Burger', 'Special - Berbere Burger', 'Special - Pub Burger', 'Special - Spartan Burger', 'Special - Trojan Burger', 'Veggie Burger', 'DeejayAos Burgers']",Burger items
+Hot Dog/Sausage,"['Choripan', 'Special - Bob‚Äôs Banger', 'Special - Formaggio Dog', 'Special - Hawt Dawg', 'Special - Johnny F‚Äôing Tsunami', 'Special - Terroir Dog']",Hot dogs and sausages
 Chicken Nuggies,['Chicken Nuggies'],Individual item (form factor split)
 Chicken Smalls,['Chicken Smalls'],Individual item (form factor split)
 Drumstick,['Drumstick'],Individual item (form factor split)
@@ -204,36 +201,35 @@ Pork Rinds,['Pork Rinds'],Individual item (form factor split)
 Chilaquiles,['Chilaquiles'],Individual item (form factor split)
 Pico De Greeko,['Pico De Greeko'],Individual item (form factor split)
 Tacos,['Tacos'],Individual item (form factor split)
-ChickAon Waffles,['ChickAon Waffles'],Individual item (form factor split)
+ChickAon Waffles,"['Chick‚Äôn Waffles', 'Soho Collab: Chicken N‚Äô Waffles']",Individual item (form factor split)
 Coffee Waffles 12Oz,['Coffee Waffles 12Oz'],Individual item (form factor split)
-Soup,['Soup'],Soup
+Soup,"['Bulgogi Soup', 'Chicken Soup', 'Chowder', 'Gumbo', 'Soup', 'Special - Bird Soup', 'Special - Borscht', 'Special - Chowder', 'Special - Clam Chowder', 'Special - Gumbo', 'Special - Ministrone', 'Special - Not Your Moms Tomato Soup', 'Special - Ribollita', 'Special - Seafood Chowder', 'Special - Soup', 'Special - Tomato Soup', 'Special Corn Chowda', 'Special Corn Chowdah', 'Special Soup', 'Special- Clam Chowder', 'Special- Gumbo', 'Special- Lingcod Chowder', 'Special- Lingood Chowder', 'Special- Soup', 'Tomato Soup No Sandwich', 'Tortilla Soup', 'Vegetarian Special Corn Chowda', 'Wedding Soup']",Soup
 Biscotti 12,['Biscotti 12'],Individual item (form factor split)
 Blondie,['Blondie'],Individual item (form factor split)
 Lemon Puff,['Lemon Puff'],Individual item (form factor split)
 Mini Donuts,['Mini Donuts'],Individual item (form factor split)
 Pasta,['Pasta'],Pasta
-Grilled Cheese,"['Berry Basil Grilled Cheese', 'Grilled Cheese']",Grilled cheese
+Grilled Cheese,"['Apple Grilled Cheese', 'Berry + Basil Grilled Cheese', 'Brie & Berry Grilled Cheese', 'Caprese Grilled Cheese', 'French Onion Grilled Cheese', 'Grilled Cheese', 'Grilled Chz', 'Jalape√±O Grilled Cheese', 'Kids Grilled Cheese', 'Mediterranean Grilled Cheese', 'Mushies And Swiss Grilled Cheese', 'Pimento Grilled Cheese', 'Pumpkin Grilled Cheese', 'Shaksuka Grilled Cheese', 'Special - Bnb Grilled Cheese', 'Spinach And Artichoke Grilled Cheese', 'Squashed Grilled Cheese', 'Tomato + Basil Grilled Cheese', 'Winter Squash Grilled Cheese']",Grilled cheese
 Anny Sides,['Anny Sides'],Any sides option
-Autumnal Grain Bowl,['Autumnal Grain Bowl'],Grain bowl
-Apple Salad,"['Fall Apple Salad', 'Apple Salad']",Split from mixed-category Apple Salad - neutral items
-Autumnal Grain Bowl,"['Grain Bowl', 'Winter Grain Bowl', 'Autumnal Grain Bowl']",Split from mixed-category Autumnal Grain Bowl - neutral items
-Beef Burger,"['Beer Burger', 'Blue Burger', 'Special - Spann Burger']",Split from mixed-category Burger - beef items
-Beyond Burger,"['Beyond Burger']",Beyond burger
-Burger,"['Black N Bleu', 'Burger']",Split from mixed-category Burger - neutral items
+Autumnal Grain Bowl,"['Autumnal Grain Bowl', 'Autumnal Grain Bowl with Chicken', 'Grain Bowl with Chicken', 'Grain Salad', 'Grain Salad with Chicken', 'Summer Grain Bowl', 'Togarashi Grain Bowl', 'Togarashi Grain Bowl with Chicken', 'Vegan Grain Bowl', 'Vegan Summer Grain Bowl', 'Vegan Winter Grain Bowl', 'Vegetarian Summer Grain Bowl', 'Vegetarian Winter Grain Bowl', 'Winter Grain Bowl with Chicken']",Grain bowl
+Apple Salad,"['Apple Salad', 'Apple Salad with Chicken', 'Apple Salad wth Bacon', 'Fall Apple Salad', 'Fall Apple Salad with Chicken', 'Vegan Apple Salad', 'Vegan Fall Apple Salad']",Split from mixed-category Apple Salad - neutral items
+Autumnal Grain Bowl,"['Autumnal Grain Bowl', 'Autumnal Grain Bowl with Chicken', 'Grain Bowl', 'Grain Bowl with Chicken', 'Grain Salad', 'Grain Salad with Chicken', 'Summer Grain Bowl', 'Togarashi Grain Bowl', 'Togarashi Grain Bowl with Chicken', 'Vegan Grain Bowl', 'Vegan Summer Grain Bowl', 'Vegan Winter Grain Bowl', 'Vegetarian Summer Grain Bowl', 'Vegetarian Winter Grain Bowl', 'Winter Grain Bowl', 'Winter Grain Bowl with Chicken']",Split from mixed-category Autumnal Grain Bowl - neutral items
+Beef Burger,"['Beer Burger', 'Beyond Burger', 'Blue Burger', 'Special - Spann Burger']",Split from mixed-category Burger - beef items
+Burger,"['Black N Bleu', 'Burger', 'Burger Special', 'Burgers', 'Chicken Burger', 'Deejay‚Äôs Burgers', 'Frozen Burgers', 'Houes Burger', 'House Burger', 'Jalape√±O Burger', 'Special - Berbere Burger', 'Special - Pub Burger', 'Special - Spartan Burger', 'Special - Trojan Burger']",Split from mixed-category Burger - neutral items
 Pork Burger,['Chorizo Burger Special'],Split from mixed-category Burger - pork items
-Nachos,['Nachos'],Split from mixed-category Nachos - neutral items
-Peach Salad,['Peach Salad'],Split from mixed-category Peach Salad - neutral items
-Soup,['Soup'],Split from mixed-category Soup - neutral items
-Strawberry And Rhubarb Salad,['Strawberry And Rhubarb Salad'],Split from mixed-category Strawberry And Rhubarb Salad - neutral items
+Nachos,"['Buffalo Nachos', 'Nacho Special', 'Nachos', 'Nachos - Veggie', 'Nachos No Pork', 'Veggie Nachos']",Split from mixed-category Nachos - neutral items
+Peach Salad,"['Peach Salad', 'Peach Salad with Chicken', 'Peachsalad', 'Peachsalad with chicken', 'Vegan Peachsalad']",Split from mixed-category Peach Salad - neutral items
+Soup,"['Bulgogi Soup', 'Chicken Soup', 'Chowder', 'Gumbo', 'Soup', 'Special - Bird Soup', 'Special - Borscht', 'Special - Chowder', 'Special - Clam Chowder', 'Special - Gumbo', 'Special - Ministrone', 'Special - Not Your Moms Tomato Soup', 'Special - Ribollita', 'Special - Seafood Chowder', 'Special - Soup', 'Special - Tomato Soup', 'Special Corn Chowda', 'Special Corn Chowdah', 'Special Soup', 'Special- Clam Chowder', 'Special- Gumbo', 'Special- Lingcod Chowder', 'Special- Lingood Chowder', 'Special- Soup', 'Tomato Soup No Sandwich', 'Tortilla Soup', 'Vegetarian Special Corn Chowda', 'Wedding Soup']",Split from mixed-category Soup - neutral items
+Strawberry And Rhubarb Salad,"['Apple And Rhubarb Salad', 'Apple And Rhubarb Salad with Chicken', 'Strawberry And Rhubarb Salad', 'Strawberry And Rhubarb Salad with Chicken', 'Vegan Strawberry And Rhubarb Salad']",Split from mixed-category Strawberry And Rhubarb Salad - neutral items
 Vegan Veggie Sandwich,['Vegan Veggie Sandwich'],Split from mixed-category Veggie Sandwich - vegan items
 Pork Veggie Sandwich,['Veggie Sandwich with Bacon'],Split from mixed-category Veggie Sandwich - pork items
 "Pizza - ""Foghorn Leghorn""","['Pizza - ""Foghorn Leghorn""']",Individual item (was in misc group)
-Pizza - 4 Cheese Garlic Pizza,['Pizza - 4 Cheese Garlic Pizza'],Individual item (was in misc group)
+Pizza - 4 Cheese Garlic Pizza,"['Pizza - 4 Cheese Garlic Pizza', 'Pizza - Jimmy Pesto']",Individual item (was in misc group)
 Pizza - Acadian Pie,['Pizza - Acadian Pie'],Individual item (was in misc group)
 Pizza - Are You Speaking My Lengua?,['Pizza - Are You Speaking My Lengua?'],Individual item (was in misc group)
 Pizza - Autumn Pie,['Pizza - Autumn Pie'],Individual item (was in misc group)
 Pizza - Backyard Bbq,['Pizza - Backyard Bbq'],Individual item (was in misc group)
-Pizza - Black White,['Pizza - Black White'],Individual item (was in misc group)
+Pizza - Black White,['Pizza - Black + White'],Individual item (was in misc group)
 Pizza - Blt Pie,['Pizza - Blt Pie'],Individual item (was in misc group)
 Pizza - Breakfast Pie,['Pizza - Breakfast Pie'],Individual item (was in misc group)
 Pizza - Brecky Pie,['Pizza - Brecky Pie'],Individual item (was in misc group)
@@ -256,7 +252,7 @@ Pizza - Mama,['Pizza - Mama'],Individual item (was in misc group)
 Pizza - Meat Darlings,['Pizza - Meat Darlings'],Individual item (was in misc group)
 Pizza - Mitchell Is 30!,['Pizza - Mitchell Is 30!'],Individual item (was in misc group)
 Pizza - Nawlins,['Pizza - Nawlins'],Individual item (was in misc group)
-Pizza - O,['Pizza - O'],Individual item (was in misc group)
+Pizza - O,['Pizza - ^O^'],Individual item (was in misc group)
 Pizza - Papa,['Pizza - Papa'],Individual item (was in misc group)
 Pizza - Pierogie,['Pizza - Pierogie'],Individual item (was in misc group)
 Pizza - Pollo Peruano,['Pizza - Pollo Peruano'],Individual item (was in misc group)
@@ -290,7 +286,7 @@ Pizza Bbq Chicken,['Pizza Bbq Chicken'],Individual item (was in misc group)
 Pizza Beer Chicken,['Pizza Beer Chicken'],Individual item (was in misc group)
 Pizza Chicken Bacon,['Pizza Chicken Bacon'],Individual item (was in misc group)
 Pizza Pesto Chicken,['Pizza Pesto Chicken'],Individual item (was in misc group)
-Pizza - Clam Bake!,['Pizza - Clam Bake!'],Individual item (was in misc group)
+Pizza - Clam Bake!,['Pizza - Clam Bake!!!'],Individual item (was in misc group)
 Pizza - Shrimp On The Barpie,['Pizza - Shrimp On The Barpie'],Individual item (was in misc group)
 Pizza - Shrimpie,['Pizza - Shrimpie'],Individual item (was in misc group)
 Pizza - Gyro Pyro,['Pizza - Gyro Pyro'],Individual item (was in misc group)
@@ -305,7 +301,7 @@ Pizza Chx Meatball,['Pizza Chx Meatball'],Individual item (was in misc group)
 Pizza - The Vegan Mary,['Pizza - The Vegan Mary'],Individual item (was in misc group)
 Vegetarian Pizza - Acadian Pie,['Vegetarian Pizza - Acadian Pie'],Individual item (was in misc group)
 Pizza Spring Veggie,['Pizza Spring Veggie'],Individual item (was in misc group)
-Pork Hot Ham,"['Fall Ham', 'BrittneyAos Ham Sandwich', ""Frank'S Rum Ham 'N' Cheese""]",Split from mixed-category Hot Ham - pork items
+Pork Hot Ham,"['Fall Ham', ""Frank'S Rum Ham 'N' Cheese""]",Split from mixed-category Hot Ham - pork items
 Poultry Hot Ham,['Holiday Turkey Sandwich'],Split from mixed-category Hot Ham - poultry items
 Fish Tacos,['Fish Tacos'],Split from mixed-category Tacos - fish items
 Beef Tacos,['Steak Tacos'],Split from mixed-category Tacos - beef items
@@ -322,7 +318,7 @@ Asian,['Wholesome Noodles'],Split from mixed-category Asian - neutral items
 Pork Meat,['Pork Patty'],Split from mixed-category Meat - pork items
 Beef Meat,['Add Burger Patty'],Split from mixed-category Meat - beef items
 Poultry Meat,['Add Chicken'],Split from mixed-category Meat - poultry items
-Falafel,['Falafel'],Individual item (form factor split)
+Falafel,"['Chicken Gyro', 'Falafel', 'Special - Meatball Gyro', 'Special - Super Gyro']",Individual item (form factor split)
 Terrine,['Terrine'],Individual item (form factor split)
 Auttuno D'Italia,"[""Auttuno D'Italia""]",Individual item (was in misc group)
 Barleywine Vinegar,['Barleywine Vinegar'],Individual item (was in misc group)
@@ -331,14 +327,12 @@ Brambles,['Brambles'],Individual item (was in misc group)
 Brown Eyes,['Brown Eyes'],Individual item (was in misc group)
 Calabrian,['Calabrian'],Individual item (was in misc group)
 Carolina,['Carolina'],Individual item (was in misc group)
-CarinaAos Treat Of The Day,['CarinaAos Treat Of The Day'],Individual item (was in misc group)
-CatAos Meow!,['CatAos Meow!'],Individual item (was in misc group)
+CatAos Meow!,['Cat‚Äôs Meow!!!'],Individual item (was in misc group)
 Combo,['Combo'],Individual item (was in misc group)
-Combo (W Widow Or Cookies),['Combo (W Widow Or Cookies)'],Individual item (was in misc group)
 Croustade,['Croustade'],Individual item (was in misc group)
 Dripping Smith Bits,['Dripping Smith Bits'],Individual item (was in misc group)
 Generic Sample,['Generic Sample'],Individual item (was in misc group)
-Herb,['Herb'],Individual item (was in misc group)
+Herb,"['Herb', 'Special - Herb‚Äôs Chix']",Individual item (was in misc group)
 Katg,['Katg'],Individual item (was in misc group)
 Knock Knock,['Knock Knock'],Individual item (was in misc group)
 L.O.L Plus,['L.O.L Plus'],Individual item (was in misc group)
@@ -363,9 +357,9 @@ The Carina,['The Carina'],Individual item (was in misc group)
 The Dalmatian,['The Dalmatian'],Individual item (was in misc group)
 The Mitch,['The Mitch'],Individual item (was in misc group)
 The Noble Feast,['The Noble Feast'],Individual item (was in misc group)
-Uau Gold,['Uau Gold'],Individual item (was in misc group)
-Ue Space,['Ue Space'],Individual item (was in misc group)
-UeaUe Goodbye Forver,['UeaUe Goodbye Forver'],Individual item (was in misc group)
+Uau Gold,['\uf8ffÜåù Gold'],Individual item (was in misc group)
+Ue Space,['\uf8ffÜëω Space'],Individual item (was in misc group)
+UeaUe Goodbye Forver,['\uf8ffÜëã\uf8ffÜèø Goodbye Forver'],Individual item (was in misc group)
 Uncle Tony,['Uncle Tony'],Individual item (was in misc group)
 Velocity Broker,['Velocity Broker'],Individual item (was in misc group)
 War Canary,['War Canary'],Individual item (was in misc group)
@@ -377,7 +371,6 @@ Luna Vegan Cherry Brownie,['Luna Vegan Cherry Brownie'],Individual item (was in 
 New Spring Turkey,['New Spring Turkey'],Individual item (was in misc group)
 Turkey And Swiss,['Turkey And Swiss'],Individual item (was in misc group)
 Special - 2020 Dumpster Fire,['Special - 2020 Dumpster Fire'],Individual item (was in misc group)
-Special - AuitAos Corn!Au,['Special - AuitAos Corn!Au'],Individual item (was in misc group)
 Special - Beer And Barfley Soup,['Special - Beer And Barfley Soup'],Individual item (was in misc group)
 Special - Breadsticks,['Special - Breadsticks'],Individual item (was in misc group)
 Special - Cauli Salad,['Special - Cauli Salad'],Individual item (was in misc group)
@@ -386,16 +379,15 @@ Special - Chick Loaf,['Special - Chick Loaf'],Individual item (was in misc group
 Special - Dessert,['Special - Dessert'],Individual item (was in misc group)
 Special - Gas Station Bbq,['Special - Gas Station Bbq'],Individual item (was in misc group)
 Special - German Boy,['Special - German Boy'],Individual item (was in misc group)
-Special - Johnny FAoing Tsunami,['Special - Johnny FAoing Tsunami'],Individual item (was in misc group)
 Special - Lil Buff Boys,['Special - Lil Buff Boys'],Individual item (was in misc group)
 Special - Massaman Curry,['Special - Massaman Curry'],Individual item (was in misc group)
-Special - NiO Polacko,['Special - NiO Polacko'],Individual item (was in misc group)
+Special - NiO Polacko,['Special - Ni√±O Polacko'],Individual item (was in misc group)
 Special - Nicolo Picolo,['Special - Nicolo Picolo'],Individual item (was in misc group)
 Special - Pretzel Bites,['Special - Pretzel Bites'],Individual item (was in misc group)
 Special - Rochelle Rochelle,['Special - Rochelle Rochelle'],Individual item (was in misc group)
 Special - Rochester Sando,['Special - Rochester Sando'],Individual item (was in misc group)
 Special - South Mouth,['Special - South Mouth'],Individual item (was in misc group)
-Special - SwintonAos Pride,['Special - SwintonAos Pride'],Individual item (was in misc group)
+Special - SwintonAos Pride,['Special - Swinton‚Äôs Pride'],Individual item (was in misc group)
 Special - Toast,['Special - Toast'],Individual item (was in misc group)
 Special - World Cup Special,['Special - World Cup Special'],Individual item (was in misc group)
 Special - World Cup Special- Torta Milanese,['Special - World Cup Special- Torta Milanese'],Individual item (was in misc group)
@@ -403,7 +395,6 @@ Special Asparagus,['Special Asparagus'],Individual item (was in misc group)
 Special French Dip,['Special French Dip'],Individual item (was in misc group)
 Special Khao-Soi,['Special Khao-Soi'],Individual item (was in misc group)
 Special Meatloaf Sando,['Special Meatloaf Sando'],Individual item (was in misc group)
-Special- AupltAu,['Special- AupltAu'],Individual item (was in misc group)
 Special: Pootie Call,['Special: Pootie Call'],Individual item (was in misc group)
 Special - Bacon Broccoli Cheddar Soup,['Special - Bacon Broccoli Cheddar Soup'],Individual item (was in misc group)
 Special - Porkstrami,['Special - Porkstrami'],Individual item (was in misc group)
@@ -411,4 +402,15 @@ Special - Chicken Livers,['Special - Chicken Livers'],Individual item (was in mi
 Special Bbq Chicken,['Special Bbq Chicken'],Individual item (was in misc group)
 Special - Kenny'S Cheesesteak,"[""Special - Kenny'S Cheesesteak""]",Individual item (was in misc group)
 catering_takeout,['Veggie Tray'],Catering and takeout items
-to_remove,"['Cheetah Chrome', 'Perpetual Motion', 'Wakefire', 'Barley Wine WFritter']","Non-food/non-drink items and drinks (coffee, tea, beer, wine, etc.)"
+to_remove,"['1 Flight', '2 Flights', '3/4 Purple Sleeve - Noble Beast', '3/4 Raglan Gray', '3/4 Red Sleeve - Noble Beast', '3/4 Sleeve', '4Th Anniversary Glass', '4Th Anny Glass', '666 Conducer', '99 Wdrwdr22 Wax Tops', 'Add Bacon', 'Add Burger Patty', 'Add Cheese', 'Add Chicken', 'Add Modifier', 'Amber Crewneck', 'Ba Kilbanes', 'Ba Murder12', 'Ba Say When', 'Ba Sweet Potato', 'Ba Widow', 'Barley 4Oz', 'Barley Bundle', 'Barley Swine', 'Barley Wine Glass', 'Barley Wine W/Fritter', 'Barleywine Vinegar', 'Bauer Outage', 'Beanie', 'Beanie (No Pom)', 'Beanie W/ Pom', 'Beats', 'Beer Brat', 'Beer Burger', 'Beer Cheese Dip', 'Bel-Air', ""Ben O'Clock"", 'Best Bitters', 'Big Feelings', 'Bike Hat', 'Black Cbgb', 'Black Pocket T', 'Black Widow', 'Blonde', 'Blue And Red Shirt', 'Blue Hat', 'Blue Little Jacket', 'Blue Tank', 'Blue Tshirt', 'Bob Dog', 'Brown And Orange Shirt', 'Brown T', 'Brown T-Shirt', 'Burgundy Long Sleeve', 'Button', 'Cake Pop 4-Pack (Wdrwdr Limited Edition Flavor)', 'Camel Long Sleeve', 'Cask Murder10', 'Cask Night Ticket', 'Cheetah Chrome', 'Chicken Can', 'Chicken Smalls Table Bier Crowler', 'Christmas', 'Christmas Sweater', 'Chrome', 'Classic', 'Classic Saison', 'Cle Chocolate Co. Bar', 'Cleveland Chocolate Company Coffee Crunch', 'Cleveland Chocolate Company Dark W/Sea Salt', 'Cleveland Chocolate Company Strawberry Hibiscus', 'Cleveland Eats Book', 'Cliffhanger', 'Cloud Boi', 'Cnm 2020', 'Cobra', 'Cole Porter', 'Combo (W/ Widow Or Cookies)', 'Convict Orange Crewneck', 'Cookies Can', 'Copper Clover', 'Crewneck', 'Crewneck Purp', 'Crewneck Ron Mcdon', 'Crowler Koozie', 'Crunchy Can', 'Dad Hat!', 'Dawn Of Ostara', 'Dd Beans', 'Dearly Departed', 'Dinkle', 'Dog Treats', ""Don'T Quarry"", 'Dropping Smooth Beats Track 2', 'Dunkel', 'Dusty Blue T Shirt', 'Eau Rouge Flemmy', 'Egift Card', 'Ego Tripping', 'Emp Patch', 'Emp. Flight Tees', 'Employee Beanie', 'Employee Box Cut', 'Employee Brown/Navy/Retro', 'Employee Burgundy Long Sleeve', 'Employee Christmas Sweater', 'Employee Crewneck', 'Employee Dad Hat', 'Employee Green Long Sleeve', 'Employee Guava Long Sleeve', 'Employee Hoodie', 'Employee Kids Tee', 'Employee Koozie', 'Employee Long Sleeve', 'Employee Olive Long Sleeve', 'Employee Pink Crewneck', 'Employee Pint Glass', 'Employee Pocket T', 'Employee Ringer T', 'Employee T Shirt', 'Employee Tank', 'Employee Tank (Sage And Paprika)', 'Employee Teal Ringer', 'Employee Womens Dolman', 'Employee Zip Up', 'Empty Can', 'Empty Crowler', 'Empty Crowler Can', 'Enamel Pin', 'Erik‚Äôs Technicolor Dreamcoat', 'Evil Motives Fr', 'Evil Twin12', 'Extra Fried Pita', 'Filled Ohio Pint', 'Flower Pin', 'Football Ringer T', 'G Beats', 'G Cheetah', 'G Cobra', 'G Elec', 'G Farm', 'G Grisette', 'G Kviek', 'G Manchurian Grisette', 'G Mouth Candy', 'G Murder Ballad', 'G Murder Ballads', 'G No Knock', 'G Southpaw', 'G Sweet Potato', 'G Widowmaker', 'Gift Card', 'Gift Card Reload', 'Girls Tank Gray', 'Girls Tank Purple', 'Gogglefogger', 'Gold Glass \uf8ffÜèö\uf8ffÜèö\uf8ffÜèö', 'Graf Vienna', 'Grey Hoodie', 'Grey Long Sleeve', 'Grey Pocket T', 'Grodz!!', 'Grodz!!!', 'Guava Long Sleeve', 'Hammers', 'Heather Fog', 'Hefe', 'Hoodie', 'Hop Bomb', 'Hopcorn', 'Ig Farmhouse', 'Kids Tee', 'Kids Tee Green Writing', 'Kid‚Äôs Tee', 'Kid‚Äôs Tee Red Writing', 'Kilbanes', 'Kitchen Beer', 'Koozie', 'Koozie!!!', 'Kviek', 'Lakegirl', 'Lilac Tee', 'Mask', 'Mask Charge', 'Midnight Beast', 'Mustard Tee', 'Navy And Red', 'Navy And White', 'Nbbc Shirt - Black', 'Nbbc Tank  - Black', 'Nbbc Tank - Purple', 'Nbbc Zip Up Hoodie', 'Noble Beast - Red And Navy', 'Noble Beast Blue With Red Letters', 'Noble Beast Hat', 'Noble Beast Hoodie', 'Noble Beast Shirt - Brown And Orange', 'Oatmeal Cream Pie', 'Olive Green Long Sleeve', 'Olive T Shirt', 'Orange Little Jacket', 'Patch', 'Peach Box Cut Tee', 'Peach Tartshake', 'Perpetual Motion', 'Pin', 'Pint Glass', 'Pizza Beer Chicken', 'Polka', 'Pom Hat', 'Prognosticator', 'Purple 3/4', 'Purple Crewneck', 'Raspberry Cookies Bba 8Oz', 'Razz Grisette', 'Red 3/4', 'Red Beanie', 'Red Little Jacket', 'Red T-Shirt', 'Retro Cavs', 'Rietos', 'Ringer T', 'Ronald Mcdonald Crewneck', 'S Dearly', 'S Elec', 'S Grisette', 'S Lil Fish', 'S Manchurian Grisette', 'S Moon Gold', 'S Murder', 'S Stf', 'Sage Long Sleeve', 'Sale 3/4 Sleeve', 'Sale! - Lilac Tee', 'Sauerkraut  4Oz', 'Sg 12 Dogs', 'Sg 15 Feet', 'Sg 1Z Enuff', 'Sg 3 Out Of 5', 'Sg 5 Rabbit', 'Sg Abtsoluion', 'Sg After', 'Sg Almanac', 'Sg Av Thribble', 'Sg Avery', 'Sg Aviator', 'Sg Ba Murder', 'Sg Baba Yaga', 'Sg Bel-Air', 'Sg Bfod', 'Sg Big Willy', 'Sg Biscotti', 'Sg Bitches', 'Sg Black Widow', 'Sg Blakes', 'Sg Blue Gold', 'Sg Bob', 'Sg Boogie', 'Sg Bookhouse', 'Sg Bras El Hanout', 'Sg Bruery', 'Sg Bruworx', 'Sg Bucket', 'Sg Burial', 'Sg Burley', 'Sg Cask Murder', 'Sg Chocofruit', 'Sg Cloud', 'Sg Crafted', 'Sg Cucumber Fatm', 'Sg Cuv√©E Rouge', 'Sg Deduction', 'Sg Destihl', 'Sg Dfh Yum Yum', 'Sg Dudes Rug', 'Sg Eugene', 'Sg Evil Twin', 'Sg Fabulosa', 'Sg Farmers', 'Sg French Oak', 'Sg Full Stack', 'Sg Grimm', 'Sg Grizzly', 'Sg Hog Heaven', 'Sg Horse Tongue', 'Sg Installation', 'Sg Jenny Said', 'Sg Jesus', 'Sg Jp Best Lei‚Äôd', 'Sg Jp Noel', 'Sg Katg', 'Sg Kat\uf8ffÜèåô∏È‚Äç‚Ôäô∏È', 'Sg Kim', 'Sg Kindred', ""Sg Lil' B"", 'Sg Lion', 'Sg Little Fish', 'Sg Mactavish', 'Sg Madam', 'Sg Madrugada', 'Sg Madtree', 'Sg Magdalena', 'Sg Maine', 'Sg Mango Paletas', 'Sg Masthead', 'Sg Matriarch', 'Sg Matt Tree Axis Mundi', 'Sg Mg Paradise', 'Sg Mg Prosperity', 'Sg Milkman', 'Sg Millstone', 'Sg Mt Amber', 'Sg Mt Axis Mundi', 'Sg Mt Pilgrim', 'Sg New Glarus', 'Sg New Growth', 'Sg New Masters', 'Sg North Coast', 'Sg Oro Negro', 'Sg Paddle Around', 'Sg Pecan', 'Sg Perrenial', 'Sg Petrus', 'Sg Pizzasaurus Rex', 'Sg Polka City', 'Sg Prairie', 'Sg Resurgence', 'Sg Revolution', 'Sg Robert', 'Sg Rojzilla', 'Sg Roundhouse', 'Sg Saucy', 'Sg Shacks Dry', 'Sg Shacks Ros√®', 'Sg Singlecut Alpine', 'Sg Slice Of Life', 'Sg Softly Spoken', 'Sg Spanish Tramp', 'Sg Starcut', 'Sg Stillwater', 'Sg Strawberry', 'Sg Sunshine', 'Sg Terrestrial', 'Sg Third Wheel', 'Sg Tieton', 'Sg Trailhead', 'Sg Trivet', 'Sg Tuco', 'Sg Tuna', 'Sg Ua Night Market', 'Sg Ua Photo Booth', 'Sg Underverse', 'Sg Untitled Art', 'Sg Urban Artifact Gyroscope', 'Sg Vanilla Shake', 'Sg Vida', 'Sg Virtue', 'Sg Wc Brown', 'Sg Whiner', 'Sg Who', 'Sg Who Cooks', 'Sg Widow', 'Sg Witness', 'Sg Wooden Widowmaker', 'Sg Working Class', 'Sg Wulver', 'Sg Wyndridge', 'Sg Yoho Wednesday Cat', 'Sg Zombie', 'Sg Zure', 'Sg \uf8ffÜåà Seeker', 'Sh 2017 C+M', 'Sh 2017 Cookies', 'Sh 2017 Sweet Potato', 'Sh 2019 Cookies + Milk', 'Sh 666', 'Sh Amber', 'Sh Azimuth', 'Sh Ba Kilbanes', 'Sh Ba Murder', 'Sh Ba Saywhen', 'Sh Ba Sweet Potato', 'Sh Bakers Russian', 'Sh Barry', 'Sh Bba Coffee Cookies', 'Sh Bba Cookies', 'Sh Bung Popper', 'Sh C+M', 'Sh Cheetah', 'Sh Chicken + Waffle', 'Sh Chick‚Äôn Waffles', 'Sh Cobra', 'Sh Dearly', 'Sh Eau Rouge', 'Sh Evil Motives', 'Sh Farmhaus', 'Sh Goodbye Forever', 'Sh Gpr', 'Sh Grisette', 'Sh Grodz', 'Sh Grodz!!', 'Sh Hammer Fist', 'Sh Kilbanes', 'Sh Manchurian Grisette', 'Sh Mulberry', 'Sh Murder', 'Sh Murder Ballads', 'Sh Pancake', 'Sh Peacemaker', 'Sh Plum Cat', 'Sh Potato', 'Sh Puff Puff', 'Sh Sibling', 'Sh Southpaw', 'Sh Styrian Woof', 'Sh Sweet Potato', 'Sh Tiger Blood', 'Sh War Canary', 'Sh Widow Maker', 'Sh Widowmaker', 'Sh Wooden Sweet Potato', 'Sh Young Grizzlee', 'Shacks Ros√®', 'Shacks Vermonter', 'Shallow Grave', 'Shipping - Usps Medium Flat Rate Box', 'Side Of House Hot', 'Side Of Mayo', 'Side Of Naan', 'Side Of Sauce', 'Side Of Yellow Mustard', 'Sleep Thief', 'Smoked Paprika Tank', 'Snap Dragon', 'Sour Stout', 'Special - Beer And Barfley Soup', 'Special - Beer Cheese Dip', 'Special - Hot Rachael', 'Special - Noble Beer Cheese Soup', 'Special - ‚Äúit‚Äôs Corn!‚Äù', 'Spicy Stout', 'Spyglass', 'Sticker', 'Straw G', 'Strawberry Mansion', 'Succulent Green Tank', 'Sweet Potato 12Oz', 'Sweet Potato Can', 'Synth Lord', 'Table Reservation', 'Tank - Navy', 'Tank - Navy Xs', 'Tank - Teal', 'Tank Top - Black', 'Tank Top - Pink', 'Teepee', 'The Great Attractor', 'The Last Dolman', 'Tiger Blood', 'Tire Tshirt', 'Toilet Paper', 'Turkey Wrap: Naan, Turkey, Beer Mustard, Mozz, Mustard Greens, Beer Salt, Bacon, Side Of House Hot', 'Ugly Christmas Sweater', 'Virtual Beer Tasting', 'Vivanco', 'Wakefire', 'Waxed Canvas Hat', 'Wc Stout', 'Wdr Glass', 'Wdr Snifter 2020', 'Wdrwdr Draft', 'Wdrwdr21 Glass', 'Wet Hop', 'Widow', 'Widow Maker', 'Wine & Gold Shirt', 'Womens Dolman Long Sleeve', 'Women‚Äôs Black Tank Top', 'Women‚Äôs Camo Tank Top', 'Zip-Up Hoodie', '\uf8ffÜ§¢Lichtenhainer', '\uf8ffÜêü Cheetah 16', 'Bottled Water', 'Coconut Water', 'Drink Bottles', 'Frozen Water (Icee) Add On', 'Gallon Drinks', 'Juice', 'Lg Lemonade', 'Local Brew Draft', 'Local Brew Packaged', 'Non-alcoholic Beverages', 'Small Lemonade', 'Other', 'Cleveland Chocolate Company Dark WSea Salt', 'Kids ""A""BJ', 'OooE KilbaneAos', 'RaspVanilla Bba Cookies 500Ml', 'Special- AupltAu', 'Ueu Cheetah 16', 'Special - AuitAos Corn!Au']","Non-food/non-drink items and drinks (coffee, tea, beer, wine, etc.)"
+Appetizers,['Appetizers'],
+Chicken Alfredo,['Chicken Alfredo'],
+Cornbread Slices,['Cornbread Slices'],
+Crackers,['Crackers'],
+Fruit,['Fruit'],
+Gizzards,['Gizzards'],
+Lunchable,['Lunchable'],
+Oyster,['Oyster'],
+Roll,['Roll'],
+Savory Snacks,['Savory Snacks'],
+Vegetable Tray,['Vegetable Tray'],

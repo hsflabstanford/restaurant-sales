@@ -1,133 +1,25 @@
-canonical_name,variants,reasoning
-Acai Bowl,['Acai Bowl'],Individual item (form factor split)
-Blue Spirulina Bowl,['Blue Spirulina Bowl'],Individual item (form factor split)
-Matcha Green Tea Bowl,['Matcha Green Tea Bowl'],Individual item (form factor split)
-Pitaya Bowl,['Pitaya Bowl'],Individual item (form factor split)
-Pb2 Bowl,['Pb2 Bowl'],Individual item (form factor split)
-Greek Yogurt Bowl,['Greek Yogurt Bowl'],Individual item (form factor split)
-Protein Bowl,['Protein Bowl'],Individual item (form factor split)
-Byo ProteinSalad Bowl,['Byo ProteinSalad Bowl'],Individual item (form factor split)
-City Of Cape Protein Bowl,['City Of Cape Protein Bowl'],Individual item (form factor split)
-Harvest Signature Bowl,['Harvest Signature Bowl'],Individual item (form factor split)
-Vegan Harvest Signature Bowl,['Vegan Harvest Signature Bowl'],Individual item (form factor split)
-Protein Bowl Box,['Protein Bowl Box'],Individual item (form factor split)
-Signature Bowls,['Signature Bowls'],Individual item (form factor split)
-Buddha Bowl,"['Veg Buddha Bowl', 'Vegan Buddha Bowl']",Buddha bowls
-Cali Bowl,"['Cali Bowl', 'Vegan Cali Bowl']",California bowls
-Fiesta Bowl,"['Fiesta Bowl', 'Dairy Fiesta Bowl']",Fiesta bowls
-Mediterranean Bowl,"['Mediterranean', 'Mediterranean Bowl', 'Vegan Mediterranean']",Mediterranean bowls
-Moroccan Bowl,"['Moroccan Glow Bowl', 'Vegan Moroccan Glow Bowl']",Moroccan glow bowls
-Teriyaki Bowl,"['Teriyaki Bowl', 'Tex Bowl']",Asian-style bowls
-Soba Noodle Bowl,['Soba Noodle Bowls'],Soba noodle bowls
-Beach Salad,"['Beach Salad', 'Chickenless Beach Salad']",Beach salads
-Asian Salad,['Asian Sesame Salad'],Asian sesame salad
-Spinach Salad,['Mediterranean Spinach Salad'],Mediterranean spinach salad
-Quinoa Salad,['Quinoa Salad'],Quinoa salad
-City Salad,"['City Salad', 'City Salad Protein']",City salads
-Fresh Greens,"['Fresh Greens Salad', 'Side Salad', 'Vegan Big Salad Bowls', 'Big Salad Bowls']",Green salads
-Chicken Wrap,"['Asian Chicken Wrap', 'Caesar Blt Chicken Wrap', 'Chicken Caesar Wrap']",Chicken wraps
-Turkey Wrap,['Turkey Bacon Avocado Wrap'],Turkey wraps
-Breakfast Wrap,"['Breakfast Wrap', 'Early Bird Wrap', 'Healthy Start Wrap', 'Vegan Breakfast Wrap', 'Egg Vegetarian Wrap']",Breakfast wraps
-City Wrap,['City 12 Wrap'],City wraps
-Chicken Panini,"['Bbq Chicken Panini', 'Spicy Chicken Panini']",Chicken paninis
-Turkey Panini,"['Cranberry Turkey Panini', 'Turkey Bacon Avocado Panini', 'Turkey Pesto', 'Turkey Pesto Panini']",Turkey paninis
-Breakfast Panini,"['Breakfast Panini', 'Early Bird Panini', 'Healthy Start Panini']",Breakfast paninis
-Albacore Panini,['Albacore Melt Panini'],Albacore tuna panini
-PJ Panini,['PJ Panini'],PJ panini
-Pair A Panini,['Pair A Panini'],Individual item (form factor split)
-Pair A Salad,['Pair A Salad'],Individual item (form factor split)
-Pair A Wrap,['Pair A Wrap'],Individual item (form factor split)
-Big Panini Platter,['Big Panini Platter'],Individual item (form factor split)
-Big Wrap Platter,['Big Wrap Platter'],Individual item (form factor split)
-Fresh Panini Platter,['Fresh Panini Platter'],Individual item (form factor split)
-Kids Grilled Cheese,"[""Kid'S Grilled Cheese Panini"", ""Kid'S Grilled Cheese Quesadilla"", ""Kid'S Grilled Cheese Sandwich""]",Kids grilled cheese options
-Avocado Toast,"['Avocado Toast', 'Egg Avocado Toast']",Avocado toast
-Hummus Toast,['Hummus Toast'],Individual item (form factor split)
-Portobello Balsamic Toast,['Portobello Balsamic Toast'],Individual item (form factor split)
-Vegan Portobello,['Vegan Portobello'],Individual item (form factor split)
-Veggie Portobello,['Veggie Portobello'],Individual item (form factor split)
-English Muffin,"['Egg N Muffin', 'English Egg Muffin', 'English Muffin Coffee', 'English Muffin Smoothie', 'English Muffin Squeeze']",English muffin items
-Steel Cut Oat Meal,['Steel Cut Oat Meal'],Individual item (form factor split)
-Over Night Oats,['Over Night Oats'],Individual item (form factor split)
-Hard Boiled Egg,['Hard Boiled Egg'],Individual item (form factor split)
-Hard Boiled Egg 2 Pc,['Hard Boiled Egg 2 Pc'],Individual item (form factor split)
-Egg Quinoa Chickpeas,['Egg Quinoa Chickpeas'],Individual item (form factor split)
-Yogurt,['Yogurt Parfait'],Yogurt parfait
-Beyond Burger,"['Beyond Burger Combo', 'Fresh Beyond Burger']",Beyond burgers
-Beyond Sausage,"['Beyond Sausage', 'Beyond Sausage Combo']",Beyond sausage
-Smoothie,"['Chunky Monkey', 'Coco Avocado', 'Fresh Fit Blast', 'Fresh Fitness Blast', 'Jolly Green', 'Mango Mania', 'Vegan Mango Mania', 'Pineapple Creamsicle', 'Pineapple Creamsicle 2', 'Super Veg', 'The Lenny', 'The Marshall', 'Blue Spirulina']",Smoothies
-Kids Combo,"[""Kid'S Combo With A Smoothie"", 'Kids Combo', 'Kids Combo With Smoothie', 'Kids Combo With Squeeze']",Kids combos
-Cliff Duos,['Cliff Duos'],Individual item (form factor split)
-Cliff Protein Bar,['Cliff Protein Bar'],Individual item (form factor split)
-Kind Bar,['Kind Bar'],Individual item (form factor split)
-Power Bowl Bar,['Power Bowl Bar'],Individual item (form factor split)
-Rx Bars,['Rx Bars'],Individual item (form factor split)
-Sweet Street Bar,['Sweet Street Bar'],Individual item (form factor split)
-Baked Chips Small Bag,['Baked Chips Small Bag'],Individual item (form factor split)
-Chips,['Chips'],Individual item (form factor split)
-City Chips,['City Chips'],Individual item (form factor split)
-Food Should Taste Good Chips,['Food Should Taste Good Chips'],Individual item (form factor split)
-Like Is Good Chips,['Like Is Good Chips'],Individual item (form factor split)
-Simply 7 Chips,['Simply 7 Chips'],Individual item (form factor split)
-Vegetarian Enjoy Life Lentil Chips,['Vegetarian Enjoy Life Lentil Chips'],Individual item (form factor split)
-Veggie Sticks,['Veggie Sticks'],Individual item (form factor split)
-Bada Bean Bada Boom Beans,['Bada Bean Bada Boom Beans'],Individual item (form factor split)
-Bear Granola Bites,['Bear Granola Bites'],Individual item (form factor split)
-Bite Size Bobo'S Oat,"[""Bite Size Bobo'S Oat""]",Individual item (form factor split)
-Enjoy Life Lentils,['Enjoy Life Lentils'],Individual item (form factor split)
-Hillshire Snacking,['Hillshire Snacking'],Individual item (form factor split)
-Pretzels And Hummus,['Pretzels And Hummus'],Individual item (form factor split)
-PretzelsHummus,['PretzelsHummus'],Individual item (form factor split)
-Sabra Snackers,['Sabra Snackers'],Individual item (form factor split)
-Trail Mix,['Trail Mix'],Individual item (form factor split)
-Energy Bites,['Energy Bites'],Individual item (form factor split)
-Protein Bites,['Protein Bites'],Individual item (form factor split)
-Abc Cookies,['Abc Cookies'],Individual item (form factor split)
-Abc'S Cookies,"[""Abc'S Cookies""]",Individual item (form factor split)
-City Mandys Cookies,['City Mandys Cookies'],Individual item (form factor split)
-Protein Bakery Cookies,['Protein Bakery Cookies'],Individual item (form factor split)
-Brownie,"['Protein Bakery Brownie', 'Sweet Street Brownie']",Brownies
-Cheesecake,['Cheesecake'],Individual item (form factor split)
-City Mandys Cream Pie,['City Mandys Cream Pie'],Individual item (form factor split)
-Heavenly Organics Chocolate Honey Patty,['Heavenly Organics Chocolate Honey Patty'],Individual item (form factor split)
-Mandy'S Bakery,"[""Mandy'S Bakery""]",Individual item (form factor split)
-Muffin,['Muffin'],Individual item (form factor split)
-Sweet Bread,['Sweet Bread'],Individual item (form factor split)
-Sweet Street Krispy,['Sweet Street Krispy'],Individual item (form factor split)
-Sweets Un Sweetened,['Sweets Un Sweetened'],Individual item (form factor split)
-1 Chocolate,['1 Chocolate'],Individual item (form factor split)
-Apple,['Apple'],Individual item (form factor split)
-Apple Slice,['Apple Slice'],Individual item (form factor split)
-Apple Tart,['Apple Tart'],Individual item (form factor split)
-Banana,['Banana'],Individual item (form factor split)
-Fruit Cup,['Fruit Cup'],Individual item (form factor split)
-Mandarin Orange Cup,['Mandarin Orange Cup'],Individual item (form factor split)
-Orange,['Orange'],Individual item (form factor split)
-Quinoa Chickpeas,['Quinoa Chickpeas'],Individual item (form factor split)
-Quinoa Lentils,['Quinoa Lentils'],Individual item (form factor split)
-Meat Bowl,"['Meat', 'Meat Salad Bowl ChickenTurkey']",Meat bowl items
-Cheese Stick,['Cheese Stick'],Cheese stick
-Heat And Serve,['Heat And Serve'],Individual item (form factor split)
-Loyalty,['Loyalty Up Grade'],Loyalty program
-Promo,"['A Bit Of Pumpkin A Dab Of Spice, Makes Everything Nice! Fall Is In The Air At Fresh Healthy Cafe!']",Promotional items
-Vegetarian,['Vegetarian'],Vegetarian general
-Poultry Caesar Salad,"['Chicken Caesar', 'Chicken Caesar Salad']",Split from mixed-category Caesar Salad - poultry items
-Caesar Salad,['Kale Caesar Salad'],Split from mixed-category Caesar Salad - neutral items
-Vegan Caesar Salad,['Vegetarian Caesar Salad'],Split from mixed-category Caesar Salad - vegan items
-Vegan Vegetarian Wrap,"['Kale Vegetarian Wrap', 'Vegan Avocado Wrap']",Split from mixed-category Vegetarian Wrap - vegan items
-Poultry Vegetarian Wrap,['Unchicken Blt Wrap'],Split from mixed-category Vegetarian Wrap - poultry items
-Burrito Wrap,"['Mission Burrito Wrap', 'Southewestern Fiesta Wrap']",Split from mixed-category Burrito Wrap - neutral items
-Vegan Burrito Wrap,['Vegan Mission Burrito Wrap'],Split from mixed-category Burrito Wrap - vegan items
-Poultry Burrito Wrap,['UnchickenBeyond Mission Burrito Wrap'],Split from mixed-category Burrito Wrap - poultry items
-Poultry Vegan Panini,['Vegan Bbq Unchicken Panini'],Split from mixed-category Vegan Panini - poultry items
-Vegan Vegan Panini,"['Vegan Pesto Panini', 'Veganized Panini']",Split from mixed-category Vegan Panini - vegan items
-Poultry Quesadilla,['Quesadilla Chicken Fiesta'],Split from mixed-category Quesadilla - poultry items
-Quesadilla,['Santa Fe Quesadilla'],Split from mixed-category Quesadilla - neutral items
-Vegan Quesadilla,['Vegan Santa Fe Quesadilla'],Split from mixed-category Quesadilla - vegan items
-Soup,"['Fresh Soup', 'Soup Of The Day', 'Vegetable Soup']",Split from mixed-category Soup - neutral items
-Vegan Soup,['Vegan Soup Of The Day'],Split from mixed-category Soup - vegan items
-Poultry Soup,"['Organic Chicken And Wild Rice', 'Kale Turkey Sausage Soup', 'Tuscan White Bean With Chicken']",Split from mixed-category Soup - poultry items
-Combo Meal,"['2 Combo', '3 Combo', '9.99 Combo Meal', 'Meat Combo Meal', 'Box Lunch', 'Box Lunch 9.95']",Split from mixed-category Combo Meal - neutral items
-Poultry Combo Meal,['Chicken 2 Combo'],Split from mixed-category Combo Meal - poultry items
-Vegan Combo Meal,"['Vegan Combo Meal', 'Vegetarian Combo Meal']",Split from mixed-category Combo Meal - vegan items
-to_remove,"['Gift Card', 'Catering Utensils Per Person']","Non-food/non-drink items (merch, gift cards, fees, utensils, etc.)"
+"canonical_name","variants","reasoning"
+"Breakfast Sandwich","['Anam A Nom', 'Awkward Aardvark', 'Croque Madame', 'Egg & Cheddar', 'Egg Meat', 'Egg Meat Cheese', 'Egg Sandwich', 'Griffith Street', 'Sandwich - Breakfast', 'The Craven', 'The Paul', 'Yeti Sandwich']","Grouped similar breakfast sandwich items from cafe menu"
+"Avocado Toast","['Avocado Toast', 'Careless Whisper', 'Full Metal Alchemist', 'Fullmetal Alchemist', 'One Punch', 'Toast', 'Toby Toast']","Grouped similar avocado toast items from cafe menu"
+"Bagel","['Avobagel', 'Bagel', 'Garden Home']","Grouped similar bagel items from cafe menu"
+"Sandwich","['Caveman', 'Chicken Salad Sandwich', 'Chicken Salad Sandwich With Side Salad', 'Egusto', 'Egusto Mato', 'Egusto Swanson', 'Pastrami Sandwich With Side Salad', 'The Dook', 'The Jesse Sandwich', 'The Yeli Sandwich', 'Tom Swanson', 'Tomwich', 'Turkey Sandwich', 'Turkey Sandwich With Side Salad', 'Vegan The Jesse Sandwich', 'Veggie Sandwich']","Grouped similar sandwich items from cafe menu"
+"Egg","['Egg', 'Egg Hummus Pesto', 'Veggie', 'Veggie & Hummus']","Grouped similar egg items from cafe menu"
+"Croissant","['Croissant Almond', 'Croissant Chocolate', 'Croissant Cinnamon Twist', 'Croissant | Chocolate', 'Croissant | Plain']","Grouped similar croissant items from cafe menu"
+"Danish","['Danish - Blueberry', 'Danish - Lemon', 'Danish | Blueberry', 'Danish | Lemon']","Grouped similar danish items from cafe menu"
+"Scone","['Bacon, Cheddar & Chive Scone', 'Scone', 'Scone - Blueberry', 'Scone - Vanilla Bean', 'Scone | Blueberry', 'Scone | Vanilla Bean', 'Vanilla Scone']","Grouped similar scone items from cafe menu"
+"Muffin","['Muffin', 'Muffin - Marionberry', 'Muffin | Chocolate', 'Muffin | Marionberry Cobbler']","Grouped similar muffin items from cafe menu"
+"Cookie","['Cookie Sampler', 'Cookie | Chocolate Chip', 'Cookie | Oatmeal', 'Cookies', 'Day Old Cookie', 'House Made Cookie', 'Pandan Cookie', 'Strawberry Matcha Cookie']","Grouped similar cookie items from cafe menu"
+"Pastry","['Apple Strudel', 'Bear Claw', 'Butterhorn Berry', 'Cream Cheese Pocket', 'Mochi Cupcake', 'Mochi Waffle (Weekends From 9Am-1Pm)']","Grouped similar pastry items from cafe menu"
+"Bread","['Banana Bread', ""Dave'S Killer Bread"", 'Little Little Loaf', 'Pumpkin Bread', 'Whole Grain']","Grouped similar bread items from cafe menu"
+"Dessert","['Brownie', 'Flan', 'Pumpkin Pie', 'Sea Salt Caramel Nutella', 'Strawberry White Chocolate']","Grouped similar dessert items from cafe menu"
+"Donut","['Donut']","Grouped similar donut items from cafe menu"
+"Oatmeal","['Oatmeal']","Grouped similar oatmeal items from cafe menu"
+"Salad","['Salad', 'Simple Salad']","Grouped similar salad items from cafe menu"
+"Hummus","['Hummus', 'Hummus Plate']","Grouped similar hummus items from cafe menu"
+"Fruit","['Apple', 'Banana', 'Fruit']","Grouped similar fruit items from cafe menu"
+"Energy Bar","['Fig Bar', 'Kind Bar', 'Kure Bar']","Grouped similar energy bar items from cafe menu"
+"Side","['Bacon', 'Sausage']","Grouped similar side items from cafe menu"
+"Day Old","['Day Old', 'Day Olds']","Grouped similar day old items from cafe menu"
+"Build Your Own","['Build Your Own', 'Flavor', 'Variable']","Grouped similar build your own items from cafe menu"
+"Special","['Bill', 'Bombay Breakfast', 'Inji', 'Tlc', 'Wow']","Grouped similar special items from cafe menu"
+"to_remove","['Affogato', 'African Grey', 'Altoids', ""Annie'S"", 'Art', ""Bag O' Beans"", 'Bag Of Bagel', 'Bath Bomb', 'Bee Good', 'Bee Local Honey', 'Black Butte', 'Black Garlic Salt', 'Bookmark', 'Cardamom', 'Carton', 'Chaga', 'Chips', 'Choco Beans', 'Chocolate Chip Cookie', 'Chocolate Muffin', 'Cinnamon Roll', 'Co2 Brew', 'Cocoa Rouge', 'Coffee Cake', 'Coffee Cake Cookie', 'Concord', 'Cookie', 'Cookie - Chocolate Chip', 'Cookie - Oatmeal Raisin', 'Domo Froppo', 'Earring', 'Egift Card', 'English Breakfast', 'Enlightenmint', 'Ex. Flavor', 'Feel Better', 'Goblin King', 'Golden Fire', 'Golden Yogi', 'Green Jade', 'Gum', 'Hibiscus', 'Holographic Sticker', 'Honey Cup', 'Honey Stick Pack', 'Jacobsen', 'Jacobsen Salt Co', 'Journal', 'Kind', 'Kyushu', 'Lavender', 'Loose-Leaf Tea', 'Mango Habanero', 'Mentos', 'Milkshake', 'Mint', 'Mint/Gum', 'Mr. Tanuki', 'Necklace', 'Ninkasi', 'Oatly', 'Orange', 'Peppermint', 'Postcard', 'Print', 'Pure', 'Raw Honey Trio', 'Rxbar', 'Salt Bag', 'Salted Caramel', 'Shirt', 'Spreading Spoon', 'Steamer', 'Stickers', 'Tap', 'Vanilla Grey', 'Vanilla Rose', 'Vive', 'Weekly Special', 'Welchs', 'White Peony', 'Zone Perfect']","Non-food items (merch, drinks) to be excluded"
