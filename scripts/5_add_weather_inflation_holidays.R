@@ -50,26 +50,28 @@ cpi_base <- cpi_food_away %>%
 direc1 <- "data/4_data_parquet_modeling/"
 
 for (direc2 in c(
-  "its/all_locations_daily",
-  "customer/all_locations_daily_customers",
-  "proportion/all_locations_daily_mpbamod_dishes_count",
-  "proportion/all_locations_daily_mpbamod_dishes_prop",
-  "proportion/all_locations_daily_vegan_dishes_count",
-  "proportion/all_locations_daily_vegan_dishes_prop",
-  "proportion/all_locations_daily_vegetarian_dishes_count",
-  "proportion/all_locations_daily_vegetarian_dishes_prop",
-  "proportion_targeted/all_locations_daily_breakfast_dishes_count",
-  "proportion_targeted/all_locations_daily_breakfast_dishes_presence",
-  "proportion_targeted/all_locations_daily_textured_dishes_count",
-  "proportion_targeted/all_locations_daily_textured_dishes_presence",
-  "proportion_targeted/all_locations_daily_untextured_dishes_count",
-  "proportion_targeted/all_locations_daily_untextured_dishes_presence",
-  "proportion_targeted/all_locations_daily_chicken_dishes_count",
-  "proportion_targeted/all_locations_daily_chicken_dishes_presence",
-  "proportion_targeted/all_locations_daily_dairy_dishes_count",
-  "proportion_targeted/all_locations_daily_dairy_dishes_presence",
-  "proportion_targeted/all_locations_daily_egg_dishes_count",
-  "proportion_targeted/all_locations_daily_egg_dishes_presence")){
+  # "its/all_locations_daily",
+   "customer/all_locations_daily_customers"#,
+  ###"customer/all_locations_transactions_customers",
+  # "proportion/all_locations_daily_mpbamod_dishes_count",
+  # "proportion/all_locations_daily_mpbamod_dishes_prop",
+  # "proportion/all_locations_daily_vegan_dishes_count",
+  # "proportion/all_locations_daily_vegan_dishes_prop",
+  # "proportion/all_locations_daily_vegetarian_dishes_count",
+  # "proportion/all_locations_daily_vegetarian_dishes_prop",
+  # "proportion_targeted/all_locations_daily_breakfast_dishes_count",
+  # "proportion_targeted/all_locations_daily_breakfast_dishes_presence",
+  # "proportion_targeted/all_locations_daily_textured_dishes_count",
+  # "proportion_targeted/all_locations_daily_textured_dishes_presence",
+  # "proportion_targeted/all_locations_daily_untextured_dishes_count",
+  # "proportion_targeted/all_locations_daily_untextured_dishes_presence",
+  # "proportion_targeted/all_locations_daily_chicken_dishes_count",
+  # "proportion_targeted/all_locations_daily_chicken_dishes_presence",
+  # "proportion_targeted/all_locations_daily_dairy_dishes_count",
+  # "proportion_targeted/all_locations_daily_dairy_dishes_presence",
+  # "proportion_targeted/all_locations_daily_egg_dishes_count",
+  # "proportion_targeted/all_locations_daily_egg_dishes_presence"
+  )){
 
   directory <- paste0(direc1, 'aggregated/', direc2, ".parquet")
 
@@ -153,7 +155,7 @@ read_parquet(directory) %>% glimpse()
 
   # Export
   write_parquet(df_all_daily, paste0(direc1, 'external_variables/', str_replace(direc2, 'all_locations_daily', 'finalized'), ".parquet"))
-
+  #write_parquet(df_all_daily, paste0(direc1, 'external_variables/', str_replace(direc2, 'all_locations_transactions', 'finalized_transactions'), ".parquet"))
   ## Check columns with NAs
   # df_all_daily %>% summarise(across(everything(), ~ sum(is.na(.)))) %>% select(where(~ . > 0)) %>% t()
 
@@ -262,3 +264,4 @@ read_parquet(directory) %>% glimpse()
 
 
 }
+
