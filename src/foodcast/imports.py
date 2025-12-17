@@ -224,6 +224,10 @@ def load_one_res_3_6_dinein(loc_id):
     df = pd.read_parquet(DATA_DIR_3_6 / f'{loc_id}.parquet')
     return df
 
+def load_one_res_3_7_truly_consolidated(loc_id):
+    df = pd.read_parquet(DATA_DIR_3_7 / f'{loc_id}.parquet')
+    return df
+
 def load_all_res_3_7_truly_consolidated():
     data = {}
     location_ids_by_coverage = load_loc_ids()
@@ -263,6 +267,7 @@ __all__ = ['np', 'pd', 'DateOffset', 'pyarrow',  'yaml',
            'load_all_res_2', 'load_one_res_2', 'load_all_res_3_2_con', 
            'load_all_res_3_4_ai', 'load_one_res_3_4_ai',
            'load_all_res_3_6_dinein', 'load_one_res_3_6_dinein',
+            'load_one_res_3_7_truly_consolidated',
            'load_all_res_3_7_truly_consolidated',
            'load_all_res_3_8_menu',
            'load_gaps',
