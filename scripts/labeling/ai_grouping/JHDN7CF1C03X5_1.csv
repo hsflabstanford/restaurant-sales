@@ -6,7 +6,7 @@ Pitaya Bowl,['Pitaya Bowl'],Individual item (form factor split)
 Pb2 Bowl,['Pb2 Bowl'],Individual item (form factor split)
 Greek Yogurt Bowl,['Greek Yogurt Bowl'],Individual item (form factor split)
 Protein Bowl,['Protein Bowl'],Individual item (form factor split)
-Byo ProteinSalad Bowl,['Byo ProteinSalad Bowl'],Individual item (form factor split)
+Byo ProteinSalad Bowl,['Byo Protein/Salad Bowl'],Individual item (form factor split)
 City Of Cape Protein Bowl,['City Of Cape Protein Bowl'],Individual item (form factor split)
 Harvest Signature Bowl,['Harvest Signature Bowl'],Individual item (form factor split)
 Vegan Harvest Signature Bowl,['Vegan Harvest Signature Bowl'],Individual item (form factor split)
@@ -28,12 +28,12 @@ Fresh Greens,"['Fresh Greens Salad', 'Side Salad', 'Vegan Big Salad Bowls', 'Big
 Chicken Wrap,"['Asian Chicken Wrap', 'Caesar Blt Chicken Wrap', 'Chicken Caesar Wrap']",Chicken wraps
 Turkey Wrap,['Turkey Bacon Avocado Wrap'],Turkey wraps
 Breakfast Wrap,"['Breakfast Wrap', 'Early Bird Wrap', 'Healthy Start Wrap', 'Vegan Breakfast Wrap', 'Egg Vegetarian Wrap']",Breakfast wraps
-City Wrap,['City 12 Wrap'],City wraps
+City Wrap,['City 1/2 Wrap'],City wraps
 Chicken Panini,"['Bbq Chicken Panini', 'Spicy Chicken Panini']",Chicken paninis
 Turkey Panini,"['Cranberry Turkey Panini', 'Turkey Bacon Avocado Panini', 'Turkey Pesto', 'Turkey Pesto Panini']",Turkey paninis
 Breakfast Panini,"['Breakfast Panini', 'Early Bird Panini', 'Healthy Start Panini']",Breakfast paninis
 Albacore Panini,['Albacore Melt Panini'],Albacore tuna panini
-PJ Panini,['PJ Panini'],PJ panini
+PJ Panini,['P&J Panini'],PJ panini
 Pair A Panini,['Pair A Panini'],Individual item (form factor split)
 Pair A Salad,['Pair A Salad'],Individual item (form factor split)
 Pair A Wrap,['Pair A Wrap'],Individual item (form factor split)
@@ -46,12 +46,12 @@ Hummus Toast,['Hummus Toast'],Individual item (form factor split)
 Portobello Balsamic Toast,['Portobello Balsamic Toast'],Individual item (form factor split)
 Vegan Portobello,['Vegan Portobello'],Individual item (form factor split)
 Veggie Portobello,['Veggie Portobello'],Individual item (form factor split)
-English Muffin,"['Egg N Muffin', 'English Egg Muffin', 'English Muffin Coffee', 'English Muffin Smoothie', 'English Muffin Squeeze']",English muffin items
+English Muffin,"['Egg N Muffin', 'English Egg Muffin', 'English Muffin + Coffee', 'English Muffin + Smoothie', 'English Muffin  +   Squeeze']",English muffin items
 Steel Cut Oat Meal,['Steel Cut Oat Meal'],Individual item (form factor split)
 Over Night Oats,['Over Night Oats'],Individual item (form factor split)
 Hard Boiled Egg,['Hard Boiled Egg'],Individual item (form factor split)
 Hard Boiled Egg 2 Pc,['Hard Boiled Egg 2 Pc'],Individual item (form factor split)
-Egg Quinoa Chickpeas,['Egg Quinoa Chickpeas'],Individual item (form factor split)
+Egg Quinoa Chickpeas,['Egg Quinoa & Chickpeas'],Individual item (form factor split)
 Yogurt,['Yogurt Parfait'],Yogurt parfait
 Beyond Burger,"['Beyond Burger Combo', 'Fresh Beyond Burger']",Beyond burgers
 Beyond Sausage,"['Beyond Sausage', 'Beyond Sausage Combo']",Beyond sausage
@@ -77,12 +77,12 @@ Bite Size Bobo'S Oat,"[""Bite Size Bobo'S Oat""]",Individual item (form factor s
 Enjoy Life Lentils,['Enjoy Life Lentils'],Individual item (form factor split)
 Hillshire Snacking,['Hillshire Snacking'],Individual item (form factor split)
 Pretzels And Hummus,['Pretzels And Hummus'],Individual item (form factor split)
-PretzelsHummus,['PretzelsHummus'],Individual item (form factor split)
+PretzelsHummus,['Pretzels/Hummus'],Individual item (form factor split)
 Sabra Snackers,['Sabra Snackers'],Individual item (form factor split)
 Trail Mix,['Trail Mix'],Individual item (form factor split)
 Energy Bites,['Energy Bites'],Individual item (form factor split)
 Protein Bites,['Protein Bites'],Individual item (form factor split)
-Abc Cookies,['Abc Cookies'],Individual item (form factor split)
+Abc Cookies,['Abc  Cookies'],Individual item (form factor split)
 Abc'S Cookies,"[""Abc'S Cookies""]",Individual item (form factor split)
 City Mandys Cookies,['City Mandys Cookies'],Individual item (form factor split)
 Protein Bakery Cookies,['Protein Bakery Cookies'],Individual item (form factor split)
@@ -95,7 +95,7 @@ Muffin,['Muffin'],Individual item (form factor split)
 Sweet Bread,['Sweet Bread'],Individual item (form factor split)
 Sweet Street Krispy,['Sweet Street Krispy'],Individual item (form factor split)
 Sweets Un Sweetened,['Sweets Un Sweetened'],Individual item (form factor split)
-1 Chocolate,['1 Chocolate'],Individual item (form factor split)
+1 Chocolate,['$1 Chocolate'],Individual item (form factor split)
 Apple,['Apple'],Individual item (form factor split)
 Apple Slice,['Apple Slice'],Individual item (form factor split)
 Apple Tart,['Apple Tart'],Individual item (form factor split)
@@ -103,13 +103,13 @@ Banana,['Banana'],Individual item (form factor split)
 Fruit Cup,['Fruit Cup'],Individual item (form factor split)
 Mandarin Orange Cup,['Mandarin Orange Cup'],Individual item (form factor split)
 Orange,['Orange'],Individual item (form factor split)
-Quinoa Chickpeas,['Quinoa Chickpeas'],Individual item (form factor split)
-Quinoa Lentils,['Quinoa Lentils'],Individual item (form factor split)
-Meat Bowl,"['Meat', 'Meat Salad Bowl ChickenTurkey']",Meat bowl items
+Quinoa Chickpeas,['Quinoa & Chickpeas'],Individual item (form factor split)
+Quinoa Lentils,['Quinoa & Lentils'],Individual item (form factor split)
+Meat Bowl,"['Meat', 'Meat Salad Bowl Chicken/Turkey']",Meat bowl items
 Cheese Stick,['Cheese Stick'],Cheese stick
 Heat And Serve,['Heat And Serve'],Individual item (form factor split)
 Loyalty,['Loyalty Up Grade'],Loyalty program
-Promo,"['A Bit Of Pumpkin A Dab Of Spice, Makes Everything Nice! Fall Is In The Air At Fresh Healthy Cafe!']",Promotional items
+Promo,"['A Bit Of Pumpkin + A Dab Of Spice, Makes Everything Nice! Fall Is In The Air At Fresh Healthy Cafe!']",Promotional items
 Vegetarian,['Vegetarian'],Vegetarian general
 Poultry Caesar Salad,"['Chicken Caesar', 'Chicken Caesar Salad']",Split from mixed-category Caesar Salad - poultry items
 Caesar Salad,['Kale Caesar Salad'],Split from mixed-category Caesar Salad - neutral items
@@ -117,9 +117,9 @@ Vegan Caesar Salad,['Vegetarian Caesar Salad'],Split from mixed-category Caesar 
 Vegan Vegetarian Wrap,"['Kale Vegetarian Wrap', 'Vegan Avocado Wrap']",Split from mixed-category Vegetarian Wrap - vegan items
 Poultry Vegetarian Wrap,['Unchicken Blt Wrap'],Split from mixed-category Vegetarian Wrap - poultry items
 Burrito Wrap,"['Mission Burrito Wrap', 'Southewestern Fiesta Wrap']",Split from mixed-category Burrito Wrap - neutral items
-Vegan Burrito Wrap,['Vegan Mission Burrito Wrap'],Split from mixed-category Burrito Wrap - vegan items
-Poultry Burrito Wrap,['UnchickenBeyond Mission Burrito Wrap'],Split from mixed-category Burrito Wrap - poultry items
-Poultry Vegan Panini,['Vegan Bbq Unchicken Panini'],Split from mixed-category Vegan Panini - poultry items
+Vegan Burrito Wrap,"['Vegan Mission Burrito Wrap', 'Vegan Southewestern Fiesta Wrap']",Split from mixed-category Burrito Wrap - vegan items
+Poultry Burrito Wrap,['Unchicken/Beyond Mission Burrito Wrap'],Split from mixed-category Burrito Wrap - poultry items
+Poultry Vegan Panini,"['Vegan Bbq Unchicken Panini', 'Spicy Unchicken Panini']",Split from mixed-category Vegan Panini - poultry items
 Vegan Vegan Panini,"['Vegan Pesto Panini', 'Veganized Panini']",Split from mixed-category Vegan Panini - vegan items
 Poultry Quesadilla,['Quesadilla Chicken Fiesta'],Split from mixed-category Quesadilla - poultry items
 Quesadilla,['Santa Fe Quesadilla'],Split from mixed-category Quesadilla - neutral items
@@ -127,7 +127,7 @@ Vegan Quesadilla,['Vegan Santa Fe Quesadilla'],Split from mixed-category Quesadi
 Soup,"['Fresh Soup', 'Soup Of The Day', 'Vegetable Soup']",Split from mixed-category Soup - neutral items
 Vegan Soup,['Vegan Soup Of The Day'],Split from mixed-category Soup - vegan items
 Poultry Soup,"['Organic Chicken And Wild Rice', 'Kale Turkey Sausage Soup', 'Tuscan White Bean With Chicken']",Split from mixed-category Soup - poultry items
-Combo Meal,"['2 Combo', '3 Combo', '9.99 Combo Meal', 'Meat Combo Meal', 'Box Lunch', 'Box Lunch 9.95']",Split from mixed-category Combo Meal - neutral items
-Poultry Combo Meal,['Chicken 2 Combo'],Split from mixed-category Combo Meal - poultry items
-Vegan Combo Meal,"['Vegan Combo Meal', 'Vegetarian Combo Meal']",Split from mixed-category Combo Meal - vegan items
-to_remove,"['Gift Card', 'Catering Utensils Per Person']","Non-food/non-drink items (merch, gift cards, fees, utensils, etc.)"
+Combo Meal,"['$2 Combo', '$3 Combo', '$9.99 Combo Meal', 'Meat $ Combo Meal', 'Box Lunch', 'Box Lunch $9.95']",Split from mixed-category Combo Meal - neutral items
+Poultry Combo Meal,['Chicken $2 Combo'],Split from mixed-category Combo Meal - poultry items
+Vegan Combo Meal,"['Vegan $ Combo Meal', 'Vegetarian $ Combo Meal']",Split from mixed-category Combo Meal - vegan items
+to_remove,"['Gift Card', 'Catering Utensils Per Person', 'Egift Card']","Non-food/non-drink items (merch, gift cards, fees, utensils, etc.)"

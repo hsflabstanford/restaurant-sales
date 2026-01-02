@@ -11,14 +11,14 @@ Salt & Pepper Chicken,False,False,False,False,False,False,False,False,False,Fals
 Egg & Cheese Sandwich,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
 Bacon Egg & Cheese,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False,False
 "Sausage, Egg & Cheese",False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,True,False,False
-Veggie Sausage Egg & Cheese,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False
+Veggie Sausage Egg & Cheese,False,True,True,False,False,False,False,False,False,True,False,False,False,False,True,False,True,False,False
 Breakfast Burrito,False,False,False,False,False,False,False,False,False,True,True,False,False,False,True,False,True,False,False
 Breakfast Sausage Pack,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False
 Crispy Potatoes,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Potatoes,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Hot Sauce,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Pack Of Buns,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
-Veggie Link,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Veggie Link,True,True,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
 Quart Of Chili,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False
 Pint Of Sauerkraut,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Biscuit,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
@@ -55,7 +55,7 @@ Pack Of Tortillas,True,True,False,False,False,False,False,False,False,False,Fals
 BBQ,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Burrito,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,True,False,False
 Special,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
-Vegan Veggie Sausage,True,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+Vegan Veggie Sausage,True,True,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
 catering_takeout,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Add Jalapenos,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Bun,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False

@@ -1,6 +1,6 @@
 item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or_pork_burger,ground_meat,meatballs,sausage,bacon,breakfast_sausage_patty,unfried_chicken,fried_chicken,savory_dairy,sweet_dairy,egg
 Big Bob Bratwurst,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False
-Warm Bavarian Pretzel,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False
+Warm Bavarian Pretzel,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False
 Hans Jalapeno Cheddar,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False
 Helgas Giant Kelbassi,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False
 Big City Beef Frank,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False

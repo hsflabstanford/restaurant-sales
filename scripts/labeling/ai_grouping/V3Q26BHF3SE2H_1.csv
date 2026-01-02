@@ -1,62 +1,70 @@
 canonical_name,variants,reasoning
-16th Seed,['16th Seed'],16th Seed salad/sandwich variants.
-Arbutus Avo,['Arbutus Avo'],Arbutus Avo breakfast variants.
-Avocado Tomato,['Avocado Tomato'],Avocado Tomato breakfast variants.
-Bagel,['Bagel'],Bagel variants.
-Caprese,['Caprese'],Caprese variants.
-Cookie,['Cookie'],Cookie variants.
-Croissant,['Croissant'],Croissant variants.
-Grilled Cheese,['Grilled Cheese'],Grilled cheese variants.
-Lox Bagel,['Lox Bagel'],Lox bagel variants.
-Muffin,['Muffin'],Muffin variants.
-Sausage Breakfast,['Sausage Breakfast'],Sausage breakfast variants.
-Scone,['Scone'],Scone variants.
-The Deep,['The Deep'],The Deep sandwich variants.
-Turkey,['Turkey'],Turkey sandwich variants.
-Wake N' Bacon,"[""Wake N' Bacon""]",Wake N' Bacon breakfast sandwich variants.
-50 Buffalo Wings,['50 Buffalo Wings'],Individual item (form factor split)
-Wings (V),['Wings (V)'],Individual item (form factor split)
-Bbq Chicken,"['Bbq Chicken Panini', 'Bbq Chicken']",BBQ chicken dish variants.
-Caesar Salad,"['Hail Caesar Salad', 'Caesar Salad']",Caesar salad name variants.
-Chips,"['Case Of Chips (60Ct)', 'Chips']",Chips quantity variants.
-Danish,['Danish'],Individual item (form factor split)
-Doughnut,['Doughnut'],Individual item (form factor split)
-Cinnamon Bun,['Cinnamon Bun'],Individual item (form factor split)
-Early Bird,"['Early Bird Combo', 'Early Bird Special']",Early bird special variants.
-Fruit Platter,"['Large Fruit Platter', 'Fruit Platter']",Fruit platter size variants.
-Hummus,"['Hummus Pita', 'Hummus Platter']",Hummus dish variants.
-Mediterranean,"['Mediterranean Salad', 'Mediterranean Sandwich', 'Santorini Salad']",Mediterranean dish variants.
-Veggie Platter,"['Large Vegetable Platter', 'Veggie Platter']",Vegetable platter size variants.
-Southwest,"['Southwest Panini (V)', 'Southwest Panini Box', 'Southwest Retriever', 'Southwest Retriever Box', 'Southwest Retriever Sandwich', 'Southwest Sandwich', 'Southwest Sausage Egg Cheese (V)', 'Southwest Sec Box (V)', 'Sw Sausage Egg Cheese (V)']",Southwest dish variants.
-Spinach Feta Tart,"['Spinach Feta Tart Platter', 'Spinach Feta Tart']",Spinach feta tart variants.
-Sec Box,"['Sec Breakfast Box', 'Sec Box']",Sec box variants.
-Arbutus Arts Festival Special,['Arbutus Arts Festival Special'],Individual item (was in misc group)
-Rise And Grind Special,['Rise And Grind Special'],Individual item (was in misc group)
-Rms Special,['Rms Special'],Individual item (was in misc group)
-St.Patty Special,['St.Patty Special'],Individual item (was in misc group)
-Kids Meal,"['Corn Dogs', 'Kids Meal']",Kids menu variants.
-Med Salad Single Serve,['Med Salad Single Serve'],Individual item (form factor split)
-Salad Bar,['Salad Bar'],Individual item (form factor split)
-East Drive Garden Salad,['East Drive Garden Salad'],Individual item (form factor split)
-Spinach Bacon Salad,['Spinach Bacon Salad'],Individual item (form factor split)
-Wrap Box,['Blt Wrap Box'],Wrap box variants.
-Chicken Apple Arugula Sandwich,['Chicken Apple Arugula Sandwich'],Individual item (form factor split)
-Tomato Basil Panini,['Tomato Basil Panini'],Individual item (form factor split)
-Chipotle Sausage Egg Cheese (V),['Chipotle Sausage Egg Cheese (V)'],Individual item (form factor split)
-Scrambled Eggs Wheat Toast,['Scrambled Eggs Wheat Toast'],Individual item (form factor split)
-Burger,['Beyond Burger'],Beyond burger
-Lemon Bundt Cake,['Lemon Bundt Cake'],Individual item (form factor split)
-Banana Blueberry Breakfast Bread,['Banana Blueberry Breakfast Bread'],Individual item (form factor split)
-Zucchini Bread,['Zucchini Bread'],Individual item (form factor split)
-Pretzel Bites,['Pretzel Bites'],Individual item (form factor split)
-Chocolate Strawberries,['Chocolate Strawberries'],Individual item (form factor split)
-Blazing Bella,['Blazing Bella'],Individual item (was in misc group)
-Pastry Platter,['Pastry Platter'],Individual item (form factor split)
-Kids Meal,['Kids Meal'],Kids meal
-Chips,['Chips'],Chips
-Turkey,['Turkey'],Turkey item
-Canape Platter,"['Bruschetta Canap Platter', 'Goat Fig Canap Platter']",Split from mixed-category Canape Platter - neutral items
-Pork Canape Platter,['Prosciutto Canap Platter'],Split from mixed-category Canape Platter - pork items
-Fish Canape Platter,['Salmon Canap Platter'],Split from mixed-category Canape Platter - fish items
-catering_takeout,"['Sandwich Catering', 'Bulk Salad', 'Bulk Pastry Box']",Catering and takeout items
-to_remove,"['Lavender Dreams', ""Romeo'S Rose"", 'Black Widow', 'Green Goblin', 'Lucky Charm City', 'The Mcgregor']","Non-food/non-drink items and drinks (coffee, tea, beer, wine, etc.)"
+16th Seed,"['16Th Seed', '16Th Seed (V)', '16Th Seed Box', '16Th Seed Sandwich', '16Th Seed Single Serve Salad', '16Th Seed*', 'The 16Th Seed Sandwich']",
+50 Buffalo Wings,['50 Buffalo Wings'],
+Arbutus Arts Festival Special,['Arbutus Arts Festival Special'],
+Arbutus Avo,"['Arbutus Avo', 'Arbutus Avo (V)', 'Arbutus Avo Breakfast Box']",
+Avocado Tomato,"['Avocado Tomato Sec', 'Avocado Tomato Sec (V)', 'Avocado Tomato Sec Breakfast Box', 'Avocado Tomato Sec Breakfast Box (V)', 'Avocado Tomato Wnb Box', 'Avocado Tomato Wnb Breakfast Box']",
+Bagel,"['Bagel', 'Bagels', 'Cinnamon Raisin Bagel', 'Everything Bagel', 'Plain Bagel', 'Wheat Bagel']",
+Bagel Sandwich,['Bagel Sandwich'],
+Banana Blueberry Breakfast Bread,['Banana Blueberry Breakfast Bread'],
+Bananas,['Bananas'],
+Bbq Chicken,"['Bbq Chicken', 'Bbq Chicken Panini']",
+Blazing Bella,['Blazing Bella'],
+Breakfast Sandwich Platter,['Breakfast Sandwich Platter'],
+Bruschetta Canape Platter,['Bruschetta Canap√© Platter'],
+Burger,['Beyond Burger'],
+Caesar Salad,"['Caesar Salad', 'Hail Caesar Salad']",
+Canape Platter,['Bruschetta Canap√©'],
+Caprese,"['Caprese', 'Caprese Box', 'Caprese Lunch Box']",
+Chicken Apple Arugula Sandwich,['Chicken Apple Arugula Sandwich'],
+Chips,"['Case Of Chips (60Ct)', 'Chips', ""Ms. Vickie'S Chips""]",
+Chocolate Strawberries,['Chocolate Strawberries'],
+Cinnamon Bun,['Cinnamon Bun'],
+Cookie,"['Chocolate Chip Cookie', 'Cookie Chocolate Chip', 'Cookie Oatmeal', 'Mini Cookies', 'Oatmeal Cookie']",
+Cookie Platter,['Cookie Platter'],
+Croissant,"['Chocolate Croissant', 'Croissant']",
+Danish,['Danish'],
+Doughnut,['Doughnut'],
+Early Bird,"['Early Bird Combo', 'Early Bird Special']",
+East Drive Garden Salad,['East Drive Garden Salad'],
+Fish Canape Platter,['Salmon Canap√© Platter'],
+Fruit Platter,"['Fruit Platter', 'Large Fruit Platter']",
+Goat Fig Canape Platter,['Goat & Fig Canap√© Platter'],
+Grilled Cheese,"['Deluxe Grilled Cheese', 'Grilled Cheese', 'Grilled Cheese Lunch Box']",
+Hashbrown,['Hashbrown'],
+Hummus,"['Hummus & Pita', 'Hummus Platter']",
+Kids Meal,"['Corn Dogs', 'Kids Grilled Cheese', 'Kids Meal']",
+Lemon Bundt Cake,['Lemon Bundt Cake'],
+Lox Bagel,"['Lox Bagel', 'Lox Bagel Box']",
+Med Salad Single Serve,['Med Salad Single Serve'],
+Mediterranean,"['Mediterranean Salad', 'Mediterranean Sandwich', 'Santorini Salad']",
+Muffin,"['Blueberry Muffin', 'Muffin', 'Muffins']",
+Pastry Platter,['Pastry Platter'],
+Pork Canape Platter,['Prosciutto Canap√© Platter'],
+Pretzel Bites,['Pretzel Bites'],
+Prosciutto Canape,['Prosciutto And Melon Canap√©'],
+Rise And Grind Special,['Rise And Grind Special'],
+Rms Special,['Rms Special'],
+Salad Bar,['Salad Bar'],
+Salmon Canape,['Salmon And Cucumber Canap√©'],
+Sausage Breakfast,"['Chipotle Sausage Egg & Cheese (V)', 'Sausage Brekkie', 'Sausage Brekkie Box', 'Sausage, Egg, Cheese (V)', 'Sausage, Egg, Cheese Deluxe (V)', 'Southwest Sausage Egg & Cheese (V)', 'Sw Sausage Egg & Cheese (V)', 'Chipotle Sausage Egg Cheese (V)', 'Southwest Sausage Egg Cheese (V)', 'Sw Sausage Egg Cheese (V)']",
+Scone,"['Scone', 'Scones']",
+Scrambled Eggs Wheat Toast,['Scrambled Eggs & Wheat Toast'],
+Sec Box,"['Sec Box', 'Sec Breakfast Box']",
+Southwest,"['Southwest Panini (V)', 'Southwest Panini Box', 'Southwest Retriever', 'Southwest Retriever Box', 'Southwest Retriever Sandwich', 'Southwest Sandwich', 'Southwest Sec Box (V)', 'Southwest Wnb Box', 'Southwest Wnb Breakfast Box']",
+Spinach Bacon Salad,['Spinach & Bacon Salad'],
+Spinach Feta Tart,"['Spinach & Feta Tart', 'Spinach & Feta Tart Platter']",
+St.Patty Special,['St.Patty Special'],
+The Deep,"['The Deep', 'The Deep (V)', 'The Deep Box']",
+Tomato Basil Panini,['Tomato Basil Panini'],
+Turkey,"['Turkey Pesto', 'Turkey Pesto Box', 'Turkey Presto', 'Turkey Presto Box', 'Turkey Presto Sandwich']",
+Veggie Platter,"['Large Vegetable Platter', 'Veggie Platter']",
+Wake N' Bacon,"[""Avocado Tomato Wake N' Bacon"", 'Avocado Tomato Waken Bacon', 'Gluten Free Wnb Box', ""Southwest Wake N' Bacon"", ""Wake N' Bacon"", ""Wake N' Bacon Box"", ""Wake N' Bacon Deluxe"", 'Waken Bacon Box', ""Waken' Bacon"", 'Wnb Deluxe Breakfast Box']",
+Wings (V),['Wings (V)'],
+Wrap Box,['Blt Wrap Box'],
+Zucchini Bread,['Zucchini Bread'],
+catering_takeout,"['10 Sandwhich Catering Bundle', 'Bulk 16Th Seed Salad', 'Bulk Cookies', 'Bulk Pastry Box', 'Bulk Salad', 'Chocolate Croissants Bulk', 'Croissants Bulk', 'Sandwich Catering Tray']",Bulk/catering items for large orders
+to_remove,"['1 Hour Private Reservation', '1 Million Cups Sponsorship - 2023', 'Ad Space In Our Newsletter Once Per Month', 'Airpot Rental', 'Arizona', 'Artist Reimbursement', 'Automated Individual Code Fee', 'Bag O‚Äô Beans', 'Black Shirt', 'Black T-Shirt', 'Black Widow', 'Black&Gold Rush Discount Reimbursement', 'Bulk Bag Of Beans', 'Can O‚Äô Beans', 'Chips Mocha', 'Chocolate Core Milk', 'Coupon Redemptions', 'Cow Planter (Discounted)', 'Decaf 2.2Lb Bag', 'Decaf Bulk Bag 2.2Lb', 'Delivery Fee', 'Discount: Opening20', 'Disposable Products', 'Disposables (Plates, Silverware, Cups)', 'Egift Card', 'Em Voucher Redemptions', 'Email Fee', 'Event Reservation Fee', 'Friday Funfest - Golden Hour', 'Frozen Hot Chocolate', 'Gift Card', 'Gift Card Reload', 'Green Goblin', 'Gsa Trivia Night', 'Holiday Can O Beans', 'Holiday Gift Basket', 'In-Store Ad Space', 'In-Store Pamphlets At Pos', ""Kid'S Club Stickers"", 'Kids Club Reimbursement', 'Lavender Dreams', 'Lucky Charm City', 'Matcha 1.1 Lb', 'Med Roast 2.2Lb Bag', 'Medium Roast 2.2Lb Bag', 'Medium Roast, Guatemala Beans', 'Monthly Premium In-Store Ad Space', 'Napkin Holder Ad Space', 'Napkin Holders', 'Napkin Holders Advertising', 'National Coffee Day', 'Oca Av Adapter Reimbursement', 'Oca Box', 'Plant Charm Large', 'Plant Charm Small', 'Plants (Various Prices)', 'Pop-Up Fee (10Am-3Pm)', 'Poster On Our Storefront Windows', 'Premium In-Store Ad Space', 'Rms Ticket', ""Romeo'S Rose"", 'Small Planter', 'Social Media Partnership', 'Social Media Partnership With Select Om Posts', 'Social Media Post (Boosted For 30 Days)', 'Soil', 'Sponsorship Statement On 2 Virtual Events (Om Events Only)', 'Staffing And Tents', 'Staffing Fee', 'Steamed Apple Spice', 'Stickers In To-Go Bags', 'Stickers On Sleeves & Clear Cups', 'Storefront Window Ad Space', 'Sunday Study Hour Sponsorship', 'Sunday Study Hours Sponsorship', 'The Mcgregor', 'Training 3Hrs (5Pm - 8Pm)', 'Umbcvets21 Coupon Reimbursement', 'Vanilla Core Milk', 'Virtual Event Fee', 'Weekly Brew Newsletter Ad', 'White Long Sleeve Shirt', 'White Shirt', 'Whole Beans', 'Kids Drink']","Non-food items (drinks, merchandise, services, fees, etc.) to be removed from food analysis"
+Double Meat,['Double Meat'],
+Side Salad,['Side Salad'],
+Sausage Egg And Cheese,"['Sausage Egg And Cheese', 'Chipotle Sausage Egg Cheese (V)', 'Southwest Sausage Egg Cheese (V)', 'Sw Sausage Egg Cheese (V)']",Sausage egg cheese sandwiches

@@ -2,12 +2,12 @@ item_name,vegan,vegetarian,mpbamod,lamb,chunked_beef_or_pork,pulled_pork,beef_or
 Chips & Guacamole,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Churros,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False
 Picadillo,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False
-Quesadilla,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Quesadilla,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Wings,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
-Taco,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Taco,False,False,True,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Asada,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
-Burrito,False,False,True,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
-Nachos,False,False,True,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Burrito,False,False,True,False,True,False,False,True,False,True,False,False,True,False,True,False,False,False,False
+Nachos,False,False,True,False,True,True,False,False,False,False,False,False,False,False,True,False,False,False,False
 2 Special,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Brunch Special,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,True,False,False
 Fries,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
@@ -28,10 +28,10 @@ Moroccan Glazed Chicken Breast,False,False,False,False,False,False,False,False,F
 Ceviche,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Surimi Salad,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Cheese Roll,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
-Queso,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Queso,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Sides,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Hot Dogs,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
-Vegan Taco,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+Vegan Taco,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Asian Short Ribs,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Avocado,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 B&C Burrito,False,False,True,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
@@ -43,14 +43,14 @@ Chicken,False,False,False,False,False,False,False,False,False,False,False,False,
 Chorizo,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False
 Duo,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
 Guacky Wednesday,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
-Jackfruit Taco,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
-Meat Quesadilla,False,False,True,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Jackfruit Taco,True,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+Meat Quesadilla,False,False,True,False,True,True,False,False,False,True,False,False,True,False,True,False,False,False,False
 Mesquite Grilled Tri-Tip,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Nopal,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Paleta,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Pastor Taco,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Plain Quesadilla,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False
-Protein Quesadilla,False,False,True,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False
+Protein Quesadilla,False,False,True,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,False
 Red Rose Accordions,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False
 Rice,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False
 Suadero Taco,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False

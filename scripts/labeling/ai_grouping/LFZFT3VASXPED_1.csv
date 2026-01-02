@@ -1,38 +1,37 @@
-"canonical_name","variants","reasoning"
-"BBQ Bacon","['BBQ Bacon']","BBQ Bacon burger variants (holiday surcharge, spelling)."
-"Better Than Beyond","['Better Than Beyond']","Vegan burger variants (spelling, holiday surcharge)."
-"Deluxe Cheeseburger","['Deluxe Cheeseburger']","Deluxe Cheeseburger variants."
-"Double Chicken Cheese","['Double Chicken Cheese']","Double Chicken Cheese variants."
-"Down South Loaded Fries","['Down South Loaded Fries']","Down South Loaded Fries variants."
-"Hot Chicken Sandwich","['Hot Chicken Sandwich']","Hot Chicken Sandwich variants (typo, holiday surcharge)."
-"Hot Shake Popcorn Chicken","['Hot Shake Popcorn Chicken']","Hot Shake Popcorn Chicken variants."
-"Juicy Tenders","['Juicy Tenders']","Juicy Tenders variants."
-"Quad Smash","['Quad Smash']","Quad Smash burger variants."
-"Seasoned Fries","['Seasoned Fries']","Seasoned Fries variants (typo, holiday surcharge)."
-"Slider Cheeseburger","['Slider Cheeseburger']","Slider Cheeseburger spelling variants."
-"Smashville","['Smashville']","Smashville burger variants."
-"Solo","['Solo']","Solo burger variants."
-"Sweet & Hot","['Sweet & Hot']","Sweet & Hot sauce variants."
-"Netflix ""Chill""","['Netflix ""Chill""']","Same item, quotes removed."
-"Fries","['6 Fries Can', 'Down South Fries', 'Qvm Fries', 'Seasoned Friess', 'Fries And Drink Combo']","Fries variants."
-"Hot Dog","['Classic Hotdog', 'Kids Hotdog']","Hot dog variants."
-"Kids Hotdog","['Kids Hotdog']","Individual item (form factor split)"
-"Kids Nuggets","['Kids Nuggets']","Individual item (form factor split)"
-"Kids Tenders","['Kids Tenders']","Individual item (form factor split)"
-"Tenders","['Kids Tenders', 'Tenders']","Chicken tenders variants."
-"Chipotle Mayo","['Chipotle Mayo']","Individual item (form factor split)"
-"Franks Buffalo","['Franks Buffalo']","Individual item (form factor split)"
-"Garlic Aioli","['Garlic Aioli']","Individual item (form factor split)"
-"Ranch Dressing","['Ranch Dressing']","Individual item (form factor split)"
-"Smashville Sauce","['Smashville Sauce']","Individual item (form factor split)"
-"Sriracha Mayo","['Sriracha Mayo']","Individual item (form factor split)"
-"Sweet Hot","['Sweet Hot']","Individual item (form factor split)"
-"Tomato Ketchup","['Tomato Ketchup']","Individual item (form factor split)"
-"Hot Dust","['Hot Dust']","Individual item (form factor split)"
-"Pickles","['The Bronx Pickles', 'Pickles']","Pickle variants."
-"Add-on","['Add Patty', 'Gluten Free Bun']","Add-on variants."
-"Pack","['The Family Pack']","Family pack variants."
-"Slaw","['Creamy Slaw']","Coleslaw"
-"Wa-Aaa Bo-Al","['Wa-Aaa Bo-Al']","Individual item (was in misc group)"
-"Pickles","['Pickles']","Pickles"
-"Tenders","['Tenders']","Chicken tenders"
+canonical_name,variants,reasoning
+Add-on,"['Add Patty', 'Gluten Free Bun']",
+BBQ Bacon,"['Barbecue Bacon', 'Bbq Bacon', 'Bbq Bacon (Hol Surcharge)']",
+Better Than Beyond,"['Better Than Beyond', 'Better Than Beyond(Hol Surcharge)', 'Better Then Beyond!', 'Better Then Beyond! (V)']",
+Chipotle Mayo,['Chipotle Mayo'],
+Deluxe Cheeseburger,"['Deluxe Cheeseburger', 'Deluxe Cheeseburger(Hol Surcharge)']",
+Double Chicken Cheese,"['Double Chicken Cheese', 'Double Chicken Cheese Hol Surcharge']",
+Down South Loaded Fries,"['Down South Fries', 'Down South Loaded Fries', 'Down South Loaded Fries Hol Surcharge']",
+Franks Buffalo,['Franks Buffalo'],
+Free Cheezzzyy Fries,['Free Cheezzzyy Fries'],
+Fries,"['Fries And Drink Combo', 'Qvm Fries', '6 Fries Can']",
+Garlic Aioli,['Garlic Aioli'],
+Hot Chicken Sandwich,"['Hot Chicken Sandwhich', 'Hot Chicken Sandwich', 'Hot Chicken Sandwich Hol Surcharge']",
+Hot Dog,['Classic Hotdog'],
+Hot Dust,['Hot Dust'],
+Hot Shake Popcorn Chicken,"['Hot Shake Popcorn Chicken', 'Hot Shake Popcorn Chicken Hol Surcharge']",
+Juicy Tenders,"['Juicy Tenders', 'Juicy Tenders Hol Surcharge']",
+Kids Hotdog,['Kids Hotdog'],
+Kids Nuggets,['Kids Nuggets'],
+Netflix Chill,"['Netflix & ""Chill""', 'Netflix & Chill', 'Netflix ""Chill""']",
+Pack,['The Family Pack'],
+Pickles,"['Pickles', 'The Bronx Pickles']",
+Quad Smash,"['Quad Smash', 'Quad Smash Hol Surcharge']",
+Ranch Dressing,['Ranch Dressing'],
+Seasoned Fries,"['Large Seasoned Fries', 'Seasoned Fries', 'Seasoned Fries Hol Surcharge', 'Seasoned Friesss', 'Seasoned Friess']",
+Slaw,['Creamy Slaw'],
+Slider Cheeseburger,"['Slider Cheese Burger', 'Slider Cheeseburger']",
+Smashville,"['Smashville', 'Smashville Hol Surcharge', 'Smashville Sauce', 'The Smashville']",
+Solo,"['Solo', 'The Solo', 'The Solo Life']",
+Sriracha Mayo,['Sriracha Mayo'],
+Sweet & Hot,"['Sweet & Hot', 'Sweet And Hot', 'Sweet Hot']",
+Tenders,"['Kids Tenders', 'Tenders']",
+Tomato Ketchup,['Tomato Ketchup'],
+Wa-Aaa Bo-Al,['Wa-Aaa Bo-Al'],
+to_remove,"['$6 Fries & Can', 'Egift Card', 'T Shirt Black', 'T Shirt White', 'Gift Card', 'Open Food', 'Sweet Hot']","Non-food items (gift cards, merchandise, promotions) to be removed from analysis"
+Candy,['Candy'],
+Side,['Side'],

@@ -1,72 +1,59 @@
-"canonical_name","variants","reasoning"
-"Blue Cow","['Blue Cow']","Blue Cow burger variants."
-"Burda","['Burda']","Burda burger/fries variants."
-"Crispy Chicken","['Crispy Chicken']","Crispy chicken variants."
-"Doggie","['Doggie']","Doggie (hot dog) variants."
-"Double Trouble","['Double Trouble']","Double Trouble burger variants."
-"El Patron","['El Patron']","El Patron burger variants."
-"La Frenchie","['La Frenchie']","La Frenchie burger variants."
-"La Reina","['La Reina']","La Reina burger variants."
-"MIA","['MIA']","MIA burger variants."
-"Mamacita","['Mamacita']","Mamacita burger variants."
-"Ribs","['Ribs']","BBQ ribs variants."
-"Ultimate BC Burger","['Ultimate BC Burger']","Ultimate BC burger variants."
-"V-Urger","['V-Urger']","V-Urger (vegan) variants."
-"Venezuelan Cowboy","['Venezuelan Cowboy']","Venezuelan Cowboy variants."
-"Volcano Fries","['Volcano Fries']","Volcano fries variants."
-"Lil Burger","['Lil Burger']","Same item, apostrophe variant."
-"Bbq Wings","['Bbq Wings']","Individual item (form factor split)"
-"Buffalo Wings","['Buffalo Wings']","Individual item (form factor split)"
-"Garlic Parmesan Wings","['Garlic Parmesan Wings']","Individual item (form factor split)"
-"Hh Wings","['Hh Wings']","Individual item (form factor split)"
-"Blue Fries","['Blue Fries']","Individual item (form factor split)"
-"Fuego Fries","['Fuego Fries']","Individual item (form factor split)"
-"Kalamata Fries","['Kalamata Fries']","Individual item (form factor split)"
-"Loaded Fries","['Loaded Fries']","Individual item (form factor split)"
-"Chicken","['Da Chick Blt', 'Lil Crispy Chicken']","Chicken sandwich variants."
-"Bella","['Bella']","Individual item (form factor split)"
-"La Polar Stone","['La Polar Stone']","Individual item (form factor split)"
-"La Squisita","['La Squisita']","Individual item (form factor split)"
-"9 Bucks Tuesday","['9 Bucks Tuesday']","Individual item (was in catch-all group)"
-"Combo Of The Week","['Combo Of The Week']","Individual item (was in catch-all group)"
-"Lucky 7","['Lucky 7']","Individual item (was in catch-all group)"
-"Jueves Unicamente","['Jueves Unicamente']","Individual item (was in catch-all group)"
-"Ribs","['Bbq Ribs 12', 'Ribs']","BBQ ribs variants."
-"Happy Hour","['Hh Upgrade Toppings', 'Hh Wings']","Happy hour variants."
-"New! - Guay Burger","['New! - Guay Burger']","Individual item (form factor split)"
-"New! - Fuego Fries","['New! - Fuego Fries']","Individual item (form factor split)"
-"New! - Guay Fries","['New! - Guay Fries']","Individual item (form factor split)"
-"Raclette Fries","['Raclette Fries']","Individual item (form factor split)"
-"Side Fries","['Side Fries']","Individual item (form factor split)"
-"Skinny Fries","['Skinny Fries']","Individual item (form factor split)"
-"Smoky Fries","['Smoky Fries']","Individual item (form factor split)"
-"Stinky Fries","['Stinky Fries']","Individual item (form factor split)"
-"Truff Me","['Truff Me']","Individual item (form factor split)"
-"Chicken","['Naked Wings']","Chicken items"
-"Promo 9 Blue Cow","['Promo 9 Blue Cow']","Individual item (was in promo group)"
-"Promo 9 Burda","['Promo 9 Burda']","Individual item (was in promo group)"
-"Promo 9 Double Trouble","['Promo 9 Double Trouble']","Individual item (was in promo group)"
-"Promo 9 La Frenchie","['Promo 9 La Frenchie']","Individual item (was in promo group)"
-"Promo 9 La Reina","['Promo 9 La Reina']","Individual item (was in promo group)"
-"Promo 9 V-Urger","['Promo 9 V-Urger']","Individual item (was in promo group)"
-"Promo 9 Venezuelan Cowboy","['Promo 9 Venezuelan Cowboy']","Individual item (was in promo group)"
-"Promo 9.99","['Promo 9.99']","Individual item (was in promo group)"
-"Promo 19.99","['Promo 19.99']","Individual item (was in catch-all group)"
-"Promo 25 X 2","['Promo 25 X 2']","Individual item (was in catch-all group)"
-"Promo Burda Waoh!","['Promo Burda Waoh!']","Individual item (was in catch-all group)"
-"Thursday Promo","['Thursday Promo']","Individual item (was in catch-all group)"
-"M I A Promo","['M I A Promo']","Individual item (was in catch-all group)"
-"TequeOs","['TequeOs']","Venezuelan cheese sticks"
-"Ribs","['Ribs']","Ribs"
-"Minis","['Minis']","Mini portions"
-"Lunch Special","['Lunch Special']","Individual item (was in misc group)"
-"Beef Cheeseburger","['Cheeseburger']","Split from mixed-category Cheeseburger - beef items"
-"Burge Promo","['Burge Promo']","Individual item (form factor split)"
-"Da Buffalo","['Da Buffalo']","Individual item (form factor split)"
-"DaBoss","['DaBoss']","Individual item (form factor split)"
-"Double Trouble 9","['Double Trouble 9']","Individual item (form factor split)"
-"El Papi","['El Papi']","Individual item (form factor split)"
-"Big Mama","['Big Mama']","Individual item (form factor split)"
-"Lil Mama","['Lil Mama']","Individual item (form factor split)"
-"Beef Burger","['Burger Of The Weekend', 'Custom Burger', 'LilCheeseburger']","Split from mixed-category Burger - beef items"
-"Pork Burger","['Burger Or Hot Dog WFries (3 Options)']","Split from mixed-category Burger - pork items"
+canonical_name,variants,reasoning
+9 Bucks Tuesday,['9 Bucks Tuesday'],
+Bacon Cheeseburger,"['Bacon Cheeseburger', 'Hh Bacon Cheeseburger', 'LilCheeseburger']",
+Bbq Wings,['Bbq Wings'],
+Beef Burger,['Burge Promo'],
+Bella,['Bella'],
+Big Mama,['Big Mama'],
+Blue Cow,"['Promo $9 Blue Cow', 'Promo 2X1 - Blue Cow', 'The Blue Cow']",
+Blue Fries,['Blue Fries'],
+Buffalo Wings,['Buffalo Wings'],
+Burda,"['Burda', 'Burda Fries', 'Promo $9  Burda', 'Promo 2X1 - Burda', 'Promo Burda / Waoh!']",
+Burger,"['Burger Of The Weekend', 'Custom Burger']",
+Cheeseburger,"['2X1 Cheeseburger', '2X1 Cheeseburgers', '3 Cheeseburgers', 'Cheeseburger', 'Cheeseburger Promo', 'LilCheeseburger']",
+Combo Of The Week,['Combo Of The Week'],
+Crispy Chicken,"['Crispy Chicken Blt', 'Crispy Chicken Promo', 'Da¬¥ Chick Blt', 'Lil¬¥ Crispy Chicken', 'Da Chick Blt', 'Lil Crispy Chicken']",
+Da Buffalo,['Da¬¥ Buffalo'],
+DaBoss,['Da¬¥Boss'],
+Doggie,"['Doggie', 'Doggies 2X1 Promo', 'Doggies Combo']",
+Double Trouble,"['Double Trouble', 'Double Trouble $9', 'Promo $9 Double Trouble', 'Promo 2X1 - Double Trouble']",
+El Papi,['El Papi'],
+El Patron,"['El Patron', 'Promo 2X1 - El Patron']",
+Fuego Fries,"['Fuego Fries', 'New! - Fuego Fries']",
+Garlic Parmesan Wings,['Garlic Parmesan Wings'],
+Guay Burger,['New! - Guay Burger'],
+Guay Fries,['New! - Guay Fries'],
+Hh Wings,['Hh Wings'],
+Hot Dog,['Burger Or Hot Dog W/Fries (3 Options)'],
+Kalamata Fries,['Kalamata Fries'],
+La Frenchie,"['La Fenchie', 'La Frenchie', 'Promo $9 La Frenchie', 'Promo 2X1 - La Frenchie']",
+La Polar Stone,['La Polar Stone'],
+La Reina,"['La Reina', 'Promo $9  La Reina', 'Promo 2X1 - La Reina']",
+La Squisita,['La Squisita'],
+Lil Burger,"[""Lil' Burger"", 'Lil¬¥ Burger', 'Lil¬¥Cheeseburger']",
+Lil Mama,['Lil¬¥ Mama'],
+Loaded Fries,['Loaded Fries'],
+Lucky 7,['Lucky 7'],
+Lunch Special,['Lunch Special'],
+MIA,"['M I A  Promo', 'M I Apromo', 'Mia']",
+Mamacita,"['Mamacita!', 'Promo 2X1 - Mamacita']",
+Minis,['Minis'],
+Promo 25 X 2,['Promo $25 X 2'],
+Promo 9.99,"['Promo $19.99', 'Promo $9.99', 'Promo 19.99']",
+Raclette Fries,['Raclette Fries'],
+Ribs,"['Bbq Ribs 1/2', 'Ridiculous Bbq Ribs']",
+Side Fries,['Side Fries'],
+Skinny Fries,['Skinny Fries'],
+Smoky Fries,['Smoky Fries'],
+Stinky Fries,['Stinky Fries'],
+TequeOs,['Teque√±Os'],
+Thursday Promo,['Thursday Promo'],
+Truff Me,['Truff Me'],
+Ultimate BC Burger,"['The Ultimate Bc Burger', 'The Ultimate Double Bc Burger', 'Ultimate Bc Burger', 'Ultimate Bc Burger Promo']",
+V-Urger,"['Promo $9 V-Urger', 'Promo 2X1 - V-Urger', 'V-Urger', 'Vurger']",
+Venezuelan Cowboy,"['Promo $9 Venezuelan Cowboy', 'Promo 2X1 - Venezuelan Cowboy', 'Venezuelan Cowboy']",
+Volcano Fries,"['Volcano Fries', 'Volcano Fries (E)']",
+Wings,['Naked Wings'],
+to_remove,"['$1 Upgrade Volcano', 'Catering Setup Fee', 'Custom Amount', 'Custum Amount', 'Delivery Fee', 'Egift Card', 'Gift Card', 'Hh Upgrade Toppings', 'Jueves Unicamente', 'Viernes, Sabado Y Domingo Solamente', 'Coke', 'Fountain Drink', 'M I A Promo', 'Promo Burda Waoh!']","Non-food items (fees, gift cards, upgrades, day restrictions) to be removed from analysis"
+Salad,['Salad'],
+Side Salad,['Side Salad'],

@@ -1,60 +1,60 @@
-"canonical_name","variants","reasoning"
-"Calabacitas","['Calabacitas']","Calabacitas (squash) variants."
-"Chips & Guacamole","['Chips & Guacamole']","Chips and guacamole variants."
-"Churros","['Churros']","Churros variants."
-"Jackfruit","['Jackfruit']","Chile verde jackfruit variants."
-"Pastor","['Pastor']","Al Pastor variants."
-"Picadillo","['Picadillo']","Picadillo variants (including vegan)."
-"Quesadilla","['Quesadilla']","Quesadilla variants."
-"Suadero","['Suadero']","Suadero variants."
-"Taco Bar","['Taco Bar']","Taco bar/catering variants."
-"Wings","['Wings']","Wings variants."
-"Taco","['1 Taco', 'Asada Taco', 'Chicken Taco']","Taco variants."
-"Asada","['Asada Taco', 'Asada']","Asada variants."
-"Burrito","['Burrito (1)', 'BC Burrito', 'Break Fast Burrito', 'Breakfast Burrito', 'Burrito']","Burrito variants."
-"Nachos","['Borracho Nachos', 'Nachos']","Nachos variants."
-"Chips Guac","['Chips Guac (V)', 'Chips Guacamole']","Chips and guacamole variants."
-"2 Special","['2 Special']","Individual item (was in misc group)"
-"Brunch Special","['Brunch Special']","Individual item (was in misc group)"
-"Fries","['N Fries', 'Nachos Fries', 'Side Fries', 'Super Fries', 'Fries']","Fries variants."
-"Burrito","['Protein Burrito', 'Ranchero Burrito', 'Vegan Break Fast Burrito', 'Vegan Burrito', 'Burrito']","More burrito variants."
-"Nachos","['Nachitos', 'Nachos Fries', 'Nachos']","Nachos variants."
-"Extra Topping","['Extra Topping']","Individual item (form factor split)"
-"Side Avocado","['Side Avocado']","Individual item (form factor split)"
-"Side Fries","['Side Fries']","Individual item (form factor split)"
-"Side Gua","['Side Gua']","Individual item (form factor split)"
-"Corn","['Corn']","Individual item (form factor split)"
-"Rice Pilaf","['Rice Pilaf']","Individual item (form factor split)"
-"Roasted Market Veggies","['Roasted Market Veggies']","Individual item (form factor split)"
-"Mushrooms","['Mushrooms']","Individual item (form factor split)"
-"Off The Menu Special","['Off The Menu Special']","Individual item (was in misc group)"
-"Oktoberfestspecial","['Oktoberfestspecial']","Individual item (was in misc group)"
-"Shrimp Special","['Shrimp Special']","Individual item (was in misc group)"
-"Churros","['Churros A La Mode', 'Paleta', 'Churros']","Dessert variants."
-"Burrito","['Burrito']","Burritos"
-"Chilaquiles","['Chilaquiles']","Chilaquiles"
-"Nachos","['Nachos']","Nachos"
-"Taquitos","['Taquitos']","Taquitos"
-"Pozole","['Pozole']","Pozole soup"
-"All American","['All American']","Individual item (was in misc group)"
-"El Reno","['El Reno']","Individual item (was in misc group)"
-"Mesquite Grilled Try-Tip","['Mesquite Grilled Try-Tip']","Individual item (was in misc group)"
-"Moroccan Glazed Chicken Breast","['Moroccan Glazed Chicken Breast']","Individual item (was in misc group)"
-"Asian Short Rites - Dowsed With Cabernet Char Siu Glaze","['Asian Short Rites - Dowsed With Cabernet Char Siu Glaze']","Individual item (was in misc group)"
-"Center Stage Salad Baby Filed Greens, Candied Nuts, Blue Cheese, Cranberries - Blond Balsamic Shallot Dressing","['Center Stage Salad Baby Filed Greens, Candied Nuts, Blue Cheese, Cranberries - Blond Balsamic Shallot Dressing']","Individual item (form factor split)"
-"Ceviche","['Ceviche']","Individual item (form factor split)"
-"Surimi Salad","['Surimi Salad']","Individual item (form factor split)"
-"Cheese Roll","['Cheese Roll']","Individual item (form factor split)"
-"Queso","['Queso']","Individual item (form factor split)"
-"Red Rose Accordions - Oven Roasted Garlic Butter Red Roe Potato Accordions","['Red Rose Accordions - Oven Roasted Garlic Butter Red Roe Potato Accordions']","Individual item (form factor split)"
-"Sides","['Sides']","Individual item (form factor split)"
-"Hot Dogs","['Hot Dogs', 'Duo']","Hot dog items"
-"Taco","['Pollo Taco', 'Taco Of The Month', 'Taco Trio']","Split from mixed-category Taco - neutral items"
-"Shellfish Taco","['Shrimp Taco']","Split from mixed-category Taco - shellfish items"
-"Vegan Taco","['Vegan Asada Taco', 'Vegan Pollo Taco']","Split from mixed-category Taco - vegan items"
-"Poultry Taco","['Vegan Chicken Taco']","Split from mixed-category Taco - poultry items"
-"Pork Taco","['Vegan Chorizo Taco']","Split from mixed-category Taco - pork items"
-"Taco Protein","['Nopal']","Split from mixed-category Taco Protein - neutral items"
-"Shellfish Taco Protein","['Bacon Shrimp']","Split from mixed-category Taco Protein - shellfish items"
-"Poultry Taco Protein","['Chicken']","Split from mixed-category Taco Protein - poultry items"
-"Pork Taco Protein","['Chorizo']","Split from mixed-category Taco Protein - pork items"
+canonical_name,variants,reasoning
+2 Special,['2$ Special'],
+All American,['All American'],
+Asada,['Asada'],
+Asian Short Ribs,['Asian Short Rites - Dowsed With Cabernet Char Siu Glaze'],
+Avocado,['Avo'],
+B&C Burrito,"['B&C Burrito', 'BC Burrito']",
+Bacon Shrimp,['Bacon Shrimp'],
+Beans,['Beans'],
+Brunch Special,['Brunch Special'],
+Burrito,"['Break Fast Burrito', 'Breakfast Burrito', 'Burrito', 'Burrito (1)', 'Protein Burrito', 'Ranchero Burrito', 'Vegan Break Fast Burrito', 'Vegan Burrito']",
+Calabacitas Taco,"['Calabacitas Taco', 'Calabazitas']",
+Center Stage Salad,"['Center Stage Salad _ Baby Filed Greens, Candied Nuts, Blue Cheese, Cranberries - Blond Balsamic Shallot Dressing']",
+Ceviche,['Ceviche'],
+Cheese Roll,['Cheese Roll'],
+Chicken,['Chicken'],
+Chilaquiles,['Chilaquiles'],
+Chips & Guacamole,"['Chips', 'Chips & Guac (V)', 'Chips & Guacamole', 'Chips And Guac', 'Side Gua', 'Chips Guac (V)', 'Chips Guacamole']",
+Chorizo,['Chorizo'],
+Churros,"['Churros', 'Churros √Å La Mode', 'Churros A La Mode']",
+Corn,['Corn'],
+Duo,['Duo'],
+El Reno,['El Reno'],
+Extra Topping,['Extra Topping'],
+Fries,"['Fries', 'N Fries', 'Side Fries', 'Super Fries']",
+Guacky Wednesday,['Guacky Wednesday'],
+Hot Dogs,['Hot Dogs'],
+Jackfruit Taco,"['Chile Verde Jackfruits', 'Chile Verde Jackfruits Taco', 'Jackfruits']",
+Meat Quesadilla,['Meat Quesadilla'],
+Mesquite Grilled Tri-Tip,['Mesquite Grilled Try-Tip'],
+Moroccan Glazed Chicken Breast,['Moroccan Glazed Chicken Breast'],
+Mushrooms,['Mushrooms'],
+Nachos,"['Borracho Nachos', 'Nachitos', 'Nachos', 'Nachos Fries']",
+Nopal,['Nopal'],
+Off The Menu Special,"['Off The Menu', 'Off The Menu Special']",
+Oktoberfestspecial,['Oktoberfestspecial'],
+Paleta,['Paleta'],
+Pastor Taco,"['Pastor', 'Pastor Taco']",
+Picadillo,"['Beyond Meat ""Picadillo""', 'Picadillo', 'Picadillo Vegano']",
+Plain Quesadilla,['Plain Quesadilla'],
+Pozole,['Pozole'],
+Protein Quesadilla,['Protein Quesadilla'],
+Quesadilla,['Quesadilla'],
+Queso,['Queso'],
+Red Rose Accordions,['Red Rose Accordions - Oven Roasted Garlic Butter Red Roe Potato Accordions'],
+Rice,"['Mexican Rice', 'Rice', 'Rice Pilaf']",
+Roasted Market Veggies,['Roasted Market Veggies'],
+Shrimp Special,['Shrimp Special'],
+Side Avocado,['Side Avocado'],
+Sides,['Sides'],
+Suadero Taco,"['Suadero', 'Suadero Taco']",
+Surimi Salad,['Surimi Salad'],
+Taco,"['1 Taco', 'Asada Taco', 'Chicken Taco', 'Pollo Taco', 'Shrimp Taco', 'Taco Of The Month', 'Taco Trio']",
+Taco Tuesday,"['Taco Tuesday', 'Taco Tuesday Special']",
+Taquitos,['Taquitos'],
+Thirsty Thursday,['Thirsty Thusday'],
+Vegan Taco,"['Vegan Asada Taco', 'Vegan Chicken Taco', 'Vegan Chorizo Taco', 'Vegan Picadillo Taco', 'Vegan Pollo Taco']",
+Wings,"['12 Wings', '6 Wings', 'Wings']",
+catering_takeout,"['Cali Package', 'Custom Menu For Beer Paring', 'Drop Off Taco Bar', 'Drop-Off Taco Bar', 'Guadalajara Package', 'On Site Taco Bar', 'On Site Taco Bar Drop Off', 'On-Site Service', 'Onsite Taco Bar Grilling', 'Taco Bar', 'Taco Bar Balance', 'Taco Bar Drop Off']",Catering/taco bar packages and services
+to_remove,"['Bbq Menu', 'Boiler', 'Chaffing Dishes Rental', 'Delivery Fee', 'Deposit', 'Exahust Fans', 'Labor', 'Late Fee', 'Make Up Air', 'Pizza Event', 'Rush Fee', 'Service Fee', 'Service Fee ‚Äú Insurance, Equipment, Travel Expenses', 'Sinks', 'Taco Bar Deposit', 'Tax', 'Walk In Fridge 10X12 Feet', 'Warmer Kit', 'Beer', 'House Wine', 'Gift Card', 'Open Food']","Non-food items (fees, equipment rentals, taxes) to be removed from analysis"

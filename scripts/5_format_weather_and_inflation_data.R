@@ -42,9 +42,7 @@ process_toronto_file <- function(loc_id, year) {
 }
 
 params <- crossing(
-  loc_id = c("SRQS8F7JWA9MZ"#, 
-  #"CB2KHY1C2G9PT"
-  ), # Location IDs for Toronto
+  loc_id = c("SRQS8F7JWA9MZ","CB2KHY1C2G9PT"), # Location IDs for Toronto
   year = 2019:2023
 )
 
@@ -71,18 +69,18 @@ noaa_files_to_ids <- list(
   "data/weather_data/cape_girardeau_mo.csv" = "JHDN7CF1C03X5",
   "data/weather_data/ashburn_va.csv" = "L69HYJ4Y3TR91",
   "data/weather_data/beaverton_or.csv" = "ED5J990H5VAZT",
-  "data/weather_data/erie_pa.csv" = "W8T41JZK0ZMEP"#,
-  # "data/weather_data/pittsburgh_pa.csv" = "EMBVNVD207CC6",
-  # "data/weather_data/cleveland_oh.csv" = "C0BE4NDSW26QN",
-  # "data/weather_data/honolulu_hi.csv" = "75WYSXR9QBK5M",
-  # "data/weather_data/arbutus_md.csv" = "V3Q26BHF3SE2H",
-  # "data/weather_data/brentwood_ca.csv" = "LBZEEFSBJNB3Z",
-  # "data/weather_data/los_angeles_ca.csv" = "SAFK7ND1HR6XS",
-  # "data/weather_data/miami_fl.csv" = "S8MT0YGD2KTN9",
-  # "data/weather_data/denver_co.csv" = "1SQPTEGYPH0GA",
-  # "data/weather_data/atlanta_ga.csv" = "9XKJD8DQTH559",
-  # "data/weather_data/greensboro_nc.csv" = "LQ5EH4BKGV61T",
-  # "data/weather_data/washington_dc.csv" = "78AY09MVJVTYE"
+  "data/weather_data/erie_pa.csv" = "W8T41JZK0ZMEP",
+  "data/weather_data/pittsburgh_pa.csv" = "EMBVNVD207CC6",
+  "data/weather_data/cleveland_oh.csv" = "C0BE4NDSW26QN",
+  "data/weather_data/honolulu_hi.csv" = "75WYSXR9QBK5M",
+  "data/weather_data/arbutus_md.csv" = "V3Q26BHF3SE2H",
+  "data/weather_data/brentwood_ca.csv" = "LBZEEFSBJNB3Z",
+  "data/weather_data/los_angeles_ca.csv" = "SAFK7ND1HR6XS",
+  "data/weather_data/miami_fl.csv" = "S8MT0YGD2KTN9",
+  "data/weather_data/denver_co.csv" = "1SQPTEGYPH0GA",
+  "data/weather_data/atlanta_ga.csv" = "9XKJD8DQTH559",
+  "data/weather_data/greensboro_nc.csv" = "LQ5EH4BKGV61T",
+  "data/weather_data/washington_dc.csv" = "78AY09MVJVTYE"
 )
 
 process_noaa_file <- function(file_path, loc_id) {
@@ -158,8 +156,8 @@ print("Combining all processed weather datasets...")
 
 all_weather_data <- bind_rows(
   toronto_weather_data,  
-  noaa_weather_data#,      
-  #newcomb_weather_data,
+  noaa_weather_data,      
+  newcomb_weather_data,
 )
 
 
@@ -273,227 +271,5 @@ all_weather_data %>%
   theme(legend.position = "bottom") +
   scale_x_date(date_labels = "%Y-%m", date_breaks = "1 month")
 
-
-# ─────────────────────────────────────────────────────────────
-#          Inflation Data
-# ─────────────────────────────────────────────────────────────
-
-# --- Read and Format ---
-
-# Process inflation data
-cpi_food_away <- read.csv("data/inflation_data/inflation.csv") %>%
-  filter(Period != "S01" & Period != "S02") %>% # remove half year stats
-  mutate(
-    month = as.numeric(sub("M", "", Period)),  
-    date = as.Date(paste(Year, month, "01", sep = "-")),
-    year = year(date),
-    month = month(date)
-  ) %>% 
-  dplyr::select(year, month, Value) %>%
-  identity()
-
-# --- Calculate ---
-
-# Set up a reference year
-base_year <- 2018
-base_month <- 1
-cpi_base <- cpi_food_away %>% 
-  filter(year == base_year & month == base_month) %>% 
-  pull(Value) %>%
-  identity()
-
-
-# ─────────────────────────────────────────────────────────────
-#          Holidays, Join, and Export
-# ─────────────────────────────────────────────────────────────
-
-direc1 <- "data/4_data_parquet_modeling/"
-
-
-
-for (direc2 in c(
-  "its/all_locations_daily",
-  "customer/all_locations_daily_customers",
-  "proportion/all_locations_daily_mpbamod_dishes_count",
-  "proportion/all_locations_daily_mpbamod_dishes_prop",
-  "proportion/all_locations_daily_vegan_dishes_count",
-  "proportion/all_locations_daily_vegan_dishes_prop",
-  "proportion/all_locations_daily_vegetarian_dishes_count",
-  "proportion/all_locations_daily_vegetarian_dishes_prop",
-  "proportion_targeted/all_locations_daily_breakfast_dishes_count",
-  "proportion_targeted/all_locations_daily_breakfast_dishes_presence",
-  "proportion_targeted/all_locations_daily_textured_dishes_count",
-  "proportion_targeted/all_locations_daily_textured_dishes_presence",
-  "proportion_targeted/all_locations_daily_untextured_dishes_count",
-  "proportion_targeted/all_locations_daily_untextured_dishes_presence")){
-
-  directory <- paste0(direc1, direc2, ".parquet")
-
-# Join inflation and weather data with main data
-df_all_daily <- read_parquet(directory) %>%
-  process_predictors() %>% # apply custom processing function
-  mutate(
-    new_years = as.integer(month == 12 & day_of_month == 31),
-    valentines = as.integer(month == 2 & day_of_month == 14),
-    easter = as.integer(date == as.Date(Easter(year))),
-    cinco = as.integer(month == 5 & day_of_month == 5),
-    july_fourth = as.integer(month == 7 & day_of_month == 4),
-    thanksgiving = as.integer(date == as.Date(USThanksgivingDay(year))),
-    christmas = as.integer(month == 12 & day_of_month == 25),
-    mlk = as.integer(date == as.Date(USMLKingsBirthday(year))),
-    pres = as.integer(date == as.Date(USPresidentsDay(year))),
-    mem = as.integer(date == as.Date(USMemorialDay(year))),
-    labor = as.integer(date == as.Date(USLaborDay(year))),
-    columbus = as.integer(date == as.Date(USColumbusDay(year))),
-    vet = as.integer(date == as.Date(USVeteransDay(year)))
-  ) %>%
-  group_by(location_id) %>%
-  mutate(is_any_holiday = (christmas + 
-                           thanksgiving +
-                           #cinco +
-                           july_fourth #+ 
-                           #new_years + 
-                           #easter + 
-                             #valentines +
-                             #mlk +
-                             #pres +
-                             #mem +
-                             #labor +
-                             #columbus +
-                             #vet
-  ),
-  holiday_window = slide_index_dbl(.x = is_any_holiday,
-                                   .i = date,
-                                   .f = ~ as.numeric(any(.x == 1)),
-                                   .before = 3,
-                                   .after = 3)) %>%
-  ungroup() %>%
-  left_join(cpi_food_away, by = c("year", "month")) %>%
-  mutate(
-    vegan_price_real = vegan_window_avg_item_price / (Value / cpi_base), # inflation-adjusted
-    vegetarian_price_real = vegetarian_window_avg_item_price / (Value / cpi_base),
-    meat_price_real = meat_window_avg_item_price / (Value / cpi_base),
-    breakfast_price_real = breakfast_window_avg_item_price / (Value / cpi_base),
-    textured_price_real = textured_window_avg_item_price / (Value / cpi_base),
-    untextured_price_real = untextured_window_avg_item_price / (Value / cpi_base),
-    inflation = Value
-  ) %>% 
-  { print(dim(.)); . } %>%
-  left_join(all_weather_data, by = c("location_id", "created_at")) %>%
-  { print(dim(.)); . } %>% # check that merge was done correctly
-  group_by(location_id) %>%
-  fill(temp, precip, .direction = "downup") %>%  # forward fill
-  ungroup() %>%
-  identity()
-
-# Export
-write_parquet(df_all_daily, paste0(direc1, direc2, "_weather_inflation.parquet"))
-
-## Check columns with NAs
-# df_all_daily %>% summarise(across(everything(), ~ sum(is.na(.)))) %>% select(where(~ . > 0)) %>% t()
-
-## Check size of data
-# df_all_daily %>% group_by(location_id) %>% summarize(count(.)) %>% print(n=31)
-
-
-# ─────────────────────────────────────────────────────────────
-#          Visualize
-# ─────────────────────────────────────────────────────────────
-
-df_all_daily %>%
-  group_by(
-    #year,
-    month,
-    day_of_month) %>%
-  summarize(nonvegan_outcome=mean(nonvegan_outcome),holiday_window=mean(holiday_window)) %>%
-  ggplot(aes(x=as.Date(ISOdate(2020,month,day_of_month)), 
-             y=nonvegan_outcome,
-             color=factor(holiday_window)
-             )) + 
-  geom_line() +
-  theme_minimal() +
-  #facet_wrap( ~ year, scales = "free_y") +
-  aes(color = holiday_window) +
-  scale_color_gradient(low = "gray", high = "red")
-
-df_all_daily %>%
-  tsibble(index = date, 
-          key = location_id
-          ) %>%
-  gg_season(nonvegan_outcome, period = "year") +
-  aes(color = factor(holiday_window)) +
-  labs(title = "Non-Vegan Outcomes Over Time",
-       x = "Date",
-       y = "Non-Vegan Outcomes") +
-  theme_minimal() +
-  scale_color_manual(values = c("0"="gray","1"="red")) +
-  theme(legend.position = "bottom")
-
-
-# ─────────────────────────────────────────────────────────────
-#          Visualize Cropped Data
-# ─────────────────────────────────────────────────────────────
-
-plot_vegan <- function(loc_id, d1, d2){
-  
-  promo_datetime <- read.csv('data/3_data_parquet_relabeled/before_after_details_true.csv') %>% 
-    filter(location_id == loc_id) %>% 
-    pull(cross_over_date) %>%
-    as.Date(format = "%Y-%m-%d") %>%
-    floor_date(unit="week")
-  df_all_daily %>% 
-    filter(location_id != loc_id | d1 < date & date < d2) %>%
-    filter(location_id == loc_id) %>% 
-    group_by(week = date %>% floor_date(unit = "week")) %>%
-    summarize(vegan_outcome = vegan_outcome %>% sum()) %>%
-    ggplot(aes(x = week, y = vegan_outcome)) +
-    geom_line() +
-    geom_vline(xintercept = promo_datetime, linetype = "dashed", color = "red") +
-    theme_minimal() +
-    theme(legend.position = "bottom") +
-    scale_x_date(date_labels = "%Y-%m", date_breaks = "6 month") %>%
-    identity()
-}
-
-plot_nonvegan <- function(loc_id, d1, d2){
-  
-  promo_datetime <- read.csv('data/3_data_parquet_relabeled/before_after_details_true.csv') %>% 
-    filter(location_id == loc_id) %>% 
-    pull(cross_over_date) %>%
-    as.Date(format = "%Y-%m-%d") %>%
-    floor_date(unit="week")
-  df_all_daily %>% 
-    filter(location_id != loc_id | d1 < date & date < d2) %>%
-    filter(location_id == loc_id) %>% 
-    group_by(week = date %>% floor_date(unit = "week")) %>%
-    summarize(nonvegan_outcome = nonvegan_outcome %>% sum()) %>%
-    ggplot(aes(x = week, y = nonvegan_outcome)) +
-    geom_line() +
-    geom_vline(xintercept = promo_datetime, linetype = "dashed", color = "red") +
-    theme_minimal() +
-    theme(legend.position = "bottom") +
-    scale_x_date(date_labels = "%Y-%m", date_breaks = "6 month") %>%
-    identity()
-}
-
-loc_id <- "2HRX9P6HKXA8V"
-plot_vegan(loc_id, '2019-01-01', '2021-05-01')
-loc_id <- "JHDN7CF1C03X5"
-# plot_vegan(loc_id, '2019-04-01', '2023-06-01')
-plot_nonvegan(loc_id, '2019-04-01', '2023-06-01')
-loc_id <- "EMBVNVD207CC6"
-plot_vegan(loc_id, '2016-06-01', '2022-09-01')
-loc_id <- "LBZEEFSBJNB3Z"
-plot_nonvegan(loc_id, '2021-09-01', '2023-07-01')
-loc_id <- "CB2KHY1C2G9PT"
-plot_vegan(loc_id, '2020-06-01', '2023-04-01')
-plot_nonvegan(loc_id, '2020-06-01', '2023-04-01')
-loc_id <- "LFZFT3VASXPED"
-plot_vegan(loc_id, '2021-10-01', '2022-11-01')
-plot_nonvegan(loc_id, '2021-10-01', '2022-11-01')
-loc_id <- "75WYSXR9QBK5M"
-# plot_vegan(loc_id, '2019-01-01', '2023-06-01')
-plot_nonvegan(loc_id, '2022-05-01', '2023-07-01')
-
-
-  }
+# check NAs over each restaurant
+all_weather_data %>% write_csv(file.path('data','weather_data','finalized_weather_data','weather_data.csv'))

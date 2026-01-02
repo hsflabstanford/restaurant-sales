@@ -1,38 +1,40 @@
 canonical_name,variants,reasoning
-#1 Hot Dog Combo,['#1 Hot Dog Combo'],"Same combo, numbering/naming variants"
-Sausage Dog Combo,['Sausage Dog Combo'],"Same combo, quantity format variant"
-Veggie Dog Combo,['Veggie Dog Combo'],"Same combo, numbering variants"
-Chili Cheese Fries,['Chili Cheese Fries'],"Same dish, spelling variant (i vs ii)"
-Chicken Tenders,['Chicken Tenders'],"Same item, abbreviated name"
-Chicken Tenders Combo,['Chicken Tenders Combo'],"Same combo, abbreviated name"
-Cheese Sticks,['Cheese Sticks'],"Same item, quantity/abbreviation variant"
-Wings Combo,['Wings Combo'],"Same wing combo, numbering variant"
-Hot Dog,"['2 Hot Dogs Combo', 'Deluxe Dog', 'Plain Dog', 'Hot Dog']",Hot dog variants.
-Beyond Burger,"['6 Beyond Burger Combo', 'Beyond Burger']",Beyond burger variants.
-Veggie Burger,"['6 Veggie Burger Combo', 'Veggie Burger Combo', 'Veggie Burger']",Veggie burger variants.
-Veggie Dog,"['2 Veggie Dog Combo', 'Veggie Dog']",Veggie dog variants.
-Sausage Dog,"['3 Sausage Dog Combo', 'Deluxe Sausage Dog', 'Sausage Dog']",Sausage dog variants.
-Chicken Tenders,"['4 Chicken Tenders Combo', '4 Tenders Combo', 'Tenders Fries', 'Chicken Tenders']",Chicken tenders variants.
-Wings,"['5 Wing Combo', 'Wings']",Wings variants.
-Fries,"['Cheese Fries', 'Fries']",Fries variants.
-Hot Dog,"['2 Hot Dogs Combo', 'Deluxe Dog', 'Plain Dog', ""Kid'S Hot Dog Combo"", 'Hot Dog']",Hot dog variants.
-Veggie Dog,"['2 Veggie Dog Combo', 'Veggie Dog']",Veggie dog variants.
-Sausage Dog,"['3 Sausage Dog Combo', 'Deluxe Sausage Dog', 'Sausage Dog']",Sausage dog variants.
-Tenders,"['4 Chicken Tenders Combo', '4 Tenders Combo', ""Kid'S Tenders"", ""Kid'S Tenders Combo"", 'Tenders Fries']",Chicken tenders variants.
-Wings,"['5 Wing Combo', 'Wings']",Wing variants.
-Beyond Burger,"['6 Beyond Burger Combo', 'Beyond Burger']",Beyond burger variants.
-Veggie Burger,"['6 Veggie Burger Combo', 'Veggie Burger']",Veggie burger variants.
-Fries,"['Cheese Fries', 'Fries']",Fries variants.
-Fries,['Fries'],Fries
-Mozzarella Sticks,['Mozzarella Sticks'],Mozzarella sticks
-Nachos,['Nachos'],Nachos
-Wings,['Wings'],Wings
-Kids Combo,"[""Kid'S Combo""]",Kids combo meal
-Combo,"['1 Combo', '2 Combo', '3 Combo', '4 Combo', '5 Combo', '6 Combo', '7 Combo', '8 Combo', '9 Combo', '10 Combo', '11 Combo', '12 Combo', '1 Combo', '2 Combo', '3 Combo', '4 Combo', '5 Combo', '6 Combo', '7 Combo', '8 Combo', '9 Combo', '10 Combo', '11 Combo', '12 Combo']",Split from mixed-category Combo - neutral items
-Beef Combo,"['Burger Combo', 'Burger Combo', 'Veggie Burger Combo']",Split from mixed-category Combo - beef items
-Pork Combo,"['Hot Dog Combo', 'Hot Dog Combo']",Split from mixed-category Combo - pork items
-Pork Hamburger,"['4 Hamburger Combo', '5 Hamburger Combo', '4 Hamburger Combo', '5 Hamburger Combo']",Split from mixed-category Hamburger - pork items
-Beef Hamburger,"['Burger', 'Oi Deluxe Burger', 'Oi Lb. Burger', 'Burger', 'Oi Deluxe Burger', 'Oi Lb. Burger']",Split from mixed-category Hamburger - beef items
-Pork Hot Dog,"[""60 Hot Dogs For Women'S Conference""]",Split from mixed-category Hot Dog - pork items
-Pork Burger,['Hamburger'],Split from mixed-category Burger - pork items
-catering_takeout,['Party Package'],Catering and takeout items
+#1 Hot Dog Combo,['#1 Hot Dog Combo'],
+#2 Veggie Dog Combo,"['#2 Veggie Dog Combo', '2 Veggie Dog Combo']",
+#3 Sausage Dog Combo,"['#3 Sausage Dog Combo', '3 Sausage Dog Combo']",
+#4 Chicken Tenders Combo,"['#4 Chicken Tenders Combo', '4 Chicken Tenders Combo']",
+#4 Hamburger Combo,"['#4 Hamburger Combo', '4 Hamburger Combo']",
+#5 Hamburger Combo,"['#5 Hamburger Combo', '5 Hamburger Combo']",
+#5 Wing Combo,"['#5 Wing Combo', '5 Wing Combo']",
+#6 Beyond Burger Combo,"['#6 Beyond Burger Combo', '6 Beyond Burger Combo']",
+#6 Veggie Burger Combo,"['#6 Veggie Burger Combo', '6 Beyond Burger Combo', '6 Veggie Burger Combo']",
+Beyond Burger,['Beyond Burger'],
+Cheese Sticks,"['4 Chz Stix', 'Cheese Sticks', 'Mozzarella Sticks']",
+Chicken Tenders,"['Chicken Tenders', ""Kid'S Tenders"", 'Tenders', 'Tenders & Fries', 'Tenders Fries']",
+Chicken Tenders Combo,"['4 Tenders Combo', 'Chicken Tenders Combo', ""Kid'S Tenders Combo"", 'Tenders Combo']",
+Chili Cheese Fries,"['Chili Cheese Fries', 'Chilli Cheese Fries']",
+Combo,"['# 11 Combo', '#1 Combo', '#10 Combo', '#12 Combo', '#2 Combo', '#3 Combo', '#4 Combo', '#5 Combo', '#6 Combo', '#7 Combo', '#8 Combo', '#9 Combo', 'Burger Combo', ""Kid'S Combo"", '1 Combo', '2 Combo', '3 Combo', '4 Combo']",
+Deluxe Burger,['‚Öì Deluxe Burger'],
+Deluxe Dog,['Deluxe Dog'],
+Fries,"['Cheese Fries', 'Fries']",
+Hamburger,"['Burger', 'Hamburger', '‚Öì Lb. Burger', 'Oi Lb. Burger']",
+Hot Dog,"['2 Hot Dogs Combo', ""60 Hot Dogs For Women'S Conference"", 'Hot Dog']",
+Hot Dog Combo,"['1 Hot Dog Combo', 'Hot Dog Combo', ""Kid'S Hot Dog Combo""]",
+Nachos,['Nachos'],
+Plain Dog,['Plain Dog'],
+Sausage Dog,"['Deluxe Sausage Dog', 'Sausage Dog']",
+Sausage Dog Combo,"['1 Sausage Dog Combo', 'Sausage Dog Combo']",
+Veggie Burger,"['Veggie Burger', 'Veggie Burger Combo']",
+Veggie Dog,"['Veggie Dog', '2 Veggie Dog Combo']",
+Veggie Dog Combo,"['1 Veggie Dog Combo', 'Veggie Dog Combo']",
+Wings,['Wings'],
+Wings Combo,['Wings Combo'],
+catering_takeout,['Party Package #1'],Catering/party package items
+to_remove,"['Chips', 'Cup Of Ice', 'Delta Sigma Theta Blood Drive Voucher', 'Event Minimum', 'Extra: Bbq', 'Extra: Buffalo', 'Extra: Honey Mustard', 'Extra: Ranch', 'High Point University', 'Lebleu', 'Off', 'Ranch', 'Unc Lccc Staff Event', 'Beer', 'Kids Drink', 'Kids Fountain Drink', 'Lemonade', 'Wine', 'Catering', 'Gift Card']","Non-food items (vouchers, events, extras, fees) to be removed from analysis"
+Cookie,['Cookie'],
+Gluten Free Roll,['Gluten Free Roll'],
+Kids Chips,['Kids Chips'],
+Side,['Side'],
+Side Chips,['Side Chips'],
+Side Fruit,['Side Fruit'],
+Side Salad,['Side Salad'],

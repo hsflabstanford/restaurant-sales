@@ -18,7 +18,9 @@ import time
 import itertools
 import math
 import os
+import ast
 from pathlib import Path
+import pickle
 import re
 import gc
 import tabulate
@@ -93,6 +95,7 @@ def return_dir():
 # Monkey patching
 pd.DataFrame.print = lambda df: print(df.to_string())
 pd.Series.print = lambda s: print(s.to_string())
+pd.Index.print = lambda idx: print(idx.to_series().reset_index(drop=True).to_string())
 def modifs(df, item): 
     df = df.assign(bool_mask = lambda df: df.item_name == item)
     if df.bool_mask.any():
@@ -221,6 +224,10 @@ def load_one_res_3_6_dinein(loc_id):
     df = pd.read_parquet(DATA_DIR_3_6 / f'{loc_id}.parquet')
     return df
 
+def load_one_res_3_7_truly_consolidated(loc_id):
+    df = pd.read_parquet(DATA_DIR_3_7 / f'{loc_id}.parquet')
+    return df
+
 def load_all_res_3_7_truly_consolidated():
     data = {}
     location_ids_by_coverage = load_loc_ids()
@@ -248,7 +255,7 @@ def load_gaps():
 
 __all__ = ['np', 'pd', 'DateOffset', 'pyarrow',  'yaml',
            'plt', 'mcolors', 'cm', 'mpatches', 'inset_axes', 'FuncFormatter', 'sns', 
-           'tqdm', 'itertools', 'math', 'os', 're', 'gc', 'Path', 'tabulate', 'display', 'Markdown', 'unicodedata',
+           'tqdm', 'itertools', 'math', 'os', 're', 'gc', 'pickle','ast','Path', 'tabulate', 'display', 'Markdown', 'unicodedata',
            'sp', 'sm', 'smf', 'ARIMA', 'StandardScaler', 
            'plot_time_series', 'plot_time_series_subset', 
            'fully_relabel_and_consolidate', 'rename_items', 'rename_items_by_modifications', 'remove_numbers', 
@@ -260,6 +267,7 @@ __all__ = ['np', 'pd', 'DateOffset', 'pyarrow',  'yaml',
            'load_all_res_2', 'load_one_res_2', 'load_all_res_3_2_con', 
            'load_all_res_3_4_ai', 'load_one_res_3_4_ai',
            'load_all_res_3_6_dinein', 'load_one_res_3_6_dinein',
+            'load_one_res_3_7_truly_consolidated',
            'load_all_res_3_7_truly_consolidated',
            'load_all_res_3_8_menu',
            'load_gaps',
