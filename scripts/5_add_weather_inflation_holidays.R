@@ -51,8 +51,8 @@ direc1 <- "data/4_data_parquet_modeling/"
 
 for (direc2 in c(
   # "its/all_locations_daily",
-   "customer/all_locations_daily_customers"#,
-  ###"customer/all_locations_transactions_customers",
+   #"customer/all_locations_daily_customers"#,
+  ###"customer/all_locations_transactions_customers"#,
   # "proportion/all_locations_daily_mpbamod_dishes_count",
   # "proportion/all_locations_daily_mpbamod_dishes_prop",
   # "proportion/all_locations_daily_vegan_dishes_count",
@@ -72,10 +72,7 @@ for (direc2 in c(
   # "proportion_targeted/all_locations_daily_egg_dishes_count",
   # "proportion_targeted/all_locations_daily_egg_dishes_presence"
   )){
-
   directory <- paste0(direc1, 'aggregated/', direc2, ".parquet")
-
-read_parquet(directory) %>% glimpse()
 
   # Join inflation and weather data with main data
   df_all_daily <- read_parquet(directory) %>%
@@ -146,6 +143,8 @@ read_parquet(directory) %>% glimpse()
       dairy_t2_price_real = dairy_t2_window_avg_item_price / (Value / cpi_base),
       inflation = Value) %>% 
     { print(dim(.)); . } %>%
+    # mutate(created_at_date = as.Date(created_at)) %>%
+    #left_join(all_weather_data, by = c("location_id", "created_at_date"="created_at")) %>%
     left_join(all_weather_data, by = c("location_id", "created_at")) %>%
     { print(dim(.)); . } %>% # check that merge was done correctly
     group_by(location_id) %>%
@@ -161,7 +160,6 @@ read_parquet(directory) %>% glimpse()
 
   ## Check size of data
   # df_all_daily %>% group_by(location_id) %>% summarize(count(.)) %>% print(n=31)
-
 
   # ─────────────────────────────────────────────────────────────
   #          Visualize
