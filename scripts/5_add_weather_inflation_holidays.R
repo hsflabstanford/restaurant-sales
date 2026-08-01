@@ -49,29 +49,8 @@ cpi_base <- cpi_food_away %>%
 
 direc1 <- "data/4_data_parquet_modeling/"
 
-for (direc2 in c(
-  #"its/all_locations_daily",
-  #"customer/all_locations_daily_customers",
-  ###"customer/all_locations_transactions_customers"#,
-  # "proportion/all_locations_daily_mpbamod_dishes_count",
-  # "proportion/all_locations_daily_mpbamod_dishes_prop",
-  # "proportion/all_locations_daily_vegan_dishes_count",
-  # "proportion/all_locations_daily_vegan_dishes_prop",
-  # "proportion/all_locations_daily_vegetarian_dishes_count",
-  # "proportion/all_locations_daily_vegetarian_dishes_prop",
-  # "proportion_targeted/all_locations_daily_breakfast_dishes_count",
-  # "proportion_targeted/all_locations_daily_breakfast_dishes_presence",
-  # "proportion_targeted/all_locations_daily_textured_dishes_count",
-  # "proportion_targeted/all_locations_daily_textured_dishes_presence",
-  # "proportion_targeted/all_locations_daily_untextured_dishes_count",
-  # "proportion_targeted/all_locations_daily_untextured_dishes_presence",
-  # "proportion_targeted/all_locations_daily_chicken_dishes_count",
-  # "proportion_targeted/all_locations_daily_chicken_dishes_presence",
-  # "proportion_targeted/all_locations_daily_dairy_dishes_count",
-  # "proportion_targeted/all_locations_daily_dairy_dishes_presence",
-  # "proportion_targeted/all_locations_daily_egg_dishes_count",
-  # "proportion_targeted/all_locations_daily_egg_dishes_presence"
-  )){
+direc2_all <- sub("\\.parquet$", "", list.files(paste0(direc1,'aggregated'), pattern="\\.parquet$", recursive=TRUE))
+for (direc2 in direc2_all[!grepl("transactions", direc2_all)]){
   directory <- paste0(direc1, 'aggregated/', direc2, ".parquet")
 
   # Join inflation and weather data with main data
