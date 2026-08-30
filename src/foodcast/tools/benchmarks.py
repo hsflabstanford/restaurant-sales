@@ -4,7 +4,7 @@ import pandas as pd
 import time
 
 # Custom packages
-from tools.filter import FilterDF as fdf
+from foodcast.tools.filter import FilterDF as fdf
 
 class ParetoAnalysis:  
     """

@@ -3,7 +3,7 @@ import unittest
 import pandas as pd
 
 # Custom packages
-import tools.benchmarks as benchmarks
+import foodcast.tools.benchmarks as benchmarks
 
 class TestBenchmarks(unittest.TestCase):
 
