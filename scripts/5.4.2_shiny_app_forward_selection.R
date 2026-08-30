@@ -31,7 +31,7 @@ before_after_details_true <- read.csv("data/before_after_details_true.csv")
 
 bad_restaurants <- c('AQD04SM0J92WA','LBMCPAYT7W36V','L3XS7WSJ4AJA3','1G5AJ17XCH2A8','3AXDVZJYN9DRS','MS8R16DY0JQAM','N0PC58FB2XAZ3','ADPFRN3QZRCXK','WJA3YCD4QBWRX','0RJH3FFPYBPEY','LZ5MR1TS37E7W')
 
-restaurants_by_coverage <- read.csv('data/2_palate_data_parquet_cleaned/restaurants_by_4m_coverage.csv') %>%
+restaurants_by_coverage <- read.csv('data/3_data_parquet_relabeled/restaurants_by_4m_coverage.csv') %>%
   filter(!(location_id %in% bad_restaurants)) %>%
   filter(!(location_id %in% c("75WYSXR9QBK5M", "V3Q26BHF3SE2H", "CB2KHY1C2G9PT", "LFZFT3VASXPED"))) %>%
   pull(location_id)

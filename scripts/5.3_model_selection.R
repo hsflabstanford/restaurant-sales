@@ -27,7 +27,7 @@ source("tools/modeling_functions.R")
 before_after_details_true <- read.csv("data/before_after_details_true.csv")
 
 bad_restaurants <- c('AQD04SM0J92WA','LBMCPAYT7W36V','L3XS7WSJ4AJA3','1G5AJ17XCH2A8','3AXDVZJYN9DRS','MS8R16DY0JQAM','N0PC58FB2XAZ3','ADPFRN3QZRCXK','WJA3YCD4QBWRX','0RJH3FFPYBPEY','LZ5MR1TS37E7W')
-restaurants_by_coverage <- read.csv('data/2_palate_data_parquet_cleaned/restaurants_by_4m_coverage.csv') %>%
+restaurants_by_coverage <- read.csv('data/3_data_parquet_relabeled/restaurants_by_4m_coverage.csv') %>%
   filter(!(location_id %in% bad_restaurants)) %>%
   filter(!(location_id %in% c('75WYSXR9QBK5M','CB2KHY1C2G9PT'))) %>%
   pull(location_id)
@@ -45,7 +45,7 @@ base_year <- 2018
 base_month <- 1
 cpi_base <- cpi_food_away %>% filter(year == base_year & month == base_month) %>% pull(Value)
 
-df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily.parquet") %>%
+df_all_daily <- read_parquet("data/4_data_parquet_modeling/aggregated/its/all_locations_daily.parquet") %>%
   process_predictors() %>%
   left_join(cpi_food_away, by = c("year", "month")) %>%
   mutate(

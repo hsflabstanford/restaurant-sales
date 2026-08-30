@@ -6,7 +6,7 @@ library(glmmTMB)
 set.seed(123)
 
 df_all <- read_parquet("data/3_palate_data_parquet_modeling/all_locations.parquet")
-df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily.parquet")
+df_all_daily <- read_parquet("data/4_data_parquet_modeling/aggregated/its/all_locations_daily.parquet")
 df_all_subset <- df_all %>%
   mutate(
     meat_window_avg = scale(meat_window_avg),

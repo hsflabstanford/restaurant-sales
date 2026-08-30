@@ -6,7 +6,7 @@ library(lmtest)
 library(MASS)
 library(skimr)
 
-df_all_daily <- read_parquet("data/3_palate_data_parquet_modeling/all_locations_daily.parquet")
+df_all_daily <- read_parquet("data/4_data_parquet_modeling/aggregated/its/all_locations_daily.parquet")
 
 df_subset <- df_all_daily %>%
   mutate(

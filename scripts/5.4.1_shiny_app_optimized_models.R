@@ -37,7 +37,7 @@ bad_restaurants <- c(
   "WJA3YCD4QBWRX", "0RJH3FFPYBPEY", "LZ5MR1TS37E7W"
 )
 
-restaurants_by_coverage <- read.csv("data/2_palate_data_parquet_cleaned/restaurants_by_4m_coverage.csv") %>%
+restaurants_by_coverage <- read.csv("data/3_data_parquet_relabeled/restaurants_by_4m_coverage.csv") %>%
   filter(!(location_id %in% bad_restaurants)) %>%
   filter(!(location_id %in% c("75WYSXR9QBK5M",
                               "V3Q26BHF3SE2H",
