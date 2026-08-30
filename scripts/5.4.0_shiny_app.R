@@ -26,7 +26,7 @@ source("tools/modeling_functions.R")
 
 # ===== Data, Predictors, Outcome =====
 
-before_after_details_true <- read.csv("data/before_after_details_true.csv")
+before_after_details_true <- read.csv("data/3_data_parquet_relabeled/before_after_details_true.csv")
 
 bad_restaurants <- c('AQD04SM0J92WA','LBMCPAYT7W36V','L3XS7WSJ4AJA3','1G5AJ17XCH2A8','3AXDVZJYN9DRS','MS8R16DY0JQAM','N0PC58FB2XAZ3','ADPFRN3QZRCXK','WJA3YCD4QBWRX','0RJH3FFPYBPEY','LZ5MR1TS37E7W')
 

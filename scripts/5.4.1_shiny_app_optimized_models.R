@@ -29,7 +29,7 @@ source("tools/modeling_functions.R")
 
 # ===== Data =====
 
-before_after_details_true <- read.csv("data/before_after_details_true.csv")
+before_after_details_true <- read.csv("data/3_data_parquet_relabeled/before_after_details_true.csv")
 
 bad_restaurants <- c(
   "AQD04SM0J92WA", "LBMCPAYT7W36V", "L3XS7WSJ4AJA3", "1G5AJ17XCH2A8",
