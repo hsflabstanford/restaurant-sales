@@ -39,7 +39,8 @@ from sklearn.preprocessing import StandardScaler
 from foodcast.tools.coverage_functions import (
     plot_time_series, plot_time_series_subset)
 from foodcast.tools.labeling_functions import (
-    fully_relabel_and_consolidate, rename_items, rename_items_by_modifications, remove_numbers,
+    fully_relabel_and_consolidate, relabel_items, recategorize_items, title_keep_ids,
+    rename_items, rename_items_by_modifications, remove_numbers,
     to_dish_time_series, infer_active_days, strict_bridge_fill, 
     plot_dish_time_series, plot_boolean_time_series)
 # from foodcast.tools.benchmarks import ParetoAnalysis as pa
@@ -258,7 +259,8 @@ __all__ = ['np', 'pd', 'DateOffset', 'pyarrow',  'yaml',
            'tqdm', 'itertools', 'math', 'os', 're', 'gc', 'pickle','ast','Path', 'tabulate', 'display', 'Markdown', 'unicodedata',
            'sp', 'sm', 'smf', 'ARIMA', 'StandardScaler', 
            'plot_time_series', 'plot_time_series_subset', 
-           'fully_relabel_and_consolidate', 'rename_items', 'rename_items_by_modifications', 'remove_numbers', 
+           'fully_relabel_and_consolidate', 'relabel_items', 'recategorize_items', 'title_keep_ids',
+           'rename_items', 'rename_items_by_modifications', 'remove_numbers', 
            'to_dish_time_series', 'infer_active_days', 'strict_bridge_fill',
            'plot_dish_time_series','plot_boolean_time_series',
            'find_project_root', 'PROJECT_ROOT',

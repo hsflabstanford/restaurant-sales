@@ -357,3 +357,21 @@ def plot_boolean_time_series(df, loc_id, before_after_details_true, dish_order, 
     ax.set_xlabel('Date'); ax.set_ylabel('Dish')
     fig.tight_layout(rect=[0, 0.03, 0.85, 0.97])
     plt.show()
+
+# Anonymised restaurant identifiers are uppercase, and unlike the original
+# trading names they are NOT invariant under str.title():
+#     'VLZX7K2M9QD4T'.title()        -> 'VLZX7K2M9QD4T'          (matches downstream rules)
+#     'VLZX7K2M9QD4T'.title() -> 'Vlzx7K2M9Qd4T'   (does not)
+# Some identifiers appear inside item_name / dish_category / item_modifications
+# because the trading name was part of the item text. Title-casing those would
+# silently stop the labelling rules from matching. Use this in place of
+# .str.title() on any column that can contain an identifier.
+ANON_ID_CASE_FIXES = {"Vlzx7K2M9Qd4T": "VLZX7K2M9QD4T"}
+
+
+def title_keep_ids(s):
+    """str.title(), preserving the casing of anonymised restaurant ids."""
+    out = s.str.title()
+    for wrong, right in ANON_ID_CASE_FIXES.items():
+        out = out.str.replace(wrong, right, regex=False)
+    return out
