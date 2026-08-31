@@ -34,6 +34,53 @@ analogs reduces consumption of animal-based foods.
   - `Rscript -e 'packageVersion("arrow")'`
 - Start Jupyter: `jupyter lab`
 
+## Run
+
+```
+python run_pipeline.py
+```
+
+That is the whole thing. It runs every step in order, prints progress, and saves
+executed notebooks to `run_logs/`. Roughly 30-60 minutes.
+
+- `python run_pipeline.py --list` — show the steps
+- `python run_pipeline.py --from 8` — resume partway
+
+What it runs, and where the side inputs enter:
+
+```
+  0_data_excel/                          raw vendor exports
+        |  1_preprocessing.ipynb
+        v
+  1_data_parquet/  ......................  1.1_encoding_errors.ipynb
+        |  2_cleaning.ipynb                  writes 1.1_data_excel_redone/,
+        v  <--------------------------.      read back by 2_cleaning
+  2_data_parquet_cleaned/  .............  3.1_data_coverage.ipynb
+        |                                    writes before_after_details_true.csv
+        |  labeling_1/loc*.ipynb   <-------  remapping/*.yaml            [manual]
+        |  labeling_2/loc*.ipynb   <-------  vegan/vegetarian/meat lists [manual]
+        v
+  1_rule_relabeled/ -> 2_consolidated/
+        |  4.1_joining_customers.ipynb
+        v
+  3_combined_no_prelabeled_drinks/
+        |
+     ===|=== AI labeling — committed as source, NOT re-run ===
+        v
+  4_ai_labeled/
+        |  4_modeling_prep.ipynb
+        v
+  5_only_food/ -> 6_only_dinein/ -> 7_truly_consolidated/   (+ dish_counts/)
+        |  4.0_modeling_prep_2.ipynb  <----  dish_labels/     [manual, Tier 1]
+        v                                    dish_labels_t2/  [AI, Tier 2]
+  4_data_parquet_modeling/aggregated/
+        |  5_add_weather_inflation_holidays.R
+        |        ^
+        |        `--------------------------  5_format_weather_and_inflation_data.R
+        v                                       (weather_data/ + inflation.csv)
+  external_variables/finalized*  ------------>  analysis repo
+```
+
 ## Manual labels
 
 Hand-made. Nothing generates these — they are inputs, not outputs.
@@ -91,8 +138,6 @@ apart.
 
 - The working directory must be the repo root. `1_preprocessing` does not
   `chdir` for itself.
-- Headless: `jupyter nbconvert --to notebook --execute --output-dir /tmp/out <notebook>`,
-  or `nbclient` with `resources={"metadata": {"path": "<repo root>"}}`.
 
 ## Comparing output
 
