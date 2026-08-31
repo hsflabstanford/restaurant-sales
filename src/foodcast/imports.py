@@ -37,7 +37,8 @@ from sklearn.preprocessing import StandardScaler
     
 # Custom packages
 from foodcast.tools.coverage_functions import (
-    plot_time_series, plot_time_series_subset)
+    plot_time_series, plot_time_series_subset, coverage_calculator,
+    identify_time_gaps, plot_gaps_heatmap)
 from foodcast.tools.labeling_functions import (
     fully_relabel_and_consolidate, relabel_items, recategorize_items, title_keep_ids,
     rename_items, rename_items_by_modifications, remove_numbers,
@@ -258,7 +259,8 @@ __all__ = ['np', 'pd', 'DateOffset', 'pyarrow',  'yaml',
            'plt', 'mcolors', 'cm', 'mpatches', 'inset_axes', 'FuncFormatter', 'sns', 
            'tqdm', 'itertools', 'math', 'os', 're', 'gc', 'pickle','ast','Path', 'tabulate', 'display', 'Markdown', 'unicodedata',
            'sp', 'sm', 'smf', 'ARIMA', 'StandardScaler', 
-           'plot_time_series', 'plot_time_series_subset', 
+           'plot_time_series', 'plot_time_series_subset', 'coverage_calculator',
+           'identify_time_gaps', 'plot_gaps_heatmap', 
            'fully_relabel_and_consolidate', 'relabel_items', 'recategorize_items', 'title_keep_ids',
            'rename_items', 'rename_items_by_modifications', 'remove_numbers', 
            'to_dish_time_series', 'infer_active_days', 'strict_bridge_fill',
