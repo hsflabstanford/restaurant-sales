@@ -69,6 +69,47 @@ def run_r(rel):
     return p.returncode
 
 
+def preflight():
+    """Check prerequisites before doing 15 minutes of work."""
+    problems = []
+
+    if not os.path.isdir(os.path.join(ROOT, "data", "0_data_excel")):
+        problems.append("data/0_data_excel/ not found — is this the repo root?")
+
+    try:
+        import pandas, pyarrow, scipy, foodcast          # noqa: F401
+        import nbformat, nbclient                        # noqa: F401
+        if pandas.__version__ != "2.1.3":
+            problems.append(f"pandas is {pandas.__version__}, expected 2.1.3 — "
+                            "other versions change results silently")
+    except ImportError as e:
+        problems.append(f"missing python package: {e.name} — "
+                        "activate the project conda env, then `pip install -e .`")
+
+    # --vanilla here on purpose: we are probing the binary, and .Rprofile
+    # would print renv startup noise into the version string.
+    r = subprocess.run(["Rscript", "--vanilla", "-e", "cat(as.character(getRversion()))"],
+                       capture_output=True, text=True)
+    ver = r.stdout.strip().splitlines()[-1].strip() if r.stdout.strip() else ""
+    if r.returncode:
+        problems.append("Rscript not found on PATH — install R 4.4.2")
+    elif ver != "4.4.2":
+        problems.append(f"Rscript is R {ver}, expected 4.4.2 — "
+                        "the renv library is built for 4.4.2 and will not load")
+    else:
+        r = subprocess.run(["Rscript", "-e", 'cat(requireNamespace("tidyverse", quietly=TRUE))'],
+                           cwd=ROOT, capture_output=True, text=True)
+        if "TRUE" not in r.stdout:
+            problems.append("R packages not installed — run `renv::activate()` then "
+                            "`renv::restore()` from the repo root (not with --vanilla)")
+
+    if problems:
+        print("Cannot start:\n")
+        for p in problems:
+            print(f"  - {p}")
+        sys.exit(1)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--from", dest="start", type=int, default=1, help="resume from this step")
@@ -81,8 +122,7 @@ def main():
             print(f"  {i:>2}. {name:32s} {len(files)} file(s)")
         return 0
 
-    if not os.path.isdir(os.path.join(ROOT, "data", "0_data_excel")):
-        sys.exit("data/0_data_excel/ not found — run this from the repo root.")
+    preflight()
 
     t0 = time.time()
     hard = []          # stopped the pipeline
