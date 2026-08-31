@@ -9,58 +9,30 @@ analogs reduces consumption of animal-based foods.
 
 ## Setup
 
-- Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) and R 4.4.2.
-- Clone the repo and `cd` into it.
-- Create and activate the Python environment:
-  - Linux / macOS: `conda env create -f env/environment_linux.yml` then `conda activate palate1`
-  - Windows: `conda env create -f env\environment_windows.yml` then `conda activate base`
-- Install the project package: `pip install -e .`
-- Linux / macOS only, install the notebook stack: `pip install pickleshare ipytest ipykernel nbconvert nbformat jupyter_client`
-- Set up R, from the repo root, in `R`:
+**Windows**
+
+- Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) and [R 4.4.2](https://cran.r-project.org/bin/windows/base/old/4.4.2/).
+- Open **Anaconda Prompt** (Start menu), then `cd` to the repo folder.
+- `conda env create -f env\environment_windows.yml`
+- `conda activate base`
+
+**macOS / Linux**
+
+- Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) and R 4.4.2 (macOS: [CRAN pkg](https://cran.r-project.org/bin/macosx/big-sur-x86_64/base/R-4.4.2-x86_64.pkg); Linux: your package manager, or `conda create -n r442 -c conda-forge r-base=4.4.2`).
+- Open a terminal, then `cd` to the repo folder.
+- `conda env create -f env/environment_linux.yml`
+- `conda activate palate1`
+
+**Both, then:**
+
+- Set up R — run `R` from the repo folder and enter:
   - `renv::activate()`
-  - `renv::restore()`
+  - `renv::restore()`   (takes a while; say yes if prompted)
+  - `quit()`
 - Check it worked:
-  - `python -c "import pandas, pyarrow, foodcast; print(pandas.__version__, pyarrow.__version__)"` → `2.1.3 14.0.1`
-  - `Rscript -e 'packageVersion("arrow")'` → `18.1.0.1`
-
-## Run
-
-Top to bottom. Sources entering from the side are shown on the right.
-
-```
-  0_data_excel/                          raw vendor exports
-        |  1_preprocessing.ipynb
-        v
-  1_data_parquet/  ......................  1.1_encoding_errors.ipynb
-        |  2_cleaning.ipynb                  writes 1.1_data_excel_redone/,
-        v  <--------------------------.      read back by 2_cleaning
-  2_data_parquet_cleaned/  .............  3.1_data_coverage.ipynb
-        |                                    writes before_after_details_true.csv
-        |  labeling_1/loc*.ipynb   <-------  remapping/*.yaml
-        |  labeling_2/loc*.ipynb   <-------  hand-built vegan/vegetarian/meat lists
-        v
-  1_rule_relabeled/ -> 2_consolidated/
-        |  4.1_joining_customers.ipynb
-        v
-  3_combined_no_prelabeled_drinks/
-        |
-     ===|=== AI labeling — committed as source, NOT re-run ===
-        v
-  4_ai_labeled/
-        |  4_modeling_prep.ipynb
-        v
-  5_only_food/ -> 6_only_dinein/ -> 7_truly_consolidated/   (+ dish_counts/)
-        |  4.0_modeling_prep_2.ipynb  <----  dish_labels/     (manual, Tier 1)
-        v                                    dish_labels_t2/  (AI, Tier 2)
-  4_data_parquet_modeling/aggregated/
-        |  5_add_weather_inflation_holidays.R
-        |        ^
-        |        `--------------------------  5_format_weather_and_inflation_data.R
-        v                                       (weather_data/ + inflation.csv)
-  external_variables/finalized*  ------------>  analysis repo
-```
-
-Run every `loc*.ipynb` in `labeling_1/`, then every one in `labeling_2/`.
+  - `python -c "import pandas, pyarrow, scipy, foodcast; print(pandas.__version__)"`
+  - `Rscript -e 'packageVersion("arrow")'`
+- Start Jupyter: `jupyter lab`
 
 ## Manual labels
 

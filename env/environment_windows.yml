@@ -511,4 +511,6 @@ dependencies:
   - zope.interface=5.4.0=py312h2bbff1b_0
   - zstandard=0.23.0=py312h4fc1ca9_0
   - zstd=1.5.6=h8880b57_0
-prefix: D:\ProgramData\anaconda3
+  - pip:
+      - ipytest==0.14.2
+      - --editable ../
