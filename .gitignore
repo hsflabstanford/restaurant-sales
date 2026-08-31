@@ -42,3 +42,4 @@ renv/staging/
 # consumed only by automating-labeling, never read back here
 data/3_data_parquet_relabeled/3_combined_no_prelabeled_drinks/
 run_logs/
+Rplots.pdf
