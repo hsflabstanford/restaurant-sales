@@ -33,3 +33,7 @@ renv.zip
 weather_token.txt
 
 src/foodcast.egg-info/
+
+# renv project library (restore from renv.lock instead)
+renv/library/
+renv/staging/
