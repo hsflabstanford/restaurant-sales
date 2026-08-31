@@ -44,13 +44,21 @@ def run_notebook(rel):
     client = NotebookClient(nb, timeout=14400, kernel_name="python3",
                             resources={"metadata": {"path": ROOT}},
                             allow_errors=True)
-    client.execute()
-    errs = [o for c in nb.cells if c.cell_type == "code"
-            for o in c.get("outputs", []) if o.get("output_type") == "error"]
+    try:
+        client.execute()
+    except Exception as e:                       # kernel died, timeout, etc.
+        return [(-1, type(e).__name__, str(e)[:200])]
+    errs = []
+    for i, c in enumerate(nb.cells):
+        if c.cell_type != "code":
+            continue
+        for o in c.get("outputs", []):
+            if o.get("output_type") == "error":
+                errs.append((i, o.get("ename"), " ".join(o.get("evalue", "").split())[:160]))
     out = os.path.join(ROOT, "run_logs")
     os.makedirs(out, exist_ok=True)
     nbformat.write(nb, os.path.join(out, os.path.basename(rel)))
-    return len(errs)
+    return errs
 
 
 def run_r(rel):
@@ -77,7 +85,8 @@ def main():
         sys.exit("data/0_data_excel/ not found — run this from the repo root.")
 
     t0 = time.time()
-    failed = []
+    hard = []          # stopped the pipeline
+    soft = []          # cells failed but the step still produced output
     for i, (name, files) in enumerate(st, 1):
         if i < a.start:
             continue
@@ -86,23 +95,49 @@ def main():
             t = time.time()
             if rel.endswith(".R"):
                 rc = run_r(rel)
-                bad = rc != 0
-                note = f"exit {rc}"
+                note = "clean" if rc == 0 else f"EXIT {rc}"
+                if rc:
+                    hard.append((rel, f"Rscript exited {rc}"))
             else:
-                n = run_notebook(rel)
-                bad = False           # notebooks may fail in diagnostic cells; data still writes
-                note = "clean" if n == 0 else f"{n} cell error(s)"
-            if bad:
-                failed.append(rel)
+                errs = run_notebook(rel)
+                if errs and errs[0][0] == -1:
+                    note = "DID NOT RUN"
+                    hard.append((rel, f"{errs[0][1]}: {errs[0][2]}"))
+                elif errs:
+                    note = f"{len(errs)} cell error(s)"
+                    c, en, ev = errs[0]
+                    soft.append((rel, f"first at cell {c}: {en}: {ev}"))
+                else:
+                    note = "clean"
             print(f"    {os.path.basename(rel):44s} {note:16s} {time.time()-t:5.0f}s", flush=True)
 
-    print(f"\ndone in {(time.time()-t0)/60:.1f} min")
-    if failed:
-        print("FAILED:", *failed, sep="\n  ")
+    outdir = os.path.join(ROOT, "data", "4_data_parquet_modeling", "external_variables")
+    produced = sum(len(f) for _, _, f in os.walk(outdir)) if os.path.isdir(outdir) else 0
+
+    print(f"\n{'='*66}")
+    print(f"done in {(time.time()-t0)/60:.1f} min")
+    print(f"output files in external_variables/: {produced}")
+
+    if hard:
+        print(f"\nFAILED — {len(hard)} step(s) did not run:")
+        for rel, why in hard:
+            print(f"  {rel}\n      {why}")
+        print("\nFix these and resume with:  python run_pipeline.py --from N")
         return 1
-    print("\nOutput is in data/4_data_parquet_modeling/external_variables/")
-    print("Check you reproduced it:  git status --porcelain -- data/")
-    print("Executed notebooks were saved to run_logs/ if you need to inspect a cell error.")
+
+    if soft:
+        print(f"\n{len(soft)} notebook(s) had cell errors but still wrote their output:")
+        for rel, why in soft:
+            print(f"  {os.path.basename(rel):40s} {why}")
+        print("\n  These are known: several labeling notebooks fail in diagnostic")
+        print("  cells that run after their data writes. Full notebooks in run_logs/.")
+
+    if produced == 0:
+        print("\nFAILED — no output was produced.")
+        return 1
+
+    print("\nOutput: data/4_data_parquet_modeling/external_variables/")
+    print("Verify:  git status --porcelain -- data/     (clean = reproduced)")
     return 0
 
 
