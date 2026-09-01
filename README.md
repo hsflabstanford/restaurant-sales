@@ -16,9 +16,16 @@ analogs reduces consumption of animal-based foods.
 - `conda env create -f env\environment_windows.yml`
 - `conda activate base`
 
-**macOS / Linux**
+**macOS**
 
-- Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) and R 4.4.2 (macOS: [CRAN pkg](https://cran.r-project.org/bin/macosx/big-sur-x86_64/base/R-4.4.2-x86_64.pkg); Linux: your package manager, or `conda create -n r442 -c conda-forge r-base=4.4.2`).
+- Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) and R 4.4.2 — [Apple Silicon](https://cran.r-project.org/bin/macosx/big-sur-arm64/base/R-4.4.2-arm64.pkg) (M1/M2/M3/M4) or [Intel](https://cran.r-project.org/bin/macosx/big-sur-x86_64/base/R-4.4.2-x86_64.pkg). If unsure which Mac you have: Apple menu > About This Mac.
+- Open **Terminal**, then `cd` to the repo folder.
+- `conda env create -f env/environment_mac.yml`
+- `conda activate palate1`
+
+**Linux**
+
+- Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) and R 4.4.2 (your package manager, or `conda create -n r442 -c conda-forge r-base=4.4.2`).
 - Open a terminal, then `cd` to the repo folder.
 - `conda env create -f env/environment_linux.yml`
 - `conda activate palate1`
@@ -124,9 +131,14 @@ apart.
 
 - Versions are pinned because they change results. `pandas 2.2` changes 13
   columns of output with no error; `pandas 3.x` corrupts count columns.
-- `environment_linux.yml` pins only the analysis libraries, which is why the
-  notebook stack is a separate install. `environment_windows.yml` is a full
-  Anaconda export and already has it.
+- `environment_linux.yml` and `environment_mac.yml` carry identical pins, so
+  they produce the same results; keep them in step. Both pin only the analysis
+  libraries, which is why the notebook stack is a separate install.
+  `environment_windows.yml` is a full Anaconda export and already has it.
+- The mac file was verified without a Mac: every pin is pure-Python or ships
+  cp39 macOS wheels for arm64 and x86_64, and the conda half solves against
+  pkgs/main for osx-arm64 and osx-64. It has not been installed end to end on
+  macOS hardware.
 - R must be 4.4.2. On earlier R, `MASS` in the lockfile requires >= 4.4.0 and
   nothing installs after it.
 - Run `renv::restore()` with the project active — plain `R` or `Rscript` from the
