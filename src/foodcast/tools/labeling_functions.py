@@ -360,7 +360,7 @@ def plot_boolean_time_series(df, loc_id, before_after_details_true, dish_order, 
 
 # Anonymised restaurant identifiers are uppercase, and unlike the original
 # trading names they are NOT invariant under str.title():
-#     'VLZX7K2M9QD4T'.title()        -> 'VLZX7K2M9QD4T'          (matches downstream rules)
+#     'Trading Name'.title()  -> 'Trading Name'    (matches downstream rules)
 #     'VLZX7K2M9QD4T'.title() -> 'Vlzx7K2M9Qd4T'   (does not)
 # Some identifiers appear inside item_name / dish_category / item_modifications
 # because the trading name was part of the item text. Title-casing those would
