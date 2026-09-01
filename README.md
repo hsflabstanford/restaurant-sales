@@ -116,6 +116,24 @@ apart.
 - If files show as modified, see "Comparing output" below before assuming
   anything changed.
 
+### The IPython cache can silently replace the raw data
+
+`scripts/1_preprocessing.ipynb` starts with `%store -r static_data_unprocessed`
+and only reads `data/0_data_excel/` **if that restore fails**. So on a machine
+that has run the pipeline before, step 1 can use cached dataframes from a
+previous run instead of the spreadsheets on disk, and a change to the raw inputs
+appears to have no effect.
+
+A first-time clone has no cache and reads the raw files, which is the intended
+path. To force it on a machine that has run before:
+
+```
+rm -rf ~/.ipython/profile_default/db/autorestore
+```
+
+Step 1 then takes ~9 minutes instead of ~45 seconds, which is how you can tell
+it actually read the spreadsheets.
+
 ---
 
 # Notes
