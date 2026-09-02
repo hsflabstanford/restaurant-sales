@@ -50,3 +50,8 @@ Rplots.pdf
 *-260nw-*.webp
 istockphoto-*.jpg
 img/
+
+# Notes on what was de-identified and why. Publishing them is a
+# re-identification aid: they confirm the code stands in for a real trading
+# name and spell out which fields narrow a venue down.
+README_ANON.md
