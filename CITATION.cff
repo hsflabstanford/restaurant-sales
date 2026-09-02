@@ -8,9 +8,9 @@ abstract: >-
   the modelling dataset.
 type: software
 authors:
-  - family-names: "<LAST NAME>"
-    given-names: "<FIRST NAME>"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Winslow"
+    given-names: "Jared"
+    orcid: "https://orcid.org/0009-0002-1311-5096"
 repository-code: "https://github.com/hsflabstanford/restaurant-sales"
 url: "https://hsflabstanford.github.io/restaurant-sales/"
 license: MIT
