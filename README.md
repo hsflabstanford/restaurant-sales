@@ -1,10 +1,11 @@
 # Introducing Plant Based Analogs to Restaurants
 
-Using restaurant sales data to determine if introducing modern plant-based analogs reduces meat and animal-based purchases.
+**Using restaurant sales data to determine if introducing modern plant-based analogs reduces meat and animal-based purchases.**
 
-**This repo is the data pipeline**: raw data through cleaning, labeling, and
-aggregation to the model-ready dataset. The models, estimates and figures built on
-that dataset live in
+*STATUS: Pre-LLM*
+
+This repo is one component of larger project by **HSFL at Stanford University**, specifically the **data pipeline**.
+It takes the raw data through cleaning, labeling, and aggregation to the model-ready dataset. The models, estimates and figures built on that dataset live in
 [alt-protein-sales-effects](https://github.com/jaredwins99/alt-protein-sales-effects).
 
 **Results:** <https://hsflabstanford.github.io/restaurant-sales/>
