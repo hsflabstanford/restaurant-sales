@@ -15,7 +15,7 @@ that dataset live in
 | Labeled | https://hsflabstanford.github.io/restaurant-sales/total_adjusted/grid_labeled.html |
 
 Click any estimate to open that restaurant's prediction plot. The same bundle is
-served from the modelling repo; both are generated there by `run_pipeline.py`.
+served from the modeling repo; both are generated there by `run_pipeline.py`.
 
 ---
 
@@ -105,7 +105,7 @@ What it runs, and where the side inputs enter:
 ## Manual labels
 
 - `scripts/labeling/dish_labels/*.csv` — 7 files, Tier 1. One row per dish, one
-  boolean column per animal category. This is the manual labelling effort.
+  boolean column per animal category. This is the manual labeling effort.
 - `scripts/labeling/remapping/loc1_remappings.yaml`, `loc2_remappings.yaml` —
   hand-written item renames, category lists and modification rules.
 - `scripts/labeling/remapping/loc5_remappings.yaml`, `loc6_remappings.yaml` —
