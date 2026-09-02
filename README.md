@@ -90,8 +90,6 @@ What it runs, and where the side inputs enter:
 
 ## Manual labels
 
-Hand-made. Nothing generates these — they are inputs, not outputs.
-
 - `scripts/labeling/dish_labels/*.csv` — 7 files, Tier 1. One row per dish, one
   boolean column per animal category. This is the manual labelling effort.
 - `scripts/labeling/remapping/loc1_remappings.yaml`, `loc2_remappings.yaml` —
@@ -110,11 +108,6 @@ columns; the AI set has 16 — that column count is the quickest way to tell the
 apart.
 
 ## Check
-
-- `git status --porcelain -- data/`
-- Clean means you reproduced it.
-- If files show as modified, see "Comparing output" below before assuming
-  anything changed.
 
 ### The IPython cache can silently replace the raw data
 
@@ -137,13 +130,6 @@ it actually read the spreadsheets.
 ---
 
 # Notes
-
-## What is not re-run
-
-- **AI labels** — `4_ai_labeled/`, `dish_labels_t2/`, `ai_grouping/` come from an
-  LLM and are committed as source.
-- **Model fits** — posterior draws are committed so plots and tables regenerate
-  without refitting.
 
 ## Environment
 
@@ -169,24 +155,6 @@ it actually read the spreadsheets.
 - The working directory must be the repo root. `1_preprocessing` does not
   `chdir` for itself.
 
-## Comparing output
-
-- Parquet is not byte-stable. Row order within equal keys varies between runs.
-- Compare values, not bytes: sort by `location_id` and `date`, then compare
-  column by column.
-- `__index_level_0__` is a parquet index artifact, not a variable. Ignore it.
-
-## Known issues
-
-- `%store` caches persist in `~/.ipython` across sessions and can be stale. If a
-  notebook fails on a key that looks wrong, delete
-  `~/.ipython/profile_default/db/autorestore`.
-- `loc8`, `loc9` and several Tier-2 labeling notebooks fail in diagnostic cells
-  that run after their data writes. Their output is correct.
-- `3.1_data_coverage` uses a `before_after_details` that no cell assigns.
-
 ## Status
-
-Verified end to end: 21 of 21 output files reproduce, 0 real columns differ.
 
 Full pipeline detail is in the analysis repo's `publication/PIPELINE.md`.
