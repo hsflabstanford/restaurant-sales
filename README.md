@@ -20,9 +20,9 @@ served from the modeling repo; both are generated there by `run_pipeline.py`.
 
 ---
 
-# Reproducing
+## Reproducing
 
-## Setup
+### Setup
 
 **Windows**
 
@@ -56,7 +56,7 @@ served from the modeling repo; both are generated there by `run_pipeline.py`.
   - `Rscript -e 'packageVersion("arrow")'`
 - Start Jupyter: `jupyter lab`
 
-## Run
+### Run
 
 ```
 python run_pipeline.py
@@ -103,7 +103,7 @@ What it runs, and where the side inputs enter:
   external_variables/finalized*  ------------>  analysis repo
 ```
 
-## Manual labels
+### Manual labels
 
 - `scripts/labeling/dish_labels/*.csv` — 7 files, Tier 1. One row per dish, one
   boolean column per animal category. This is the manual labeling effort.
@@ -122,9 +122,9 @@ For contrast, `scripts/labeling/dish_labels_t2/*.csv` (15 files, Tier 2) are
 columns; the AI set has 16 — that column count is the quickest way to tell them
 apart.
 
-## Check
+### Check
 
-### The IPython cache can silently replace the raw data
+**The IPython cache can silently replace the raw data**
 
 `scripts/1_preprocessing.ipynb` starts with `%store -r static_data_unprocessed`
 and only reads `data/0_data_excel/` **if that restore fails**. So on a machine
@@ -144,9 +144,9 @@ it actually read the spreadsheets.
 
 ---
 
-# Notes
+## Notes
 
-## Environment
+### Environment
 
 - Versions are pinned because they change results. `pandas 2.2` changes 13
   columns of output with no error; `pandas 3.x` corrupts count columns.
@@ -165,11 +165,11 @@ it actually read the spreadsheets.
   skipped, renv compares against your system library, and reports "already
   synchronized" over an empty project library.
 
-## Running the notebooks
+### Running the notebooks
 
 - The working directory must be the repo root. `1_preprocessing` does not
   `chdir` for itself.
 
-## Status
+### Status
 
 Full pipeline detail is in the analysis repo's `publication/PIPELINE.md`.
