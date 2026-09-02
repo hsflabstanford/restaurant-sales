@@ -4,7 +4,7 @@
 
 *STATUS: Pre-LLM*
 
-This repo is one component of larger [project](https://osf.io/preprints/socarxiv/tpyk9_v1) by **[HSFL](https://www.foodlabstanford.com/) at Stanford University**, specifically the **data pipeline**.
+This repo is one component of larger [project](https://osf.io/preprints/socarxiv/tpyk9_v1) by the **[Humane and Sustainable Food Lab]((https://www.foodlabstanford.com/))(HSFL) at Stanford University**, specifically the **data pipeline**.
 It takes the raw data through cleaning, labeling, and aggregation to the model-ready dataset. The models, estimates, and figures live in
 [alt-protein-sales-effects](https://github.com/jaredwins99/alt-protein-sales-effects).
 
