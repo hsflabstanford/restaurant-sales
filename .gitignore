@@ -43,3 +43,10 @@ renv/staging/
 data/3_data_parquet_relabeled/3_combined_no_prelabeled_drinks/
 run_logs/
 Rplots.pdf
+
+# Licensed stock imagery must not be committed. Shutterstock/iStock comp
+# downloads (the "260nw" and "612x612" preview sizes) are licensed for
+# evaluation only, not redistribution -- and this repo is public.
+*-260nw-*.webp
+istockphoto-*.jpg
+img/
