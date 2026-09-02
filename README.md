@@ -1,10 +1,9 @@
 # Introducing Plant Based Analogs to Restaurants
 
-Using restaurant sales data from Palate to determine if introducing plant-based
-analogs reduces consumption of animal-based foods.
+Using restaurant sales data from Palate to determine if introducing modern plant-based analogs reduces meat and animal-based purchases.
 
-**This repo is the data pipeline** — raw exports through cleaning, labeling and
-aggregation to the modelling dataset. The models, estimates and figures built on
+**This repo is the data pipeline**: raw data through cleaning, labeling, and
+aggregation to the model-ready dataset. The models, estimates and figures built on
 that dataset live in
 [alt-protein-sales-effects](https://github.com/jaredwins99/alt-protein-sales-effects).
 
