@@ -1,6 +1,6 @@
 # Introducing Plant Based Analogs to Restaurants
 
-Using restaurant sales data from Palate to determine if introducing modern plant-based analogs reduces meat and animal-based purchases.
+Using restaurant sales data to determine if introducing modern plant-based analogs reduces meat and animal-based purchases.
 
 **This repo is the data pipeline**: raw data through cleaning, labeling, and
 aggregation to the model-ready dataset. The models, estimates and figures built on
