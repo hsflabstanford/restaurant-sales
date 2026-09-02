@@ -3,6 +3,21 @@
 Using restaurant sales data from Palate to determine if introducing plant-based
 analogs reduces consumption of animal-based foods.
 
+**This repo is the data pipeline** — raw exports through cleaning, labeling and
+aggregation to the modelling dataset. The models, estimates and figures built on
+that dataset live in
+[alt-protein-sales-effects](https://github.com/jaredwins99/alt-protein-sales-effects).
+
+**Results:** <https://hsflabstanford.github.io/restaurant-sales/>
+
+| | link |
+|---|---|
+| Sorted / unlabeled | https://hsflabstanford.github.io/restaurant-sales/total_adjusted/grid_sorted.html |
+| Labeled | https://hsflabstanford.github.io/restaurant-sales/total_adjusted/grid_labeled.html |
+
+Click any estimate to open that restaurant's prediction plot. The same bundle is
+served from the modelling repo; both are generated there by `run_pipeline.py`.
+
 ---
 
 # Reproducing
