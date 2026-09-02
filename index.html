@@ -1,0 +1,87 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Alt-Protein Sales Effects</title>
+<style>
+/* Palette and type taken from jaredwins99.github.io: minimal-mistakes on the
+   default skin, so $gray #7a8288 and $info-color #3b9cba drive everything, plus
+   the title colour set in that site's assets/css/custom.css. */
+:root{
+  --text:#3d4144;        /* $dark-gray = mix(#000, $gray, 50%) */
+  --muted:#646769;       /* $muted-text-color */
+  --border:#f2f2f3;      /* $lighter-gray */
+  --link:#2f7d95;        /* $link-color = mix(#000, $info-color, 20%) */
+  --link-hover:#235e70;  /* $link-color-hover */
+  --title:#201c1c;       /* .page__title in custom.css */
+  --panel:#fafafa;       /* $code-background-color */
+}
+body{margin:0;background:#fff;color:var(--text);
+  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:56px 24px 72px}
+h1{font-size:26px;margin:0 0 6px;color:var(--title);font-weight:700}
+.sub{color:var(--muted);margin:0 0 36px}
+a.card{display:block;text-decoration:none;color:inherit;background:var(--panel);
+  border:1px solid var(--border);border-radius:4px;padding:18px 20px;margin-bottom:14px;
+  transition:border-color .15s,box-shadow .15s}
+a.card:hover{border-color:var(--link);box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.card h2{font-size:17px;margin:0 0 4px;color:var(--link);font-weight:700}
+a.card:hover h2{color:var(--link-hover)}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.note{margin-top:34px;padding-top:20px;border-top:1px solid var(--border);color:var(--text);font-size:14.5px}
+.note p{margin:0 0 14px}
+.note p:last-child{margin-bottom:0}
+.note ul{margin:0 0 16px;padding-left:22px;list-style:disc}
+.note li{margin:0 0 6px}
+.note li:last-child{margin-bottom:0}
+.note li::marker{color:var(--muted)}
+.demo{margin:1.6rem 0;padding:0}
+.demo img{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:4px}
+.demo figcaption{margin-top:.5rem;color:var(--muted);font-size:.9em}
+</style></head><body><div class="wrap">
+<h1>Alt-Protein Sales Effects</h1>
+<p class="sub">Interactive forest plots: the effect of introducing alternative proteins on meat
+purchases, across 7 restaurants in Tier 1 and 19 restaurants in Tier 2 (the 19 include the 7).</p>
+
+<figure class="demo">
+  <img src="demo.gif" alt="Clicking a restaurant's estimate opens its prediction plot">
+  <figcaption>Click any estimate to open that restaurant's prediction plot.</figcaption>
+</figure>
+
+<a class="card" href="total_adjusted/grid_sorted.html">
+  <h2>Sorted by effect size &rarr;</h2>
+  <p>Tier 1 and Tier 2, analyses A1 to A6. Restaurants ordered by effect size.</p></a>
+
+<a class="card" href="total_adjusted/grid_labeled.html">
+  <h2>Labeled by restaurant &rarr;</h2>
+  <p>The same estimates, with per-restaurant colours, inline names and a numbered legend.</p></a>
+
+<div class="note">
+<ul>
+<li>Each tile is a <strong>live plot</strong>: the <strong>expand</strong> button in its header
+opens it full screen, and <strong>Esc</strong> closes it.</li>
+<li><strong>Click</strong> a pooled estimate to see the time series prediction plot for all
+restaurants in that model.</li>
+<li><strong>Click</strong> a single restaurant's estimate to see that restaurant's time series
+prediction plot.</li>
+<li><strong>Hover</strong> an estimate for its restaurant, outcome, exposure, percentage change,
+relative rate ratio and 95% CI.</li>
+<li><strong>Drag</strong> across a region to zoom in; double-click to reset.</li>
+</ul>
+
+<p>Estimates are reported as relative rate ratios (RRR), that is, the effect of the exposure on the
+outcome pooled across restaurants divided by the effect of the exposure on total purchases pooled
+across restaurants. Estimates are pooled across restaurants, and so represent the average effect
+across restaurants in the set; the accompanying credible intervals (CI) reflect uncertainty about
+the average across restaurants generally, inside and outside the set. The RRRs are estimated by
+Monte Carlo division over the posterior distributions of the effect estimates from two separate
+models, the outcome model and the total purchases model, computed draw by draw, so the point
+estimates and credible intervals reported here are summaries (namely, the median and quantiles) of
+the resulting RRR distribution.</p>
+
+<p>If the outcome were meat purchases, for example, RRR&nbsp;=&nbsp;1.05 would indicate a 5% higher
+exposure-driven growth rate in meat purchases than in total purchases, while RRR&nbsp;=&nbsp;0.95
+would indicate a 5% lower rate. If total purchases doubled (200% of baseline) and meat purchases
+grew 1.9-fold (190% of baseline), the exposure's RRR estimate would be 190/200&nbsp;=&nbsp;0.95,
+indicating a relative decline in meat purchases. In cases when total purchases are falling, an RRR
+above 1 indicates a slower decline in meat purchases and an RRR below 1 indicates a faster decline.</p>
+</div>
+</div></body></html>
