@@ -8,7 +8,7 @@ This repo is one component of larger [project](https://osf.io/preprints/socarxiv
 It takes the raw data through cleaning, labeling, and aggregation to the model-ready dataset. The models, estimates, and figures live in
 [alt-protein-sales-effects](https://github.com/jaredwins99/alt-protein-sales-effects).
 
-**Results:** <https://hsflabstanford.github.io/restaurant-sales/>
+**Interactive results:** <https://hsflabstanford.github.io/restaurant-sales/>
 
 | | link |
 |---|---|
