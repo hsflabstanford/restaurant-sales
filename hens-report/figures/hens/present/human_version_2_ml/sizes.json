@@ -1,0 +1,34 @@
+{
+  "forest_a1_all_rate_ratio.html": {
+    "w": 1400,
+    "h": 1340
+  },
+  "forest_a1_all_rrr.html": {
+    "w": 1400,
+    "h": 700
+  },
+  "forest_a1_entrees_rate_ratio.html": {
+    "w": 1400,
+    "h": 780
+  },
+  "forest_a1_entrees_rrr.html": {
+    "w": 1400,
+    "h": 700
+  },
+  "forest_a2_all_rate_ratio.html": {
+    "w": 1400,
+    "h": 780
+  },
+  "forest_a2_all_rrr.html": {
+    "w": 1400,
+    "h": 700
+  },
+  "forest_a2_entrees_rate_ratio.html": {
+    "w": 1400,
+    "h": 780
+  },
+  "forest_a2_entrees_rrr.html": {
+    "w": 1400,
+    "h": 700
+  }
+}

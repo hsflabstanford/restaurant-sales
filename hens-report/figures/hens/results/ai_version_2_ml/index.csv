@@ -1,0 +1,3 @@
+figure,dish_set,file,analysis_set,title,caption
+forest_a1_rate_ratio,all,forest_a1_all_rate_ratio.png,A1,"A1: each outcome's exposure effect, rate ratio","From each fit's draws file. A row is one outcome, a panel one exposure and effect; the dashed line is no effect. Each outcome's own rate ratio, per year for the slope. 8 fits."
+forest_a1_rrr,all,forest_a1_all_rrr.png,A1,"A1: each outcome's exposure effect, relative to total purchases","From each fit's draws file. A row is one outcome, a panel one exposure and effect; the dashed line is no effect. Each outcome's rate ratio divided by total purchases', so a shift between outcomes rather than a change in how much was sold, per year for the slope. 6 fits."
