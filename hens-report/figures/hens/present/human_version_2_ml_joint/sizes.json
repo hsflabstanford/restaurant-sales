@@ -3,7 +3,23 @@
     "w": 1400,
     "h": 1340
   },
+  "forest_a1_all_rate_ratio_prepost_equal.html": {
+    "w": 1400,
+    "h": 1340
+  },
+  "forest_a1_all_rate_ratio_prepost_longest.html": {
+    "w": 1400,
+    "h": 1340
+  },
   "forest_a1_all_rrr.html": {
+    "w": 1400,
+    "h": 1180
+  },
+  "forest_a1_all_rrr_prepost_equal.html": {
+    "w": 1400,
+    "h": 1180
+  },
+  "forest_a1_all_rrr_prepost_longest.html": {
     "w": 1400,
     "h": 1180
   },
@@ -15,20 +31,28 @@
     "w": 1400,
     "h": 1180
   },
-  "forest_a2_all_rate_ratio.html": {
-    "w": 1400,
-    "h": 1340
-  },
-  "forest_a2_all_rrr.html": {
-    "w": 1400,
-    "h": 1180
-  },
-  "forest_a2_entrees_rate_ratio.html": {
-    "w": 1400,
-    "h": 1020
-  },
-  "forest_a2_entrees_rrr.html": {
+  "forest_a2_all_shift.html": {
     "w": 1400,
     "h": 860
+  },
+  "forest_a2_all_shift_prepost_equal.html": {
+    "w": 1400,
+    "h": 860
+  },
+  "forest_a2_all_shift_prepost_longest.html": {
+    "w": 1400,
+    "h": 860
+  },
+  "forest_a2_all_difference.html": {
+    "w": 1400,
+    "h": 700
+  },
+  "forest_a2_all_difference_prepost_equal.html": {
+    "w": 1400,
+    "h": 700
+  },
+  "forest_a2_all_difference_prepost_longest.html": {
+    "w": 1400,
+    "h": 700
   }
 }
