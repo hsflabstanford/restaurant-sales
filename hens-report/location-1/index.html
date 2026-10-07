@@ -396,34 +396,43 @@ th{color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.06em
 td.n{text-align:right;font-variant-numeric:tabular-nums}
 
 .loc-switch{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 12px}
-.loc-switch a,.loc-switch span{display:inline-block;padding:3px 12px;border:1px solid #c9d1d9;border-radius:5px;background:#f6f8fa;color:#0969da;font:600 13px/1.6 sans-serif;text-decoration:none;white-space:nowrap}
-.loc-switch a:hover{background:#eaeef2;border-color:#0969da}
-.loc-switch span{background:#0969da;border-color:#0969da;color:#fff}
-.location-part{margin:34px 0 4px;padding:6px 0 2px;border-top:1px solid #d0d7de;font-size:20px}
+.loc-switch a,.loc-switch span{display:inline-block;padding:3px 12px;border:1px solid var(--line);border-radius:5px;background:var(--card);color:var(--accent);font:600 13px/1.6 sans-serif;text-decoration:none;white-space:nowrap}
+.loc-switch a:hover{border-color:var(--accent)}
+.loc-switch span{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.location-part{margin:34px 0 4px;padding:6px 0 2px;border-top:1px solid var(--line);font-size:20px}
 .analysis-head{margin:14px 0 2px;font-size:15px}
-.analysis-note{margin:6px 0;color:#444;font-size:14px}
+.analysis-note{margin:6px 0;color:var(--fg);font-size:14.5px}
 .report-section{border:0;padding:0;margin:0 0 6px;background:none}
 .report-section>summary{list-style:none;cursor:pointer;padding:0}
 .report-section>summary::-webkit-details-marker{display:none}
 .report-section>summary h2{display:inline-block;margin:26px 0 8px}
-.report-section>summary h2::before{content:"\25be ";color:#999;font-size:.8em}
+.report-section>summary h2::before{content:"\25be ";color:var(--mut);font-size:.8em}
 .report-section:not([open])>summary h2::before{content:"\25b8 "}
 
-.contents{border:1px solid #d0d7de;border-radius:6px;padding:8px 14px;margin:8px 0 16px;background:#f6f8fa;font-size:14px}
+.contents{border:1px solid var(--line);border-radius:10px;padding:10px 16px 12px;margin:8px 0 16px;background:var(--card);color:var(--fg);box-shadow:0 1px 2px var(--shadow);font-size:14px}
+.contents>b{color:var(--fg);font-size:15px}
+.contents a{color:var(--accent)}
+.contents .sep{color:var(--mut)}
 .contents ul{margin:4px 0 0;padding-left:18px}.contents li{margin:2px 0}
 .contents-table{border-collapse:collapse;margin:6px 0 0;font-size:14px}
-.contents-table th,.contents-table td{text-align:left;padding:3px 14px 3px 0;vertical-align:top;border:0}
-.contents-table th{color:#57606a;font-weight:600}
-.section-bullets{margin:4px 0 10px;padding-left:20px;color:#444;font-size:14px;line-height:1.5}
+.contents-table th,.contents-table td{text-align:left;padding:3px 14px 3px 0;vertical-align:top;border:0;line-height:1.7}
+.contents-table a{white-space:nowrap}
+@media(max-width:600px){.contents-table,.contents-table tbody,.contents-table tr,.contents-table td{display:block}
+.contents-table tr:first-child{display:none}.contents-table td{padding:0}
+.contents-table td:first-child{margin-top:8px;font-weight:600}.contents-table td:last-child{padding-left:14px}}
+.contents-table th{color:var(--mut);font-weight:600;font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+.section-bullets{margin:4px 0 10px;padding-left:20px;color:var(--fg);font-size:14.5px;line-height:1.55}
+.section-bullets b{color:var(--fg);font-weight:700}
 .section-bullets li{margin:2px 0}
-.icon-inline{display:inline-block;vertical-align:-1px;padding:1px 3px;border:1px solid #c9d1d9;border-radius:4px;background:#f6f8fa;color:#57606a;line-height:0}
-.location{margin:30px 0 4px;padding:8px 0 4px;border-top:3px solid #1f2328;font-size:24px}
-.location-lead{margin:0 0 10px;color:#444}
+.icon-inline{display:inline-block;vertical-align:-1px;padding:1px 3px;border:1px solid var(--line);border-radius:4px;background:var(--code);color:var(--fg);line-height:0}
+.location{margin:30px 0 4px;padding:8px 0 4px;border-top:3px solid var(--fg);font-size:24px}
+.location-lead{margin:0 0 10px;color:var(--fg)}
 .figbtns{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 6px}
 .pdf-btn{display:inline-block;padding:1px 7px;border:1px solid #c9d1d9;border-radius:4px;background:#f6f8fa;color:#0969da;font:600 10.5px/1.6 sans-serif;text-decoration:none;white-space:nowrap}
 .pdf-btn:hover{background:#eaeef2;border-color:#0969da}
-</style><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="head" d="M0,1 L10,5 L0,9 z"/></marker></defs></svg><div class="wrap"><h1>Hens Report</h1><div class="loc-switch"><span class="loc-on" aria-current="page">Location 1</span><a class="loc-btn" href="../location-2/">Location 2</a></div><h2 class="location" id="location-1">Location 1</h2><p class="location-lead">Two launches: Chicken roll (29 Apr 2026, vegan pulled chicken) and Dragon wrap (5 Jun 2026, dragon wrap abbots).</p><nav class="contents"><b>Contents</b><table class="contents-table"><tr><th>Section</th><th>Figures</th></tr><tr><td><a href="#location-1-rrr-section">RRR (main)</a></td><td><a href="#location-1-rrr-a1-all">A1 all dishes</a> · <a href="#location-1-rrr-a2-all">A2 all dishes</a> · <a href="#location-1-rrr-a1-entrees">A1 entrees</a> · <a href="#location-1-rrr-a2-entrees">A2 entrees</a></td></tr><tr><td><a href="#location-1-rr-section">RR (supplementary)</a></td><td><a href="#location-1-rr-a1-all">A1 all dishes</a> · <a href="#location-1-rr-a2-all">A2 all dishes</a> · <a href="#location-1-rr-a1-entrees">A1 entrees</a> · <a href="#location-1-rr-a2-entrees">A2 entrees</a></td></tr><tr><td><a href="#location-1-complements">Complements</a></td><td><a href="#location-1-complements-all">All dishes</a> · <a href="#location-1-complements-entrees">Entrees</a></td></tr><tr><td><a href="#location-1-predictions">Prediction plots</a></td><td><a href="#location-1-prediction-meat">Meat</a> · <a href="#location-1-prediction-chicken">Chicken</a> · <a href="#location-1-prediction-meat-averages">Meat with pre/post averages</a></td></tr><tr><td><a href="#location-1-data">Data</a></td><td><a href="#time-series">Time series</a> · <a href="#data-gaps">Data gaps</a> · <a href="#dishes-on-the-menu">Dishes on the menu</a> · <a href="#menu-changes">Menu changes</a> · <a href="#exclusions">Exclusions</a> · <a href="#modifiability">Modifiability</a> · <a href="#model-inputs">Model inputs</a></td></tr></table></nav><h3 class="analysis-head">A1: daily purchases</h3><ul class="section-bullets"><li>Counts each outcome's purchases per open day, with both launches in one model.</li></ul><h3 class="analysis-head">A2: the same customers</h3><ul class="section-bullets"><li>Customers who ordered both before the first launch and after a launch.</li><li>Items per order against each customer's own pre-launch average, averaged per day.</li><li><b>Shift:</b> the change in items per order. −0.16 = 0.16 fewer per order.</li><li><b>Difference (main):</b> shift − total items' shift, i.e. the change in the mix. 0 = no change.</li></ul><p class="analysis-note">All intervals are 95%.</p><details class="report-section" id="location-1-rrr-section" open><summary><h2>Location 1: RRR (main)</h2></summary><style>
-.pgrid h3{font:600 12px/1.5 sans-serif;margin:14px 0 4px;color:#444;letter-spacing:.02em;text-transform:uppercase}
+</style><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="head" d="M0,1 L10,5 L0,9 z"/></marker></defs></svg><div class="wrap"><h1>Hens Report</h1><div class="loc-switch"><span class="loc-on" aria-current="page">Location 1</span><a class="loc-btn" href="../location-2/">Location 2</a></div><h2 class="location" id="location-1">Location 1</h2><p class="location-lead">Two launches: Chicken roll (29 Apr 2026, vegan pulled chicken) and Dragon wrap (5 Jun 2026, dragon wrap abbots).</p><nav class="contents"><b>Contents</b><table class="contents-table"><tr><th>Section</th><th>Figures</th></tr><tr><td><a href="#location-1-rrr-section">RRR (main)</a></td><td><a href="#location-1-rrr-a1-all">A1 all dishes</a> <span class="sep">·</span> <a href="#location-1-rrr-a2-all">A2 all dishes</a> <span class="sep">·</span> <a href="#location-1-rrr-a1-entrees">A1 entrees</a> <span class="sep">·</span> <a href="#location-1-rrr-a2-entrees">A2 entrees</a></td></tr><tr><td><a href="#location-1-rr-section">RR (supplementary)</a></td><td><a href="#location-1-rr-a1-all">A1 all dishes</a> <span class="sep">·</span> <a href="#location-1-rr-a2-all">A2 all dishes</a> <span class="sep">·</span> <a href="#location-1-rr-a1-entrees">A1 entrees</a> <span class="sep">·</span> <a href="#location-1-rr-a2-entrees">A2 entrees</a></td></tr><tr><td><a href="#location-1-complements">Complements</a></td><td><a href="#location-1-complements-all">All dishes</a> <span class="sep">·</span> <a href="#location-1-complements-entrees">Entrees</a></td></tr><tr><td><a href="#location-1-predictions">Prediction plots</a></td><td><a href="#location-1-prediction-meat">Meat</a> <span class="sep">·</span> <a href="#location-1-prediction-chicken">Chicken</a> <span class="sep">·</span> <a href="#location-1-prediction-meat-averages">Meat with pre/post averages</a></td></tr><tr><td><a href="#location-1-data">Data</a></td><td><a href="#time-series">Time series</a> <span class="sep">·</span> <a href="#data-gaps">Data gaps</a> <span class="sep">·</span> <a href="#dishes-on-the-menu">Dishes on the menu</a> <span class="sep">·</span> <a href="#menu-changes">Menu changes</a> <span class="sep">·</span> <a href="#exclusions">Exclusions</a> <span class="sep">·</span> <a href="#modifiability">Modifiability</a> <span class="sep">·</span> <a href="#model-inputs">Model inputs</a></td></tr></table></nav><h3 class="analysis-head">A1: daily purchases</h3><ul class="section-bullets"><li>Counts each outcome's purchases per open day, with both launches in one model.</li></ul><h3 class="analysis-head">A2: the same customers</h3><ul class="section-bullets"><li>Customers who ordered both before the first launch and after a launch.</li><li>Items per order against each customer's own pre-launch average, averaged per day.</li><li><b>Shift:</b> the change in items per order. −0.16 = 0.16 fewer per order.</li><li><b>Difference (main):</b> shift − total items' shift, i.e. the change in the mix. 0 = no change.</li></ul><p class="analysis-note">All intervals are 95%.</p><details class="report-section" id="location-1-rrr-section" open><summary><h2>Location 1: RRR (main)</h2></summary><style>
+.pgrid h3{font:600 12px/1.5 sans-serif;margin:14px 0 4px;color:var(--mut,#57606a);letter-spacing:.02em;text-transform:uppercase}
+@media(max-width:700px){.pgrid .grid{grid-template-columns:1fr!important}}
 .pgrid .grid{display:grid;gap:8px;padding:0 0 10px;align-items:start}
 .pgrid .cell{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid #ddd;border-radius:6px;overflow:hidden}
 .pgrid .hdr{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:6px;padding:3px 4px 3px 7px;border-bottom:1px solid #eee;background:#fafafa}
@@ -494,7 +503,8 @@ if(!window.pgridListening){
 }
 fitAll();
 </script></details><details class="report-section" id="location-1-rr-section" open><summary><h2>Location 1: RR (supplementary)</h2></summary><style>
-.pgrid h3{font:600 12px/1.5 sans-serif;margin:14px 0 4px;color:#444;letter-spacing:.02em;text-transform:uppercase}
+.pgrid h3{font:600 12px/1.5 sans-serif;margin:14px 0 4px;color:var(--mut,#57606a);letter-spacing:.02em;text-transform:uppercase}
+@media(max-width:700px){.pgrid .grid{grid-template-columns:1fr!important}}
 .pgrid .grid{display:grid;gap:8px;padding:0 0 10px;align-items:start}
 .pgrid .cell{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid #ddd;border-radius:6px;overflow:hidden}
 .pgrid .hdr{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:6px;padding:3px 4px 3px 7px;border-bottom:1px solid #eee;background:#fafafa}
