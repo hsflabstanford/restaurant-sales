@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
+<title>Abbot&#x27;s buyers: Food categories</title>
+<!--
+  Location 1's Abbot's buyers, one line per customer and one dot per purchase, a purple diamond for a purchase with an
+  Abbot's item, coloured by one fixed rule (DATA.mode, one of MODES). pipeline/review/abbots_timeline.py pours its
+  data in as DATA. The page reads, from its address:
+    section=all|single|multi   every customer (the default), those who came once, or those who came back, each framed
+                               as DATA.frames gives it (its days, its title)
+    zoom=all|year              the whole record (the default) or the launches' year only, for section=all
+    export                     no controls, the desktop layout at the chart's own size, for printing to PDF and SVG
+                               (pipeline/review/figure_print.py); window.figureReady is true once its fonts are drawn
+  Embedded in a page, it posts its height to the page ({abbotsTimeline: 1, height}) so its frame can fit it.
+-->
+<style>
+:root{--ink:#1f2329;--mut:#59606a}
+html,body{margin:0;background:#fff;color:var(--ink);font:500 14px/1.45 Inter,"Helvetica Neue",Arial,sans-serif}
+.controls{display:flex;gap:8px 14px;flex-wrap:wrap;align-items:center;padding:10px 16px 0}
+.grp{display:flex;gap:8px;align-items:center}
+.lab{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{font:inherit;font-size:13px;font-weight:500;padding:4px 11px;border-radius:999px;border:1px solid #d1d6dc;background:#fff;color:var(--ink);cursor:pointer}
+.seg button.on{border-color:#1a9850;background:#eef7f1;color:#11673a;font-weight:700}
+main{padding:0 8px 6px}
+svg{display:block;width:100%;height:auto}
+svg text:not([font-weight]){font-weight:500}
+.export .controls,.controls[hidden]{display:none}
+.export main{padding:0}
+.export svg{width:auto}
+@page{margin:0}
+#tip{position:fixed;pointer-events:none;background:#fff;border:1px solid #d5d9de;border-radius:9px;box-shadow:0 8px 28px rgba(0,0,0,.14);
+padding:10px 12px;font-size:12.5px;line-height:1.45;max-width:min(330px,calc(100vw - 16px));box-sizing:border-box;z-index:5}
+#tip h4{margin:0 0 2px;font-size:13px}#tip .m{color:var(--mut)}#tip .c{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0}
+#tip .k{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+#tip ul{margin:4px 0 0;padding:0;list-style:none}#tip li{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+</style></head><body>
+<div class="controls"><span class="grp"><span class="lab">Range</span><div class="seg" id="zoom"></div></span></div>
+<main><svg id="chart" role="img"></svg></main>
+<div id="tip" hidden></div>
+<script>
+const DATA={"start":"2023-09-01","end":"2026-08-31","launches":[{"name":"Chicken roll launch","date":"2026-04-29"},{"name":"Dragon wrap launch","date":"2026-06-05"}],"people":[{"person":1,"id":null,"visits":1,"first":"2026-05-01","try":"2026-05-01","tried":"Chicken roll"},{"person":2,"id":1,"visits":3,"first":"2026-05-01","try":"2026-05-01","tried":"Chicken roll"},{"person":3,"id":2,"visits":5,"first":"2025-11-13","try":"2026-05-04","tried":"Chicken roll"},{"person":4,"id":3,"visits":7,"first":"2023-09-07","try":"2026-05-09","tried":"Chicken roll"},{"person":5,"id":4,"visits":3,"first":"2024-10-26","try":"2026-05-09","tried":"Chicken roll"},{"person":6,"id":null,"visits":1,"first":"2026-05-12","try":"2026-05-12","tried":"Chicken roll"},{"person":7,"id":null,"visits":1,"first":"2026-05-14","try":"2026-05-14","tried":"Chicken roll"},{"person":8,"id":5,"visits":4,"first":"2026-06-19","try":"2026-06-20","tried":"Chicken roll"},{"person":9,"id":null,"visits":1,"first":"2026-06-20","try":"2026-06-20","tried":"Chicken roll"},{"person":10,"id":6,"visits":55,"first":"2023-09-18","try":"2026-06-26","tried":"Chicken roll"},{"person":11,"id":null,"visits":1,"first":"2026-07-01","try":"2026-07-01","tried":"Chicken roll"},{"person":12,"id":null,"visits":1,"first":"2026-07-16","try":"2026-07-16","tried":"Chicken roll"},{"person":13,"id":null,"visits":1,"first":"2026-07-17","try":"2026-07-17","tried":"Chicken roll"},{"person":14,"id":null,"visits":1,"first":"2026-07-18","try":"2026-07-18","tried":"Chicken roll"},{"person":15,"id":null,"visits":1,"first":"2026-08-27","try":"2026-08-27","tried":"Chicken roll"},{"person":16,"id":7,"visits":2,"first":"2024-06-24","try":"2026-06-05","tried":"Dragon wrap"},{"person":17,"id":null,"visits":1,"first":"2026-06-05","try":"2026-06-05","tried":"Dragon wrap"},{"person":18,"id":null,"visits":1,"first":"2026-06-06","try":"2026-06-06","tried":"Dragon wrap"},{"person":19,"id":null,"visits":1,"first":"2026-06-08","try":"2026-06-08","tried":"Dragon wrap"},{"person":20,"id":null,"visits":1,"first":"2026-06-19","try":"2026-06-19","tried":"Dragon wrap"},{"person":21,"id":null,"visits":1,"first":"2026-06-25","try":"2026-06-25","tried":"Dragon wrap"},{"person":22,"id":null,"visits":1,"first":"2026-06-25","try":"2026-06-25","tried":"Dragon wrap"},{"person":23,"id":null,"visits":1,"first":"2026-06-27","try":"2026-06-27","tried":"Dragon wrap"},{"person":24,"id":8,"visits":4,"first":"2024-06-03","try":"2026-07-03","tried":"Dragon wrap"},{"person":25,"id":null,"visits":1,"first":"2026-07-04","try":"2026-07-04","tried":"Dragon wrap"},{"person":26,"id":null,"visits":1,"first":"2026-07-04","try":"2026-07-04","tried":"Dragon wrap"},{"person":27,"id":null,"visits":1,"first":"2026-07-08","try":"2026-07-08","tried":"Dragon wrap"},{"person":28,"id":null,"visits":1,"first":"2026-07-09","try":"2026-07-09","tried":"Dragon wrap"},{"person":29,"id":null,"visits":1,"first":"2026-07-10","try":"2026-07-10","tried":"Dragon wrap"},{"person":30,"id":null,"visits":1,"first":"2026-07-16","try":"2026-07-16","tried":"Dragon wrap"},{"person":31,"id":null,"visits":1,"first":"2026-07-17","try":"2026-07-17","tried":"Dragon wrap"},{"person":32,"id":null,"visits":1,"first":"2026-07-18","try":"2026-07-18","tried":"Dragon wrap"},{"person":33,"id":9,"visits":3,"first":"2023-09-19","try":"2026-07-22","tried":"Dragon wrap"},{"person":34,"id":10,"visits":2,"first":"2026-01-24","try":"2026-07-27","tried":"Dragon wrap"},{"person":35,"id":null,"visits":1,"first":"2026-07-29","try":"2026-07-29","tried":"Dragon wrap"},{"person":36,"id":null,"visits":1,"first":"2026-07-30","try":"2026-07-30","tried":"Dragon wrap"},{"person":37,"id":null,"visits":1,"first":"2026-08-04","try":"2026-08-04","tried":"Dragon wrap"},{"person":38,"id":11,"visits":3,"first":"2026-06-27","try":"2026-08-08","tried":"Dragon wrap"},{"person":39,"id":null,"visits":1,"first":"2026-08-11","try":"2026-08-11","tried":"Dragon wrap"},{"person":40,"id":null,"visits":1,"first":"2026-08-28","try":"2026-08-28","tried":"Dragon wrap"},{"person":41,"id":null,"visits":1,"first":"2026-08-28","try":"2026-08-28","tried":"Dragon wrap"},{"person":42,"id":null,"visits":1,"first":"2026-08-29","try":"2026-08-29","tried":"Dragon wrap"},{"person":43,"id":null,"visits":1,"first":"2026-08-29","try":"2026-08-29","tried":"Dragon wrap"}],"visits":[{"p":1,"d":"2026-05-01","items":[["Vegan Pulled Chicken","abbots",2],["Croque Garcon Burger","meat",1],["Lunch Special","meat",1],["Rangoon Fries","meat",1],["Dragon Fries","vegetarian",1]]},{"p":2,"d":"2026-05-01","items":[["Vegan Pulled Chicken","abbots",1],["French Onion Smash Burger","meat",1]]},{"p":2,"d":"2026-05-08","items":[["House Burger (vegan)","vegan",1]]},{"p":2,"d":"2026-08-13","items":[["Dragon Fries (vegan)","vegan",1],["Poutine Burrito (vegan)","vegan",1]]},{"p":3,"d":"2025-11-13","items":[["Lunch Special","meat",1]]},{"p":3,"d":"2026-02-27","items":[["Lunch Special","meat",1]]},{"p":3,"d":"2026-03-19","items":[["Lunch Special","meat",1]]},{"p":3,"d":"2026-05-04","items":[["Vegan Pulled Chicken","abbots",1],["Pulled Pork Roll","meat",1]]},{"p":3,"d":"2026-05-15","items":[["Vegan Pulled Chicken","abbots",1],["Dragon Wrap (Salmon)","meat",1],["Fries (Family)","vegan",1]]},{"p":4,"d":"2023-09-07","items":[["House Burger","meat",2],["Dragon Fries","vegetarian",2],["House Salad (Seitan)","vegetarian",2]]},{"p":4,"d":"2023-12-09","items":[["Dragon Wrap (Seitan) (vegan)","vegan",1],["Poutine (vegan)","vegan",1],["House Salad (Seitan)","vegetarian",1]]},{"p":4,"d":"2024-02-10","items":[["Fries (Family)","vegan",1],["House Burger (vegan)","vegan",3],["Sweet Potato Fries (Family)","vegan",1]]},{"p":4,"d":"2024-06-01","items":[["Sloppy Nick","meat",1],["Funk Fungi Fries","vegetarian",1],["House Salad (Seitan)","vegetarian",1]]},{"p":4,"d":"2025-10-01","items":[["Dinner Special","meat",2],["Dragon Fries (vegan)","vegan",1],["House Burger (vegan)","vegan",2]]},{"p":4,"d":"2025-10-16","items":[["Lunch Special","meat",2],["Poutine Burrito (vegan)","vegan",1],["Dragon Fries","vegetarian",1],["House Salad (Seitan)","vegetarian",1]]},{"p":4,"d":"2026-05-09","items":[["Vegan Pulled Chicken","abbots",3],["House Burger (vegan)","vegan",1],["Poutine (vegan)","vegan",1],["Sweet Potato Fries (Family)","vegan",1]]},{"p":5,"d":"2024-10-26","items":[["Dragon Wrap (Grilled Chicken)","meat",1],["Dragon Wrap (Tempeh) (vegan)","vegan",1],["Fries (Family)","vegan",1],["House Burger (vegan)","vegan",1],["Grilled Cheese","vegetarian",1],["Sugar Makery Popcorn Balls","vegetarian",1]]},{"p":5,"d":"2025-01-25","items":[["Dragon Fries (vegan)","vegan",1],["Dragon Wrap (Tempeh) (vegan)","vegan",1],["Sloppy Nick (vegan)","vegan",1]]},{"p":5,"d":"2026-05-09","items":[["Vegan Pulled Chicken","abbots",1],["Dragon Wrap (Tempeh) (vegan)","vegan",1],["Sweet Potato Fries (Family)","vegan",1]]},{"p":6,"d":"2026-05-12","items":[["Vegan Pulled Chicken","abbots",1],["Bacon & Brie A La Emily","meat",1],["Poutine","meat",1]]},{"p":7,"d":"2026-05-14","items":[["Vegan Pulled Chicken","abbots",1],["Poutine","meat",1],["Sloppy Nick","meat",1]]},{"p":8,"d":"2026-06-19","items":[["Dragon Wrap (Seitan) (vegan)","vegan",1]]},{"p":8,"d":"2026-06-20","items":[["Vegan Pulled Chicken","abbots",1],["French Onion Smash Burger","meat",1]]},{"p":8,"d":"2026-06-26","items":[["French Onion Smash Burger","meat",1],["Dragon Wrap (Seitan)","vegan",1]]},{"p":8,"d":"2026-08-07","items":[["House Burger (vegan)","vegan",1]]},{"p":9,"d":"2026-06-20","items":[["Vegan Pulled Chicken","abbots",1],["Croque Garcon Burger","meat",1]]},{"p":10,"d":"2023-09-18","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2023-10-27","items":[["Lunch Special","meat",1],["Soup","meat",1]]},{"p":10,"d":"2023-12-07","items":[["Dinner Special","meat",1],["Soup","meat",1]]},{"p":10,"d":"2023-12-30","items":[["Dinner Special","meat",1],["Poutine Burrito","meat",1],["Soup","meat",1],["Funk Fungi Fries","vegetarian",1]]},{"p":10,"d":"2024-01-09","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2024-01-13","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2024-03-27","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2024-04-03","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2024-05-06","items":[["Frenchie","meat",1],["House Salad (Grilled Chicken)","meat",1],["Dragon Wrap (Tempeh)","vegan",1]]},{"p":10,"d":"2024-07-05","items":[["Lunch Special","meat",1],["Dragon Wrap (Tempeh)","vegan",1]]},{"p":10,"d":"2024-08-02","items":[["Dinner Special","meat",2]]},{"p":10,"d":"2024-08-31","items":[["Dinner Special","meat",2]]},{"p":10,"d":"2024-09-20","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2024-09-30","items":[["Lunch Special","meat",1],["Pulled Pork Roll","meat",1]]},{"p":10,"d":"2024-10-24","items":[["Lunch Special","meat",2]]},{"p":10,"d":"2024-11-06","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2024-11-26","items":[["Frenchie","meat",1],["Lunch Special","vegetarian",1]]},{"p":10,"d":"2024-12-13","items":[["Lunch Special","meat",1],["Soup","meat",1]]},{"p":10,"d":"2024-12-17","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2025-01-03","items":[["Lunch Special","meat",1],["Dragon Fries","vegetarian",1]]},{"p":10,"d":"2025-01-22","items":[["Lunch Special","meat",2]]},{"p":10,"d":"2025-02-01","items":[["Lunch Special","meat",7],["Soup","meat",1]]},{"p":10,"d":"2025-02-07","items":[["Lunch Special","meat",1],["Pulled Pork Roll","meat",1]]},{"p":10,"d":"2025-02-08","items":[["Wings","meat",1],["Fries (Family)","vegan",1]]},{"p":10,"d":"2025-02-20","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2025-03-07","items":[["Lunch Special","meat",2]]},{"p":10,"d":"2025-03-20","items":[["Funk Fungi Fries","meat",1]]},{"p":10,"d":"2025-03-24","items":[["Frenchie","meat",1],["Lunch Special","meat",1]]},{"p":10,"d":"2025-04-11","items":[["Dinner Special","meat",1],["Dragon Wrap (Tempeh)","vegan",1]]},{"p":10,"d":"2025-05-16","items":[["Lunch Special","meat",2],["Sweet Potato Fries (Family)","vegan",1]]},{"p":10,"d":"2025-07-12","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2025-07-19","items":[["Lunch Special","meat",1],["Dragon Wrap (Tempeh)","vegan",1]]},{"p":10,"d":"2025-08-01","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2025-09-04","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2025-09-05","items":[["Funk Fungi Fries","meat",1],["Lunch Special","meat",1]]},{"p":10,"d":"2025-09-20","items":[["Lunch Special","meat",3]]},{"p":10,"d":"2025-09-24","items":[["Lunch Special","meat",1],["Pulled Pork Roll","meat",1]]},{"p":10,"d":"2025-10-04","items":[["Lunch Special","meat",2]]},{"p":10,"d":"2025-10-20","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2025-11-21","items":[["Lunch Special","meat",2],["Soup (southern ham and collard)","meat",1]]},{"p":10,"d":"2025-12-04","items":[["Lunch Special","meat",1],["Pulled Pork Roll","meat",1]]},{"p":10,"d":"2025-12-26","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2026-01-17","items":[["Lunch Special","meat",1],["Soup (soup of the day)","meat",1]]},{"p":10,"d":"2026-01-24","items":[["Lunch Special","meat",1],["Soup (soup of the day)","meat",2]]},{"p":10,"d":"2026-02-06","items":[["French Onion Smash Burger","meat",1]]},{"p":10,"d":"2026-02-10","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2026-02-19","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2026-03-05","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2026-03-26","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2026-04-23","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2026-05-13","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2026-06-26","items":[["Vegan Pulled Chicken","abbots",1],["Lunch Special","meat",1]]},{"p":10,"d":"2026-07-02","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2026-08-17","items":[["Lunch Special","meat",1]]},{"p":10,"d":"2026-08-29","items":[["Lunch Special","meat",1]]},{"p":11,"d":"2026-07-01","items":[["Vegan Pulled Chicken","abbots",1]]},{"p":12,"d":"2026-07-16","items":[["Vegan Pulled Chicken","abbots",1],["Funk Fungi Fries","meat",1],["House Burger","meat",1]]},{"p":13,"d":"2026-07-17","items":[["Vegan Pulled Chicken","abbots",1],["Dragon Fries","vegetarian",1]]},{"p":14,"d":"2026-07-18","items":[["Vegan Pulled Chicken","abbots",1],["Grilled Cheese","vegetarian",1]]},{"p":15,"d":"2026-08-27","items":[["Vegan Pulled Chicken","abbots",1]]},{"p":16,"d":"2024-06-24","items":[["Bacon & Brie A La Emily","meat",2],["House Burger","meat",2],["Poutine","meat",1]]},{"p":16,"d":"2026-06-05","items":[["Dragon Wrap (Abbots Pea Protein) (vegan)","abbots",1],["Fries (Family)","vegan",1],["Poutine Burrito (vegan)","vegan",1]]},{"p":17,"d":"2026-06-05","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Croque Garcon Burger","meat",1],["PCF Fried Chicken Thighs (3pc)","meat",1],["Grilled Cheese","vegetarian",1]]},{"p":18,"d":"2026-06-06","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Dragon Wrap (Grilled Chicken)","meat",1],["Fries (Family)","vegan",1]]},{"p":19,"d":"2026-06-08","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Funk Fungi Fries","meat",1]]},{"p":20,"d":"2026-06-19","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1]]},{"p":21,"d":"2026-06-25","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["House Burger","meat",1],["Poutine","meat",1]]},{"p":22,"d":"2026-06-25","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Bacon & Brie A La Emily","meat",1],["Dinner Special","meat",1],["PCF Fried Chicken Thighs (2pc)","meat",1],["Dragon Fries","vegetarian",1],["Side Salad","vegetarian",1]]},{"p":23,"d":"2026-06-27","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Funk Fungi Fries","meat",1],["House Salad (No Protein)","vegetarian",1]]},{"p":24,"d":"2024-06-03","items":[["Dragon Wrap (Tempeh) (vegan)","vegan",1]]},{"p":24,"d":"2025-06-27","items":[["Dragon Wrap (Tempeh) (vegan)","vegan",1]]},{"p":24,"d":"2025-10-06","items":[["House Burger","meat",1],["Dragon Wrap (Tempeh) (vegan)","vegan",1]]},{"p":24,"d":"2026-07-03","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1]]},{"p":25,"d":"2026-07-04","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Croque Garcon Burger","meat",1]]},{"p":26,"d":"2026-07-04","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Chicken Bacon Ranch","meat",2],["Dragon Wrap (Grilled Chicken)","meat",1],["PCF Fried Chicken Thighs (4pc)","meat",1],["Dragon Fries","vegetarian",1]]},{"p":27,"d":"2026-07-08","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["House Burger","meat",1],["Lunch Special","meat",1]]},{"p":28,"d":"2026-07-09","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Poutine","meat",1],["Pulled Pork Roll","meat",1],["Sloppy Nick","vegetarian",1]]},{"p":29,"d":"2026-07-10","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["House Burger","meat",1],["Sweet Potato Fries (Family)","vegan",2]]},{"p":30,"d":"2026-07-16","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["French Onion Smash Burger","meat",1],["Funk Fungi Fries","meat",1]]},{"p":31,"d":"2026-07-17","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Grilled Cheese","vegetarian",1]]},{"p":32,"d":"2026-07-18","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Duck Duck Goose Fries","meat",1]]},{"p":33,"d":"2023-09-19","items":[["Poutine Burrito","meat",2],["Dragon Wrap (Tempeh) (vegan)","vegan",1]]},{"p":33,"d":"2025-05-15","items":[["Funk Fungi Fries","meat",1],["Dragon Wrap (Tempeh)","vegetarian",1],["House Burger","vegetarian",1]]},{"p":33,"d":"2026-07-22","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Dragon Fries","vegetarian",1],["Grilled Cheese","vegetarian",1],["House Burger","vegetarian",1]]},{"p":34,"d":"2026-01-24","items":[["Poutine Burrito (vegan)","vegan",1]]},{"p":34,"d":"2026-07-27","items":[["Dragon Wrap (Abbots Pea Protein) (vegan)","abbots",1],["House Burger","meat",1],["Lunch Special","meat",1],["Poutine Burrito (vegan)","vegan",1]]},{"p":35,"d":"2026-07-29","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["French Onion Smash Burger","meat",1],["House Burger","meat",1],["House Salad (Grilled Chicken)","meat",1],["Pulled Pork Roll","meat",1],["Dragon Fries","vegetarian",1]]},{"p":36,"d":"2026-07-30","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Croque Garcon Burger","meat",1],["House Burger","meat",2],["House Salad (Grilled Chicken)","meat",1],["Grilled Cheese","vegetarian",1]]},{"p":37,"d":"2026-08-04","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1]]},{"p":38,"d":"2026-06-27","items":[["Sloppy Nick","meat",1],["Poutine Burrito (vegan)","vegan",1],["Dragon Fries","vegetarian",1]]},{"p":38,"d":"2026-08-08","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Poutine Burrito","meat",1],["Dragon Fries","vegetarian",1]]},{"p":38,"d":"2026-08-22","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Croque Garcon Burger","meat",1]]},{"p":39,"d":"2026-08-11","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1]]},{"p":40,"d":"2026-08-28","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Bittersweet Dessert Bars - Small Dessert","vegetarian",1]]},{"p":41,"d":"2026-08-28","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Duck Duck Goose Fries","meat",1],["French Onion Smash Burger","meat",3],["House Burger","meat",4],["House Salad (Grilled Chicken)","meat",1],["Philly","meat",2],["Fries (Family)","vegan",1]]},{"p":42,"d":"2026-08-29","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Dragon Wrap (Grilled Chicken)","meat",1],["House Burger","meat",2],["Dragon Fries","vegetarian",1],["Side Salad","vegetarian",1]]},{"p":43,"d":"2026-08-29","items":[["Dragon Wrap (Abbots Pea Protein)","abbots",1],["Bacon & Brie A La Emily","meat",1],["Rangoon Fries","meat",1]]}],"frames":{"all":{"from":"2023-09-01","to":"2026-08-31","rows":43,"title":"The 43 Abbot's buyers, visit by visit"},"single":{"from":"2026-04-01","to":"2026-08-31","rows":32,"title":"The 32 Abbot's buyers who came once"},"multi":{"from":"2023-09-01","to":"2026-08-31","rows":11,"title":"The 11 Abbot's buyers who came back"}},"mode":"cats"};
+const NS='http://www.w3.org/2000/svg',DAY=864e5,T=d=>Date.parse(d+'T00:00:00Z');
+const FONT="Inter,'Helvetica Neue',Arial,sans-serif";
+const COL={abbots:'#7e57c2',vegan:'#1a9850',vegetarian:'#e0a800',meat:'#c0392b'};
+const NAME={abbots:"Abbot's item",vegan:'vegan',vegetarian:'vegetarian',meat:'meat (or unknown)'};
+const catName=(k,n)=>k==='abbots'&&n>1?"Abbot's items":NAME[k];
+const CATS=['abbots','vegan','vegetarian','meat'];
+const MODES=[
+ {key:'any',yes:'had a vegan item (Abbot\'s counts)',no:'no vegan item',f:c=>c.abbots+c.vegan>0},
+ {key:'all',yes:'every food item vegan',no:'something not vegan',f:c=>c.abbots+c.vegan===c.total},
+ {key:'other',yes:"a vegan item other than Abbot's",no:'no other vegan item',f:c=>c.vegan>0},
+ {key:'nomeat',yes:'no meat (vegetarian or vegan only)',no:'had meat',f:c=>c.meat===0},
+ {key:'share',shade:c=>(c.abbots+c.vegan)/c.total},
+ {key:'cats',cats:true},
+];
+const fmt=(d,o)=>new Date(T(d)).toLocaleDateString('en-GB',{timeZone:'UTC',...o});
+const q=new URLSearchParams(location.search);
+const EXPORT=q.has('export');
+const SECTION=['single','multi'].includes(q.get('section'))?q.get('section'):'all';
+const FRAME=DATA.frames[SECTION];
+const mode=MODES.find(m=>m.key===DATA.mode)||MODES[0];
+const YEAR=DATA.launches[0].date.slice(0,4);
+const ZOOMS=[{key:'all',label:'Whole record',from:DATA.start},{key:'year',label:YEAR+' only',from:YEAR+'-01-01'}];
+let zoom=ZOOMS.find(z=>z.key===q.get('zoom'))||ZOOMS[!EXPORT&&innerWidth<700?1:0];
+if(EXPORT)document.documentElement.classList.add('export');
+
+const byP=new Map(DATA.people.map(p=>[p.person,[]]));
+for(const v of DATA.visits){
+  const c={d:v.d,items:v.items,abbots:0,vegan:0,vegetarian:0,meat:0,total:0};
+  for(const [,cls,n] of v.items){c[cls]+=n;c.total+=n}
+  byP.get(v.p).push(c);
+}
+const sortS=(a,b)=>a.try.localeCompare(b.try)||a.person-b.person;
+const sortM=(a,b)=>a.visits-b.visits||a.first.localeCompare(b.first)||a.person-b.person;
+const svg=document.getElementById('chart'),tip=document.getElementById('tip');
+const ctx=document.createElement('canvas').getContext('2d');
+function el(tag,attrs,text){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(text!==undefined)e.textContent=text;return e}
+function shade(s){const a=[226,232,228],b=[26,152,80];return `rgb(${a.map((v,i)=>Math.round(v+(b[i]-v)*s)).join(',')})`}
+function textWidth(text,size,weight){ctx.font=`${weight} ${size}px ${FONT}`;return ctx.measureText(text).width}
+
+// each launch's name over its line: the first left of it, the others right of it, kept inside the chart, a name that
+// would run into another's lifted a line; their left edges, lines and how many lines they take
+function launchLabels(x,L,PLOT,W,phone){
+  const size=phone?10:11.5,placed=[];
+  DATA.launches.forEach((d,i)=>{
+    const lx=x(d.date);if(lx<L||lx>L+PLOT)return;
+    const text=phone?d.name.replace(' launch',''):d.name+' '+fmt(d.date,{day:'numeric',month:'short'});
+    const w=textWidth(text,size,600);
+    const left=Math.min(Math.max(i===0?lx-4-w:lx+4,2),W-2-w);
+    let line=0;while(placed.some(o=>o.line===line&&left<o.left+o.w+8&&o.left<left+w+8))line++;
+    placed.push({lx,text,w,left,line,size});
+  });
+  return {placed,lines:1+Math.max(0,...placed.map(o=>o.line))};
+}
+
+function draw(){
+  svg.replaceChildren();
+  const ppl=DATA.people;
+  const single=SECTION==='multi'?[]:ppl.filter(p=>p.visits===1).sort(sortS);
+  const multi=SECTION==='single'?[]:ppl.filter(p=>p.visits>1).sort(sortM);
+  const phone=!EXPORT&&innerWidth<700;
+  const W=phone?420:1200,L=phone?44:92,R=phone?30:60,ROW=phone?19:14.2,PLOT=W-L-R,r=phone?5.2:4.3;
+  const t0=T(SECTION==='all'?zoom.from:FRAME.from),t1=T(FRAME.to);
+  const x=d=>L+(T(d)-t0)/(t1-t0)*PLOT;
+  svg.setAttribute('aria-label',`${FRAME.title}: one line per customer, one dot per purchase`);
+  const g=el('g',{'font-family':FONT,'font-weight':500,fill:'#1f2329'});svg.appendChild(g);
+  g.appendChild(el('text',{x:phone?10:L,y:28,'font-size':phone?18:23,'font-weight':750},FRAME.title));
+  const sub=mode.cats
+    ?(phone?'One dot per purchase, split by category. Ring: an Abbot\'s item.':"One line per customer, one dot per purchase, split by its food items' categories. A purple ring marks a purchase that included an Abbot's item.")
+    :(phone?"One dot per purchase. Diamond: an Abbot's item.":"One line per customer, one dot per purchase. A purple diamond marks a purchase that included an Abbot's item.");
+  g.appendChild(el('text',{x:phone?10:L,y:48,'font-size':phone?11:13,fill:'#59606a'},sub));
+  const below=legend(g,phone?68:70,phone?10:L,phone);
+  const labels=launchLabels(x,L,PLOT,W,phone);
+  const top=below+34+14*(labels.lines-1);let y=top+6;
+  const bandG=el('g',{});g.appendChild(bandG);
+  const rows=el('g',{});g.appendChild(rows);
+  if(single.length)y=section(rows,'Customers who bought once',single,y,false);
+  if(multi.length)y=section(rows,'Customers who came back',multi,single.length?y+12:y,true);
+  const [a,b]=DATA.launches;
+  if(a&&b){const xa=Math.max(L,x(a.date)),xb=Math.min(L+PLOT,x(b.date));if(xb>xa)bandG.appendChild(el('rect',{x:xa,y:top-4,width:xb-xa,height:y-top+4,fill:'#f4f0fa'}))}
+  for(const o of labels.placed){
+    bandG.appendChild(el('line',{x1:o.lx,x2:o.lx,y1:top-4,y2:y,stroke:'#7e57c2','stroke-width':1,'stroke-dasharray':'2 3',opacity:.7}));
+    bandG.appendChild(el('text',{x:o.left,y:top-8-14*o.line,'font-size':o.size,fill:'#5b3fa0','font-weight':600},o.text));
+  }
+  g.appendChild(el('line',{x1:L,x2:L+PLOT,y1:y,y2:y,stroke:'#99a0a8'}));
+  const days=(t1-t0)/DAY,step=days>400?(phone?6:3):1,ticks=[];
+  const d0=new Date(t0),yr=d0.getUTCFullYear();let m=d0.getUTCMonth()+(d0.getUTCDate()>1?1:0);
+  for(;;m++){const dt=new Date(Date.UTC(yr,m,1)),iso=dt.toISOString().slice(0,10);if(iso>FRAME.to)break;
+    if(m%step!==0)continue;const tx=x(iso);if(tx<L-1)continue;ticks.push({tx,iso,jan:dt.getUTCMonth()===0,year:dt.getUTCFullYear()})}
+  // a range with no January names its year on its first month
+  const named=ticks.some(t=>t.jan);
+  ticks.forEach((t,i)=>{
+    g.appendChild(el('line',{x1:t.tx,x2:t.tx,y1:y,y2:y+4,stroke:'#99a0a8'}));
+    const text=t.jan?String(t.year):fmt(t.iso,{month:'short'})+(!named&&i===0?' '+t.year:'');
+    g.appendChild(el('text',{x:t.tx,y:y+17,'font-size':11,'text-anchor':'middle',fill:t.jan?'#1f2329':'#59606a','font-weight':t.jan?700:400},text));
+  });
+  const H=Math.ceil(y+30);
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  if(EXPORT){svg.setAttribute('width',W);svg.setAttribute('height',H)}
+
+  function section(g,title,list,y,isMulti){
+    // every customer: each section under its heading; one section alone: its title is the chart's
+    if(SECTION==='all')g.appendChild(el('text',{x:L,y:y+4,'font-size':phone?12:13.5,'font-weight':750},title+' ('+list.length+')'));
+    if(isMulti){
+      g.appendChild(el('text',{x:L-8,y:y+4,'font-size':10,'text-anchor':'end',fill:'#59606a'},phone?'ID':'Customer ID'));
+      g.appendChild(el('text',{x:W-4,y:y+4,'font-size':10,'text-anchor':'end',fill:'#59606a'},phone?'#':'purchases'));
+    }
+    if(SECTION==='all'||isMulti)y+=10;
+    for(const p of list){
+      const cy=y+ROW/2;
+      g.appendChild(el('line',{x1:L,x2:L+PLOT,y1:cy,y2:cy,stroke:'#d8dce1','stroke-width':1}));
+      if(isMulti){
+        g.appendChild(el('text',{x:L-8,y:cy+3.5,'font-size':11,'text-anchor':'end',fill:'#59606a'},p.id));
+        g.appendChild(el('text',{x:W-4,y:cy+4,'font-size':11.5,'font-weight':750,'text-anchor':'end'},p.visits));
+      }
+      for(const c of byP.get(p.person)){const cx=x(c.d);if(cx>=L-1)dot(g,c,p,cx,cy)}
+      y+=ROW;
+    }
+    return y+4;
+  }
+  function dot(g,c,p,cx,cy){
+    const grp=el('g',{});
+    const ab=c.abbots>0,rr=ab?r+1.2:r;
+    const fill=mode.shade?shade(mode.shade(c)):(mode.f?(mode.f(c)?'#1a9850':'#cdd2d8'):'#fff');
+    if(mode.cats){
+      grp.appendChild(el('circle',{cx,cy,r:rr,fill:'#fff'}));
+      let ang=-Math.PI/2;
+      for(const k of CATS){if(!c[k])continue;const a2=ang+2*Math.PI*c[k]/c.total;
+        if(c[k]===c.total)grp.appendChild(el('circle',{cx,cy,r:rr,fill:COL[k]}));
+        else grp.appendChild(el('path',{d:`M${cx} ${cy}L${cx+rr*Math.cos(ang)} ${cy+rr*Math.sin(ang)}A${rr} ${rr} 0 ${a2-ang>Math.PI?1:0} 1 ${cx+rr*Math.cos(a2)} ${cy+rr*Math.sin(a2)}Z`,fill:COL[k]}));
+        ang=a2}
+      if(ab)grp.appendChild(el('circle',{cx,cy,r:rr+1.3,fill:'none',stroke:'#7e57c2','stroke-width':1.7}));
+    }else if(ab)grp.appendChild(el('rect',{x:-rr,y:-rr,width:2*rr,height:2*rr,transform:`translate(${cx} ${cy}) rotate(45)`,fill,stroke:'#7e57c2','stroke-width':1.8}));
+    else grp.appendChild(el('circle',{cx,cy,r:rr,fill,stroke:'#fff','stroke-width':.8}));
+    if(!EXPORT){
+      grp.appendChild(el('circle',{cx,cy,r:phone?8:Math.max(rr+2,6),fill:'transparent'}));
+      grp.addEventListener('mousemove',e=>showTip(e,c,p));grp.addEventListener('mouseleave',()=>{if(Date.now()-touched>1000)tip.hidden=true});
+      grp.addEventListener('click',e=>{e.stopPropagation();showTip(e,c,p)});
+    }
+    g.appendChild(grp);
+  }
+}
+
+// the legend under the subtitle, wrapping on a phone; the baseline of its last line
+function legend(g,y,L,phone){
+  let lx=L,ly=y;const item=(kind,fill,label)=>{
+    const w=15+label.length*(phone?5.8:6.4)+16;if(phone&&lx+w>410){lx=L;ly+=16}
+    if(kind==='d')g.appendChild(el('rect',{x:lx+1,y:ly-9,width:7.5,height:7.5,transform:`rotate(45 ${lx+4.75} ${ly-5.25})`,fill:'#fff',stroke:'#7e57c2','stroke-width':1.7}));
+    else if(kind==='r')g.appendChild(el('circle',{cx:lx+5,cy:ly-4.5,r:4,fill,stroke:'#7e57c2','stroke-width':1.7}));
+    else g.appendChild(el('circle',{cx:lx+5,cy:ly-4.5,r:4.5,fill}));
+    g.appendChild(el('text',{x:lx+15,y:ly,'font-size':phone?11:12.5,fill:'#3a4049'},label));lx+=w};
+  if(mode.cats){CATS.filter(c=>c!=='abbots').forEach(c=>item('c',COL[c],NAME[c]));item('r',COL.abbots,"Abbot's item (purple, ringed)")}
+  else if(mode.shade){item('c',shade(0),'no vegan items');item('c',shade(.5),'half');item('c',shade(1),'all vegan');item('d','#fff',"purchase with an Abbot's item")}
+  else{item('c','#1a9850',mode.yes);item('c','#cdd2d8',mode.no);item('d','#fff',"purchase with an Abbot's item")}
+  return ly;
+}
+
+function showTip(e,c,p){
+  const who=p.id?`Customer ${p.id}`:'One-time customer';
+  const counts=CATS.filter(k=>c[k]>0).map(k=>`<span><span class="k" style="background:${COL[k]}"></span>${c[k]} ${catName(k,c[k])}</span>`).join('');
+  const dishes=c.items.map(([n,cls,k])=>`<li><span class="k" style="background:${COL[cls]}"></span>${k}× ${n}</li>`).join('');
+  tip.innerHTML=`<h4>${who} <span class="m">· ${p.visits} purchase${p.visits>1?'s':''} in all · tried the ${p.tried.toLowerCase()}</span></h4>`+
+    `<div class="m">${fmt(c.d,{weekday:'short',day:'numeric',month:'short',year:'numeric'})}</div><div class="c">${counts}</div><ul>${dishes}</ul>`;
+  tip.hidden=false;const r=tip.getBoundingClientRect();
+  let tx=e.clientX+14,ty=e.clientY+14;if(tx+r.width>innerWidth-8)tx=e.clientX-r.width-14;if(tx<8)tx=8;if(ty+r.height>innerHeight-8)ty=Math.max(8,innerHeight-r.height-8);
+  tip.style.left=tx+'px';tip.style.top=ty+'px';
+}
+// a tap shows the tooltip until the next tap elsewhere: the mouse events a tap leaves behind do not hide it
+let touched=0;addEventListener('touchstart',()=>{touched=Date.now()},{capture:true,passive:true});
+document.addEventListener('click',()=>tip.hidden=true);
+
+// the chart's own markup as an SVG file: its namespace, its size, a white ground, no hover targets
+window.figureSvg=()=>{
+  const c=svg.cloneNode(true),[,,w,h]=svg.getAttribute('viewBox').split(' ');
+  c.setAttribute('xmlns',NS);c.setAttribute('width',w);c.setAttribute('height',h);c.removeAttribute('id');
+  c.querySelectorAll('[fill="transparent"]').forEach(n=>n.remove());
+  c.insertBefore(el('rect',{x:0,y:0,width:w,height:h,fill:'#fff'}),c.firstChild);
+  c.insertBefore(el('style',{},"@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap');"),c.firstChild);
+  return '<?xml version="1.0" encoding="UTF-8"?>\n'+new XMLSerializer().serializeToString(c)+'\n';
+};
+
+const zoomBar=document.getElementById('zoom');
+for(const z of ZOOMS){const b=document.createElement('button');b.textContent=z.label;b.onclick=()=>{zoom=z;mark();draw()};zoomBar.appendChild(b)}
+function mark(){[...zoomBar.children].forEach((b,i)=>b.classList.toggle('on',ZOOMS[i]===zoom))}
+if(SECTION!=='all')document.querySelector('.controls').hidden=true;
+function fit(){if(parent!==window)parent.postMessage({abbotsTimeline:1,height:Math.ceil(document.body.getBoundingClientRect().height)},'*')}
+let phoneWas=innerWidth<700;
+addEventListener('resize',()=>{if((innerWidth<700)!==phoneWas){phoneWas=innerWidth<700;draw()}});
+if(window.ResizeObserver)new ResizeObserver(fit).observe(document.body);
+mark();draw();fit();
+document.fonts.ready.then(()=>{draw();fit();window.figureReady=true});
+</script></body></html>
