@@ -1,0 +1,741 @@
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hens Report: Location 1: refit</title><style>pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.hl .hll { background-color: #ffffcc }
+.hl { background: #f8f8f8; }
+.hl .c { color: #3D7B7B; font-style: italic } /* Comment */
+.hl .err { border: 1px solid #FF0000 } /* Error */
+.hl .k { color: #008000; font-weight: bold } /* Keyword */
+.hl .o { color: #666666 } /* Operator */
+.hl .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.hl .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.hl .cp { color: #9C6500 } /* Comment.Preproc */
+.hl .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.hl .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.hl .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.hl .gd { color: #A00000 } /* Generic.Deleted */
+.hl .ge { font-style: italic } /* Generic.Emph */
+.hl .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.hl .gr { color: #E40000 } /* Generic.Error */
+.hl .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.hl .gi { color: #008400 } /* Generic.Inserted */
+.hl .go { color: #717171 } /* Generic.Output */
+.hl .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.hl .gs { font-weight: bold } /* Generic.Strong */
+.hl .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.hl .gt { color: #0044DD } /* Generic.Traceback */
+.hl .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.hl .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.hl .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.hl .kp { color: #008000 } /* Keyword.Pseudo */
+.hl .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.hl .kt { color: #B00040 } /* Keyword.Type */
+.hl .m { color: #666666 } /* Literal.Number */
+.hl .s { color: #BA2121 } /* Literal.String */
+.hl .na { color: #687822 } /* Name.Attribute */
+.hl .nb { color: #008000 } /* Name.Builtin */
+.hl .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.hl .no { color: #880000 } /* Name.Constant */
+.hl .nd { color: #AA22FF } /* Name.Decorator */
+.hl .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.hl .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.hl .nf { color: #0000FF } /* Name.Function */
+.hl .nl { color: #767600 } /* Name.Label */
+.hl .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.hl .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.hl .nv { color: #19177C } /* Name.Variable */
+.hl .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.hl .w { color: #bbbbbb } /* Text.Whitespace */
+.hl .mb { color: #666666 } /* Literal.Number.Bin */
+.hl .mf { color: #666666 } /* Literal.Number.Float */
+.hl .mh { color: #666666 } /* Literal.Number.Hex */
+.hl .mi { color: #666666 } /* Literal.Number.Integer */
+.hl .mo { color: #666666 } /* Literal.Number.Oct */
+.hl .sa { color: #BA2121 } /* Literal.String.Affix */
+.hl .sb { color: #BA2121 } /* Literal.String.Backtick */
+.hl .sc { color: #BA2121 } /* Literal.String.Char */
+.hl .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.hl .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.hl .s2 { color: #BA2121 } /* Literal.String.Double */
+.hl .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.hl .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.hl .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.hl .sx { color: #008000 } /* Literal.String.Other */
+.hl .sr { color: #A45A77 } /* Literal.String.Regex */
+.hl .s1 { color: #BA2121 } /* Literal.String.Single */
+.hl .ss { color: #19177C } /* Literal.String.Symbol */
+.hl .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.hl .fm { color: #0000FF } /* Name.Function.Magic */
+.hl .vc { color: #19177C } /* Name.Variable.Class */
+.hl .vg { color: #19177C } /* Name.Variable.Global */
+.hl .vi { color: #19177C } /* Name.Variable.Instance */
+.hl .vm { color: #19177C } /* Name.Variable.Magic */
+.hl .il { color: #666666 } /* Literal.Number.Integer.Long */@media(prefers-color-scheme:dark){pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.hl .hll { background-color: #49483e }
+.hl { background: #272822; color: #f8f8f2 }
+.hl .c { color: #959077 } /* Comment */
+.hl .err { color: #ed007e; background-color: #1e0010 } /* Error */
+.hl .esc { color: #f8f8f2 } /* Escape */
+.hl .g { color: #f8f8f2 } /* Generic */
+.hl .k { color: #66d9ef } /* Keyword */
+.hl .l { color: #ae81ff } /* Literal */
+.hl .n { color: #f8f8f2 } /* Name */
+.hl .o { color: #ff4689 } /* Operator */
+.hl .x { color: #f8f8f2 } /* Other */
+.hl .p { color: #f8f8f2 } /* Punctuation */
+.hl .ch { color: #959077 } /* Comment.Hashbang */
+.hl .cm { color: #959077 } /* Comment.Multiline */
+.hl .cp { color: #959077 } /* Comment.Preproc */
+.hl .cpf { color: #959077 } /* Comment.PreprocFile */
+.hl .c1 { color: #959077 } /* Comment.Single */
+.hl .cs { color: #959077 } /* Comment.Special */
+.hl .gd { color: #ff4689 } /* Generic.Deleted */
+.hl .ge { color: #f8f8f2; font-style: italic } /* Generic.Emph */
+.hl .ges { color: #f8f8f2; font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.hl .gr { color: #f8f8f2 } /* Generic.Error */
+.hl .gh { color: #f8f8f2 } /* Generic.Heading */
+.hl .gi { color: #a6e22e } /* Generic.Inserted */
+.hl .go { color: #66d9ef } /* Generic.Output */
+.hl .gp { color: #ff4689; font-weight: bold } /* Generic.Prompt */
+.hl .gs { color: #f8f8f2; font-weight: bold } /* Generic.Strong */
+.hl .gu { color: #959077 } /* Generic.Subheading */
+.hl .gt { color: #f8f8f2 } /* Generic.Traceback */
+.hl .kc { color: #66d9ef } /* Keyword.Constant */
+.hl .kd { color: #66d9ef } /* Keyword.Declaration */
+.hl .kn { color: #ff4689 } /* Keyword.Namespace */
+.hl .kp { color: #66d9ef } /* Keyword.Pseudo */
+.hl .kr { color: #66d9ef } /* Keyword.Reserved */
+.hl .kt { color: #66d9ef } /* Keyword.Type */
+.hl .ld { color: #e6db74 } /* Literal.Date */
+.hl .m { color: #ae81ff } /* Literal.Number */
+.hl .s { color: #e6db74 } /* Literal.String */
+.hl .na { color: #a6e22e } /* Name.Attribute */
+.hl .nb { color: #f8f8f2 } /* Name.Builtin */
+.hl .nc { color: #a6e22e } /* Name.Class */
+.hl .no { color: #66d9ef } /* Name.Constant */
+.hl .nd { color: #a6e22e } /* Name.Decorator */
+.hl .ni { color: #f8f8f2 } /* Name.Entity */
+.hl .ne { color: #a6e22e } /* Name.Exception */
+.hl .nf { color: #a6e22e } /* Name.Function */
+.hl .nl { color: #f8f8f2 } /* Name.Label */
+.hl .nn { color: #f8f8f2 } /* Name.Namespace */
+.hl .nx { color: #a6e22e } /* Name.Other */
+.hl .py { color: #f8f8f2 } /* Name.Property */
+.hl .nt { color: #ff4689 } /* Name.Tag */
+.hl .nv { color: #f8f8f2 } /* Name.Variable */
+.hl .ow { color: #ff4689 } /* Operator.Word */
+.hl .pm { color: #f8f8f2 } /* Punctuation.Marker */
+.hl .w { color: #f8f8f2 } /* Text.Whitespace */
+.hl .mb { color: #ae81ff } /* Literal.Number.Bin */
+.hl .mf { color: #ae81ff } /* Literal.Number.Float */
+.hl .mh { color: #ae81ff } /* Literal.Number.Hex */
+.hl .mi { color: #ae81ff } /* Literal.Number.Integer */
+.hl .mo { color: #ae81ff } /* Literal.Number.Oct */
+.hl .sa { color: #e6db74 } /* Literal.String.Affix */
+.hl .sb { color: #e6db74 } /* Literal.String.Backtick */
+.hl .sc { color: #e6db74 } /* Literal.String.Char */
+.hl .dl { color: #e6db74 } /* Literal.String.Delimiter */
+.hl .sd { color: #e6db74 } /* Literal.String.Doc */
+.hl .s2 { color: #e6db74 } /* Literal.String.Double */
+.hl .se { color: #ae81ff } /* Literal.String.Escape */
+.hl .sh { color: #e6db74 } /* Literal.String.Heredoc */
+.hl .si { color: #e6db74 } /* Literal.String.Interpol */
+.hl .sx { color: #e6db74 } /* Literal.String.Other */
+.hl .sr { color: #e6db74 } /* Literal.String.Regex */
+.hl .s1 { color: #e6db74 } /* Literal.String.Single */
+.hl .ss { color: #e6db74 } /* Literal.String.Symbol */
+.hl .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.hl .fm { color: #a6e22e } /* Name.Function.Magic */
+.hl .vc { color: #f8f8f2 } /* Name.Variable.Class */
+.hl .vg { color: #f8f8f2 } /* Name.Variable.Global */
+.hl .vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.hl .vm { color: #f8f8f2 } /* Name.Variable.Magic */
+.hl .il { color: #ae81ff } /* Literal.Number.Integer.Long */}
+:root{--bg:#fbfbfa;--fg:#1a1a18;--mut:#6e6e68;--line:#e4e4e0;--card:#fff;
+--new:#b3261e;--port:#8a5a00;--reuse:#1a7f4b;--accent:#2c5aa0;--code:#f5f5f3;
+--flow:#d8d8d2;--shadow:rgba(20,20,40,.07)}
+@media(prefers-color-scheme:dark){:root{--bg:#151519;--fg:#eaeae8;--mut:#9c9c96;
+--line:#2b2b30;--card:#1c1c21;--new:#ff8a80;--port:#e8b567;--reuse:#54d18c;
+--accent:#8ab4f8;--code:#1f1f25;--flow:#33333a;--shadow:rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:15px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+a{color:var(--accent)}
+code,kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 90px}
+h1{font-size:27px;margin:0 0 6px;letter-spacing:-.02em}
+h2{font-size:19px;margin:40px 0 8px;letter-spacing:-.01em;scroll-margin-top:16px}
+h3{font-size:15px;margin:0 0 8px}
+.sub{color:var(--mut);margin:0 0 22px}
+.lead{font-size:16.5px;margin:6px 0 18px}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 28px}
+.nav a{padding:9px 15px;border:1px solid var(--line);border-radius:9px;
+text-decoration:none;color:inherit;background:var(--card);font-size:14px}
+.nav a:hover{border-color:var(--accent)}
+.nav a.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+margin:0 0 18px;box-shadow:0 1px 2px var(--shadow)}
+details.card{overflow:visible}
+.card>summary{cursor:pointer;padding:13px 17px;font-weight:600;list-style:none;
+display:flex;justify-content:space-between;gap:12px;align-items:center;border-radius:12px}
+.card>summary::-webkit-details-marker{display:none}
+.card>summary:hover{background:var(--code)}
+.card[open]>summary{border-bottom:1px solid var(--line);border-radius:12px 12px 0 0}
+.card>summary>span:first-child{min-width:0;overflow-wrap:anywhere}
+.chev{color:var(--mut);font-size:12px;font-weight:400;white-space:nowrap;flex:none}
+.body{padding:15px 17px}
+.tag{display:inline-block;font-size:10px;letter-spacing:.09em;font-weight:700;
+text-transform:uppercase;padding:3px 8px;border-radius:999px;border:1px solid;
+vertical-align:middle;white-space:nowrap}
+.tag.new{color:var(--new);border-color:var(--new)}
+.tag.ported{color:var(--port);border-color:var(--port)}
+.tag.reused{color:var(--reuse);border-color:var(--reuse)}
+.tag.original{color:var(--accent);border-color:var(--accent)}
+.tag.decide{color:#fff;background:var(--new);border-color:var(--new)}
+.tag.settled{color:var(--reuse);border-color:var(--reuse)}
+.open-mod{float:right;font-size:13px;text-decoration:none;margin-left:12px}
+
+.timeline{list-style:none;margin:0;padding:8px 6px;position:relative}
+.timeline::before{content:"";position:absolute;left:25px;top:30px;bottom:30px;width:2px;
+background:linear-gradient(var(--accent),color-mix(in srgb,var(--accent) 12%,transparent))}
+.tl{display:grid;grid-template-columns:40px 1fr;gap:16px;padding:9px 0;position:relative}
+.tl-dot{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;
+justify-content:center;background:var(--card);border:2px solid var(--accent);
+color:var(--accent);font:700 12px/1 ui-monospace,Menlo,monospace;text-decoration:none;
+z-index:1;transition:transform .12s,background .12s}
+a.tl-dot:hover{transform:scale(1.08);background:var(--accent);color:#fff}
+.tl.blocked .tl-dot{border-style:dashed;border-color:var(--port);color:var(--port)}
+.tl-body{padding:9px 14px;border-radius:10px;transition:background .12s}
+.tl:hover .tl-body{background:var(--code)}
+.tl-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tl-top b{font-size:15.5px}
+.delta{font:600 11.5px/1 ui-monospace,Menlo,monospace;padding:4px 8px;border-radius:6px;
+background:var(--code);color:var(--mut)}
+.delta.down{color:var(--new);background:color-mix(in srgb,var(--new) 11%,transparent)}
+.delta.state{color:var(--accent);background:color-mix(in srgb,var(--accent) 11%,transparent)}
+.delta.blocked{color:var(--port);background:color-mix(in srgb,var(--port) 12%,transparent)}
+.tl-read{margin-left:auto;font-size:12.5px;text-decoration:none}
+.tl-meta{color:var(--mut);font-size:13.5px;margin-top:3px}
+.tl-meta .num{font-variant-numeric:tabular-nums;color:var(--fg);font-weight:500}
+
+.chain{position:relative;margin:6px 0 22px}
+.chain-head{display:flex;justify-content:space-between;align-items:center;gap:12px;
+margin:0 0 8px;min-height:24px}
+.toggle{font-size:12px;color:var(--mut);cursor:pointer;user-select:none;
+border:1px solid var(--line);border-radius:999px;padding:3px 11px;background:var(--card)}
+.toggle:hover{border-color:var(--accent);color:var(--accent)}
+.chain-grid{position:relative;display:grid;
+grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px}
+.chain.bare .chain-grid{grid-template-columns:minmax(0,1fr)}
+.chain.bare .gutter,.chain.bare svg.arrows{display:none}
+.code{list-style:none;margin:0;padding:10px 0;background:var(--code);border-radius:10px;
+font:13px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;align-self:start;
+overflow-x:auto;border:1px solid var(--line)}
+.code li{display:flex;align-items:center;gap:8px;padding:3px 14px 3px 10px;
+white-space:pre;border-left:3px solid transparent}
+.code li .k{flex:none;width:46px;color:var(--mut);font-size:11px;text-align:right}
+.chain.shaped .chain-grid{grid-template-columns:minmax(0,1.55fr) minmax(0,.75fr);gap:48px}
+.chain.shaped.bare .chain-grid{grid-template-columns:minmax(0,1fr)}
+.code li .shape{flex:none;width:262px;text-align:right;font-size:10.5px;color:var(--mut);
+white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.code li .shape.same::before{content:"= ";color:var(--reuse);font-weight:700}
+.code li .shape.rows{color:var(--fg)}
+.code li .shape .d{font-weight:700}
+.code li .shape .d.down{color:var(--new)}
+.code li .shape .d.up{color:var(--reuse)}
+.code li .shape .d.from{color:var(--mut);font-weight:600}
+.code li .shape .calls{font-size:9px;margin-left:1px;color:var(--mut)}
+.code li .shape.cols{color:var(--accent)}
+.vc-card>summary{font-weight:500}
+.fig{margin:0 0 18px;padding:12px 14px}
+.fig img{display:block;width:100%;height:auto;border-radius:8px;background:#fff}
+.fig figcaption{font-size:13.5px;color:var(--mut);margin-top:8px}
+.fig figcaption b{display:block;color:var(--fg);font-size:14.5px;margin-bottom:2px}
+.figtoggle{display:flex;gap:4px;margin:0 0 8px}
+.figtoggle button{font:inherit;font-size:12.5px;padding:4px 11px;border-radius:999px;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--mut)}
+.figtoggle button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.tag.vc{color:var(--accent);border-color:var(--accent)}
+.vc-scroll{max-height:460px;overflow:auto}
+.vc-scroll.whole{max-height:none}
+table.vc td,table.vc th{padding:4px 9px;font-size:13px}
+table.vc th{position:sticky;top:0;background:var(--card)}
+table.vc td{vertical-align:top}
+table.vc ul.cell{margin:0;padding-left:15px}
+table.vc ul.cell li{margin:1px 0}
+.code li.edge .txt{font-weight:600}
+.code li.guard .txt{color:var(--reuse)}
+.code li.has{cursor:pointer}
+.code li.has:hover{background:color-mix(in srgb,var(--accent) 8%,transparent)}
+.code li.on{background:color-mix(in srgb,var(--accent) 15%,transparent);
+border-left-color:var(--accent)}
+.dot{flex:none;width:18px;height:18px;border-radius:50%;display:inline-flex;
+align-items:center;justify-content:center;font:700 10px/1 -apple-system,sans-serif;
+color:#fff;background:var(--accent)}
+.dot.none{background:none}
+.gutter{position:relative}
+.callout{position:absolute;left:0;right:0;background:var(--card);
+border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:9px;
+padding:7px 12px 8px;font-size:13.5px;line-height:1.45;cursor:pointer;
+box-shadow:0 1px 3px var(--shadow);transition:box-shadow .15s,transform .15s}
+.callout b{display:inline-flex;width:17px;height:17px;border-radius:50%;
+align-items:center;justify-content:center;font-size:10px;color:#fff;
+background:var(--accent);margin-right:7px;vertical-align:1px}
+.callout.on{box-shadow:0 6px 22px color-mix(in srgb,var(--accent) 30%,transparent);
+transform:translateX(-3px)}
+svg.arrows{position:absolute;left:0;top:0;pointer-events:none;overflow:visible}
+svg.arrows .link{fill:none;stroke:var(--accent);stroke-width:1.3;opacity:.45;
+transition:opacity .15s,stroke-width .15s}
+svg.arrows .link.on{opacity:1;stroke-width:2.2}
+.head{fill:var(--accent)}
+.pop{position:absolute;z-index:20;max-width:380px;background:var(--card);
+border:1px solid var(--accent);border-radius:10px;padding:9px 13px;font-size:13.5px;
+line-height:1.45;box-shadow:0 10px 30px var(--shadow)}
+.pop::before{content:"";position:absolute;top:-7px;left:22px;width:12px;height:12px;
+background:var(--card);border-left:1px solid var(--accent);border-top:1px solid var(--accent);
+transform:rotate(45deg)}
+.pop b{display:none}
+.code li .txt{display:inline-block;white-space:pre}
+.code li .txt a.fn{display:inline;white-space:pre;color:var(--accent);text-decoration:none;cursor:pointer}
+.code li .shape.start{color:var(--fg);font-weight:600}
+.fnsrc{margin:10px 0 0;border:1px solid var(--accent);border-radius:10px;background:var(--code);
+overflow:auto;max-height:540px}
+.fnbar{display:flex;gap:10px;align-items:center;padding:7px 12px;border-bottom:1px solid var(--line);
+font-size:12.5px;position:sticky;top:0;background:var(--code)}
+.fnwhere{color:var(--mut)}
+.fnclose{margin-left:auto;cursor:pointer;color:var(--accent)}
+.fnsrc .hl pre{margin:0;padding:10px 12px;font-size:12.5px}
+.exbtn{display:block;margin-top:5px;font:inherit;font-size:12px;color:var(--accent);background:none;
+border:none;padding:0;cursor:pointer;text-decoration:none}
+.ex{margin-top:6px;font-size:12px}
+.ex p{margin:0 0 4px;color:var(--mut)}
+.ex table{font-size:11.5px;display:block;overflow-x:auto;white-space:nowrap}
+.ex td,.ex th{padding:2px 6px}
+
+.dq{padding:14px 17px;border-bottom:1px solid var(--line)}
+.dq:last-child{border-bottom:none}
+.dq-q{font-weight:600}
+.dq-d{color:var(--mut);font-size:14px;margin:2px 0 6px}
+.dq-b{font-size:12.5px;color:var(--mut)}
+.dq-b b{color:var(--fg);font-weight:600}
+.choices{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 8px}
+.choices label{font-size:13px;padding:6px 11px;border:1px solid var(--line);
+border-radius:8px;cursor:pointer;background:var(--card)}
+.choices input{display:none}
+.choices label:has(input:checked){border-color:var(--accent);color:var(--accent);
+background:color-mix(in srgb,var(--accent) 12%,transparent);font-weight:600}
+.dq textarea,#answers-out{width:100%;min-height:52px;font:13px/1.45 inherit;
+font-family:inherit;background:var(--code);color:var(--fg);border:1px solid var(--line);
+border-radius:8px;padding:8px 10px}
+.saved{font-size:12px;color:var(--reuse)}
+.answer{margin-top:6px;padding:8px 12px;border-left:3px solid var(--reuse);
+background:color-mix(in srgb,var(--reuse) 8%,transparent);border-radius:0 8px 8px 0;
+font-size:14px}
+.btn{font:inherit;font-size:13px;padding:7px 13px;border-radius:8px;cursor:pointer;
+border:1px solid var(--line);background:var(--card);color:var(--fg)}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+
+.mg{padding:14px 17px 10px;border-bottom:1px solid var(--line)}
+.mg:last-child{border-bottom:none}
+.mg h4{margin:0 0 6px;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;
+color:var(--mut)}
+.mg h4 span{text-transform:none;letter-spacing:0;font-weight:400;margin-left:8px}
+.mrow{display:grid;grid-template-columns:30px minmax(0,230px) 196px minmax(0,1fr) 110px;
+gap:12px;align-items:center;padding:8px 9px;border-radius:9px;text-decoration:none;
+color:inherit}
+.mrow:hover{background:var(--code)}
+.mrow .ix{font:600 12px ui-monospace,Menlo,monospace;color:var(--mut)}
+.mrow code{color:var(--accent);font-weight:600}
+.mrow .p{color:var(--mut);font-size:13.5px}
+.mrow .lc{color:var(--mut);font-size:12px;text-align:right}
+.mrow.missing{opacity:.5;pointer-events:none}
+@media(max-width:820px){.mrow{grid-template-columns:30px minmax(0,1fr)}
+.mrow>*:nth-child(n+3){grid-column:2}.mrow .lc{text-align:left}}
+.crumb{font-size:13px;color:var(--mut);margin:0 0 6px}
+.doc{background:var(--card);border:1px solid var(--line);border-radius:10px;
+padding:12px 16px;margin:0 0 18px;color:var(--fg)}
+.doc p{margin:0 0 8px}.doc p:last-child{margin:0}
+.fnlist{display:flex;flex-direction:column;gap:2px;margin:0 0 18px}
+.fn{display:grid;grid-template-columns:44px minmax(0,240px) 1fr;gap:10px;
+padding:6px 10px;border-radius:8px;text-decoration:none;color:var(--fg)}
+.fn:hover{background:var(--code)}
+.fn .kd{color:var(--mut);font:12px ui-monospace,Menlo,monospace}
+.fn code{color:var(--accent)}
+.fn small{color:var(--mut);font-size:13px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:24px}
+.pager a{text-decoration:none;padding:10px 14px;border:1px solid var(--line);
+border-radius:10px;background:var(--card)}
+.pager a:hover{border-color:var(--accent)}
+
+pre{margin:0;padding:13px 15px;background:var(--code);border-radius:8px;
+overflow-x:auto;font:12.5px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+.hl{padding:10px 12px;background:var(--code)!important;border-radius:10px;
+overflow-x:auto;font:12.5px/1.55 ui-monospace,Menlo,monospace;border:1px solid var(--line)}
+.hl pre{padding:0;background:none;overflow:visible}
+.hl table{width:auto;font-size:inherit}
+.hl td{border:none;padding:0}
+.hl td.linenos{user-select:none;padding-right:14px;opacity:.45;text-align:right}
+.hl td.linenos a{color:inherit;text-decoration:none}
+.hl a[id]{scroll-margin-top:90px}
+.look{border-left:3px solid var(--accent);padding:11px 14px;margin:0 0 18px;
+background:color-mix(in srgb,var(--accent) 7%,transparent);border-radius:0 8px 8px 0}
+.look b{display:block;font-size:11px;letter-spacing:.09em;text-transform:uppercase;
+color:var(--accent);margin-bottom:4px}
+.pillrow{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px}
+.pill{border:1px solid var(--line);border-radius:999px;padding:5px 12px;
+font-size:13px;background:var(--card)}
+.pill b{font-variant-numeric:tabular-nums}
+table{border-collapse:collapse;width:100%;font-size:14px}
+td,th{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line);
+vertical-align:top}
+th{color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+
+.loc-switch{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 12px}
+.loc-switch a,.loc-switch span{display:inline-block;padding:3px 12px;border:1px solid var(--line);border-radius:5px;background:var(--card);color:var(--accent);font:600 13px/1.6 sans-serif;text-decoration:none;white-space:nowrap}
+.loc-switch a:hover{border-color:var(--accent)}
+.loc-switch span{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.location-part{margin:34px 0 4px;padding:6px 0 2px;border-top:1px solid var(--line);font-size:20px}
+.analysis-head{margin:14px 0 2px;font-size:15px}
+.analysis-note{margin:6px 0;color:var(--fg);font-size:14.5px}
+.report-section{border:0;padding:0;margin:0 0 6px;background:none}
+.report-section>summary{list-style:none;cursor:pointer;padding:0}
+.report-section>summary::-webkit-details-marker{display:none}
+.report-section>summary h2{display:inline-block;margin:26px 0 8px}
+.report-section>summary h2::before{content:"\25be ";color:var(--mut);font-size:.8em}
+.report-section:not([open])>summary h2::before{content:"\25b8 "}
+
+.contents{border:1px solid var(--line);border-radius:10px;padding:10px 16px 12px;margin:8px 0 16px;background:var(--card);color:var(--fg);box-shadow:0 1px 2px var(--shadow);font-size:14px}
+.contents>b{color:var(--fg);font-size:15px}
+.contents a{color:var(--accent)}
+.contents .sep{color:var(--mut)}
+.contents ul{margin:4px 0 0;padding-left:18px}.contents li{margin:2px 0}
+.contents-table{border-collapse:collapse;margin:6px 0 0;font-size:14px}
+.contents-table th,.contents-table td{text-align:left;padding:3px 14px 3px 0;vertical-align:top;border:0;line-height:1.7}
+.contents-table a{white-space:nowrap}
+@media(max-width:600px){.contents-table,.contents-table tbody,.contents-table tr,.contents-table td{display:block}
+.contents-table tr:first-child{display:none}.contents-table td{padding:0}
+.contents-table td:first-child{margin-top:8px;font-weight:600}.contents-table td:last-child{padding-left:14px}}
+.contents-table th{color:var(--mut);font-weight:600;font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+.section-bullets{margin:4px 0 10px;padding-left:20px;color:var(--fg);font-size:14.5px;line-height:1.55}
+.section-bullets b{color:var(--fg);font-weight:700}
+.section-bullets li{margin:2px 0}
+.icon-inline{display:inline-block;vertical-align:-1px;padding:1px 3px;border:1px solid var(--line);border-radius:4px;background:var(--code);color:var(--fg);line-height:0}
+.location{margin:30px 0 4px;padding:8px 0 4px;border-top:3px solid var(--fg);font-size:24px}
+.location-lead{margin:0 0 10px;color:var(--fg)}
+.figbtns{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 6px}
+.pdf-btn{display:inline-block;padding:1px 7px;border:1px solid #c9d1d9;border-radius:4px;background:#f6f8fa;color:#0969da;font:600 10.5px/1.6 sans-serif;text-decoration:none;white-space:nowrap}
+.pdf-btn:hover{background:#eaeef2;border-color:#0969da}
+</style><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="head" d="M0,1 L10,5 L0,9 z"/></marker></defs></svg><div class="wrap"><h1>Hens Report</h1><div class="loc-switch"><a class="loc-btn" href="../location-1/">Location 1</a><a class="loc-btn" href="../location-2/">Location 2</a><span class="loc-on" aria-current="page">Refit</span></div><h2 class="location" id="refit">Location 1: refit</h2><p class="location-lead">The same analysis as Location 1, refitted with the new data (through 31 October 2026) and with only the pulled pork roll&#x27;s switch to vegan pulled chicken as the exposure.</p><p class="location-lead">One launch: Chicken roll (29 Apr 2026, vegan pulled chicken).</p><nav class="contents"><b>Contents</b><table class="contents-table"><tr><th>Section</th><th>Figures</th></tr><tr><td><a href="#refit-rrr-section">RRR (main)</a></td><td><a href="#refit-rrr-a1-all">A1 all dishes</a> <span class="sep">·</span> <a href="#refit-rrr-a2-all">A2 all dishes</a> <span class="sep">·</span> <a href="#refit-rrr-a1-entrees">A1 entrees</a> <span class="sep">·</span> <a href="#refit-rrr-a2-entrees">A2 entrees</a></td></tr><tr><td><a href="#refit-rr-section">RR (supplementary)</a></td><td><a href="#refit-rr-a1-all">A1 all dishes</a> <span class="sep">·</span> <a href="#refit-rr-a2-all">A2 all dishes</a> <span class="sep">·</span> <a href="#refit-rr-a1-entrees">A1 entrees</a> <span class="sep">·</span> <a href="#refit-rr-a2-entrees">A2 entrees</a></td></tr><tr><td><a href="#refit-complements">Complements</a></td><td><a href="#refit-complements-all">All dishes</a> <span class="sep">·</span> <a href="#refit-complements-entrees">Entrees</a></td></tr><tr><td><a href="#refit-predictions">Prediction plots</a></td><td><a href="#refit-prediction-meat">Meat</a> <span class="sep">·</span> <a href="#refit-prediction-chicken">Chicken</a> <span class="sep">·</span> <a href="#refit-prediction-meat-averages">Meat with pre/post averages</a></td></tr></table></nav><h3 class="analysis-head">A1: daily purchases</h3><ul class="section-bullets"><li>Counts each outcome's purchases per open day.</li></ul><h3 class="analysis-head">A2: the same customers</h3><ul class="section-bullets"><li>Customers who ordered both before the launch and after it.</li><li>Items per order against each customer's own pre-launch average, averaged per day.</li><li><b>Shift:</b> the change in items per order. −0.16 = 0.16 fewer per order.</li><li><b>Difference (main):</b> shift − total items' shift, i.e. the change in the mix. 0 = no change.</li></ul><p class="analysis-note">All intervals are 95%.</p><details class="report-section" id="refit-rrr-section" open><summary><h2>Location 1: RRR (main)</h2></summary><style>
+.pgrid h3{font:600 12px/1.5 sans-serif;margin:14px 0 4px;color:var(--mut,#57606a);letter-spacing:.02em;text-transform:uppercase}
+@media(max-width:700px){.pgrid .grid{grid-template-columns:1fr!important}}
+.pgrid .grid{display:grid;gap:8px;padding:0 0 10px;align-items:start}
+.pgrid .cell{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid #ddd;border-radius:6px;overflow:hidden}
+.pgrid .hdr{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:6px;padding:3px 4px 3px 7px;border-bottom:1px solid #eee;background:#fafafa}
+.pgrid .view{position:relative;overflow:hidden;aspect-ratio:var(--ar,1);max-height:74vh}
+.pgrid .scaler{position:absolute;top:0;left:0;transform-origin:top left}
+.pgrid .scaler iframe{border:0;display:block}
+.pgrid .cell.expanded{position:fixed;inset:0;z-index:9999;border-radius:0}
+.pgrid .cell.expanded .view{flex:1 1 auto;aspect-ratio:auto;max-height:none;overflow-y:auto}
+.pgrid .cell.dimmed{opacity:.12}
+.pgrid .tag{font:600 10px/1.35 sans-serif;color:#666;letter-spacing:.03em;white-space:normal}
+.pgrid .tile-note{flex:0 0 auto;margin:0;padding:3px 7px;border-bottom:1px solid #eee;background:#fdf6ec;font:11px/1.4 sans-serif;color:#7a4a12}
+.pgrid .tile-about{flex:0 0 auto;margin:0;padding:3px 7px;border-bottom:1px solid #eee;font:11.5px/1.4 sans-serif;color:#444}
+.pgrid .pdfs{flex:0 0 auto;display:flex;flex-wrap:wrap;gap:4px;padding:4px 7px;border-bottom:1px solid #eee}
+.pdf-btn{display:inline-block;padding:1px 7px;border:1px solid #c9d1d9;border-radius:4px;background:#f6f8fa;color:#0969da;font:600 10.5px/1.6 sans-serif;text-decoration:none;white-space:nowrap}
+.pdf-btn:hover{background:#eaeef2;border-color:#0969da}
+.pgrid .cell.expanded .tag{font-size:13px}
+.pgrid .zoom-btn{flex:0 0 auto;width:22px;height:22px;border:0;border-radius:50%;background:#333;color:#fff;cursor:pointer;padding:0;opacity:.45;transition:opacity .15s,background .15s;display:flex;align-items:center;justify-content:center}
+.pgrid .cell:hover .zoom-btn{opacity:1}
+.pgrid .zoom-btn:hover{background:#0969da}
+.pgrid .close-btn{position:absolute;top:8px;right:8px;z-index:10;background:#b00020;display:none;width:34px;height:34px;border:0;border-radius:50%;color:#fff;cursor:pointer;padding:0;align-items:center;justify-content:center}
+.pgrid .cell.expanded .zoom-btn{display:none}
+.pgrid .cell.expanded .close-btn{display:flex}
+</style><div class="pgrid" id="refit-rrr"><h3>Location 1: RRR, each outcome relative to total purchases</h3><ul class="section-bullets"><li><b>RRR:</b> an outcome's RR ÷ total purchases' RR, i.e. the change in its share. 0.97 = share fell 3%. A2 tiles show the difference (see A2 above).</li><li><b>Layout:</b> top row all dishes, bottom row entrees; both rows carry the pre/post diamonds.</li><li><b>Interaction:</b> click a point for that fit's prediction figure; <span class="icon-inline" title="the expand button"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span> expands a tile (Esc closes); the buttons download PDFs.</li><li><b>Pre/post (diamonds, both rows):</b> a simple before/after comparison, no model. It compares the average per open day (A1) or per day (A2) after a launch with the average before it, over the fit's training days. A1 is the ratio of the two averages; A2 is Welch's t test. Black bar ±1 SE, grey bar 95% t interval (Welch–Satterthwaite). Click a diamond for the figure with the window averages in place of the prediction.</li><li><b>Equal windows</b> (as many days before as after): Chicken roll 22 Dec 2025–28 Apr 2026 vs 29 Apr–3 Sep 2026.</li><li><b>Exploratory:</b> beef and pork, set apart at the foot of the A1 all-dishes figures, are exploratory outcomes, not preregistered, fitted the same way as the others.</li></ul><div class="grid" style="grid-template-columns:repeat(2,1fr)"><div class="cell" id="refit-rrr-a1-all" data-w="1100" data-h="699"><div class="hdr"><span class="tag">A1 · all dishes · RRR (relative to total purchases) · pre/post, equal windows</span><button class="zoom-btn" title="Expand A1 · all dishes · RRR (relative to total purchases) · pre/post, equal windows"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="pdfs"><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_a1_all_prepost.pdf" download>PDF</a><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_a1_all.pdf" download>PDF without pre/post</a><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_a1_a2_all.pdf" download>PDF A1+A2 combined</a><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_all_vs_entrees.pdf" download>PDF all dishes vs entrees</a></div><p class="tile-about">A1, all dishes: each outcome&#x27;s daily purchases relative to total purchases (RRR) at the launch, level only, with the simple pre/post comparison under each estimate.</p><div class="view" style="--ar:1.5737"><div class="scaler"><iframe src="../figures/hens/present/human_version_3_roll_ml_joint/levels_a1_all_rrr_prepost_equal.html" loading="lazy" style="width:1100px;height:699px"></iframe></div></div><button class="close-btn" title="Close (Esc)"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="cell" id="refit-rrr-a2-all" data-w="1100" data-h="543"><div class="hdr"><span class="tag">A2 · all dishes · items per order relative to total purchases · pre/post, equal windows</span><button class="zoom-btn" title="Expand A2 · all dishes · items per order relative to total purchases · pre/post, equal windows"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="pdfs"><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_a2_all_prepost.pdf" download>PDF</a><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_a2_all.pdf" download>PDF without pre/post</a><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_a1_a2_all.pdf" download>PDF A1+A2 combined</a><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_all_vs_entrees.pdf" download>PDF all dishes vs entrees</a></div><p class="tile-about">A2, all dishes: each outcome&#x27;s change in items per order relative to total purchases at the launch, level only, with the simple pre/post comparison under each estimate.</p><div class="view" style="--ar:2.0258"><div class="scaler"><iframe src="../figures/hens/present/human_version_3_roll_ml_joint/levels_a2_all_difference_prepost_equal.html" loading="lazy" style="width:1100px;height:543px"></iframe></div></div><button class="close-btn" title="Close (Esc)"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="cell" id="refit-rrr-a1-entrees" data-w="1100" data-h="561"><div class="hdr"><span class="tag">A1 · entrees · RRR (relative to total purchases) · pre/post, equal windows</span><button class="zoom-btn" title="Expand A1 · entrees · RRR (relative to total purchases) · pre/post, equal windows"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="pdfs"><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_a1_entrees_prepost.pdf" download>PDF</a><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_a1_entrees.pdf" download>PDF without pre/post</a><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_a1_a2_entrees.pdf" download>PDF A1+A2 combined</a><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_all_vs_entrees.pdf" download>PDF all dishes vs entrees</a></div><p class="tile-about">A1, entrees: each outcome&#x27;s daily purchases relative to total purchases (RRR) at the launch, level only, with the simple pre/post comparison under each estimate.</p><div class="view" style="--ar:1.9608"><div class="scaler"><iframe src="../figures/hens/present/human_version_3_roll_ml_joint/levels_a1_entrees_rrr_prepost_equal.html" loading="lazy" style="width:1100px;height:561px"></iframe></div></div><button class="close-btn" title="Close (Esc)"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="cell" id="refit-rrr-a2-entrees" data-w="1100" data-h="543"><div class="hdr"><span class="tag">A2 · entrees · items per order relative to total purchases · pre/post, equal windows</span><button class="zoom-btn" title="Expand A2 · entrees · items per order relative to total purchases · pre/post, equal windows"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="pdfs"><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_a2_entrees_prepost.pdf" download>PDF</a><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_a2_entrees.pdf" download>PDF without pre/post</a><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_a1_a2_entrees.pdf" download>PDF A1+A2 combined</a><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rrr_all_vs_entrees.pdf" download>PDF all dishes vs entrees</a></div><p class="tile-about">A2, entrees: each outcome&#x27;s change in items per order relative to total purchases at the launch, level only, with the simple pre/post comparison under each estimate.</p><div class="view" style="--ar:2.0258"><div class="scaler"><iframe src="../figures/hens/present/human_version_3_roll_ml_joint/levels_a2_entrees_difference_prepost_equal.html" loading="lazy" style="width:1100px;height:543px"></iframe></div></div><button class="close-btn" title="Close (Esc)"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div></div></div><script>
+function fit(cell){
+  const s = cell.querySelector('.scaler');
+  const v = cell.querySelector('.view');
+  if(!s || !v) return;
+  const w = +cell.dataset.w, h = +cell.dataset.h;
+  const box = v.getBoundingClientRect();
+  const expanded = cell.classList.contains('expanded');
+  // Tile: fit the whole plot so nothing is cropped.
+  // Expanded: fill the width instead, and the cell scrolls for the overflow.
+  const k = expanded ? (box.width / w) : Math.min(box.width / w, box.height / h);
+  s.style.transform = 'scale(' + k + ')';
+  s.style.left = Math.max(0, (box.width - w * k) / 2) + 'px';
+  s.style.top = expanded ? '0px' : Math.max(0, (box.height - h * k) / 2) + 'px';
+}
+function fitAll(){ document.querySelectorAll('.pgrid .cell').forEach(fit); }
+function toggleCell(cell){
+  const expand = !cell.classList.contains('expanded');
+  cell.classList.toggle('expanded', expand);
+  document.querySelectorAll('.pgrid .cell').forEach(o=>{if(o!==cell)o.classList.toggle('dimmed', expand)});
+  requestAnimationFrame(()=>{ fit(cell); if(!expand) fitAll(); });
+  if(expand){
+    try{ const ifr=cell.querySelector('iframe');
+         const doc=ifr.contentDocument||ifr.contentWindow.document;
+         doc.addEventListener('keydown', escHandler, {capture:true}); }catch(e){}
+  }
+}
+function escHandler(e){
+  if(e.key==='Escape'){ const ex=document.querySelector('.pgrid .cell.expanded'); if(ex) toggleCell(ex); }
+}
+// A page can hold several grids, and this script comes with each one. Every run binds only what no earlier
+// run has bound: a button bound twice toggles twice per click, which expands a tile and closes it again.
+function bindOnce(el, event, handler){
+  if(el.dataset.pgridBound) return;
+  el.dataset.pgridBound = '1';
+  el.addEventListener(event, handler);
+}
+document.querySelectorAll('.pgrid .zoom-btn, .pgrid .close-btn').forEach(b=>
+  bindOnce(b, 'click', e=>{e.stopPropagation(); toggleCell(b.closest('.cell'));}));
+document.querySelectorAll('.pgrid iframe').forEach(f=>bindOnce(f, 'load', ()=>fit(f.closest('.cell'))));
+if(!window.pgridListening){
+  window.pgridListening = true;
+  document.addEventListener('keydown', escHandler);
+  window.addEventListener('resize', fitAll);
+  window.addEventListener('load', fitAll);
+}
+fitAll();
+</script></details><details class="report-section" id="refit-rr-section" open><summary><h2>Location 1: RR (supplementary)</h2></summary><style>
+.pgrid h3{font:600 12px/1.5 sans-serif;margin:14px 0 4px;color:var(--mut,#57606a);letter-spacing:.02em;text-transform:uppercase}
+@media(max-width:700px){.pgrid .grid{grid-template-columns:1fr!important}}
+.pgrid .grid{display:grid;gap:8px;padding:0 0 10px;align-items:start}
+.pgrid .cell{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid #ddd;border-radius:6px;overflow:hidden}
+.pgrid .hdr{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:6px;padding:3px 4px 3px 7px;border-bottom:1px solid #eee;background:#fafafa}
+.pgrid .view{position:relative;overflow:hidden;aspect-ratio:var(--ar,1);max-height:74vh}
+.pgrid .scaler{position:absolute;top:0;left:0;transform-origin:top left}
+.pgrid .scaler iframe{border:0;display:block}
+.pgrid .cell.expanded{position:fixed;inset:0;z-index:9999;border-radius:0}
+.pgrid .cell.expanded .view{flex:1 1 auto;aspect-ratio:auto;max-height:none;overflow-y:auto}
+.pgrid .cell.dimmed{opacity:.12}
+.pgrid .tag{font:600 10px/1.35 sans-serif;color:#666;letter-spacing:.03em;white-space:normal}
+.pgrid .tile-note{flex:0 0 auto;margin:0;padding:3px 7px;border-bottom:1px solid #eee;background:#fdf6ec;font:11px/1.4 sans-serif;color:#7a4a12}
+.pgrid .tile-about{flex:0 0 auto;margin:0;padding:3px 7px;border-bottom:1px solid #eee;font:11.5px/1.4 sans-serif;color:#444}
+.pgrid .pdfs{flex:0 0 auto;display:flex;flex-wrap:wrap;gap:4px;padding:4px 7px;border-bottom:1px solid #eee}
+.pdf-btn{display:inline-block;padding:1px 7px;border:1px solid #c9d1d9;border-radius:4px;background:#f6f8fa;color:#0969da;font:600 10.5px/1.6 sans-serif;text-decoration:none;white-space:nowrap}
+.pdf-btn:hover{background:#eaeef2;border-color:#0969da}
+.pgrid .cell.expanded .tag{font-size:13px}
+.pgrid .zoom-btn{flex:0 0 auto;width:22px;height:22px;border:0;border-radius:50%;background:#333;color:#fff;cursor:pointer;padding:0;opacity:.45;transition:opacity .15s,background .15s;display:flex;align-items:center;justify-content:center}
+.pgrid .cell:hover .zoom-btn{opacity:1}
+.pgrid .zoom-btn:hover{background:#0969da}
+.pgrid .close-btn{position:absolute;top:8px;right:8px;z-index:10;background:#b00020;display:none;width:34px;height:34px;border:0;border-radius:50%;color:#fff;cursor:pointer;padding:0;align-items:center;justify-content:center}
+.pgrid .cell.expanded .zoom-btn{display:none}
+.pgrid .cell.expanded .close-btn{display:flex}
+</style><div class="pgrid" id="refit-rr"><h3>Location 1: RR, each outcome&#x27;s own change</h3><ul class="section-bullets"><li><b>RR:</b> the change in an outcome's daily purchases at the launch. 1.05 = +5%. A2 tiles show the shift.</li></ul><div class="grid" style="grid-template-columns:repeat(2,1fr)"><div class="cell" id="refit-rr-a1-all" data-w="1100" data-h="751"><div class="hdr"><span class="tag">A1 · all dishes · RR (rate ratio) · pre/post, equal windows</span><button class="zoom-btn" title="Expand A1 · all dishes · RR (rate ratio) · pre/post, equal windows"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="pdfs"><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rr_a1_all.pdf" download>PDF (without pre/post)</a></div><p class="tile-about">A1, all dishes: each outcome&#x27;s own rate ratio (RR) at the launch, level only, with the simple pre/post comparison under each estimate.</p><div class="view" style="--ar:1.4647"><div class="scaler"><iframe src="../figures/hens/present/human_version_3_roll_ml_joint/levels_a1_all_rate_ratio_prepost_equal.html" loading="lazy" style="width:1100px;height:751px"></iframe></div></div><button class="close-btn" title="Close (Esc)"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="cell" id="refit-rr-a2-all" data-w="1100" data-h="595"><div class="hdr"><span class="tag">A2 · all dishes · change in items per order · pre/post, equal windows</span><button class="zoom-btn" title="Expand A2 · all dishes · change in items per order · pre/post, equal windows"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="pdfs"><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rr_a2_all.pdf" download>PDF (without pre/post)</a></div><p class="tile-about">A2, all dishes: each outcome&#x27;s own change in items per order at the launch, level only, with the simple pre/post comparison under each estimate.</p><div class="view" style="--ar:1.8487"><div class="scaler"><iframe src="../figures/hens/present/human_version_3_roll_ml_joint/levels_a2_all_shift_prepost_equal.html" loading="lazy" style="width:1100px;height:595px"></iframe></div></div><button class="close-btn" title="Close (Esc)"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="cell" id="refit-rr-a1-entrees" data-w="1100" data-h="613"><div class="hdr"><span class="tag">A1 · entrees · RR (rate ratio) · pre/post, equal windows</span><button class="zoom-btn" title="Expand A1 · entrees · RR (rate ratio) · pre/post, equal windows"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="pdfs"><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rr_a1_entrees.pdf" download>PDF (without pre/post)</a></div><p class="tile-about">A1, entrees: each outcome&#x27;s own rate ratio (RR) at the launch, level only, with the simple pre/post comparison under each estimate.</p><div class="view" style="--ar:1.7945"><div class="scaler"><iframe src="../figures/hens/present/human_version_3_roll_ml_joint/levels_a1_entrees_rate_ratio_prepost_equal.html" loading="lazy" style="width:1100px;height:613px"></iframe></div></div><button class="close-btn" title="Close (Esc)"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="cell" id="refit-rr-a2-entrees" data-w="1100" data-h="595"><div class="hdr"><span class="tag">A2 · entrees · change in items per order · pre/post, equal windows</span><button class="zoom-btn" title="Expand A2 · entrees · change in items per order · pre/post, equal windows"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="pdfs"><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/rr_a2_entrees.pdf" download>PDF (without pre/post)</a></div><p class="tile-about">A2, entrees: each outcome&#x27;s own change in items per order at the launch, level only, with the simple pre/post comparison under each estimate.</p><div class="view" style="--ar:1.8487"><div class="scaler"><iframe src="../figures/hens/present/human_version_3_roll_ml_joint/levels_a2_entrees_shift_prepost_equal.html" loading="lazy" style="width:1100px;height:595px"></iframe></div></div><button class="close-btn" title="Close (Esc)"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div></div></div><script>
+function fit(cell){
+  const s = cell.querySelector('.scaler');
+  const v = cell.querySelector('.view');
+  if(!s || !v) return;
+  const w = +cell.dataset.w, h = +cell.dataset.h;
+  const box = v.getBoundingClientRect();
+  const expanded = cell.classList.contains('expanded');
+  // Tile: fit the whole plot so nothing is cropped.
+  // Expanded: fill the width instead, and the cell scrolls for the overflow.
+  const k = expanded ? (box.width / w) : Math.min(box.width / w, box.height / h);
+  s.style.transform = 'scale(' + k + ')';
+  s.style.left = Math.max(0, (box.width - w * k) / 2) + 'px';
+  s.style.top = expanded ? '0px' : Math.max(0, (box.height - h * k) / 2) + 'px';
+}
+function fitAll(){ document.querySelectorAll('.pgrid .cell').forEach(fit); }
+function toggleCell(cell){
+  const expand = !cell.classList.contains('expanded');
+  cell.classList.toggle('expanded', expand);
+  document.querySelectorAll('.pgrid .cell').forEach(o=>{if(o!==cell)o.classList.toggle('dimmed', expand)});
+  requestAnimationFrame(()=>{ fit(cell); if(!expand) fitAll(); });
+  if(expand){
+    try{ const ifr=cell.querySelector('iframe');
+         const doc=ifr.contentDocument||ifr.contentWindow.document;
+         doc.addEventListener('keydown', escHandler, {capture:true}); }catch(e){}
+  }
+}
+function escHandler(e){
+  if(e.key==='Escape'){ const ex=document.querySelector('.pgrid .cell.expanded'); if(ex) toggleCell(ex); }
+}
+// A page can hold several grids, and this script comes with each one. Every run binds only what no earlier
+// run has bound: a button bound twice toggles twice per click, which expands a tile and closes it again.
+function bindOnce(el, event, handler){
+  if(el.dataset.pgridBound) return;
+  el.dataset.pgridBound = '1';
+  el.addEventListener(event, handler);
+}
+document.querySelectorAll('.pgrid .zoom-btn, .pgrid .close-btn').forEach(b=>
+  bindOnce(b, 'click', e=>{e.stopPropagation(); toggleCell(b.closest('.cell'));}));
+document.querySelectorAll('.pgrid iframe').forEach(f=>bindOnce(f, 'load', ()=>fit(f.closest('.cell'))));
+if(!window.pgridListening){
+  window.pgridListening = true;
+  document.addEventListener('keydown', escHandler);
+  window.addEventListener('resize', fitAll);
+  window.addEventListener('load', fitAll);
+}
+fitAll();
+</script></details><details class="report-section" id="refit-complements" open><summary><h2>Location 1: complements</h2></summary><figure class="card fig" id="refit-complements-all"><div class="figbtns"><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/complements_rr_all.pdf" download>PDF</a></div><a href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/complements_rr_all.png" target="_blank"><img loading="lazy" src="../figures/hens/present/human_version_3_roll_ml_joint/pdf/complements_rr_all.png" alt="Complements, all dishes: each outcome&#x27;s rate ratio and what its complement implies"></a><figcaption><b>Figure 1. Complements, all dishes: each outcome&#x27;s rate ratio and what its complement implies</b>Vegan and non-vegan split total purchases, and so do vegetarian and meat, so the other two fits of a partition imply what each rate ratio has to be: the point and 95% interval are the outcome&#x27;s own fit, the open diamond the value the other two imply (a point only, as the pairing of separate fits gives it no honest interval); rows without a complement are empty.</figcaption></figure><figure class="card fig" id="refit-complements-entrees"><div class="figbtns"><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/complements_rr_entrees.pdf" download>PDF</a></div><a href="../figures/hens/present/human_version_3_roll_ml_joint/pdf/complements_rr_entrees.png" target="_blank"><img loading="lazy" src="../figures/hens/present/human_version_3_roll_ml_joint/pdf/complements_rr_entrees.png" alt="Complements, entrees: each outcome&#x27;s rate ratio and what its complement implies"></a><figcaption><b>Figure 2. Complements, entrees: each outcome&#x27;s rate ratio and what its complement implies</b>Vegan and non-vegan split total purchases, and so do vegetarian and meat, so the other two fits of a partition imply what each rate ratio has to be: the point and 95% interval are the outcome&#x27;s own fit, the open diamond the value the other two imply (a point only, as the pairing of separate fits gives it no honest interval); rows without a complement are empty.</figcaption></figure></details><details class="report-section" id="refit-predictions" open><summary><h2>Location 1: prediction plots</h2></summary><figure class="card fig" id="refit-prediction-meat"><div class="figbtns"><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/fits/all/A1_joint_meat.pdf" download>PDF</a><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/fits/all/A1_joint_meat_averages.pdf" download>PDF with pre/post averages</a></div><a href="../figures/hens/present/human_version_3_roll_ml_joint/fits/all/A1_joint_meat.png" target="_blank"><img loading="lazy" src="../figures/hens/present/human_version_3_roll_ml_joint/fits/all/A1_joint_meat.png" alt="Meat, all dishes (A1): observed and predicted"></a><figcaption><b>Figure 3. Meat, all dishes (A1): observed and predicted</b>Weekly purchases observed against the joint model&#x27;s prediction, training weeks left and held-out weeks right; the dashed line is the launch and the rug the weeks with a closed day.</figcaption></figure><figure class="card fig" id="refit-prediction-meat-averages"><div class="figbtns"><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/fits/all/A1_joint_meat_averages.pdf" download>PDF</a></div><a href="../figures/hens/present/human_version_3_roll_ml_joint/fits/all/A1_joint_meat_averages.png" target="_blank"><img loading="lazy" src="../figures/hens/present/human_version_3_roll_ml_joint/fits/all/A1_joint_meat_averages.png" alt="Meat, all dishes (A1): observed, predicted and the pre/post averages"></a><figcaption><b>Figure 4. Meat, all dishes (A1): observed, predicted and the pre/post averages</b>The same figure with a third line, in purple: each equal window&#x27;s simple pre/post average per open day, written above it, drawn flat over the window&#x27;s dates at the per-day average × the 6 open days of a normal week at Location 1. The prediction figure as it is on top, and under it the training weeks zoomed to the windows, four weeks either side, where the averages are written.</figcaption></figure><figure class="card fig" id="refit-prediction-chicken"><div class="figbtns"><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/fits/all/A1_joint_chicken.pdf" download>PDF</a><a class="pdf-btn" href="../figures/hens/present/human_version_3_roll_ml_joint/fits/all/A1_joint_chicken_averages.pdf" download>PDF with pre/post averages</a></div><a href="../figures/hens/present/human_version_3_roll_ml_joint/fits/all/A1_joint_chicken.png" target="_blank"><img loading="lazy" src="../figures/hens/present/human_version_3_roll_ml_joint/fits/all/A1_joint_chicken.png" alt="Chicken, all dishes (A1): observed and predicted"></a><figcaption><b>Figure 5. Chicken, all dishes (A1): observed and predicted</b>Weekly purchases observed against the joint model&#x27;s prediction, training weeks left and held-out weeks right; the dashed line is the launch and the rug the weeks with a closed day.</figcaption></figure></details></div><script>
+// a page opened with ?readonly (the Guided review's frame does) shows the saved answers but never writes them,
+// to the server or to this browser
+var READ_ONLY = typeof location !== 'undefined' && new URLSearchParams(location.search).has('readonly');   // var: several page scripts declare it
+const PREF = 'hens.chain.mode';
+function readPref() { try { return localStorage.getItem(PREF); } catch (e) { return null; } }
+function writePref(v) { try { localStorage.setItem(PREF, v); } catch (e) {} }
+
+function layoutChain(chain) {
+  const grid = chain.querySelector('.chain-grid');
+  const gutter = chain.querySelector('.gutter');
+  const code = chain.querySelector('.code');
+  const svg = chain.querySelector('svg.arrows');
+  if (!gutter || !svg || chain.classList.contains('bare')) return;
+  if (!grid.offsetParent) return;
+  const gt = gutter.getBoundingClientRect();
+  let floor = 0;
+  const notes = [...gutter.querySelectorAll('.callout')];
+  notes.forEach(note => {
+    const line = code.querySelector(`li[data-n="${note.dataset.n}"]`);
+    const l = line.getBoundingClientRect();
+    const top = Math.max(l.top - gt.top + l.height / 2 - 15, floor);
+    note.style.top = `${top}px`;
+    floor = top + note.offsetHeight + 8;
+  });
+  gutter.style.minHeight = `${floor}px`;
+  const g = grid.getBoundingClientRect();
+  const c = code.getBoundingClientRect();
+  svg.setAttribute('width', g.width);
+  svg.setAttribute('height', g.height);
+  svg.querySelectorAll('.link').forEach(p => p.remove());
+  const edge = c.right - g.left;
+  notes.forEach(note => {
+    const n = note.dataset.n;
+    const txt = code.querySelector(`li[data-n="${n}"] .txt`);
+    const t = txt.getBoundingClientRect();
+    const b = note.getBoundingClientRect();
+    const x1 = b.left - g.left - 1;
+    const y1 = b.top - g.top + 15;
+    const y2 = t.top - g.top + t.height / 2;
+    const x2 = Math.min(t.right - g.left + 12, edge - 16);
+    const bend = (x1 - edge) * 0.55;
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('class', 'link' + (note.classList.contains('on') ? ' on' : ''));
+    path.setAttribute('data-n', n);
+    path.setAttribute('d', `M${x1},${y1} C${x1 - bend},${y1} ${edge + bend},${y2} ${edge},${y2} L${x2},${y2}`);
+    path.setAttribute('marker-end', 'url(#ah)');
+    svg.appendChild(path);
+  });
+}
+
+function applyMode() {
+  const narrow = window.matchMedia('(max-width: 900px)').matches;
+  const bare = narrow || readPref() === 'bare';
+  document.querySelectorAll('.chain').forEach(chain => {
+    chain.classList.toggle('bare', bare);
+    const t = chain.querySelector('.toggle');
+    if (t) {
+      t.textContent = bare ? 'show notes beside the code' : 'notes on click instead';
+      t.hidden = narrow;
+    }
+    const pop = chain.querySelector('.pop');
+    if (pop) pop.hidden = true;
+    layoutChain(chain);
+  });
+}
+
+function activate(chain, n) {
+  chain.querySelectorAll('[data-n]').forEach(el =>
+    el.classList.toggle('on', n !== '' && el.getAttribute('data-n') === n));
+  const pop = chain.querySelector('.pop');
+  if (!pop) return;
+  if (!n || !chain.classList.contains('bare')) { pop.hidden = true; return; }
+  const line = chain.querySelector(`li[data-n="${n}"]`);
+  const note = chain.querySelector(`.callout[data-n="${n}"]`);
+  pop.innerHTML = note.innerHTML;
+  const cr = chain.getBoundingClientRect();
+  const lr = line.getBoundingClientRect();
+  pop.style.top = `${lr.bottom - cr.top + 9}px`;
+  pop.style.left = `${Math.max(8, Math.min(lr.left - cr.left + 60, cr.width - 390))}px`;
+  pop.hidden = false;
+}
+
+document.addEventListener('click', ev => {
+  const toggle = ev.target.closest('.chain .toggle');
+  if (toggle) {
+    writePref(toggle.closest('.chain').classList.contains('bare') ? 'beside' : 'bare');
+    applyMode();
+    return;
+  }
+  const hit = ev.target.closest('.chain li[data-n], .chain .callout');
+  if (hit) {
+    const chain = hit.closest('.chain');
+    const n = hit.getAttribute('data-n');
+    activate(chain, hit.classList.contains('on') && !ev.target.closest('.pop') ? '' : n);
+    return;
+  }
+  if (!ev.target.closest('.pop')) document.querySelectorAll('.chain').forEach(c => activate(c, ''));
+});
+window.addEventListener('resize', applyMode);
+document.addEventListener('toggle', applyMode, true);
+if (document.fonts) document.fonts.ready.then(applyMode);
+applyMode();
+
+document.addEventListener('click', ev => {
+  const fn = ev.target.closest('a.fn');
+  if (fn) {
+    ev.preventDefault();
+    ev.stopPropagation();
+    fn.closest('.chain').querySelectorAll('.fnsrc').forEach(panel => {
+      panel.hidden = !(panel.dataset.fn === fn.dataset.fn && panel.hidden);
+    });
+    return;
+  }
+  const close = ev.target.closest('.fnclose');
+  if (close) {
+    ev.stopPropagation();
+    close.closest('.fnsrc').hidden = true;
+    return;
+  }
+  const button = ev.target.closest('.exbtn');
+  if (button) {
+    ev.stopPropagation();
+    const box = button.nextElementSibling;
+    box.hidden = !box.hidden;
+    button.textContent = box.hidden ? 'show an example' : 'hide the example';
+    const chain = button.closest('.chain');
+    if (chain) layoutChain(chain);
+  }
+}, true);
+
+document.addEventListener('click', ev => {
+  const choice = ev.target.closest('.figtoggle button');
+  if (!choice) return;
+  const card = choice.closest('.fig');
+  // a figure that varies two ways carries its images as a map keyed by one label per way
+  if (card.dataset.sources) {
+    const row = choice.closest('.figtoggle');
+    row.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === choice));
+    const chosen = [...card.querySelectorAll('.figtoggle')]
+      .map(r => (r.querySelector('button.on') || {}).dataset.key).join('|');
+    const src = JSON.parse(card.dataset.sources)[chosen];
+    if (src) { card.querySelector('img').src = src; card.querySelector('a').href = src; }
+    return;
+  }
+  card.querySelectorAll('.figtoggle button').forEach(b => b.classList.toggle('on', b === choice));
+  card.querySelector('img').src = choice.dataset.src;
+  card.querySelector('a').href = choice.dataset.src;
+});
+
+
+
+function openTo() {
+  var id = decodeURIComponent(location.hash.slice(1));
+  var el = id && document.getElementById(id);
+  if (!el) return;
+  for (var p = el; p; p = p.parentElement) { if (p.tagName === 'DETAILS') p.open = true; }
+  el.scrollIntoView();
+}
+window.addEventListener('hashchange', openTo);
+window.addEventListener('load', openTo);
+</script>
